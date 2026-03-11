@@ -12,8 +12,6 @@
 :root {
   --ink:   #111;
   --muted: #888;
-  --lo:    #0a5c2e;
-  --hi:    #bbb;
   --rule:  #111;
   --r2:    #e0e0e0;
   --hover: #f6f6f4;
@@ -24,86 +22,37 @@ body { font-family: 'Faculty Glyphic', Georgia, serif; font-size: 14px; line-hei
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:focus-visible { outline: 2px solid #0057b8; outline-offset: 2px; }
-button { background: none; border: none; cursor: pointer; line-height: 1.45; color: inherit; }
-
-.skip { position:fixed; top:-100%; left:12px; z-index:999; background:var(--ink); color:#fff; padding:6px 14px; text-decoration:none; }
-.skip:focus { top:8px; }
-.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
 
 header { border-bottom:1px solid var(--rule); padding:13px 20px; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px; }
 .meta { color:var(--muted); }
 .meta span+span::before { content:' · '; }
 
-.search-row { border-bottom:1px solid var(--rule); display:flex; align-items:baseline; padding:0 20px; }
-#search { flex:1; padding:10px 0; border:none; background:none; outline:none; color:var(--ink); }
-#search::placeholder { color:var(--muted); }
-#count { color:var(--muted); padding-left:20px; white-space:nowrap; }
-
-.filters { border-bottom:1px solid var(--rule); display:flex; overflow-x:auto; scrollbar-width:none; }
-.filters::-webkit-scrollbar { display:none; }
-.fb { flex-shrink:0; padding:8px 16px; color:var(--muted); border-right:1px solid var(--r2); white-space:nowrap; }
-.fb:last-child { border-right:none; }
-.fb:hover { color:var(--ink); }
-.fb.on { color:var(--ink); text-decoration:underline; text-underline-offset:4px; }
-
-.feed-hd { border-bottom:1px solid var(--r2); padding:7px 20px; color:var(--muted); display:flex; justify-content:space-between; }
-.feed-hd span:last-child { text-align:right; }
-
-.feed { }
-.entry { border-bottom:1px solid var(--r2); padding:14px 20px 16px; transition:background 0.08s; }
-.entry:hover { background:var(--hover); }
-.date { display:block; font-size:1.4rem; margin-bottom:2px; color:var(--lo); }
-.headline { display:flex; flex-wrap:wrap; gap:6px; align-items:baseline; margin-bottom:6px; }
-.title { font-size:1.1rem; }
+main { padding: 10px 20px 20px; }
+.row { border-bottom:1px solid var(--r2); padding:6px 0 7px; transition:background 0.08s; }
+.row:hover { background:var(--hover); }
+.line { display:flex; flex-wrap:wrap; gap:6px 16px; align-items:baseline; }
+.name { }
 .brand { color:var(--muted); }
-.tag { border:1px solid var(--r2); color:var(--muted); padding:0 5px; line-height:1.7; font-size:12px; }
-.tag.sale { color:var(--lo); border-color:var(--lo); }
-
-.prices { display:flex; flex-wrap:wrap; margin-left:-10px; }
-.prices a { display:inline-flex; align-items:baseline; gap:5px; padding:2px 10px; border-right:1px solid var(--r2); white-space:nowrap; transition:background 0.08s; }
+.prices { display:flex; flex-wrap:wrap; gap:6px 12px; }
+.prices a { display:inline-flex; gap:4px; align-items:baseline; padding:0 4px 0 0; border-right:1px solid var(--r2); text-decoration:none; }
 .prices a:last-child { border-right:none; }
-.prices a:hover { background:#ececea; text-decoration:none; }
-.pr { color:var(--muted); }
-.pp.lo { color:var(--lo); }
-.pp.hi { color:var(--hi); }
-.ps { color:#bbb; font-size:12px; }
+.site { color:var(--muted); }
+.amount { }
+.ship { color:#bbb; font-size:12px; }
 
 footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; justify-content:space-between; color:var(--muted); }
 
-@media (max-width:500px) { header,.feed-hd,.entry,.search-row { padding-left:14px; padding-right:14px; } }
+@media (max-width:500px) { header,main { padding-left:14px; padding-right:14px; } }
 </style>
 </head>
 <body>
-
-<a href="#list" class="skip">Skip to content</a>
 
 <header>
   <span>TOTE</span>
   <span class="meta"><span id="hd-n">100 bags</span><span>40+ sources</span><span>Mar 2025</span></span>
 </header>
 
-<div class="search-row">
-  <input id="search" type="search" placeholder="Search brand or bag…" aria-label="Search bags">
-  <span id="count" aria-live="polite"></span>
-</div>
-
-<div class="filters" role="group" aria-label="Filter">
-  <button class="fb on" data-f="all"     aria-pressed="true">All</button>
-  <button class="fb"    data-f="u100"    aria-pressed="false">Under $100</button>
-  <button class="fb"    data-f="u300"    aria-pressed="false">Under $300</button>
-  <button class="fb"    data-f="canvas"  aria-pressed="false">Canvas</button>
-  <button class="fb"    data-f="leather" aria-pressed="false">Leather</button>
-  <button class="fb"    data-f="nylon"   aria-pressed="false">Nylon</button>
-  <button class="fb"    data-f="sale"    aria-pressed="false">On sale</button>
-  <button class="fb"    data-f="luxury"  aria-pressed="false">$500+</button>
-</div>
-
-<div class="feed-hd" aria-hidden="true">
-  <span>Latest totes</span>
-  <span>Prices by retailer, cheapest first</span>
-</div>
-
-<main id="list" class="feed" role="list"></main>
+<main id="list" aria-label="Tote bags list"></main>
 
 <footer>
   <span>Prices subject to change · Affiliate links</span>
@@ -111,89 +60,35 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
 </footer>
 
 <script>
-// Simple mock date for demo: newest first by array order
 const BAGS = [
-  {brand:'Baggu',name:'Standard Baggu',mat:'canvas',sale:false,prices:[
+  {brand:'Baggu',name:'Standard Baggu',prices:[
     {r:'Baggu',p:14,s:'$5 ship',u:'https://baggu.com/products/standard-baggu'},
     {r:'Nordstrom',p:14,s:'free',u:'https://www.nordstrom.com/s/baggu-standard-baggu/7618204'},
   ]},
-  {brand:'Muji',name:'Canvas Tote Bag M',mat:'canvas',sale:false,prices:[
+  {brand:'Muji',name:'Canvas Tote Bag M',prices:[
     {r:'Muji',p:18,s:'$7 ship',u:'https://www.muji.com/us/products/cmdty/detail/4550344977484'},
   ]},
-  // ... keep the rest of your BAGS array exactly as before ...
+  // keep adding the rest of your original BAGS objects here
 ];
 
-const listEl   = document.getElementById('list');
-const searchEl = document.getElementById('search');
-const countEl  = document.getElementById('count');
-const filterBtns = Array.from(document.querySelectorAll('.fb'));
-
-let activeFilter = 'all';
-let query = '';
+const listEl = document.getElementById('list');
 
 function render() {
-  const q = query.trim().toLowerCase();
-  let items = BAGS.slice();
-
-  // newest first (by array order)
-  items.reverse();
-
-  if (activeFilter === 'u100') items = items.filter(b => b.prices[0].p < 100);
-  else if (activeFilter === 'u300') items = items.filter(b => b.prices[0].p < 300);
-  else if (activeFilter === 'canvas') items = items.filter(b => b.mat === 'canvas');
-  else if (activeFilter === 'leather') items = items.filter(b => b.mat === 'leather');
-  else if (activeFilter === 'nylon') items = items.filter(b => b.mat === 'nylon');
-  else if (activeFilter === 'sale') items = items.filter(b => b.sale);
-  else if (activeFilter === 'luxury') items = items.filter(b => b.prices[0].p >= 500);
-
-  if (q) {
-    items = items.filter(b =>
-      b.brand.toLowerCase().includes(q) ||
-      b.name.toLowerCase().includes(q)
-    );
-  }
-
-  countEl.textContent = items.length ? `${items.length} bags` : 'No matches';
-
   listEl.innerHTML = '';
+  BAGS.forEach(bag => {
+    const row = document.createElement('div');
+    row.className = 'row';
 
-  items.forEach((bag, idx) => {
-    const cheapest = bag.prices[0];
-    const entry = document.createElement('article');
-    entry.className = 'entry';
-    entry.setAttribute('role', 'listitem');
+    const line = document.createElement('div');
+    line.className = 'line';
 
-    const d = document.createElement('span');
-    d.className = 'date';
-    d.textContent = `Drop ${idx + 1}`;
-
-    const h = document.createElement('div');
-    h.className = 'headline';
-
-    const title = document.createElement('span');
-    title.className = 'title';
-    title.textContent = bag.name;
+    const name = document.createElement('span');
+    name.className = 'name';
+    name.textContent = bag.name;
 
     const brand = document.createElement('span');
     brand.className = 'brand';
     brand.textContent = bag.brand;
-
-    h.appendChild(title);
-    h.appendChild(brand);
-
-    if (bag.mat) {
-      const t = document.createElement('span');
-      t.className = 'tag';
-      t.textContent = bag.mat;
-      h.appendChild(t);
-    }
-
-    if (bag.sale) {
-      const t = document.createElement('span');
-      t.className = 'tag sale';
-      t.textContent = 'sale';
-      h.appendChild(t);
-    }
 
     const prices = document.createElement('div');
     prices.className = 'prices';
@@ -201,54 +96,37 @@ function render() {
     bag.prices
       .slice()
       .sort((a, b) => a.p - b.p)
-      .forEach((p, i) => {
-        const a = document.createElement('a');
-        a.href = p.u;
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
+      .forEach(p => {
+        const link = document.createElement('a');
+        link.href = p.u;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
 
-        const pr = document.createElement('span');
-        pr.className = 'pr';
-        pr.textContent = p.r;
+        const site = document.createElement('span');
+        site.className = 'site';
+        site.textContent = p.r;
 
-        const pp = document.createElement('span');
-        pp.className = 'pp ' + (i === 0 ? 'lo' : 'hi');
-        pp.textContent = `$${p.p}`;
+        const amount = document.createElement('span');
+        amount.className = 'amount';
+        amount.textContent = `$${p.p}`;
 
-        const ps = document.createElement('span');
-        ps.className = 'ps';
-        ps.textContent = p.s;
+        const ship = document.createElement('span');
+        ship.className = 'ship';
+        ship.textContent = p.s;
 
-        a.appendChild(pr);
-        a.appendChild(pp);
-        a.appendChild(ps);
-
-        prices.appendChild(a);
+        link.appendChild(site);
+        link.appendChild(amount);
+        link.appendChild(ship);
+        prices.appendChild(link);
       });
 
-    entry.appendChild(d);
-    entry.appendChild(h);
-    entry.appendChild(prices);
-
-    listEl.appendChild(entry);
+    line.appendChild(name);
+    line.appendChild(brand);
+    line.appendChild(prices);
+    row.appendChild(line);
+    listEl.appendChild(row);
   });
 }
-
-searchEl.addEventListener('input', e => {
-  query = e.target.value;
-  render();
-});
-
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => {
-      b.classList.toggle('on', b === btn);
-      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
-    });
-    activeFilter = btn.getAttribute('data-f');
-    render();
-  });
-});
 
 render();
 </script>
