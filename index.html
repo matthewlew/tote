@@ -60,22 +60,21 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
 </footer>
 
 <script>
-const BAGS = [
-  {brand:'Baggu',name:'Standard Baggu',prices:[
-    {r:'Baggu',p:14,s:'$5 ship',u:'https://baggu.com/products/standard-baggu'},
-    {r:'Nordstrom',p:14,s:'free',u:'https://www.nordstrom.com/s/baggu-standard-baggu/7618204'},
-  ]},
-  {brand:'Muji',name:'Canvas Tote Bag M',prices:[
-    {r:'Muji',p:18,s:'$7 ship',u:'https://www.muji.com/us/products/cmdty/detail/4550344977484'},
-  ]},
-  // keep adding the rest of your original BAGS objects here
-];
+(async function() {
+  const listEl = document.getElementById('list');
+  let data;
+  try {
+    // 1. fetch data from /data/bags.json
+    const res = await fetch('/data/bags.json');
+    data = await res.json();
+  } catch (err) {
+    console.error('failed to load data', err);
+    return;
+  }
 
-const listEl = document.getElementById('list');
-
-function render() {
+  // 2. render list
   listEl.innerHTML = '';
-  BAGS.forEach(bag => {
+  data.bags.forEach(bag => {
     const row = document.createElement('div');
     row.className = 'row';
 
@@ -126,9 +125,7 @@ function render() {
     row.appendChild(line);
     listEl.appendChild(row);
   });
-}
-
-render();
+})();
 </script>
 </body>
 </html>
