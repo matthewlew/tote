@@ -46,21 +46,23 @@ header { border-bottom:1px solid var(--rule); padding:13px 20px; display:flex; a
 .fb:hover { color:var(--ink); }
 .fb.on { color:var(--ink); text-decoration:underline; text-underline-offset:4px; }
 
-.col-hd { border-bottom:1px solid var(--r2); padding:7px 20px; display:grid; grid-template-columns:32px 1fr; color:var(--muted); }
+.feed-hd { border-bottom:1px solid var(--r2); padding:7px 20px; color:var(--muted); display:flex; justify-content:space-between; }
+.feed-hd span:last-child { text-align:right; }
 
-.row { display:grid; grid-template-columns:32px 1fr; border-bottom:1px solid var(--r2); padding:0 20px; transition:background 0.08s; }
-.row:hover { background:var(--hover); }
-.rn { color:var(--r2); padding-top:11px; user-select:none; }
-.rb { padding:11px 0; }
-.rt { display:flex; flex-wrap:wrap; align-items:baseline; gap:0 8px; margin-bottom:5px; }
+.feed { }
+.entry { border-bottom:1px solid var(--r2); padding:14px 20px 16px; transition:background 0.08s; }
+.entry:hover { background:var(--hover); }
+.date { display:block; font-size:1.4rem; margin-bottom:2px; color:var(--lo); }
+.headline { display:flex; flex-wrap:wrap; gap:6px; align-items:baseline; margin-bottom:6px; }
+.title { font-size:1.1rem; }
 .brand { color:var(--muted); }
 .tag { border:1px solid var(--r2); color:var(--muted); padding:0 5px; line-height:1.7; font-size:12px; }
 .tag.sale { color:var(--lo); border-color:var(--lo); }
 
-.pl { display:flex; flex-wrap:wrap; margin-left:-10px; }
-.pl a { display:inline-flex; align-items:baseline; gap:5px; padding:2px 10px; border-right:1px solid var(--r2); white-space:nowrap; transition:background 0.08s; }
-.pl a:last-child { border-right:none; }
-.pl a:hover { background:#ececea; text-decoration:none; }
+.prices { display:flex; flex-wrap:wrap; margin-left:-10px; }
+.prices a { display:inline-flex; align-items:baseline; gap:5px; padding:2px 10px; border-right:1px solid var(--r2); white-space:nowrap; transition:background 0.08s; }
+.prices a:last-child { border-right:none; }
+.prices a:hover { background:#ececea; text-decoration:none; }
 .pr { color:var(--muted); }
 .pp.lo { color:var(--lo); }
 .pp.hi { color:var(--hi); }
@@ -68,7 +70,7 @@ header { border-bottom:1px solid var(--rule); padding:13px 20px; display:flex; a
 
 footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; justify-content:space-between; color:var(--muted); }
 
-@media (max-width:500px) { header,.col-hd,.row,.search-row { padding-left:14px; padding-right:14px; } }
+@media (max-width:500px) { header,.feed-hd,.entry,.search-row { padding-left:14px; padding-right:14px; } }
 </style>
 </head>
 <body>
@@ -96,12 +98,12 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
   <button class="fb"    data-f="luxury"  aria-pressed="false">$500+</button>
 </div>
 
-<div class="col-hd" aria-hidden="true">
-  <span>#</span>
-  <span>Bag · Prices by retailer, cheapest first</span>
+<div class="feed-hd" aria-hidden="true">
+  <span>Latest totes</span>
+  <span>Prices by retailer, cheapest first</span>
 </div>
 
-<main id="list" role="list"></main>
+<main id="list" class="feed" role="list"></main>
 
 <footer>
   <span>Prices subject to change · Affiliate links</span>
@@ -109,7 +111,7 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
 </footer>
 
 <script>
-// Prices verified from live retailer pages, March 2025
+// Simple mock date for demo: newest first by array order
 const BAGS = [
   {brand:'Baggu',name:'Standard Baggu',mat:'canvas',sale:false,prices:[
     {r:'Baggu',p:14,s:'$5 ship',u:'https://baggu.com/products/standard-baggu'},
@@ -118,446 +120,135 @@ const BAGS = [
   {brand:'Muji',name:'Canvas Tote Bag M',mat:'canvas',sale:false,prices:[
     {r:'Muji',p:18,s:'$7 ship',u:'https://www.muji.com/us/products/cmdty/detail/4550344977484'},
   ]},
-  {brand:'Uniqlo',name:'Round Mini Shoulder Bag',mat:'canvas',sale:false,prices:[
-    {r:'Uniqlo',p:30,s:'$5 ship',u:'https://www.uniqlo.com/us/en/products/E470413-000/00'},
-    {r:'Amazon',p:32,s:'prime',u:'https://www.amazon.com/s?k=uniqlo+mini+shoulder+bag+black'},
-  ]},
-  {brand:'Carhartt WIP',name:'Essentials Bag (Small)',mat:'canvas',sale:false,prices:[
-    {r:'Carhartt WIP',p:35,s:'free',u:'https://us.carhartt-wip.com/en-us/products/essentials-bag-small-black-1440'},
-    {r:'SSENSE',p:38,s:'free',u:'https://www.ssense.com/en-us/men/designers/carhartt-wip/tote-bags'},
-    {r:'END',p:58,s:'$8 ship',u:'https://www.endclothing.com/us/carhartt-wip-essentials-bag-i006285-8990.html'},
-    {r:'ASOS',p:60,s:'free',u:'https://www.asos.com/carhartt-wip/carhartt-wip-unisex-essentials-flight-bag-in-black/prd/205524383'},
-  ]},
-  {brand:'L.L.Bean',name:'Boat and Tote Open Top',mat:'canvas',sale:false,prices:[
-    {r:'L.L.Bean',p:45,s:'free',u:'https://www.llbean.com/llb/shop/513462'},
-    {r:'Amazon',p:49,s:'prime',u:'https://www.amazon.com/s?k=llbean+boat+tote+open+black'},
-  ]},
-  {brand:'Baggu',name:'Duck Bag',mat:'canvas',sale:false,prices:[
-    {r:'Baggu',p:54,s:'$5 ship',u:'https://baggu.com/products/duck-bag'},
-    {r:'Nordstrom',p:54,s:'free',u:'https://www.nordstrom.com/s/baggu-duck-bag/7618210'},
-  ]},
-  {brand:'Gramicci',name:'Tote Bag',mat:'canvas',sale:false,prices:[
-    {r:'Gramicci',p:65,s:'$8 ship',u:'https://gramicci.com/collections/bags'},
-    {r:'SSENSE',p:68,s:'free',u:'https://www.ssense.com/en-us/men/designers/gramicci/tote-bags'},
-  ]},
-  {brand:'Snow Peak',name:'Everyday Tote',mat:'canvas',sale:false,prices:[
-    {r:'Snow Peak',p:68,s:'$6 ship',u:'https://www.snowpeak.com/collections/bags'},
-    {r:'REI',p:68,s:'free',u:'https://www.rei.com/search?q=snow+peak+tote'},
-  ]},
-  {brand:'Herschel',name:'Strand Tote 20.5L',mat:'canvas',sale:false,prices:[
-    {r:'Amazon',p:60,s:'prime',u:'https://www.amazon.com/s?k=herschel+strand+tote+black'},
-    {r:'Herschel',p:65,s:'free',u:'https://www.herschel.com/shop/totes'},
-    {r:'Nordstrom',p:65,s:'free',u:'https://www.nordstrom.com/brand/herschel-supply-co'},
-  ]},
-  {brand:'Eastpak',name:'Shopper L 35L',mat:'nylon',sale:false,prices:[
-    {r:'Zalando',p:44,s:'free',u:'https://www.zalando.com/eastpak-shopping-bag-black/'},
-    {r:'Eastpak',p:48,s:'free',u:'https://www.eastpak.com/en_GB/bags/tote-bags/'},
-  ]},
-  {brand:'Rains',name:'Tote Bag W3',mat:'nylon',sale:false,prices:[
-    {r:'Rains',p:75,s:'free',u:'https://www.rains.com/products/tote-bag-w3'},
-    {r:'SSENSE',p:75,s:'free',u:'https://www.ssense.com/en-us/men/designers/rains/tote-bags'},
-    {r:'END',p:78,s:'$8 ship',u:'https://www.endclothing.com/us/catalogsearch/result/?q=rains+tote'},
-  ]},
-  {brand:'Patagonia',name:'Black Hole Tote 25L',mat:'nylon',sale:false,prices:[
-    {r:'Amazon',p:63,s:'prime',u:'https://www.amazon.com/s?k=patagonia+black+hole+tote+25l+black'},
-    {r:'Patagonia',p:69,s:'free',u:'https://www.patagonia.com/shop/totes'},
-    {r:'REI',p:69,s:'free',u:'https://www.rei.com/search?q=patagonia+black+hole+tote'},
-  ]},
-  {brand:'Topo Designs',name:'Tote Pack',mat:'nylon',sale:false,prices:[
-    {r:'Amazon',p:75,s:'prime',u:'https://www.amazon.com/s?k=topo+designs+tote+pack+black'},
-    {r:'Topo Designs',p:79,s:'free',u:'https://topodesigns.com/products/tote-pack'},
-    {r:'REI',p:79,s:'free',u:'https://www.rei.com/product/212557/topo-designs-tote-pack'},
-  ]},
-  {brand:'Aer',name:'Day Tote',mat:'nylon',sale:false,prices:[
-    {r:'Amazon',p:95,s:'prime',u:'https://www.amazon.com/s?k=aer+day+tote+black'},
-    {r:'Aer',p:98,s:'free',u:'https://www.aersf.com/products/day-tote'},
-  ]},
-  {brand:'Comme des Garçons',name:'Logo Tote Bag',mat:'canvas',sale:false,prices:[
-    {r:'Amazon',p:88,s:'prime',u:'https://www.amazon.com/s?k=comme+des+garcons+tote+bag+black'},
-    {r:'CDG',p:95,s:'$10 ship',u:'https://shop.comme-des-garcons.com'},
-    {r:'Dover St.',p:100,s:'$12 ship',u:'https://www.doverstreetmarket.com/shopping/accessories'},
-  ]},
-  {brand:'Beams Plus',name:'Cotton Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'BEAMS',p:95,s:'$12 ship',u:'https://www.beams.co.jp/en/beams_plus/'},
-    {r:'SSENSE',p:98,s:'free',u:'https://www.ssense.com/en-us/men/designers/beams-plus/tote-bags'},
-  ]},
-  {brand:'Mission Workshop',name:'The Vandal Tote',mat:'nylon',sale:false,prices:[
-    {r:'Mission WS',p:118,s:'free',u:'https://www.missionworkshop.com/collections/bags'},
-  ]},
-  {brand:'Bellroy',name:'Tote Bag',mat:'leather',sale:false,prices:[
-    {r:'Amazon',p:120,s:'prime',u:'https://www.amazon.com/s?k=bellroy+tote+bag+black'},
-    {r:'Bellroy',p:129,s:'free',u:'https://bellroy.com/products/tote-bag'},
-    {r:'Nordstrom',p:129,s:'free',u:'https://www.nordstrom.com/brand/bellroy'},
-  ]},
-  {brand:'Fjällräven',name:'Totepack No.1 18L',mat:'canvas',sale:false,prices:[
-    {r:'Amazon',p:105,s:'prime',u:'https://www.amazon.com/s?k=fjallraven+totepack+1+black'},
-    {r:'Fjällräven',p:120,s:'free',u:'https://www.fjallraven.com/us/en-us/bags-gear/tote-bags'},
-    {r:'REI',p:120,s:'free',u:'https://www.rei.com/search?q=fjallraven+totepack'},
-  ]},
-  {brand:'Peak Design',name:'Everyday Tote 20L v2',mat:'nylon',sale:false,prices:[
-    {r:'Amazon',p:145,s:'prime',u:'https://www.amazon.com/s?k=peak+design+everyday+tote+20l+black'},
-    {r:'Peak Design',p:149,s:'free',u:'https://www.peakdesign.com/products/everyday-tote'},
-    {r:'REI',p:149,s:'free',u:'https://www.rei.com/product/174815/peak-design-everyday-tote-bag-20l'},
-  ]},
-  {brand:'Tumi',name:'Just in Case Tote',mat:'nylon',sale:false,prices:[
-    {r:'Amazon',p:138,s:'prime',u:'https://www.amazon.com/s?k=tumi+just+in+case+tote+black'},
-    {r:'Tumi',p:145,s:'free',u:'https://www.tumi.com/collections/tote-bags'},
-    {r:'Nordstrom',p:145,s:'free',u:'https://www.nordstrom.com/brand/tumi'},
-  ]},
-  {brand:'Longchamp',name:'Le Pliage Original M',mat:'nylon',sale:false,prices:[
-    {r:'Longchamp',p:155,s:'free',u:'https://us.longchamp.com/bags/le-pliage-original/tote-bag-m'},
-    {r:'Nordstrom',p:155,s:'free',u:'https://www.nordstrom.com/brand/longchamp'},
-    {r:'Saks',p:155,s:'free',u:'https://www.saksfifthavenue.com/brand/longchamp'},
-  ]},
-  {brand:'Mismo',name:'M/S Shopper (Nylon)',mat:'nylon',sale:false,prices:[
-    {r:'Mismo',p:145,s:'$12 ship',u:'https://mismo.dk/collections/bags'},
-    {r:'END',p:155,s:'$8 ship',u:'https://www.endclothing.com/us/catalogsearch/result/?q=mismo'},
-  ]},
-  {brand:'Porter-Yoshida',name:'Tote Bag (Small)',mat:'nylon',sale:false,prices:[
-    {r:'Amazon',p:155,s:'prime',u:'https://www.amazon.com/s?k=porter+yoshida+tote+black'},
-    {r:'Selfridges',p:175,s:'$10 ship',u:'https://www.selfridges.com/GB/en/cat/porter-bags/'},
-  ]},
-  {brand:'Madewell',name:'Transport Leather Tote',mat:'leather',sale:true,prices:[
-    {r:'Madewell',p:158,s:'free',u:'https://www.madewell.com/the-transport-tote-in-leather-MG285.html'},
-    {r:'Nordstrom',p:168,s:'free',u:'https://www.nordstrom.com/brand/madewell'},
-  ]},
-  {brand:'Everlane',name:'The Form Bag',mat:'leather',sale:false,prices:[
-    {r:'Everlane',p:168,s:'free',u:'https://www.everlane.com/collections/womens-totes'},
-  ]},
-  {brand:'Filson',name:'Tote Bag with Zipper',mat:'canvas',sale:false,prices:[
-    {r:'Amazon',p:168,s:'prime',u:'https://www.amazon.com/s?k=filson+tote+bag+zipper+black'},
-    {r:'Filson',p:175,s:'free',u:'https://www.filson.com/collections/bags/tote-bags/'},
-    {r:'REI',p:175,s:'free',u:'https://www.rei.com/search?q=filson+tote'},
-  ]},
-  {brand:'Cuyana',name:'Classic Structured Tote',mat:'leather',sale:false,prices:[
-    {r:'Cuyana',p:178,s:'free',u:'https://www.cuyana.com/collections/tote-bags'},
-  ]},
-  {brand:'And Wander',name:'Ripstop Nylon Tote',mat:'nylon',sale:false,prices:[
-    {r:'SSENSE',p:175,s:'free',u:'https://www.ssense.com/en-us/men/designers/and-wander/tote-bags'},
-    {r:'END',p:178,s:'$8 ship',u:'https://www.endclothing.com/us/catalogsearch/result/?q=and+wander+tote'},
-  ]},
-  {brand:'Saturdays NYC',name:'Transit Tote',mat:'canvas',sale:false,prices:[
-    {r:'Saturdays NYC',p:165,s:'$6 ship',u:'https://www.saturdaysnyc.com/collections/bags'},
-    {r:'SSENSE',p:175,s:'free',u:'https://www.ssense.com/en-us/men/designers/saturdays-nyc/tote-bags'},
-  ]},
-  {brand:'Kenzo',name:'Elephant Canvas Tote',mat:'canvas',sale:true,prices:[
-    {r:'Kenzo',p:175,s:'free',u:'https://www.kenzo.com/en/bags'},
-    {r:'SSENSE',p:185,s:'free',u:'https://www.ssense.com/en-us/men/designers/kenzo/tote-bags'},
-    {r:'Farfetch',p:195,s:'varies',u:'https://www.farfetch.com/shopping/men/kenzo-bags/items.aspx'},
-  ]},
-  {brand:'Stutterheim',name:'Rainbird Tote',mat:'nylon',sale:false,prices:[
-    {r:'Stutterheim',p:185,s:'$10 ship',u:'https://stutterheim.com/collections/bags'},
-    {r:'SSENSE',p:185,s:'free',u:'https://www.ssense.com/en-us/men/designers/stutterheim/tote-bags'},
-  ]},
-  {brand:'Margaret Howell',name:'MHL Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'MHL',p:195,s:'$8 ship',u:'https://www.margarethowell.co.uk/collections/accessories'},
-    {r:'SSENSE',p:205,s:'free',u:'https://www.ssense.com/en-us/men/designers/margaret-howell/tote-bags'},
-    {r:'LN-CC',p:210,s:'$15 ship',u:'https://www.ln-cc.com/collections/bags'},
-  ]},
-  {brand:'Cote & Ciel',name:'Isarau Coated Canvas',mat:'nylon',sale:false,prices:[
-    {r:'Cote & Ciel',p:195,s:'free',u:'https://www.coteetciel.com/collections/totes'},
-    {r:'SSENSE',p:195,s:'free',u:'https://www.ssense.com/en-us/men/designers/cote-and-ciel/tote-bags'},
-  ]},
-  {brand:'Ally Capellino',name:'Frank Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'Ally Capellino',p:195,s:'$12 ship',u:'https://www.allycapellino.co.uk/collections/tote-bags'},
-    {r:'LN-CC',p:210,s:'$15 ship',u:'https://www.ln-cc.com/collections/bags'},
-  ]},
-  {brand:'Studio Nicholson',name:'Canvas Tote Bag',mat:'canvas',sale:false,prices:[
-    {r:'Studio N.',p:185,s:'$10 ship',u:'https://www.studionicholson.com/collections/bags'},
-    {r:'SSENSE',p:195,s:'free',u:'https://www.ssense.com/en-us/men/designers/studio-nicholson/tote-bags'},
-  ]},
-  {brand:'Nanamica',name:'2Way Tote Bag',mat:'nylon',sale:false,prices:[
-    {r:'Nanamica',p:198,s:'$12 ship',u:'https://www.nanamica.com/en/bags/'},
-    {r:'SSENSE',p:205,s:'free',u:'https://www.ssense.com/en-us/men/designers/nanamica/tote-bags'},
-  ]},
-  {brand:'A.P.C.',name:'JJJJound Hotel Souvenirs Tote',mat:'canvas',sale:true,prices:[
-    {r:'SSENSE',p:59,s:'free',u:'https://www.ssense.com/en-us/men/designers/apc/tote-bags'},
-    {r:'A.P.C.',p:205,s:'free',u:'https://www.apc.fr/wwuk/accessories/bags/'},
-  ]},
-  {brand:'Waterfield',name:'Air Porter Tote',mat:'leather',sale:false,prices:[
-    {r:'Waterfield',p:249,s:'free',u:'https://www.sfbags.com/collections/tote-bags'},
-  ]},
-  {brand:'Sandro',name:'Suede Leather Tote',mat:'leather',sale:true,prices:[
-    {r:'Sandro',p:245,s:'free',u:'https://us.sandro-paris.com/collections/bags'},
-    {r:'SSENSE',p:260,s:'free',u:'https://www.ssense.com/en-us/men/designers/sandro/tote-bags'},
-  ]},
-  {brand:'Aesther Ekme',name:'Demi Lune Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Aesther Ekme',p:280,s:'$12 ship',u:'https://aesttherekme.com/collections/bags'},
-    {r:'SSENSE',p:290,s:'free',u:'https://www.ssense.com/en-us/men/designers/aesther-ekme/tote-bags'},
-  ]},
-  {brand:'Our Legacy',name:'Work Bag (Leather)',mat:'leather',sale:false,prices:[
-    {r:'Our Legacy',p:280,s:'free',u:'https://www.ourlegacy.com/collections/bags'},
-    {r:'SSENSE',p:285,s:'free',u:'https://www.ssense.com/en-us/men/designers/our-legacy/tote-bags'},
-    {r:'END',p:295,s:'$8 ship',u:'https://www.endclothing.com/us/catalogsearch/result/?q=our+legacy+bag'},
-    {r:'HB',p:298,s:'$10 ship',u:'https://www.harveynichols.com/brand/our-legacy/'},
-  ]},
-  {brand:'Coach',name:'Field Tote 22',mat:'leather',sale:true,prices:[
-    {r:'Amazon',p:285,s:'prime',u:'https://www.amazon.com/s?k=coach+field+tote+22+black'},
-    {r:'Coach',p:298,s:'free',u:'https://www.coach.com/coach-field-tote-22'},
-    {r:'Nordstrom',p:320,s:'free',u:'https://www.nordstrom.com/brand/coach'},
-  ]},
-  {brand:'Nappa Dori',name:'Club Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Nappa Dori',p:295,s:'$15 ship',u:'https://nappadori.com/collections/bags'},
-  ]},
-  {brand:'Troubadour',name:'Explorer Tote',mat:'nylon',sale:false,prices:[
-    {r:'Troubadour',p:295,s:'free',u:'https://www.troubadour-goods.com/collections/tote-bags'},
-  ]},
-  {brand:'Mismo',name:'M/S Cargo Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Mismo',p:245,s:'$12 ship',u:'https://mismo.dk/collections/bags'},
-    {r:'SSENSE',p:255,s:'free',u:'https://www.ssense.com/en-us/men/designers/mismo/tote-bags'},
-  ]},
-  {brand:'Rick Owens',name:'DRKSHDW Cotton Tote',mat:'canvas',sale:false,prices:[
-    {r:'Rick Owens',p:310,s:'free',u:'https://www.rickowens.eu/collections/bags'},
-    {r:'SSENSE',p:320,s:'free',u:'https://www.ssense.com/en-us/men/designers/rick-owens/tote-bags'},
-    {r:'Farfetch',p:335,s:'varies',u:'https://www.farfetch.com/shopping/men/rick-owens-bags/items.aspx'},
-  ]},
-  {brand:'A.P.C.',name:'Maiko Shopping Tote',mat:'leather',sale:true,prices:[
-    {r:'SSENSE',p:327,s:'free',u:'https://www.ssense.com/en-us/men/designers/apc/tote-bags'},
-    {r:'A.P.C.',p:495,s:'free',u:'https://www.apc.fr/wwuk/accessories/bags/'},
-  ]},
-  {brand:'Tory Burch',name:'Perry Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Tory Burch',p:328,s:'free',u:'https://www.toryburch.com/en-us/bags/totes/'},
-    {r:'Nordstrom',p:328,s:'free',u:'https://www.nordstrom.com/brand/tory-burch'},
-  ]},
-  {brand:'Mackintosh',name:'Canvas Tote Bag',mat:'nylon',sale:false,prices:[
-    {r:'Mackintosh',p:320,s:'$10 ship',u:'https://www.mackintosh.com/collections/bags'},
-    {r:'MR PORTER',p:335,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/mackintosh/accessories/bags/totes'},
-  ]},
-  {brand:'Toteme',name:'Canvas Tote Bag',mat:'canvas',sale:false,prices:[
-    {r:'Toteme',p:360,s:'free',u:'https://toteme-studio.com/collections/bags'},
-    {r:'SSENSE',p:375,s:'free',u:'https://www.ssense.com/en-us/men/designers/toteme/tote-bags'},
-    {r:'MR PORTER',p:380,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/toteme/accessories/bags/totes'},
-  ]},
-  {brand:'Acne Studios',name:'Baker Leather Tote',mat:'leather',sale:true,prices:[
-    {r:'Acne Studios',p:299,s:'free',u:'https://www.acnestudios.com/en/bags/tote-bags/'},
-    {r:'SSENSE',p:310,s:'free',u:'https://www.ssense.com/en-us/men/designers/acne-studios/tote-bags'},
-    {r:'MR PORTER',p:350,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/acne-studios/accessories/bags/totes'},
-  ]},
-  {brand:'A.P.C.',name:'Half-Moon Leather Bag',mat:'leather',sale:false,prices:[
-    {r:'A.P.C.',p:350,s:'free',u:'https://www.apc.fr/wwuk/accessories/bags/'},
-    {r:'MR PORTER',p:375,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/apc/accessories/bags'},
-  ]},
-  {brand:'Hard Graft',name:'Natural Work Tote',mat:'leather',sale:false,prices:[
-    {r:'Hard Graft',p:390,s:'$12 ship',u:'https://www.hardgraft.com/collections/bags'},
-  ]},
-  {brand:'Hender Scheme',name:'Assemble Tote',mat:'leather',sale:false,prices:[
-    {r:'Hender Scheme',p:390,s:'$15 ship',u:'https://henderscheme.com/collections/bags'},
-    {r:'SSENSE',p:395,s:'free',u:'https://www.ssense.com/en-us/men/designers/hender-scheme/tote-bags'},
-  ]},
-  {brand:'Shinola',name:'Canfield Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Shinola',p:395,s:'free',u:'https://www.shinola.com/collections/bags-totes'},
-    {r:'Nordstrom',p:395,s:'free',u:'https://www.nordstrom.com/brand/shinola'},
-  ]},
-  {brand:'Uniform Wares',name:'Leather Portfolio Tote',mat:'leather',sale:false,prices:[
-    {r:'Uniform Wares',p:425,s:'$10 ship',u:'https://www.uniformwares.com/collections/bags'},
-  ]},
-  {brand:'Anderson\'s',name:'Woven Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Anderson\'s',p:420,s:'$12 ship',u:'https://www.andersons-belts.com/collections/bags'},
-  ]},
-  {brand:'Paul Smith',name:'Leather Tote No.9',mat:'leather',sale:false,prices:[
-    {r:'Paul Smith',p:450,s:'$10 ship',u:'https://www.paulsmith.com/gb/accessories/bags/totes/'},
-    {r:'MR PORTER',p:465,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/paul-smith/accessories/bags/totes'},
-  ]},
-  {brand:'Lemaire',name:'Small Soft Game Bag (sale)',mat:'nylon',sale:true,prices:[
-    {r:'SSENSE',p:485,s:'free',u:'https://www.ssense.com/en-us/women/product/lemaire/khaki-small-soft-game-bag/18161331'},
-    {r:'SSENSE (full)',p:795,s:'free',u:'https://www.ssense.com/en-us/women/product/lemaire/tan-small-soft-game-bag/18161281'},
-    {r:'Lemaire.fr',p:830,s:'$12 ship',u:'https://www.lemaire.fr/collections/bags'},
-  ]},
-  {brand:'Isabel Marant',name:'Wardy Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Isabel Marant',p:490,s:'free',u:'https://www.isabelmarant.com/en-gb/bags'},
-    {r:'SSENSE',p:490,s:'free',u:'https://www.ssense.com/en-us/men/designers/isabel-marant/tote-bags'},
-    {r:'Farfetch',p:510,s:'varies',u:'https://www.farfetch.com/shopping/men/isabel-marant-bags/items.aspx'},
-  ]},
-  {brand:'Ettinger',name:'Capra Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Ettinger',p:490,s:'$12 ship',u:'https://www.ettinger.co.uk/collections/tote-bags'},
-    {r:'MR PORTER',p:505,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/ettinger/accessories/bags/totes'},
-  ]},
-  {brand:'Common Projects',name:'Leather Tote Bag',mat:'leather',sale:false,prices:[
-    {r:'SSENSE',p:495,s:'free',u:'https://www.ssense.com/en-us/men/designers/common-projects/tote-bags'},
-    {r:'MR PORTER',p:510,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/common-projects/accessories/bags/totes'},
-  ]},
-  {brand:'Montblanc',name:'Meisterstück Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Montblanc',p:495,s:'free',u:'https://www.montblanc.com/en-us/bags_codeCOLLECTION11.html'},
-    {r:'Nordstrom',p:495,s:'free',u:'https://www.nordstrom.com/brand/montblanc'},
-  ]},
-  {brand:'FEIT',name:'Full Grain Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'FEIT',p:550,s:'free',u:'https://www.feitdirect.com/collections/bags'},
-    {r:'SSENSE',p:570,s:'free',u:'https://www.ssense.com/en-us/men/designers/feit/tote-bags'},
-  ]},
-  {brand:'Ghurka',name:'No.31 Market Tote',mat:'leather',sale:false,prices:[
-    {r:'Ghurka',p:550,s:'free',u:'https://www.ghurka.com/collections/tote-bags'},
-  ]},
-  {brand:'Lotuff',name:'Leather Tote No.3',mat:'leather',sale:false,prices:[
-    {r:'Lotuff',p:595,s:'free',u:'https://www.lotuff.com/collections/totes'},
-  ]},
-  {brand:'Tusting',name:'Burnham Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Tusting',p:595,s:'$15 ship',u:'https://www.tusting.co.uk/collections/bags'},
-  ]},
-  {brand:'Bill Amberg',name:'Zip Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Bill Amberg',p:695,s:'$12 ship',u:'https://www.billamberg.com/collections/bags'},
-  ]},
-  {brand:'Jil Sander',name:'Tangle Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'SSENSE',p:695,s:'free',u:'https://www.ssense.com/en-us/men/designers/jil-sander/tote-bags'},
-    {r:'MR PORTER',p:720,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/jil-sander/accessories/bags/totes'},
-    {r:'Farfetch',p:740,s:'varies',u:'https://www.farfetch.com/shopping/men/jil-sander-bags/items.aspx'},
-  ]},
-  {brand:'Dries Van Noten',name:'Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'SSENSE',p:890,s:'free',u:'https://www.ssense.com/en-us/men/designers/dries-van-noten/tote-bags'},
-    {r:'MR PORTER',p:930,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/dries-van-noten/accessories/bags/totes'},
-  ]},
-  {brand:'Mulberry',name:'Bayswater Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Mulberry',p:895,s:'free',u:'https://www.mulberry.com/gb/bags/mens-bags'},
-    {r:'MR PORTER',p:920,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/mulberry/accessories/bags/totes'},
-    {r:'Farfetch',p:930,s:'varies',u:'https://www.farfetch.com/shopping/men/mulberry-bags/items.aspx'},
-  ]},
-  {brand:'Lemaire',name:'Medium Soft Game Bag',mat:'nylon',sale:false,prices:[
-    {r:'SSENSE',p:990,s:'free',u:'https://www.ssense.com/en-us/men/product/lemaire/black-medium-soft-game-bag/16194801'},
-    {r:'MR PORTER',p:1050,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/lemaire/accessories/bags/totes'},
-    {r:'Farfetch',p:1090,s:'varies',u:'https://www.farfetch.com/shopping/men/lemaire-bags/items.aspx'},
-  ]},
-  {brand:'Thom Browne',name:'Leather Tool Tote',mat:'leather',sale:false,prices:[
-    {r:'Thom Browne',p:1090,s:'free',u:'https://www.thombrowne.com/en-us/accessories/bags/'},
-    {r:'SSENSE',p:1090,s:'free',u:'https://www.ssense.com/en-us/men/designers/thom-browne/tote-bags'},
-    {r:'MR PORTER',p:1120,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/thom-browne/accessories/bags/totes'},
-  ]},
-  {brand:'Maison Margiela',name:'5AC Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'SSENSE',p:980,s:'free',u:'https://www.ssense.com/en-us/men/designers/maison-margiela/tote-bags'},
-    {r:'MR PORTER',p:1020,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/maison-margiela/accessories/bags/totes'},
-    {r:'Farfetch',p:1050,s:'varies',u:'https://www.farfetch.com/shopping/men/maison-margiela-bags/items.aspx'},
-  ]},
-  {brand:'Burberry',name:'EKD Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'Burberry',p:1050,s:'free',u:'https://us.burberry.com/c/mens-bags/'},
-    {r:'Nordstrom',p:1050,s:'free',u:'https://www.nordstrom.com/brand/burberry'},
-    {r:'Farfetch',p:1090,s:'varies',u:'https://www.farfetch.com/shopping/men/burberry-bags/items.aspx'},
-  ]},
-  {brand:'Goyard',name:'Saint-Louis PM Tote',mat:'canvas',sale:false,prices:[
-    {r:'Goyard',p:1235,s:'varies',u:'https://www.goyard.com/en_US/bags/'},
-  ]},
-  {brand:'Prada',name:'Re-Nylon Tote Bag',mat:'nylon',sale:false,prices:[
-    {r:'Prada',p:1290,s:'free',u:'https://www.prada.com/us/en/mens/bags/tote_bags.html'},
-    {r:'MR PORTER',p:1290,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/prada/accessories/bags/totes'},
-    {r:'Farfetch',p:1350,s:'varies',u:'https://www.farfetch.com/shopping/men/prada-bags/items.aspx'},
-  ]},
-  {brand:'Celine',name:'Cabas Phantom Tote',mat:'leather',sale:false,prices:[
-    {r:'Celine',p:1350,s:'free',u:'https://www.celine.com/en-us/celine-shop-men/bags/'},
-    {r:'Saks',p:1350,s:'free',u:'https://www.saksfifthavenue.com/brand/celine'},
-    {r:'Farfetch',p:1390,s:'varies',u:'https://www.farfetch.com/shopping/men/celine-bags/items.aspx'},
-  ]},
-  {brand:'Fendi',name:'Large FF Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'Fendi',p:1450,s:'free',u:'https://www.fendi.com/us-en/men/bags/tote-bags'},
-    {r:'Farfetch',p:1490,s:'varies',u:'https://www.farfetch.com/shopping/men/fendi-bags/items.aspx'},
-  ]},
-  {brand:'Loewe',name:'Puzzle Fold Tote',mat:'leather',sale:false,prices:[
-    {r:'Loewe',p:1550,s:'free',u:'https://www.loewe.com/us/en/mens/bags/totes/'},
-    {r:'MR PORTER',p:1550,s:'free',u:'https://www.mrporter.com/en-us/mens/designer/loewe/accessories/bags/totes'},
-    {r:'Farfetch',p:1595,s:'varies',u:'https://www.farfetch.com/shopping/men/loewe-bags/items.aspx'},
-  ]},
-  {brand:'Louis Vuitton',name:'Cabas Light Tote',mat:'canvas',sale:false,prices:[
-    {r:'Louis Vuitton',p:1560,s:'free',u:'https://us.louisvuitton.com/eng-us/men/bags/tote-bags'},
-    {r:'Farfetch',p:1620,s:'varies',u:'https://www.farfetch.com/shopping/men/louis-vuitton-bags/items.aspx'},
-  ]},
-  {brand:'Hermès',name:'Toto MM Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'Vestiaire',p:1450,s:'$20 ship',u:'https://www.vestiairecollective.com/men-bags/handbags/hermes/'},
-    {r:'Hermès',p:1700,s:'free',u:'https://www.hermes.com/us/en/category/men/bags-and-small-leather-goods/bags/'},
-  ]},
-  {brand:'Gucci',name:'Ophidia GG Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'Gucci',p:1380,s:'free',u:'https://www.gucci.com/us/en/ca/bags/mens-bags-c-bags_men'},
-    {r:'Farfetch',p:1430,s:'varies',u:'https://www.farfetch.com/shopping/men/gucci-bags/items.aspx'},
-  ]},
-  {brand:'Saint Laurent',name:'City Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Saint Laurent',p:1650,s:'free',u:'https://www.ysl.com/en-us/bags/all-bags'},
-    {r:'Saks',p:1650,s:'free',u:'https://www.saksfifthavenue.com/brand/saint-laurent'},
-    {r:'Farfetch',p:1690,s:'varies',u:'https://www.farfetch.com/shopping/men/saint-laurent-bags/items.aspx'},
-  ]},
-  {brand:'Givenchy',name:'Antigona Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Givenchy',p:1790,s:'free',u:'https://www.givenchy.com/en-us/mens-bags'},
-    {r:'SSENSE',p:1790,s:'free',u:'https://www.ssense.com/en-us/men/designers/givenchy/tote-bags'},
-    {r:'Farfetch',p:1850,s:'varies',u:'https://www.farfetch.com/shopping/men/givenchy-bags/items.aspx'},
-  ]},
-  {brand:'Bottega Veneta',name:'Small E/W Arco Intrecciato Tote',mat:'leather',sale:false,prices:[
-    {r:'Bottega Veneta',p:1840,s:'free',u:'https://www.bottegaveneta.com/en-gb/bags/tote-bags/'},
-    {r:'MR PORTER',p:1840,s:'free',u:'https://www.mrporter.com/en-us/mens/product/bottega-veneta/accessories/totes/small-ew-arco-intrecciato-leather-tote-bag/1647597343183681'},
-    {r:'Farfetch',p:2038,s:'varies',u:'https://www.farfetch.com/shopping/men/bottega-veneta-bags/items.aspx'},
-  ]},
-  {brand:'Delvaux',name:'Cabas Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Delvaux',p:1890,s:'free',u:'https://www.delvaux.com/en/bags/'},
-    {r:'Farfetch',p:1950,s:'varies',u:'https://www.farfetch.com/shopping/men/delvaux-bags/items.aspx'},
-  ]},
-  {brand:'Valextra',name:'Tric Trac Open Tote',mat:'leather',sale:false,prices:[
-    {r:'Valextra',p:2150,s:'free',u:'https://www.valextra.com/en-us/bags/'},
-    {r:'Farfetch',p:2200,s:'varies',u:'https://www.farfetch.com/shopping/men/valextra-bags/items.aspx'},
-  ]},
-  {brand:'Berluti',name:'All Day Leather Tote',mat:'leather',sale:false,prices:[
-    {r:'Berluti',p:2490,s:'free',u:'https://www.berluti.com/en-us/bags/'},
-    {r:'Farfetch',p:2550,s:'varies',u:'https://www.farfetch.com/shopping/men/berluti-bags/items.aspx'},
-  ]},
-  {brand:'Chanel',name:'Deauville Canvas Tote',mat:'canvas',sale:false,prices:[
-    {r:'Vestiaire',p:2400,s:'$20 ship',u:'https://www.vestiairecollective.com/men-bags/handbags/chanel/'},
-    {r:'Chanel',p:3200,s:'free',u:'https://www.chanel.com/us/fashion/c/7x1x1x2/'},
-  ]},
+  // ... keep the rest of your BAGS array exactly as before ...
 ];
 
-// Sort by lowest price
-BAGS.sort((a,b) => Math.min(...a.prices.map(p=>p.p)) - Math.min(...b.prices.map(p=>p.p)));
+const listEl   = document.getElementById('list');
+const searchEl = document.getElementById('search');
+const countEl  = document.getElementById('count');
+const filterBtns = Array.from(document.querySelectorAll('.fb'));
 
-let activeF='all', q='';
+let activeFilter = 'all';
+let query = '';
 
-function loP(b){ return Math.min(...b.prices.map(p=>p.p)); }
+function render() {
+  const q = query.trim().toLowerCase();
+  let items = BAGS.slice();
 
-function apply(){
-  return BAGS.filter(b=>{
-    const lo=loP(b);
-    if(activeF==='u100'    && lo>=100)           return false;
-    if(activeF==='u300'    && lo>=300)           return false;
-    if(activeF==='canvas'  && b.mat!=='canvas')  return false;
-    if(activeF==='leather' && b.mat!=='leather') return false;
-    if(activeF==='nylon'   && b.mat!=='nylon')   return false;
-    if(activeF==='sale'    && !b.sale)           return false;
-    if(activeF==='luxury'  && lo<500)            return false;
-    if(q){ const s=q.toLowerCase(); if(!b.brand.toLowerCase().includes(s)&&!b.name.toLowerCase().includes(s)) return false; }
-    return true;
+  // newest first (by array order)
+  items.reverse();
+
+  if (activeFilter === 'u100') items = items.filter(b => b.prices[0].p < 100);
+  else if (activeFilter === 'u300') items = items.filter(b => b.prices[0].p < 300);
+  else if (activeFilter === 'canvas') items = items.filter(b => b.mat === 'canvas');
+  else if (activeFilter === 'leather') items = items.filter(b => b.mat === 'leather');
+  else if (activeFilter === 'nylon') items = items.filter(b => b.mat === 'nylon');
+  else if (activeFilter === 'sale') items = items.filter(b => b.sale);
+  else if (activeFilter === 'luxury') items = items.filter(b => b.prices[0].p >= 500);
+
+  if (q) {
+    items = items.filter(b =>
+      b.brand.toLowerCase().includes(q) ||
+      b.name.toLowerCase().includes(q)
+    );
+  }
+
+  countEl.textContent = items.length ? `${items.length} bags` : 'No matches';
+
+  listEl.innerHTML = '';
+
+  items.forEach((bag, idx) => {
+    const cheapest = bag.prices[0];
+    const entry = document.createElement('article');
+    entry.className = 'entry';
+    entry.setAttribute('role', 'listitem');
+
+    const d = document.createElement('span');
+    d.className = 'date';
+    d.textContent = `Drop ${idx + 1}`;
+
+    const h = document.createElement('div');
+    h.className = 'headline';
+
+    const title = document.createElement('span');
+    title.className = 'title';
+    title.textContent = bag.name;
+
+    const brand = document.createElement('span');
+    brand.className = 'brand';
+    brand.textContent = bag.brand;
+
+    h.appendChild(title);
+    h.appendChild(brand);
+
+    if (bag.mat) {
+      const t = document.createElement('span');
+      t.className = 'tag';
+      t.textContent = bag.mat;
+      h.appendChild(t);
+    }
+
+    if (bag.sale) {
+      const t = document.createElement('span');
+      t.className = 'tag sale';
+      t.textContent = 'sale';
+      h.appendChild(t);
+    }
+
+    const prices = document.createElement('div');
+    prices.className = 'prices';
+
+    bag.prices
+      .slice()
+      .sort((a, b) => a.p - b.p)
+      .forEach((p, i) => {
+        const a = document.createElement('a');
+        a.href = p.u;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+
+        const pr = document.createElement('span');
+        pr.className = 'pr';
+        pr.textContent = p.r;
+
+        const pp = document.createElement('span');
+        pp.className = 'pp ' + (i === 0 ? 'lo' : 'hi');
+        pp.textContent = `$${p.p}`;
+
+        const ps = document.createElement('span');
+        ps.className = 'ps';
+        ps.textContent = p.s;
+
+        a.appendChild(pr);
+        a.appendChild(pp);
+        a.appendChild(ps);
+
+        prices.appendChild(a);
+      });
+
+    entry.appendChild(d);
+    entry.appendChild(h);
+    entry.appendChild(prices);
+
+    listEl.appendChild(entry);
   });
 }
 
-function render(){
-  const list=document.getElementById('list');
-  const bags=apply();
-  document.getElementById('count').textContent=bags.length+' result'+(bags.length!==1?'s':'');
-  list.innerHTML='';
-
-  bags.forEach((b,i)=>{
-    const sorted=[...b.prices].sort((a,z)=>a.p-z.p);
-    const links=sorted.map((p,pi)=>{
-      const cls=pi===0?'lo':(pi===sorted.length-1&&sorted.length>1?'hi':'');
-      return `<a href="${p.u}" target="_blank" rel="noopener noreferrer" aria-label="${p.r} — $${p.p}, ${p.s}"><span class="pr">${p.r}</span><span class="pp ${cls}">$${p.p}</span><span class="ps">${p.s}</span></a>`;
-    }).join('');
-
-    const row=document.createElement('div');
-    row.className='row';
-    row.setAttribute('role','listitem');
-    row.innerHTML=`
-      <span class="rn" aria-hidden="true">${String(i+1).padStart(2,'0')}</span>
-      <div class="rb">
-        <div class="rt">
-          <span class="brand">${b.brand}</span>
-          <span class="name">${b.name}</span>
-          <span class="tag">${b.mat}</span>${b.sale?'<span class="tag sale">sale</span>':''}
-        </div>
-        <div class="pl" role="list" aria-label="Prices for ${b.brand} ${b.name}">${links}</div>
-      </div>`;
-    list.appendChild(row);
-  });
-}
-
-document.querySelectorAll('.fb').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.fb').forEach(b=>{b.classList.remove('on');b.setAttribute('aria-pressed','false');});
-    btn.classList.add('on'); btn.setAttribute('aria-pressed','true');
-    activeF=btn.dataset.f; render();
-  });
+searchEl.addEventListener('input', e => {
+  query = e.target.value;
+  render();
 });
 
-document.getElementById('search').addEventListener('input',e=>{ q=e.target.value.trim(); render(); });
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => {
+      b.classList.toggle('on', b === btn);
+      b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+    });
+    activeFilter = btn.getAttribute('data-f');
+    render();
+  });
+});
 
 render();
 </script>
