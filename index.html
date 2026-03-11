@@ -28,6 +28,13 @@ header { border-bottom:1px solid var(--rule); padding:13px 20px; display:flex; a
 .meta span+span::before { content:' · '; }
 
 main { padding: 10px 20px 20px; }
+
+/* Header row for sorting */
+.header-row { border-bottom:1px solid var(--rule); padding:6px 0 7px; display:flex; align-items:center; gap:16px; }
+.header-label { cursor:pointer; user-select:none; display:inline-flex; align-items:center; gap:4px; }
+.header-label span.sort-indicator { font-size:11px; color:var(--muted); }
+.header-spacer { flex:1; }
+
 .row { border-bottom:1px solid var(--r2); padding:6px 0 7px; transition:background 0.08s; }
 .row:hover { background:var(--hover); }
 .line { display:flex; flex-wrap:wrap; gap:6px 16px; align-items:baseline; }
@@ -52,7 +59,25 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
   <span class="meta"><span id="hd-n">100 bags</span><span>40+ sources</span><span>Mar 2025</span></span>
 </header>
 
-<main id="list" aria-label="Tote bags list"></main>
+<main aria-label="Tote bags list">
+  <div class="header-row" aria-hidden="true">
+    <button type="button" class="header-label" data-sort="name">
+      <span>Title</span>
+      <span class="sort-indicator" data-indicator="name">·</span>
+    </button>
+    <button type="button" class="header-label" data-sort="brand">
+      <span>Brand</span>
+      <span class="sort-indicator" data-indicator="brand">·</span>
+    </button>
+    <button type="button" class="header-label" data-sort="price">
+      <span>Price</span>
+      <span class="sort-indicator" data-indicator="price">·</span>
+    </button>
+    <div class="header-spacer"></div>
+  </div>
+
+  <div id="list"></div>
+</main>
 
 <footer>
   <span>Prices subject to change · Affiliate links</span>
@@ -62,9 +87,15 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
 <script>
 (async function() {
   const listEl = document.getElementById('list');
+  const sortButtons = document.querySelectorAll('.header-label');
+  const indicators = {
+    name: document.querySelector('[data-indicator="name"]'),
+    brand: document.querySelector('[data-indicator="brand"]'),
+    price: document.querySelector('[data-indicator="price"]'),
+  };
+
   let data;
   try {
-    // 1. fetch data from /data/bags.json
     const res = await fetch('/data/bags.json');
     data = await res.json();
   } catch (err) {
@@ -72,59 +103,119 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
     return;
   }
 
-  // 2. render list
-  listEl.innerHTML = '';
-  data.bags.forEach(bag => {
-    const row = document.createElement('div');
-    row.className = 'row';
+  let bags = data.bags.slice();
+  let currentSort = { key: 'price', direction: 'asc' };
 
-    const line = document.createElement('div');
-    line.className = 'line';
+  function getLowestPrice(bag) {
+    if (!bag.prices || !bag.prices.length) return Infinity;
+    return Math.min(...bag.prices.map(p => p.p));
+  }
 
-    const name = document.createElement('span');
-    name.className = 'name';
-    name.textContent = bag.name;
+  function sortBags() {
+    const { key, direction } = currentSort;
+    const dir = direction === 'asc' ? 1 : -1;
 
-    const brand = document.createElement('span');
-    brand.className = 'brand';
-    brand.textContent = bag.brand;
+    bags.sort((a, b) => {
+      if (key === 'name') {
+        return a.name.localeCompare(b.name) * dir;
+      }
+      if (key === 'brand') {
+        return a.brand.localeCompare(b.brand) * dir;
+      }
+      if (key === 'price') {
+        const pa = getLowestPrice(a);
+        const pb = getLowestPrice(b);
+        return (pa - pb) * dir;
+      }
+      return 0;
+    });
+  }
 
-    const prices = document.createElement('div');
-    prices.className = 'prices';
+  function updateIndicators() {
+    Object.keys(indicators).forEach(k => {
+      const el = indicators[k];
+      if (!el) return;
+      if (k === currentSort.key) {
+        el.textContent = currentSort.direction === 'asc' ? '↑' : '↓';
+      } else {
+        el.textContent = '·';
+      }
+    });
+  }
 
-    bag.prices
-      .slice()
-      .sort((a, b) => a.p - b.p)
-      .forEach(p => {
-        const link = document.createElement('a');
-        link.href = p.u;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
+  function render() {
+    listEl.innerHTML = '';
+    bags.forEach(bag => {
+      const row = document.createElement('div');
+      row.className = 'row';
 
-        const site = document.createElement('span');
-        site.className = 'site';
-        site.textContent = p.r;
+      const line = document.createElement('div');
+      line.className = 'line';
 
-        const amount = document.createElement('span');
-        amount.className = 'amount';
-        amount.textContent = `$${p.p}`;
+      const name = document.createElement('span');
+      name.className = 'name';
+      name.textContent = bag.name;
 
-        const ship = document.createElement('span');
-        ship.className = 'ship';
-        ship.textContent = p.s;
+      const brand = document.createElement('span');
+      brand.className = 'brand';
+      brand.textContent = bag.brand;
 
-        link.appendChild(site);
-        link.appendChild(amount);
-        link.appendChild(ship);
-        prices.appendChild(link);
-      });
+      const prices = document.createElement('div');
+      prices.className = 'prices';
 
-    line.appendChild(name);
-    line.appendChild(brand);
-    line.appendChild(prices);
-    row.appendChild(line);
-    listEl.appendChild(row);
+      bag.prices
+        .slice()
+        .sort((a, b) => a.p - b.p)
+        .forEach(p => {
+          const link = document.createElement('a');
+          link.href = p.u;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+
+          const site = document.createElement('span');
+          site.className = 'site';
+          site.textContent = p.r;
+
+          const amount = document.createElement('span');
+          amount.className = 'amount';
+          amount.textContent = `$${p.p}`;
+
+          const ship = document.createElement('span');
+          ship.className = 'ship';
+          ship.textContent = p.s;
+
+          link.appendChild(site);
+          link.appendChild(amount);
+          link.appendChild(ship);
+          prices.appendChild(link);
+        });
+
+      line.appendChild(name);
+      line.appendChild(brand);
+      line.appendChild(prices);
+      row.appendChild(line);
+      listEl.appendChild(row);
+    });
+  }
+
+  sortButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const key = btn.getAttribute('data-sort');
+      if (currentSort.key === key) {
+        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+      } else {
+        currentSort.key = key;
+        currentSort.direction = key === 'price' ? 'asc' : 'asc';
+      }
+      sortBags();
+      updateIndicators();
+      render();
+    });
   });
+
+  sortBags();
+  updateIndicators();
+  render();
 })();
 </script>
 </body>
