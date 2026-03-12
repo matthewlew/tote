@@ -7,17 +7,24 @@
       "sale": false,
       "links": [
         {
-          "r": "Sprudge",
-          "u": "https://sprudge.com/onyx-southern-weather.html"
+          "r": "Onyx Coffee Lab",
+          "u": "https://onyxcoffeelab.com/products/southern-weather"
         }
-      ]
+      ],
+      "price": 21
     },
     {
       "brand": "Sey Coffee",
       "name": "Jose Martinez",
       "mat": "washed process",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Sey Coffee",
+          "u": "https://www.seycoffee.com/products/jose-martinez"
+        }
+      ],
+      "price": 24
     },
     {
       "brand": "Heart Roasters",
@@ -26,17 +33,24 @@
       "sale": true,
       "links": [
         {
-          "r": "Daily Coffee News",
-          "u": "https://dailycoffeenews.com/heart-phono"
+          "r": "Heart Roasters",
+          "u": "https://heartroasters.com/products/phono"
         }
-      ]
+      ],
+      "price": 22
     },
     {
       "brand": "Verve Coffee Roasters",
       "name": "Sermon",
       "mat": "blend",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Verve Coffee Roasters",
+          "u": "https://www.vervecoffee.com/products/sermon"
+        }
+      ],
+      "price": 20
     },
     {
       "brand": "Tim Wendelboe",
@@ -45,10 +59,11 @@
       "sale": false,
       "links": [
         {
-          "r": "Perfect Daily Grind",
-          "u": "https://perfectdailygrind.com/tim-wendelboe-caballero"
+          "r": "Tim Wendelboe",
+          "u": "https://timwendelboe.no/product/caballero-espresso/"
         }
-      ]
+      ],
+      "price": 23
     }
   ]
 }

@@ -168,6 +168,10 @@ footer {
       <span>Title</span>
       <span class="sort-indicator" data-indicator="name">·</span>
     </button>
+    <button type="button" class="header-label" data-sort="price">
+      <span>Price</span>
+      <span class="sort-indicator" data-indicator="price">·</span>
+    </button>
     <div class="header-spacer"></div>
   </div>
 
@@ -187,7 +191,8 @@ footer {
   const navEl = document.getElementById('category-nav');
   const indicators = {
     name: document.querySelector('[data-indicator="name"]'),
-    brand: document.querySelector('[data-indicator="brand"]')
+    brand: document.querySelector('[data-indicator="brand"]'),
+    price: document.querySelector('[data-indicator="price"]')
   };
 
   const categories = [
@@ -248,6 +253,12 @@ footer {
       if (key === 'brand') {
         return a.brand.localeCompare(b.brand) * dir;
       }
+      if (key === 'price') {
+        const p1 = typeof a.price === 'number' ? a.price : Infinity;
+        const p2 = typeof b.price === 'number' ? b.price : Infinity;
+        if (p1 === p2) return 0;
+        return (p1 < p2 ? -1 : 1) * dir;
+      }
       return 0;
     });
   }
@@ -295,9 +306,17 @@ footer {
 
           const site = document.createElement('span');
           site.className = 'site';
-          site.textContent = 'READ: ' + l.r;
+          site.textContent = 'BUY: ' + l.r;
 
           link.appendChild(site);
+
+          if (typeof item.price === 'number') {
+            const amount = document.createElement('span');
+            amount.className = 'amount';
+            amount.textContent = '$' + item.price.toLocaleString();
+            link.appendChild(amount);
+          }
+
           prices.appendChild(link);
         });
       }
