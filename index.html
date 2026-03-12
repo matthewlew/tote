@@ -214,9 +214,10 @@ footer {
   };
 
   const categories = [
-    { id: 'bags', name: 'Bags', file: '/data/bags.json', dataKey: 'bags', unit: 'bags' },
-    { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items' },
-    { id: 'books', name: 'Books', file: '/data/books.json', dataKey: 'books', unit: 'books' }
+    { id: 'bags', name: 'Bags', file: '/data/bags.json', dataKey: 'bags', unit: 'bags', actionText: 'BUY' },
+    { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items', actionText: 'BUY' },
+    { id: 'books', name: 'Books', file: '/data/books.json', dataKey: 'books', unit: 'books', actionText: 'BUY' },
+    { id: 'prospect_heights', name: 'Prospect Heights', file: '/data/prospect_heights.json', dataKey: 'places', unit: 'places', actionText: 'VISIT' }
   ];
 
   // ⚡ Bolt Optimization: Cache category data to prevent redundant network requests
@@ -343,7 +344,7 @@ footer {
 
           const site = document.createElement('span');
           site.className = 'site';
-          site.textContent = 'BUY: ' + l.r;
+          site.textContent = (currentCategory.actionText || 'BUY') + ': ' + l.r;
 
           link.appendChild(site);
 
