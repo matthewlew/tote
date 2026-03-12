@@ -37,7 +37,7 @@ body {
 *, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink); }
 a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
-a:focus-visible { outline: 1px solid var(--accent); background: var(--ink); color: var(--bg); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; background: var(--ink); color: var(--bg); }
 
 header {
   border-bottom: 1px solid var(--rule);
@@ -176,7 +176,7 @@ footer {
 </header>
 
 <main aria-label="Items list">
-  <div class="header-row" aria-hidden="true">
+  <div class="header-row" role="group" aria-label="Sort options">
     <button type="button" class="header-label" data-sort="brand">
       <span>Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
@@ -331,6 +331,12 @@ footer {
           link.href = l.u;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
+
+          let ariaLabel = `Buy ${item.brand} ${item.name} from ${l.r}`;
+          if (typeof item.price === 'number') {
+            ariaLabel += ` for $${item.price.toLocaleString()}`;
+          }
+          link.setAttribute('aria-label', ariaLabel);
 
           const site = document.createElement('span');
           site.className = 'site';
