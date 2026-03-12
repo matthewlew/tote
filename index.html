@@ -217,14 +217,6 @@ footer {
     { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items' },
     { id: 'books', name: 'Books', file: '/data/books.json', dataKey: 'books', unit: 'books' }
   ];
-  let data;
-  try {
-    const res = await fetch('./data/bags.json');
-    data = await res.json();
-  } catch (err) {
-    console.error('failed to load data', err);
-    return;
-  }
 
   let currentCategory = categories[0];
   let items = [];
