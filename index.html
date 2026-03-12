@@ -55,6 +55,35 @@ header span:first-child {
   font-size: 2.5rem;
   letter-spacing: -1px;
 }
+
+.category-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+.category-btn {
+  padding: 4px 12px;
+  border: 1px solid var(--rule);
+  cursor: pointer;
+  background: var(--bg);
+  color: var(--ink);
+  transition: all 0.2s;
+}
+.category-btn:hover {
+  background: var(--accent);
+}
+.category-btn.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--bg);
+}
+.category-btn.active::before {
+  content: '● ';
+  font-size: 0.8em;
+  color: var(--accent);
+}
+
 .meta { display: flex; gap: 16px; font-size: 0.8rem; }
 .meta span+span::before { content:' // '; }
 
@@ -203,12 +232,12 @@ footer {
 
   function renderNav() {
     navEl.innerHTML = '';
-    categories.forEach(cat => {
+    categories.forEach((cat, index) => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'category-btn';
       if (cat.id === currentCategory.id) btn.classList.add('active');
-      btn.textContent = cat.name;
+      btn.textContent = `[${index + 1}] ${cat.name}`;
       btn.addEventListener('click', () => {
         if (cat.id !== currentCategory.id) {
           currentCategory = cat;
@@ -339,6 +368,22 @@ footer {
       updateIndicators();
       render();
     });
+  });
+
+  window.addEventListener('keydown', (e) => {
+    // Ignore keydown if a modifier is pressed or if user is typing in an input
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    const num = parseInt(e.key, 10);
+    if (!isNaN(num) && num >= 1 && num <= categories.length) {
+      const catIndex = num - 1;
+      const targetCategory = categories[catIndex];
+      if (targetCategory && targetCategory.id !== currentCategory.id) {
+        currentCategory = targetCategory;
+        loadCategoryData();
+      }
+    }
   });
 
   // Init
