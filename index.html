@@ -179,15 +179,15 @@ footer {
 <main aria-label="Items list">
   <div class="header-row">
     <button type="button" class="header-label" data-sort="brand">
-      <span>Brand</span>
+      <span>[b] Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
     </button>
     <button type="button" class="header-label" data-sort="name">
-      <span>Title</span>
+      <span>[t] Title</span>
       <span class="sort-indicator" data-indicator="name">·</span>
     </button>
     <button type="button" class="header-label" data-sort="price">
-      <span>Price</span>
+      <span>[p] Price</span>
       <span class="sort-indicator" data-indicator="price">·</span>
     </button>
     <div class="header-spacer"></div>
@@ -366,18 +366,22 @@ footer {
     });
   }
 
+  function handleSort(key) {
+    if (currentSort.key === key) {
+      currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+    } else {
+      currentSort.key = key;
+      currentSort.direction = 'asc';
+    }
+    sortItems();
+    updateIndicators();
+    render();
+  }
+
   sortButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       const key = btn.getAttribute('data-sort');
-      if (currentSort.key === key) {
-        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-      } else {
-        currentSort.key = key;
-        currentSort.direction = 'asc';
-      }
-      sortItems();
-      updateIndicators();
-      render();
+      handleSort(key);
     });
   });
 
@@ -394,6 +398,16 @@ footer {
         currentCategory = targetCategory;
         loadCategoryData();
       }
+      return;
+    }
+
+    const k = e.key.toLowerCase();
+    if (k === 'b') {
+      handleSort('brand');
+    } else if (k === 't') {
+      handleSort('name');
+    } else if (k === 'p') {
+      handleSort('price');
     }
   });
 
