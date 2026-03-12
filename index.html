@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
 <style>
 @font-face {
   font-family: 'Flor de Ruina Semilla';
@@ -21,13 +24,13 @@
 }
 html { font-size: 16px; }
 body {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 1.2;
+  letter-spacing: 0.04em;
   background: var(--bg);
   color: var(--ink);
-  text-transform: uppercase;
   border: 1px solid var(--ink);
   min-height: 100vh;
 }
@@ -92,8 +95,8 @@ main { padding: 0; }
 .row:hover a { border-color: var(--bg); }
 .row:hover a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
 
-.line { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; }
-.name { font-size: 1.2rem; }
+.line { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: baseline; }
+.name { font-size: 1rem; }
 .brand { color: #555; }
 .row:hover .brand { color: #aaa; }
 
