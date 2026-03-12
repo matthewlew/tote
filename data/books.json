@@ -1,0 +1,704 @@
+{
+  "books": [
+    {
+      "brand": "David Foster Wallace",
+      "name": "Infinite Jest",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Marcus Aurelius",
+      "name": "Meditations",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Yuval Noah Harari",
+      "name": "Sapiens",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Niccol\u00f2 Machiavelli",
+      "name": "The Prince",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Robert M. Pirsig",
+      "name": "Zen and the Art of Motorcycle Maintenance",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Jordan B. Peterson",
+      "name": "12 Rules for Life",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Sun Tzu",
+      "name": "The Art of War",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ryan Holiday",
+      "name": "The Obstacle Is the Way",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Nassim Nicholas Taleb",
+      "name": "Antifragile",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Nassim Nicholas Taleb",
+      "name": "The Black Swan",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ayn Rand",
+      "name": "Atlas Shrugged",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Ayn Rand",
+      "name": "The Fountainhead",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Fyodor Dostoevsky",
+      "name": "Crime and Punishment",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Fyodor Dostoevsky",
+      "name": "Notes from Underground",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "George Orwell",
+      "name": "1984",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Aldous Huxley",
+      "name": "Brave New World",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "J.D. Salinger",
+      "name": "The Catcher in the Rye",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "F. Scott Fitzgerald",
+      "name": "The Great Gatsby",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Chuck Palahniuk",
+      "name": "Fight Club",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Bret Easton Ellis",
+      "name": "American Psycho",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Jack Kerouac",
+      "name": "On the Road",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Ernest Hemingway",
+      "name": "The Old Man and the Sea",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ernest Hemingway",
+      "name": "A Farewell to Arms",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Herman Melville",
+      "name": "Moby-Dick",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Mark Twain",
+      "name": "The Adventures of Huckleberry Finn",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Friedrich Nietzsche",
+      "name": "Thus Spoke Zarathustra",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Friedrich Nietzsche",
+      "name": "Beyond Good and Evil",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Albert Camus",
+      "name": "The Stranger",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Albert Camus",
+      "name": "The Myth of Sisyphus",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Jean-Paul Sartre",
+      "name": "Nausea",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Franz Kafka",
+      "name": "The Metamorphosis",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Franz Kafka",
+      "name": "The Trial",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Thomas Pynchon",
+      "name": "Gravity's Rainbow",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Cormac McCarthy",
+      "name": "Blood Meridian",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Cormac McCarthy",
+      "name": "The Road",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "J.R.R. Tolkien",
+      "name": "The Lord of the Rings",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Frank Herbert",
+      "name": "Dune",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Isaac Asimov",
+      "name": "Foundation",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Arthur C. Clarke",
+      "name": "2001: A Space Odyssey",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Philip K. Dick",
+      "name": "Do Androids Dream of Electric Sheep?",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "William Gibson",
+      "name": "Neuromancer",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Neal Stephenson",
+      "name": "Snow Crash",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Malcolm Gladwell",
+      "name": "Outliers",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Malcolm Gladwell",
+      "name": "The Tipping Point",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Daniel Kahneman",
+      "name": "Thinking, Fast and Slow",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ray Dalio",
+      "name": "Principles",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Walter Isaacson",
+      "name": "Steve Jobs",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Walter Isaacson",
+      "name": "Elon Musk",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ashlee Vance",
+      "name": "Elon Musk",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Peter Thiel",
+      "name": "Zero to One",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ben Horowitz",
+      "name": "The Hard Thing About Hard Things",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Phil Knight",
+      "name": "Shoe Dog",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Robert Greene",
+      "name": "The 48 Laws of Power",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Robert Greene",
+      "name": "Mastery",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "James Clear",
+      "name": "Atomic Habits",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Mark Manson",
+      "name": "The Subtle Art of Not Giving a F*ck",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Seneca",
+      "name": "Letters from a Stoic",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Epictetus",
+      "name": "Enchiridion",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Homer",
+      "name": "The Iliad",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Homer",
+      "name": "The Odyssey",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Plato",
+      "name": "The Republic",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Aristotle",
+      "name": "Nicomachean Ethics",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Charles Bukowski",
+      "name": "Post Office",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Charles Bukowski",
+      "name": "Factotum",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Hunter S. Thompson",
+      "name": "Fear and Loathing in Las Vegas",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Tom Wolfe",
+      "name": "The Bonfire of the Vanities",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Michael Lewis",
+      "name": "Liar's Poker",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Michael Lewis",
+      "name": "The Big Short",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "John Brooks",
+      "name": "Business Adventures",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Benjamin Graham",
+      "name": "The Intelligent Investor",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Burton G. Malkiel",
+      "name": "A Random Walk Down Wall Street",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Dale Carnegie",
+      "name": "How to Win Friends and Influence People",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Stephen R. Covey",
+      "name": "The 7 Habits of Highly Effective People",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Tim Ferriss",
+      "name": "The 4-Hour Workweek",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "David Goggins",
+      "name": "Can't Hurt Me",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Jocko Willink",
+      "name": "Extreme Ownership",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Simon Sinek",
+      "name": "Start with Why",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Cal Newport",
+      "name": "Deep Work",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Greg McKeown",
+      "name": "Essentialism",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Viktor E. Frankl",
+      "name": "Man's Search for Meaning",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Miyamoto Musashi",
+      "name": "The Book of Five Rings",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Lao Tzu",
+      "name": "Tao Te Ching",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Carl Jung",
+      "name": "Man and His Symbols",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Sigmund Freud",
+      "name": "The Interpretation of Dreams",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Karl Marx",
+      "name": "The Communist Manifesto",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Adam Smith",
+      "name": "The Wealth of Nations",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "John Stuart Mill",
+      "name": "On Liberty",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Thomas Hobbes",
+      "name": "Leviathan",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "John Locke",
+      "name": "Two Treatises of Government",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Jean-Jacques Rousseau",
+      "name": "The Social Contract",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Ralph Waldo Emerson",
+      "name": "Self-Reliance",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Henry David Thoreau",
+      "name": "Walden",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Walt Whitman",
+      "name": "Leaves of Grass",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Allen Ginsberg",
+      "name": "Howl",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "William S. Burroughs",
+      "name": "Naked Lunch",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Kurt Vonnegut",
+      "name": "Slaughterhouse-Five",
+      "mat": "paperback",
+      "sale": true,
+      "links": []
+    },
+    {
+      "brand": "Joseph Heller",
+      "name": "Catch-22",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Don DeLillo",
+      "name": "White Noise",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Jonathan Franzen",
+      "name": "The Corrections",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Karl Ove Knausg\u00e5rd",
+      "name": "My Struggle",
+      "mat": "paperback",
+      "sale": false,
+      "links": []
+    }
+  ]
+}

@@ -175,6 +175,11 @@ footer {
     brand: document.querySelector('[data-indicator="brand"]')
   };
 
+  const categories = [
+    { id: 'bags', name: 'Bags', file: '/data/bags.json', dataKey: 'bags', unit: 'bags' },
+    { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items' },
+    { id: 'books', name: 'Books', file: '/data/books.json', dataKey: 'books', unit: 'books' }
+  ];
   let data;
   try {
     const res = await fetch('./data/bags.json');
