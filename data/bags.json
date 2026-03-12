@@ -7,28 +7,37 @@
       "sale": false,
       "links": [
         {
-          "r": "Léa Phillips",
-          "u": "https://www.lea-phillips.com/blog/gucci-tote-bags"
-        },
-        {
-          "r": "PurseBlog",
-          "u": "https://www.purseblog.com/gucci/12-reasons-im-obsessing-over-the-gucci-giglio/"
+          "r": "Gucci",
+          "u": "https://www.gucci.com/us/en/pr/men/bags-for-men/tote-bags-for-men/gucci-emblem-large-tote-bag-p-804149AADUU1000"
         }
-      ]
+      ],
+      "price": 3100
     },
     {
       "brand": "Fendi",
       "name": "FF Jacquard Leather Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Fendi",
+          "u": "https://www.fendi.com/us-en/men/bags/tote-bags/fendi-roma-shopper-black-fabric-bag-7va635ajf8f0r2a"
+        }
+      ],
+      "price": 1850
     },
     {
       "brand": "Y-3",
       "name": "Black Leather Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [
+        {
+          "r": "Y-3",
+          "u": "https://www.adidas.com/us/y-3-tote/IT7388.html"
+        }
+      ],
+      "price": 350
     },
     {
       "brand": "Bottega Veneta",
@@ -37,17 +46,24 @@
       "sale": false,
       "links": [
         {
-          "r": "Vogue",
-          "u": "https://www.vogue.com/article/bottega-veneta-hop-bag"
+          "r": "Bottega Veneta",
+          "u": "https://www.bottegaveneta.com/en-us/large-hop-black-763969V3IV11019.html"
         }
-      ]
+      ],
+      "price": 4900
     },
     {
       "brand": "Tom Ford",
       "name": "Signature Leather Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Tom Ford",
+          "u": "https://www.tomford.com/t-tote/L1562-LCL331.html"
+        }
+      ],
+      "price": 2750
     },
     {
       "brand": "Loewe",
@@ -56,10 +72,11 @@
       "sale": false,
       "links": [
         {
-          "r": "Harper's Bazaar",
-          "u": "https://www.harpersbazaar.com/uk/fashion/fashion-news/a45214436/loewe-puzzle-tote/"
+          "r": "Loewe",
+          "u": "https://www.loewe.com/usa/en/men/bags/puzzle/puzzle-fold-tote-in-shiny-calfskin/B063T14X02-1100.html"
         }
-      ]
+      ],
+      "price": 2400
     },
     {
       "brand": "Prada",
@@ -68,731 +85,523 @@
       "sale": false,
       "links": [
         {
-          "r": "GQ",
-          "u": "https://www.gq.com/story/prada-tote-bag-review"
+          "r": "Prada",
+          "u": "https://www.prada.com/us/en/p/prada-brique-saffiano-leather-bag/2VH070_9Z2_F0002_V_EMI"
         }
-      ]
+      ],
+      "price": 2550
     },
     {
       "brand": "The Row",
       "name": "Soft Leather Shopper Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "The Row",
+          "u": "https://www.therow.com/products/n-s-park-tote-black-1"
+        }
+      ],
+      "price": 2390
     },
     {
       "brand": "Celine",
       "name": "Box Leather Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Celine",
+          "u": "https://www.celine.com/en-us/celine-shop-men/bags/tote-bags/large-cabas-thais-in-supple-calfskin-196763DMI.38NO.html"
+        }
+      ],
+      "price": 2850
     },
     {
       "brand": "Balenciaga",
       "name": "Rodeo Large Leather Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [
+        {
+          "r": "Balenciaga",
+          "u": "https://www.balenciaga.com/en-us/rodeo-large-handbag-black-7897621ND1Y1000.html"
+        }
+      ],
+      "price": 4290
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [
+        {
+          "r": "Louis Vuitton",
+          "u": "https://us.louisvuitton.com/eng-us/products/sac-plat-nv-cuir-taurillon-monogram-nvprod4480088v"
+        }
+      ],
+      "price": 3200
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Mulberry",
+          "u": "https://www.mulberry.com/us/shop/men/mens-bags/mens-totes/city-tote-black-heavy-grain"
+        }
+      ],
+      "price": 1050
     },
     {
       "brand": "Mismo",
       "name": "Mismo Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Mismo",
+          "u": "https://mismo.dk/products/m-s-tote-black-black"
+        }
+      ],
+      "price": 425
     },
     {
       "brand": "Porter",
       "name": "Porter Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Yoshida & Co.",
+          "u": "https://www.yoshidakaban.com/product/105741.html"
+        }
+      ],
+      "price": 395
     },
     {
       "brand": "Stow London",
       "name": "Stow London Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [
+        {
+          "r": "Stow",
+          "u": "https://stowlondon.co.uk/collections/leather-tote-bags/products/luxury-leather-tote-bag-in-black"
+        }
+      ],
+      "price": 450
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Bennett Winch",
+          "u": "https://www.bennettwinch.com/products/the-tote-black-leather"
+        }
+      ],
+      "price": 1250
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Frank Clegg",
+          "u": "https://frankcleggleatherworks.com/signature-travel-tote-black.html"
+        }
+      ],
+      "price": 1150
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Billykirk",
+          "u": "https://www.billykirk.com/products/no-235-leather-tote-black"
+        }
+      ],
+      "price": 350
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Weekender",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [
+        {
+          "r": "Il Bisonte",
+          "u": "https://www.ilbisonte.com/en-us/products/bto130pg0003bk259b"
+        }
+      ],
+      "price": 790
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "WP Standard",
+          "u": "https://wpstandard.com/products/the-tote-bag"
+        }
+      ],
+      "price": 228
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [
+        {
+          "r": "Want Les Essentiels",
+          "u": "https://wantlesessentiels.com/collections/tote-bags/products/ohare-shopper-tote-leather-black"
+        }
+      ],
+      "price": 595
     },
     {
       "brand": "Shinola",
       "name": "Shinola Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Shinola",
+          "u": "https://www.shinola.com/mens/bags/tote-bags/runwell-tote-leather.html"
+        }
+      ],
+      "price": 695
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [
+        {
+          "r": "Buck Mason",
+          "u": "https://www.buckmason.com/products/black-leather-tote"
+        }
+      ],
+      "price": 250
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Carryall",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Mismo",
       "name": "Mismo Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Porter",
       "name": "Porter Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Stow London",
       "name": "Stow London Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Shinola",
       "name": "Shinola Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Mismo",
       "name": "Mismo Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Porter",
       "name": "Porter Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Stow London",
       "name": "Stow London Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Weekender",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Weekender",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Shinola",
       "name": "Shinola Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Mismo",
       "name": "Mismo Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Porter",
       "name": "Porter Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Stow London",
       "name": "Stow London Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Shinola",
-      "name": "Shinola Shopper V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Buck Mason",
-      "name": "Buck Mason Carryall V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Mulberry",
-      "name": "Mulberry Shopper V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Mismo",
-      "name": "Mismo Carryall V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Porter",
-      "name": "Porter Weekender V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Stow London",
-      "name": "Stow London Large Tote V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Bennett Winch",
-      "name": "Bennett Winch Carryall V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Frank Clegg",
-      "name": "Frank Clegg Shopper V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Billykirk",
-      "name": "Billykirk Weekender V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Il Bisonte",
-      "name": "Il Bisonte Large Tote V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "WP Standard",
-      "name": "WP Standard Shopper V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Want Les Essentiels",
-      "name": "Want Les Essentiels Carryall V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Shinola",
-      "name": "Shinola Weekender V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Buck Mason",
-      "name": "Buck Mason Large Tote V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Louis Vuitton",
-      "name": "Louis Vuitton Shopper V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Mulberry",
-      "name": "Mulberry Carryall V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Mismo",
-      "name": "Mismo Weekender V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Porter",
-      "name": "Porter Large Tote V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Stow London",
-      "name": "Stow London Shopper V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Bennett Winch",
-      "name": "Bennett Winch Weekender V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Frank Clegg",
-      "name": "Frank Clegg Large Tote V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Billykirk",
-      "name": "Billykirk Shopper V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Il Bisonte",
-      "name": "Il Bisonte Carryall V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "WP Standard",
-      "name": "WP Standard Weekender V2",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Want Les Essentiels",
-      "name": "Want Les Essentiels Large Tote V2",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Shinola",
-      "name": "Shinola Large Tote V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Buck Mason",
-      "name": "Buck Mason Shopper V3",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Louis Vuitton",
-      "name": "Louis Vuitton Carryall V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Mulberry",
-      "name": "Mulberry Weekender V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Mismo",
-      "name": "Mismo Large Tote V3",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Porter",
-      "name": "Porter Shopper V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Stow London",
-      "name": "Stow London Carryall V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Bennett Winch",
-      "name": "Bennett Winch Weekender V3",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Frank Clegg",
-      "name": "Frank Clegg Large Tote V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Billykirk",
-      "name": "Billykirk Shopper V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Il Bisonte",
-      "name": "Il Bisonte Carryall V3",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "WP Standard",
-      "name": "WP Standard Weekender V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Want Les Essentiels",
-      "name": "Want Les Essentiels Large Tote V3",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Shinola",
-      "name": "Shinola Large Tote V4",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Buck Mason",
-      "name": "Buck Mason Shopper V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Louis Vuitton",
-      "name": "Louis Vuitton Carryall V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Mulberry",
-      "name": "Mulberry Weekender V4",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Mismo",
-      "name": "Mismo Large Tote V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Porter",
-      "name": "Porter Shopper V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Stow London",
-      "name": "Stow London Carryall V4",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Bennett Winch",
-      "name": "Bennett Winch Weekender V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Frank Clegg",
-      "name": "Frank Clegg Large Tote V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
-    },
-    {
-      "brand": "Billykirk",
-      "name": "Billykirk Shopper V4",
-      "mat": "luxury leather",
-      "sale": true,
-      "links": []
-    },
-    {
-      "brand": "Il Bisonte",
-      "name": "Il Bisonte Carryall V4",
-      "mat": "luxury leather",
-      "sale": false,
-      "links": []
+      "links": [],
+      "price": null
     }
   ]
 }
