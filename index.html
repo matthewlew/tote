@@ -4,52 +4,120 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tote</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
-  --ink:   #111;
-  --muted: #888;
-  --rule:  #111;
-  --r2:    #e0e0e0;
-  --hover: #f6f6f4;
+  --ink:   #000;
+  --bg:    #fff;
+  --accent: #ccff00; /* Harsh yellow-green */
+  --rule:  #000;
 }
-html { font-size: 14px; }
-body { font-family: 'Faculty Glyphic', Georgia, serif; font-size: 14px; line-height: 1.45; background: #fff; color: var(--ink); -webkit-font-smoothing: antialiased; }
-*, input, button { font-family: 'Faculty Glyphic', Georgia, serif; font-size: 14px; }
-a { color: inherit; text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:focus-visible { outline: 2px solid #0057b8; outline-offset: 2px; }
+html { font-size: 16px; }
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.2;
+  background: var(--bg);
+  color: var(--ink);
+  text-transform: uppercase;
+  border: 4px solid var(--ink);
+  min-height: 100vh;
+}
+*, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
+a { color: inherit; text-decoration: none; border-bottom: 2px solid var(--ink); }
+a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
+a:focus-visible { outline: 4px solid var(--accent); background: var(--ink); color: var(--bg); }
 
-header { border-bottom:1px solid var(--rule); padding:13px 20px; display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:8px; }
-.meta { color:var(--muted); }
-.meta span+span::before { content:' · '; }
+header {
+  border-bottom: 4px solid var(--rule);
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--ink);
+  color: var(--bg);
+}
+header span:first-child { font-size: 2rem; letter-spacing: -1px; }
+.meta { display: flex; gap: 16px; font-size: 0.8rem; }
+.meta span+span::before { content:' // '; }
 
-main { padding: 10px 20px 20px; }
+main { padding: 0; }
 
 /* Header row for sorting */
-.header-row { border-bottom:1px solid var(--rule); padding:6px 0 7px; display:flex; align-items:center; gap:16px; }
-.header-label { cursor:pointer; user-select:none; display:inline-flex; align-items:center; gap:4px; }
-.header-label span.sort-indicator { font-size:11px; color:var(--muted); }
+.header-row {
+  border-bottom: 4px solid var(--rule);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f0f0f0;
+}
+.header-label {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border: 2px solid transparent;
+}
+.header-label:hover { border-color: var(--ink); background: var(--accent); }
+.header-label span.sort-indicator { font-size: 1rem; }
 .header-spacer { flex:1; }
 
-.row { border-bottom:1px solid var(--r2); padding:6px 0 7px; transition:background 0.08s; }
-.row:hover { background:var(--hover); }
-.line { display:flex; flex-wrap:wrap; gap:6px 16px; align-items:baseline; }
-.name { }
-.brand { color:var(--muted); }
-.prices { display:flex; flex-wrap:wrap; gap:6px 12px; }
-.prices a { display:inline-flex; gap:4px; align-items:baseline; padding:0 4px 0 0; border-right:1px solid var(--r2); text-decoration:none; }
-.prices a:last-child { border-right:none; }
-.site { color:var(--muted); }
+.row {
+  border-bottom: 2px solid var(--rule);
+  padding: 16px 20px;
+  transition: all 0s; /* No soft transitions in brutalism */
+}
+.row:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.row:hover .brand { color: var(--bg); }
+.row:hover a { border-color: var(--bg); }
+.row:hover a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+
+.line { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; }
+.name { font-size: 1.2rem; }
+.brand { color: #555; }
+.row:hover .brand { color: #aaa; }
+
+.prices { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.prices a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: baseline;
+  padding: 4px 8px;
+  border: 2px solid var(--ink);
+  background: var(--bg);
+  color: var(--ink);
+}
+.row:hover .prices a {
+  border-color: var(--bg);
+}
+.site { font-weight: bold; }
 .amount { }
-.ship { color:#bbb; font-size:12px; }
+.ship { display: none; } /* Hide shipping for brutalist look */
 
-footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; justify-content:space-between; color:var(--muted); }
+footer {
+  border-top: 4px solid var(--rule);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  background: var(--ink);
+  color: var(--bg);
+}
 
-@media (max-width:500px) { header,main { padding-left:14px; padding-right:14px; } }
+@media (max-width:600px) {
+  header, main .header-row, .row, footer { padding-left: 10px; padding-right: 10px; }
+  .meta { flex-direction: column; gap: 4px; }
+  .meta span+span::before { display: none; }
+}
 </style>
 </head>
 <body>
@@ -61,17 +129,13 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
 
 <main aria-label="Tote bags list">
   <div class="header-row" aria-hidden="true">
-    <button type="button" class="header-label" data-sort="name">
-      <span>Title</span>
-      <span class="sort-indicator" data-indicator="name">·</span>
-    </button>
     <button type="button" class="header-label" data-sort="brand">
       <span>Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
     </button>
-    <button type="button" class="header-label" data-sort="price">
-      <span>Price</span>
-      <span class="sort-indicator" data-indicator="price">·</span>
+    <button type="button" class="header-label" data-sort="name">
+      <span>Title</span>
+      <span class="sort-indicator" data-indicator="name">·</span>
     </button>
     <div class="header-spacer"></div>
   </div>
@@ -80,7 +144,7 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
 </main>
 
 <footer>
-  <span>Prices subject to change · Affiliate links</span>
+  <span>Articles on the coolest totes on the web</span>
   <span>tote.so</span>
 </footer>
 
@@ -90,8 +154,7 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
   const sortButtons = document.querySelectorAll('.header-label');
   const indicators = {
     name: document.querySelector('[data-indicator="name"]'),
-    brand: document.querySelector('[data-indicator="brand"]'),
-    price: document.querySelector('[data-indicator="price"]'),
+    brand: document.querySelector('[data-indicator="brand"]')
   };
 
   let data;
@@ -104,12 +167,7 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
   }
 
   let bags = data.bags.slice();
-  let currentSort = { key: 'price', direction: 'asc' };
-
-  function getLowestPrice(bag) {
-    if (!bag.prices || !bag.prices.length) return Infinity;
-    return Math.min(...bag.prices.map(p => p.p));
-  }
+  let currentSort = { key: 'brand', direction: 'asc' };
 
   function sortBags() {
     const { key, direction } = currentSort;
@@ -121,11 +179,6 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
       }
       if (key === 'brand') {
         return a.brand.localeCompare(b.brand) * dir;
-      }
-      if (key === 'price') {
-        const pa = getLowestPrice(a);
-        const pb = getLowestPrice(b);
-        return (pa - pb) * dir;
       }
       return 0;
     });
@@ -152,46 +205,35 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
       const line = document.createElement('div');
       line.className = 'line';
 
-      const name = document.createElement('span');
-      name.className = 'name';
-      name.textContent = bag.name;
-
       const brand = document.createElement('span');
       brand.className = 'brand';
       brand.textContent = bag.brand;
 
+      const name = document.createElement('span');
+      name.className = 'name';
+      name.textContent = bag.name;
+
       const prices = document.createElement('div');
       prices.className = 'prices';
 
-      bag.prices
-        .slice()
-        .sort((a, b) => a.p - b.p)
-        .forEach(p => {
+      if (bag.links && bag.links.length > 0) {
+        bag.links.forEach(l => {
           const link = document.createElement('a');
-          link.href = p.u;
+          link.href = l.u;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
 
           const site = document.createElement('span');
           site.className = 'site';
-          site.textContent = p.r;
-
-          const amount = document.createElement('span');
-          amount.className = 'amount';
-          amount.textContent = `$${p.p}`;
-
-          const ship = document.createElement('span');
-          ship.className = 'ship';
-          ship.textContent = p.s;
+          site.textContent = 'READ: ' + l.r;
 
           link.appendChild(site);
-          link.appendChild(amount);
-          link.appendChild(ship);
           prices.appendChild(link);
         });
+      }
 
-      line.appendChild(name);
       line.appendChild(brand);
+      line.appendChild(name);
       line.appendChild(prices);
       row.appendChild(line);
       listEl.appendChild(row);
@@ -205,7 +247,7 @@ footer { border-top:1px solid var(--rule); padding:11px 20px; display:flex; just
         currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
       } else {
         currentSort.key = key;
-        currentSort.direction = key === 'price' ? 'asc' : 'asc';
+        currentSort.direction = 'asc';
       }
       sortBags();
       updateIndicators();

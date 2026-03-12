@@ -5,12 +5,14 @@
       "name": "Emblem Black Tote GG Motif",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
+      "links": [
         {
-          "r": "SSENSE",
-          "p": 2669,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/gucci/ss26/emblem-black-tote-gg-motif"
+          "r": "Léa Phillips",
+          "u": "https://www.lea-phillips.com/blog/gucci-tote-bags"
+        },
+        {
+          "r": "PurseBlog",
+          "u": "https://www.purseblog.com/gucci/12-reasons-im-obsessing-over-the-gucci-giglio/"
         }
       ]
     },
@@ -19,40 +21,24 @@
       "name": "FF Jacquard Leather Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1761,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/fendi/ff-jacquard-shopper"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Y-3",
       "name": "Black Leather Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 374,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/y3/black-leather-tote"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bottega Veneta",
       "name": "Black Large Hop Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
+      "links": [
         {
-          "r": "SSENSE",
-          "p": 5000,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bottega-veneta/black-large-hop-tote/16674611"
+          "r": "Vogue",
+          "u": "https://www.vogue.com/article/bottega-veneta-hop-bag"
         }
       ]
     },
@@ -61,26 +47,17 @@
       "name": "Signature Leather Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2290,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/tom-ford/signature-leather-tote"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Loewe",
       "name": "Puzzle Edge Leather Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
+      "links": [
         {
-          "r": "SSENSE",
-          "p": 1850,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/loewe/puzzle-edge-leather-tote"
+          "r": "Harper's Bazaar",
+          "u": "https://www.harpersbazaar.com/uk/fashion/fashion-news/a45214436/loewe-puzzle-tote/"
         }
       ]
     },
@@ -89,12 +66,10 @@
       "name": "Saffiano Leather Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
+      "links": [
         {
-          "r": "SSENSE",
-          "p": 2200,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/prada/saffiano-leather-tote"
+          "r": "GQ",
+          "u": "https://www.gq.com/story/prada-tote-bag-review"
         }
       ]
     },
@@ -103,1450 +78,721 @@
       "name": "Soft Leather Shopper Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1800,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/the-row/soft-leather-shopper"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Celine",
       "name": "Box Leather Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2900,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/celine/box-leather-tote"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Balenciaga",
       "name": "Rodeo Large Leather Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1500,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/balenciaga/rodeo-large-leather-tote"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 800,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-1"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 825,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-2"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 850,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-3"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 875,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-4"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 900,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-5"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 925,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-6"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 950,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-7"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 975,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-8"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Weekender",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1000,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-9"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1025,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-10"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1050,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-11"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1075,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-12"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1100,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-13"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1125,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-14"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Carryall",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1150,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-15"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1175,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-16"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1200,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-17"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1225,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-18"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1250,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-19"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1275,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-20"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1300,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-21"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1325,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-22"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1350,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-23"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1375,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-24"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1400,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-25"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1425,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-26"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1450,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-27"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1475,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-28"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1500,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-29"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1525,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-30"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1550,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-31"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Weekender",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1575,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-32"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1600,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-33"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Shopper",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1625,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-34"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1650,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-35"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Weekender",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1675,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-36"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1700,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-37"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1725,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-38"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1750,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-39"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1775,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-40"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1800,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-41"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1825,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-42"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1850,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-43"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1875,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-44"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Large Tote",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1900,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-45"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1925,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-46"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1950,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-47"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Shopper",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 1975,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-48"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Carryall",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2000,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-49"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Weekender",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2025,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-50"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Shopper V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2050,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-51"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Carryall V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2075,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-52"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Large Tote",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2100,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-53"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Shopper V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2125,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-54"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Carryall V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2150,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-55"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Weekender V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2175,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-56"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Large Tote V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2200,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-57"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Carryall V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2225,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-58"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Shopper V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2250,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-59"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Weekender V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2275,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-60"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Large Tote V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2300,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-61"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Shopper V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2325,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-62"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Carryall V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2350,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-63"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Weekender V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2375,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-64"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Large Tote V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2400,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-65"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Shopper V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2425,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-66"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Carryall V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2450,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-67"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Weekender V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2475,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-68"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Large Tote V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2500,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-69"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Shopper V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2525,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-70"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Weekender V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2550,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-71"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Large Tote V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2575,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-72"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Shopper V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2600,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-73"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Carryall V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2625,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-74"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Weekender V2",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2650,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-75"
-        }
-      ]
+      "links": []
     },
-
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Large Tote V2",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2675,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-76"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Large Tote V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2700,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-77"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Shopper V3",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2725,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-78"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Carryall V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2750,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-79"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Weekender V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2775,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-80"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Large Tote V3",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2800,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-81"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Shopper V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2825,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-82"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Carryall V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2850,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-83"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Weekender V3",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2875,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-84"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Large Tote V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2900,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-85"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Shopper V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2925,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-86"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Carryall V3",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2950,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-87"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "WP Standard",
       "name": "WP Standard Weekender V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 2975,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/wp-standard-88"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Want Les Essentiels",
       "name": "Want Les Essentiels Large Tote V3",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3000,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/want-les-essentiels-89"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Shinola",
       "name": "Shinola Large Tote V4",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3025,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/shinola-90"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Buck Mason",
       "name": "Buck Mason Shopper V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3050,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/buck-mason-91"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Louis Vuitton",
       "name": "Louis Vuitton Carryall V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3075,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/louis-vuitton-92"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mulberry",
       "name": "Mulberry Weekender V4",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3100,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mulberry-93"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Mismo",
       "name": "Mismo Large Tote V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3125,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/mismo-94"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Porter",
       "name": "Porter Shopper V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3150,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/porter-95"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Stow London",
       "name": "Stow London Carryall V4",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3175,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/stow-london-96"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Bennett Winch",
       "name": "Bennett Winch Weekender V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3200,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/bennett-winch-97"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Frank Clegg",
       "name": "Frank Clegg Large Tote V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3225,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/frank-clegg-98"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Billykirk",
       "name": "Billykirk Shopper V4",
       "mat": "luxury leather",
       "sale": true,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3250,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/billykirk-99"
-        }
-      ]
+      "links": []
     },
     {
       "brand": "Il Bisonte",
       "name": "Il Bisonte Carryall V4",
       "mat": "luxury leather",
       "sale": false,
-      "prices": [
-        {
-          "r": "SSENSE",
-          "p": 3275,
-          "s": "free",
-          "u": "https://www.ssense.com/en-us/men/product/il-bisonte-100"
-        }
-      ]
+      "links": []
     }
   ]
 }
