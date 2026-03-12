@@ -1,0 +1,41 @@
+{
+  "places": [
+    {
+      "brand": "Coffee Shop",
+      "name": "Olmsted",
+      "links": [
+        { "u": "https://www.olmstednyc.com/", "r": "Website" },
+        { "u": "https://goo.gl/maps/1", "r": "Maps" }
+      ]
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Faun",
+      "links": [
+        { "u": "https://www.faunnyc.com/", "r": "Website" }
+      ]
+    },
+    {
+      "brand": "Bar",
+      "name": "Weather Up",
+      "links": [
+        { "u": "https://www.weatherupnyc.com/", "r": "Website" },
+        { "u": "https://goo.gl/maps/2", "r": "Maps" }
+      ]
+    },
+    {
+      "brand": "Bookstore",
+      "name": "Unnameable Books",
+      "links": [
+        { "u": "https://unnameablebooks.blogspot.com/", "r": "Website" }
+      ]
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Little Skips East",
+      "links": [
+        { "u": "https://littleskips.nyc/", "r": "Website" }
+      ]
+    }
+  ]
+}
