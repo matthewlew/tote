@@ -3,38 +3,46 @@
     {
       "brand": "Coffee Shop",
       "name": "Olmsted",
+      "address": "659 Washington Ave, Brooklyn, NY 11238",
       "links": [
         { "u": "https://www.olmstednyc.com/", "r": "Website" },
-        { "u": "https://goo.gl/maps/1", "r": "Maps" }
+        { "u": "https://www.google.com/maps/search/?api=1&query=Olmsted+659+Washington+Ave+Brooklyn+NY", "r": "Maps" }
       ]
     },
     {
       "brand": "Restaurant",
       "name": "Faun",
+      "address": "606 Vanderbilt Ave, Brooklyn, NY 11238",
       "links": [
-        { "u": "https://www.faunnyc.com/", "r": "Website" }
+        { "u": "https://www.faunnyc.com/", "r": "Website" },
+        { "u": "https://www.google.com/maps/search/?api=1&query=Faun+606+Vanderbilt+Ave+Brooklyn+NY", "r": "Maps" }
       ]
     },
     {
       "brand": "Bar",
       "name": "Weather Up",
+      "address": "589 Vanderbilt Ave, Brooklyn, NY 11238",
       "links": [
         { "u": "https://www.weatherupnyc.com/", "r": "Website" },
-        { "u": "https://goo.gl/maps/2", "r": "Maps" }
+        { "u": "https://www.google.com/maps/search/?api=1&query=Weather+Up+589+Vanderbilt+Ave+Brooklyn+NY", "r": "Maps" }
       ]
     },
     {
       "brand": "Bookstore",
       "name": "Unnameable Books",
+      "address": "615 Vanderbilt Ave, Brooklyn, NY 11238",
       "links": [
-        { "u": "https://unnameablebooks.blogspot.com/", "r": "Website" }
+        { "u": "https://unnameablebooks.blogspot.com/", "r": "Website" },
+        { "u": "https://www.google.com/maps/search/?api=1&query=Unnameable+Books+615+Vanderbilt+Ave+Brooklyn+NY", "r": "Maps" }
       ]
     },
     {
       "brand": "Coffee Shop",
       "name": "Little Skips East",
+      "address": "1643 Broadway, Brooklyn, NY 11207",
       "links": [
-        { "u": "https://littleskips.nyc/", "r": "Website" }
+        { "u": "https://littleskips.nyc/", "r": "Website" },
+        { "u": "https://www.google.com/maps/search/?api=1&query=Little+Skips+East+1643+Broadway+Brooklyn+NY", "r": "Maps" }
       ]
     }
   ]

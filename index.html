@@ -332,6 +332,15 @@ footer {
       name.className = 'name';
       name.textContent = item.name;
 
+      let address = null;
+      if (item.address) {
+        address = document.createElement('span');
+        address.className = 'address';
+        address.textContent = item.address;
+        address.style.color = '#777';
+        address.style.fontSize = '0.9rem';
+      }
+
       const prices = document.createElement('div');
       prices.className = 'prices';
 
@@ -361,6 +370,7 @@ footer {
 
       line.appendChild(brand);
       line.appendChild(name);
+      if (address) line.appendChild(address);
       line.appendChild(prices);
       row.appendChild(line);
       listEl.appendChild(row);
