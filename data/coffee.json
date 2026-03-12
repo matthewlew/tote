@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "brand": "Onyx Coffee Lab",
+      "name": "Southern Weather",
+      "mat": "washed process",
+      "sale": false,
+      "links": [
+        {
+          "r": "Sprudge",
+          "u": "https://sprudge.com/onyx-southern-weather.html"
+        }
+      ]
+    },
+    {
+      "brand": "Sey Coffee",
+      "name": "Jose Martinez",
+      "mat": "washed process",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Heart Roasters",
+      "name": "Phono Espresso",
+      "mat": "blend",
+      "sale": true,
+      "links": [
+        {
+          "r": "Daily Coffee News",
+          "u": "https://dailycoffeenews.com/heart-phono"
+        }
+      ]
+    },
+    {
+      "brand": "Verve Coffee Roasters",
+      "name": "Sermon",
+      "mat": "blend",
+      "sale": false,
+      "links": []
+    },
+    {
+      "brand": "Tim Wendelboe",
+      "name": "Caballero",
+      "mat": "washed process",
+      "sale": false,
+      "links": [
+        {
+          "r": "Perfect Daily Grind",
+          "u": "https://perfectdailygrind.com/tim-wendelboe-caballero"
+        }
+      ]
+    }
+  ]
+}
