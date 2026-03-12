@@ -38,6 +38,7 @@ body {
 a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink); }
 a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
 a:focus-visible { outline: 1px solid var(--accent); background: var(--ink); color: var(--bg); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 header {
   border-bottom: 1px solid var(--rule);
@@ -176,7 +177,7 @@ footer {
 </header>
 
 <main aria-label="Items list">
-  <div class="header-row" aria-hidden="true">
+  <div class="header-row">
     <button type="button" class="header-label" data-sort="brand">
       <span>Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
@@ -192,7 +193,7 @@ footer {
     <div class="header-spacer"></div>
   </div>
 
-  <div id="list"></div>
+  <div id="list" aria-live="polite"></div>
 </main>
 
 <footer>
@@ -237,7 +238,12 @@ footer {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'category-btn';
-      if (cat.id === currentCategory.id) btn.classList.add('active');
+      if (cat.id === currentCategory.id) {
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+      } else {
+        btn.setAttribute('aria-pressed', 'false');
+      }
       btn.textContent = `[${index + 1}] ${cat.name}`;
       btn.addEventListener('click', () => {
         if (cat.id !== currentCategory.id) {
