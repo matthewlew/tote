@@ -40,7 +40,33 @@ header {
   background: var(--ink);
   color: var(--bg);
 }
-header span:first-child { font-size: 2rem; letter-spacing: -1px; }
+.header-top {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.header-top > span:first-child { font-size: 2rem; letter-spacing: -1px; }
+
+.category-nav {
+  display: flex;
+  gap: 16px;
+  font-size: 1rem;
+}
+.category-btn {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+.category-btn:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+.category-btn.active {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
 .meta { display: flex; gap: 16px; font-size: 0.8rem; }
 .meta span+span::before { content:' // '; }
 
@@ -123,11 +149,16 @@ footer {
 <body>
 
 <header>
-  <span>TOTE</span>
-  <span class="meta"><span id="hd-n">100 bags</span><span>40+ sources</span><span>Mar 2025</span></span>
+  <div class="header-top">
+    <span>TOTE</span>
+    <nav class="category-nav" id="category-nav" aria-label="Categories">
+      <!-- Nav buttons will be injected here -->
+    </nav>
+  </div>
+  <span class="meta"><span id="hd-n"></span><span>40+ sources</span><span>Mar 2025</span></span>
 </header>
 
-<main aria-label="Tote bags list">
+<main aria-label="Items list">
   <div class="header-row" aria-hidden="true">
     <button type="button" class="header-label" data-sort="brand">
       <span>Brand</span>
@@ -152,28 +183,65 @@ footer {
 (async function() {
   const listEl = document.getElementById('list');
   const sortButtons = document.querySelectorAll('.header-label');
+  const countEl = document.getElementById('hd-n');
+  const navEl = document.getElementById('category-nav');
   const indicators = {
     name: document.querySelector('[data-indicator="name"]'),
     brand: document.querySelector('[data-indicator="brand"]')
   };
 
-  let data;
-  try {
-    const res = await fetch('/data/bags.json');
-    data = await res.json();
-  } catch (err) {
-    console.error('failed to load data', err);
-    return;
-  }
+  const categories = [
+    { id: 'bags', name: 'Bags', file: '/data/bags.json', dataKey: 'bags', unit: 'bags' },
+    { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items' }
+  ];
 
-  let bags = data.bags.slice();
+  let currentCategory = categories[0];
+  let items = [];
   let currentSort = { key: 'brand', direction: 'asc' };
 
-  function sortBags() {
+  function renderNav() {
+    navEl.innerHTML = '';
+    categories.forEach(cat => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'category-btn';
+      if (cat.id === currentCategory.id) btn.classList.add('active');
+      btn.textContent = cat.name;
+      btn.addEventListener('click', () => {
+        if (cat.id !== currentCategory.id) {
+          currentCategory = cat;
+          loadCategoryData();
+        }
+      });
+      navEl.appendChild(btn);
+    });
+  }
+
+  async function loadCategoryData() {
+    renderNav();
+    listEl.innerHTML = 'Loading...';
+    try {
+      const res = await fetch(currentCategory.file);
+      const data = await res.json();
+      items = (data[currentCategory.dataKey] || []).slice();
+    } catch (err) {
+      console.error('failed to load data', err);
+      listEl.innerHTML = 'Error loading data.';
+      items = [];
+      return;
+    }
+
+    currentSort = { key: 'brand', direction: 'asc' };
+    sortItems();
+    updateIndicators();
+    render();
+  }
+
+  function sortItems() {
     const { key, direction } = currentSort;
     const dir = direction === 'asc' ? 1 : -1;
 
-    bags.sort((a, b) => {
+    items.sort((a, b) => {
       if (key === 'name') {
         return a.name.localeCompare(b.name) * dir;
       }
@@ -198,7 +266,9 @@ footer {
 
   function render() {
     listEl.innerHTML = '';
-    bags.forEach(bag => {
+    countEl.textContent = `${items.length} ${currentCategory.unit}`;
+
+    items.forEach(item => {
       const row = document.createElement('div');
       row.className = 'row';
 
@@ -207,17 +277,17 @@ footer {
 
       const brand = document.createElement('span');
       brand.className = 'brand';
-      brand.textContent = bag.brand;
+      brand.textContent = item.brand;
 
       const name = document.createElement('span');
       name.className = 'name';
-      name.textContent = bag.name;
+      name.textContent = item.name;
 
       const prices = document.createElement('div');
       prices.className = 'prices';
 
-      if (bag.links && bag.links.length > 0) {
-        bag.links.forEach(l => {
+      if (item.links && item.links.length > 0) {
+        item.links.forEach(l => {
           const link = document.createElement('a');
           link.href = l.u;
           link.target = '_blank';
@@ -249,15 +319,14 @@ footer {
         currentSort.key = key;
         currentSort.direction = 'asc';
       }
-      sortBags();
+      sortItems();
       updateIndicators();
       render();
     });
   });
 
-  sortBags();
-  updateIndicators();
-  render();
+  // Init
+  loadCategoryData();
 })();
 </script>
 </body>
