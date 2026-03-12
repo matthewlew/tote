@@ -117,18 +117,18 @@ main { padding: 0; }
   padding: 16px 20px;
   transition: all 0s; /* No soft transitions in brutalism */
 }
-.row:hover {
+.row:hover, .row.keyboard-focus {
   background: var(--ink);
   color: var(--bg);
 }
-.row:hover .brand { color: var(--bg); }
-.row:hover a { border-color: var(--bg); }
-.row:hover a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+.row:hover .brand, .row.keyboard-focus .brand { color: var(--bg); }
+.row:hover a, .row.keyboard-focus a { border-color: var(--bg); }
+.row:hover a:hover, .row.keyboard-focus a.focus-link { background: var(--accent); color: var(--ink); border-color: var(--accent); }
 
 .line { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: baseline; }
 .name { font-size: 1rem; }
 .brand { color: #555; }
-.row:hover .brand { color: #aaa; }
+.row:hover .brand, .row.keyboard-focus .brand { color: #aaa; }
 
 .prices { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .prices a {
@@ -140,9 +140,11 @@ main { padding: 0; }
   background: var(--bg);
   color: var(--ink);
 }
-.row:hover .prices a {
+.row:hover .prices a, .row.keyboard-focus .prices a {
   border-color: var(--bg);
 }
+.keyboard-hint { display: none; font-size: 0.8rem; opacity: 0.8; margin-left: 8px; }
+.row.keyboard-focus .keyboard-hint { display: inline; }
 .site { font-weight: bold; }
 .amount { }
 .ship { display: none; } /* Hide shipping for brutalist look */
@@ -178,6 +180,7 @@ footer {
 
 <main aria-label="Items list">
   <div class="header-row">
+    <span style="opacity: 0.6; margin-right: 12px; font-size: 0.8rem;">[↑] [↓] Navigate</span>
     <button type="button" class="header-label" data-sort="brand">
       <span>[b] Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
@@ -225,6 +228,7 @@ footer {
   let currentCategory = categories[0];
   let items = [];
   let currentSort = { key: 'brand', direction: 'asc' };
+  let selectedIndex = -1;
 
   function renderNav() {
     navEl.innerHTML = '';
@@ -274,6 +278,7 @@ footer {
     }
 
     currentSort = { key: 'brand', direction: 'asc' };
+    selectedIndex = -1;
     sortItems();
     updateIndicators();
     render();
@@ -316,9 +321,13 @@ footer {
     listEl.innerHTML = '';
     countEl.textContent = `${items.length} ${currentCategory.unit}`;
 
-    items.forEach(item => {
+    items.forEach((item, index) => {
       const row = document.createElement('div');
       row.className = 'row';
+      row.id = `row-${index}`;
+      if (index === selectedIndex) {
+        row.classList.add('keyboard-focus');
+      }
 
       const line = document.createElement('div');
       line.className = 'line';
@@ -335,11 +344,15 @@ footer {
       prices.className = 'prices';
 
       if (item.links && item.links.length > 0) {
-        item.links.forEach(l => {
+        item.links.forEach((l, i) => {
           const link = document.createElement('a');
           link.href = l.u;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
+
+          if (index === selectedIndex && i === 0) {
+            link.classList.add('focus-link');
+          }
 
           const site = document.createElement('span');
           site.className = 'site';
@@ -352,6 +365,13 @@ footer {
             amount.className = 'amount';
             amount.textContent = '$' + item.price.toLocaleString();
             link.appendChild(amount);
+          }
+
+          if (i === 0) {
+            const hint = document.createElement('span');
+            hint.className = 'keyboard-hint';
+            hint.textContent = '[Enter] Buy';
+            link.appendChild(hint);
           }
 
           prices.appendChild(link);
@@ -373,6 +393,7 @@ footer {
       currentSort.key = key;
       currentSort.direction = 'asc';
     }
+    selectedIndex = -1;
     sortItems();
     updateIndicators();
     render();
@@ -408,6 +429,29 @@ footer {
       handleSort('name');
     } else if (k === 'p') {
       handleSort('price');
+    }
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (selectedIndex < items.length - 1) {
+        selectedIndex++;
+        render();
+        document.getElementById(`row-${selectedIndex}`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (selectedIndex > 0) {
+        selectedIndex--;
+        render();
+        document.getElementById(`row-${selectedIndex}`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    } else if (e.key === 'Enter') {
+      if (selectedIndex >= 0 && selectedIndex < items.length) {
+        const item = items[selectedIndex];
+        if (item.links && item.links.length > 0) {
+          window.open(item.links[0].u, '_blank');
+        }
+      }
     }
   });
 
