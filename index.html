@@ -218,15 +218,9 @@ footer {
     { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items' },
     { id: 'books', name: 'Books', file: '/data/books.json', dataKey: 'books', unit: 'books' }
   ];
-  let data;
-  try {
-    const res = await fetch('./data/bags.json');
-    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-    data = await res.json();
-  } catch (err) {
-    console.error('failed to load data', err);
-    return;
-  }
+
+  // ⚡ Bolt Optimization: Cache category data to prevent redundant network requests
+  const categoryCache = {};
 
   let currentCategory = categories[0];
   let items = [];
@@ -258,16 +252,25 @@ footer {
   async function loadCategoryData() {
     renderNav();
     listEl.innerHTML = 'Loading...';
-    try {
-      const res = await fetch(currentCategory.file);
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-      const data = await res.json();
-      items = (data[currentCategory.dataKey] || []).slice();
-    } catch (err) {
-      console.error('failed to load data', err);
-      listEl.innerHTML = 'Error loading data.';
-      items = [];
-      return;
+
+    // ⚡ Bolt Optimization: Use cached data if available
+    if (categoryCache[currentCategory.id]) {
+      items = categoryCache[currentCategory.id].slice();
+    } else {
+      try {
+        const res = await fetch(currentCategory.file);
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        const data = await res.json();
+
+        const categoryItems = data[currentCategory.dataKey] || [];
+        categoryCache[currentCategory.id] = categoryItems;
+        items = categoryItems.slice();
+      } catch (err) {
+        console.error('failed to load data', err);
+        listEl.innerHTML = 'Error loading data.';
+        items = [];
+        return;
+      }
     }
 
     currentSort = { key: 'brand', direction: 'asc' };
