@@ -116,7 +116,8 @@ main { padding: 0; }
 
 .row {
   border-bottom: 1px solid var(--rule);
-  padding: 16px 20px;
+  padding: 12px 16px;
+  cursor: pointer;
   transition: all 0s; /* No soft transitions in brutalism */
 }
 .row:hover, .row:focus-visible {
@@ -131,18 +132,19 @@ main { padding: 0; }
 .row:hover a, .row:focus-visible a { border-color: var(--bg); }
 .row:hover a:hover, .row:focus-visible a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
 
-.line { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: baseline; }
+.line { display: flex; flex-wrap: nowrap; gap: 12px 16px; align-items: baseline; }
 .name { font-size: 1rem; font-weight: bold; }
 .brand { color: #555; }
 .row:hover .brand, .row:focus-visible .brand { color: #aaa; }
 
-.row-desc { margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
+.row-desc { display: none; margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
+.row.expanded .row-desc { display: block; }
 .row:hover .row-desc, .row:focus-visible .row-desc { color: #ccc; }
 
-.row-address { font-size: 0.85rem; color: #666; font-family: monospace; }
+.row-address { font-size: 0.85rem; color: #666; }
 .row:hover .row-address, .row:focus-visible .row-address { color: #ddd; }
 
-.prices { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.prices { display: flex; flex-wrap: nowrap; gap: 8px 16px; margin-left: auto; }
 .prices a {
   display: inline-flex;
   gap: 8px;
@@ -170,9 +172,10 @@ footer {
 }
 
 @media (max-width:600px) {
-  header, main .header-row, .row, footer { padding-left: 10px; padding-right: 10px; }
+  header, main .header-row, footer { padding-left: 10px; padding-right: 10px; }
   .meta { flex-direction: column; gap: 4px; }
   .meta span+span::before { display: none; }
+  .shortcut { display: none; }
 }
 </style>
 </head>
@@ -185,23 +188,23 @@ footer {
       <!-- Nav buttons will be injected here -->
     </nav>
     <div class="location-controls" style="display: flex; gap: 12px; align-items: center; margin-top: 10px;">
-      <button type="button" class="category-btn" id="locate-me-btn" aria-label="Locate Me">[l] Locate Me</button>
+      <button type="button" class="category-btn" id="locate-me-btn" aria-label="Locate Me"><span class="shortcut">[l] </span>Locate Me</button>
       <select id="neighborhood-select" class="category-btn" aria-label="Select Neighborhood">
         <option value="" disabled selected>Neighborhoods...</option>
       </select>
     </div>
   </div>
-  <span class="meta"><span id="hd-n"></span><span>[←/→] Cats</span><span>[↑/↓] Navigate</span><span>[Enter] Open</span><span>40+ sources</span><span>Mar 2025</span></span>
+  <span class="meta"><span id="hd-n"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
 </header>
 
 <main aria-label="Items list">
   <div class="header-row">
-    <button type="button" class="header-label" data-sort="distance">
-      <span>[d] Distance</span>
-      <span class="sort-indicator" data-indicator="distance">·</span>
+    <button type="button" class="header-label" data-sort="brand">
+      <span><span class="shortcut">[b] </span>Brand</span>
+      <span class="sort-indicator" data-indicator="brand">·</span>
     </button>
     <button type="button" class="header-label" data-sort="name">
-      <span>[t] Title</span>
+      <span><span class="shortcut">[t] </span>Title</span>
       <span class="sort-indicator" data-indicator="name">·</span>
     </button>
     <div class="header-spacer"></div>
@@ -276,7 +279,7 @@ footer {
       } else {
         btn.setAttribute('aria-pressed', 'false');
       }
-      btn.textContent = `[${index + 1}] ${cat.name}`;
+      btn.innerHTML = `<span class="shortcut">[${index + 1}] </span>${cat.name}`;
       btn.addEventListener('click', () => {
         if (cat.id !== currentCategory.id) {
           currentCategory = cat;
@@ -386,14 +389,15 @@ footer {
 
       if (item.address) {
           const link = document.createElement('a');
-          const encodedAddress = encodeURIComponent(item.name + ' ' + item.address);
+          const cleanedAddress = item.address.replace(/(?:Near\s+)?-?\d+\.\d+,\s*-?\d+\.\d+(?:,\s*)?/gi, '');
+          const encodedAddress = encodeURIComponent(item.name + ' ' + cleanedAddress);
           link.href = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
 
           const site = document.createElement('span');
           site.className = 'site';
-          site.textContent = (currentCategory.actionText || 'VISIT') + ': MAP';
+          site.textContent = 'Map';
 
           link.appendChild(site);
           prices.appendChild(link);
@@ -427,6 +431,7 @@ footer {
           line.appendChild(brand);
       }
       line.appendChild(prices);
+
       row.appendChild(line);
 
       if (item.description) {
@@ -435,6 +440,12 @@ footer {
         desc.textContent = item.description;
         row.appendChild(desc);
       }
+
+      row.addEventListener('click', (e) => {
+        // Ignore clicks on links
+        if (e.target.closest('a')) return;
+        row.classList.toggle('expanded');
+      });
 
       listEl.appendChild(row);
     });
@@ -533,7 +544,7 @@ footer {
   }
 
   function resetLocateBtn() {
-    locateMeBtn.textContent = '[l] Locate Me';
+    locateMeBtn.innerHTML = '<span class="shortcut">[l] </span>Locate Me';
     locateMeBtn.disabled = false;
   }
 
@@ -617,6 +628,12 @@ footer {
 
   // Init
   loadCategories();
+
+  // Set local time
+  document.getElementById('local-time').textContent = new Date().toLocaleString([], {
+    year: 'numeric', month: 'short', day: 'numeric',
+    hour: '2-digit', minute: '2-digit'
+  });
 })();
 </script>
 </body>
