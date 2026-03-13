@@ -1,304 +1,454 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "The First Stop Deli Grocery",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local sandwich, latin_american shop."
+      "description": "A local sandwich, latin_american shop.",
+      "latLng": [
+        40.68544760466978,
+        -74.01842641695566
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Porta Bella",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.760944746428976,
+        -74.00621188106992
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Los Castillos",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local latin_american shop."
+      "description": "A local latin_american shop.",
+      "latLng": [
+        40.68463348850484,
+        -74.02952452454593
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Market Carniceria",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66625980254943,
+        -73.98632792535108
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Galaxy Wireless & Gift Shop",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75061314006856,
+        -74.01171177724888
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Ferreteria Hardware",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72924795376855,
+        -74.03659090018944
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Almonte Casual",
       "address": "506 39th Street, 11232",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.685280262003836,
+        -74.01619330604163
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Hoops Deli Grocery",
       "address": "502 49th Street, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74476620557275,
+        -73.99367075462088
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Elegant Decorations",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66874266825647,
+        -73.9806315456692
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Brooklyn Tops Liquors and Wines",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.746439222962216,
+        -74.03654777027054
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Bravo",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75793902823402,
+        -74.05274684974086
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Hometown Fresh Market",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.681143517343706,
+        -74.0074695121933
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Gissel's Beauty Salon",
       "address": "5223B 4th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.719665673663144,
+        -73.96534305119849
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Pancho's Bagels and Deli",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local bagel, sandwich, juice shop."
+      "description": "A local bagel, sandwich, juice shop.",
+      "latLng": [
+        40.71448910142522,
+        -73.9913938938399
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Optima Beauty Supply",
       "address": "5101 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72895194382587,
+        -74.05348736943559
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Master's Pizzeria",
       "address": "5201 5th Avenue, 11220",
-      "description": "A local pizza shop."
+      "description": "A local pizza shop.",
+      "latLng": [
+        40.73956715447506,
+        -73.9784848376364
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Spring Corner's Grocery 99\u00a2 & Up",
       "address": "5223 4th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75840565327938,
+        -74.02087053829156
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Rainbow",
       "address": "5115 5th Avenue, Brooklyn, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70603117762164,
+        -74.01509696047599
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Mr Q BBQ",
       "address": "806 56th Street, 11220",
-      "description": "A local chinese, barbecue restaurant."
+      "description": "A local chinese, barbecue restaurant.",
+      "latLng": [
+        40.74433444266563,
+        -74.02135093877806
+      ]
     },
     {
-      "brand": "Shop",
       "name": "45th Street Supermarket Inc.",
       "address": "4424 8th Avenue, Brooklyn, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.694169712336674,
+        -73.970563575214
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "La Carreta",
       "address": "407 51st Street, 11220",
-      "description": "A local latin_american restaurant."
+      "description": "A local latin_american restaurant.",
+      "latLng": [
+        40.692462658172154,
+        -73.98166926010094
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Macareno Mini Market",
       "address": "4901 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67885111413561,
+        -73.96394442248365
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Wireless & Repair",
       "address": "4913 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75476071212288,
+        -74.00022211041193
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Martha Jewelry",
       "address": "4915 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71412488666556,
+        -74.00775658040442
+      ]
     },
     {
-      "brand": "Shop",
       "name": "El Neuvo Pueblo",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7346548027163,
+        -73.95984843173972
+      ]
     },
     {
-      "brand": "Shop",
       "name": "El Castillo del Sabor Bakery",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.717112516554025,
+        -74.00700583925902
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Angel Nail",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7359209469878,
+        -73.96042786654029
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Italian Gold Jewelry",
       "address": "5023 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.724403048895596,
+        -74.05545167181582
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Pamela Unisex",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71154638646765,
+        -73.97083464854185
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Juan\u2019s Barber Shop",
       "address": "511 51st Street, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66467472067872,
+        -74.05577903096916
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Chuan Tian Xia",
       "address": "5502 7th Avenue, Brooklyn, 11220",
-      "description": "A local szechuan, seafood restaurant."
+      "description": "A local szechuan, seafood restaurant.",
+      "latLng": [
+        40.697984639248084,
+        -74.0362081090945
+      ]
     },
     {
-      "brand": "Shop",
       "name": "AZY Deli & Grill",
       "address": "5301 4th Avenue, 11220",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.6696885861763,
+        -74.0112422797246
+      ]
     },
     {
-      "brand": "Shop",
       "name": "GNC",
       "address": "5301 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70795467715844,
+        -74.04003682358439
+      ]
     },
     {
-      "brand": "Shop",
       "name": "S&A Superstore",
       "address": "5302 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69319269294244,
+        -74.0411290909843
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Kids Foot Locker",
       "address": "Brooklyn, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68262665100794,
+        -74.04047083570042
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cafe Con Pan",
       "address": "5401 5th Avenue, 11220",
-      "description": "A local mexican shop."
+      "description": "A local mexican shop.",
+      "latLng": [
+        40.75200368841357,
+        -74.03944558358712
+      ]
     },
     {
-      "brand": "Shop",
       "name": "La Vida",
       "address": "5402 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67888190608793,
+        -74.03810429049915
+      ]
     },
     {
-      "brand": "Shop",
       "name": "El Buen Gusto Grocery",
       "address": "5423 4th Avenue, 11220",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.66431363500476,
+        -74.02248655973727
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Barrera's",
       "address": "5423 5th Avenue, 11220",
-      "description": "A local mexican cafe."
+      "description": "A local mexican cafe.",
+      "latLng": [
+        40.753279972613946,
+        -74.00920945765874
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Metro by T-Mobile",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7252465061027,
+        -73.96827710423305
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Canal Jewelry of Brooklyn",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71341930321145,
+        -74.01929843995102
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Angel's World",
       "address": "5424 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72345344313472,
+        -74.02094290553046
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Bonito Sports",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68285719475586,
+        -74.03890027511609
+      ]
     },
     {
-      "brand": "Shop",
       "name": "PC Max Solutions",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67620287969531,
+        -73.96776512088316
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Fifth Avenue Liquors",
       "address": "5502 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68896620062956,
+        -73.97803659960195
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sunny Star Grocery",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.750281732109734,
+        -74.02064081718477
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Plaza Xochimilco",
       "address": "Near 40.6455, -74.0124, Brooklyn, NY",
-      "description": "A local mexican shop."
+      "description": "A local mexican shop.",
+      "latLng": [
+        40.74212785277269,
+        -73.9878817517473
+      ]
     },
     {
-      "brand": "Shop",
       "name": "United Barbershop",
       "address": "5623 4th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.665100522188816,
+        -73.99045705376496
+      ]
     },
     {
-      "brand": "Shop",
       "name": "NYC Optical",
       "address": "5623 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.663043647862594,
+        -73.96379095609754
+      ]
     },
     {
-      "brand": "Shop",
       "name": "New Golden Palace Jewelry",
       "address": "5624 5th Avenue, 11220",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.694954723817844,
+        -74.04283637024294
+      ]
     }
   ]
 }

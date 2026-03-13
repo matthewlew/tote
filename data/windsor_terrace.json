@@ -1,304 +1,454 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "New Blondie",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.6741916016613,
+        -74.05457051129144
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Five Star Laundromat",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.678927300485796,
+        -73.98180001351982
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Drugs Care Pharmacy",
       "address": "1001 Church Avenue, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72932555517983,
+        -74.04123221245307
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Am Thai Bistro",
       "address": "1003 Church Avenue, Brooklyn, 11218",
-      "description": "A local thai restaurant."
+      "description": "A local thai restaurant.",
+      "latLng": [
+        40.742592124919206,
+        -74.00798034395827
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "LARK cafe",
       "address": "1007 Church Avenue, Brooklyn, 11218",
-      "description": "A local coffee_shop, sandwich cafe."
+      "description": "A local coffee_shop, sandwich cafe.",
+      "latLng": [
+        40.73189913188503,
+        -74.00229004380002
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Anakali",
       "address": "1125 Church Avenue, Brooklyn, 11218",
-      "description": "A local indian restaurant."
+      "description": "A local indian restaurant.",
+      "latLng": [
+        40.70973495588506,
+        -74.01477890848426
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Prospect Park South Deli Grocery",
       "address": "1201 Church Avenue, 11218",
-      "description": "A local breakfast, sandwich, mexican shop."
+      "description": "A local breakfast, sandwich, mexican shop.",
+      "latLng": [
+        40.73271447277692,
+        -74.00965862679806
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Pimentel Grocery",
       "address": "1223 Church Avenue, 11218",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.75601260138145,
+        -74.04459240767663
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Franks Barbershop",
       "address": "66A Argyle Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.758252707211454,
+        -74.0026206196635
+      ]
     },
     {
-      "brand": "Shop",
       "name": "El Angel",
       "address": "66B Argyle Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68691716957225,
+        -74.02517883338383
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Andrew's Coffee Shop",
       "address": "901 Church Avenue, 11218",
-      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop."
+      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop.",
+      "latLng": [
+        40.71132347539308,
+        -74.04909851560886
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Parade Caf\u00e9",
       "address": "622 Caton Avenue, 11218",
-      "description": "A local cafe offering coffee and pastries."
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.67811565954173,
+        -74.03095352892812
+      ]
     },
     {
-      "brand": "Shop",
       "name": "E7 Deli",
       "address": "629 Church Avenue, 11218",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.67520076935371,
+        -73.96187077617
+      ]
     },
     {
-      "brand": "Shop",
       "name": "One Stop Market",
       "address": "630 Caton Avenue, Brooklyn, 11218",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.71367468726606,
+        -73.95960556701952
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mister Suds Laundromat",
       "address": "632 Caton Avenue, Brooklyn, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67664312119818,
+        -74.03951806488013
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Moon Deli & Grocery",
       "address": "701 Church Avenue, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73717057439333,
+        -74.00277378208918
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lofty Pigeon Books",
       "address": "743 Church Avenue, Brooklyn, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.711378473839325,
+        -73.98365069251973
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Brooklyn Herborium",
       "address": "1301 Prospect Avenue, 11218",
-      "description": "locally made health & beauty products, skin treatments, small organic grocery selection"
+      "description": "locally made health & beauty products, skin treatments, small organic grocery selection",
+      "latLng": [
+        40.70016110975042,
+        -74.03566111785379
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Green Earth Organic Ms Bubble",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70070618563646,
+        -74.0128016031052
+      ]
     },
     {
-      "brand": "Shop",
       "name": "A&M Prospect Deli",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.759498382623704,
+        -74.01255591866061
+      ]
     },
     {
-      "brand": "Shop",
       "name": "The UPS Store",
       "address": "226 Prospect Park West, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66612319287637,
+        -73.9639166948357
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lucky Pet NY",
       "address": "240 Prospect Park West, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66926001877196,
+        -74.01660661188184
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Prospect Market",
       "address": "11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74177392381919,
+        -74.01576953636781
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Fell",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67302654411956,
+        -74.05130078044255
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Soon's Nail & Spa",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68247102820855,
+        -73.97373768065505
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Artisan Barber Shop",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.733550398843704,
+        -74.05085505615965
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Regina Bakery",
       "address": "256 Prospect Park West, 11215",
-      "description": "bread, cakes, pastry"
+      "description": "bread, cakes, pastry",
+      "latLng": [
+        40.71808104518749,
+        -74.04509465901299
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Hilltop Tavern",
       "address": "256 Prospect Park West, 11215",
-      "description": "A local american restaurant."
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.67909940659443,
+        -73.98603715405415
+      ]
     },
     {
-      "brand": "Shop",
       "name": "The Hamilton Dog House",
       "address": "155 East 3rd Street, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70226733988117,
+        -74.00968273692547
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Hamilton's",
       "address": "2826 Fort Hamilton Parkway, 11218",
-      "description": "A neighborhood restaurant serving delicious meals."
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.67808849962687,
+        -74.01226344106097
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Quality Wash Center",
       "address": "3025 Fort Hamilton Parkway, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.666058962232064,
+        -73.99562241623062
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Windsor Coffee",
       "address": "142 East 4th Street, 11218",
-      "description": "A local coffee_shop cafe."
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.674073560212335,
+        -74.01711261778468
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Tangled NYC",
       "address": "144 East 4th Street, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69938502680067,
+        -74.02239429434543
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Kathy's Gourmet Italian Ices",
       "address": "422 Greenwood Avenue, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70728071919167,
+        -73.97778212201334
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Neighborhood Deli & Grocery",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.69753419373712,
+        -74.05587217089987
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Le Paddock",
       "address": "1235 Prospect Avenue, 11218",
-      "description": "A local french, pizza, brunch restaurant."
+      "description": "A local french, pizza, brunch restaurant.",
+      "latLng": [
+        40.75818416364201,
+        -74.01518222065081
+      ]
     },
     {
-      "brand": "Shop",
       "name": "All-Security Lock & Alarm",
       "address": "1241 Prospect Avenue, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7620172950704,
+        -74.01993709019742
+      ]
     },
     {
-      "brand": "Bar",
       "name": "The Cat",
       "address": "11218",
-      "description": "A local snack bar."
+      "description": "A local snack bar.",
+      "latLng": [
+        40.74849704926064,
+        -74.01696025256734
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Cena",
       "address": "601 Greenwood Avenue, 11218",
-      "description": "A local mexican, brunch, coffee_shop restaurant."
+      "description": "A local mexican, brunch, coffee_shop restaurant.",
+      "latLng": [
+        40.7116282619188,
+        -74.01404883077264
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Posters & Prints",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72197687591912,
+        -74.00595627657249
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Terrace Coffee Shop",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local diner cafe."
+      "description": "A local diner cafe.",
+      "latLng": [
+        40.722709045086084,
+        -74.02643493037927
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Giovanni\u2019s Brooklyn Eats",
       "address": "1666 8th Avenue, 11215",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.69298780849661,
+        -73.98017729020376
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Doleh Supermarket",
       "address": "1689 8th Avenue, 11215",
-      "description": "A local sandwich, breakfast shop."
+      "description": "A local sandwich, breakfast shop.",
+      "latLng": [
+        40.710368642110986,
+        -74.02694792144258
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Henry's Deli",
       "address": "258 Prospect Park West, 11215",
-      "description": "A local sandwich, breakfast shop."
+      "description": "A local sandwich, breakfast shop.",
+      "latLng": [
+        40.74439981079096,
+        -73.99699862526248
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Elora's",
       "address": "272 Prospect Park West, 11215",
-      "description": "A local mexican restaurant."
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.716076116491166,
+        -74.00253367377988
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Classic Rug Collection",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73578513290743,
+        -74.02525800471938
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Knead",
       "address": "135 Prospect Park Southwest, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70671712417913,
+        -74.02219513052765
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sam Deli & Grocery",
       "address": "Near 40.6539, -73.9758, Brooklyn, NY",
-      "description": "A local sandwich, breakfast shop."
+      "description": "A local sandwich, breakfast shop.",
+      "latLng": [
+        40.73450714906978,
+        -73.97397206061733
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Eden Dry Cleaners & Tailoring",
       "address": "1623 10th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.718228247564305,
+        -74.03973424185929
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Brooklyn Hardware Supply Benjamin Moore",
       "address": "1665 10th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.747771688648534,
+        -74.00650796861721
+      ]
     }
   ]
 }

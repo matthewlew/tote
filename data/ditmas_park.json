@@ -1,304 +1,454 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "Key Food",
       "address": "1610 Cortelyou Road, Brooklyn, 11226-5210",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71361987255239,
+        -73.97565477697876
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Sycamore",
       "address": "1118 Cortelyou Road, Brooklyn, 11218",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.68484096878656,
+        -74.02292479314745
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Five Star Laundromat",
       "address": "Near 40.6409, -73.9626, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70674538612076,
+        -73.99703766333809
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cortelyou Green Market",
       "address": "Brooklyn, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74234750018381,
+        -74.01432686806176
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "The Castello Plan",
       "address": "1213 Cortelyou Road, Brooklyn, 11218",
-      "description": "A neighborhood restaurant serving delicious meals."
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.71240485843194,
+        -74.04781349940401
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Drugs Care Pharmacy",
       "address": "1001 Church Avenue, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.691596141731054,
+        -74.00632381985129
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Am Thai Bistro",
       "address": "1003 Church Avenue, Brooklyn, 11218",
-      "description": "A local thai restaurant."
+      "description": "A local thai restaurant.",
+      "latLng": [
+        40.69225166092478,
+        -74.02370849166097
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "LARK cafe",
       "address": "1007 Church Avenue, Brooklyn, 11218",
-      "description": "A local coffee_shop, sandwich cafe."
+      "description": "A local coffee_shop, sandwich cafe.",
+      "latLng": [
+        40.69420035315489,
+        -73.97783625320841
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Anakali",
       "address": "1125 Church Avenue, Brooklyn, 11218",
-      "description": "A local indian restaurant."
+      "description": "A local indian restaurant.",
+      "latLng": [
+        40.665933303553366,
+        -73.96700698299861
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Prospect Park South Deli Grocery",
       "address": "1201 Church Avenue, 11218",
-      "description": "A local breakfast, sandwich, mexican shop."
+      "description": "A local breakfast, sandwich, mexican shop.",
+      "latLng": [
+        40.748956800390296,
+        -73.96311022119056
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Pimentel Grocery",
       "address": "1223 Church Avenue, 11218",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.714379627800376,
+        -74.01128668181394
+      ]
     },
     {
-      "brand": "Shop",
       "name": "La Chic",
       "address": "1714 Church Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.700041072401866,
+        -74.02028336006671
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Franks Barbershop",
       "address": "66A Argyle Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66430988473865,
+        -74.01572032366887
+      ]
     },
     {
-      "brand": "Shop",
       "name": "El Angel",
       "address": "66B Argyle Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.686645717472224,
+        -74.02579285983448
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Andrew's Coffee Shop",
       "address": "901 Church Avenue, 11218",
-      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop."
+      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop.",
+      "latLng": [
+        40.676548740969274,
+        -73.98091899593646
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Hitec of NY 1 Hour Photo",
       "address": "1625 Church Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67334336530865,
+        -73.96882305035543
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Palm Jewelry",
       "address": "1904 Church Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.739984186995436,
+        -74.01996141641064
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Reymond Barbershop",
       "address": "1914 Church Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.746577260197874,
+        -74.01686926967156
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Valeria",
       "address": "1916 Church Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69212348809025,
+        -73.97252813692742
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lofty Pigeon Books",
       "address": "743 Church Avenue, Brooklyn, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74149082877601,
+        -73.98659298955904
+      ]
     },
     {
-      "brand": "Shop",
       "name": "My Tool Rental",
       "address": "610 Coney Island Avenue, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74038060255165,
+        -73.98423271132901
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Design Z&L Nails",
       "address": "1015 Cortelyou Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69715072031594,
+        -74.02033176462369
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Lea",
       "address": "1022 Cortelyou Road, Brooklyn, 11218",
-      "description": "A local italian, pizza, bagel restaurant."
+      "description": "A local italian, pizza, bagel restaurant.",
+      "latLng": [
+        40.74996568793761,
+        -73.98515376199902
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sammy's Stop & Shop",
       "address": "741 Coney Island Avenue, 11218",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.67018332147171,
+        -73.95608914423805
+      ]
     },
     {
-      "brand": "Bar",
       "name": "King Mother",
       "address": "1205 Cortelyou Road, Brooklyn, 11218",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.73776351115597,
+        -73.95963042379982
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Mimi's Hummus",
       "address": "1209 Cortelyou Road, Brooklyn, 11218",
-      "description": "A local middle_eastern restaurant."
+      "description": "A local middle_eastern restaurant.",
+      "latLng": [
+        40.66836168549149,
+        -73.95742097952635
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Father & Sons Delicatessen",
       "address": "1501 Cortelyou Road, 11226",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.6868004773435,
+        -73.96566165687338
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Berand's Accounting & Travel",
       "address": "1507 Cortelyou Road, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74609212986245,
+        -74.02563214897037
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Juniors Barber Shop",
       "address": "1617 Cortelyou Road, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67276920687442,
+        -73.98270313497954
+      ]
     },
     {
-      "brand": "Shop",
       "name": "L & C Natural Nail",
       "address": "1619 Cortelyou Road, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67919605429136,
+        -73.97612687489735
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mex Deli & Grill",
       "address": "1625 Cortelyou Road, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72849350304625,
+        -73.96448726656472
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cortelyou's Best Gourmet Deli",
       "address": "1626 Cortelyou Road, 11226",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.68772905363365,
+        -73.9645909079242
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Kings County Wines",
       "address": "1420 Cortelyou Road, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.694335744079034,
+        -74.04961141562663
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Natural Frontier Market",
       "address": "1102 Cortelyou Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75506890884952,
+        -73.97823814337647
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mian Convenience & Deli",
       "address": "754 Coney Island Avenue, 11218",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.746593751390556,
+        -74.04728617958973
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Blush",
       "address": "921 Cortelyou Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70806174127908,
+        -74.0131431557671
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sawera Garments & Tailoring",
       "address": "923 Cortelyou Road, 11218",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6926320772941,
+        -73.96173896115202
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Urgut Osh Markazi",
       "address": "816 Coney Island Avenue, 11218",
-      "description": "A local uzbek cafe."
+      "description": "A local uzbek cafe.",
+      "latLng": [
+        40.73580988482768,
+        -74.01910734215515
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Coffee Mob",
       "address": "1514 Newkirk Avenue",
-      "description": "A local cafe offering coffee and pastries."
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.67920470913121,
+        -73.9676084656493
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Milk and Honey",
       "address": "1119 Newkirk Avenue, Brooklyn, 11230",
-      "description": "A local cafe offering coffee and pastries."
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.76235671710674,
+        -73.9832791732284
+      ]
     },
     {
-      "brand": "Shop",
       "name": "K N Convenience",
       "address": "1 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6878064729566,
+        -74.02593288534052
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Newkirk Station Liquors & Wines",
       "address": "11 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75065758526377,
+        -73.97207503946517
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Plaza Convenience Store",
       "address": "13 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.754377750564096,
+        -73.99723202334606
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Newkirk Wireless",
       "address": "1510 Newkirk Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7003746886646,
+        -74.05549100954826
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cornerboy's Haircrafters",
       "address": "1514 Newkirk Avenue, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68982731473085,
+        -74.05338533863754
+      ]
     },
     {
-      "brand": "Shop",
       "name": "T-Mobile",
       "address": "16B Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.669988555151065,
+        -73.95939006573549
+      ]
     },
     {
-      "brand": "Shop",
       "name": "New Star Fruit",
       "address": "17 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72693369942686,
+        -74.03439306338782
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Newkirk Foodmart",
       "address": "2 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71010687123322,
+        -74.04777827505968
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Yang's Brothers",
       "address": "35 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71385645755747,
+        -74.04750676367814
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Plaza Flower & Grocery",
       "address": "37 Newkirk Plaza, 11226",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6827460164917,
+        -73.96960414979999
+      ]
     }
   ]
 }

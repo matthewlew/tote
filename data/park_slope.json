@@ -1,304 +1,454 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "Sit Still",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66364285956437,
+        -73.96189890782483
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Something Else On Fifth",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70501437446635,
+        -74.01591887036224
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Acme Pet Food",
       "address": "628 Vanderbilt Avenue, Brooklyn, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.740772318675575,
+        -74.01792774002948
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Zeno Nail Bar",
       "address": "369 9th Street, Brooklyn, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69041886556513,
+        -73.9846639850304
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Mezcal's",
       "address": "223 5th Avenue, 11215",
-      "description": "A local mexican restaurant."
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.69953383733969,
+        -74.03651823320419
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Shaking Crab",
       "address": "230 5th Avenue, 11215",
-      "description": "A local seafood restaurant."
+      "description": "A local seafood restaurant.",
+      "latLng": [
+        40.672033603839424,
+        -73.97830143398664
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Clever Blend",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local coffee_shop, ice_cream cafe."
+      "description": "A local coffee_shop, ice_cream cafe.",
+      "latLng": [
+        40.73964295205384,
+        -74.01101509370035
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Green Ivy",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local korean, sushi, breakfast, sandwich shop."
+      "description": "A local korean, sushi, breakfast, sandwich shop.",
+      "latLng": [
+        40.75510528468683,
+        -74.00877200536026
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Miti Miti",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local mexican restaurant."
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.7236301915175,
+        -74.02087941928649
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Flea",
       "address": "211 5th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74651218544065,
+        -74.02213091908013
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Associated Supermarket",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67797093322979,
+        -73.95831025539005
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Stone Park Cafe",
       "address": "324 5th Avenue, Brooklyn, 11215",
-      "description": "A local american, eclectic restaurant."
+      "description": "A local american, eclectic restaurant.",
+      "latLng": [
+        40.70825083376106,
+        -74.01617562295934
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Pep Boys",
       "address": "354 4th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70371472540914,
+        -73.98616992983145
+      ]
     },
     {
-      "brand": "Shop",
       "name": "B Central Market Place",
       "address": "271 Flatbush Avenue, Brooklyn, 11217",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.731425540475854,
+        -74.03879359376204
+      ]
     },
     {
-      "brand": "Bar",
       "name": "The Gate",
       "address": "321 5th Avenue, 11215",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.71523436943319,
+        -74.03098325833234
+      ]
     },
     {
-      "brand": "Bar",
       "name": "The Armory",
       "address": "149 4th Avenue, 11217",
-      "description": "A local charcuterie, snack bar."
+      "description": "A local charcuterie, snack bar.",
+      "latLng": [
+        40.69189124729133,
+        -74.03574454009468
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Advanced Eyecare",
       "address": "115 7th Avenue, Brooklyn, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68584184942545,
+        -74.0481820905069
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Casita of Brooklyn",
       "address": "318 11th Street, Brooklyn, 11215",
-      "description": "A local coffee_shop cafe."
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.68693085632032,
+        -74.01006650320407
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Katsuei",
       "address": "210 7th Avenue, 11215",
-      "description": "A local japanese restaurant."
+      "description": "A local japanese restaurant.",
+      "latLng": [
+        40.68314241376869,
+        -74.03961771325912
+      ]
     },
     {
-      "brand": "Shop",
       "name": "T&A Park Slope Deli & Grill",
       "address": "234 7th Avenue, 11215",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.70940313836613,
+        -74.02471670215283
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Hungry Ghost",
       "address": "337 5th Avenue, 11215",
-      "description": "A local cafe offering coffee and pastries."
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.68884301160714,
+        -74.02979822004953
+      ]
     },
     {
-      "brand": "Shop",
       "name": "5th & 5th Wellness",
       "address": "339 5th Street, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75269055845892,
+        -74.04788208467845
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Farm Shop Deli",
       "address": "357 5th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72742925331278,
+        -73.98663330808546
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Brooklyn Burgers & Beer",
       "address": "259 5th Avenue, 11215",
-      "description": "A local burger restaurant."
+      "description": "A local burger restaurant.",
+      "latLng": [
+        40.7256361475445,
+        -74.04493840650764
+      ]
     },
     {
-      "brand": "Shop",
       "name": "5th Ave. Gourmet Delight",
       "address": "270 5th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.724349534365054,
+        -74.04430649350356
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Velvette Brew Espresso Bar",
       "address": "279 5th Avenue, Brooklyn, 11215",
-      "description": "A local cafe offering coffee and pastries."
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.748450655720696,
+        -74.00744647786868
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Luna's Tire Shop",
       "address": "Near 40.6720, -73.9778, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73570800844328,
+        -74.0086346658912
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sandwich Factory",
       "address": "336 Butler Street, 11217",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.73094026090138,
+        -74.00620621379866
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Kick Axe",
       "address": "622 Degraw Street, 11217",
-      "description": "A local pizza bar."
+      "description": "A local pizza bar.",
+      "latLng": [
+        40.68415515409691,
+        -73.99251780319062
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Room No. 205",
       "address": "205 8th Street, 11215",
-      "description": "A local coffee_shop, sandwich cafe."
+      "description": "A local coffee_shop, sandwich cafe.",
+      "latLng": [
+        40.73486764611959,
+        -73.9765211339254
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Staples",
       "address": "348 4th Avenue, Brooklyn, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69995334052189,
+        -73.9602998763936
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Gowanus Convenience",
       "address": "414 4th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67914974219325,
+        -74.05036265000165
+      ]
     },
     {
-      "brand": "Shop",
       "name": "True Clean",
       "address": "416 4th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.667895362210324,
+        -74.03426274549916
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mercado Central",
       "address": "252 3rd Avenue, 11215",
-      "description": "A local spanish, sandwich, tapas shop."
+      "description": "A local spanish, sandwich, tapas shop.",
+      "latLng": [
+        40.73928902592693,
+        -73.98828847555264
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Carlos Repair @ Ridge",
       "address": "264 3rd Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68842918369791,
+        -73.97357407215274
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Bol\u00e9 Road Textiles",
       "address": "271 3rd Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75617746924185,
+        -73.97935218615527
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Caf\u00e9 Mars",
       "address": "272 3rd Avenue, 11215",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.70557663708067,
+        -74.03161697989857
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sixteen Mill Bakeshop",
       "address": "552 Union Street, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74032522502216,
+        -74.04382163467295
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sara June",
       "address": "620 Union Street, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.753448109867584,
+        -74.03921706050384
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "al di la Trattoria",
       "address": "248 5th Avenue, 11215",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.744804535913914,
+        -74.03155869723044
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Premium Goods",
       "address": "252 5th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69299077826872,
+        -74.0437022131053
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Aesop",
       "address": "225 5th Avenue, Brooklyn, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72325913886084,
+        -73.99017431733203
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Shanghai Spa",
       "address": "241 5th Avenue, 11215",
-      "description": "beauty salon doing nails, facials, massage, etc"
+      "description": "beauty salon doing nails, facials, massage, etc",
+      "latLng": [
+        40.667933490607325,
+        -73.993927913594
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sugaring NYC",
       "address": "100C 7th Avenue, 11215",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70433068307254,
+        -74.05304358128946
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Artesana Home",
       "address": "154 7th Avenue, 11215",
-      "description": "imported furniture, rugs, jewelry, incense"
+      "description": "imported furniture, rugs, jewelry, incense",
+      "latLng": [
+        40.71645892594569,
+        -74.03759725259926
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "The Boil Prime",
       "address": "242 Flatbush Avenue, 11217",
-      "description": "A local seafood restaurant."
+      "description": "A local seafood restaurant.",
+      "latLng": [
+        40.707690018663264,
+        -73.97748309917627
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Sky Ice",
       "address": "63 5th Avenue, 11217",
-      "description": "A local thai, ice_cream restaurant."
+      "description": "A local thai, ice_cream restaurant.",
+      "latLng": [
+        40.68307624376778,
+        -74.01887736353981
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Phobar",
       "address": "80 6th Avenue, 11217",
-      "description": "A local vietnamese restaurant."
+      "description": "A local vietnamese restaurant.",
+      "latLng": [
+        40.757308974810265,
+        -73.96972371017813
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Drop & Go Laundromat",
       "address": "99 5th Avenue, 11217",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.665665182948125,
+        -73.97668371998884
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Wild",
       "address": "148 5th Avenue, 11217",
-      "description": "A local american, pizza, brunch restaurant."
+      "description": "A local american, pizza, brunch restaurant.",
+      "latLng": [
+        40.70650442250131,
+        -73.97916904341496
+      ]
     }
   ]
 }

@@ -1,304 +1,454 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "Waverly Urban Market",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.707572313740826,
+        -73.99062834885126
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Waverly Candy & Deli",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local sandwich, breakfast shop."
+      "description": "A local sandwich, breakfast shop.",
+      "latLng": [
+        40.69250002349775,
+        -73.97262528606043
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Green Dry Cleaners",
       "address": "141 Greene Avenue, Brooklyn, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7278687485872,
+        -73.98431359790109
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Charming Nails",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7022248371428,
+        -73.96384534002688
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Blank Street Coffee",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local coffee_shop cafe."
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.70200822185077,
+        -74.05128733709904
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Bicycle Station",
       "address": "171 Park Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68473644664281,
+        -73.97851963264918
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Golden Ratio",
       "address": "216 1/2 Greene Avenue, 11238",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.73195233428127,
+        -74.02363588063014
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Graziella's",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local italian, pizza restaurant."
+      "description": "A local italian, pizza restaurant.",
+      "latLng": [
+        40.74725376612169,
+        -73.96764114632857
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Dannee Thai",
       "address": "433 DeKalb Avenue",
-      "description": "A local thai restaurant."
+      "description": "A local thai restaurant.",
+      "latLng": [
+        40.72916831342871,
+        -74.01150927322068
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Fulton Grand",
       "address": "439 Grand Avenue, Brooklyn",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.709193755354605,
+        -74.04114675058943
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cynergy Spa",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.685907804282444,
+        -74.0074968053333
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Bar Birba",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local italian, pizza bar."
+      "description": "A local italian, pizza bar.",
+      "latLng": [
+        40.68049050244547,
+        -73.97669317259118
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Green-Ville Garden",
       "address": "373 Myrtle Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.760836088937076,
+        -74.01784971627083
+      ]
     },
     {
-      "brand": "Shop",
       "name": "New Polish Nails",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7187450016478,
+        -74.04187140006368
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Eagles Convenience",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.683118497681825,
+        -74.02292682354933
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Do or Dive",
       "address": "1103 Bedford Avenue, 11216",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.755135293552506,
+        -74.05447901014888
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Luanne's",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local asian restaurant."
+      "description": "A local asian restaurant.",
+      "latLng": [
+        40.68355364037373,
+        -73.99513788683679
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Peckish",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local coffee_shop, breakfast, sandwich cafe."
+      "description": "A local coffee_shop, breakfast, sandwich cafe.",
+      "latLng": [
+        40.75106000763697,
+        -73.97706743631112
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Three Stars Laundromat",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73914201587839,
+        -74.04584169126252
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Osteria Brooklyn",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.67507357211821,
+        -74.00274370802688
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Doo's Barber Shop",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70816073374486,
+        -73.95652761237368
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Green in Brooklyn",
       "address": "432 Myrtle Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75067829875586,
+        -74.0133674694451
+      ]
     },
     {
-      "brand": "Shop",
       "name": "T-Mobile",
       "address": "436 Myrtle Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.706857836669485,
+        -73.95926727754104
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Myrtle Thai",
       "address": "438 Myrtle Avenue, 11205",
-      "description": "A local thai restaurant."
+      "description": "A local thai restaurant.",
+      "latLng": [
+        40.71856735519846,
+        -74.04362395099308
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Salon 718",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66691233199872,
+        -74.01995668853982
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Laundromat",
       "address": "200 Clinton Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.685928853775984,
+        -73.99215648458765
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Dekalb Convenience",
       "address": "249 DeKalb Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69186901949657,
+        -74.03567181982825
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "LaRina",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.72396027381106,
+        -74.01882139440995
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mr. Coco",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75952174660264,
+        -74.02039579272667
+      ]
     },
     {
-      "brand": "Shop",
       "name": "403 Myrtle Discount LIquor",
       "address": "403 Myrtle Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67649012556937,
+        -74.02386685536165
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lopez Family Market",
       "address": "173 Park Avenue, 11205",
-      "description": "A local latin_american, sandwich shop."
+      "description": "A local latin_american, sandwich shop.",
+      "latLng": [
+        40.716564535400956,
+        -74.01652055718385
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Genesis Salon",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69440308429051,
+        -74.05589159435611
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sujuk",
       "address": "185 DeKalb Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73559860468425,
+        -73.98657304382601
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Vino Bueno & Liqueur",
       "address": "187 DeKalb Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.729250407366834,
+        -74.0433821367213
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Evelina",
       "address": "211 DeKalb Avenue, 11205",
-      "description": "A local italian, brunch restaurant."
+      "description": "A local italian, brunch restaurant.",
+      "latLng": [
+        40.696539086476804,
+        -73.95736919284792
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Heritage Wines",
       "address": "229 DeKalb Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68200056023904,
+        -73.9664581898862
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Ten Colors Nail",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70099323844098,
+        -73.9850205364066
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Aymen Organic Mini Mart",
       "address": "320 Myrtle Avenue, 11205",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.735030830064545,
+        -74.02852518643142
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Fulton Nail Bar",
       "address": "Near 40.6896, -73.9660, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.718815468674634,
+        -73.97130111449052
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Bittersweet",
       "address": "180 DeKalb Avenue, 11205",
-      "description": "A local coffee_shop cafe."
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.684216865236294,
+        -73.9741316915239
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Fort Greene Food Market",
       "address": "186 DeKalb Avenue, 11205",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.690606130305866,
+        -73.98287144594583
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Sailor",
       "address": "228 DeKalb Avenue, 11205",
-      "description": "A neighborhood restaurant serving delicious meals."
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.69363210966465,
+        -73.98141226714277
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Mango Bay",
       "address": "271 Adelphi Street, 11205",
-      "description": "A local caribbean restaurant."
+      "description": "A local caribbean restaurant.",
+      "latLng": [
+        40.673472901524654,
+        -74.04050768185678
+      ]
     },
     {
-      "brand": "Shop",
       "name": "White Memorial Chapels",
       "address": "519 Clinton Avenue, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.759431322528854,
+        -73.9808061890043
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Belli Osteria",
       "address": "860 Fulton Street, 11238",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.70496260684782,
+        -73.96070089596209
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Wei's",
       "address": "884 Fulton Street, 11238",
-      "description": "A local chinese restaurant."
+      "description": "A local chinese restaurant.",
+      "latLng": [
+        40.714351427913286,
+        -73.98113192734039
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Studio Phenomenon",
       "address": "901 Atlantic Avenue, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.665157312534916,
+        -73.98378226513482
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Romantic Depot",
       "address": "906 Fulton Street, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.718787055539515,
+        -73.98979932348051
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Dr. Exotic",
       "address": "914 Fulton Street, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.688272055154854,
+        -73.97668788819509
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Blossom Nail & Spa",
       "address": "920 Fulton Street, Brooklyn, 11238",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74241683168564,
+        -74.04425165243295
+      ]
     }
   ]
 }
