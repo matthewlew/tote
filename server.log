@@ -1,11 +1,4 @@
-127.0.0.1 - - [12/Mar/2026 21:12:11] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:12:11] "GET /data/bags.json HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:12:11] "GET /fonts/FlorDeRuina-Semilla.woff2 HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:12:13] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:12:13] "GET /data/bags.json HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:12:13] "GET /fonts/FlorDeRuina-Semilla.woff2 HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:12:14] "GET /data/coffee.json HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:13:08] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:13:08] "GET /data/bags.json HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:13:08] "GET /fonts/FlorDeRuina-Semilla.woff2 HTTP/1.1" 200 -
-127.0.0.1 - - [12/Mar/2026 21:13:08] "GET /data/prospect_heights.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 05:42:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 05:42:04] "GET /data/bags.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 05:42:05] "GET /fonts/FlorDeRuina-Semilla.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 05:42:06] "GET /data/coffee.json HTTP/1.1" 200 -
