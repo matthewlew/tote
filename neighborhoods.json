@@ -1,23 +1,266 @@
 [
-    { "id": "prospect_heights", "name": "Prospect Heights", "file": "/data/prospect_heights.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6775, -73.9654] },
-    { "id": "williamsburg", "name": "Williamsburg", "file": "/data/williamsburg.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.7128, -73.9560] },
-    { "id": "park_slope", "name": "Park Slope", "file": "/data/park_slope.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6720, -73.9778] },
-    { "id": "bed_stuy", "name": "Bedford-Stuyvesant", "file": "/data/bed_stuy.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6872, -73.9418] },
-    { "id": "greenpoint", "name": "Greenpoint", "file": "/data/greenpoint.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.7302, -73.9540] },
-    { "id": "bushwick", "name": "Bushwick", "file": "/data/bushwick.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6958, -73.9171] },
-    { "id": "crown_heights", "name": "Crown Heights", "file": "/data/crown_heights.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6681, -73.9448] },
-    { "id": "dumbo", "name": "DUMBO", "file": "/data/dumbo.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.7033, -73.9881] },
-    { "id": "fort_greene", "name": "Fort Greene", "file": "/data/fort_greene.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6861, -73.9754] },
-    { "id": "cobble_hill", "name": "Cobble Hill", "file": "/data/cobble_hill.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6875, -73.9958] },
-    { "id": "brooklyn_heights", "name": "Brooklyn Heights", "file": "/data/brooklyn_heights.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6950, -73.9936] },
-    { "id": "carroll_gardens", "name": "Carroll Gardens", "file": "/data/carroll_gardens.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6805, -73.9981] },
-    { "id": "clinton_hill", "name": "Clinton Hill", "file": "/data/clinton_hill.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6896, -73.9660] },
-    { "id": "gowanus", "name": "Gowanus", "file": "/data/gowanus.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6731, -73.9902] },
-    { "id": "red_hook", "name": "Red Hook", "file": "/data/red_hook.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6734, -74.0093] },
-    { "id": "boerum_hill", "name": "Boerum Hill", "file": "/data/boerum_hill.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6845, -73.9856] },
-    { "id": "ditmas_park", "name": "Ditmas Park", "file": "/data/ditmas_park.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6409, -73.9626] },
-    { "id": "kensington", "name": "Kensington", "file": "/data/kensington.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6385, -73.9748] },
-    { "id": "windsor_terrace", "name": "Windsor Terrace", "file": "/data/windsor_terrace.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6539, -73.9758] },
-    { "id": "bay_ridge", "name": "Bay Ridge", "file": "/data/bay_ridge.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6262, -74.0320] },
-    { "id": "sunset_park", "name": "Sunset Park", "file": "/data/sunset_park.json", "dataKey": "places", "unit": "places", "actionText": "VISIT", "latLng": [40.6455, -74.0124] }
+    {
+        "id": "jasons_coffee",
+        "name": "Jason's Coffee",
+        "file": "/data/jasons_coffee.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.7128,
+            -74.006
+        ]
+    },
+    {
+        "id": "prospect_heights",
+        "name": "Prospect Heights",
+        "file": "/data/prospect_heights.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6775,
+            -73.9654
+        ]
+    },
+    {
+        "id": "williamsburg",
+        "name": "Williamsburg",
+        "file": "/data/williamsburg.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.7128,
+            -73.956
+        ]
+    },
+    {
+        "id": "park_slope",
+        "name": "Park Slope",
+        "file": "/data/park_slope.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.672,
+            -73.9778
+        ]
+    },
+    {
+        "id": "bed_stuy",
+        "name": "Bedford-Stuyvesant",
+        "file": "/data/bed_stuy.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6872,
+            -73.9418
+        ]
+    },
+    {
+        "id": "greenpoint",
+        "name": "Greenpoint",
+        "file": "/data/greenpoint.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.7302,
+            -73.954
+        ]
+    },
+    {
+        "id": "bushwick",
+        "name": "Bushwick",
+        "file": "/data/bushwick.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6958,
+            -73.9171
+        ]
+    },
+    {
+        "id": "crown_heights",
+        "name": "Crown Heights",
+        "file": "/data/crown_heights.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6681,
+            -73.9448
+        ]
+    },
+    {
+        "id": "dumbo",
+        "name": "DUMBO",
+        "file": "/data/dumbo.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.7033,
+            -73.9881
+        ]
+    },
+    {
+        "id": "fort_greene",
+        "name": "Fort Greene",
+        "file": "/data/fort_greene.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6861,
+            -73.9754
+        ]
+    },
+    {
+        "id": "cobble_hill",
+        "name": "Cobble Hill",
+        "file": "/data/cobble_hill.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6875,
+            -73.9958
+        ]
+    },
+    {
+        "id": "brooklyn_heights",
+        "name": "Brooklyn Heights",
+        "file": "/data/brooklyn_heights.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.695,
+            -73.9936
+        ]
+    },
+    {
+        "id": "carroll_gardens",
+        "name": "Carroll Gardens",
+        "file": "/data/carroll_gardens.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6805,
+            -73.9981
+        ]
+    },
+    {
+        "id": "clinton_hill",
+        "name": "Clinton Hill",
+        "file": "/data/clinton_hill.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6896,
+            -73.966
+        ]
+    },
+    {
+        "id": "gowanus",
+        "name": "Gowanus",
+        "file": "/data/gowanus.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6731,
+            -73.9902
+        ]
+    },
+    {
+        "id": "red_hook",
+        "name": "Red Hook",
+        "file": "/data/red_hook.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6734,
+            -74.0093
+        ]
+    },
+    {
+        "id": "boerum_hill",
+        "name": "Boerum Hill",
+        "file": "/data/boerum_hill.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6845,
+            -73.9856
+        ]
+    },
+    {
+        "id": "ditmas_park",
+        "name": "Ditmas Park",
+        "file": "/data/ditmas_park.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6409,
+            -73.9626
+        ]
+    },
+    {
+        "id": "kensington",
+        "name": "Kensington",
+        "file": "/data/kensington.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6385,
+            -73.9748
+        ]
+    },
+    {
+        "id": "windsor_terrace",
+        "name": "Windsor Terrace",
+        "file": "/data/windsor_terrace.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6539,
+            -73.9758
+        ]
+    },
+    {
+        "id": "bay_ridge",
+        "name": "Bay Ridge",
+        "file": "/data/bay_ridge.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6262,
+            -74.032
+        ]
+    },
+    {
+        "id": "sunset_park",
+        "name": "Sunset Park",
+        "file": "/data/sunset_park.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.6455,
+            -74.0124
+        ]
+    }
 ]

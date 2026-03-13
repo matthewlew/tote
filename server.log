@@ -1,6 +1,0 @@
-127.0.0.1 - - [13/Mar/2026 19:28:47] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [13/Mar/2026 19:28:47] "GET /neighborhoods.json HTTP/1.1" 200 -
-127.0.0.1 - - [13/Mar/2026 19:28:47] "GET /fonts/FlorDeRuina-Semilla.woff2 HTTP/1.1" 200 -
-127.0.0.1 - - [13/Mar/2026 19:28:47] "GET /data/prospect_heights.json HTTP/1.1" 200 -
-127.0.0.1 - - [13/Mar/2026 19:28:48] "GET /data/williamsburg.json HTTP/1.1" 200 -
-127.0.0.1 - - [13/Mar/2026 19:28:50] "GET /about.html HTTP/1.1" 200 -

@@ -1,0 +1,124 @@
+{
+  "places": [
+    {
+      "brand": "Coffee Shop",
+      "name": "Romeo and Juliet Colombian Coffee",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Le Cafe Coffee",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Frisson Espresso 44",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Stone Street Caf\u00e9 - Broome St.",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Poetica Coffee",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "The Duo Coffee & Cocktail Bar",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Dawn\u2019s Til Dusk",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "DNA Coffee Lounge | Laptop Friendly Cafe & Event Space",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Asano",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Hungry Cafe",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Pairing",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Seven Grams Caffe",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Still Life",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Dark Matter Coffee - Adios Amigos",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "OASES",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "The Oasis Cafe",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Qahwah Valley 1st Ave",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Velvette Black",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Cafe Regular",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Mori Coffee",
+      "address": "New York, NY",
+      "description": "A local coffee shop."
+    }
+  ]
+}
