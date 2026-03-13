@@ -8,10 +8,17 @@ def run():
         page.goto('http://localhost:3000')
         page.wait_for_timeout(500)
 
-        # Press '2'
-        page.keyboard.press('2')
+        # Press 'ArrowRight'
+        page.keyboard.press('ArrowRight')
         page.wait_for_timeout(500)
-        page.screenshot(path='screenshot_after_keypress.png')
+        page.screenshot(path='screenshot_after_keypress_1.png')
+
+        # Press 'ArrowDown' multiple times to focus a row
+        page.keyboard.press('ArrowDown')
+        page.wait_for_timeout(100)
+        page.keyboard.press('ArrowDown')
+        page.wait_for_timeout(500)
+        page.screenshot(path='screenshot_after_keypress_2.png')
 
         browser.close()
 
