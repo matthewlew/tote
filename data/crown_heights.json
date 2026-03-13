@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Bar",
+      "name": "Super Power",
+      "links": [
+        {
+          "u": "https://www.superpowerbrooklyn.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chavela's",
+      "links": [
+        {
+          "u": "https://chavelasnyc.com/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

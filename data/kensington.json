@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "To B Thai",
+      "links": [
+        {
+          "u": "https://tobthai.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Coffee Shop",
+      "name": "Der Pioneer",
+      "links": [
+        {
+          "u": "https://derpioneer.com/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

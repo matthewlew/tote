@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "Tacos El Bronco",
+      "links": [
+        {
+          "u": "https://tacoselbronco.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Park",
+      "name": "Sunset Park",
+      "links": [
+        {
+          "u": "https://www.nycgovparks.org/parks/sunset-park",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

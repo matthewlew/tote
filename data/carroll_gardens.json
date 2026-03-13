@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "Frankies 457 Spuntino",
+      "links": [
+        {
+          "u": "https://frankies457.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Bakery",
+      "name": "Court Street Grocers",
+      "links": [
+        {
+          "u": "https://www.courtstreetgrocers.com/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

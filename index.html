@@ -169,6 +169,7 @@ footer {
 <header>
   <div class="header-top">
     <span>TOTE</span>
+    <div style="font-size: 0.8rem; margin-top: 5px; color: #555;">[←] [→] Navigate Categories</div>
     <nav class="category-nav" id="category-nav" aria-label="Categories">
       <!-- Nav buttons will be injected here -->
     </nav>
@@ -528,6 +529,20 @@ footer {
       handleSort('price');
     } else if (k === 'l') {
       handleLocateMe();
+    } else if (k === 'arrowright') {
+      const idx = categories.findIndex(c => c.id === currentCategory.id);
+      if (idx !== -1) {
+        const nextIdx = (idx + 1) % categories.length;
+        currentCategory = categories[nextIdx];
+        loadCategoryData();
+      }
+    } else if (k === 'arrowleft') {
+      const idx = categories.findIndex(c => c.id === currentCategory.id);
+      if (idx !== -1) {
+        const prevIdx = (idx - 1 + categories.length) % categories.length;
+        currentCategory = categories[prevIdx];
+        loadCategoryData();
+      }
     }
   });
 

@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Coffee Shop",
+      "name": "Devocion",
+      "links": [
+        {
+          "u": "https://www.devocion.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lilia",
+      "links": [
+        {
+          "u": "https://www.lilianewyork.com/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

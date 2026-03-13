@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "La Vara",
+      "links": [
+        {
+          "u": "https://www.lavarany.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Bookstore",
+      "name": "Books Are Magic",
+      "links": [
+        {
+          "u": "https://www.booksaremagic.net/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

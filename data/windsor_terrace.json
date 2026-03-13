@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "The Double Windsor",
+      "links": [
+        {
+          "u": "https://thedoublewindsor.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Cafe",
+      "name": "Krupa Grocery",
+      "links": [
+        {
+          "u": "https://krupagrocery.com/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }

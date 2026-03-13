@@ -1,3 +1,24 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "Hometown Bar-B-Que",
+      "links": [
+        {
+          "u": "https://hometownbbq.com/",
+          "r": "Website"
+        }
+      ]
+    },
+    {
+      "brand": "Bar",
+      "name": "Sunny's Bar",
+      "links": [
+        {
+          "u": "https://www.sunnysredhook.com/",
+          "r": "Website"
+        }
+      ]
+    }
+  ]
 }
