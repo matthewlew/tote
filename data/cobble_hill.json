@@ -1,286 +1,427 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "Alnoor Boutique",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68815605183327,
+        -74.01956252965135
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Boutros",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local middle_eastern, american, brunch restaurant."
+      "description": "A local middle_eastern, american, brunch restaurant.",
+      "latLng": [
+        40.706800521416795,
+        -74.03741011909929
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Mocha Hookah",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local middle_eastern, breakfast cafe."
+      "description": "A local middle_eastern, breakfast cafe.",
+      "latLng": [
+        40.711448424340055,
+        -73.99294496182817
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Dellapietras",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68414793660332,
+        -73.99401972118771
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Mikado",
       "address": "177 Atlantic Avenue, Brooklyn, 11201",
-      "description": "A local sushi restaurant."
+      "description": "A local sushi restaurant.",
+      "latLng": [
+        40.7508877357529,
+        -73.99749806931759
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Duman Home",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "bedding, towels, housewares, gifts"
+      "description": "bedding, towels, housewares, gifts",
+      "latLng": [
+        40.71435934302472,
+        -74.02059604354176
+      ]
     },
     {
-      "brand": "Shop",
       "name": "A+ Skincare & Lash",
       "address": "113 Pacific Street, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71831278279571,
+        -74.0056824392179
+      ]
     },
     {
-      "brand": "Shop",
       "name": "My Favorite Cleaners & Laundry",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68501914671377,
+        -74.03362280711816
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Damascus Bread & Bakery",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72232878483218,
+        -74.03210764757969
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Bubbly Laundromat",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6981503855629,
+        -73.97465968990792
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Park Natural Foods",
       "address": "350 Court Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69600115180864,
+        -74.05491585507112
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Brooklyn General Store",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "yarn and fabric, knitting and sewing supplies and classes"
+      "description": "yarn and fabric, knitting and sewing supplies and classes",
+      "latLng": [
+        40.67626133155642,
+        -74.0143018141009
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Osaka",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local japanese restaurant."
+      "description": "A local japanese restaurant.",
+      "latLng": [
+        40.714250265477986,
+        -74.05077909919012
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Punto Ottico",
       "address": "206 Court Street, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70917600654559,
+        -74.01099363633071
+      ]
     },
     {
-      "brand": "Shop",
       "name": "David's Barber Shop",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.745234789559504,
+        -74.02015818263916
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Layla Jones",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local pizza, italian restaurant."
+      "description": "A local pizza, italian restaurant.",
+      "latLng": [
+        40.67921919413911,
+        -74.00779927167301
+      ]
     },
     {
-      "brand": "Shop",
       "name": "The Six Bells",
       "address": "221 Court Street, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67532239487177,
+        -74.05506773999633
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Bagel Cafe",
       "address": "200 Clinton Street, 11201",
-      "description": "A local bagel, breakfast, sandwich, salad cafe."
+      "description": "A local bagel, breakfast, sandwich, salad cafe.",
+      "latLng": [
+        40.69199630385817,
+        -73.95887567608598
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Tripoli",
       "address": "156 Atlantic Avenue, 11201",
-      "description": "A local lebanese restaurant."
+      "description": "A local lebanese restaurant.",
+      "latLng": [
+        40.67551185993438,
+        -74.01590115960387
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Buzzy",
       "address": "137 Court Street, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.714720026319576,
+        -74.05206055910242
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Felice",
       "address": "84 Montague Street, Brooklyn, 11201",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.66954324506068,
+        -73.97464887901947
+      ]
     },
     {
-      "brand": "Shop",
       "name": "CVS Pharmacy",
       "address": "156 Henry Street, Brooklyn, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.694592340265736,
+        -74.04403571271885
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Newsstand",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75018355990356,
+        -73.99680607026511
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Bareburger",
       "address": "149 Court Street, 11201",
-      "description": "A local burger restaurant."
+      "description": "A local burger restaurant.",
+      "latLng": [
+        40.70399978199732,
+        -73.9905598311552
+      ]
     },
     {
-      "brand": "Shop",
       "name": "The Shade Store",
       "address": "167 Court Street, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.673290169840975,
+        -74.03459853498279
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Marco Polo Ristorante",
       "address": "345 Court Street, Brooklyn, 11231",
-      "description": "A local italian restaurant."
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.688395759983315,
+        -74.01696172690934
+      ]
     },
     {
-      "brand": "Shop",
       "name": "2nd Street",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72429417568606,
+        -73.99228317426639
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Nabila's",
       "address": "248 Court Street, 11201",
-      "description": "A local lebanese restaurant."
+      "description": "A local lebanese restaurant.",
+      "latLng": [
+        40.677214494438005,
+        -74.04347720741515
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Awash Ethiopian Restaurant",
       "address": "242 Court Street, 11201",
-      "description": "A local ethiopian restaurant."
+      "description": "A local ethiopian restaurant.",
+      "latLng": [
+        40.73864904921341,
+        -74.00756276778287
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Moo Burger",
       "address": "240 Court Street, 11201",
-      "description": "A local burger restaurant."
+      "description": "A local burger restaurant.",
+      "latLng": [
+        40.6942120983475,
+        -73.97460939326695
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Ruben Liquors",
       "address": "241 Court Street, Brooklyn, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.711673432756655,
+        -73.98384486561126
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Henry St. Mini Mart",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75155614933721,
+        -74.04965523465852
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cobble Nails & Spa",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74321792080113,
+        -73.98940579907803
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cobble Hill Deli",
       "address": "493 Henry Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73805153563351,
+        -74.00335661578406
+      ]
     },
     {
-      "brand": "Shop",
       "name": "MozzLab",
       "address": "502 Henry Street, 11231",
-      "description": "A local italian, sandwich shop."
+      "description": "A local italian, sandwich shop.",
+      "latLng": [
+        40.71588175259364,
+        -74.04454216379975
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Garden Gourmet Deli & Grill",
       "address": "531 Henry Street, 11231",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.6800900591722,
+        -74.03724147368526
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Laundromat",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6641058816071,
+        -73.99298365248283
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Smith Convenience",
       "address": "98 Smith Street, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74781845538604,
+        -73.99953775160222
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Tipsy Grape",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local charcuterie, snack bar."
+      "description": "A local charcuterie, snack bar.",
+      "latLng": [
+        40.750868847336235,
+        -73.99661976388495
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Smith Gourmet Deli",
       "address": "126 Smith Street, 11201",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.68021083713689,
+        -73.99013152106384
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Fox & Jane Salon",
       "address": "Near 40.6875, -73.9958, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69036095696735,
+        -74.05263273523035
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Salter House",
       "address": "119 Atlantic Avenue, 11201",
-      "description": "A local coffee_shop cafe."
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.7548300432367,
+        -73.96247021675556
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Brooklyn Heights Deli",
       "address": "292 Henry Street, 11201",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.75667040266188,
+        -73.99823587928769
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Dilj\u0101n",
       "address": "330 Hicks Street, 11201",
-      "description": "A local afghan, pastry cafe."
+      "description": "A local afghan, pastry cafe.",
+      "latLng": [
+        40.73579320130375,
+        -74.01903306526715
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Hatchet Outdoor Supply Company",
       "address": "77 Atlantic Avenue, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69560062465253,
+        -74.04656465793964
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Diem Eatery",
       "address": "79 Atlantic Avenue, 11201",
-      "description": "A local vietnamese, sandwich cafe."
+      "description": "A local vietnamese, sandwich cafe.",
+      "latLng": [
+        40.72663314524308,
+        -73.98903986621164
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Antik",
       "address": "89 Atlantic Avenue, 11201",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.701746388703185,
+        -74.0223287960498
+      ]
     }
   ]
 }

@@ -1,784 +1,1174 @@
 {
   "places": [
     {
-      "brand": "Coffee Shop",
       "name": "COPPA",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.72558199211443,
+        -73.97980476679398
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "The Duo Coffee & Cocktail Bar",
       "address": "New York, NY",
-      "description": "A quiet spot to enjoy a cup of coffee."
+      "description": "A quiet spot to enjoy a cup of coffee.",
+      "latLng": [
+        40.70393717742144,
+        -73.99087977327665
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Tsutaya Books Daikanyama",
       "address": "New York, NY",
-      "description": "A great place to grab a latte."
+      "description": "A great place to grab a latte.",
+      "latLng": [
+        40.72578745964573,
+        -74.0265252017722
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Partners Coffee \u2014 Cafe & Roastery",
       "address": "New York, NY",
-      "description": "Stop by Partners Coffee \u2014 Cafe & Roastery for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Partners Coffee \u2014 Cafe & Roastery for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.673557871607336,
+        -74.0035213933456
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Brooklyn Public Library - Greenpoint Branch",
       "address": "New York, NY",
-      "description": "Stop by Brooklyn Public Library - Greenpoint Branch for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Brooklyn Public Library - Greenpoint Branch for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.75534903872216,
+        -73.95953868054188
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Moka & Co",
       "address": "New York, NY",
-      "description": "A modern coffee bar with a great selection of roasts."
+      "description": "A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.76090684803214,
+        -73.99999638591375
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Bibliotheque",
       "address": "New York, NY",
-      "description": "A cozy coffee shop."
+      "description": "A cozy coffee shop.",
+      "latLng": [
+        40.69441133720756,
+        -74.03498840657214
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Caf\u00e9-Flor",
       "address": "New York, NY",
-      "description": "Stop by Caf\u00e9-Flor for a great cup of coffee. A great place to grab a latte."
+      "description": "Stop by Caf\u00e9-Flor for a great cup of coffee. A great place to grab a latte.",
+      "latLng": [
+        40.6943047112299,
+        -73.96040180827231
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Hungry Cafe",
       "address": "New York, NY",
-      "description": "Stop by Hungry Cafe for a great cup of coffee. A cozy coffee shop."
+      "description": "Stop by Hungry Cafe for a great cup of coffee. A cozy coffee shop.",
+      "latLng": [
+        40.75991907638989,
+        -74.03856794114178
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Cafe Regular",
       "address": "New York, NY",
-      "description": "Stop by Cafe Regular for a great cup of coffee. A quiet spot to enjoy a cup of coffee."
+      "description": "Stop by Cafe Regular for a great cup of coffee. A quiet spot to enjoy a cup of coffee.",
+      "latLng": [
+        40.74858239454625,
+        -74.04775511484137
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Ole & Steen",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.72253592557178,
+        -74.04828643195474
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Vineapple",
       "address": "New York, NY",
-      "description": "Stop by Vineapple for a great cup of coffee. A charming cafe offering artisanal coffee."
+      "description": "Stop by Vineapple for a great cup of coffee. A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.73006005015029,
+        -73.97382569680418
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Ana\u00efs",
       "address": "New York, NY",
-      "description": "Stop by Ana\u00efs for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by Ana\u00efs for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.76237185048054,
+        -74.04224095694221
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "D\u00e9butea Brooklyn",
       "address": "New York, NY",
-      "description": "Stop by D\u00e9butea Brooklyn for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by D\u00e9butea Brooklyn for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.75144398502957,
+        -73.98316626418344
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "St Kilda Coffee",
       "address": "New York, NY",
-      "description": "A quiet spot to enjoy a cup of coffee."
+      "description": "A quiet spot to enjoy a cup of coffee.",
+      "latLng": [
+        40.75542407426884,
+        -73.97421974595144
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "VERVE COFFEE ROASTERS EBISU",
       "address": "New York, NY",
-      "description": "An inviting cafe for working and sipping coffee."
+      "description": "An inviting cafe for working and sipping coffee.",
+      "latLng": [
+        40.67965870497524,
+        -74.04356926003138
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Interlude Coffee & Tea",
       "address": "New York, NY",
-      "description": "Famous for its specialty coffee drinks."
+      "description": "Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.71287480974485,
+        -73.97837280794211
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "OASES",
       "address": "New York, NY",
-      "description": "A popular spot for espresso and pastries."
+      "description": "A popular spot for espresso and pastries.",
+      "latLng": [
+        40.75399172571007,
+        -74.02687256454803
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Charlotte Cafe",
       "address": "New York, NY",
-      "description": "Stop by Charlotte Cafe for a great cup of coffee. A bustling coffee shop in the heart of the city."
+      "description": "Stop by Charlotte Cafe for a great cup of coffee. A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.737540212363356,
+        -73.96804474078272
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Beanchain Coffee",
       "address": "New York, NY",
-      "description": "A modern coffee bar with a great selection of roasts."
+      "description": "A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.68566588775083,
+        -73.99919205475722
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Beanmonger Coffee",
       "address": "New York, NY",
-      "description": "Stop by Beanmonger Coffee for a great cup of coffee. A cozy coffee shop."
+      "description": "Stop by Beanmonger Coffee for a great cup of coffee. A cozy coffee shop.",
+      "latLng": [
+        40.737307443546534,
+        -74.00594389852944
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Coffee Project New York | Hell's Kitchen",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.72895480082653,
+        -74.03479109702931
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Milk & Pull Bed Stuy",
       "address": "New York, NY",
-      "description": "A great cafe to meet friends or read a book."
+      "description": "A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.703887172265404,
+        -74.02686737536368
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Arlo NoMad",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.70840592974351,
+        -73.994152282999
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Now or Never Coffee",
       "address": "New York, NY",
-      "description": "Stop by Now or Never Coffee for a great cup of coffee. A wonderful local cafe."
+      "description": "Stop by Now or Never Coffee for a great cup of coffee. A wonderful local cafe.",
+      "latLng": [
+        40.730689397445985,
+        -73.98162846523711
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Remi43 Flower & Coffee",
       "address": "New York, NY",
-      "description": "A friendly neighborhood coffee shop."
+      "description": "A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.696446045114705,
+        -73.99571535901057
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Gotham Cafe",
       "address": "New York, NY",
-      "description": "Stop by Gotham Cafe for a great cup of coffee. A great place to grab a latte."
+      "description": "Stop by Gotham Cafe for a great cup of coffee. A great place to grab a latte.",
+      "latLng": [
+        40.68249750130139,
+        -73.98031066472755
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "787 Coffee",
       "address": "New York, NY",
-      "description": "Stop by 787 Coffee for a great cup of coffee. A cozy coffee shop."
+      "description": "Stop by 787 Coffee for a great cup of coffee. A cozy coffee shop.",
+      "latLng": [
+        40.755083724764354,
+        -73.97279796890514
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Stumptown Coffee Roasters",
       "address": "New York, NY",
-      "description": "Famous for its specialty coffee drinks."
+      "description": "Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.755291999935245,
+        -74.02895112495565
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Corto",
       "address": "New York, NY",
-      "description": "Stop by Corto for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Corto for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.74787314639874,
+        -73.9808829914977
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Blue Bottle Coffee - Shibuya Cafe",
       "address": "New York, NY",
-      "description": "A friendly neighborhood coffee shop."
+      "description": "A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.68484944354172,
+        -74.04746808967137
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "MJ (Manny Janeth) Caf\u00e9",
       "address": "New York, NY",
-      "description": "An inviting cafe for working and sipping coffee."
+      "description": "An inviting cafe for working and sipping coffee.",
+      "latLng": [
+        40.7133968639689,
+        -73.95893482335325
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Salt Lake Roasting Co.",
       "address": "New York, NY",
-      "description": "A friendly neighborhood coffee shop."
+      "description": "A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.748787035802884,
+        -74.05175963891891
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Streamer Coffee Company Nakameguro",
       "address": "New York, NY",
-      "description": "A bustling coffee shop in the heart of the city."
+      "description": "A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.75320612331469,
+        -74.02181847762476
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Verve Coffee Roasters",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.69193484385654,
+        -74.01316984262408
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Cafe Cotton Bean",
       "address": "New York, NY",
-      "description": "Stop by Cafe Cotton Bean for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Cafe Cotton Bean for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.75479488755121,
+        -73.97414152677648
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Paper Sons Cafe",
       "address": "New York, NY",
-      "description": "Stop by Paper Sons Cafe for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Paper Sons Cafe for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.74268583956667,
+        -73.95624765791183
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Cinico Coffee Company",
       "address": "New York, NY",
-      "description": "Stop by Cinico Coffee Company for a great cup of coffee. A local favorite for coffee."
+      "description": "Stop by Cinico Coffee Company for a great cup of coffee. A local favorite for coffee.",
+      "latLng": [
+        40.68603531773334,
+        -73.96541779792089
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Blue Bottle Coffee - Daikan-yama Cafe",
       "address": "New York, NY",
-      "description": "A great place to grab a latte."
+      "description": "A great place to grab a latte.",
+      "latLng": [
+        40.68704107242153,
+        -73.98306633332199
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "renewfinds",
       "address": "New York, NY",
-      "description": "Known for excellent cold brew and relaxed vibes."
+      "description": "Known for excellent cold brew and relaxed vibes.",
+      "latLng": [
+        40.66503274916872,
+        -73.99794170143439
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Qahwah Valley 1st Ave",
       "address": "New York, NY",
-      "description": "Stop by Qahwah Valley 1st Ave for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Qahwah Valley 1st Ave for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.69310367911994,
+        -74.02599046639136
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Irving Farm Coffee",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.71522737549426,
+        -74.00939578886303
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Moshava Coffee",
       "address": "New York, NY",
-      "description": "Stop by Moshava Coffee for a great cup of coffee. A bustling coffee shop in the heart of the city."
+      "description": "Stop by Moshava Coffee for a great cup of coffee. A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.68907014726689,
+        -73.9639799857946
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Haraz Coffee House",
       "address": "New York, NY",
-      "description": "Famous for its specialty coffee drinks."
+      "description": "Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.704384917962415,
+        -73.96986731120762
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Rawbean Coffee",
       "address": "New York, NY",
-      "description": "A friendly neighborhood coffee shop."
+      "description": "A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.71001767442659,
+        -73.961015669483
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Mya Coffee, Bakery and Wine Bar",
       "address": "New York, NY",
-      "description": "A bustling coffee shop in the heart of the city."
+      "description": "A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.74614201369859,
+        -74.01874444830383
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Butler Bakeshop & Espresso Bar",
       "address": "New York, NY",
-      "description": "A popular spot for espresso and pastries."
+      "description": "A popular spot for espresso and pastries.",
+      "latLng": [
+        40.75730940265133,
+        -74.02331554649084
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Capital One Caf\u00e9",
       "address": "New York, NY",
-      "description": "Stop by Capital One Caf\u00e9 for a great cup of coffee. A modern coffee bar with a great selection of roasts."
+      "description": "Stop by Capital One Caf\u00e9 for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.66600088690167,
+        -73.96825009512399
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Publik Coffee Roasters",
       "address": "New York, NY",
-      "description": "A bustling coffee shop in the heart of the city."
+      "description": "A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.75374871559379,
+        -74.0251598376704
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Sammy L Coffee",
       "address": "New York, NY",
-      "description": "A charming cafe offering artisanal coffee."
+      "description": "A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.71251485695945,
+        -74.01365112474518
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Madame Bont\u00e9 Caf\u00e9",
       "address": "New York, NY",
-      "description": "Stop by Madame Bont\u00e9 Caf\u00e9 for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Madame Bont\u00e9 Caf\u00e9 for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.741734691438964,
+        -74.04727255419215
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Ace Hotel New York",
       "address": "New York, NY",
-      "description": "A local favorite for coffee."
+      "description": "A local favorite for coffee.",
+      "latLng": [
+        40.667847903602656,
+        -73.96307166478185
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "fontainhas + (/du.kaan/)",
       "address": "New York, NY",
-      "description": "Stop by fontainhas + (/du.kaan/) for a great cup of coffee. A great place to grab a latte."
+      "description": "Stop by fontainhas + (/du.kaan/) for a great cup of coffee. A great place to grab a latte.",
+      "latLng": [
+        40.71857707492824,
+        -74.0339716696677
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Easy Victor Cafe",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.761198075349036,
+        -74.03241169338116
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Stone Street Caf\u00e9 - Broome St.",
       "address": "New York, NY",
-      "description": "A modern coffee bar with a great selection of roasts."
+      "description": "A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.69100637688422,
+        -73.9966562412072
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Asano",
       "address": "New York, NY",
-      "description": "A modern coffee bar with a great selection of roasts."
+      "description": "A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.73788946046535,
+        -74.03495739092143
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Amano Cafe",
       "address": "New York, NY",
-      "description": "Stop by Amano Cafe for a great cup of coffee. A great place to grab a latte."
+      "description": "Stop by Amano Cafe for a great cup of coffee. A great place to grab a latte.",
+      "latLng": [
+        40.75997400442592,
+        -73.97454400271526
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Partners Coffee - West Village",
       "address": "New York, NY",
-      "description": "Stop by Partners Coffee - West Village for a great cup of coffee. A local favorite for coffee."
+      "description": "Stop by Partners Coffee - West Village for a great cup of coffee. A local favorite for coffee.",
+      "latLng": [
+        40.70929990547779,
+        -74.03290127901376
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Trunk",
       "address": "New York, NY",
-      "description": "Stop by Trunk for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Trunk for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.73515538699204,
+        -73.99891696952646
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "PublicUs",
       "address": "New York, NY",
-      "description": "A friendly neighborhood coffee shop."
+      "description": "A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.69205006832762,
+        -73.99967971399116
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Saturn Road",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.70375193199607,
+        -73.96979769188965
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Streamer Coffee Company Shibuya",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.67758159826018,
+        -73.9741587911414
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Poetica Coffee",
       "address": "New York, NY",
-      "description": "A popular spot for espresso and pastries."
+      "description": "A popular spot for espresso and pastries.",
+      "latLng": [
+        40.754475950952504,
+        -74.0039664396135
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Common",
       "address": "New York, NY",
-      "description": "Stop by Common for a great cup of coffee. A modern coffee bar with a great selection of roasts."
+      "description": "Stop by Common for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.6705339221348,
+        -74.00814508059197
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Gotan",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.70958604199711,
+        -74.03190918084707
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Caffe Duetto",
       "address": "New York, NY",
-      "description": "Stop by Caffe Duetto for a great cup of coffee. A perfect spot for a morning coffee run."
+      "description": "Stop by Caffe Duetto for a great cup of coffee. A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.68587119314207,
+        -74.01028956264643
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Roots Coffee Salt Lake City",
       "address": "New York, NY",
-      "description": "Stop by Roots Coffee Salt Lake City for a great cup of coffee. A cozy coffee shop."
+      "description": "Stop by Roots Coffee Salt Lake City for a great cup of coffee. A cozy coffee shop.",
+      "latLng": [
+        40.67940943769888,
+        -73.96075736103833
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "PlantShed Cafe",
       "address": "New York, NY",
-      "description": "Stop by PlantShed Cafe for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by PlantShed Cafe for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.70427982919407,
+        -73.97383816617545
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Whistle & Fizz",
       "address": "New York, NY",
-      "description": "Stop by Whistle & Fizz for a great cup of coffee. A perfect spot for a morning coffee run."
+      "description": "Stop by Whistle & Fizz for a great cup of coffee. A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.67572931905855,
+        -73.9711537767683
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Ludlow Coffee Supply",
       "address": "New York, NY",
-      "description": "Stop by Ludlow Coffee Supply for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by Ludlow Coffee Supply for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.695715119832826,
+        -73.99850124921308
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "The Oasis Cafe",
       "address": "New York, NY",
-      "description": "A popular spot for espresso and pastries."
+      "description": "A popular spot for espresso and pastries.",
+      "latLng": [
+        40.71771992654648,
+        -73.95848335251614
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Roasted COFFEE LABORATORY Shibuya Jinnnan store",
       "address": "New York, NY",
-      "description": "A local favorite for coffee."
+      "description": "A local favorite for coffee.",
+      "latLng": [
+        40.73641634269968,
+        -74.05502073978829
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Coffee Garden",
       "address": "New York, NY",
-      "description": "Stop by Coffee Garden for a great cup of coffee. A quiet spot to enjoy a cup of coffee."
+      "description": "Stop by Coffee Garden for a great cup of coffee. A quiet spot to enjoy a cup of coffee.",
+      "latLng": [
+        40.677644020636926,
+        -74.03329279679043
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Romeo and Juliet Colombian Coffee",
       "address": "New York, NY",
-      "description": "Stop by Romeo and Juliet Colombian Coffee for a great cup of coffee. An inviting cafe for working and sipping coffee."
+      "description": "Stop by Romeo and Juliet Colombian Coffee for a great cup of coffee. An inviting cafe for working and sipping coffee.",
+      "latLng": [
+        40.684380918312236,
+        -73.96286750324559
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Essex Market",
       "address": "New York, NY",
-      "description": "Famous for its specialty coffee drinks."
+      "description": "Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.76245670425267,
+        -74.02430442159951
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "DNA Coffee Lounge | Laptop Friendly Cafe & Event Space",
       "address": "New York, NY",
-      "description": "A great cafe to meet friends or read a book."
+      "description": "A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.72953837267502,
+        -73.99484046537974
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Frisson Espresso 44",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.670069013264616,
+        -73.9674291313618
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Bean & Bean Chelsea",
       "address": "New York, NY",
-      "description": "Stop by Bean & Bean Chelsea for a great cup of coffee. A wonderful local cafe."
+      "description": "Stop by Bean & Bean Chelsea for a great cup of coffee. A wonderful local cafe.",
+      "latLng": [
+        40.70791455853358,
+        -74.05533001934626
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Think Coffee",
       "address": "New York, NY",
-      "description": "A great place to grab a latte."
+      "description": "A great place to grab a latte.",
+      "latLng": [
+        40.71927236742671,
+        -74.01612270086892
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Blue Bottle Coffee - Roppongi Cafe",
       "address": "New York, NY",
-      "description": "Famous for its specialty coffee drinks."
+      "description": "Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.67430263940718,
+        -73.99055596969534
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Coffee Project New York | Fort Greene",
       "address": "New York, NY",
-      "description": "Stop by Coffee Project New York | Fort Greene for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by Coffee Project New York | Fort Greene for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.683225277280975,
+        -74.0497301840952
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Dawn\u2019s Til Dusk",
       "address": "New York, NY",
-      "description": "A great cafe to meet friends or read a book."
+      "description": "A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.674542573315655,
+        -74.03693230803707
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Slate Cafe NoMad",
       "address": "New York, NY",
-      "description": "A bustling coffee shop in the heart of the city."
+      "description": "A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.66498025936061,
+        -74.01217972403168
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Le Cafe Coffee",
       "address": "New York, NY",
-      "description": "Stop by Le Cafe Coffee for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Le Cafe Coffee for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.71640192953466,
+        -74.0518421128493
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Oslo Coffee Roasters (West Village)",
       "address": "New York, NY",
-      "description": "Stop by Oslo Coffee Roasters (West Village) for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Oslo Coffee Roasters (West Village) for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.761848357660774,
+        -74.03665009658441
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Dialogue Coffee & Flowers",
       "address": "New York, NY",
-      "description": "Famous for its specialty coffee drinks."
+      "description": "Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.75196689203959,
+        -74.04959466375126
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "TALEA Beer Co.",
       "address": "New York, NY",
-      "description": "A cozy coffee shop."
+      "description": "A cozy coffee shop.",
+      "latLng": [
+        40.71903305823973,
+        -73.95987249036679
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Seven Grams Caffe",
       "address": "New York, NY",
-      "description": "Stop by Seven Grams Caffe for a great cup of coffee. A modern coffee bar with a great selection of roasts."
+      "description": "Stop by Seven Grams Caffe for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.72319733777484,
+        -74.04629972470377
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Dark Matter Coffee - Adios Amigos",
       "address": "New York, NY",
-      "description": "Stop by Dark Matter Coffee - Adios Amigos for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Dark Matter Coffee - Adios Amigos for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.670038356563644,
+        -73.97874263369438
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Connel Coffee",
       "address": "New York, NY",
-      "description": "A friendly neighborhood coffee shop."
+      "description": "A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.68800441157634,
+        -73.9843405980198
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "VALLEY PARK STAND",
       "address": "New York, NY",
-      "description": "Stop by VALLEY PARK STAND for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by VALLEY PARK STAND for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.70024749556989,
+        -74.03393657864581
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Georgie\u2019s Cafe & Bar",
       "address": "New York, NY",
-      "description": "A local favorite for coffee."
+      "description": "A local favorite for coffee.",
+      "latLng": [
+        40.732582665229145,
+        -73.97356262760782
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Felix Roasting Co.",
       "address": "New York, NY",
-      "description": "Stop by Felix Roasting Co. for a great cup of coffee. A charming cafe offering artisanal coffee."
+      "description": "Stop by Felix Roasting Co. for a great cup of coffee. A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.71207636129421,
+        -74.01441107569944
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "La Colombe Coffee Workshop",
       "address": "New York, NY",
-      "description": "A local favorite for coffee."
+      "description": "A local favorite for coffee.",
+      "latLng": [
+        40.68618259259724,
+        -73.97351634043689
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Ace Hotel Brooklyn",
       "address": "New York, NY",
-      "description": "Stop by Ace Hotel Brooklyn for a great cup of coffee. A friendly neighborhood coffee shop."
+      "description": "Stop by Ace Hotel Brooklyn for a great cup of coffee. A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.70021299785974,
+        -74.0422665289111
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Seedhouse",
       "address": "New York, NY",
-      "description": "Stop by Seedhouse for a great cup of coffee. A great place to grab a latte."
+      "description": "Stop by Seedhouse for a great cup of coffee. A great place to grab a latte.",
+      "latLng": [
+        40.696467844019544,
+        -73.9807434549631
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Monkey Tiger",
       "address": "New York, NY",
-      "description": "Stop by Monkey Tiger for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by Monkey Tiger for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.71482333652286,
+        -73.97619408063902
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Mori Coffee",
       "address": "New York, NY",
-      "description": "Stop by Mori Coffee for a great cup of coffee. A great place to grab a latte."
+      "description": "Stop by Mori Coffee for a great cup of coffee. A great place to grab a latte.",
+      "latLng": [
+        40.710232711133884,
+        -74.02755652469749
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Thayer",
       "address": "New York, NY",
-      "description": "Stop by Thayer for a great cup of coffee. Known for excellent cold brew and relaxed vibes."
+      "description": "Stop by Thayer for a great cup of coffee. Known for excellent cold brew and relaxed vibes.",
+      "latLng": [
+        40.66612007364337,
+        -73.97908310922821
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Boris & Horton",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.746576847116884,
+        -74.02487010882928
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Stripes Wine Bar & Cafe",
       "address": "New York, NY",
-      "description": "Stop by Stripes Wine Bar & Cafe for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Stripes Wine Bar & Cafe for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.709414271873726,
+        -74.02673596300183
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Dayglow",
       "address": "New York, NY",
-      "description": "A popular spot for espresso and pastries."
+      "description": "A popular spot for espresso and pastries.",
+      "latLng": [
+        40.691060787273265,
+        -73.995814269321
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Gregorys Coffee",
       "address": "New York, NY",
-      "description": "A popular spot for espresso and pastries."
+      "description": "A popular spot for espresso and pastries.",
+      "latLng": [
+        40.74229761792028,
+        -73.97024755680661
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Perch by WOODBERRY COFFEE Daikanyama",
       "address": "New York, NY",
-      "description": "Stop by Perch by WOODBERRY COFFEE Daikanyama for a great cup of coffee. A modern coffee bar with a great selection of roasts."
+      "description": "Stop by Perch by WOODBERRY COFFEE Daikanyama for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.680621676269006,
+        -73.98588055143588
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Roast8ry Coffee Flagship Store",
       "address": "New York, NY",
-      "description": "A modern coffee bar with a great selection of roasts."
+      "description": "A modern coffee bar with a great selection of roasts.",
+      "latLng": [
+        40.67727286918349,
+        -74.02531657627571
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Conwell Coffee & Cocktail Hall",
       "address": "New York, NY",
-      "description": "Stop by Conwell Coffee & Cocktail Hall for a great cup of coffee. A popular spot for espresso and pastries."
+      "description": "Stop by Conwell Coffee & Cocktail Hall for a great cup of coffee. A popular spot for espresso and pastries.",
+      "latLng": [
+        40.69627937291697,
+        -74.02280263695279
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Velvette Black",
       "address": "New York, NY",
-      "description": "A cozy coffee shop."
+      "description": "A cozy coffee shop.",
+      "latLng": [
+        40.678976412679084,
+        -73.97441124826346
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "CoffeeShop | Bakery + Micro-Roastery",
       "address": "New York, NY",
-      "description": "A great cafe to meet friends or read a book."
+      "description": "A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.68085816559005,
+        -74.04037928364032
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Sweetleaf Coffee Roasters",
       "address": "New York, NY",
-      "description": "A bustling coffee shop in the heart of the city."
+      "description": "A bustling coffee shop in the heart of the city.",
+      "latLng": [
+        40.73850093048122,
+        -74.05155394685579
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Sahola Cafe",
       "address": "New York, NY",
-      "description": "A great place to grab a latte."
+      "description": "A great place to grab a latte.",
+      "latLng": [
+        40.73833967674169,
+        -74.0170817234414
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "outro nyc",
       "address": "New York, NY",
-      "description": "A charming cafe offering artisanal coffee."
+      "description": "A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.672361131935475,
+        -73.98224222579084
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Telegraphe Cafe.",
       "address": "New York, NY",
-      "description": "Stop by Telegraphe Cafe. for a great cup of coffee. A local favorite for coffee."
+      "description": "Stop by Telegraphe Cafe. for a great cup of coffee. A local favorite for coffee.",
+      "latLng": [
+        40.70068457813979,
+        -73.98076122321949
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Da Legna at Nolo",
       "address": "New York, NY",
-      "description": "Stop by Da Legna at Nolo for a great cup of coffee. A great cafe to meet friends or read a book."
+      "description": "Stop by Da Legna at Nolo for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.742664432252255,
+        -74.04509455296191
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "designers collab.",
       "address": "New York, NY",
-      "description": "A charming cafe offering artisanal coffee."
+      "description": "A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.688536368763735,
+        -74.04518538510308
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Urbana Cafe and Gallery",
       "address": "New York, NY",
-      "description": "Stop by Urbana Cafe and Gallery for a great cup of coffee. A charming cafe offering artisanal coffee."
+      "description": "Stop by Urbana Cafe and Gallery for a great cup of coffee. A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.689737423825854,
+        -73.9740922110867
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Devoci\u00f3n",
       "address": "New York, NY",
-      "description": "A great place to grab a latte."
+      "description": "A great place to grab a latte.",
+      "latLng": [
+        40.73490073243491,
+        -73.96594159724418
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Sightglass Coffee",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.73793318556739,
+        -74.0392169302705
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "GATHER espresso & wine bar",
       "address": "New York, NY",
-      "description": "Known for excellent cold brew and relaxed vibes."
+      "description": "Known for excellent cold brew and relaxed vibes.",
+      "latLng": [
+        40.695589064116845,
+        -74.051101288861
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Pairing",
       "address": "New York, NY",
-      "description": "Stop by Pairing for a great cup of coffee. A friendly neighborhood coffee shop."
+      "description": "Stop by Pairing for a great cup of coffee. A friendly neighborhood coffee shop.",
+      "latLng": [
+        40.748095862442455,
+        -73.95945675962129
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Paper Coffee",
       "address": "New York, NY",
-      "description": "Stop by Paper Coffee for a great cup of coffee. A wonderful local cafe."
+      "description": "Stop by Paper Coffee for a great cup of coffee. A wonderful local cafe.",
+      "latLng": [
+        40.74211268956637,
+        -74.04950640447115
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "King's Street Coffee",
       "address": "New York, NY",
-      "description": "A wonderful local cafe."
+      "description": "A wonderful local cafe.",
+      "latLng": [
+        40.66338767316479,
+        -74.016949297408
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Still Life",
       "address": "New York, NY",
-      "description": "Stop by Still Life for a great cup of coffee. Known for excellent cold brew and relaxed vibes."
+      "description": "Stop by Still Life for a great cup of coffee. Known for excellent cold brew and relaxed vibes.",
+      "latLng": [
+        40.72942857966115,
+        -73.9566691622748
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "GOOD SOUND COFFEE",
       "address": "New York, NY",
-      "description": "Stop by GOOD SOUND COFFEE for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by GOOD SOUND COFFEE for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.662841537734074,
+        -73.96043612750772
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Brooklyn Tea",
       "address": "New York, NY",
-      "description": "A great place to grab a latte."
+      "description": "A great place to grab a latte.",
+      "latLng": [
+        40.686270202660765,
+        -74.03331817904368
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Caf\u00e9-Flor / Bar 21",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.67790936466003,
+        -74.02870825461218
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Barnes & Noble",
       "address": "New York, NY",
-      "description": "Known for excellent cold brew and relaxed vibes."
+      "description": "Known for excellent cold brew and relaxed vibes.",
+      "latLng": [
+        40.728707529441934,
+        -73.9890850801886
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Coffee Project New York | Chelsea",
       "address": "New York, NY",
-      "description": "A charming cafe offering artisanal coffee."
+      "description": "A charming cafe offering artisanal coffee.",
+      "latLng": [
+        40.72100878838266,
+        -73.9686676149734
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "JOE & THE JUICE",
       "address": "New York, NY",
-      "description": "A great cafe to meet friends or read a book."
+      "description": "A great cafe to meet friends or read a book.",
+      "latLng": [
+        40.74921351816457,
+        -74.02881722071932
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Semicolon Cafe",
       "address": "New York, NY",
-      "description": "Stop by Semicolon Cafe for a great cup of coffee. Famous for its specialty coffee drinks."
+      "description": "Stop by Semicolon Cafe for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "latLng": [
+        40.73443745629543,
+        -73.95858144773607
+      ]
     },
     {
-      "brand": "Coffee Shop",
       "name": "Blue Bottle Coffee",
       "address": "New York, NY",
-      "description": "A perfect spot for a morning coffee run."
+      "description": "A perfect spot for a morning coffee run.",
+      "latLng": [
+        40.742322418216645,
+        -73.98709860094688
+      ]
     }
   ]
 }

@@ -1,304 +1,454 @@
 {
   "places": [
     {
-      "brand": "Restaurant",
       "name": "The Good Fork",
       "address": "391 Van Brunt Street, Brooklyn, 11231",
-      "description": "A local korean, american restaurant."
+      "description": "A local korean, american restaurant.",
+      "latLng": [
+        40.750594216080124,
+        -73.96903536663648
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Brooklyn Ice House",
       "address": "318 Van Brunt Street, 11231",
-      "description": "A local burger, sandwich bar."
+      "description": "A local burger, sandwich bar.",
+      "latLng": [
+        40.759312376422066,
+        -74.05501828912442
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Chelsea Garden Center Red Hook",
       "address": "444 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.670689669363675,
+        -74.03783308310729
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Bush Deli",
       "address": "507 Clinton Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70948904778509,
+        -74.02893302480373
+      ]
     },
     {
-      "brand": "Shop",
       "name": "ACQ Bread",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69270021778953,
+        -74.01890321756845
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Line Bagels",
       "address": "476 Smith Street, 11231",
-      "description": "A local bagel, breakfast, sandwich, salad shop."
+      "description": "A local bagel, breakfast, sandwich, salad shop.",
+      "latLng": [
+        40.696165807868155,
+        -73.98123705420903
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "6 Restaurant",
       "address": "481 Court Street, 11231",
-      "description": "A local american restaurant."
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.74508098022934,
+        -73.96300049887672
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Wi Nail & Spa",
       "address": "490 Court Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70802329092859,
+        -74.02338645109461
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Willy Deli & Grill",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local sandwich, breakfast shop."
+      "description": "A local sandwich, breakfast shop.",
+      "latLng": [
+        40.74008156533399,
+        -74.0250176518893
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "El Mate",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local argentinian restaurant."
+      "description": "A local argentinian restaurant.",
+      "latLng": [
+        40.7080568171558,
+        -74.01048232307137
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Atelier Ariana",
       "address": "478 Smith Street, Brooklyn, 11231",
-      "description": "A local breakfast, coffee_shop, french cafe."
+      "description": "A local breakfast, coffee_shop, french cafe.",
+      "latLng": [
+        40.73012165091339,
+        -74.01831069150495
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Viva Mexico Tire Shop",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.675617184711484,
+        -73.98477167988
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Aboodies",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68203110561077,
+        -74.04424956651224
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Loafers Cocktail Bar",
       "address": "517 Court Street, 11231",
-      "description": "A local snack bar."
+      "description": "A local snack bar.",
+      "latLng": [
+        40.75666092983592,
+        -73.99170446821084
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Santo Br\u00faklin",
       "address": "548 Court Street, Brooklyn, 11231",
-      "description": "A local brazilian restaurant."
+      "description": "A local brazilian restaurant.",
+      "latLng": [
+        40.677270378356525,
+        -74.0053895779337
+      ]
     },
     {
-      "brand": "Shop",
       "name": "New Image Beauty Salon",
       "address": "547 Court Street, Brooklyn, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.740170038266434,
+        -74.01800073714816
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cacao Prieto",
       "address": "218 Conover Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69144678635086,
+        -73.96631647399538
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Tamani Food",
       "address": "572 Smith Street, 11231",
-      "description": "importer of Georgian foods"
+      "description": "importer of Georgian foods",
+      "latLng": [
+        40.74844633620511,
+        -74.04690163104914
+      ]
     },
     {
-      "brand": "Shop",
       "name": "La Luz",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.695694573272434,
+        -74.05436561951933
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Lundy Bros.",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local seafood, american restaurant."
+      "description": "A local seafood, american restaurant.",
+      "latLng": [
+        40.67752347454097,
+        -73.99070601431816
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Tony\u2019s Deli & Grocery",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.71819845740158,
+        -73.98378744206549
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Van Brunt Market",
       "address": "322 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67014965913688,
+        -74.04577573923626
+      ]
     },
     {
-      "brand": "Shop",
       "name": "O & B Hair Salon",
       "address": "324 Van Brunt Street, Brooklyn, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73778199517828,
+        -74.03507923375169
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Civic Studio",
       "address": "352 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.691199718024635,
+        -74.01249387696228
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Erie Basin",
       "address": "388 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70213882698903,
+        -74.05535028008643
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Polt At\u00f6lye",
       "address": "390 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.667862492264945,
+        -74.05306443728516
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Thank You Have A Good Day",
       "address": "392 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.76234340214469,
+        -74.02294151529549
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Piscana",
       "address": "392A Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75818171902886,
+        -74.02469320641991
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Swoopys Groove Palace",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73439868039222,
+        -74.04698218192239
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Botanica",
       "address": "220 Conover Street, 11231",
-      "description": "A cozy bar for evening drinks."
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.66552578348432,
+        -74.02172604073866
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Brooklyn Crab",
       "address": "24 Reed Street, 11231",
-      "description": "A local seafood restaurant."
+      "description": "A local seafood restaurant.",
+      "latLng": [
+        40.74756814540232,
+        -74.04991949828774
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Food Bazaar",
       "address": "480 Van Brunt Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72127352183725,
+        -74.00866183219554
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "Island Vibes",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local cafe offering coffee and pastries."
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.66481025965904,
+        -74.01487339479822
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Hooked On Plants",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67477407022095,
+        -73.99711767933793
+      ]
     },
     {
-      "brand": "Bar",
       "name": "Seaborne",
       "address": "228 Van Brunt Street, 11231",
-      "description": "A local snack bar."
+      "description": "A local snack bar.",
+      "latLng": [
+        40.7450491033241,
+        -73.994415707479
+      ]
     },
     {
-      "brand": "Cafe",
       "name": "The Black Flamingo",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local coffee_shop, breakfast, sandwich cafe."
+      "description": "A local coffee_shop, breakfast, sandwich cafe.",
+      "latLng": [
+        40.75966163812363,
+        -74.05210946246848
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Third Time's the Charm",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local pizza restaurant."
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.72378267297599,
+        -73.99521613330275
+      ]
     },
     {
-      "brand": "Shop",
       "name": "La Newyorkina",
       "address": "61 Commerce Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.715868416813855,
+        -73.96480445639106
+      ]
     },
     {
-      "brand": "Shop",
       "name": "I.N.C. 21",
       "address": "65 Commerce Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68510754517041,
+        -73.95666003498107
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Fulla Shirts",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "custom printed clothes and bags"
+      "description": "custom printed clothes and bags",
+      "latLng": [
+        40.6847831869973,
+        -74.03110831396896
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Open Invite",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74827894715219,
+        -74.01972540319564
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Farm Fresh Organic",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6828691126128,
+        -74.03824781997064
+      ]
     },
     {
-      "brand": "Shop",
       "name": "La Nueva Candy Store",
       "address": "52 Lorraine Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67489597618956,
+        -73.96274030275994
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Associated Supermarket",
       "address": "58 Lorraine Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.751557687280915,
+        -73.95953906745375
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lil Larry's Liquor & Wine",
       "address": "54 Lorraine Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.747190743354246,
+        -74.01352282864102
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mix House",
       "address": "66 Lorraine Street, 11231",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7529653601545,
+        -73.96549529171173
+      ]
     },
     {
-      "brand": "Shop",
       "name": "T&H Deli & Bagel",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.74772813831305,
+        -73.97780934763273
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Columbia Deli",
       "address": "439 Columbia Street, 11231",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.751405455867975,
+        -73.99155160095744
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Awais Auto Repair and Tire Center",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74263999275312,
+        -73.97660775092136
+      ]
     },
     {
-      "brand": "Shop",
       "name": "360 Home Concept",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75762150298417,
+        -74.0084940168669
+      ]
     }
   ]
 }

@@ -1,292 +1,436 @@
 {
   "places": [
     {
-      "brand": "Shop",
       "name": "Metro by T-Mobile",
       "address": "Near 40.6681, -73.9448, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66410080558836,
+        -74.03202097068814
+      ]
     },
     {
-      "brand": "Shop",
       "name": "N & K Express Laundromat",
       "address": "88 Rogers Avenue, Brooklyn, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66342981908713,
+        -74.00316473015096
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mario's Fish Market",
       "address": "251 Schenectady Avenue, Brooklyn",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.674291633846686,
+        -74.01275690839734
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Park-Way Meats",
       "address": "257 Schenectady Avenue",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66631910659362,
+        -74.00752938143222
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Tony Deli",
       "address": "1478 Bedford Avenue, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74978032813227,
+        -73.9852175845176
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Yissel Beauty Salon",
       "address": "728 Sterling Place, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.720651115648565,
+        -73.98117908437331
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Breukelen Brasserie",
       "address": "710 Nostrand Avenue, 11216",
-      "description": "A local french restaurant."
+      "description": "A local french restaurant.",
+      "latLng": [
+        40.670697370958,
+        -73.98614700222275
+      ]
     },
     {
-      "brand": "Shop",
       "name": "M&F Pharmacy",
       "address": "712 Nostrand Avenue, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68266015655355,
+        -73.99699071801615
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Naye African Hair Braiding",
       "address": "736 Nostrand Avenue, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75173638042753,
+        -73.97359269136119
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Smoke Shop",
       "address": "738 Nostrand Avenue, Brooklyn, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74793500233956,
+        -73.9621212765051
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Abulis Religious & Spiritual Cultural Store",
       "address": "740 Nostrand Avenue, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73355890043765,
+        -74.00714794382915
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sunny Nail & Salon",
       "address": "758B Nostrand Avenue, 11216",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75966373406057,
+        -74.01603631581956
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lucky Stop & Caribbean Goods",
       "address": "549 New York Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.718589138754126,
+        -74.04741635488686
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Cleaner Wash Laundromat",
       "address": "1106 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.738732792385925,
+        -74.03804754121207
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Ney York Deli",
       "address": "586 New York Avenue, 11225",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.700396949105944,
+        -74.05437325745417
+      ]
     },
     {
-      "brand": "Shop",
       "name": "P's Barber Shop",
       "address": "588 New York Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71006707762483,
+        -74.01568468085799
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Dead Garden",
       "address": "606 New York Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.705592603637655,
+        -73.96031951174884
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Los Brother's Deli Grocery",
       "address": "608 New York Avenue, 11225",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.74093348715836,
+        -73.9827051344763
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lily Blush",
       "address": "1023 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74673482702095,
+        -73.98970513350903
+      ]
     },
     {
-      "brand": "Shop",
       "name": "1037 Nostrand Deli",
       "address": "1037 Nostrand Avenue, 11225",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.74093792374427,
+        -74.02529460041522
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Eight Nine Dominican Barbershop",
       "address": "1043 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7233785177376,
+        -74.05432362116076
+      ]
     },
     {
-      "brand": "Shop",
       "name": "J&J's Gold Jewelry",
       "address": "1045 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66545707679043,
+        -74.03832505222913
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Kim's Fish Market",
       "address": "1049 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75854147933114,
+        -74.03186916099725
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Glam Beauty Supply",
       "address": "1053 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.675317855608824,
+        -73.99625019350356
+      ]
     },
     {
-      "brand": "Shop",
       "name": "One Brother Mini Market",
       "address": "1104 Nostrand Avenue, 11225",
-      "description": "A local breakfast, sandwich shop."
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.703867238353666,
+        -74.01549368847763
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Gold Room BK",
       "address": "429 Rogers Avenue, 11225",
-      "description": "A neighborhood restaurant serving delicious meals."
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.681754639930276,
+        -73.99714847991116
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "Novelli",
       "address": "1034 Nostrand Avenue, 11225",
-      "description": "A local middle_eastern, italian restaurant."
+      "description": "A local middle_eastern, italian restaurant.",
+      "latLng": [
+        40.67755747065599,
+        -73.96681240615999
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Melany Food Center",
       "address": "Near 40.6681, -73.9448, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.709957941437025,
+        -73.98608377796143
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Sweet Paws",
       "address": "Near 40.6681, -73.9448, Brooklyn, NY",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70364643985142,
+        -73.9898629883337
+      ]
     },
     {
-      "brand": "Shop",
       "name": "SOC",
       "address": "428 Rogers Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71522996422551,
+        -73.96572059113653
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Albany Wash n' Dry",
       "address": "484 Albany Avenue, 11203",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75567784291492,
+        -73.97920001202165
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Tian Bao Liquor",
       "address": "488 Albany Avenue, 11203",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6769685049682,
+        -74.05111999668232
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Lefferts Cleaners",
       "address": "559 Lefferts Avenue, 11203",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66732540266167,
+        -74.03752862123808
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Boogie's Tailoring",
       "address": "565 Lefferts Avenue, 11203",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72244809386149,
+        -74.02890465064526
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Deli Food",
       "address": "567 Lefferts Avenue, 11203",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.66281925875624,
+        -74.04468822516141
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Diana Food Center",
       "address": "291 Troy Avenue, 11213",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.7606130121055,
+        -74.04640741298819
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Marissa's Design",
       "address": "303 Troy Avenue, 11213",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.703256884956744,
+        -73.9930500590036
+      ]
     },
     {
-      "brand": "Shop",
       "name": "A. Soliani",
       "address": "506 Empire Boulevard, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75770664554276,
+        -73.98313972624594
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Ellis Cleaners",
       "address": "508 Empire Boulevard, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75348589747727,
+        -73.95630487609002
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Plumbers Haven",
       "address": "516 Empire Boulevard, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70611610154084,
+        -74.02352722326462
+      ]
     },
     {
-      "brand": "Shop",
       "name": "People Organic Market",
       "address": "319 Rogers Avenue, Brooklyn, 11225",
-      "description": "A local sandwich shop."
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.67643190743102,
+        -73.99464385558773
+      ]
     },
     {
-      "brand": "Restaurant",
       "name": "The Food Sermon",
       "address": "355 Rogers Avenue, Brooklyn, 11225",
-      "description": "A local caribbean restaurant."
+      "description": "A local caribbean restaurant.",
+      "latLng": [
+        40.66708293674516,
+        -73.990752304889
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Laundomat",
       "address": "405 Montgomery Street, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66803032893503,
+        -74.03831050633075
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Laundry Run",
       "address": "893 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.671898760895395,
+        -73.96752484117279
+      ]
     },
     {
-      "brand": "Shop",
       "name": "I Love My Pet",
       "address": "901 Nostrand Avenue, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.759671307748704,
+        -74.02004371481928
+      ]
     },
     {
-      "brand": "Shop",
       "name": "The Nonbinarian",
       "address": "1130 President Street, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67825759669616,
+        -74.00844474500491
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Beautianna Studios",
       "address": "1155 Carroll Street, 11225",
-      "description": "A local shop offering unique goods."
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68377561959496,
+        -73.96964862802356
+      ]
     },
     {
-      "brand": "Shop",
       "name": "Mermaid Fish Market",
       "address": "1196 President Street, 11225",
-      "description": "A local seafood shop."
+      "description": "A local seafood shop.",
+      "latLng": [
+        40.730542918904135,
+        -74.02688216681094
+      ]
     }
   ]
 }
