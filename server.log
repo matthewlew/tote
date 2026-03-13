@@ -14,3 +14,6 @@
 127.0.0.1 - - [13/Mar/2026 03:17:50] "GET /data/bags.json HTTP/1.1" 200 -
 127.0.0.1 - - [13/Mar/2026 03:17:50] "GET /data/coffee.json HTTP/1.1" 200 -
 127.0.0.1 - - [13/Mar/2026 03:17:51] "GET /data/sunset_park.json HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 03:31:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 03:31:15] "GET /fonts/FlorDeRuina-Semilla.woff2 HTTP/1.1" 200 -
+127.0.0.1 - - [13/Mar/2026 03:31:15] "GET /data/bags.json HTTP/1.1" 200 -

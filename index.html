@@ -59,6 +59,7 @@ header span:first-child {
 
 .category-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
   margin-top: 10px;
@@ -530,6 +531,7 @@ footer {
     } else if (k === 'l') {
       handleLocateMe();
     } else if (k === 'arrowright') {
+      e.preventDefault();
       const idx = categories.findIndex(c => c.id === currentCategory.id);
       if (idx !== -1) {
         const nextIdx = (idx + 1) % categories.length;
@@ -537,6 +539,7 @@ footer {
         loadCategoryData();
       }
     } else if (k === 'arrowleft') {
+      e.preventDefault();
       const idx = categories.findIndex(c => c.id === currentCategory.id);
       if (idx !== -1) {
         const prevIdx = (idx - 1 + categories.length) % categories.length;
