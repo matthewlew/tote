@@ -367,6 +367,9 @@ footer {
     listEl.innerHTML = '';
     countEl.textContent = `${items.length} ${currentCategory.unit}`;
 
+    // ⚡ Bolt Optimization: Use DocumentFragment to batch DOM insertions and avoid O(N) reflows
+    const fragment = document.createDocumentFragment();
+
     items.forEach(item => {
       const row = document.createElement('div');
       row.className = 'row';
@@ -413,8 +416,10 @@ footer {
       line.appendChild(name);
       line.appendChild(prices);
       row.appendChild(line);
-      listEl.appendChild(row);
+      fragment.appendChild(row);
     });
+
+    listEl.appendChild(fragment);
   }
 
   function handleSort(key) {
