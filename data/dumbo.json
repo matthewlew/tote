@@ -1,14 +1,279 @@
 {
   "places": [
     {
-      "brand": "Bookstore",
-      "name": "Powerhouse Arena",
-      "address": "28 Adams St, Brooklyn, NY 11201"
+      "brand": "Restaurant",
+      "name": "Pedro's",
+      "address": "73 Jay Street, Brooklyn, NY11201"
     },
     {
       "brand": "Restaurant",
-      "name": "Juliana's",
-      "address": "19 Old Fulton St, Brooklyn, NY 11201"
+      "name": "Vinegar Hill House",
+      "address": "72 Hudson Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The River Caf\u00e9",
+      "address": "1 Water Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Grimaldi's Pizzeria",
+      "address": "1 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Tutt Caf\u00e9",
+      "address": "Tutt Caf\u00e9, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "L&B Spumoni Gardens",
+      "address": "46 Old Fulton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Superfine",
+      "address": "126 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hudson Wilder",
+      "address": "142 Plymouth Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe Gitane",
+      "address": "70 Hudson Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Front Street Pizza",
+      "address": "80 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al Mar",
+      "address": "111 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Seamore's",
+      "address": "Seamore's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "104 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Butler",
+      "address": "40 Water Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "7 Old Fulton",
+      "address": "7 Old Fulton, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Aloha Alley",
+      "address": "40 Main Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Books",
+      "name": "PowerHouse Arena",
+      "address": "28 Adams Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Archway Cafe",
+      "address": "57B Pearl Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ignazio's",
+      "address": "4 Water Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "One Girl Cookies",
+      "address": "35 Water Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Joe Coffee",
+      "address": "45 Washington Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bluestone Lane",
+      "address": "55 Prospect Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Pub",
+      "name": "Randolph Beer DUMBO",
+      "address": "82 Prospect Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "68 Jay Street Bar",
+      "address": "68 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Olympia Bar",
+      "address": "54 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Design Cafe Usagi",
+      "address": "163 Plymouth Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "CUPER",
+      "address": "CUPER, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Atrium Dumbo",
+      "address": "15 Main Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Books",
+      "name": "Berl's Brooklyn Poetry Shop",
+      "address": "141 Front Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Westville",
+      "address": "81 Washington Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cecconi\u2019s Dumbo",
+      "address": "Cecconi\u2019s Dumbo, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fishs Eddy",
+      "address": "Fishs Eddy, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Almondine Bakery",
+      "address": "Almondine Bakery, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Love and Dough",
+      "address": "57 Pearl Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Dumbo Station",
+      "address": "Dumbo Station, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Evil Twin Brewing DUMBO",
+      "address": "43 Main Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "% Arabica",
+      "address": "20 Old Fulton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fuel Fever",
+      "address": "52 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Em Vietnamese Bistro",
+      "address": "57 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rim Nam Thai Kitchen",
+      "address": "Rim Nam Thai Kitchen, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Devoci\u00f3n",
+      "address": "105 York Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Birbante",
+      "address": "Birbante, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Beepublic",
+      "address": "181 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Celestine",
+      "address": "Celestine, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Wonder Beach Caf\u00e9",
+      "address": "Wonder Beach Caf\u00e9, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Nobody Told Me",
+      "address": "188 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "La Perla",
+      "address": "La Perla, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Water St. Tavern",
+      "address": "Water St. Tavern, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fountainhaus",
+      "address": "Fountainhaus, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Zaruma",
+      "address": "Zaruma, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Tous les Jours",
+      "address": "107 York Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Lazy Sundaes",
+      "address": "170 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ippudo V",
+      "address": "Ippudo V, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bridge Coffee Shop",
+      "address": "Bridge Coffee Shop, Brooklyn, NY"
     }
   ]
 }

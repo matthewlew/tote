@@ -1,14 +1,234 @@
 {
   "places": [
     {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
       "brand": "Restaurant",
-      "name": "Hometown Bar-B-Que",
-      "address": "454 Van Brunt St, Brooklyn, NY 11231"
+      "name": "The Good Fork",
+      "address": "391 Van Brunt Street, Brooklyn, NY11231"
     },
     {
       "brand": "Bar",
-      "name": "Sunny's Bar",
-      "address": "253 Conover St, Brooklyn, NY 11231"
+      "name": "Brooklyn Ice House",
+      "address": "318 Van Brunt Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Koto Sushi & Steak",
+      "address": "552 Henry Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Bakery",
+      "name": "ACQ Bread",
+      "address": "ACQ Bread, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Swoony's",
+      "address": "Swoony's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lundy Bros.",
+      "address": "Lundy Bros., Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Botanica",
+      "address": "220 Conover Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Crab",
+      "address": "24 Reed Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Island Vibes",
+      "address": "Island Vibes, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Petite Crevette",
+      "address": "Petite Crevette, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Seaborne",
+      "address": "228 Van Brunt Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Black Flamingo",
+      "address": "The Black Flamingo, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Third Time's the Charm",
+      "address": "Third Time's the Charm, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "San Pedro Inn",
+      "address": "320 Van Brunt Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Baked",
+      "address": "Baked, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hoek",
+      "address": "117 Ferris Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lucali",
+      "address": "575 Henry Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Red Hook Lobster Pound",
+      "address": "Red Hook Lobster Pound, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Farina",
+      "address": "Farina, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Spaghetti",
+      "address": "Cafe Spaghetti, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hometown Bar-B-Que",
+      "address": "454 Van Brunt Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Henry's Local Caf\u00e9",
+      "address": "570 Henry Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Kestrel",
+      "address": "Cafe Kestrel, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sunny's",
+      "address": "253 Conover Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Pub",
+      "name": "Jalopy Tavern",
+      "address": "Jalopy Tavern, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mazzat",
+      "address": "Mazzat, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Katana Sushi",
+      "address": "Katana Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Red Hook Tavern",
+      "address": "329 Van Brunt Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Uhuru Design",
+      "address": "185 Van Dyke Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Red Hook Winery",
+      "address": "175 Van Dyke Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Brooklyn Biscuit Company",
+      "address": "24 Commerce Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Somtum Der",
+      "address": "Somtum Der, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Strong Rope Brewery - Red Hook",
+      "address": "Strong Rope Brewery - Red Hook, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Brooklyn French Bakers",
+      "address": "Brooklyn French Bakers, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Read Hook",
+      "address": "Read Hook, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bar Mario",
+      "address": "365 Van Brunt Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Bar",
+      "name": "Docky's",
+      "address": "Docky's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Los Hermanos Coffee",
+      "address": "Los Hermanos Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Van Brunt Stillhouse Tasting Room",
+      "address": "6 Bay Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sowa",
+      "address": "Sowa, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "BORED",
+      "address": "BORED, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pearl's Dive",
+      "address": "77 Commerce Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luo's Burgers",
+      "address": "Luo's Burgers, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Luo's Events",
+      "address": "177 Dwight Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Cafe",
+      "name": "High Beam",
+      "address": "High Beam, Brooklyn, NY"
     }
   ]
 }

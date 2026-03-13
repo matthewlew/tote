@@ -1,29 +1,589 @@
 {
   "places": [
     {
-      "brand": "Coffee Shop",
-      "name": "Olmsted",
-      "address": "659 Vanderbilt Ave, Brooklyn, NY 11238"
+      "brand": "Bar",
+      "name": "Washington Commons",
+      "address": "748 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Fulton Grand",
+      "address": "439 Grand Avenue, Brooklyn, NY"
     },
     {
       "brand": "Restaurant",
-      "name": "Faun",
-      "address": "606 Vanderbilt Ave, Brooklyn, NY 11238"
+      "name": "Leland",
+      "address": "755 Dean Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Aura",
+      "address": "Aura, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Bearded Lady",
+      "address": "686A Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Olde Brooklyn Bagel Shoppe",
+      "address": "645 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Bakery on Bergen",
+      "address": "The Bakery on Bergen, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gen",
+      "address": "659 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nimbooda",
+      "address": "Nimbooda, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mooliauno\u2019s Trapp Kitchen",
+      "address": "621 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brooklyn High Low",
+      "address": "Brooklyn High Low, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Boil Prime",
+      "address": "242 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Belli Osteria",
+      "address": "860 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wei's",
+      "address": "884 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sweetbee",
+      "address": "Sweetbee, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Casanara",
+      "address": "983 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vini e Olii",
+      "address": "129 Gates Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Country House Diner",
+      "address": "887 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Nerd Be Cool",
+      "address": "176 Lincoln Place, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ki Sushi",
+      "address": "282 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Prospect Thai",
+      "address": "Prospect Thai, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Barlow",
+      "address": "655 Grand Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Everbean",
+      "address": "62 6th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hungry Ghost",
+      "address": "253 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Morgan's Brooklyn Barbecue",
+      "address": "267 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Alta Calidad",
+      "address": "552 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Pub",
+      "name": "Branded Saloon",
+      "address": "603 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Nuaa Table",
+      "address": "The Nuaa Table, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sweet Polly",
+      "address": "71 6th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jet's Pizza",
+      "address": "305 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Little Cupcake Bakeshop",
+      "address": "598 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gertrude's",
+      "address": "605 Carlton Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Noosh",
+      "address": "Brooklyn Noosh, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Gold Star Beer Counter",
+      "address": "176 Underhill Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sweet Chick",
+      "address": "341 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mille-feuille",
+      "address": "622 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Joy Indian Restaurant",
+      "address": "Joy Indian Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Let's Go! Ya Souvlakia",
+      "address": "Let's Go! Ya Souvlakia, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Born",
+      "address": "Born, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sumi",
+      "address": "Sumi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Koto Sushi",
+      "address": "Koto Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Bilt Bar",
+      "address": "Bilt Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Puerto Viejo",
+      "address": "564 Grand Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "N\u00fbrish",
+      "address": "637 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Pub",
+      "name": "Underhill",
+      "address": "760 Dean Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Stocked Cafe",
+      "address": "Stocked Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Udom Thai",
+      "address": "661 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Citrico",
+      "address": "681 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sharlene's Bar",
+      "address": "353 Flatbush Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fausto",
+      "address": "Fausto, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kami",
+      "address": "385 Flatbush Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Gran Castillo de Jagua",
+      "address": "El Gran Castillo de Jagua, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sit & Wonder",
+      "address": "Sit & Wonder, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Doughnut Plant",
+      "address": "245 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Pub",
+      "name": "Covenhoven",
+      "address": "730 Classon Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sisters",
+      "address": "900 Fulton Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bar Basic",
+      "address": "Bar Basic, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mr. Wonton",
+      "address": "73 7th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cousin John's",
+      "address": "62 7th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Kebab",
+      "address": "Bombay Kebab, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Danbo",
+      "address": "Danbo, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chuko",
+      "address": "565 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Hops Hill",
+      "address": "886 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Otway",
+      "address": "930 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "333 Lounge",
+      "address": "333 Lounge, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Geido",
+      "address": "Geido, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nacho Macho Taco",
+      "address": "Nacho Macho Taco, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Muse",
+      "address": "689 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Xochitl Taqueria",
+      "address": "1015 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sushi Lin",
+      "address": "Sushi Lin, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Panca BK",
+      "address": "Panca BK, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Hartley's",
+      "address": "14 Putnam Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Maya Congee Caf\u00e9",
+      "address": "1013 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Bergen Bagel",
+      "address": "Bergen Bagel, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Bagel Pub",
+      "address": "57 7th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Blank Street Coffee",
+      "address": "Blank Street Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bird Pepper",
+      "address": "Bird Pepper, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sofreh",
+      "address": "Sofreh, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Milk Bar",
+      "address": "620 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Amorina",
+      "address": "Amorina, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Little Egg",
+      "address": "Little Egg, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Zaytoons",
+      "address": "Zaytoons, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bier Wax",
+      "address": "Bier Wax, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wayward Fare",
+      "address": "Wayward Fare, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Kinanm",
+      "address": "Kinanm, Brooklyn, NY"
     },
     {
       "brand": "Bar",
       "name": "Weather Up",
-      "address": "589 Vanderbilt Ave, Brooklyn, NY 11238"
+      "address": "Weather Up, Brooklyn, NY"
     },
     {
-      "brand": "Bookstore",
-      "name": "Unnameable Books",
-      "address": "615 Vanderbilt Ave, Brooklyn, NY 11238"
+      "brand": "Restaurant",
+      "name": "Fulton Thai",
+      "address": "Fulton Thai, Brooklyn, NY"
     },
     {
-      "brand": "Coffee Shop",
-      "name": "Little Skips East",
-      "address": "1643 Broadway, Brooklyn, NY 11207"
+      "brand": "Restaurant",
+      "name": "Vegetarian Palate",
+      "address": "Vegetarian Palate, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Breakfast by Salt\u2019s Cure",
+      "address": "Breakfast by Salt\u2019s Cure, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Gran Caff\u00e9 de Martini",
+      "address": "609 Vanderbilt Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nourish",
+      "address": "Nourish, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ozakaya",
+      "address": "Ozakaya, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sweetbee Coffee",
+      "address": "Sweetbee Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mumbai Place",
+      "address": "Mumbai Place, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Simpson",
+      "address": "673 Atlantic Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Bar",
+      "name": "Shaka Shaka Tiki",
+      "address": "64 6th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Penny House Cafe",
+      "address": "Penny House Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Emily",
+      "address": "919 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bed Stuy Fish Fry",
+      "address": "940 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Good Batch",
+      "address": "936 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kitchen Grill",
+      "address": "914A Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "B'klyn Burro",
+      "address": "922 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Hanson Dry",
+      "address": "925 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Baby Jane's",
+      "address": "899 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Vessel Bar & Grill",
+      "address": "895 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pacific Indian Cuisine",
+      "address": "Pacific Indian Cuisine, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Brooklyn Blew Smoke Cigar Room",
+      "address": "Brooklyn Blew Smoke Cigar Room, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dilly Dally",
+      "address": "Dilly Dally, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Finn's Corner",
+      "address": "660 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Istanbul Clinton Hill",
+      "address": "852 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Ciao Gloria",
+      "address": "Ciao Gloria, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bar Meridian",
+      "address": "406 Prospect Place, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pasta Night",
+      "address": "Pasta Night, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Beer Street South",
+      "address": "Beer Street South, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Love & Legends Books",
+      "address": "667 Washington Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Indo Mix",
+      "address": "466 Grand Avenue, Brooklyn, NY11238"
     }
   ]
 }

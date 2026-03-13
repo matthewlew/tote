@@ -1,14 +1,574 @@
 {
   "places": [
     {
+      "brand": "Cafe",
+      "name": "Pier 69 Market",
+      "address": "10 Bay Ridge Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Wicked Monk",
+      "address": "9510 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mr. Bagel's Cafe",
+      "address": "9419 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
       "brand": "Restaurant",
-      "name": "Tanoreen",
-      "address": "7523 3rd Ave, Brooklyn, NY 11209"
+      "name": "The Coffee Club Diner",
+      "address": "9526 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Pub",
+      "name": "Kitty Kiernan's",
+      "address": "Kitty Kiernan's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pep",
+      "address": "9413 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Pub",
+      "name": "Delia's Lounge",
+      "address": "9224 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chadwick's",
+      "address": "8822 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cebu",
+      "address": "8801 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Arirang Hibachi Steakhouse",
+      "address": "8812 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Panino Rustico",
+      "address": "8901 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Top Thai",
+      "address": "8510 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ay Kebab",
+      "address": "8602 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "King Souvlaki",
+      "address": "8402 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Laila",
+      "address": "8530 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Corner",
+      "address": "8602 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Puertas",
+      "address": "8320 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luliano's",
+      "address": "7902 3rd Avenue, Brooklyn, NY11209"
     },
     {
       "brand": "Bakery",
-      "name": "Leske's Bakery",
-      "address": "7612 5th Ave, Brooklyn, NY 11209"
+      "name": "Aunt Butchie's",
+      "address": "8224 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Pour House",
+      "address": "7901 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Pub",
+      "name": "Skinflints",
+      "address": "7902 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dave's Garden",
+      "address": "7404 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Schmagel",
+      "address": "Bagel Schmagel, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mint Bay",
+      "address": "Mint Bay, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Coszcal de Allende",
+      "address": "Coszcal de Allende, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Felfa",
+      "address": "Felfa, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Spice Szechuan",
+      "address": "7026 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Glow Thai",
+      "address": "7107 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cozy Spot",
+      "address": "6823 3rd Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Campo Bello",
+      "address": "9128 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Karam",
+      "address": "8521 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Bar",
+      "name": "Johnny Pumps",
+      "address": "Johnny Pumps, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Jean Danet Pastry",
+      "address": "7526 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mussels Brick Oven Pizza",
+      "address": "8001 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Maison De Viennoijevieg",
+      "address": "8101 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Yenmenat",
+      "address": "Yenmenat, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Bean Post Pub",
+      "address": "7525 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Masala",
+      "address": "Bombay Masala, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Peppinos",
+      "address": "Peppinos, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Three Jolly Pigeons",
+      "address": "6802 3rd Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Coffee Rx",
+      "address": "6903 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pasticceria Rocco",
+      "address": "9402 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Little Cupcake Bakeshop",
+      "address": "9102 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "City League",
+      "address": "City League, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hunter's Steak & Ale House",
+      "address": "Hunter's Steak & Ale House, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fort Hamilton Diner",
+      "address": "9502 4th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "UNO Chicago Grill",
+      "address": "9201 4th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "First Oasis Restaurant",
+      "address": "9218 4th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Paneantico",
+      "address": "9124 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Omonia Cafe",
+      "address": "7612 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Malecon",
+      "address": "8727 4th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "86 Noodles",
+      "address": "8608 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Gigi\u2019s Bakery",
+      "address": "8626 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pho Hoai Bay Ridge Restaurant",
+      "address": "8616 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Omiya",
+      "address": "8618 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ponte Vecchio",
+      "address": "8810 4th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Los Cantaros",
+      "address": "8612 4th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Avanti\u2019s Pizzaria",
+      "address": "Avanti\u2019s Pizzaria, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Landy\u2019s",
+      "address": "Landy\u2019s, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Kettle Black",
+      "address": "8622 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Las Margaritas",
+      "address": "9208 3rd Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "9202 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al Horno",
+      "address": "9112 3rd Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Attic",
+      "address": "The Attic, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Lux Bakery",
+      "address": "Lux Bakery, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Amuni",
+      "address": "Amuni, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al-Shaybani",
+      "address": "7316 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tequila",
+      "address": "8321 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "H\u00f4M",
+      "address": "H\u00f4M, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bay Sushi",
+      "address": "Bay Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Lock Yard",
+      "address": "Lock Yard, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shobu Sushi",
+      "address": "Shobu Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Castillo",
+      "address": "El Castillo, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bay Ridge Cafe",
+      "address": "6802 4th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Library",
+      "address": "Little Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Happy Garden",
+      "address": "7211 3rd Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vesuvio",
+      "address": "7305 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Bar",
+      "name": "Lone Star",
+      "address": "Lone Star, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Leo's",
+      "address": "8502 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Oishi Noodle Bar",
+      "address": "Oishi Noodle Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Common",
+      "address": "The Common, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mai's",
+      "address": "Mai's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mandato Mexican Restaurant",
+      "address": "Mandato Mexican Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Narrows Botanical Gardens Community Library",
+      "address": "Narrows Botanical Gardens Community Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pegasus",
+      "address": "8610 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sarav\u00e1 Bistro",
+      "address": "Sarav\u00e1 Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bai\u2019 Dar",
+      "address": "Bai\u2019 Dar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bayridge Sushi",
+      "address": "Bayridge Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Frankie's",
+      "address": "279 71st Street, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Take Away & Cafe",
+      "address": "Take Away & Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The New Sancho's",
+      "address": "The New Sancho's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Red Bowl",
+      "address": "Red Bowl, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Harp",
+      "address": "The Harp, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sapporo",
+      "address": "Sapporo, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Brooklyn Firefly",
+      "address": "The Brooklyn Firefly, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bay Ridge Diner",
+      "address": "Bay Ridge Diner, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Uncle Taher Restaurant",
+      "address": "Uncle Taher Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Kabab",
+      "address": "Brooklyn Kabab, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Galaxy Comics",
+      "address": "Galaxy Comics, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Coconut Hookah",
+      "address": "Coconut Hookah, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hemo Cafe",
+      "address": "6927 5th Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Grill",
+      "address": "Bombay Grill, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taj Mahal",
+      "address": "Taj Mahal, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Piccante",
+      "address": "Piccante, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Crepe Factory",
+      "address": "Crepe Factory, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Albait Baitak Cafe",
+      "address": "Albait Baitak Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Don Mario",
+      "address": "Don Mario, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Roots",
+      "address": "Brooklyn Roots, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Pippin's Pub",
+      "address": "Pippin's Pub, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Terina",
+      "address": "8424 3rd Avenue, Brooklyn, NY11209"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sofia",
+      "address": "Sofia, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Inaka Japanese Fusion",
+      "address": "Inaka Japanese Fusion, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cream Coffee Shop",
+      "address": "Cream Coffee Shop, Brooklyn, NY"
     }
   ]
 }

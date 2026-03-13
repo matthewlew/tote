@@ -1,14 +1,464 @@
 {
   "places": [
     {
-      "brand": "Restaurant",
-      "name": "Aita",
-      "address": "132 Greene Ave, Brooklyn, NY 11238"
+      "brand": "Bar",
+      "name": "Golden Ratio",
+      "address": "216 1/2 Greene Avenue, Brooklyn, NY11238"
     },
     {
-      "brand": "Coffee Shop",
-      "name": "Clementine Bakery",
-      "address": "395 Classon Ave, Brooklyn, NY 11238"
+      "brand": "Restaurant",
+      "name": "Graziella's",
+      "address": "Graziella's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dannee Thai",
+      "address": "433 DeKalb Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "DSK Brooklyn",
+      "address": "710 Fulton Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luanne's",
+      "address": "Luanne's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Peckish",
+      "address": "Peckish, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Osteria Brooklyn",
+      "address": "Osteria Brooklyn, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Myrtle Thai",
+      "address": "438 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "LaRina",
+      "address": "LaRina, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Evelina",
+      "address": "211 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bittersweet",
+      "address": "180 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sailor",
+      "address": "228 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mango Bay",
+      "address": "271 Adelphi Street, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Choice Market",
+      "address": "318 Lafayette Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "Entre Nous",
+      "address": "39 Clifton Place, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "U-Gu",
+      "address": "541B Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Cafe",
+      "name": "BKG Coffee Roasters",
+      "address": "BKG Coffee Roasters, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Waza Sushi & Ramen",
+      "address": "Waza Sushi & Ramen, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Casa NoNo",
+      "address": "499 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Spice & Grill",
+      "address": "441 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mike's Coffee Shop",
+      "address": "328 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mekong BK",
+      "address": "Mekong BK, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "BOM with the Wind",
+      "address": "1 Greene Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Great Georgiana",
+      "address": "248 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Third Falcon",
+      "address": "360 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Saint Street Cakes",
+      "address": "86 South Portland Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Endswell",
+      "address": "773 Fulton Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Connecticut Muffin",
+      "address": "423 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Pub",
+      "name": "Putnam's Pub & Cooker",
+      "address": "Putnam's Pub & Cooker, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Walters",
+      "address": "Walters, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sushi D",
+      "address": "Sushi D, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Theodora",
+      "address": "7 Greene Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ma Massa",
+      "address": "753 Fulton Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Thai-ger",
+      "address": "747 Fulton Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mo's Bar",
+      "address": "80 Lafayette Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Books",
+      "name": "Greenlight Bookstore",
+      "address": "686 Fulton Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Bar",
+      "name": "Habana Outpost",
+      "address": "Habana Outpost, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hungry Ghost",
+      "address": "781 Fulton Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fradei",
+      "address": "Fradei, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Brooklyn Moon",
+      "address": "745 Fulton Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dino",
+      "address": "222 Dekalb Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Calyer Cafe & Kitchen",
+      "address": "519 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "SoCo",
+      "address": "509 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tepango",
+      "address": "568 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Colonia Verde",
+      "address": "219 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Bar",
+      "name": "Moot Bar",
+      "address": "579 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Petee's Cafe",
+      "address": "Petee's Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Prim Rose Caf\u00e9",
+      "address": "147 Greene Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Thea",
+      "address": "Thea, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Karasu",
+      "address": "Karasu, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Athena Keke's",
+      "address": "Athena Keke's, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Izzy Rose",
+      "address": "214 Greene Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Place des F\u00eates",
+      "address": "Place des F\u00eates, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Peaches Grand",
+      "address": "285 Grand Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Quarter",
+      "address": "The Quarter, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Alibi",
+      "address": "Alibi, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Doppelg\u00e4nger",
+      "address": "Doppelg\u00e4nger, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mirrors on Grand",
+      "address": "284 Grand Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "325 Lafayette Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Castro's",
+      "address": "Castro's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria Fort Greene",
+      "address": "154 Carlton Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Q'Rico No Manches",
+      "address": "Q'Rico No Manches, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Somethin on Myrtle",
+      "address": "Somethin on Myrtle, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Rosalu Diner",
+      "address": "Rosalu Diner, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dosa Royale",
+      "address": "Dosa Royale, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Glin Thai Bistro",
+      "address": "Glin Thai Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Woori",
+      "address": "336 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dun Huang Miss Noodle",
+      "address": "Dun Huang Miss Noodle, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Roman's",
+      "address": "243 DeKalb Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Pub",
+      "name": "Brooklyn Public House",
+      "address": "247 DeKalb Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Miss Ada",
+      "address": "184 DeKalb Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Peck's",
+      "address": "455A Myrtle Ave, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Los Dos Hermanos",
+      "address": "266 Carlton Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mayflower",
+      "address": "Mayflower, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Aita",
+      "address": "Aita, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Los Burritos Ju\u00e1rez",
+      "address": "354 Myrtle Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mint Heights",
+      "address": "Mint Heights, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bar Laika",
+      "address": "Bar Laika, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Thai 101",
+      "address": "Thai 101, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Thai Holic",
+      "address": "Thai Holic, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "TB Coffee House",
+      "address": "TB Coffee House, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "OJBK Tea Shop",
+      "address": "OJBK Tea Shop, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Emerson",
+      "address": "The Emerson, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Nostrand Coffee Roasters",
+      "address": "Nostrand Coffee Roasters, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Saraghina Caff\u00e9",
+      "address": "Saraghina Caff\u00e9, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Black Iris",
+      "address": "Black Iris, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Yamashiro",
+      "address": "Yamashiro, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mr. Lee's",
+      "address": "Mr. Lee's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cap't Loui",
+      "address": "Cap't Loui, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lula Mae",
+      "address": "Lula Mae, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Radio Kwara",
+      "address": "291 Greene Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fat Rabbit Diner",
+      "address": "Fat Rabbit Diner, Brooklyn, NY"
     }
   ]
 }

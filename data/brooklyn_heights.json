@@ -1,14 +1,579 @@
 {
   "places": [
     {
-      "brand": "Park",
-      "name": "Brooklyn Heights Promenade",
-      "address": "Montague St & Pierrepont Pl, Brooklyn, NY 11201"
+      "brand": "Restaurant",
+      "name": "Pedro's",
+      "address": "73 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Boutros",
+      "address": "Boutros, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mocha Hookah",
+      "address": "Mocha Hookah, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mikado",
+      "address": "177 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Damascus Bread & Bakery",
+      "address": "Damascus Bread & Bakery, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The River Caf\u00e9",
+      "address": "1 Water Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Grimaldi's Pizzeria",
+      "address": "1 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Tutt Caf\u00e9",
+      "address": "Tutt Caf\u00e9, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Inga's Bar",
+      "address": "66 Hicks Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Poppy's Cafe",
+      "address": "Poppy's Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jules",
+      "address": "50 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ozu",
+      "address": "78 Clark Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Clark's Restaurant",
+      "address": "80 Clark Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Cafe",
+      "address": "200 Clinton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tripoli",
+      "address": "156 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Felice",
+      "address": "84 Montague Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Ferrane",
+      "address": "57 Clark Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Salter House",
+      "address": "119 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Dilj\u0101n",
+      "address": "330 Hicks Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Diem Eatery",
+      "address": "79 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dellarocco's Pizza",
+      "address": "212 Hicks Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chama Mama",
+      "address": "121 Montague Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Pub",
+      "name": "O'Keefes Bar & Grill",
+      "address": "62 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gage & Tollner",
+      "address": "372 Fulton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Binc",
+      "address": "60 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Henry's End",
+      "address": "72 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Plymouth Caf\u00e9",
+      "address": "90 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Floyd",
+      "address": "131 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Next Stop Vegan",
+      "address": "88 Livingston Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "L&B Spumoni Gardens",
+      "address": "46 Old Fulton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Long Island Bar",
+      "address": "110 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hibino",
+      "address": "333 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Joe Coffee Company",
+      "address": "102 Hicks Street, Brooklyn, NY11201"
     },
     {
       "brand": "Restaurant",
       "name": "Noodle Pudding",
-      "address": "38 Henry St, Brooklyn, NY 11201"
+      "address": "38 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chez Moi",
+      "address": "135 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mint Heights",
+      "address": "Mint Heights, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brooklyn Bridge Cafe",
+      "address": "Brooklyn Bridge Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Superfine",
+      "address": "126 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hudson Wilder",
+      "address": "142 Plymouth Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Front Street Pizza",
+      "address": "80 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al Mar",
+      "address": "111 Front Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Seamore's",
+      "address": "Seamore's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "348 Fulton Street, Fulton Mall, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "River Deli",
+      "address": "River Deli, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Butler",
+      "address": "40 Water Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "7 Old Fulton",
+      "address": "7 Old Fulton, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Aloha Alley",
+      "address": "40 Main Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Books",
+      "name": "PowerHouse Arena",
+      "address": "28 Adams Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kogane Ramen",
+      "address": "Kogane Ramen, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "H Caf\u00e9",
+      "address": "H Caf\u00e9, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "CAVA",
+      "address": "345 Adams Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Confidant",
+      "address": "127 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Swallow Cafe",
+      "address": "156 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Archway Cafe",
+      "address": "57B Pearl Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ignazio's",
+      "address": "4 Water Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Circa Brewing Co.",
+      "address": "141 Lawrence Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bevacco",
+      "address": "60 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "One Girl Cookies",
+      "address": "35 Water Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Joe Coffee",
+      "address": "45 Washington Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bluestone Lane",
+      "address": "55 Prospect Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Pub",
+      "name": "Randolph Beer DUMBO",
+      "address": "82 Prospect Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "68 Jay Street Bar",
+      "address": "68 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Olympia Bar",
+      "address": "54 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Design Cafe Usagi",
+      "address": "163 Plymouth Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "CUPER",
+      "address": "CUPER, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Atrium Dumbo",
+      "address": "15 Main Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nan Xiang Express Soup Dumplings",
+      "address": "148 Lawrence Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "M\u00f6ge Tee",
+      "address": "M\u00f6ge Tee, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lichee Nut",
+      "address": "Lichee Nut, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Din Soup Dumplings",
+      "address": "Din Soup Dumplings, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Laundry & Latte",
+      "address": "Laundry & Latte, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "ViVi Bubble Tea",
+      "address": "113 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lillo Cucina Italiana",
+      "address": "Lillo Cucina Italiana, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Berl's Brooklyn Poetry Shop",
+      "address": "141 Front Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Westville",
+      "address": "81 Washington Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Montero's Bar",
+      "address": "Montero's Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Espresso Me",
+      "address": "Espresso Me, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bohemien",
+      "address": "Bohemien, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Kaigo Coffee Room",
+      "address": "139 Bridge Park Drive, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cecconi\u2019s Dumbo",
+      "address": "Cecconi\u2019s Dumbo, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dallas BBQ",
+      "address": "180 Livingston Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "About Coffee",
+      "address": "About Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fishs Eddy",
+      "address": "Fishs Eddy, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Almondine Bakery",
+      "address": "Almondine Bakery, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Henry Public",
+      "address": "Henry Public, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Amy's Bread",
+      "address": "311 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Elsa",
+      "address": "Elsa, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Cedro",
+      "address": "El Cedro, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Love and Dough",
+      "address": "57 Pearl Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Harriet's Rooftop",
+      "address": "60 Furman Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Paris Baguette",
+      "address": "Paris Baguette, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brado Thin Crust Pizza",
+      "address": "155 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al Badawi",
+      "address": "151 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luzzo's BK",
+      "address": "Luzzo's BK, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Gong Cha",
+      "address": "156 Lawrence Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Ava Brew",
+      "address": "100 Willoughby Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "I'Milky Bubble Tea",
+      "address": "105 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pips",
+      "address": "Pips, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Dumbo Station",
+      "address": "Dumbo Station, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Evil Twin Brewing DUMBO",
+      "address": "43 Main Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Khaosan",
+      "address": "Khaosan, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Iron Chef House",
+      "address": "Iron Chef House, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Henry Street Ale House",
+      "address": "Henry Street Ale House, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brain Food",
+      "address": "111 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Montague Diner",
+      "address": "Montague Diner, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Curry Heights",
+      "address": "Curry Heights, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Custom House",
+      "address": "The Custom House, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Grand Canyon Restaurant",
+      "address": "Grand Canyon Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lantern Thai Kitchen",
+      "address": "Lantern Thai Kitchen, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Saketumi Asian Bistro",
+      "address": "Saketumi Asian Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "L\u2019Appartement 4F",
+      "address": "115 Montague Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sippy Cafe",
+      "address": "Sippy Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "% Arabica",
+      "address": "20 Old Fulton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fuel Fever",
+      "address": "52 Jay Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Em Vietnamese Bistro",
+      "address": "57 Front Street, Brooklyn, NY11201"
     }
   ]
 }

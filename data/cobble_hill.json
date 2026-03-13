@@ -2,13 +2,523 @@
   "places": [
     {
       "brand": "Restaurant",
-      "name": "La Vara",
-      "address": "268 Clinton St, Brooklyn, NY 11201"
+      "name": "Boutros",
+      "address": "Boutros, Brooklyn, NY"
     },
     {
-      "brand": "Bookstore",
+      "brand": "Cafe",
+      "name": "Mocha Hookah",
+      "address": "Mocha Hookah, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mikado",
+      "address": "177 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Damascus Bread & Bakery",
+      "address": "Damascus Bread & Bakery, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Brazen Head",
+      "address": "The Brazen Head, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Layla Jones",
+      "address": "Layla Jones, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Cafe",
+      "address": "200 Clinton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tripoli",
+      "address": "156 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bareburger",
+      "address": "149 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nabila's",
+      "address": "248 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Awash Ethiopian Restaurant",
+      "address": "242 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Moo Burger",
+      "address": "240 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Salter House",
+      "address": "119 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Dilj\u0101n",
+      "address": "330 Hicks Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Diem Eatery",
+      "address": "79 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Pub",
+      "name": "O'Keefes Bar & Grill",
+      "address": "62 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Floyd",
+      "address": "131 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Next Stop Vegan",
+      "address": "88 Livingston Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Long Island Bar",
+      "address": "110 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hibino",
+      "address": "333 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "164 Smith Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Barbalu",
+      "address": "68 Bergen Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Saint Julivert Fisherie",
+      "address": "264 Clinton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Enso",
+      "address": "192 Amity Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sal Tang's",
+      "address": "521 Hicks Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mex Carrol's Diner",
+      "address": "Mex Carrol's Diner, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chez Moi",
+      "address": "135 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "River Deli",
+      "address": "River Deli, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kitchen at Cobble Hill",
+      "address": "254 Court Street, Brooklyn, NY11231"
+    },
+    {
+      "brand": "Bar",
+      "name": "Talea Beer Co.",
+      "address": "Talea Beer Co., Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Confidant",
+      "address": "127 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Swallow Cafe",
+      "address": "156 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Boat",
+      "address": "Boat, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Vara",
+      "address": "268 Clinton Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lichee Nut",
+      "address": "Lichee Nut, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Din Soup Dumplings",
+      "address": "Din Soup Dumplings, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Laundry & Latte",
+      "address": "Laundry & Latte, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Zabb PuTawn",
+      "address": "Zabb PuTawn, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bolo Bolo",
+      "address": "Bolo Bolo, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Congress",
+      "address": "208 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Pub",
+      "name": "Lobo",
+      "address": "Lobo, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Chili",
+      "address": "Cafe Chili, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lemongrass Grill",
+      "address": "Lemongrass Grill, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "ViVi Bubble Tea",
+      "address": "113 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mamman",
+      "address": "Mamman, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "June",
+      "address": "June, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lillo Cucina Italiana",
+      "address": "Lillo Cucina Italiana, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mia's Bakery",
+      "address": "Mia's Bakery, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Black Forest Brooklyn",
+      "address": "Black Forest Brooklyn, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wanisa",
+      "address": "Wanisa, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "One Girl Cookies",
+      "address": "One Girl Cookies, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ki Sushi",
+      "address": "Ki Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pure Green",
+      "address": "95 Boerum Place, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ming Mun",
+      "address": "Ming Mun, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ssam",
+      "address": "Ssam, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cibao",
+      "address": "Cibao, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Montero's Bar",
+      "address": "Montero's Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Espresso Me",
+      "address": "Espresso Me, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bohemien",
+      "address": "Bohemien, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Kaigo Coffee Room",
+      "address": "139 Bridge Park Drive, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Blank Street Coffee",
+      "address": "178 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Indian Table",
+      "address": "Indian Table, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sam's Steaks & Chops",
+      "address": "Sam's Steaks & Chops, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Joya",
+      "address": "Joya, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Stumptown No 12",
+      "address": "212B Pacific Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Books",
+      "name": "Freebird Books",
+      "address": "Freebird Books, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Popina",
+      "address": "Popina, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Hop Shop",
+      "address": "The Hop Shop, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "About Coffee",
+      "address": "About Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Yemen Cafe",
+      "address": "Yemen Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hadramout Restaurant",
+      "address": "172 Atlantic Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Barnes & Noble",
+      "address": "194 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Pub",
+      "name": "Henry Public",
+      "address": "Henry Public, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Xochitl Taqueria",
+      "address": "Xochitl Taqueria, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Amy's Bread",
+      "address": "311 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Bar",
+      "name": "Elsa",
+      "address": "Elsa, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Cedro",
+      "address": "El Cedro, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Libertador",
+      "address": "404 Henry Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Carlotte Patisserie",
+      "address": "Carlotte Patisserie, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Paris Baguette",
+      "address": "Paris Baguette, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brado Thin Crust Pizza",
+      "address": "155 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al Badawi",
+      "address": "151 Atlantic Avenue, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luzzo's BK",
+      "address": "Luzzo's BK, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ruta Oaxaca",
+      "address": "Ruta Oaxaca, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Savelli",
+      "address": "Savelli, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe Volkan",
+      "address": "Cafe Volkan, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "I'Milky Bubble Tea",
+      "address": "105 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Daily Provisions",
+      "address": "Daily Provisions, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pips",
+      "address": "Pips, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Khaosan",
+      "address": "Khaosan, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brain Food",
+      "address": "111 Court Street, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Montague Diner",
+      "address": "Montague Diner, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Curry Heights",
+      "address": "Curry Heights, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Custom House",
+      "address": "The Custom House, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Grand Canyon Restaurant",
+      "address": "Grand Canyon Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Saketumi Asian Bistro",
+      "address": "Saketumi Asian Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sippy Cafe",
+      "address": "Sippy Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fini Patio Bar",
+      "address": "159 Bridge Park Drive, Brooklyn, NY11201"
+    },
+    {
+      "brand": "Books",
       "name": "Books Are Magic",
-      "address": "225 Smith St, Brooklyn, NY 11231"
+      "address": "Books Are Magic, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Pilot",
+      "address": "Pilot, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Octavia",
+      "address": "Octavia, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Don Neo Fusion",
+      "address": "Don Neo Fusion, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Enerugi Ramen",
+      "address": "Enerugi Ramen, Brooklyn, NY"
     }
   ]
 }

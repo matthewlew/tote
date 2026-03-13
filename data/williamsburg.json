@@ -1,14 +1,599 @@
 {
   "places": [
     {
-      "brand": "Coffee Shop",
-      "name": "Devocion",
-      "address": "69 Grand St, Brooklyn, NY 11249"
+      "brand": "Bar",
+      "name": "Barcade",
+      "address": "388 Union Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mugs Ale House",
+      "address": "125 Bedford Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Mother's",
+      "address": "347 Graham Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Pub",
+      "name": "Harefield Road",
+      "address": "769 Metropolitan Avenue, Brooklyn, NY11203"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Richardson",
+      "address": "The Richardson, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Carmine's Pizzeria",
+      "address": "358 Graham Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Loco Burrito",
+      "address": "345 Graham Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tony's Pizza",
+      "address": "Tony's Pizza, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "East Met West",
+      "address": "752 Metropolitan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sol Et Soleil",
+      "address": "14 Bushwick Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Aurora",
+      "address": "70 Grand Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Nicky's Unisex",
+      "address": "90 South 4th st, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Juliette Restaurant",
+      "address": "Juliette Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "miDmuS",
+      "address": "135 North 5th Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ako",
+      "address": "205 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Doughnut Plant",
+      "address": "198 Bedford Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Counting Room",
+      "address": "Counting Room, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Urban Rustic",
+      "address": "236 North 12th Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bakeri",
+      "address": "150 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Uro Cafe",
+      "address": "277 Driggs Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cari\u00f1o",
+      "address": "82 South 4th Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "South Port",
+      "address": "91 South 4th Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mol\u00e9",
+      "address": "178 Kent Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Black Brick",
+      "address": "300 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dok\u00e9bi",
+      "address": "199 Grand Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kabob Shack",
+      "address": "Kabob Shack, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The West",
+      "address": "379 Union Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Limosneros",
+      "address": "366 Union Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lighthouse",
+      "address": "145 Borinquen Place, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vinnies Pizzeria",
+      "address": "148 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Garden Carver",
+      "address": "187 Grand Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "LA Burrito",
+      "address": "LA Burrito, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Noods n' Chill",
+      "address": "774 Driggs Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Simple Cafe",
+      "address": "346 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "With Others",
+      "address": "340 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "ROKA Modern Mediterranean",
+      "address": "349 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Abracadabra",
+      "address": "347 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "Amor y Amargo",
+      "address": "188 Havermeyer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Namkeen",
+      "address": "338 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Randolph Bar and Restaurant",
+      "address": "Randolph Bar and Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Drink",
+      "address": "The Drink, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Calexico",
+      "address": "645 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Turkey's Nest",
+      "address": "94 Bedford Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "One Stop Beer Shop",
+      "address": "134 Kingsland Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Larry's Ca Phe",
+      "address": "135 Woodpoint Road, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Zona Rosa",
+      "address": "571 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "16 Handles",
+      "address": "139 North 7th Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Pub",
+      "name": "Brooklyn Brewery",
+      "address": "79 North 11th Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Brooklyn Bowl",
+      "address": "61 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Oslo Coffee Roasters",
+      "address": "328 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Partners Coffee",
+      "address": "125 North 6th Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Union Pool",
+      "address": "484 Union Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "Skinny Dennis",
+      "address": "152 Metropolitan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Levee",
+      "address": "212 Berry Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Peter Luger Steak House",
+      "address": "178 Broadway, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pies-N-Thighs",
+      "address": "166 South 4th Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Recette",
+      "address": "103 Havemeyer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Emmy squared",
+      "address": "364 Grand Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mizu",
+      "address": "311 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Frost Restaurant",
+      "address": "193 Frost Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fada",
+      "address": "Fada, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Motorino",
+      "address": "139 Broadway, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "OTB",
+      "address": "141 Broadway, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Velvet Lounge",
+      "address": "174 Broadway, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Roebling Sporting Club",
+      "address": "225 North 8th Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Meadowsweet",
+      "address": "149 Broadway, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Reben Luncheonette",
+      "address": "229 Havemeyer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Win Son",
+      "address": "159 Graham Avenue, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Pub",
+      "name": "Sweet Science",
+      "address": "135 Graham Avenue, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Nyla",
+      "address": "362 Hewes Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "La Milagrosa",
+      "address": "149 Havemeyer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Musashi",
+      "address": "Musashi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Los Tacos Mcondo",
+      "address": "502 Grand Street, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Taqueria",
+      "address": "572 Grand Street, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sandwich Shop",
+      "address": "658 Grand Street, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria Bar N2",
+      "address": "Taqueria Bar N2, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Muz Muz CBD Lounge",
+      "address": "296 Graham Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Haymaker's Corner Store",
+      "address": "176 Ainslie Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Campbell & Co.",
+      "address": "502 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rose Marie",
+      "address": "524 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mad For Chicken",
+      "address": "Mad For Chicken, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Here",
+      "address": "26 Bushwick Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Birds of a Feather",
+      "address": "191 Grand Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Samurai Mama",
+      "address": "205 Grand Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "We Got Company",
+      "address": "441 Metropolitan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Little Ruby's",
+      "address": "98 Berry Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Caf\u00e9 Colette",
+      "address": "79 Berry Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fat Goose",
+      "address": "125 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "George & Jacks Tap Room",
+      "address": "103 Berry Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Antica Pesa",
+      "address": "115 Berry Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Moonburger",
+      "address": "126 Bedford Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Blue Blossom",
+      "address": "135 North 5th Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sweet Chick",
+      "address": "164 Bedford Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Hotel Delmano",
+      "address": "82 Berry Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Teddy's",
+      "address": "96 Berry Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "D.O.C. Wine Bar",
+      "address": "D.O.C. Wine Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rosarito Fish Shack",
+      "address": "168 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Rose Wolf Coffee",
+      "address": "867 Metropolitan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Archie's Pizza",
+      "address": "457 Graham Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Destefano's Steakhouse",
+      "address": "593 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hummus Market",
+      "address": "Hummus Market, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taste of Heaven",
+      "address": "251 Jackson Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mozaik",
+      "address": "522 Metropolitan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sal's Pizzeria",
+      "address": "544 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Suzume",
+      "address": "545 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "Jr & Son",
+      "address": "575 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pecoraro Latteria",
+      "address": "636 Metropolitan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lorimer Market",
+      "address": "620 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bonnie's",
+      "address": "398 Manhattan Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Daytime",
+      "address": "415 Graham Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "Muchmore's",
+      "address": "2 Havemeyer Street, Brooklyn, NY11211"
     },
     {
       "brand": "Restaurant",
       "name": "Lilia",
-      "address": "567 Union Ave, Brooklyn, NY 11211"
+      "address": "567 Union Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Bar",
+      "name": "Night of Joy",
+      "address": "667 Lorimer Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hide & Seek",
+      "address": "Hide & Seek, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Keg & Lantern",
+      "address": "97 Nassau Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nights and Weekends",
+      "address": "1 Bedford Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bernie's",
+      "address": "332 Driggs Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Hidden Pearl",
+      "address": "621 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Idle Mind Tavern",
+      "address": "623 Manhattan Avenue, Brooklyn, NY11222"
     }
   ]
 }

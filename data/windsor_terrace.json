@@ -1,14 +1,99 @@
 {
   "places": [
     {
+      "brand": "Bakery",
+      "name": "Regina Bakery",
+      "address": "256 Prospect Park West, Brooklyn, NY11215"
+    },
+    {
       "brand": "Restaurant",
-      "name": "The Double Windsor",
-      "address": "210 Prospect Park West, Brooklyn, NY 11215"
+      "name": "Hilltop Tavern",
+      "address": "256 Prospect Park West, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Le Paddock",
+      "address": "1235 Prospect Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Cat",
+      "address": "The Cat, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Adirondack",
+      "address": "The Adirondack, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cena",
+      "address": "601 Greenwood Avenue, Brooklyn, NY11218"
     },
     {
       "brand": "Cafe",
+      "name": "Terrace Coffee Shop",
+      "address": "Terrace Coffee Shop, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Elora's",
+      "address": "272 Prospect Park West, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Books",
+      "name": "Terrace Books",
+      "address": "1624 10th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Poetica Coffee",
+      "address": "Poetica Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Elk",
+      "address": "Elk, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bedawi Cafe",
+      "address": "Bedawi Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bangkok Boulevard",
+      "address": "Bangkok Boulevard, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Le P'tit Library",
+      "address": "Le P'tit Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
       "name": "Krupa Grocery",
-      "address": "231 Prospect Park West, Brooklyn, NY 11215"
+      "address": "Krupa Grocery, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Lonesome Club",
+      "address": "The Lonesome Club, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Tea Time Tactics",
+      "address": "1293 Prospect Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Luca's Library",
+      "address": "Luca's Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Ladybird",
+      "address": "252 Prospect Park West, Brooklyn, NY11215"
     }
   ]
 }

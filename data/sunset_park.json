@@ -1,14 +1,529 @@
 {
   "places": [
     {
-      "brand": "Restaurant",
-      "name": "Tacos El Bronco",
-      "address": "4324 4th Ave, Brooklyn, NY 11232"
+      "brand": "Bakery",
+      "name": "Baker Wah",
+      "address": "4401 8th Avenue, Brooklyn, NY11220"
     },
     {
-      "brand": "Park",
-      "name": "Sunset Park",
-      "address": "41st St & 44th St, Brooklyn, NY 11232"
+      "brand": "Restaurant",
+      "name": "Great Taste Dumpling",
+      "address": "4317 8th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Carreta",
+      "address": "407 51st Street, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Pub",
+      "name": "My Coral",
+      "address": "5401 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Barrera's",
+      "address": "5423 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Panderia La Hacienda",
+      "address": "5707 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "OD's Restaurant",
+      "address": "5823 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Fast Food",
+      "name": "Rosas Bakery",
+      "address": "5824 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Usuluteco #3 Restaurant",
+      "address": "5502 3rd Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Twist",
+      "address": "4202 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Bar",
+      "name": "El Tahur",
+      "address": "4402 3rd Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sabor de Columbia",
+      "address": "4601 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hua Hui Bakery",
+      "address": "4501 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rico Pollo III",
+      "address": "4523 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Los Tres Potrillos",
+      "address": "1004 4th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tacos El Bronco",
+      "address": "4324 4th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Axzo Cafe",
+      "address": "912 4th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Familia",
+      "address": "938 4th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Pub",
+      "address": "Bagel Pub, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Roundabout Restaurant",
+      "address": "Roundabout Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ayat",
+      "address": "274 36th Street, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Market Coffee",
+      "address": "Market Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Pollo Peruviano II",
+      "address": "4102 5th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Cafe",
+      "name": "DNA",
+      "address": "DNA, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Parada",
+      "address": "855 4th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sunset Park Diner",
+      "address": "889 5th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Simon's BBQ",
+      "address": "4823 8th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Redang Island",
+      "address": "5112 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gia Lam",
+      "address": "Gia Lam, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Gaoming Bakery",
+      "address": "5110 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Zona Sur",
+      "address": "Zona Sur, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Slim\u0101k",
+      "address": "Slim\u0101k, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Liebre Cafe",
+      "address": "4017 7th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tulcingo",
+      "address": "5520 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Usuluteco #2",
+      "address": "Usuluteco #2, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mama Lupita's Bistro",
+      "address": "Mama Lupita's Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tacos Matamoras",
+      "address": "4508 5th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kai Feng Fu",
+      "address": "Kai Feng Fu, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Judy\u2019s",
+      "address": "4022 5th Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Antojitos Catrachos",
+      "address": "504 39th Street, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Colson P\u00e2tisserie",
+      "address": "Colson P\u00e2tisserie, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Booklyn",
+      "address": "140 B7-G 58th Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Maria's Mexican Bistro",
+      "address": "Maria's Mexican Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sunset Bagels",
+      "address": "Sunset Bagels, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Castillo Restaurant",
+      "address": "Castillo Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "La Flor de Izucar",
+      "address": "La Flor de Izucar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Beef & Fish",
+      "address": "Beef & Fish, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "K\u00f6fte Piyaz",
+      "address": "K\u00f6fte Piyaz, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Minnie's",
+      "address": "Minnie's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe Nube",
+      "address": "Cafe Nube, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Isabela's",
+      "address": "Isabela's, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "L'Wren",
+      "address": "L'Wren, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lucky Vegetarian",
+      "address": "Lucky Vegetarian, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe Japon",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Obentoyasan",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ramen Setagaya",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gohei",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hachi",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Moriya",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shokusaido",
+      "address": "934 3rd Avenue, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Espino",
+      "address": "El Espino, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Irish Haven",
+      "address": "5721 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Buen Gusto Restaurant",
+      "address": "5201 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Cafe",
+      "name": "ViVi Bubble Tea",
+      "address": "5002 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Rey de Pescado",
+      "address": "El Rey de Pescado, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Los Cabos",
+      "address": "Los Cabos, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rinconcito Familiar",
+      "address": "Rinconcito Familiar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jalepe\u00f1os",
+      "address": "Jalepe\u00f1os, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mangos",
+      "address": "Mangos, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pete's Brooklyn Eats Cafe",
+      "address": "140 58th Street, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lutheran Halal Cafe",
+      "address": "Lutheran Halal Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Ha-Weeda Tavern",
+      "address": "4575 2nd Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Cafe",
+      "name": "C-Xique Cafe",
+      "address": "C-Xique Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Rancho Grande",
+      "address": "El Rancho Grande, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Big John's",
+      "address": "Big John's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria El Maguey",
+      "address": "Taqueria El Maguey, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Grand Villa",
+      "address": "Grand Villa, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Yafa Cafe",
+      "address": "4415 4th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Castillo de Yaque",
+      "address": "Castillo de Yaque, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Caba\u00f1a",
+      "address": "La Caba\u00f1a, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Totopan",
+      "address": "Totopan, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Quetzalito",
+      "address": "El Quetzalito, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tacos Tijuana",
+      "address": "5807 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Comedor",
+      "address": "El Comedor, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Viejo John's",
+      "address": "El Viejo John's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Georges",
+      "address": "5701 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tres Chivos",
+      "address": "5717 5th Avenue, Brooklyn, NY11220"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The King of Meat",
+      "address": "The King of Meat, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Generoso's",
+      "address": "Generoso's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Waku Waku",
+      "address": "Waku Waku, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Barrows Intense Ginger",
+      "address": "86 34th St, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sally's Seafood Station",
+      "address": "Sally's Seafood Station, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Panajachel Solola",
+      "address": "Panajachel Solola, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "St. Mark's Comics",
+      "address": "St. Mark's Comics, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Oldies",
+      "address": "Oldies, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rob's of Brooklyn",
+      "address": "4201 7th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "4618 Bakery Inc.",
+      "address": "4618 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fei Long Spicy Hot Pot",
+      "address": "4508 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Poke Bowl 101",
+      "address": "4314 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Fantastic Bar & Lounge",
+      "address": "4414 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Meiqing Restaurant",
+      "address": "4502 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Goodview Delicious Bakery Corp.",
+      "address": "4518 8th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Tadaima",
+      "address": "51 35th Street, Brooklyn, NY11232"
+    },
+    {
+      "brand": "Pub",
+      "name": "Gun Hill Publick House",
+      "address": "Gun Hill Publick House, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bitter Monk",
+      "address": "68 34th Street, Brooklyn, NY11232"
     }
   ]
 }

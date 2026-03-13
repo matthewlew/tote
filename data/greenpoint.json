@@ -1,14 +1,604 @@
 {
   "places": [
     {
-      "brand": "Bakery",
-      "name": "Peter Pan Donut & Pastry Shop",
-      "address": "727 Manhattan Ave, Brooklyn, NY 11222"
+      "brand": "Bar",
+      "name": "Counting Room",
+      "address": "Counting Room, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Uro Cafe",
+      "address": "277 Driggs Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ashbox Cafe",
+      "address": "Ashbox Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Word Bookstore",
+      "address": "126 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Pencil Factory",
+      "address": "The Pencil Factory, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Eagle Trading Company",
+      "address": "258 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sereneco",
+      "address": "Sereneco, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Kettl",
+      "address": "70 Greenpoint Avenue, Brooklyn, NY11222"
     },
     {
       "brand": "Restaurant",
       "name": "Paulie Gee's",
-      "address": "60 Greenpoint Ave, Brooklyn, NY 11222"
+      "address": "Paulie Gee's, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bar Americano",
+      "address": "180 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shanghai Lee",
+      "address": "Shanghai Lee, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Black Rabbit",
+      "address": "Black Rabbit, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Calexico",
+      "address": "645 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Turkey's Nest",
+      "address": "94 Bedford Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Lobster Joint",
+      "address": "The Lobster Joint, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Little Armenia",
+      "address": "Little Armenia, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Elder Greene",
+      "address": "160 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vamos al Tequila",
+      "address": "Vamos al Tequila, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cozinha Latina",
+      "address": "37 Greenpoint Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "One Stop Beer Shop",
+      "address": "134 Kingsland Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Pub",
+      "name": "Brooklyn Brewery",
+      "address": "79 North 11th Street, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Brooklyn Bowl",
+      "address": "61 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Brew Inn",
+      "address": "924 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Old Poland Bakery",
+      "address": "926 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Grill & Curry",
+      "address": "1015 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Radio Bakery",
+      "address": "135 India Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fat Goose",
+      "address": "125 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ramen, Fried Rice and Noodles",
+      "address": "694 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pueblo Querido Coffee Roasters Cafe de Colombia",
+      "address": "698 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hide & Seek",
+      "address": "Hide & Seek, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Keg & Lantern",
+      "address": "97 Nassau Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Manhattan Triple Decker Restaurant",
+      "address": "695 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nights and Weekends",
+      "address": "1 Bedford Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bernie's",
+      "address": "332 Driggs Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Hidden Pearl",
+      "address": "621 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Idle Mind Tavern",
+      "address": "623 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Caf\u00e9 Grumpy",
+      "address": "193 Meserole Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Syrena",
+      "address": "207 Norman Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gator",
+      "address": "105 Norman Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Edy\u2019s Grocer",
+      "address": "136 Meserole Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lite Bites",
+      "address": "700 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Spritzenhaus",
+      "address": "33 Nassau Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Yuu",
+      "address": "55 Nassau Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mabel's Smokehouse",
+      "address": "44 Berry Street, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Pub",
+      "name": "Kent Ale House",
+      "address": "Kent Ale House, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Bagel Point",
+      "address": "699 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Peter Pan Donut & Pastry Shop",
+      "address": "727 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cookie Road",
+      "address": "94 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Littleneck Outpost",
+      "address": "128 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Chez Ma Tante",
+      "address": "47 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "La Paris Dakar",
+      "address": "141 India Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Odd Fox",
+      "address": "Odd Fox, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Moonlight Mile",
+      "address": "200 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Thai Cafe",
+      "address": "925 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Madeline's",
+      "address": "113 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "The White Elephant",
+      "address": "1065 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Achilles Heel",
+      "address": "180 West Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Glasserie",
+      "address": "95 Commercial Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Bean",
+      "address": "101 Bedford Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Buttery Bar",
+      "address": "152 Driggs Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Slick Willy",
+      "address": "179 Meserole Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Connie O's Pub",
+      "address": "Connie O's Pub, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Troost",
+      "address": "1011 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Agra Taj Mahal",
+      "address": "1005 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Esme",
+      "address": "999 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Westlight",
+      "address": "Westlight, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Karczma",
+      "address": "Karczma, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chinese Musician",
+      "address": "Chinese Musician, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "one bedford",
+      "address": "one bedford, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fabio's Pizzeria & Restaurant",
+      "address": "635 Meeker Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Place Pizzeria & Bar",
+      "address": "269 Norman Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Oasis",
+      "address": "230 Calyer Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Moe\u2019s Doughs Donut Shop",
+      "address": "126 Nassau Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pueblo Querido",
+      "address": "195 Greenpoint Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sapporo Ichiban",
+      "address": "Sapporo Ichiban, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria La Norte\u00f1a",
+      "address": "Taqueria La Norte\u00f1a, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sunshine Laundromat & Pinball",
+      "address": "860 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cristina's",
+      "address": "Cristina's, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Caf\u00e9 Riviera",
+      "address": "Caf\u00e9 Riviera, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Oak & Iron",
+      "address": "Oak & Iron, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Forma",
+      "address": "Forma, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wasabi",
+      "address": "Wasabi, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bot Bar",
+      "address": "664 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Lake Street",
+      "address": "706 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Pan Pan Vino Vino",
+      "address": "120 Norman Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bulbap Grill",
+      "address": "Bulbap Grill, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Frankel's Delicatessen and Appetizing",
+      "address": "631 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Casanova",
+      "address": "338 McGuinness Boulevard, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Bedford",
+      "address": "110 Bedford Avenue, Brooklyn, NY11211"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Early",
+      "address": "967 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Baker\u2019s Dozen",
+      "address": "Baker\u2019s Dozen, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pyza",
+      "address": "Pyza, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Call Box Lounge",
+      "address": "2 Lombardy Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Pie Corps",
+      "address": "77 Driggs Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sunset Diner",
+      "address": "593 Meeker Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sweetleaf Coffee",
+      "address": "Sweetleaf Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Leroy's",
+      "address": "195 Franklin Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cotter Barber",
+      "address": "Cotter Barber, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Charlotte Patisserie",
+      "address": "Charlotte Patisserie, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fornino",
+      "address": "Fornino, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "66 Nassau Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bakeri",
+      "address": "Bakeri, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Rzeszowska Bakery",
+      "address": "948 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Amami",
+      "address": "Amami, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jungle Cafe",
+      "address": "Jungle Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Water Tower Bar",
+      "address": "96 Wythe Avenue, Brooklyn, NY11249"
+    },
+    {
+      "brand": "Bar",
+      "name": "Broken Land",
+      "address": "107 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Brooklyn Safehouse",
+      "address": "120 Franklin Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Marcy and Myrtle",
+      "address": "101 North 10th Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Variety Coffee",
+      "address": "142 Driggs Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Naked Dog",
+      "address": "47 Java Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Caf\u00e9 Alula",
+      "address": "Caf\u00e9 Alula, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Maman",
+      "address": "80 Kent Street, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Bar",
+      "name": "Goldie\u2019s",
+      "address": "195 Nassau Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Scalino",
+      "address": "Scalino, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pierozek",
+      "address": "592 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Boon Thai",
+      "address": "681 Manhattan Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Polonia Ksiegarnia",
+      "address": "882 Manhattan Avenue, Brooklyn, NY11222"
+    },
+    {
+      "brand": "Books",
+      "name": "Kingsland Print Studio",
+      "address": "Kingsland Print Studio, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Greenpoint Brewery",
+      "address": "Greenpoint Brewery, Brooklyn, NY"
     }
   ]
 }

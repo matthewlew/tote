@@ -1,14 +1,564 @@
 {
   "places": [
     {
-      "brand": "Coffee Shop",
-      "name": "Daily Press",
-      "address": "505 Franklin Ave, Brooklyn, NY 11238"
+      "brand": "Restaurant",
+      "name": "Sarah James",
+      "address": "217 Pulaski Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Saragina's",
+      "address": "Saragina's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Beso",
+      "address": "Beso, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ma and Pop",
+      "address": "349 Lewis Avenue, Brooklyn, NY11233"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Bar at Peaches",
+      "address": "The Bar at Peaches, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Do or Dive",
+      "address": "1103 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brooklyn Tea",
+      "address": "Brooklyn Tea, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Cookie's",
+      "address": "Cookie's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Due Fratelli",
+      "address": "Due Fratelli, Brooklyn, NY"
     },
     {
       "brand": "Restaurant",
       "name": "Peaches HotHouse",
-      "address": "415 Tompkins Ave, Brooklyn, NY 11216"
+      "address": "415 Tompkins Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Joloff",
+      "address": "1168 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Grill",
+      "address": "1176 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Napoleon's Southern Cuisine & Bakery",
+      "address": "1180 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Pub",
+      "name": "Tilly's",
+      "address": "1223 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Le Paris Dekar",
+      "address": "518 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Footprints",
+      "address": "584 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Trini-Girl",
+      "address": "628 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Beds Thai",
+      "address": "1185 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Angela's",
+      "address": "417 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Little Grenjai",
+      "address": "477 Gates Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sally's",
+      "address": "Sally's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Meat",
+      "address": "123 Kingston Avenue, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cas Restaurant",
+      "address": "Cas Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "King of the Sea",
+      "address": "King of the Sea, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Natural Blend",
+      "address": "Natural Blend, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Blue Cafe Restaurant",
+      "address": "1563 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Cake Boi",
+      "address": "627 Throop Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "Marco's",
+      "address": "1071 Broadway, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Lone Wolf",
+      "address": "1089 Broadway, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Ursula",
+      "address": "387A Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sweet Brooklyn",
+      "address": "608 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dolores",
+      "address": "397 Tompkins Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bed-Vyne Brew",
+      "address": "370 Tompkins Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Izakaya Tenzo",
+      "address": "1116 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Saraghina Bakery",
+      "address": "433 Halsey Street, Brooklyn, NY11233"
+    },
+    {
+      "brand": "Bar",
+      "name": "Selune",
+      "address": "Selune, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bar LunAtico",
+      "address": "486 Halsey Street, Brooklyn, NY11233"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sumner Cafe",
+      "address": "144 Decatur Street, Brooklyn, NY11233"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Baron's",
+      "address": "564 DeKalb Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Bar",
+      "name": "Cocktail Bedstuy",
+      "address": "Cocktail Bedstuy, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Anchor Coffee",
+      "address": "Anchor Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Dynaco",
+      "address": "Dynaco, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Garnacha Bite",
+      "address": "361 Halsey Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "India House",
+      "address": "586 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Maya Congee Cafe",
+      "address": "Maya Congee Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "David's Brisket House",
+      "address": "533 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Rosalia's Cafe",
+      "address": "615 Nostrand Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Paul's Bar",
+      "address": "Paul's Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sexy Queen",
+      "address": "1177 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mary's Coffee Shop",
+      "address": "907 DeKalb Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Burly Coffee",
+      "address": "356 Throop Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Daddy Greens",
+      "address": "Daddy Greens, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Fulton Ale House",
+      "address": "1446 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Soldier Restaurant",
+      "address": "1444 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Agosto Thai",
+      "address": "1450 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Applebee's",
+      "address": "Applebee's, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "King Tai",
+      "address": "King Tai, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Captain Dan's",
+      "address": "497 Greene Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mama Fox",
+      "address": "327 Stuyvesant Avenue, Brooklyn, NY11233"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Rita & Maria",
+      "address": "Rita & Maria, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fermento",
+      "address": "186 Marcus Garvey Boulevard, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Welcome Home",
+      "address": "1047 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Bureau",
+      "address": "279 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Nostrand Coffee Roaster",
+      "address": "261 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Playground Coffee Shop",
+      "address": "1114 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tam\u00e1",
+      "address": "147 Lewis Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Lovers Rock",
+      "address": "419 Tompkins Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Artshack cafe/bar",
+      "address": "Artshack cafe/bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Martha's Pastries & Cafe",
+      "address": "Martha's Pastries & Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bklyn Blend",
+      "address": "194 Tompkins Avenue, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Bar",
+      "name": "Swell Dive",
+      "address": "1013 Bedford Avenue, Brooklyn, NY11205"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chris Restaurant",
+      "address": "613 Nostrand Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cotton Bean",
+      "address": "1077 Bergen Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Uotora",
+      "address": "1075 Bergen Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La \u00d1apa",
+      "address": "La \u00d1apa, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Diwali Indian Cuisine",
+      "address": "Diwali Indian Cuisine, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fulton Food Court",
+      "address": "1178 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "IV Purpose",
+      "address": "IV Purpose, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Corto",
+      "address": "Corto, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bunny",
+      "address": "449 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brown Butter",
+      "address": "413 Tompkins Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Playground Library",
+      "address": "Playground Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Star Cafe & Bakery",
+      "address": "1251 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Baobab Gouygui",
+      "address": "The Baobab Gouygui, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Nest",
+      "address": "Bagel Nest, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Coffee Uplifits People",
+      "address": "1109 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Madame Poupon",
+      "address": "Madame Poupon, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Greenberg's Bagels",
+      "address": "1065 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Pub",
+      "name": "Lebre Garden",
+      "address": "Lebre Garden, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Plus",
+      "address": "1516 Fulton Street, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Bar",
+      "name": "Basquiat's Bottle",
+      "address": "1198 Fulton Street, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Books",
+      "name": "Playground Annex",
+      "address": "Playground Annex, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lucy's Vietnamese",
+      "address": "1111 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Little Roy",
+      "address": "Little Roy, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gua-Cu-Co",
+      "address": "360 Throop Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sajoma Restaurant",
+      "address": "Sajoma Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Petisco Brazuca",
+      "address": "Petisco Brazuca, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Samurai Papa",
+      "address": "594 Lafayette Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Fat Doughnut",
+      "address": "50 Malcolm X Boulevard, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Greedi Vegan",
+      "address": "326 Tompkins Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Secret Garden",
+      "address": "347 Lewis Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Almah Cafe",
+      "address": "Almah Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Daphne's",
+      "address": "Daphne's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bklyn Kettle Cafe",
+      "address": "Bklyn Kettle Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "The Word Is Change",
+      "address": "The Word Is Change, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wonderful Asian Resturaunt",
+      "address": "Wonderful Asian Resturaunt, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nostrand Ave Pizza",
+      "address": "Nostrand Ave Pizza, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Nostrand Avenue Pub",
+      "address": "Nostrand Avenue Pub, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Seed Brklyn Green House",
+      "address": "Seed Brklyn Green House, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cinnabon/Carvel",
+      "address": "374 Tompkins Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nagle's Bagels",
+      "address": "378 Tompkins Avenue, Brooklyn, NY"
     }
   ]
 }

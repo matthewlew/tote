@@ -1,14 +1,379 @@
 {
   "places": [
     {
-      "brand": "Bar",
-      "name": "Super Power",
-      "address": "722 Nostrand Ave, Brooklyn, NY 11216"
+      "brand": "Restaurant",
+      "name": "Tacolmos",
+      "address": "205A Schenectady Avenue, Brooklyn, NY11213"
     },
     {
       "brand": "Restaurant",
-      "name": "Chavela's",
-      "address": "736 Franklin Ave, Brooklyn, NY 11238"
+      "name": "Breukelen Brasserie",
+      "address": "710 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Footprints",
+      "address": "584 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Trini-Girl",
+      "address": "628 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gold Room BK",
+      "address": "429 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Any Thing",
+      "address": "453 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Novelli",
+      "address": "1034 Nostrand Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Food Sermon",
+      "address": "355 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Books",
+      "name": "The Nonbinarian",
+      "address": "1130 President Street, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Books",
+      "name": "Anyone Comics",
+      "address": "1216 Union Street, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Patrick Steakhouse",
+      "address": "Patrick Steakhouse, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Manhattanville Coffee",
+      "address": "167 Rogers Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Colina Cuevo",
+      "address": "759 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "Nostrand Station",
+      "address": "822 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Meme's Healthy Nibbles",
+      "address": "707 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Babydudes",
+      "address": "715 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Rue Dix",
+      "address": "1451 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Meat",
+      "address": "123 Kingston Avenue, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cas Restaurant",
+      "address": "Cas Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Lakou",
+      "address": "Lakou, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Blue Cafe Restaurant",
+      "address": "1563 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Catfish",
+      "address": "1433 Bedford Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sweet Brooklyn",
+      "address": "608 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Alenbi Kitchen",
+      "address": "889 Nostrand Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Cafe",
+      "name": "PLG Brooklyn",
+      "address": "499 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Bar",
+      "name": "Two Saints",
+      "address": "Two Saints, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "99 Rogers",
+      "address": "99 Rogers Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "India House",
+      "address": "586 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "David's Brisket House",
+      "address": "533 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jenny #2 Restaurant",
+      "address": "233 Kingston Avenue, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Rosalia's Cafe",
+      "address": "615 Nostrand Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Daddy Greens",
+      "address": "Daddy Greens, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Fulton Ale House",
+      "address": "1446 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Soldier Restaurant",
+      "address": "1444 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Agosto Thai",
+      "address": "1450 Fulton Street, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Glou",
+      "address": "406 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Bar",
+      "name": "King Tai",
+      "address": "King Tai, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe con Libros",
+      "address": "724 Prospect Place, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Bar",
+      "name": "Whoopsie Daisy",
+      "address": "225 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pando's Creperie & Cafe",
+      "address": "227 Kingston Avenue, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bunch o' Bagels",
+      "address": "361 Troy Avenue, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sabor Azteca",
+      "address": "742 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chris Restaurant",
+      "address": "613 Nostrand Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cotton Bean",
+      "address": "1077 Bergen Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Uotora",
+      "address": "1075 Bergen Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La \u00d1apa",
+      "address": "La \u00d1apa, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Super Power",
+      "address": "Super Power, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "P-Street Cafe",
+      "address": "1183 President Street, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vee's Restaurant",
+      "address": "Vee's Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Crown Street Mini Library",
+      "address": "Crown Street Mini Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cornbread",
+      "address": "409 Eastern Parkway, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Plus",
+      "address": "1516 Fulton Street, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hamlet",
+      "address": "Hamlet, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Lula Bagel",
+      "address": "Lula Bagel, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gee's Caribbean Restaurant",
+      "address": "770 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Almah Cafe",
+      "address": "Almah Cafe, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nostrand Ave Pizza",
+      "address": "Nostrand Ave Pizza, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cielito Lindo Bistro",
+      "address": "665 Nostrand Avenue, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Pub",
+      "name": "Nostrand Avenue Pub",
+      "address": "Nostrand Avenue Pub, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Daughter",
+      "address": "1090 Saint Johns Place, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Chocolate Espresso Bar",
+      "address": "Chocolate Espresso Bar, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Holic Thai Bistro",
+      "address": "Holic Thai Bistro, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hendrix House",
+      "address": "Hendrix House, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Akara House",
+      "address": "Akara House, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Rodeo",
+      "address": "1134 President Street, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Furman's Coffee",
+      "address": "Furman's Coffee, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Miss Barb's",
+      "address": "Miss Barb's, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Katie O Soul",
+      "address": "452 East New York Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Barzakh Cafe",
+      "address": "147 Utica Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bong",
+      "address": "724 Sterling Place, Brooklyn, NY11216"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Yummy's",
+      "address": "Yummy's, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Essence",
+      "address": "1662 Atlantic Avenue, Brooklyn, NY11213"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bomberino",
+      "address": "392 Rogers Avenue, Brooklyn, NY11225"
+    },
+    {
+      "brand": "Bar",
+      "name": "Uncle Roger's",
+      "address": "704 Nostrand Avenue, Brooklyn, NY"
     }
   ]
 }

@@ -1,14 +1,589 @@
 {
   "places": [
     {
-      "brand": "Bookstore",
-      "name": "Community Bookstore",
-      "address": "143 7th Ave, Brooklyn, NY 11215"
+      "brand": "Pub",
+      "name": "Double Windsor",
+      "address": "Double Windsor, Brooklyn, NY"
     },
     {
       "brand": "Restaurant",
-      "name": "Al Di La Trattoria",
-      "address": "248 5th Ave, Brooklyn, NY 11215"
+      "name": "Mezcal's",
+      "address": "223 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shaking Crab",
+      "address": "230 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Clever Blend",
+      "address": "Clever Blend, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Miti Miti",
+      "address": "Miti Miti, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Stone Park Cafe",
+      "address": "324 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Gate",
+      "address": "321 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Armory",
+      "address": "149 4th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Katsuei",
+      "address": "210 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hungry Ghost",
+      "address": "337 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Pub",
+      "name": "Park Slope Ale House",
+      "address": "356 6th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Burgers & Beer",
+      "address": "259 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Velvette Brew Espresso Bar",
+      "address": "279 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "Kick Axe",
+      "address": "622 Degraw Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "al di la Trattoria",
+      "address": "248 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wild",
+      "address": "148 5th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Beer Garage",
+      "address": "412 Douglass Street, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Simple Loaf",
+      "address": "Simple Loaf, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Le Mistral",
+      "address": "330 5th Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Authentic Szechuan",
+      "address": "384 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Giovanni\u2019s Brooklyn Eats",
+      "address": "1666 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lore",
+      "address": "441 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Zatar",
+      "address": "1201 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Overgreens",
+      "address": "Overgreens, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Flora",
+      "address": "1021 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ottava",
+      "address": "1123 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kiku",
+      "address": "163 5th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Milk Bar",
+      "address": "204 6th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Provini",
+      "address": "1302 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brooklyn Bread",
+      "address": "347 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Toyo Ramen Bar",
+      "address": "349 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "WINNER",
+      "address": "367 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Colson Patisserie",
+      "address": "374 9th Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Little Purity",
+      "address": "390 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bar Toto",
+      "address": "411 11th Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Purity Diner",
+      "address": "289 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Variety Coffee Roasters",
+      "address": "312 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mockingbird",
+      "address": "213 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sotto Voce",
+      "address": "225 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Nerd Be Cool",
+      "address": "176 Lincoln Place, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ki Sushi",
+      "address": "282 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Morgan's Brooklyn Barbecue",
+      "address": "267 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jet's Pizza",
+      "address": "305 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Gertrude's",
+      "address": "605 Carlton Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mexico Authentico",
+      "address": "396 6th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sweet Chick",
+      "address": "341 Flatbush Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Joy Indian Restaurant",
+      "address": "Joy Indian Restaurant, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Let's Go! Ya Souvlakia",
+      "address": "Let's Go! Ya Souvlakia, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Born",
+      "address": "Born, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sumi",
+      "address": "Sumi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Koto Sushi",
+      "address": "Koto Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pasta Louise Cafe",
+      "address": "803 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "Sharlene's Bar",
+      "address": "353 Flatbush Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fausto",
+      "address": "Fausto, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kami",
+      "address": "385 Flatbush Avenue, Brooklyn, NY11238"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Gran Castillo de Jagua",
+      "address": "El Gran Castillo de Jagua, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Couleur Caf\u00e9",
+      "address": "435 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "La Bagel Delight",
+      "address": "La Bagel Delight, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Calexico",
+      "address": "278B 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bonnie's Grill",
+      "address": "278 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Andamiro",
+      "address": "Andamiro, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Kos Kaffe",
+      "address": "251 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "High Dive",
+      "address": "High Dive, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Culture",
+      "address": "Culture, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Caf\u00e9 Grumpy",
+      "address": "383 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sushi Yashin",
+      "address": "381 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Fonda",
+      "address": "434 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Flamingo Baby Kitchen",
+      "address": "787 Union Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Public Display of Affection",
+      "address": "669 Union Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Palo Santo",
+      "address": "Palo Santo, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hunan Delight",
+      "address": "752 Union Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Al Dente",
+      "address": "Al Dente, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pasta Louise",
+      "address": "1114 8th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "American Cheez",
+      "address": "444 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ten",
+      "address": "440 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bar Basic",
+      "address": "Bar Basic, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mr. Wonton",
+      "address": "73 7th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cousin John's",
+      "address": "62 7th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Kebab",
+      "address": "Bombay Kebab, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Danbo",
+      "address": "Danbo, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Velvette Black",
+      "address": "Velvette Black, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Konoha Yakitori",
+      "address": "847B Union Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bangkok Degree",
+      "address": "847A Union Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "Saint Eves",
+      "address": "471 12th Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Connecticut Muffin",
+      "address": "Connecticut Muffin, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Farrell's",
+      "address": "Farrell's, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe by The Girls",
+      "address": "203 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Books",
+      "name": "Community Bookstore",
+      "address": "143 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Scottadito",
+      "address": "Scottadito, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "The Commissioner",
+      "address": "The Commissioner, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Burger Village",
+      "address": "222 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "444 9th Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Lincoln Station",
+      "address": "170 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kyuramen",
+      "address": "Kyuramen, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "The Ripped Bodice",
+      "address": "The Ripped Bodice, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Miolin",
+      "address": "422 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "Ginger's Bar",
+      "address": "363 5th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Bar",
+      "name": "Blueprint",
+      "address": "Blueprint, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "333 Lounge",
+      "address": "333 Lounge, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Geido",
+      "address": "Geido, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Oita",
+      "address": "Oita, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Barnes & Noble",
+      "address": "267 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "7th Avenue Donuts & Diner",
+      "address": "324 7th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "The Bagel Market",
+      "address": "106 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Roast Coffee Shop",
+      "address": "211 Prospect Park West, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn D.O.P. Pizza",
+      "address": "Brooklyn D.O.P. Pizza, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jai Dee",
+      "address": "420 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Vato",
+      "address": "226 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Aji Sushi",
+      "address": "Aji Sushi, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Volare",
+      "address": "Volare, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Namaste",
+      "address": "Namaste, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Konditori",
+      "address": "187 5th Avenue, Brooklyn, NY11217"
+    },
+    {
+      "brand": "Bar",
+      "name": "Strong Rope Brewery",
+      "address": "574A President Street, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Art Collective Cafe",
+      "address": "97 7th Avenue, Brooklyn, NY11215"
+    },
+    {
+      "brand": "Books",
+      "name": "Troubled Sleep",
+      "address": "Troubled Sleep, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Numero 28 Pizza",
+      "address": "Numero 28 Pizza, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rana Fifteen",
+      "address": "Rana Fifteen, Brooklyn, NY"
     }
   ]
 }

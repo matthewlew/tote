@@ -1,14 +1,94 @@
 {
   "places": [
     {
-      "brand": "Restaurant",
-      "name": "To B Thai",
-      "address": "426 Church Ave, Brooklyn, NY 11218"
+      "brand": "Public Bookcase",
+      "name": "Free Library",
+      "address": "Free Library, Brooklyn, NY"
     },
     {
-      "brand": "Coffee Shop",
-      "name": "Der Pioneer",
-      "address": "737 Church Ave, Brooklyn, NY 11218"
+      "brand": "Restaurant",
+      "name": "El Mexicano",
+      "address": "310 Ditmas Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shashlik House",
+      "address": "102 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Asia Harbor",
+      "address": "404 Church Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jaew Thai Cuisine",
+      "address": "416 Church Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Serenity Cafe",
+      "address": "424 Church Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mendelsohns Pizza",
+      "address": "4418 18th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Gabby's Coffee Shop",
+      "address": "757 McDonald Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Faros",
+      "address": "95 Church Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Kabir's Bakery",
+      "address": "97 Church Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sushi",
+      "address": "4120 16th Avenue, Brooklyn, NY11219"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Holy Schnitzel",
+      "address": "4102 18th Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Corner Cafe",
+      "address": "2 Ditmas Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Naim Kosher Pizza",
+      "address": "3904 15th Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shashlik Uzn1",
+      "address": "115 Ditmas Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Pub",
+      "name": "Denny's Pub",
+      "address": "Denny's Pub, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "To B Thai",
+      "address": "126 Beverley Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "U & I Restaurant",
+      "address": "4409 18th Avenue, Brooklyn, NY11230"
     }
   ]
 }

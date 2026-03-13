@@ -1,14 +1,209 @@
 {
   "places": [
     {
+      "brand": "Bar",
+      "name": "Sycamore",
+      "address": "1118 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
       "brand": "Restaurant",
-      "name": "The Farm on Adderley",
-      "address": "1108 Cortelyou Rd, Brooklyn, NY 11218"
+      "name": "The Castello Plan",
+      "address": "1213 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lea",
+      "address": "1022 Cortelyou Road, Brooklyn, NY11218"
     },
     {
       "brand": "Bar",
-      "name": "Sycamore Bar + Flower Shop",
-      "address": "1118 Cortelyou Rd, Brooklyn, NY 11218"
+      "name": "King Mother",
+      "address": "1205 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mimi's Hummus",
+      "address": "1209 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Urgut Osh Markazi",
+      "address": "816 Coney Island Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Coffee Mob",
+      "address": "1514 Newkirk Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Pablo's",
+      "address": "43 Newkirk Plaza, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Madeline",
+      "address": "1603 Cortelyou Road, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cafe Tibet",
+      "address": "1510 Cortelyou Road, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Corthaiyou",
+      "address": "1310 Cortelyou Road, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "San Remo Pizzeria",
+      "address": "1408 Cortelyou Road, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Connecticut Muffin",
+      "address": "1106 Cortelyou Road, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kumo",
+      "address": "1406 Cortelyou Road, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Namaste Brooklyn",
+      "address": "1202 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "George's Restaurant",
+      "address": "753 Coney Island Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bella's Pizzeria",
+      "address": "760 Coney Island Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Puerta Roja",
+      "address": "1120 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Bakery St Marc",
+      "address": "1121 Flatbush Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Highbury Inn",
+      "address": "1002 Cortelyou Road, Brooklyn, NY"
+    },
+    {
+      "brand": "Public Bookcase",
+      "name": "Little Free Library",
+      "address": "Little Free Library, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Red Mist Hookah Lounge",
+      "address": "Red Mist Hookah Lounge, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "MashAllah Sweets & Restaurant",
+      "address": "663 Coney Island Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Bar",
+      "name": "Rusty Nail Brooklyn",
+      "address": "1701 Foster Avenue, Brooklyn, NY11230"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wattli Bar and Kitchen",
+      "address": "1505 Newkirk Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Blue Star Parlor",
+      "address": "1112 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Ox Tavern At Westwood",
+      "address": "1715 Foster Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria Maria and Ricardo",
+      "address": "915 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ayat",
+      "address": "1616 Cortelyou Road, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jalsa",
+      "address": "786 Coney Island Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dunya Kabab House",
+      "address": "696 Coney Island Avenue, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "F1 Lounge",
+      "address": "1254 Flatbush Avenue, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tacos El Dorado",
+      "address": "1228 Flatbush Avenue, Brooklyn, NY11226"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Tsa\u014dcaa",
+      "address": "1404 Cortelyou Road, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Appletree Gourmet",
+      "address": "41B Newkirk Plaza, Brooklyn, NY"
+    },
+    {
+      "brand": "Books",
+      "name": "Taylor & Co.",
+      "address": "1021 Cortelyou Road, Brooklyn, NY11218"
+    },
+    {
+      "brand": "Bar",
+      "name": "Bar & Play Pool",
+      "address": "Bar & Play Pool, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Linda Restaurant",
+      "address": "830 Coney Island Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taco Callejero",
+      "address": "602 Marlborough Road, Brooklyn, NY11230"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bad Therapy",
+      "address": "Bad Therapy, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "BunNan",
+      "address": "1248 Flatbush Avenue, Brooklyn, NY11226"
     }
   ]
 }

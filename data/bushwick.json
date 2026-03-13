@@ -1,14 +1,599 @@
 {
   "places": [
     {
-      "brand": "Coffee Shop",
-      "name": "Sey Coffee",
-      "address": "18 Grattan St, Brooklyn, NY 11206"
+      "brand": "Restaurant",
+      "name": "Mi Cholita Bella",
+      "address": "1386 DeKalb Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Wonderville",
+      "address": "1186 Broadway, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Secret Pour",
+      "address": "1114 DeKalb Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Christophers Palace",
+      "address": "1258 Myrtle Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Mood Ring",
+      "address": "1260 Myrtle Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Pub",
+      "name": "Darlings",
+      "address": "242 Himrod Street, Brooklyn, NY11237"
     },
     {
       "brand": "Restaurant",
-      "name": "Roberta's",
-      "address": "261 Moore St, Brooklyn, NY 11206"
+      "name": "Mulata",
+      "address": "Mulata, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hartbreakers",
+      "address": "820 Hart Street, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Bar",
+      "name": "Keybar",
+      "address": "143 Troutman Street, Brooklyn, NY11206"
+    },
+    {
+      "brand": "Bar",
+      "name": "Heaven",
+      "address": "4 Irving Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "L.A. Burrito",
+      "address": "67 Wilson Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Nook",
+      "address": "45 Irving Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Variety Coffee Roasters",
+      "address": "146 Wyckoff Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Bar",
+      "name": "Boobie Trap",
+      "address": "308 Bleecker Street, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Son De Cali",
+      "address": "8-77 Wyckoff Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Cafe",
+      "name": "UCrew",
+      "address": "56-23 Myrtle Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Cafe",
+      "name": "La Cantine",
+      "address": "60 Saint Nicholas Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Bar",
+      "name": "Vacations Bar & Rooftop",
+      "address": "48 Cypress Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafe Katan",
+      "address": "490 Grandview Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Pub",
+      "name": "Gottscheer Hall",
+      "address": "657 Fairview Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mominette",
+      "address": "221 Knickerbocker Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sunrise Sunset",
+      "address": "Sunrise Sunset, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "One-eyed Taco Man",
+      "address": "One-eyed Taco Man, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "First Live Coffee House",
+      "address": "219 Central Avenue, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Bar",
+      "name": "Gotham City Lounge",
+      "address": "1298 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Kucho",
+      "address": "141 Wilson Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mesa Azteca",
+      "address": "91 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria Sofia",
+      "address": "187 Suydam Street, Brooklyn, NY11221"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Party On",
+      "address": "254 Irving Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Gualacena",
+      "address": "178 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Kings County Brewers Collective",
+      "address": "381 Troutman Street, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Cafe",
+      "name": "BK Bagel",
+      "address": "1120 Broadway, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Angela's Bakery",
+      "address": "717 Knickerbocker Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Kitchen",
+      "address": "733 Knickerbocker Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cucina Traditional Pizza House",
+      "address": "1142 Broadway, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Xoco-latte",
+      "address": "513 Wilson Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hearts Cafe",
+      "address": "1207 Broadway, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Laziza Cafe",
+      "address": "440 Evergreen Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Foster Sundry",
+      "address": "211 Knickerbocker Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Arepera Guacuco",
+      "address": "44 Irving Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nuevo Caribe Restaurant",
+      "address": "214 Central Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "OMG Pizza",
+      "address": "1307 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Wyckoff Starr",
+      "address": "30 Wyckoff Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Bar",
+      "name": "Milo's Yard",
+      "address": "564 Seneca Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Footlight Bar",
+      "address": "465 Seneca Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Bad Old Days",
+      "address": "1684 Woodbine Street, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "While In Kathmandu",
+      "address": "758 Seneca Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Keep",
+      "address": "205 Cypress Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Trans Am Cafe",
+      "address": "915 Wyckoff Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Royal Pizza",
+      "address": "55-06 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Rubia Restaurant",
+      "address": "861 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Calabrije's Margaritas & Tacos",
+      "address": "234 Starr Street, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Bar",
+      "name": "Aunt Ginny's",
+      "address": "652 Woodward Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Books",
+      "name": "Left Field | Choctaw Ridge",
+      "address": "657 Woodward Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ltauha Restaurant",
+      "address": "55-50 Myrtle Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "The Windjammer",
+      "address": "552 Grandview Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Buttah",
+      "address": "377 Onderdonk Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cypress Inn Cafe",
+      "address": "17-02 Cypress Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "Old Stanley's",
+      "address": "226 Wyckoff Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Capybara",
+      "address": "853 Wyckoff Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "Talon Bar",
+      "address": "220 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Milk & Pull",
+      "address": "778 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "K&K Super Buffett",
+      "address": "341 Saint Nicholas Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Manaba",
+      "address": "341 Saint Nicholas Avenue, Ridgewood, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Caribe Star",
+      "address": "54-55 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Grimaldi's Bakery and Cafe",
+      "address": "21-01 Menahan Street, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Catania Bakery",
+      "address": "487 Harman Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bravo's Caf\u00e9 and Restaurant",
+      "address": "377 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lucy's Vietnamese Kitchen",
+      "address": "262 Irving Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Julie's Pizzeria",
+      "address": "675 Onderdonk Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Guadalajara De Dia 2",
+      "address": "566 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Golden Thai",
+      "address": "469 Irving Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Fogon Costeno",
+      "address": "1701 Palmetto Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Caleta",
+      "address": "1529 Gates Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Chispa",
+      "address": "259 St. Nicholas Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "Luv Story Bar",
+      "address": "894 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Doubl\u00e9 BK",
+      "address": "1332 Halsey Street, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Canoa",
+      "address": "651 Onderdonk Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Flor Del Paraiso",
+      "address": "1715 Cornelia Street, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Cafe",
+      "name": "C.Lo Cafe",
+      "address": "660 Fairview Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "Merv's",
+      "address": "266 Irving Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "New Apollo",
+      "address": "1477 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Alphaville",
+      "address": "140 Wilson Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sally Roots",
+      "address": "195 Wyckoff, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Agra Heights",
+      "address": "226 Wilson Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Los Marineros",
+      "address": "128 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Alex Luncheonette",
+      "address": "685 Knickerbocker Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jim's China King",
+      "address": "563 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Delcias Sucuenas",
+      "address": "580 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Estrella Del Mar",
+      "address": "552 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Curry Leaf Indian Cuisine",
+      "address": "435 Menahan Street, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lucha Lucha",
+      "address": "173 Irving Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vaqueros",
+      "address": "1541 Myrtle Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Bushwick Diner",
+      "address": "299 Wyckoff Avenue, Brooklyn, NY11237"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "New Mexico Place II",
+      "address": "778 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "International Bake Shop",
+      "address": "719 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cachapas y Mas",
+      "address": "678 Seneca Avenue, Ridgewood, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Tequila Time",
+      "address": "675 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jorge's",
+      "address": "689 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "#1 Natural Juice Bar",
+      "address": "685 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Plaza Biaxtla Bakery",
+      "address": "663 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ambato",
+      "address": "666 Seneca Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Bar",
+      "name": "Seneca Fiesta Corporation",
+      "address": "603 Seneca Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Onderdonk Cafe",
+      "address": "353 Onderonk Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Rico Pollo 1 Ridgewood",
+      "address": "55-37 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cantina 33",
+      "address": "55-33 Myrtle Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Monta\u00f1ero",
+      "address": "55-21 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Coyote Bohemio",
+      "address": "55-19 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "San Remo",
+      "address": "56-01 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mixtape Bushwick",
+      "address": "1533 Myrtle Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Espuma Viannely Deli & Grocery",
+      "address": "250 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mi Sueno",
+      "address": "283 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Mi Estrella Bakery Corp",
+      "address": "268 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Place Fried Chicken",
+      "address": "285 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bakery",
+      "name": "Joel's Bakery",
+      "address": "1615 Palmetto Street, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Starbucks",
+      "address": "329 Wyckoff Avenue, Ridgewood, NY11385"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "D' Montazo",
+      "address": "216 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Pub",
+      "name": "Elmekkah Bar and Grill",
+      "address": "277 Wyckoff Avenue, Brooklyn, NY"
+    },
+    {
+      "brand": "Bar",
+      "name": "Starr Bar",
+      "address": "214 Starr Street, Brooklyn, NY11237"
     }
   ]
 }
