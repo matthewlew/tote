@@ -133,7 +133,7 @@ main { padding: 0; }
 
 .line { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: baseline; }
 .name { font-size: 1rem; font-weight: bold; }
-.brand { color: #555; font-style: italic; }
+.brand { color: #555; }
 .row:hover .brand, .row:focus-visible .brand { color: #aaa; }
 
 .row-desc { margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
@@ -365,6 +365,14 @@ footer {
       const line = document.createElement('div');
       line.className = 'line';
 
+      const name = document.createElement('span');
+      name.className = 'name';
+      name.textContent = item.name;
+
+      const addressSpan = document.createElement('span');
+      addressSpan.className = 'row-address';
+      addressSpan.textContent = item.address ? item.address : '';
+
       const brand = document.createElement('span');
       brand.className = 'brand';
       if (typeof item.distance === 'number' && item.distance !== Infinity) {
@@ -372,10 +380,6 @@ footer {
       } else {
         brand.textContent = '';
       }
-
-      const name = document.createElement('span');
-      name.className = 'name';
-      name.textContent = item.name;
 
       const prices = document.createElement('div');
       prices.className = 'prices';
@@ -393,11 +397,6 @@ footer {
 
           link.appendChild(site);
           prices.appendChild(link);
-
-          const addressSpan = document.createElement('span');
-          addressSpan.className = 'row-address';
-          addressSpan.textContent = item.address;
-          line.appendChild(addressSpan);
       } else if (item.links && item.links.length > 0) {
         item.links.forEach(l => {
           const link = document.createElement('a');
@@ -422,8 +421,11 @@ footer {
         });
       }
 
-      line.appendChild(brand);
       line.appendChild(name);
+      line.appendChild(addressSpan);
+      if (brand.textContent !== '') {
+          line.appendChild(brand);
+      }
       line.appendChild(prices);
       row.appendChild(line);
 

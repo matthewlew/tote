@@ -2,7 +2,7 @@
   "places": [
     {
       "name": "COPPA",
-      "address": "New York, NY",
+      "address": "Tribeca",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.72558199211443,
@@ -11,7 +11,7 @@
     },
     {
       "name": "The Duo Coffee & Cocktail Bar",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A quiet spot to enjoy a cup of coffee.",
       "latLng": [
         40.70393717742144,
@@ -20,7 +20,7 @@
     },
     {
       "name": "Tsutaya Books Daikanyama",
-      "address": "New York, NY",
+      "address": "Williamsburg",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.72578745964573,
@@ -29,7 +29,7 @@
     },
     {
       "name": "Partners Coffee \u2014 Cafe & Roastery",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "Stop by Partners Coffee \u2014 Cafe & Roastery for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.673557871607336,
@@ -38,7 +38,7 @@
     },
     {
       "name": "Brooklyn Public Library - Greenpoint Branch",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by Brooklyn Public Library - Greenpoint Branch for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.75534903872216,
@@ -47,7 +47,7 @@
     },
     {
       "name": "Moka & Co",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.76090684803214,
@@ -56,7 +56,7 @@
     },
     {
       "name": "Bibliotheque",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "A cozy coffee shop.",
       "latLng": [
         40.69441133720756,
@@ -65,7 +65,7 @@
     },
     {
       "name": "Caf\u00e9-Flor",
-      "address": "New York, NY",
+      "address": "Park Slope",
       "description": "Stop by Caf\u00e9-Flor for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.6943047112299,
@@ -74,7 +74,7 @@
     },
     {
       "name": "Hungry Cafe",
-      "address": "New York, NY",
+      "address": "Upper West Side",
       "description": "Stop by Hungry Cafe for a great cup of coffee. A cozy coffee shop.",
       "latLng": [
         40.75991907638989,
@@ -83,7 +83,7 @@
     },
     {
       "name": "Cafe Regular",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "Stop by Cafe Regular for a great cup of coffee. A quiet spot to enjoy a cup of coffee.",
       "latLng": [
         40.74858239454625,
@@ -92,7 +92,7 @@
     },
     {
       "name": "Ole & Steen",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.72253592557178,
@@ -101,7 +101,7 @@
     },
     {
       "name": "Vineapple",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Vineapple for a great cup of coffee. A charming cafe offering artisanal coffee.",
       "latLng": [
         40.73006005015029,
@@ -110,7 +110,7 @@
     },
     {
       "name": "Ana\u00efs",
-      "address": "New York, NY",
+      "address": "Bushwick",
       "description": "Stop by Ana\u00efs for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.76237185048054,
@@ -119,7 +119,7 @@
     },
     {
       "name": "D\u00e9butea Brooklyn",
-      "address": "New York, NY",
+      "address": "Upper West Side",
       "description": "Stop by D\u00e9butea Brooklyn for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.75144398502957,
@@ -128,7 +128,7 @@
     },
     {
       "name": "St Kilda Coffee",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "A quiet spot to enjoy a cup of coffee.",
       "latLng": [
         40.75542407426884,
@@ -137,7 +137,7 @@
     },
     {
       "name": "VERVE COFFEE ROASTERS EBISU",
-      "address": "New York, NY",
+      "address": "DUMBO",
       "description": "An inviting cafe for working and sipping coffee.",
       "latLng": [
         40.67965870497524,
@@ -146,7 +146,7 @@
     },
     {
       "name": "Interlude Coffee & Tea",
-      "address": "New York, NY",
+      "address": "Crown Heights",
       "description": "Famous for its specialty coffee drinks.",
       "latLng": [
         40.71287480974485,
@@ -155,7 +155,7 @@
     },
     {
       "name": "OASES",
-      "address": "New York, NY",
+      "address": "Cobble Hill",
       "description": "A popular spot for espresso and pastries.",
       "latLng": [
         40.75399172571007,
@@ -164,7 +164,7 @@
     },
     {
       "name": "Charlotte Cafe",
-      "address": "New York, NY",
+      "address": "Bushwick",
       "description": "Stop by Charlotte Cafe for a great cup of coffee. A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.737540212363356,
@@ -173,7 +173,7 @@
     },
     {
       "name": "Beanchain Coffee",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.68566588775083,
@@ -182,7 +182,7 @@
     },
     {
       "name": "Beanmonger Coffee",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Beanmonger Coffee for a great cup of coffee. A cozy coffee shop.",
       "latLng": [
         40.737307443546534,
@@ -191,7 +191,7 @@
     },
     {
       "name": "Coffee Project New York | Hell's Kitchen",
-      "address": "New York, NY",
+      "address": "Lower East Side",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.72895480082653,
@@ -200,7 +200,7 @@
     },
     {
       "name": "Milk & Pull Bed Stuy",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "A great cafe to meet friends or read a book.",
       "latLng": [
         40.703887172265404,
@@ -209,7 +209,7 @@
     },
     {
       "name": "Arlo NoMad",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.70840592974351,
@@ -218,7 +218,7 @@
     },
     {
       "name": "Now or Never Coffee",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by Now or Never Coffee for a great cup of coffee. A wonderful local cafe.",
       "latLng": [
         40.730689397445985,
@@ -227,7 +227,7 @@
     },
     {
       "name": "Remi43 Flower & Coffee",
-      "address": "New York, NY",
+      "address": "DUMBO",
       "description": "A friendly neighborhood coffee shop.",
       "latLng": [
         40.696446045114705,
@@ -236,7 +236,7 @@
     },
     {
       "name": "Gotham Cafe",
-      "address": "New York, NY",
+      "address": "East Village",
       "description": "Stop by Gotham Cafe for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.68249750130139,
@@ -245,7 +245,7 @@
     },
     {
       "name": "787 Coffee",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by 787 Coffee for a great cup of coffee. A cozy coffee shop.",
       "latLng": [
         40.755083724764354,
@@ -254,7 +254,7 @@
     },
     {
       "name": "Stumptown Coffee Roasters",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "Famous for its specialty coffee drinks.",
       "latLng": [
         40.755291999935245,
@@ -263,7 +263,7 @@
     },
     {
       "name": "Corto",
-      "address": "New York, NY",
+      "address": "Williamsburg",
       "description": "Stop by Corto for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.74787314639874,
@@ -272,7 +272,7 @@
     },
     {
       "name": "Blue Bottle Coffee - Shibuya Cafe",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "A friendly neighborhood coffee shop.",
       "latLng": [
         40.68484944354172,
@@ -281,7 +281,7 @@
     },
     {
       "name": "MJ (Manny Janeth) Caf\u00e9",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "An inviting cafe for working and sipping coffee.",
       "latLng": [
         40.7133968639689,
@@ -290,7 +290,7 @@
     },
     {
       "name": "Salt Lake Roasting Co.",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "A friendly neighborhood coffee shop.",
       "latLng": [
         40.748787035802884,
@@ -299,7 +299,7 @@
     },
     {
       "name": "Streamer Coffee Company Nakameguro",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.75320612331469,
@@ -308,7 +308,7 @@
     },
     {
       "name": "Verve Coffee Roasters",
-      "address": "New York, NY",
+      "address": "West Village",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.69193484385654,
@@ -317,7 +317,7 @@
     },
     {
       "name": "Cafe Cotton Bean",
-      "address": "New York, NY",
+      "address": "DUMBO",
       "description": "Stop by Cafe Cotton Bean for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.75479488755121,
@@ -326,7 +326,7 @@
     },
     {
       "name": "Paper Sons Cafe",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "Stop by Paper Sons Cafe for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.74268583956667,
@@ -335,7 +335,7 @@
     },
     {
       "name": "Cinico Coffee Company",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "Stop by Cinico Coffee Company for a great cup of coffee. A local favorite for coffee.",
       "latLng": [
         40.68603531773334,
@@ -344,7 +344,7 @@
     },
     {
       "name": "Blue Bottle Coffee - Daikan-yama Cafe",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.68704107242153,
@@ -353,7 +353,7 @@
     },
     {
       "name": "renewfinds",
-      "address": "New York, NY",
+      "address": "Cobble Hill",
       "description": "Known for excellent cold brew and relaxed vibes.",
       "latLng": [
         40.66503274916872,
@@ -362,7 +362,7 @@
     },
     {
       "name": "Qahwah Valley 1st Ave",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "Stop by Qahwah Valley 1st Ave for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.69310367911994,
@@ -371,7 +371,7 @@
     },
     {
       "name": "Irving Farm Coffee",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.71522737549426,
@@ -380,7 +380,7 @@
     },
     {
       "name": "Moshava Coffee",
-      "address": "New York, NY",
+      "address": "East Village",
       "description": "Stop by Moshava Coffee for a great cup of coffee. A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.68907014726689,
@@ -389,7 +389,7 @@
     },
     {
       "name": "Haraz Coffee House",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "Famous for its specialty coffee drinks.",
       "latLng": [
         40.704384917962415,
@@ -398,7 +398,7 @@
     },
     {
       "name": "Rawbean Coffee",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A friendly neighborhood coffee shop.",
       "latLng": [
         40.71001767442659,
@@ -407,7 +407,7 @@
     },
     {
       "name": "Mya Coffee, Bakery and Wine Bar",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.74614201369859,
@@ -416,7 +416,7 @@
     },
     {
       "name": "Butler Bakeshop & Espresso Bar",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "A popular spot for espresso and pastries.",
       "latLng": [
         40.75730940265133,
@@ -425,7 +425,7 @@
     },
     {
       "name": "Capital One Caf\u00e9",
-      "address": "New York, NY",
+      "address": "Upper West Side",
       "description": "Stop by Capital One Caf\u00e9 for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.66600088690167,
@@ -434,7 +434,7 @@
     },
     {
       "name": "Publik Coffee Roasters",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.75374871559379,
@@ -443,7 +443,7 @@
     },
     {
       "name": "Sammy L Coffee",
-      "address": "New York, NY",
+      "address": "East Village",
       "description": "A charming cafe offering artisanal coffee.",
       "latLng": [
         40.71251485695945,
@@ -452,7 +452,7 @@
     },
     {
       "name": "Madame Bont\u00e9 Caf\u00e9",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Madame Bont\u00e9 Caf\u00e9 for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.741734691438964,
@@ -461,7 +461,7 @@
     },
     {
       "name": "Ace Hotel New York",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "A local favorite for coffee.",
       "latLng": [
         40.667847903602656,
@@ -470,7 +470,7 @@
     },
     {
       "name": "fontainhas + (/du.kaan/)",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "Stop by fontainhas + (/du.kaan/) for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.71857707492824,
@@ -479,7 +479,7 @@
     },
     {
       "name": "Easy Victor Cafe",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.761198075349036,
@@ -488,7 +488,7 @@
     },
     {
       "name": "Stone Street Caf\u00e9 - Broome St.",
-      "address": "New York, NY",
+      "address": "East Village",
       "description": "A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.69100637688422,
@@ -497,7 +497,7 @@
     },
     {
       "name": "Asano",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.73788946046535,
@@ -506,7 +506,7 @@
     },
     {
       "name": "Amano Cafe",
-      "address": "New York, NY",
+      "address": "Upper West Side",
       "description": "Stop by Amano Cafe for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.75997400442592,
@@ -515,7 +515,7 @@
     },
     {
       "name": "Partners Coffee - West Village",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "Stop by Partners Coffee - West Village for a great cup of coffee. A local favorite for coffee.",
       "latLng": [
         40.70929990547779,
@@ -524,7 +524,7 @@
     },
     {
       "name": "Trunk",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "Stop by Trunk for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.73515538699204,
@@ -533,7 +533,7 @@
     },
     {
       "name": "PublicUs",
-      "address": "New York, NY",
+      "address": "Chelsea",
       "description": "A friendly neighborhood coffee shop.",
       "latLng": [
         40.69205006832762,
@@ -542,7 +542,7 @@
     },
     {
       "name": "Saturn Road",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.70375193199607,
@@ -551,7 +551,7 @@
     },
     {
       "name": "Streamer Coffee Company Shibuya",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.67758159826018,
@@ -560,7 +560,7 @@
     },
     {
       "name": "Poetica Coffee",
-      "address": "New York, NY",
+      "address": "Lower East Side",
       "description": "A popular spot for espresso and pastries.",
       "latLng": [
         40.754475950952504,
@@ -569,7 +569,7 @@
     },
     {
       "name": "Common",
-      "address": "New York, NY",
+      "address": "Williamsburg",
       "description": "Stop by Common for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.6705339221348,
@@ -578,7 +578,7 @@
     },
     {
       "name": "Gotan",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.70958604199711,
@@ -587,7 +587,7 @@
     },
     {
       "name": "Caffe Duetto",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Caffe Duetto for a great cup of coffee. A perfect spot for a morning coffee run.",
       "latLng": [
         40.68587119314207,
@@ -596,7 +596,7 @@
     },
     {
       "name": "Roots Coffee Salt Lake City",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Roots Coffee Salt Lake City for a great cup of coffee. A cozy coffee shop.",
       "latLng": [
         40.67940943769888,
@@ -605,7 +605,7 @@
     },
     {
       "name": "PlantShed Cafe",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "Stop by PlantShed Cafe for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.70427982919407,
@@ -614,7 +614,7 @@
     },
     {
       "name": "Whistle & Fizz",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "Stop by Whistle & Fizz for a great cup of coffee. A perfect spot for a morning coffee run.",
       "latLng": [
         40.67572931905855,
@@ -623,7 +623,7 @@
     },
     {
       "name": "Ludlow Coffee Supply",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by Ludlow Coffee Supply for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.695715119832826,
@@ -632,7 +632,7 @@
     },
     {
       "name": "The Oasis Cafe",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "A popular spot for espresso and pastries.",
       "latLng": [
         40.71771992654648,
@@ -641,7 +641,7 @@
     },
     {
       "name": "Roasted COFFEE LABORATORY Shibuya Jinnnan store",
-      "address": "New York, NY",
+      "address": "Tribeca",
       "description": "A local favorite for coffee.",
       "latLng": [
         40.73641634269968,
@@ -650,7 +650,7 @@
     },
     {
       "name": "Coffee Garden",
-      "address": "New York, NY",
+      "address": "DUMBO",
       "description": "Stop by Coffee Garden for a great cup of coffee. A quiet spot to enjoy a cup of coffee.",
       "latLng": [
         40.677644020636926,
@@ -659,7 +659,7 @@
     },
     {
       "name": "Romeo and Juliet Colombian Coffee",
-      "address": "New York, NY",
+      "address": "Upper West Side",
       "description": "Stop by Romeo and Juliet Colombian Coffee for a great cup of coffee. An inviting cafe for working and sipping coffee.",
       "latLng": [
         40.684380918312236,
@@ -668,7 +668,7 @@
     },
     {
       "name": "Essex Market",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "Famous for its specialty coffee drinks.",
       "latLng": [
         40.76245670425267,
@@ -677,7 +677,7 @@
     },
     {
       "name": "DNA Coffee Lounge | Laptop Friendly Cafe & Event Space",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "A great cafe to meet friends or read a book.",
       "latLng": [
         40.72953837267502,
@@ -686,7 +686,7 @@
     },
     {
       "name": "Frisson Espresso 44",
-      "address": "New York, NY",
+      "address": "Lower East Side",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.670069013264616,
@@ -695,7 +695,7 @@
     },
     {
       "name": "Bean & Bean Chelsea",
-      "address": "New York, NY",
+      "address": "West Village",
       "description": "Stop by Bean & Bean Chelsea for a great cup of coffee. A wonderful local cafe.",
       "latLng": [
         40.70791455853358,
@@ -704,7 +704,7 @@
     },
     {
       "name": "Think Coffee",
-      "address": "New York, NY",
+      "address": "Cobble Hill",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.71927236742671,
@@ -713,7 +713,7 @@
     },
     {
       "name": "Blue Bottle Coffee - Roppongi Cafe",
-      "address": "New York, NY",
+      "address": "Cobble Hill",
       "description": "Famous for its specialty coffee drinks.",
       "latLng": [
         40.67430263940718,
@@ -722,7 +722,7 @@
     },
     {
       "name": "Coffee Project New York | Fort Greene",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Coffee Project New York | Fort Greene for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.683225277280975,
@@ -731,7 +731,7 @@
     },
     {
       "name": "Dawn\u2019s Til Dusk",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "A great cafe to meet friends or read a book.",
       "latLng": [
         40.674542573315655,
@@ -740,7 +740,7 @@
     },
     {
       "name": "Slate Cafe NoMad",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.66498025936061,
@@ -749,7 +749,7 @@
     },
     {
       "name": "Le Cafe Coffee",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by Le Cafe Coffee for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.71640192953466,
@@ -758,7 +758,7 @@
     },
     {
       "name": "Oslo Coffee Roasters (West Village)",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Oslo Coffee Roasters (West Village) for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.761848357660774,
@@ -767,7 +767,7 @@
     },
     {
       "name": "Dialogue Coffee & Flowers",
-      "address": "New York, NY",
+      "address": "Chelsea",
       "description": "Famous for its specialty coffee drinks.",
       "latLng": [
         40.75196689203959,
@@ -776,7 +776,7 @@
     },
     {
       "name": "TALEA Beer Co.",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A cozy coffee shop.",
       "latLng": [
         40.71903305823973,
@@ -785,7 +785,7 @@
     },
     {
       "name": "Seven Grams Caffe",
-      "address": "New York, NY",
+      "address": "West Village",
       "description": "Stop by Seven Grams Caffe for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.72319733777484,
@@ -794,7 +794,7 @@
     },
     {
       "name": "Dark Matter Coffee - Adios Amigos",
-      "address": "New York, NY",
+      "address": "East Village",
       "description": "Stop by Dark Matter Coffee - Adios Amigos for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.670038356563644,
@@ -803,7 +803,7 @@
     },
     {
       "name": "Connel Coffee",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "A friendly neighborhood coffee shop.",
       "latLng": [
         40.68800441157634,
@@ -812,7 +812,7 @@
     },
     {
       "name": "VALLEY PARK STAND",
-      "address": "New York, NY",
+      "address": "Upper West Side",
       "description": "Stop by VALLEY PARK STAND for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.70024749556989,
@@ -821,7 +821,7 @@
     },
     {
       "name": "Georgie\u2019s Cafe & Bar",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "A local favorite for coffee.",
       "latLng": [
         40.732582665229145,
@@ -830,7 +830,7 @@
     },
     {
       "name": "Felix Roasting Co.",
-      "address": "New York, NY",
+      "address": "West Village",
       "description": "Stop by Felix Roasting Co. for a great cup of coffee. A charming cafe offering artisanal coffee.",
       "latLng": [
         40.71207636129421,
@@ -839,7 +839,7 @@
     },
     {
       "name": "La Colombe Coffee Workshop",
-      "address": "New York, NY",
+      "address": "Chelsea",
       "description": "A local favorite for coffee.",
       "latLng": [
         40.68618259259724,
@@ -848,7 +848,7 @@
     },
     {
       "name": "Ace Hotel Brooklyn",
-      "address": "New York, NY",
+      "address": "West Village",
       "description": "Stop by Ace Hotel Brooklyn for a great cup of coffee. A friendly neighborhood coffee shop.",
       "latLng": [
         40.70021299785974,
@@ -857,7 +857,7 @@
     },
     {
       "name": "Seedhouse",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "Stop by Seedhouse for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.696467844019544,
@@ -866,7 +866,7 @@
     },
     {
       "name": "Monkey Tiger",
-      "address": "New York, NY",
+      "address": "Greenpoint",
       "description": "Stop by Monkey Tiger for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.71482333652286,
@@ -875,7 +875,7 @@
     },
     {
       "name": "Mori Coffee",
-      "address": "New York, NY",
+      "address": "Astoria",
       "description": "Stop by Mori Coffee for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.710232711133884,
@@ -884,7 +884,7 @@
     },
     {
       "name": "Thayer",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "Stop by Thayer for a great cup of coffee. Known for excellent cold brew and relaxed vibes.",
       "latLng": [
         40.66612007364337,
@@ -893,7 +893,7 @@
     },
     {
       "name": "Boris & Horton",
-      "address": "New York, NY",
+      "address": "Park Slope",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.746576847116884,
@@ -902,7 +902,7 @@
     },
     {
       "name": "Stripes Wine Bar & Cafe",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by Stripes Wine Bar & Cafe for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.709414271873726,
@@ -911,7 +911,7 @@
     },
     {
       "name": "Dayglow",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "A popular spot for espresso and pastries.",
       "latLng": [
         40.691060787273265,
@@ -920,7 +920,7 @@
     },
     {
       "name": "Gregorys Coffee",
-      "address": "New York, NY",
+      "address": "Crown Heights",
       "description": "A popular spot for espresso and pastries.",
       "latLng": [
         40.74229761792028,
@@ -929,7 +929,7 @@
     },
     {
       "name": "Perch by WOODBERRY COFFEE Daikanyama",
-      "address": "New York, NY",
+      "address": "East Village",
       "description": "Stop by Perch by WOODBERRY COFFEE Daikanyama for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.680621676269006,
@@ -938,7 +938,7 @@
     },
     {
       "name": "Roast8ry Coffee Flagship Store",
-      "address": "New York, NY",
+      "address": "West Village",
       "description": "A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.67727286918349,
@@ -947,7 +947,7 @@
     },
     {
       "name": "Conwell Coffee & Cocktail Hall",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "Stop by Conwell Coffee & Cocktail Hall for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.69627937291697,
@@ -956,7 +956,7 @@
     },
     {
       "name": "Velvette Black",
-      "address": "New York, NY",
+      "address": "Carroll Gardens",
       "description": "A cozy coffee shop.",
       "latLng": [
         40.678976412679084,
@@ -965,7 +965,7 @@
     },
     {
       "name": "CoffeeShop | Bakery + Micro-Roastery",
-      "address": "New York, NY",
+      "address": "Crown Heights",
       "description": "A great cafe to meet friends or read a book.",
       "latLng": [
         40.68085816559005,
@@ -974,7 +974,7 @@
     },
     {
       "name": "Sweetleaf Coffee Roasters",
-      "address": "New York, NY",
+      "address": "Tribeca",
       "description": "A bustling coffee shop in the heart of the city.",
       "latLng": [
         40.73850093048122,
@@ -983,7 +983,7 @@
     },
     {
       "name": "Sahola Cafe",
-      "address": "New York, NY",
+      "address": "Cobble Hill",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.73833967674169,
@@ -992,7 +992,7 @@
     },
     {
       "name": "outro nyc",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "A charming cafe offering artisanal coffee.",
       "latLng": [
         40.672361131935475,
@@ -1001,7 +1001,7 @@
     },
     {
       "name": "Telegraphe Cafe.",
-      "address": "New York, NY",
+      "address": "DUMBO",
       "description": "Stop by Telegraphe Cafe. for a great cup of coffee. A local favorite for coffee.",
       "latLng": [
         40.70068457813979,
@@ -1010,7 +1010,7 @@
     },
     {
       "name": "Da Legna at Nolo",
-      "address": "New York, NY",
+      "address": "DUMBO",
       "description": "Stop by Da Legna at Nolo for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.742664432252255,
@@ -1019,7 +1019,7 @@
     },
     {
       "name": "designers collab.",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A charming cafe offering artisanal coffee.",
       "latLng": [
         40.688536368763735,
@@ -1028,7 +1028,7 @@
     },
     {
       "name": "Urbana Cafe and Gallery",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "Stop by Urbana Cafe and Gallery for a great cup of coffee. A charming cafe offering artisanal coffee.",
       "latLng": [
         40.689737423825854,
@@ -1037,7 +1037,7 @@
     },
     {
       "name": "Devoci\u00f3n",
-      "address": "New York, NY",
+      "address": "Harlem",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.73490073243491,
@@ -1046,7 +1046,7 @@
     },
     {
       "name": "Sightglass Coffee",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.73793318556739,
@@ -1055,7 +1055,7 @@
     },
     {
       "name": "GATHER espresso & wine bar",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "Known for excellent cold brew and relaxed vibes.",
       "latLng": [
         40.695589064116845,
@@ -1064,7 +1064,7 @@
     },
     {
       "name": "Pairing",
-      "address": "New York, NY",
+      "address": "Crown Heights",
       "description": "Stop by Pairing for a great cup of coffee. A friendly neighborhood coffee shop.",
       "latLng": [
         40.748095862442455,
@@ -1073,7 +1073,7 @@
     },
     {
       "name": "Paper Coffee",
-      "address": "New York, NY",
+      "address": "Lower East Side",
       "description": "Stop by Paper Coffee for a great cup of coffee. A wonderful local cafe.",
       "latLng": [
         40.74211268956637,
@@ -1082,7 +1082,7 @@
     },
     {
       "name": "King's Street Coffee",
-      "address": "New York, NY",
+      "address": "Chelsea",
       "description": "A wonderful local cafe.",
       "latLng": [
         40.66338767316479,
@@ -1091,7 +1091,7 @@
     },
     {
       "name": "Still Life",
-      "address": "New York, NY",
+      "address": "Crown Heights",
       "description": "Stop by Still Life for a great cup of coffee. Known for excellent cold brew and relaxed vibes.",
       "latLng": [
         40.72942857966115,
@@ -1100,7 +1100,7 @@
     },
     {
       "name": "GOOD SOUND COFFEE",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "Stop by GOOD SOUND COFFEE for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.662841537734074,
@@ -1109,7 +1109,7 @@
     },
     {
       "name": "Brooklyn Tea",
-      "address": "New York, NY",
+      "address": "Park Slope",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.686270202660765,
@@ -1118,7 +1118,7 @@
     },
     {
       "name": "Caf\u00e9-Flor / Bar 21",
-      "address": "New York, NY",
+      "address": "Long Island City",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.67790936466003,
@@ -1127,7 +1127,7 @@
     },
     {
       "name": "Barnes & Noble",
-      "address": "New York, NY",
+      "address": "Bed-Stuy",
       "description": "Known for excellent cold brew and relaxed vibes.",
       "latLng": [
         40.728707529441934,
@@ -1136,7 +1136,7 @@
     },
     {
       "name": "Coffee Project New York | Chelsea",
-      "address": "New York, NY",
+      "address": "Upper East Side",
       "description": "A charming cafe offering artisanal coffee.",
       "latLng": [
         40.72100878838266,
@@ -1145,7 +1145,7 @@
     },
     {
       "name": "JOE & THE JUICE",
-      "address": "New York, NY",
+      "address": "Lower East Side",
       "description": "A great cafe to meet friends or read a book.",
       "latLng": [
         40.74921351816457,
@@ -1154,7 +1154,7 @@
     },
     {
       "name": "Semicolon Cafe",
-      "address": "New York, NY",
+      "address": "Williamsburg",
       "description": "Stop by Semicolon Cafe for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.73443745629543,
@@ -1163,7 +1163,7 @@
     },
     {
       "name": "Blue Bottle Coffee",
-      "address": "New York, NY",
+      "address": "SoHo",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.742322418216645,
