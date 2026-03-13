@@ -37,8 +37,8 @@ body {
 *, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink); }
 a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
-a:focus-visible { outline: 1px solid var(--accent); background: var(--ink); color: var(--bg); }
-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; background: var(--ink); color: var(--bg); }
+
 
 header {
   border-bottom: 1px solid var(--rule);
@@ -192,12 +192,11 @@ footer {
       </select>
     </div>
   </div>
-  <span class="meta"><span id="hd-n"></span><span>[←/→] Categories</span><span>[↑/↓] Navigate</span><span>[Enter] Open</span></span>
   <span class="meta"><span id="hd-n"></span><span>[←/→] Cats</span><span>[↑/↓] Navigate</span><span>[Enter] Open</span><span>40+ sources</span><span>Mar 2025</span></span>
 </header>
 
 <main aria-label="Items list">
-  <div class="header-row">
+  <div class="header-row" role="group" aria-label="Sort options">
     <button type="button" class="header-label" data-sort="brand">
       <span>[b] Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
@@ -268,7 +267,7 @@ footer {
   let currentCategory = categories[0];
   let items = [];
   let currentSort = { key: 'brand', direction: 'asc' };
-  let focusedRowIndex = -1;
+
 
   function initNeighborhoodDropdown() {
     neighborhoodSelect.innerHTML = '<option value="" disabled selected>Neighborhoods...</option>';
@@ -340,7 +339,7 @@ footer {
     }
 
     currentSort = { key: 'brand', direction: 'asc' };
-    focusedRowIndex = -1;
+
     sortItems();
     updateIndicators();
     render();
@@ -409,6 +408,12 @@ footer {
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
 
+          let ariaLabel = `Buy ${item.brand} ${item.name} from ${l.r}`;
+          if (typeof item.price === 'number') {
+            ariaLabel += ` for $${item.price.toLocaleString()}`;
+          }
+          link.setAttribute('aria-label', ariaLabel);
+
           const site = document.createElement('span');
           site.className = 'site';
           site.textContent = (currentCategory.actionText || 'BUY') + ': ' + l.r;
@@ -441,7 +446,7 @@ footer {
       currentSort.key = key;
       currentSort.direction = 'asc';
     }
-    focusedRowIndex = -1;
+
     sortItems();
     updateIndicators();
     render();
@@ -521,6 +526,7 @@ footer {
 
   locateMeBtn.addEventListener('click', handleLocateMe);
 
+
   window.addEventListener('keydown', (e) => {
     // Ignore keydown if a modifier is pressed or if user is typing in an input
     if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -539,19 +545,6 @@ footer {
 
     const k = e.key.toLowerCase();
 
-    // Category navigation via Left/Right arrows
-    if (e.key === 'ArrowLeft') {
-      e.preventDefault();
-      const currentIndex = categories.findIndex(c => c.id === currentCategory.id);
-      const prevIndex = currentIndex > 0 ? currentIndex - 1 : categories.length - 1;
-      currentCategory = categories[prevIndex];
-      loadCategoryData();
-      return;
-    } else if (e.key === 'ArrowRight') {
-      e.preventDefault();
-      const currentIndex = categories.findIndex(c => c.id === currentCategory.id);
-      const nextIndex = currentIndex < categories.length - 1 ? currentIndex + 1 : 0;
-      currentCategory = categories[nextIndex];
     if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
       e.preventDefault();
       const currentIdx = categories.findIndex(c => c.id === currentCategory.id);
@@ -563,31 +556,6 @@ footer {
       return;
     }
 
-    // Row navigation via Up/Down arrows
-    const rows = document.querySelectorAll('.row');
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      if (rows.length === 0) return;
-      if (focusedRowIndex < rows.length - 1) focusedRowIndex++;
-      updateRowFocus(rows);
-      return;
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      if (rows.length === 0) return;
-      if (focusedRowIndex > 0) focusedRowIndex--;
-      updateRowFocus(rows);
-      return;
-    }
-
-    // Open links in focused row via Enter
-    if (e.key === 'Enter' && focusedRowIndex >= 0 && focusedRowIndex < rows.length) {
-      e.preventDefault();
-      const focusedRow = rows[focusedRowIndex];
-      const link = focusedRow.querySelector('a');
-      if (link) {
-        window.open(link.href, link.target || '_self');
-      }
-      return;
     if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
       e.preventDefault();
       const rows = Array.from(listEl.querySelectorAll('.row'));
@@ -618,25 +586,15 @@ footer {
     } else if (k === 'p') {
       handleSort('price');
     } else if (k === 'l') {
-      handleLocateMe();
+      if (typeof handleLocateMe === 'function') handleLocateMe();
     }
   });
 
-  function updateRowFocus(rows) {
-    rows.forEach((row, idx) => {
-      if (idx === focusedRowIndex) {
-        row.classList.add('focused');
-        row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      } else {
-        row.classList.remove('focused');
-      }
-    });
-  }
-
   // Init
-  initNeighborhoodDropdown();
+  if (typeof initNeighborhoodDropdown === 'function') initNeighborhoodDropdown();
   loadCategoryData();
 })();
+
 </script>
 </body>
 </html>
