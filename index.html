@@ -116,7 +116,8 @@ main { padding: 0; }
 
 .row {
   border-bottom: 1px solid var(--rule);
-  padding: 16px 20px;
+  padding: 12px 16px;
+  cursor: pointer;
   transition: all 0s; /* No soft transitions in brutalism */
 }
 .row:hover, .row:focus-visible {
@@ -136,13 +137,14 @@ main { padding: 0; }
 .brand { color: #555; }
 .row:hover .brand, .row:focus-visible .brand { color: #aaa; }
 
-.row-desc { margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
+.row-desc { display: none; margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
+.row.expanded .row-desc { display: block; }
 .row:hover .row-desc, .row:focus-visible .row-desc { color: #ccc; }
 
 .row-address { font-size: 0.85rem; color: #666; }
 .row:hover .row-address, .row:focus-visible .row-address { color: #ddd; }
 
-.prices { display: flex; flex-wrap: nowrap; gap: 8px 16px; }
+.prices { display: flex; flex-wrap: nowrap; gap: 8px 16px; margin-left: auto; }
 .prices a {
   display: inline-flex;
   gap: 8px;
@@ -170,7 +172,7 @@ footer {
 }
 
 @media (max-width:600px) {
-  header, main .header-row, .row, footer { padding-left: 10px; padding-right: 10px; }
+  header, main .header-row, footer { padding-left: 10px; padding-right: 10px; }
   .meta { flex-direction: column; gap: 4px; }
   .meta span+span::before { display: none; }
   .shortcut { display: none; }
@@ -384,7 +386,7 @@ footer {
 
           const site = document.createElement('span');
           site.className = 'site';
-          site.textContent = (currentCategory.actionText || 'VISIT') + ': MAP';
+          site.textContent = 'Map';
 
           link.appendChild(site);
           prices.appendChild(link);
@@ -417,14 +419,20 @@ footer {
       line.appendChild(name);
       line.appendChild(prices);
 
+      row.appendChild(line);
+
       if (item.description) {
         const desc = document.createElement('div');
         desc.className = 'row-desc';
         desc.textContent = item.description;
-        line.appendChild(desc);
+        row.appendChild(desc);
       }
 
-      row.appendChild(line);
+      row.addEventListener('click', (e) => {
+        // Ignore clicks on links
+        if (e.target.closest('a')) return;
+        row.classList.toggle('expanded');
+      });
 
       listEl.appendChild(row);
     });
