@@ -39,8 +39,8 @@ body {
 *, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
 a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink); }
 a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
-a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; background: var(--ink); color: var(--bg); }
-
+a:focus-visible { outline: 1px solid var(--accent); background: var(--ink); color: var(--bg); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 header {
   border-bottom: 1px solid var(--rule);
@@ -119,13 +119,6 @@ main { padding: 0; }
   padding: 16px 20px;
   transition: all 0s; /* No soft transitions in brutalism */
 }
-.row:hover, .row.focused {
-  background: var(--ink);
-  color: var(--bg);
-}
-.row:hover .brand, .row.focused .brand { color: var(--bg); }
-.row:hover a, .row.focused a { border-color: var(--bg); }
-.row:hover a:hover, .row.focused a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
 .row:hover, .row:focus-visible {
   background: var(--ink);
   color: var(--bg);
@@ -139,9 +132,8 @@ main { padding: 0; }
 .row:hover a:hover, .row:focus-visible a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
 
 .line { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: baseline; }
-.name { font-size: 1rem; }
-.brand { color: #555; }
-.row:hover .brand, .row.focused .brand { color: #aaa; }
+.name { font-size: 1rem; font-weight: bold; }
+.brand { color: #555; font-style: italic; }
 .row:hover .brand, .row:focus-visible .brand { color: #aaa; }
 
 .row-desc { margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
@@ -160,7 +152,6 @@ main { padding: 0; }
   background: var(--bg);
   color: var(--ink);
 }
-.row:hover .prices a, .row.focused .prices a {
 .row:hover .prices a, .row:focus-visible .prices a {
   border-color: var(--bg);
 }
@@ -204,7 +195,7 @@ footer {
 </header>
 
 <main aria-label="Items list">
-  <div class="header-row" role="group" aria-label="Sort options">
+  <div class="header-row">
     <button type="button" class="header-label" data-sort="brand">
       <span>[b] Brand</span>
       <span class="sort-indicator" data-indicator="brand">·</span>
@@ -248,7 +239,6 @@ footer {
   let currentCategory = null;
   let items = [];
   let currentSort = { key: 'brand', direction: 'asc' };
-
 
   function initNeighborhoodDropdown() {
     neighborhoodSelect.innerHTML = '<option value="" disabled selected>Neighborhoods...</option>';
@@ -322,7 +312,6 @@ footer {
     }
 
     currentSort = { key: 'brand', direction: 'asc' };
-
     sortItems();
     updateIndicators();
     render();
@@ -409,12 +398,6 @@ footer {
           link.target = '_blank';
           link.rel = 'noopener noreferrer';
 
-          let ariaLabel = `Buy ${item.brand} ${item.name} from ${l.r}`;
-          if (typeof item.price === 'number') {
-            ariaLabel += ` for $${item.price.toLocaleString()}`;
-          }
-          link.setAttribute('aria-label', ariaLabel);
-
           const site = document.createElement('span');
           site.className = 'site';
           site.textContent = (currentCategory.actionText || 'BUY') + ': ' + l.r;
@@ -455,7 +438,6 @@ footer {
       currentSort.key = key;
       currentSort.direction = 'asc';
     }
-
     sortItems();
     updateIndicators();
     render();
@@ -537,7 +519,6 @@ footer {
 
   locateMeBtn.addEventListener('click', handleLocateMe);
 
-
   window.addEventListener('keydown', (e) => {
     // Ignore keydown if a modifier is pressed or if user is typing in an input
     if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -596,14 +577,27 @@ footer {
     } else if (k === 't') {
       handleSort('name');
     } else if (k === 'l') {
-      if (typeof handleLocateMe === 'function') handleLocateMe();
+      handleLocateMe();
     }
   });
+
+  async function loadCategories() {
+    try {
+      const res = await fetch('/neighborhoods.json');
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      categories = await res.json();
+      currentCategory = categories[0];
+      initNeighborhoodDropdown();
+      loadCategoryData();
+    } catch (err) {
+      console.error('failed to load neighborhoods', err);
+      listEl.innerHTML = 'Error loading neighborhoods.';
+    }
+  }
 
   // Init
   loadCategories();
 })();
-
 </script>
 </body>
 </html>
