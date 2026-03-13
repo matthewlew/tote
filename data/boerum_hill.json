@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Rucola",
-      "links": [
-        {
-          "u": "https://rucolabrooklyn.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "190 Dean St, Brooklyn, NY 11217"
     },
     {
       "brand": "Restaurant",
       "name": "French Louie",
-      "links": [
-        {
-          "u": "https://frenchlouienyc.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "320 Atlantic Ave, Brooklyn, NY 11201"
     }
   ]
 }

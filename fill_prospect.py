@@ -1,4 +1,6 @@
-{
+import json
+
+data = {
   "places": [
     {
       "brand": "Coffee Shop",
@@ -27,3 +29,8 @@
     }
   ]
 }
+
+with open("data/prospect_heights.json", 'w') as f:
+    json.dump(data, f, indent=2)
+
+print("Updated data/prospect_heights.json")

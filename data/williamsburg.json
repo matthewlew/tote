@@ -3,22 +3,12 @@
     {
       "brand": "Coffee Shop",
       "name": "Devocion",
-      "links": [
-        {
-          "u": "https://www.devocion.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "69 Grand St, Brooklyn, NY 11249"
     },
     {
       "brand": "Restaurant",
       "name": "Lilia",
-      "links": [
-        {
-          "u": "https://www.lilianewyork.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "567 Union Ave, Brooklyn, NY 11211"
     }
   ]
 }

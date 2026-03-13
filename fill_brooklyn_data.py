@@ -3,84 +3,84 @@ import os
 
 data = {
     'williamsburg': [
-        {"brand": "Coffee Shop", "name": "Devocion", "links": [{"u": "https://www.devocion.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Lilia", "links": [{"u": "https://www.lilianewyork.com/", "r": "Website"}]}
+        {"brand": "Coffee Shop", "name": "Devocion", "address": "69 Grand St, Brooklyn, NY 11249"},
+        {"brand": "Restaurant", "name": "Lilia", "address": "567 Union Ave, Brooklyn, NY 11211"}
     ],
     'park_slope': [
-        {"brand": "Bookstore", "name": "Community Bookstore", "links": [{"u": "https://www.communitybookstore.net/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Al Di La Trattoria", "links": [{"u": "https://aldilatrattoria.com/", "r": "Website"}]}
+        {"brand": "Bookstore", "name": "Community Bookstore", "address": "143 7th Ave, Brooklyn, NY 11215"},
+        {"brand": "Restaurant", "name": "Al Di La Trattoria", "address": "248 5th Ave, Brooklyn, NY 11215"}
     ],
     'bed_stuy': [
-        {"brand": "Coffee Shop", "name": "Daily Press", "links": [{"u": "https://www.dailypresscoffee.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Peaches HotHouse", "links": [{"u": "https://www.bcrestaurantgroup.com/peaches-hothouse", "r": "Website"}]}
+        {"brand": "Coffee Shop", "name": "Daily Press", "address": "505 Franklin Ave, Brooklyn, NY 11238"},
+        {"brand": "Restaurant", "name": "Peaches HotHouse", "address": "415 Tompkins Ave, Brooklyn, NY 11216"}
     ],
     'greenpoint': [
-        {"brand": "Bakery", "name": "Peter Pan Donut & Pastry Shop", "links": [{"u": "http://peterpandonuts.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Paulie Gee's", "links": [{"u": "https://pauliegee.com/", "r": "Website"}]}
+        {"brand": "Bakery", "name": "Peter Pan Donut & Pastry Shop", "address": "727 Manhattan Ave, Brooklyn, NY 11222"},
+        {"brand": "Restaurant", "name": "Paulie Gee's", "address": "60 Greenpoint Ave, Brooklyn, NY 11222"}
     ],
     'bushwick': [
-        {"brand": "Coffee Shop", "name": "Sey Coffee", "links": [{"u": "https://www.seycoffee.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Roberta's", "links": [{"u": "https://www.robertaspizza.com/", "r": "Website"}]}
+        {"brand": "Coffee Shop", "name": "Sey Coffee", "address": "18 Grattan St, Brooklyn, NY 11206"},
+        {"brand": "Restaurant", "name": "Roberta's", "address": "261 Moore St, Brooklyn, NY 11206"}
     ],
     'crown_heights': [
-        {"brand": "Bar", "name": "Super Power", "links": [{"u": "https://www.superpowerbrooklyn.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Chavela's", "links": [{"u": "https://chavelasnyc.com/", "r": "Website"}]}
+        {"brand": "Bar", "name": "Super Power", "address": "722 Nostrand Ave, Brooklyn, NY 11216"},
+        {"brand": "Restaurant", "name": "Chavela's", "address": "736 Franklin Ave, Brooklyn, NY 11238"}
     ],
     'dumbo': [
-        {"brand": "Bookstore", "name": "Powerhouse Arena", "links": [{"u": "https://www.powerhousearena.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Juliana's", "links": [{"u": "https://julianaspizza.com/", "r": "Website"}]}
+        {"brand": "Bookstore", "name": "Powerhouse Arena", "address": "28 Adams St, Brooklyn, NY 11201"},
+        {"brand": "Restaurant", "name": "Juliana's", "address": "19 Old Fulton St, Brooklyn, NY 11201"}
     ],
     'fort_greene': [
-        {"brand": "Restaurant", "name": "Miss Ada", "links": [{"u": "https://www.missadanyc.com/", "r": "Website"}]},
-        {"brand": "Park", "name": "Fort Greene Park", "links": [{"u": "https://www.fortgreenepark.org/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Miss Ada", "address": "184 DeKalb Ave, Brooklyn, NY 11205"},
+        {"brand": "Park", "name": "Fort Greene Park", "address": "DeKalb Ave & Washington Park, Brooklyn, NY 11205"}
     ],
     'cobble_hill': [
-        {"brand": "Restaurant", "name": "La Vara", "links": [{"u": "https://www.lavarany.com/", "r": "Website"}]},
-        {"brand": "Bookstore", "name": "Books Are Magic", "links": [{"u": "https://www.booksaremagic.net/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "La Vara", "address": "268 Clinton St, Brooklyn, NY 11201"},
+        {"brand": "Bookstore", "name": "Books Are Magic", "address": "225 Smith St, Brooklyn, NY 11231"}
     ],
     'brooklyn_heights': [
-        {"brand": "Park", "name": "Brooklyn Heights Promenade", "links": [{"u": "https://www.nycgovparks.org/parks/brooklyn-heights-promenade", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Noodle Pudding", "links": [{"u": "https://goo.gl/maps/1", "r": "Maps"}]}
+        {"brand": "Park", "name": "Brooklyn Heights Promenade", "address": "Montague St & Pierrepont Pl, Brooklyn, NY 11201"},
+        {"brand": "Restaurant", "name": "Noodle Pudding", "address": "38 Henry St, Brooklyn, NY 11201"}
     ],
     'carroll_gardens': [
-        {"brand": "Restaurant", "name": "Frankies 457 Spuntino", "links": [{"u": "https://frankies457.com/", "r": "Website"}]},
-        {"brand": "Bakery", "name": "Court Street Grocers", "links": [{"u": "https://www.courtstreetgrocers.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Frankies 457 Spuntino", "address": "457 Court St, Brooklyn, NY 11231"},
+        {"brand": "Bakery", "name": "Court Street Grocers", "address": "485 Court St, Brooklyn, NY 11231"}
     ],
     'clinton_hill': [
-        {"brand": "Restaurant", "name": "Aita", "links": [{"u": "https://aitarestaurant.com/", "r": "Website"}]},
-        {"brand": "Coffee Shop", "name": "Clementine Bakery", "links": [{"u": "https://clementinebakery.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Aita", "address": "132 Greene Ave, Brooklyn, NY 11238"},
+        {"brand": "Coffee Shop", "name": "Clementine Bakery", "address": "395 Classon Ave, Brooklyn, NY 11238"}
     ],
     'gowanus': [
-        {"brand": "Brewery", "name": "Threes Brewing", "links": [{"u": "https://threesbrewing.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "Claro", "links": [{"u": "https://www.clarobk.com/", "r": "Website"}]}
+        {"brand": "Brewery", "name": "Threes Brewing", "address": "333 Douglass St, Brooklyn, NY 11217"},
+        {"brand": "Restaurant", "name": "Claro", "address": "284 Third Ave, Brooklyn, NY 11215"}
     ],
     'red_hook': [
-        {"brand": "Restaurant", "name": "Hometown Bar-B-Que", "links": [{"u": "https://hometownbbq.com/", "r": "Website"}]},
-        {"brand": "Bar", "name": "Sunny's Bar", "links": [{"u": "https://www.sunnysredhook.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Hometown Bar-B-Que", "address": "454 Van Brunt St, Brooklyn, NY 11231"},
+        {"brand": "Bar", "name": "Sunny's Bar", "address": "253 Conover St, Brooklyn, NY 11231"}
     ],
     'boerum_hill': [
-        {"brand": "Restaurant", "name": "Rucola", "links": [{"u": "https://rucolabrooklyn.com/", "r": "Website"}]},
-        {"brand": "Restaurant", "name": "French Louie", "links": [{"u": "https://frenchlouienyc.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Rucola", "address": "190 Dean St, Brooklyn, NY 11217"},
+        {"brand": "Restaurant", "name": "French Louie", "address": "320 Atlantic Ave, Brooklyn, NY 11201"}
     ],
     'ditmas_park': [
-        {"brand": "Restaurant", "name": "The Farm on Adderley", "links": [{"u": "https://www.thefarmonadderley.com/", "r": "Website"}]},
-        {"brand": "Bar", "name": "Sycamore Bar + Flower Shop", "links": [{"u": "https://sycamorebrooklyn.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "The Farm on Adderley", "address": "1108 Cortelyou Rd, Brooklyn, NY 11218"},
+        {"brand": "Bar", "name": "Sycamore Bar + Flower Shop", "address": "1118 Cortelyou Rd, Brooklyn, NY 11218"}
     ],
     'kensington': [
-        {"brand": "Restaurant", "name": "To B Thai", "links": [{"u": "https://tobthai.com/", "r": "Website"}]},
-        {"brand": "Coffee Shop", "name": "Der Pioneer", "links": [{"u": "https://derpioneer.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "To B Thai", "address": "426 Church Ave, Brooklyn, NY 11218"},
+        {"brand": "Coffee Shop", "name": "Der Pioneer", "address": "737 Church Ave, Brooklyn, NY 11218"}
     ],
     'windsor_terrace': [
-        {"brand": "Restaurant", "name": "The Double Windsor", "links": [{"u": "https://thedoublewindsor.com/", "r": "Website"}]},
-        {"brand": "Cafe", "name": "Krupa Grocery", "links": [{"u": "https://krupagrocery.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "The Double Windsor", "address": "210 Prospect Park West, Brooklyn, NY 11215"},
+        {"brand": "Cafe", "name": "Krupa Grocery", "address": "231 Prospect Park West, Brooklyn, NY 11215"}
     ],
     'bay_ridge': [
-        {"brand": "Restaurant", "name": "Tanoreen", "links": [{"u": "https://tanoreen.com/", "r": "Website"}]},
-        {"brand": "Bakery", "name": "Leske's Bakery", "links": [{"u": "https://leskesbakery.com/", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Tanoreen", "address": "7523 3rd Ave, Brooklyn, NY 11209"},
+        {"brand": "Bakery", "name": "Leske's Bakery", "address": "7612 5th Ave, Brooklyn, NY 11209"}
     ],
     'sunset_park': [
-        {"brand": "Restaurant", "name": "Tacos El Bronco", "links": [{"u": "https://tacoselbronco.com/", "r": "Website"}]},
-        {"brand": "Park", "name": "Sunset Park", "links": [{"u": "https://www.nycgovparks.org/parks/sunset-park", "r": "Website"}]}
+        {"brand": "Restaurant", "name": "Tacos El Bronco", "address": "4324 4th Ave, Brooklyn, NY 11232"},
+        {"brand": "Park", "name": "Sunset Park", "address": "41st St & 44th St, Brooklyn, NY 11232"}
     ]
 }
 

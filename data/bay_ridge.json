@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Tanoreen",
-      "links": [
-        {
-          "u": "https://tanoreen.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "7523 3rd Ave, Brooklyn, NY 11209"
     },
     {
       "brand": "Bakery",
       "name": "Leske's Bakery",
-      "links": [
-        {
-          "u": "https://leskesbakery.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "7612 5th Ave, Brooklyn, NY 11209"
     }
   ]
 }

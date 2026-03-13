@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Frankies 457 Spuntino",
-      "links": [
-        {
-          "u": "https://frankies457.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "457 Court St, Brooklyn, NY 11231"
     },
     {
       "brand": "Bakery",
       "name": "Court Street Grocers",
-      "links": [
-        {
-          "u": "https://www.courtstreetgrocers.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "485 Court St, Brooklyn, NY 11231"
     }
   ]
 }

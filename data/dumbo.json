@@ -3,22 +3,12 @@
     {
       "brand": "Bookstore",
       "name": "Powerhouse Arena",
-      "links": [
-        {
-          "u": "https://www.powerhousearena.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "28 Adams St, Brooklyn, NY 11201"
     },
     {
       "brand": "Restaurant",
       "name": "Juliana's",
-      "links": [
-        {
-          "u": "https://julianaspizza.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "19 Old Fulton St, Brooklyn, NY 11201"
     }
   ]
 }

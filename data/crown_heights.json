@@ -3,22 +3,12 @@
     {
       "brand": "Bar",
       "name": "Super Power",
-      "links": [
-        {
-          "u": "https://www.superpowerbrooklyn.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "722 Nostrand Ave, Brooklyn, NY 11216"
     },
     {
       "brand": "Restaurant",
       "name": "Chavela's",
-      "links": [
-        {
-          "u": "https://chavelasnyc.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "736 Franklin Ave, Brooklyn, NY 11238"
     }
   ]
 }

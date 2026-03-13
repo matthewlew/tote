@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "The Farm on Adderley",
-      "links": [
-        {
-          "u": "https://www.thefarmonadderley.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "1108 Cortelyou Rd, Brooklyn, NY 11218"
     },
     {
       "brand": "Bar",
       "name": "Sycamore Bar + Flower Shop",
-      "links": [
-        {
-          "u": "https://sycamorebrooklyn.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "1118 Cortelyou Rd, Brooklyn, NY 11218"
     }
   ]
 }

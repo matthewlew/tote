@@ -3,22 +3,12 @@
     {
       "brand": "Coffee Shop",
       "name": "Daily Press",
-      "links": [
-        {
-          "u": "https://www.dailypresscoffee.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "505 Franklin Ave, Brooklyn, NY 11238"
     },
     {
       "brand": "Restaurant",
       "name": "Peaches HotHouse",
-      "links": [
-        {
-          "u": "https://www.bcrestaurantgroup.com/peaches-hothouse",
-          "r": "Website"
-        }
-      ]
+      "address": "415 Tompkins Ave, Brooklyn, NY 11216"
     }
   ]
 }

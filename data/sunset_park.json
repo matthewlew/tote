@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Tacos El Bronco",
-      "links": [
-        {
-          "u": "https://tacoselbronco.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "4324 4th Ave, Brooklyn, NY 11232"
     },
     {
       "brand": "Park",
       "name": "Sunset Park",
-      "links": [
-        {
-          "u": "https://www.nycgovparks.org/parks/sunset-park",
-          "r": "Website"
-        }
-      ]
+      "address": "41st St & 44th St, Brooklyn, NY 11232"
     }
   ]
 }

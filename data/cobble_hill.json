@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "La Vara",
-      "links": [
-        {
-          "u": "https://www.lavarany.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "268 Clinton St, Brooklyn, NY 11201"
     },
     {
       "brand": "Bookstore",
       "name": "Books Are Magic",
-      "links": [
-        {
-          "u": "https://www.booksaremagic.net/",
-          "r": "Website"
-        }
-      ]
+      "address": "225 Smith St, Brooklyn, NY 11231"
     }
   ]
 }

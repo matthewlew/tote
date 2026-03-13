@@ -3,22 +3,12 @@
     {
       "brand": "Bakery",
       "name": "Peter Pan Donut & Pastry Shop",
-      "links": [
-        {
-          "u": "http://peterpandonuts.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "727 Manhattan Ave, Brooklyn, NY 11222"
     },
     {
       "brand": "Restaurant",
       "name": "Paulie Gee's",
-      "links": [
-        {
-          "u": "https://pauliegee.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "60 Greenpoint Ave, Brooklyn, NY 11222"
     }
   ]
 }

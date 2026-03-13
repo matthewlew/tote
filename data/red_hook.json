@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Hometown Bar-B-Que",
-      "links": [
-        {
-          "u": "https://hometownbbq.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "454 Van Brunt St, Brooklyn, NY 11231"
     },
     {
       "brand": "Bar",
       "name": "Sunny's Bar",
-      "links": [
-        {
-          "u": "https://www.sunnysredhook.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "253 Conover St, Brooklyn, NY 11231"
     }
   ]
 }

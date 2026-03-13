@@ -3,22 +3,12 @@
     {
       "brand": "Park",
       "name": "Brooklyn Heights Promenade",
-      "links": [
-        {
-          "u": "https://www.nycgovparks.org/parks/brooklyn-heights-promenade",
-          "r": "Website"
-        }
-      ]
+      "address": "Montague St & Pierrepont Pl, Brooklyn, NY 11201"
     },
     {
       "brand": "Restaurant",
       "name": "Noodle Pudding",
-      "links": [
-        {
-          "u": "https://goo.gl/maps/1",
-          "r": "Maps"
-        }
-      ]
+      "address": "38 Henry St, Brooklyn, NY 11201"
     }
   ]
 }

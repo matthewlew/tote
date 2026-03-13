@@ -3,22 +3,12 @@
     {
       "brand": "Bookstore",
       "name": "Community Bookstore",
-      "links": [
-        {
-          "u": "https://www.communitybookstore.net/",
-          "r": "Website"
-        }
-      ]
+      "address": "143 7th Ave, Brooklyn, NY 11215"
     },
     {
       "brand": "Restaurant",
       "name": "Al Di La Trattoria",
-      "links": [
-        {
-          "u": "https://aldilatrattoria.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "248 5th Ave, Brooklyn, NY 11215"
     }
   ]
 }

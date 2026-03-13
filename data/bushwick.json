@@ -3,22 +3,12 @@
     {
       "brand": "Coffee Shop",
       "name": "Sey Coffee",
-      "links": [
-        {
-          "u": "https://www.seycoffee.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "18 Grattan St, Brooklyn, NY 11206"
     },
     {
       "brand": "Restaurant",
       "name": "Roberta's",
-      "links": [
-        {
-          "u": "https://www.robertaspizza.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "261 Moore St, Brooklyn, NY 11206"
     }
   ]
 }

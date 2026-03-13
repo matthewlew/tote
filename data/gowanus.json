@@ -3,22 +3,12 @@
     {
       "brand": "Brewery",
       "name": "Threes Brewing",
-      "links": [
-        {
-          "u": "https://threesbrewing.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "333 Douglass St, Brooklyn, NY 11217"
     },
     {
       "brand": "Restaurant",
       "name": "Claro",
-      "links": [
-        {
-          "u": "https://www.clarobk.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "284 Third Ave, Brooklyn, NY 11215"
     }
   ]
 }

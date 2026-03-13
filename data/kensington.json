@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "To B Thai",
-      "links": [
-        {
-          "u": "https://tobthai.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "426 Church Ave, Brooklyn, NY 11218"
     },
     {
       "brand": "Coffee Shop",
       "name": "Der Pioneer",
-      "links": [
-        {
-          "u": "https://derpioneer.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "737 Church Ave, Brooklyn, NY 11218"
     }
   ]
 }

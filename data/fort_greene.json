@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Miss Ada",
-      "links": [
-        {
-          "u": "https://www.missadanyc.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "184 DeKalb Ave, Brooklyn, NY 11205"
     },
     {
       "brand": "Park",
       "name": "Fort Greene Park",
-      "links": [
-        {
-          "u": "https://www.fortgreenepark.org/",
-          "r": "Website"
-        }
-      ]
+      "address": "DeKalb Ave & Washington Park, Brooklyn, NY 11205"
     }
   ]
 }

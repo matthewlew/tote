@@ -409,6 +409,18 @@ footer {
 
           prices.appendChild(link);
         });
+      } else if (item.address) {
+        const link = document.createElement('a');
+        link.href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(item.name + ' ' + item.address);
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+
+        const site = document.createElement('span');
+        site.className = 'site';
+        site.textContent = (currentCategory.actionText || 'VISIT') + ': ' + item.address;
+
+        link.appendChild(site);
+        prices.appendChild(link);
       }
 
       line.appendChild(brand);

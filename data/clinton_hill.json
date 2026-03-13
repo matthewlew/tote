@@ -3,22 +3,12 @@
     {
       "brand": "Restaurant",
       "name": "Aita",
-      "links": [
-        {
-          "u": "https://aitarestaurant.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "132 Greene Ave, Brooklyn, NY 11238"
     },
     {
       "brand": "Coffee Shop",
       "name": "Clementine Bakery",
-      "links": [
-        {
-          "u": "https://clementinebakery.com/",
-          "r": "Website"
-        }
-      ]
+      "address": "395 Classon Ave, Brooklyn, NY 11238"
     }
   ]
 }
