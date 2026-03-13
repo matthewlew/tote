@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tote: A neighborhood-focused directory for discovering local businesses in NYC. Skip the map and find cafes, shops, and restaurants in a fast, scannable list.">
+<meta name="keywords" content="NYC, neighborhoods, local businesses, Brooklyn, cafes, restaurants, directory, local guides">
 <title>Tote</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,9 +132,15 @@ main { padding: 0; }
 .row:hover a:hover, .row:focus-visible a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
 
 .line { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: baseline; }
-.name { font-size: 1rem; }
-.brand { color: #555; }
+.name { font-size: 1rem; font-weight: bold; }
+.brand { color: #555; font-style: italic; }
 .row:hover .brand, .row:focus-visible .brand { color: #aaa; }
+
+.row-desc { margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
+.row:hover .row-desc, .row:focus-visible .row-desc { color: #ccc; }
+
+.row-address { font-size: 0.85rem; color: #666; font-family: monospace; }
+.row:hover .row-address, .row:focus-visible .row-address { color: #ddd; }
 
 .prices { display: flex; flex-wrap: wrap; gap: 8px 16px; }
 .prices a {
@@ -196,10 +204,6 @@ footer {
       <span>[t] Title</span>
       <span class="sort-indicator" data-indicator="name">·</span>
     </button>
-    <button type="button" class="header-label" data-sort="price">
-      <span>[p] Price</span>
-      <span class="sort-indicator" data-indicator="price">·</span>
-    </button>
     <div class="header-spacer"></div>
   </div>
 
@@ -207,7 +211,10 @@ footer {
 </main>
 
 <footer>
-  <span>Articles on the coolest totes on the web</span>
+  <div style="display: flex; gap: 16px;">
+    <span>Articles on the coolest totes on the web</span>
+    <a href="/about.html">About Us</a>
+  </div>
   <span>tote.so</span>
 </footer>
 
@@ -221,41 +228,15 @@ footer {
   const neighborhoodSelect = document.getElementById('neighborhood-select');
   const indicators = {
     name: document.querySelector('[data-indicator="name"]'),
-    brand: document.querySelector('[data-indicator="brand"]'),
-    price: document.querySelector('[data-indicator="price"]')
+    brand: document.querySelector('[data-indicator="brand"]')
   };
 
-  const categories = [
-    { id: 'bags', name: 'Bags', file: '/data/bags.json', dataKey: 'bags', unit: 'bags', actionText: 'BUY' },
-    { id: 'coffee', name: 'Coffee beans', file: '/data/coffee.json', dataKey: 'items', unit: 'items', actionText: 'BUY' },
-    { id: 'books', name: 'Books', file: '/data/books.json', dataKey: 'books', unit: 'books', actionText: 'BUY' },
-    { id: 'prospect_heights', name: 'Prospect Heights', file: '/data/prospect_heights.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6775, -73.9654] },
-    { id: 'williamsburg', name: 'Williamsburg', file: '/data/williamsburg.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.7128, -73.9560] },
-    { id: 'park_slope', name: 'Park Slope', file: '/data/park_slope.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6720, -73.9778] },
-    { id: 'bed_stuy', name: 'Bedford-Stuyvesant', file: '/data/bed_stuy.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6872, -73.9418] },
-    { id: 'greenpoint', name: 'Greenpoint', file: '/data/greenpoint.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.7302, -73.9540] },
-    { id: 'bushwick', name: 'Bushwick', file: '/data/bushwick.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6958, -73.9171] },
-    { id: 'crown_heights', name: 'Crown Heights', file: '/data/crown_heights.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6681, -73.9448] },
-    { id: 'dumbo', name: 'DUMBO', file: '/data/dumbo.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.7033, -73.9881] },
-    { id: 'fort_greene', name: 'Fort Greene', file: '/data/fort_greene.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6861, -73.9754] },
-    { id: 'cobble_hill', name: 'Cobble Hill', file: '/data/cobble_hill.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6875, -73.9958] },
-    { id: 'brooklyn_heights', name: 'Brooklyn Heights', file: '/data/brooklyn_heights.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6950, -73.9936] },
-    { id: 'carroll_gardens', name: 'Carroll Gardens', file: '/data/carroll_gardens.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6805, -73.9981] },
-    { id: 'clinton_hill', name: 'Clinton Hill', file: '/data/clinton_hill.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6896, -73.9660] },
-    { id: 'gowanus', name: 'Gowanus', file: '/data/gowanus.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6731, -73.9902] },
-    { id: 'red_hook', name: 'Red Hook', file: '/data/red_hook.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6734, -74.0093] },
-    { id: 'boerum_hill', name: 'Boerum Hill', file: '/data/boerum_hill.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6845, -73.9856] },
-    { id: 'ditmas_park', name: 'Ditmas Park', file: '/data/ditmas_park.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6409, -73.9626] },
-    { id: 'kensington', name: 'Kensington', file: '/data/kensington.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6385, -73.9748] },
-    { id: 'windsor_terrace', name: 'Windsor Terrace', file: '/data/windsor_terrace.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6539, -73.9758] },
-    { id: 'bay_ridge', name: 'Bay Ridge', file: '/data/bay_ridge.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6262, -74.0320] },
-    { id: 'sunset_park', name: 'Sunset Park', file: '/data/sunset_park.json', dataKey: 'places', unit: 'places', actionText: 'VISIT', latLng: [40.6455, -74.0124] }
-  ];
+  let categories = [];
 
   // ⚡ Bolt Optimization: Cache category data to prevent redundant network requests
   const categoryCache = {};
 
-  let currentCategory = categories[0];
+  let currentCategory = null;
   let items = [];
   let currentSort = { key: 'brand', direction: 'asc' };
 
@@ -283,7 +264,9 @@ footer {
 
   function renderNav() {
     navEl.innerHTML = '';
-    categories.forEach((cat, index) => {
+    // Limit to displaying the top 5 neighborhoods in the top nav
+    const visibleCategories = categories.slice(0, 5);
+    visibleCategories.forEach((cat, index) => {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'category-btn';
@@ -390,7 +373,25 @@ footer {
       const prices = document.createElement('div');
       prices.className = 'prices';
 
-      if (item.links && item.links.length > 0) {
+      if (item.address) {
+          const link = document.createElement('a');
+          const encodedAddress = encodeURIComponent(item.name + ' ' + item.address);
+          link.href = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
+          link.target = '_blank';
+          link.rel = 'noopener noreferrer';
+
+          const site = document.createElement('span');
+          site.className = 'site';
+          site.textContent = (currentCategory.actionText || 'VISIT') + ': MAP';
+
+          link.appendChild(site);
+          prices.appendChild(link);
+
+          const addressSpan = document.createElement('span');
+          addressSpan.className = 'row-address';
+          addressSpan.textContent = item.address;
+          line.appendChild(addressSpan);
+      } else if (item.links && item.links.length > 0) {
         item.links.forEach(l => {
           const link = document.createElement('a');
           link.href = l.u;
@@ -418,6 +419,14 @@ footer {
       line.appendChild(name);
       line.appendChild(prices);
       row.appendChild(line);
+
+      if (item.description) {
+        const desc = document.createElement('div');
+        desc.className = 'row-desc';
+        desc.textContent = item.description;
+        row.appendChild(desc);
+      }
+
       listEl.appendChild(row);
     });
   }
@@ -469,25 +478,27 @@ footer {
         const userLat = position.coords.latitude;
         const userLng = position.coords.longitude;
 
-        let closestCategory = null;
-        let minDistance = Infinity;
-
+        // Calculate distance for all categories
         categories.forEach(cat => {
           if (cat.latLng) {
-            const distance = getDistance(userLat, userLng, cat.latLng[0], cat.latLng[1]);
-            if (distance < minDistance) {
-              minDistance = distance;
-              closestCategory = cat;
-            }
+            cat.distance = getDistance(userLat, userLng, cat.latLng[0], cat.latLng[1]);
+          } else {
+            cat.distance = Infinity;
           }
         });
 
+        // Sort categories by distance
+        categories.sort((a, b) => a.distance - b.distance);
+
+        const closestCategory = categories[0];
+
         // Assuming NYC is roughly within a 50 mile radius of user if they are in NYC
-        // We can just check if minDistance is within a reasonable bound for NYC
-        if (minDistance > 50) {
+        if (closestCategory.distance > 50) {
           alert("Only for NYC neighborhoods");
-        } else if (closestCategory && closestCategory.id !== currentCategory.id) {
+        } else {
           currentCategory = closestCategory;
+          // Re-init dropdown and reload data with sorted categories
+          initNeighborhoodDropdown();
           loadCategoryData();
         }
         resetLocateBtn();
@@ -514,7 +525,8 @@ footer {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
     const num = parseInt(e.key, 10);
-    if (!isNaN(num) && num >= 1 && num <= categories.length) {
+    // Bind numeric keys 1-5 to the visible categories
+    if (!isNaN(num) && num >= 1 && num <= Math.min(categories.length, 5)) {
       const catIndex = num - 1;
       const targetCategory = categories[catIndex];
       if (targetCategory && targetCategory.id !== currentCategory.id) {
@@ -564,16 +576,27 @@ footer {
       handleSort('brand');
     } else if (k === 't') {
       handleSort('name');
-    } else if (k === 'p') {
-      handleSort('price');
     } else if (k === 'l') {
       handleLocateMe();
     }
   });
 
+  async function loadCategories() {
+    try {
+      const res = await fetch('/neighborhoods.json');
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      categories = await res.json();
+      currentCategory = categories[0];
+      initNeighborhoodDropdown();
+      loadCategoryData();
+    } catch (err) {
+      console.error('failed to load neighborhoods', err);
+      listEl.innerHTML = 'Error loading neighborhoods.';
+    }
+  }
+
   // Init
-  initNeighborhoodDropdown();
-  loadCategoryData();
+  loadCategories();
 })();
 </script>
 </body>

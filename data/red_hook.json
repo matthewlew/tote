@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "The Good Fork",
+      "address": "391 Van Brunt Street, Brooklyn, 11231",
+      "description": "A local korean, american restaurant."
+    },
+    {
+      "brand": "Bar",
+      "name": "Brooklyn Ice House",
+      "address": "318 Van Brunt Street, 11231",
+      "description": "A local burger, sandwich bar."
+    },
+    {
+      "brand": "Shop",
+      "name": "Chelsea Garden Center Red Hook",
+      "address": "444 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bush Deli",
+      "address": "507 Clinton Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "ACQ Bread",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Line Bagels",
+      "address": "476 Smith Street, 11231",
+      "description": "A local bagel, breakfast, sandwich, salad shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "6 Restaurant",
+      "address": "481 Court Street, 11231",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wi Nail & Spa",
+      "address": "490 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Willy Deli & Grill",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local sandwich, breakfast shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Mate",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local argentinian restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Atelier Ariana",
+      "address": "478 Smith Street, Brooklyn, 11231",
+      "description": "A local breakfast, coffee_shop, french cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Viva Mexico Tire Shop",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Aboodies",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Loafers Cocktail Bar",
+      "address": "517 Court Street, 11231",
+      "description": "A local snack bar."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Santo Br\u00faklin",
+      "address": "548 Court Street, Brooklyn, 11231",
+      "description": "A local brazilian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "New Image Beauty Salon",
+      "address": "547 Court Street, Brooklyn, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cacao Prieto",
+      "address": "218 Conover Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Tamani Food",
+      "address": "572 Smith Street, 11231",
+      "description": "importer of Georgian foods"
+    },
+    {
+      "brand": "Shop",
+      "name": "La Luz",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lundy Bros.",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local seafood, american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Tony\u2019s Deli & Grocery",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Van Brunt Market",
+      "address": "322 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "O & B Hair Salon",
+      "address": "324 Van Brunt Street, Brooklyn, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Civic Studio",
+      "address": "352 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Erie Basin",
+      "address": "388 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Polt At\u00f6lye",
+      "address": "390 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Thank You Have A Good Day",
+      "address": "392 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Piscana",
+      "address": "392A Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Swoopys Groove Palace",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Botanica",
+      "address": "220 Conover Street, 11231",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Crab",
+      "address": "24 Reed Street, 11231",
+      "description": "A local seafood restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Food Bazaar",
+      "address": "480 Van Brunt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Island Vibes",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "Hooked On Plants",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Seaborne",
+      "address": "228 Van Brunt Street, 11231",
+      "description": "A local snack bar."
+    },
+    {
+      "brand": "Cafe",
+      "name": "The Black Flamingo",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local coffee_shop, breakfast, sandwich cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Third Time's the Charm",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "La Newyorkina",
+      "address": "61 Commerce Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "I.N.C. 21",
+      "address": "65 Commerce Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fulla Shirts",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "custom printed clothes and bags"
+    },
+    {
+      "brand": "Shop",
+      "name": "Open Invite",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Farm Fresh Organic",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "La Nueva Candy Store",
+      "address": "52 Lorraine Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Associated Supermarket",
+      "address": "58 Lorraine Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lil Larry's Liquor & Wine",
+      "address": "54 Lorraine Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mix House",
+      "address": "66 Lorraine Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "T&H Deli & Bagel",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Columbia Deli",
+      "address": "439 Columbia Street, 11231",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Awais Auto Repair and Tire Center",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "360 Home Concept",
+      "address": "Near 40.6734, -74.0093, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Waverly Urban Market",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Waverly Candy & Deli",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local sandwich, breakfast shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Green Dry Cleaners",
+      "address": "141 Greene Avenue, Brooklyn, 11238",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Charming Nails",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Blank Street Coffee",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dar-Us-Salam Bookstore",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Graziella's",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local italian, pizza restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Canteen Delicatessen & Cafe",
+      "address": "57 4th Avenue",
+      "description": "A local breakfast, sandwich, burger cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Rose Deli & Grill",
+      "address": "70 4th Avenue, 11217",
+      "description": "A local breakast, sandwich shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Clever Blend",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local coffee_shop, ice_cream cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Miti Miti",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "B Central Market Place",
+      "address": "271 Flatbush Avenue, Brooklyn, 11217",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Green-Ville Garden",
+      "address": "373 Myrtle Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "New Polish Nails",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Eagles Convenience",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luanne's",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local asian restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Peckish",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local coffee_shop, breakfast, sandwich cafe."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Armory",
+      "address": "149 4th Avenue, 11217",
+      "description": "A local charcuterie, snack bar."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wyckoff Garden Deli",
+      "address": "164 Nevins Street, 11217",
+      "description": "A local breakfast, sandwich, salad, juice shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "No Pork Halal Kitchen",
+      "address": "50 4th Avenue, Brooklyn, 11217",
+      "description": "A local chinese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Green in Brooklyn",
+      "address": "432 Myrtle Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "T-Mobile",
+      "address": "436 Myrtle Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Myrtle Thai",
+      "address": "438 Myrtle Avenue, 11205",
+      "description": "A local thai restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Laundromat",
+      "address": "200 Clinton Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dekalb Convenience",
+      "address": "249 DeKalb Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "LaRina",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mr. Coco",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "403 Myrtle Discount LIquor",
+      "address": "403 Myrtle Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Luna's Tire Shop",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sandwich Factory",
+      "address": "336 Butler Street, 11217",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Demin's Kitchen Atelier",
+      "address": "601 Baltic Street, 11217",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sujuk",
+      "address": "185 DeKalb Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Vino Bueno & Liqueur",
+      "address": "187 DeKalb Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Evelina",
+      "address": "211 DeKalb Avenue, 11205",
+      "description": "A local italian, brunch restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Heritage Wines",
+      "address": "229 DeKalb Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Ten Colors Nail",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Aymen Organic Mini Mart",
+      "address": "320 Myrtle Avenue, 11205",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fulton Nail Bar",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brooklyn High Low",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local pastry cafe."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bittersweet",
+      "address": "180 DeKalb Avenue, 11205",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fort Greene Food Market",
+      "address": "186 DeKalb Avenue, 11205",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sailor",
+      "address": "228 DeKalb Avenue, 11205",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mango Bay",
+      "address": "271 Adelphi Street, 11205",
+      "description": "A local caribbean restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bridge Cleaners & Tailors",
+      "address": "204 Livingston Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Skider & Sons",
+      "address": "193 Schermerhorn Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Discount Convenience Store",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Trophy World",
+      "address": "Near 40.6861, -73.9754, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Afrikart",
+      "address": "295 Livingston Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "GoGo Furniture",
+      "address": "15 Bond Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "IHOP",
+      "address": "253 Livingston Street, Brooklyn, 11201",
+      "description": "A local pancake, diner restaurant."
+    }
+  ]
 }

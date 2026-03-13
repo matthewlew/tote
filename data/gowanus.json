@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Sit Still",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Buttermilk Bakeshop",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Something Else On Fifth",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Zeno Nail Bar",
+      "address": "369 9th Street, Brooklyn, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mezcal's",
+      "address": "223 5th Avenue, 11215",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shaking Crab",
+      "address": "230 5th Avenue, 11215",
+      "description": "A local seafood restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Green Ivy",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local korean, sushi, breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Flea",
+      "address": "211 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Associated Supermarket",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Stone Park Cafe",
+      "address": "324 5th Avenue, Brooklyn, 11215",
+      "description": "A local american, eclectic restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Pep Boys",
+      "address": "354 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Gate",
+      "address": "321 5th Avenue, 11215",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Casita of Brooklyn",
+      "address": "318 11th Street, Brooklyn, 11215",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Yesterday's News Antiques & Collectables",
+      "address": "428 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "ACQ Bread",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Line Bagels",
+      "address": "476 Smith Street, 11231",
+      "description": "A local bagel, breakfast, sandwich, salad shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "6 Restaurant",
+      "address": "481 Court Street, 11231",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wi Nail & Spa",
+      "address": "490 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Willy Deli & Grill",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local sandwich, breakfast shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "T&A Park Slope Deli & Grill",
+      "address": "234 7th Avenue, 11215",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Yes Cleaners",
+      "address": "472 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "2 Silhouettes on the Shade",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "antique shop focusing on art and sports equipment"
+    },
+    {
+      "brand": "Shop",
+      "name": "Blue & Black",
+      "address": "488 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hungry Ghost",
+      "address": "337 5th Avenue, 11215",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "5th & 5th Wellness",
+      "address": "339 5th Street, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Farm Shop Deli",
+      "address": "357 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Burgers & Beer",
+      "address": "259 5th Avenue, 11215",
+      "description": "A local burger restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "5th Ave. Gourmet Delight",
+      "address": "270 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Velvette Brew Espresso Bar",
+      "address": "279 5th Avenue, Brooklyn, 11215",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "Painted Swan",
+      "address": "407 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Carroll Gardens Laundromat Dry Cleaners",
+      "address": "425 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Carroll Gardens Wines & Liquors",
+      "address": "427 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Kick Axe",
+      "address": "622 Degraw Street, 11217",
+      "description": "A local pizza bar."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Room No. 205",
+      "address": "205 8th Street, 11215",
+      "description": "A local coffee_shop, sandwich cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Staples",
+      "address": "348 4th Avenue, Brooklyn, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Gowanus Convenience",
+      "address": "414 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "True Clean",
+      "address": "416 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "R. Ferraro Collision",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mercado Central",
+      "address": "252 3rd Avenue, 11215",
+      "description": "A local spanish, sandwich, tapas shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Carlos Repair @ Ridge",
+      "address": "264 3rd Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bol\u00e9 Road Textiles",
+      "address": "271 3rd Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Caf\u00e9 Mars",
+      "address": "272 3rd Avenue, 11215",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sixteen Mill Bakeshop",
+      "address": "552 Union Street, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sara June",
+      "address": "620 Union Street, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Yani's New Look",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Earth's Basket",
+      "address": "599 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "DAE",
+      "address": "385 Smith Street, 11231",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cafecito Social",
+      "address": "Near 40.6731, -73.9902, Brooklyn, NY",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lumena Aesthetics",
+      "address": "347 Hoyt Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Black Mountain",
+      "address": "415 Union Street, 11231",
+      "description": "A local american bar."
+    }
+  ]
 }

@@ -1,3 +1,280 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "Sarah James",
+      "address": "217 Pulaski Street, Brooklyn",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Saragina's",
+      "address": "11233",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Beso",
+      "address": "11233",
+      "description": "A local spanish restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ma and Pop",
+      "address": "349 Lewis Avenue, 11233",
+      "description": "A local soul_food restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Marlenes",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Bar at Peaches",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Shop",
+      "name": "Super Foodtown Of Bed-Stuy",
+      "address": "1420 Fulton Street, Brooklyn, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Soul Beauty Plus",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "One Stop Variety",
+      "address": "1451 Fulton Street, Brooklyn, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Deli & Grill",
+      "address": "1 Kingston Avenue, 11213",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Stuy Wash-n-Dry",
+      "address": "646 Throop Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Seven & One Deli",
+      "address": "1521 Fulton Street, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dream Nails",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Tompkins Mini-Mart & Discount",
+      "address": "1445 Fulton Street, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Ocean King Fish Market",
+      "address": "486 Tompkins Avenue, Brooklyn, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Blessed Mini Market",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Brooklyn Tea",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Due Fratelli",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Peaches HotHouse",
+      "address": "415 Tompkins Avenue, Brooklyn, 11221",
+      "description": "A local chicken restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Nicholas Brooklyn",
+      "address": "1396 Fulton Street, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "1490 Convenience",
+      "address": "1490 Fulton Street, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bargainland",
+      "address": "1500 Fulton Street, 11213",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Popular 99\u00a2 & Up",
+      "address": "1508 Fulton Street, 11213",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bodega",
+      "address": "1558 Fulton Street, 11213",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fulton Cobbler",
+      "address": "1519B Fulton Street, Brooklyn, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mundo Fashion",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bichri African Market",
+      "address": "648 Throop Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Inner Market Corp",
+      "address": "437 Tompkins Avenue, 11216",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Peace & Riot",
+      "address": "401 Tompkins Avenue, 11221",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Liquid Assets",
+      "address": "504 Nostrand Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Platinum Cuts",
+      "address": "508A Nostrand Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Jasmine's House of Scents",
+      "address": "514 Nostrand Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Le Paris Dekar",
+      "address": "518 Nostrand Avenue, 11216",
+      "description": "A local french, senegalese, crepe, pastry cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Brooklyn Wireless Mall",
+      "address": "522A Nostrand Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Thriftcare Pharmacy",
+      "address": "524 Nostrand Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Rose Discount Beauty Supply",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Metro by T-Mobile",
+      "address": "1295 Fulton Street, Brooklyn, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "One Stop To Shop Gourmet & Deli",
+      "address": "1339 Fulton Street, 11216",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Modern Nails",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Nene African Hair Braiding & Dreadlocks",
+      "address": "484 Tompkins Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Safety Brothers",
+      "address": "494 Tompkins Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Khadija African Hair Braiding",
+      "address": "490 Tompkins Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cali Convenience",
+      "address": "493 Nostrand Avenue, Brooklyn, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bklyn Caps & Clothing",
+      "address": "Near 40.6872, -73.9418, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Met Fresh",
+      "address": "410 Tompkins Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Alive Herbals II",
+      "address": "449 Nostrand Avenue, 11216",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

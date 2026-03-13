@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "New Blondie",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Five Star Laundromat",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Drugs Care Pharmacy",
+      "address": "1001 Church Avenue, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Am Thai Bistro",
+      "address": "1003 Church Avenue, Brooklyn, 11218",
+      "description": "A local thai restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "LARK cafe",
+      "address": "1007 Church Avenue, Brooklyn, 11218",
+      "description": "A local coffee_shop, sandwich cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Anakali",
+      "address": "1125 Church Avenue, Brooklyn, 11218",
+      "description": "A local indian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Prospect Park South Deli Grocery",
+      "address": "1201 Church Avenue, 11218",
+      "description": "A local breakfast, sandwich, mexican shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Pimentel Grocery",
+      "address": "1223 Church Avenue, 11218",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Franks Barbershop",
+      "address": "66A Argyle Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "El Angel",
+      "address": "66B Argyle Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Andrew's Coffee Shop",
+      "address": "901 Church Avenue, 11218",
+      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Parade Caf\u00e9",
+      "address": "622 Caton Avenue, 11218",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "E7 Deli",
+      "address": "629 Church Avenue, 11218",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "One Stop Market",
+      "address": "630 Caton Avenue, Brooklyn, 11218",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mister Suds Laundromat",
+      "address": "632 Caton Avenue, Brooklyn, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Moon Deli & Grocery",
+      "address": "701 Church Avenue, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lofty Pigeon Books",
+      "address": "743 Church Avenue, Brooklyn, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Brooklyn Herborium",
+      "address": "1301 Prospect Avenue, 11218",
+      "description": "locally made health & beauty products, skin treatments, small organic grocery selection"
+    },
+    {
+      "brand": "Shop",
+      "name": "Green Earth Organic Ms Bubble",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "A&M Prospect Deli",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "The UPS Store",
+      "address": "226 Prospect Park West, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lucky Pet NY",
+      "address": "240 Prospect Park West, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Prospect Market",
+      "address": "11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fell",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Soon's Nail & Spa",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Artisan Barber Shop",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Regina Bakery",
+      "address": "256 Prospect Park West, 11215",
+      "description": "bread, cakes, pastry"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hilltop Tavern",
+      "address": "256 Prospect Park West, 11215",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Hamilton Dog House",
+      "address": "155 East 3rd Street, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hamilton's",
+      "address": "2826 Fort Hamilton Parkway, 11218",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Quality Wash Center",
+      "address": "3025 Fort Hamilton Parkway, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Windsor Coffee",
+      "address": "142 East 4th Street, 11218",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Tangled NYC",
+      "address": "144 East 4th Street, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Kathy's Gourmet Italian Ices",
+      "address": "422 Greenwood Avenue, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Neighborhood Deli & Grocery",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Le Paddock",
+      "address": "1235 Prospect Avenue, 11218",
+      "description": "A local french, pizza, brunch restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "All-Security Lock & Alarm",
+      "address": "1241 Prospect Avenue, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Cat",
+      "address": "11218",
+      "description": "A local snack bar."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cena",
+      "address": "601 Greenwood Avenue, 11218",
+      "description": "A local mexican, brunch, coffee_shop restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Posters & Prints",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Terrace Coffee Shop",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local diner cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Giovanni\u2019s Brooklyn Eats",
+      "address": "1666 8th Avenue, 11215",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Doleh Supermarket",
+      "address": "1689 8th Avenue, 11215",
+      "description": "A local sandwich, breakfast shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Henry's Deli",
+      "address": "258 Prospect Park West, 11215",
+      "description": "A local sandwich, breakfast shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Elora's",
+      "address": "272 Prospect Park West, 11215",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Classic Rug Collection",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Knead",
+      "address": "135 Prospect Park Southwest, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sam Deli & Grocery",
+      "address": "Near 40.6539, -73.9758, Brooklyn, NY",
+      "description": "A local sandwich, breakfast shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Eden Dry Cleaners & Tailoring",
+      "address": "1623 10th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Brooklyn Hardware Supply Benjamin Moore",
+      "address": "1665 10th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

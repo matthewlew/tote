@@ -1,3 +1,286 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Alnoor Boutique",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Boutros",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local middle_eastern, american, brunch restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mocha Hookah",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local middle_eastern, breakfast cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dellapietras",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mikado",
+      "address": "177 Atlantic Avenue, Brooklyn, 11201",
+      "description": "A local sushi restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Duman Home",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "bedding, towels, housewares, gifts"
+    },
+    {
+      "brand": "Shop",
+      "name": "A+ Skincare & Lash",
+      "address": "113 Pacific Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "My Favorite Cleaners & Laundry",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Damascus Bread & Bakery",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bubbly Laundromat",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The River Caf\u00e9",
+      "address": "1 Water Street, Brooklyn, 11201",
+      "description": "A local new_american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Peas & Pickles",
+      "address": "55 Washington Street, 11201",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Jacques Torres Chocolates",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Grimaldi's Pizzeria",
+      "address": "1 Front Street, Brooklyn, 11201",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Tutt Caf\u00e9",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local mediterranean cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Inga's Bar",
+      "address": "66 Hicks Street, Brooklyn",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Poppy's Cafe",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local breakfast, sandwich, pastry cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Jules",
+      "address": "50 Henry Street, Brooklyn, 11201",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Gristedes",
+      "address": "101 Clark Street, Brooklyn, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Punto Ottico",
+      "address": "206 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "David's Barber Shop",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Layla Jones",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local pizza, italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Six Bells",
+      "address": "221 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ozu",
+      "address": "78 Clark Street, 11201",
+      "description": "A local japanese restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Clark's Restaurant",
+      "address": "80 Clark Street, 11201",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Cafe",
+      "address": "200 Clinton Street, 11201",
+      "description": "A local bagel, breakfast, sandwich, salad cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tripoli",
+      "address": "156 Atlantic Avenue, 11201",
+      "description": "A local lebanese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Buzzy",
+      "address": "137 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Felice",
+      "address": "84 Montague Street, Brooklyn, 11201",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Ferrane",
+      "address": "57 Clark Street, 11201",
+      "description": "A local swedish shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Han's Market",
+      "address": "51 Clark Street",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "CVS Pharmacy",
+      "address": "156 Henry Street, Brooklyn, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Newsstand",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Careland Pharmacy",
+      "address": "84 Clark Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bareburger",
+      "address": "149 Court Street, 11201",
+      "description": "A local burger restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Shade Store",
+      "address": "167 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "All in One Deli Mart",
+      "address": "79 Pineapple Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Smith Convenience",
+      "address": "98 Smith Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Tipsy Grape",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local charcuterie, snack bar."
+    },
+    {
+      "brand": "Shop",
+      "name": "Smith Gourmet Deli",
+      "address": "126 Smith Street, 11201",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fox & Jane Salon",
+      "address": "Near 40.6950, -73.9936, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Salter House",
+      "address": "119 Atlantic Avenue, 11201",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Brooklyn Heights Deli",
+      "address": "292 Henry Street, 11201",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Dilj\u0101n",
+      "address": "330 Hicks Street, 11201",
+      "description": "A local afghan, pastry cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Hatchet Outdoor Supply Company",
+      "address": "77 Atlantic Avenue, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Diem Eatery",
+      "address": "79 Atlantic Avenue, 11201",
+      "description": "A local vietnamese, sandwich cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Antik",
+      "address": "89 Atlantic Avenue, 11201",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }
