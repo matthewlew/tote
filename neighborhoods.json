@@ -1,5 +1,17 @@
 [
     {
+        "id": "my_google_list",
+        "name": "My Google List",
+        "file": "/data/my_google_list.json",
+        "dataKey": "places",
+        "unit": "places",
+        "actionText": "VISIT",
+        "latLng": [
+            40.7128,
+            -74.006
+        ]
+    },
+    {
         "id": "jasons_coffee",
         "name": "Jason's Coffee",
         "file": "/data/jasons_coffee.json",
