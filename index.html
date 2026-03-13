@@ -495,10 +495,9 @@ footer {
         if (closestCategory.distance > 50) {
           alert("Only for NYC neighborhoods");
         } else {
-          currentCategory = closestCategory;
-          // Re-init dropdown and reload data with sorted categories
+          // Re-init dropdown and re-render nav with sorted categories, keeping user on current category
           initNeighborhoodDropdown();
-          loadCategoryData();
+          renderNav();
         }
         resetLocateBtn();
       },
