@@ -61,6 +61,7 @@ header span:first-child {
 
 .category-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
   margin-top: 10px;
@@ -97,6 +98,7 @@ main { padding: 0; }
   border-bottom: 1px solid var(--rule);
   padding: 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
   background: #f0f0f0;
@@ -163,6 +165,8 @@ footer {
   border-top: 1px solid var(--rule);
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
   justify-content: space-between;
   font-size: 0.8rem;
   background: var(--ink);
@@ -184,7 +188,7 @@ footer {
     <nav class="category-nav" id="category-nav" aria-label="Categories">
       <!-- Nav buttons will be injected here -->
     </nav>
-    <div class="location-controls" style="display: flex; gap: 12px; align-items: center; margin-top: 10px;">
+    <div class="location-controls" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 10px;">
       <button type="button" class="category-btn" id="locate-me-btn" aria-label="Locate Me">[l] Locate Me</button>
       <select id="neighborhood-select" class="category-btn" aria-label="Select Neighborhood">
         <option value="" disabled selected>Neighborhoods...</option>
