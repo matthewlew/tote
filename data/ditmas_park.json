@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Key Food",
+      "address": "1610 Cortelyou Road, Brooklyn, 11226-5210",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Sycamore",
+      "address": "1118 Cortelyou Road, Brooklyn, 11218",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Shop",
+      "name": "Five Star Laundromat",
+      "address": "Near 40.6409, -73.9626, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cortelyou Green Market",
+      "address": "Brooklyn, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Castello Plan",
+      "address": "1213 Cortelyou Road, Brooklyn, 11218",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Drugs Care Pharmacy",
+      "address": "1001 Church Avenue, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Am Thai Bistro",
+      "address": "1003 Church Avenue, Brooklyn, 11218",
+      "description": "A local thai restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "LARK cafe",
+      "address": "1007 Church Avenue, Brooklyn, 11218",
+      "description": "A local coffee_shop, sandwich cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Anakali",
+      "address": "1125 Church Avenue, Brooklyn, 11218",
+      "description": "A local indian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Prospect Park South Deli Grocery",
+      "address": "1201 Church Avenue, 11218",
+      "description": "A local breakfast, sandwich, mexican shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Pimentel Grocery",
+      "address": "1223 Church Avenue, 11218",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "La Chic",
+      "address": "1714 Church Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Franks Barbershop",
+      "address": "66A Argyle Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "El Angel",
+      "address": "66B Argyle Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Andrew's Coffee Shop",
+      "address": "901 Church Avenue, 11218",
+      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Hitec of NY 1 Hour Photo",
+      "address": "1625 Church Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Palm Jewelry",
+      "address": "1904 Church Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Reymond Barbershop",
+      "address": "1914 Church Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Valeria",
+      "address": "1916 Church Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lofty Pigeon Books",
+      "address": "743 Church Avenue, Brooklyn, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "My Tool Rental",
+      "address": "610 Coney Island Avenue, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Design Z&L Nails",
+      "address": "1015 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lea",
+      "address": "1022 Cortelyou Road, Brooklyn, 11218",
+      "description": "A local italian, pizza, bagel restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sammy's Stop & Shop",
+      "address": "741 Coney Island Avenue, 11218",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Bar",
+      "name": "King Mother",
+      "address": "1205 Cortelyou Road, Brooklyn, 11218",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mimi's Hummus",
+      "address": "1209 Cortelyou Road, Brooklyn, 11218",
+      "description": "A local middle_eastern restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Father & Sons Delicatessen",
+      "address": "1501 Cortelyou Road, 11226",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Berand's Accounting & Travel",
+      "address": "1507 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Juniors Barber Shop",
+      "address": "1617 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "L & C Natural Nail",
+      "address": "1619 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mex Deli & Grill",
+      "address": "1625 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cortelyou's Best Gourmet Deli",
+      "address": "1626 Cortelyou Road, 11226",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Kings County Wines",
+      "address": "1420 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Natural Frontier Market",
+      "address": "1102 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mian Convenience & Deli",
+      "address": "754 Coney Island Avenue, 11218",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Blush",
+      "address": "921 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sawera Garments & Tailoring",
+      "address": "923 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Urgut Osh Markazi",
+      "address": "816 Coney Island Avenue, 11218",
+      "description": "A local uzbek cafe."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Coffee Mob",
+      "address": "1514 Newkirk Avenue",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Milk and Honey",
+      "address": "1119 Newkirk Avenue, Brooklyn, 11230",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "K N Convenience",
+      "address": "1 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Newkirk Station Liquors & Wines",
+      "address": "11 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Plaza Convenience Store",
+      "address": "13 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Newkirk Wireless",
+      "address": "1510 Newkirk Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cornerboy's Haircrafters",
+      "address": "1514 Newkirk Avenue, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "T-Mobile",
+      "address": "16B Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "New Star Fruit",
+      "address": "17 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Newkirk Foodmart",
+      "address": "2 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Yang's Brothers",
+      "address": "35 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Plaza Flower & Grocery",
+      "address": "37 Newkirk Plaza, 11226",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

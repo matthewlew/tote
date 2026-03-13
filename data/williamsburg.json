@@ -1,3 +1,292 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Bar",
+      "name": "Barcade",
+      "address": "388 Union Avenue, Brooklyn, 11211",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mugs Ale House",
+      "address": "125 Bedford Avenue, Brooklyn",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Meat Hook",
+      "address": "100 Frost Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "One Love Deli",
+      "address": "339 Graham Avenue, 11211",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Loco Burrito",
+      "address": "345 Graham Avenue, 11211",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tony's Pizza",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Aurora",
+      "address": "70 Grand Street, Brooklyn, 11249",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Brooklyn Kitchen",
+      "address": "100 Frost Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Nicky's Unisex",
+      "address": "90 South 4th st, Brooklyn, 11211",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Diner",
+      "address": "85 Broadway, Brooklyn, 11249",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Juliette Restaurant",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "miDmuS",
+      "address": "135 North 5th Street",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Senko Funeral Home",
+      "address": "215 Bedford Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bedford Vintage",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ako",
+      "address": "205 Bedford Avenue, Brooklyn, 11211",
+      "description": "A local japanese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "UVA Wines and Spirits",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Doughnut Plant",
+      "address": "198 Bedford Avenue, Brooklyn, 11249",
+      "description": "A local donut cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Chocolate World",
+      "address": "159 North 7th Street, Brooklyn, 11249",
+      "description": "A local falafel, middle_eastern shop."
+    },
+    {
+      "brand": "Bar",
+      "name": "Counting Room",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Shop",
+      "name": "Times Up!",
+      "address": "99 South 6th Street",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Urban Rustic",
+      "address": "236 North 12th Street, Brooklyn, 11211",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Peachfrog",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Southside Food Plaza",
+      "address": "430 Bedford Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bakeri",
+      "address": "150 Wythe Avenue, Brooklyn, 11249",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "Jumelle",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cari\u00f1o",
+      "address": "82 South 4th Street, Brooklyn, 11211",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Miss Favela",
+      "address": "57 South 5th Street, Brooklyn, 11249",
+      "description": "A local brazilian restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "South Port",
+      "address": "91 South 4th Street, 11249",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "P&P Laundromat",
+      "address": "82 South 4th Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mol\u00e9",
+      "address": "178 Kent Avenue, Brooklyn, 11211",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Black Brick",
+      "address": "300 Bedford Avenue, Brooklyn, 11211",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Dok\u00e9bi",
+      "address": "199 Grand Street, Brooklyn, 11211",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Kabob Shack",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Cafe",
+      "name": "The West",
+      "address": "379 Union Avenue, 11211",
+      "description": "A local sandwich cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Limosneros",
+      "address": "366 Union Avenue, 11211",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Lighthouse",
+      "address": "145 Borinquen Place, 11211",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Foodtown",
+      "address": "159 North 3rd Street",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vinnies Pizzeria",
+      "address": "148 Bedford Avenue, Brooklyn, 11211",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Broadway Mini Market Deli",
+      "address": "403 Broadway, 11211",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cruz Deli",
+      "address": "386 South 5th Street, 11211",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Shop Fair",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mr. Pina",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Garden Carver",
+      "address": "187 Grand Street, Brooklyn, 11211",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Le Grand Strip",
+      "address": "197 Grand Street, 11211",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Species By The Thousands",
+      "address": "171 South 4th Street, Brooklyn",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "LA Burrito",
+      "address": "Brooklyn",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Shag",
+      "address": "108 Roebling Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Noods n' Chill",
+      "address": "774 Driggs Avenue, 11211",
+      "description": "A local thai restaurant."
+    }
+  ]
 }

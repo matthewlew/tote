@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Rachel's Garden",
+      "address": "116 Nassau Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Uro Cafe",
+      "address": "277 Driggs Avenue",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "B's Bikes",
+      "address": "262 Driggs Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ashbox Cafe",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local japanese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Eastern District Beer Store",
+      "address": "11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Word Bookstore",
+      "address": "126 Franklin Street, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Market on Kent",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Pencil Factory",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Eagle Trading Company",
+      "address": "258 Franklin Street, Brooklyn, 11222",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sereneco",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Kettl",
+      "address": "70 Greenpoint Avenue, Brooklyn, 11222",
+      "description": "A local tea cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Alter",
+      "address": "140 Franklin Street, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Paulie Gee's",
+      "address": "Brooklyn",
+      "description": "A local pizza restaurant."
+    },
+    {
+      "brand": "Bar",
+      "name": "Bar Americano",
+      "address": "180 Franklin Street, Brooklyn, 11222",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shanghai Lee",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local chinese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dandelion Wine",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Black Rabbit",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Calexico",
+      "address": "645 Manhattan Avenue",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Key Food",
+      "address": "224 McGuinness Boulevard, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "C-Town",
+      "address": "953 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "World of Flowers",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fresh Market Gourmet Deli",
+      "address": "974 Manhattan Avenue, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Lobster Joint",
+      "address": "11222",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "House of Sudz III",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Little Armenia",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Elder Greene",
+      "address": "160 Franklin Street, Brooklyn, 11222",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Vamos al Tequila",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cozinha Latina",
+      "address": "37 Greenpoint Avenue, Brooklyn, 11222",
+      "description": "A local brazilian restaurant."
+    },
+    {
+      "brand": "Bar",
+      "name": "Brooklyn Bowl",
+      "address": "61 Wythe Avenue, Brooklyn, 11249",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Brew Inn",
+      "address": "924 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Shop",
+      "name": "Old Poland Bakery",
+      "address": "926 Manhattan Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Upstate Stock",
+      "address": "2 Berry Street, 11249",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Jose Deli Grocery",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Grill & Curry",
+      "address": "1015 Manhattan Avenue, 11222",
+      "description": "A local indian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Radio Bakery",
+      "address": "135 India Street, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Franklin Convenience",
+      "address": "200 Franklin Street, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "M&W Laundromat",
+      "address": "995 Manhattan Avenue, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Nassau Finest Deli",
+      "address": "183 Nassau Avenue, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Driggs Ave Laundromat & Dry Cleaners",
+      "address": "258 Driggs Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wholesome Gourmet Deli",
+      "address": "101 Nassau Avenue, 11222",
+      "description": "A local breakast, sandwich shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ramen, Fried Rice and Noodles",
+      "address": "694 Manhattan Avenue, 11222",
+      "description": "A local asian restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pueblo Querido Coffee Roasters Cafe de Colombia",
+      "address": "698 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A local coffee_shop, columbian cafe."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hide & Seek",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local sandwich, pastry cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Metro by T-Mobile",
+      "address": "97 Nassau Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Manhattan Triple Decker Restaurant",
+      "address": "695 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nights and Weekends",
+      "address": "1 Bedford Avenue, Brooklyn, 11222",
+      "description": "A local regional restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bernie's",
+      "address": "332 Driggs Avenue, Brooklyn, 11222",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "We See Stars",
+      "address": "80 Nassau Avenue, 11222",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Hidden Pearl",
+      "address": "621 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A local japanese bar."
+    },
+    {
+      "brand": "Bar",
+      "name": "Idle Mind Tavern",
+      "address": "623 Manhattan Avenue, 11222",
+      "description": "A cozy bar for evening drinks."
+    }
+  ]
 }

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="About Tote: A neighborhood-focused directory for discovering local businesses in NYC. Skip the map and find cafes, shops, and restaurants in a fast, scannable list.">
+<meta name="keywords" content="NYC, neighborhoods, local businesses, Brooklyn, cafes, restaurants, directory, local guides">
+<title>About - Tote</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+<style>
+@font-face {
+  font-family: 'Flor de Ruina Semilla';
+  src: url('./fonts/FlorDeRuina-Semilla.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --ink:   #000;
+  --bg:    #fff;
+  --accent: #ccff00; /* Harsh yellow-green */
+  --rule:  #000;
+}
+html { font-size: 16px; }
+body {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  background: var(--bg);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+*, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
+a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink); }
+a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
+a:focus-visible { outline: 1px solid var(--accent); background: var(--ink); color: var(--bg); }
+
+header {
+  border-bottom: 1px solid var(--rule);
+  padding: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--ink);
+  color: var(--bg);
+}
+header a.logo {
+  font-family: 'Flor de Ruina Semilla', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  border-bottom: none;
+}
+header a.logo:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 800px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+p {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  background: var(--ink);
+  color: var(--bg);
+}
+
+@media (max-width:600px) {
+  header, main, footer { padding-left: 10px; padding-right: 10px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <a href="/" class="logo">TOTE</a>
+  </div>
+</header>
+
+<main aria-label="About content">
+  <h1>About Tote</h1>
+  <p>Tote is a neighborhood-focused directory designed for discovery, built for real people who live in or are exploring the vibrant neighborhoods of New York City.</p>
+  <p>In a world dominated by endless maps, confusing interfaces, and algorithmic suggestions, we believe in the power of a simple, scannable list. Finding a great cafe, a trusted local shop, or a neighborhood gem shouldn't require panning and zooming across a cluttered map.</p>
+  <p>Our goal is straightforward: provide curated, fast, and accessible lists of local businesses. No fluff, no distractions. Just the information you need, easily sortable and readable, so you can spend less time searching and more time experiencing the neighborhood.</p>
+  <p>Explore your local area. Support local businesses. Find it on Tote.</p>
+</main>
+
+<footer>
+  <span>Articles on the coolest totes on the web</span>
+  <a href="/">tote.so</a>
+</footer>
+
+</body>
+</html>

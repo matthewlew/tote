@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "The First Stop Deli Grocery",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local sandwich, latin_american shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Porta Bella",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Los Castillos",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local latin_american shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Market Carniceria",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Galaxy Wireless & Gift Shop",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Ferreteria Hardware",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Almonte Casual",
+      "address": "506 39th Street, 11232",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Hoops Deli Grocery",
+      "address": "502 49th Street, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Elegant Decorations",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Brooklyn Tops Liquors and Wines",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bravo",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Hometown Fresh Market",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Gissel's Beauty Salon",
+      "address": "5223B 4th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Pancho's Bagels and Deli",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local bagel, sandwich, juice shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Optima Beauty Supply",
+      "address": "5101 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Master's Pizzeria",
+      "address": "5201 5th Avenue, 11220",
+      "description": "A local pizza shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Spring Corner's Grocery 99\u00a2 & Up",
+      "address": "5223 4th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Rainbow",
+      "address": "5115 5th Avenue, Brooklyn, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mr Q BBQ",
+      "address": "806 56th Street, 11220",
+      "description": "A local chinese, barbecue restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "45th Street Supermarket Inc.",
+      "address": "4424 8th Avenue, Brooklyn, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Carreta",
+      "address": "407 51st Street, 11220",
+      "description": "A local latin_american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Macareno Mini Market",
+      "address": "4901 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wireless & Repair",
+      "address": "4913 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Martha Jewelry",
+      "address": "4915 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "El Neuvo Pueblo",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "El Castillo del Sabor Bakery",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Angel Nail",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Italian Gold Jewelry",
+      "address": "5023 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Pamela Unisex",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Juan\u2019s Barber Shop",
+      "address": "511 51st Street, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chuan Tian Xia",
+      "address": "5502 7th Avenue, Brooklyn, 11220",
+      "description": "A local szechuan, seafood restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "AZY Deli & Grill",
+      "address": "5301 4th Avenue, 11220",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "GNC",
+      "address": "5301 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "S&A Superstore",
+      "address": "5302 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Kids Foot Locker",
+      "address": "Brooklyn, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cafe Con Pan",
+      "address": "5401 5th Avenue, 11220",
+      "description": "A local mexican shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "La Vida",
+      "address": "5402 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "El Buen Gusto Grocery",
+      "address": "5423 4th Avenue, 11220",
+      "description": "A local sandwich shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Barrera's",
+      "address": "5423 5th Avenue, 11220",
+      "description": "A local mexican cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Metro by T-Mobile",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Canal Jewelry of Brooklyn",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Angel's World",
+      "address": "5424 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bonito Sports",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "PC Max Solutions",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fifth Avenue Liquors",
+      "address": "5502 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sunny Star Grocery",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Plaza Xochimilco",
+      "address": "Near 40.6455, -74.0124, Brooklyn, NY",
+      "description": "A local mexican shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "United Barbershop",
+      "address": "5623 4th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "NYC Optical",
+      "address": "5623 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "New Golden Palace Jewelry",
+      "address": "5624 5th Avenue, 11220",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

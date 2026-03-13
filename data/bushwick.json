@@ -1,3 +1,298 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Restaurant",
+      "name": "Mi Cholita Bella",
+      "address": "1386 DeKalb Avenue, 11221",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "MR Discount",
+      "address": "252 Central Avenue, 11221",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Everyday Liquor & Wine",
+      "address": "254 Central Avenue, 11221",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dicayagua Deli & Grocery",
+      "address": "291 Evergreen Avenue, 11221",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Bar",
+      "name": "Wonderville",
+      "address": "1186 Broadway, Brooklyn, 11221",
+      "description": "A local empanada bar."
+    },
+    {
+      "brand": "Bar",
+      "name": "Christophers Palace",
+      "address": "1258 Myrtle Avenue, Brooklyn, 11221",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Bar",
+      "name": "Mood Ring",
+      "address": "1260 Myrtle Avenue, Brooklyn, 11221",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Shop",
+      "name": "Chilo Food Center",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Michelle Unisex",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mulata",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local peruvian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mr. Lemon",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Hartbreakers",
+      "address": "820 Hart Street, 11237",
+      "description": "A local sandwich restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Variety Coffee Roasters",
+      "address": "146 Wyckoff Avenue, Brooklyn, 11237",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Bar",
+      "name": "Boobie Trap",
+      "address": "308 Bleecker Street, 11237",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Shop",
+      "name": "Darwin Technology",
+      "address": "323A Wyckoff Avenue, 11385",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Son De Cali",
+      "address": "8-77 Wyckoff Avenue, Ridgewood, 11385",
+      "description": "A local empanada, pastry, coffee shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Al Noor Market",
+      "address": "9-19 Wyckoff Avenue, Ridgewood, 11385",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Station Agent",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Square Park",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Food Bazaar Supermarket",
+      "address": "454 Wyckoff Avenue, Brooklyn, 11237",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Walgreens",
+      "address": "1366 Broadway",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Sunrise Sunset",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "One-eyed Taco Man",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local tacos, al_pastor restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "First Live Coffee House",
+      "address": "219 Central Avenue, Brooklyn, 11221",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Bar",
+      "name": "Gotham City Lounge",
+      "address": "1298 Myrtle Avenue",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "El Kucho",
+      "address": "141 Wilson Avenue",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Cup of Brooklyn",
+      "address": "1071 Gates Avenue, Brooklyn, 11221",
+      "description": "A local cafe cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Taqueria Sofia",
+      "address": "187 Suydam Street, Brooklyn, 11221",
+      "description": "A local mexican, burrito, quesadilla, tacos restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Quick Clean",
+      "address": "253 Irving Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Party On",
+      "address": "254 Irving Avenue",
+      "description": "A local pizza, beer restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "La Gualacena",
+      "address": "178 Wyckoff Avenue",
+      "description": "A local ecuadorian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Angela's Bakery",
+      "address": "717 Knickerbocker Avenue",
+      "description": "A local cake, pastry, dominican shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Aroma Deli Food",
+      "address": "407 Wilson Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Botanica Angela",
+      "address": "437 Wilson Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Boardwalk Wine & Spirits",
+      "address": "1195 Halsey Street",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bombay Kitchen",
+      "address": "733 Knickerbocker Avenue",
+      "description": "A local indian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Food Mart",
+      "address": "952 Wyckoff Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Azan Deli & Grocery",
+      "address": "545 Central Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "La Finquinta",
+      "address": "718 Knickerbocker Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sam Delux Deli & Grill",
+      "address": "547 Central Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Xoco-latte",
+      "address": "513 Wilson Avenue",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "Divine Redeemer Deli",
+      "address": "716 Knickerbocker Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Miguel's Dry Cleaning",
+      "address": "713 Knickerbocker Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hearts Cafe",
+      "address": "1207 Broadway",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Laziza Cafe",
+      "address": "440 Evergreen Avenue",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lavanderia Express",
+      "address": "987 Knickerbocker Avenue",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Oh's World",
+      "address": "Near 40.6958, -73.9171, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "It's Hair",
+      "address": "1224 Broadway",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wilson Food Center",
+      "address": "443 Wilson Avenue",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

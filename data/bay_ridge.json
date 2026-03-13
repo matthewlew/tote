@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Organic Girl On 3rd",
+      "address": "9401 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Il Bianco Sugaring Boutique",
+      "address": "9407 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bayside Sun Spa",
+      "address": "9411 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Shore Road Hairstylists",
+      "address": "9415 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mr. Bagel's Cafe",
+      "address": "9419 3rd Avenue, 11209",
+      "description": "A local bagel, sandwich, breakfast cafe."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Pep",
+      "address": "9413 3rd Avenue, 11209",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "The UPS Store",
+      "address": "Near 40.6262, -74.0320, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "New Vivid Nail Spa",
+      "address": "Near 40.6262, -74.0320, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Annie's Expert Tailor",
+      "address": "274 91st Street, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Gold & Grit",
+      "address": "276 88th Street, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sam Deli & Convenience",
+      "address": "8802 3rd Avenue, 11209",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Chadwick's",
+      "address": "8822 3rd Avenue, 11209",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Towne Boutique",
+      "address": "9002 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Aquarius",
+      "address": "376 91st Street, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Cebu",
+      "address": "8801 3rd Avenue, 11209",
+      "description": "A local american, brunch restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Lu Bella Boutique",
+      "address": "8807 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Hair by Marcy",
+      "address": "8811 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Arirang Hibachi Steakhouse",
+      "address": "8812 4th Avenue, 11209",
+      "description": "A local japanese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Lipstick Box",
+      "address": "8815 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Global Gold & Silver",
+      "address": "8819 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Panino Rustico",
+      "address": "8901 3rd Avenue, Brooklyn, 11209",
+      "description": "A local italian cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bronze Beauty Tanning",
+      "address": "9024 4th Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Navarro's Hardware",
+      "address": "9223 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Hermit",
+      "address": "274 87th Street, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Taza Produce",
+      "address": "302 86th Street, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "5 Borough Market",
+      "address": "8504 4th Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Burmese Harp",
+      "address": "8510 4th Avenue, 11209",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Ay Kebab",
+      "address": "8602 4th Avenue, 11209",
+      "description": "A local turkish restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Garden Hills Gourmet Market",
+      "address": "8702 4th Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Specialized Eye Care of Bay Ridge",
+      "address": "8723 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Shimmer Nail Spa",
+      "address": "8519 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "King Souvlaki",
+      "address": "8402 3rd Avenue, Brooklyn, 11209",
+      "description": "A local greek restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Laila",
+      "address": "8530 3rd Avenue, 11209",
+      "description": "A neighborhood restaurant serving delicious meals."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Corner",
+      "address": "8602 3rd Avenue, Brooklyn, 11209",
+      "description": "A local american restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Puertas",
+      "address": "8320 3rd Avenue, 11209",
+      "description": "A local latin_american restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Athens Market",
+      "address": "Near 40.6262, -74.0320, Brooklyn, NY",
+      "description": "A local greek shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Le Charme Nail Spa",
+      "address": "Near 40.6262, -74.0320, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Danish Convenience 6",
+      "address": "7826 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Luliano's",
+      "address": "7902 3rd Avenue, Brooklyn, 11209",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Samia's",
+      "address": "7922 3rd Avenue, 11209",
+      "description": "A local middle_eastern, pastry shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Nails by Eva",
+      "address": "8016 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Little Wedding Works",
+      "address": "8018 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "New Sky Dry Cleaners",
+      "address": "8024 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Farah's Hair Studio",
+      "address": "8120 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Ridge Kids Children's Boutique",
+      "address": "8122 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "United Mini Market",
+      "address": "8123 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Ridge Organic",
+      "address": "8204 3rd Avenue, 11209",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Aunt Butchie's",
+      "address": "8224 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Martech Computers",
+      "address": "8022 3rd Avenue, 11209",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Salon 477",
+      "address": "477 82nd Street, 11209",
+      "description": "A local shop offering unique goods."
+    }
+  ]
 }

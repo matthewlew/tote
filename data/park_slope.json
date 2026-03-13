@@ -1,3 +1,304 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Sit Still",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Something Else On Fifth",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Acme Pet Food",
+      "address": "628 Vanderbilt Avenue, Brooklyn, 11238",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Zeno Nail Bar",
+      "address": "369 9th Street, Brooklyn, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mezcal's",
+      "address": "223 5th Avenue, 11215",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Shaking Crab",
+      "address": "230 5th Avenue, 11215",
+      "description": "A local seafood restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Clever Blend",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local coffee_shop, ice_cream cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Green Ivy",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local korean, sushi, breakfast, sandwich shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Miti Miti",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Flea",
+      "address": "211 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Associated Supermarket",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Stone Park Cafe",
+      "address": "324 5th Avenue, Brooklyn, 11215",
+      "description": "A local american, eclectic restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Pep Boys",
+      "address": "354 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "B Central Market Place",
+      "address": "271 Flatbush Avenue, Brooklyn, 11217",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Gate",
+      "address": "321 5th Avenue, 11215",
+      "description": "A cozy bar for evening drinks."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Armory",
+      "address": "149 4th Avenue, 11217",
+      "description": "A local charcuterie, snack bar."
+    },
+    {
+      "brand": "Shop",
+      "name": "Advanced Eyecare",
+      "address": "115 7th Avenue, Brooklyn, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Casita of Brooklyn",
+      "address": "318 11th Street, Brooklyn, 11215",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Katsuei",
+      "address": "210 7th Avenue, 11215",
+      "description": "A local japanese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "T&A Park Slope Deli & Grill",
+      "address": "234 7th Avenue, 11215",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Hungry Ghost",
+      "address": "337 5th Avenue, 11215",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "5th & 5th Wellness",
+      "address": "339 5th Street, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Farm Shop Deli",
+      "address": "357 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Brooklyn Burgers & Beer",
+      "address": "259 5th Avenue, 11215",
+      "description": "A local burger restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "5th Ave. Gourmet Delight",
+      "address": "270 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Velvette Brew Espresso Bar",
+      "address": "279 5th Avenue, Brooklyn, 11215",
+      "description": "A local cafe offering coffee and pastries."
+    },
+    {
+      "brand": "Shop",
+      "name": "Luna's Tire Shop",
+      "address": "Near 40.6720, -73.9778, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sandwich Factory",
+      "address": "336 Butler Street, 11217",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Bar",
+      "name": "Kick Axe",
+      "address": "622 Degraw Street, 11217",
+      "description": "A local pizza bar."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Room No. 205",
+      "address": "205 8th Street, 11215",
+      "description": "A local coffee_shop, sandwich cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Staples",
+      "address": "348 4th Avenue, Brooklyn, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Gowanus Convenience",
+      "address": "414 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "True Clean",
+      "address": "416 4th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Mercado Central",
+      "address": "252 3rd Avenue, 11215",
+      "description": "A local spanish, sandwich, tapas shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Carlos Repair @ Ridge",
+      "address": "264 3rd Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Bol\u00e9 Road Textiles",
+      "address": "271 3rd Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Caf\u00e9 Mars",
+      "address": "272 3rd Avenue, 11215",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sixteen Mill Bakeshop",
+      "address": "552 Union Street, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Sara June",
+      "address": "620 Union Street, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "al di la Trattoria",
+      "address": "248 5th Avenue, 11215",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Premium Goods",
+      "address": "252 5th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Aesop",
+      "address": "225 5th Avenue, Brooklyn, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Shanghai Spa",
+      "address": "241 5th Avenue, 11215",
+      "description": "beauty salon doing nails, facials, massage, etc"
+    },
+    {
+      "brand": "Shop",
+      "name": "Sugaring NYC",
+      "address": "100C 7th Avenue, 11215",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Artesana Home",
+      "address": "154 7th Avenue, 11215",
+      "description": "imported furniture, rugs, jewelry, incense"
+    },
+    {
+      "brand": "Restaurant",
+      "name": "The Boil Prime",
+      "address": "242 Flatbush Avenue, 11217",
+      "description": "A local seafood restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Sky Ice",
+      "address": "63 5th Avenue, 11217",
+      "description": "A local thai, ice_cream restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Phobar",
+      "address": "80 6th Avenue, 11217",
+      "description": "A local vietnamese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Drop & Go Laundromat",
+      "address": "99 5th Avenue, 11217",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Wild",
+      "address": "148 5th Avenue, 11217",
+      "description": "A local american, pizza, brunch restaurant."
+    }
+  ]
 }

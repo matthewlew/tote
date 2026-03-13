@@ -1,3 +1,292 @@
 {
-  "places": []
+  "places": [
+    {
+      "brand": "Shop",
+      "name": "Alnoor Boutique",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Boutros",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local middle_eastern, american, brunch restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Mocha Hookah",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local middle_eastern, breakfast cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dellapietras",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Mikado",
+      "address": "177 Atlantic Avenue, Brooklyn, 11201",
+      "description": "A local sushi restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Duman Home",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "bedding, towels, housewares, gifts"
+    },
+    {
+      "brand": "Cafe",
+      "name": "Blank Street Coffee",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local coffee_shop cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "My Favorite Cleaners & Laundry",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Damascus Bread & Bakery",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dar-Us-Salam Bookstore",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Park Natural Foods",
+      "address": "350 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Something Else On Fifth",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Osaka",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local japanese restaurant."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Canteen Delicatessen & Cafe",
+      "address": "57 4th Avenue",
+      "description": "A local breakfast, sandwich, burger cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Rose Deli & Grill",
+      "address": "70 4th Avenue, 11217",
+      "description": "A local breakast, sandwich shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Clever Blend",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local coffee_shop, ice_cream cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Green Ivy",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local korean, sushi, breakfast, sandwich shop."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Miti Miti",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local mexican restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Punto Ottico",
+      "address": "206 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "David's Barber Shop",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Layla Jones",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local pizza, italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Six Bells",
+      "address": "221 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "The Armory",
+      "address": "149 4th Avenue, 11217",
+      "description": "A local charcuterie, snack bar."
+    },
+    {
+      "brand": "Shop",
+      "name": "Wyckoff Garden Deli",
+      "address": "164 Nevins Street, 11217",
+      "description": "A local breakfast, sandwich, salad, juice shop."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Bagel Cafe",
+      "address": "200 Clinton Street, 11201",
+      "description": "A local bagel, breakfast, sandwich, salad cafe."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Tripoli",
+      "address": "156 Atlantic Avenue, 11201",
+      "description": "A local lebanese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Buzzy",
+      "address": "137 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Bareburger",
+      "address": "149 Court Street, 11201",
+      "description": "A local burger restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Shade Store",
+      "address": "167 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Marco Polo Ristorante",
+      "address": "345 Court Street, Brooklyn, 11231",
+      "description": "A local italian restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "2nd Street",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Nabila's",
+      "address": "248 Court Street, 11201",
+      "description": "A local lebanese restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Awash Ethiopian Restaurant",
+      "address": "242 Court Street, 11201",
+      "description": "A local ethiopian restaurant."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Moo Burger",
+      "address": "240 Court Street, 11201",
+      "description": "A local burger restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Ruben Liquors",
+      "address": "241 Court Street, Brooklyn, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "No Pork Halal Kitchen",
+      "address": "50 4th Avenue, Brooklyn, 11217",
+      "description": "A local chinese restaurant."
+    },
+    {
+      "brand": "Shop",
+      "name": "Smith Convenience",
+      "address": "98 Smith Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Bar",
+      "name": "Tipsy Grape",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local charcuterie, snack bar."
+    },
+    {
+      "brand": "Shop",
+      "name": "Smith Gourmet Deli",
+      "address": "126 Smith Street, 11201",
+      "description": "A local breakfast, sandwich shop."
+    },
+    {
+      "brand": "Shop",
+      "name": "Fox & Jane Salon",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "La Bicyclette Bakery",
+      "address": "305 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Cheese Plate",
+      "address": "323 Court Street, 11231",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "Eyvette Boutique",
+      "address": "60 Court Street, 11201",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Cafe",
+      "name": "Smith St. Bagels",
+      "address": "202 Smith Street, 11201",
+      "description": "A local bagel, sandwich cafe."
+    },
+    {
+      "brand": "Shop",
+      "name": "Dear Dreamer",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Shop",
+      "name": "The Canine Corner",
+      "address": "303 Court Street, 11231",
+      "description": "dog grooming, boarding, daycare"
+    },
+    {
+      "brand": "Shop",
+      "name": "Article&",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local shop offering unique goods."
+    },
+    {
+      "brand": "Restaurant",
+      "name": "Big Tiny",
+      "address": "Near 40.6845, -73.9856, Brooklyn, NY",
+      "description": "A local french restaurant."
+    }
+  ]
 }
