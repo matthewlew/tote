@@ -177,6 +177,113 @@ footer {
   .meta span+span::before { display: none; }
   .shortcut { display: none; }
 }
+
+/* Receipt Modal Styles */
+#receipt-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 20px;
+}
+.receipt-content {
+  background: #fff;
+  color: #000;
+  font-family: monospace;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  /* Classic receipt jagged top and bottom */
+  position: relative;
+}
+.receipt-content::before, .receipt-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-size: 20px 20px;
+}
+.receipt-content::before {
+  top: -10px;
+  background-image: linear-gradient(135deg, transparent 50%, #fff 50%), linear-gradient(45deg, #fff 50%, transparent 50%);
+}
+.receipt-content::after {
+  bottom: -10px;
+  background-image: linear-gradient(135deg, #fff 50%, transparent 50%), linear-gradient(45deg, transparent 50%, #fff 50%);
+}
+.receipt-header {
+  text-align: center;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.receipt-logo {
+  font-family: 'Flor de Ruina Semilla', sans-serif;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+.receipt-meta {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.receipt-items {
+  margin-bottom: 20px;
+}
+.receipt-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+.receipt-item-left {
+  flex: 1;
+  padding-right: 10px;
+}
+.receipt-item-right {
+  text-align: right;
+  white-space: nowrap;
+}
+.receipt-item-name {
+  font-weight: bold;
+}
+.receipt-item-address {
+  font-size: 0.8rem;
+  color: #333;
+}
+.receipt-footer {
+  text-align: center;
+  border-top: 1px dashed #000;
+  padding-top: 15px;
+  font-size: 0.85rem;
+}
+.receipt-barcode {
+  font-family: "Faculty Glyphic", sans-serif; /* fallback */
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  /* Simple CSS barcode effect using borders */
+  height: 40px;
+  background: repeating-linear-gradient(
+    to right,
+    #000,
+    #000 2px,
+    #fff 2px,
+    #fff 4px,
+    #000 4px,
+    #000 8px,
+    #fff 8px,
+    #fff 10px
+  );
+}
 </style>
 </head>
 <body>
@@ -197,7 +304,7 @@ footer {
       </select>
     </div>
   </div>
-  <span class="meta"><span id="hd-n"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
+  <span class="meta"><span id="hd-n"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span><span class="shortcut">[s] </span>Share</span><span id="local-time"></span></span>
 </header>
 
 <main aria-label="Items list">
@@ -223,6 +330,22 @@ footer {
   </div>
   <span>tote.so</span>
 </footer>
+
+<div id="receipt-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="receipt-title">
+  <div class="receipt-content">
+    <div class="receipt-header">
+      <div class="receipt-logo" id="receipt-title">TOTE</div>
+      <div class="receipt-meta" id="receipt-meta"></div>
+    </div>
+    <div class="receipt-items" id="receipt-items-container"></div>
+    <div class="receipt-footer">
+      <div>SUPPORT LOCAL.</div>
+      <div>TOTE.SO</div>
+      <div class="receipt-barcode"></div>
+      <div style="margin-top: 15px; font-size: 0.7rem;">[Press Esc or click outside to close]</div>
+    </div>
+  </div>
+</div>
 
 <script>
 (async function() {
@@ -596,7 +719,87 @@ footer {
 
   locateMeBtn.addEventListener('click', handleLocateMe);
 
+  const receiptModal = document.getElementById('receipt-modal');
+
+  function showReceipt() {
+    if (!currentCategory || items.length === 0) return;
+
+    const metaContainer = document.getElementById('receipt-meta');
+    const itemsContainer = document.getElementById('receipt-items-container');
+
+    // Set Header
+    const now = new Date();
+    const dateStr = now.toLocaleDateString();
+    const timeStr = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+
+    let subhead = currentCategory.name.toUpperCase();
+    if (currentSuperlative) {
+      subhead += ' // ' + currentSuperlative.name.toUpperCase();
+    }
+
+    metaContainer.innerHTML = `<div>${dateStr} ${timeStr}</div><div style="margin-top:8px; font-weight:bold;">${subhead}</div>`;
+
+    // Set Items
+    itemsContainer.innerHTML = '';
+    const topItems = items.slice(0, 10); // Limit to top 10 for screenshotting
+
+    topItems.forEach(item => {
+      const row = document.createElement('div');
+      row.className = 'receipt-item';
+
+      const left = document.createElement('div');
+      left.className = 'receipt-item-left';
+
+      const name = document.createElement('div');
+      name.className = 'receipt-item-name';
+      name.textContent = item.name;
+
+      const addr = document.createElement('div');
+      addr.className = 'receipt-item-address';
+      addr.textContent = item.address || '';
+
+      left.appendChild(name);
+      if (addr.textContent) left.appendChild(addr);
+
+      const right = document.createElement('div');
+      right.className = 'receipt-item-right';
+
+      if (typeof item.distance === 'number' && item.distance !== Infinity) {
+        right.textContent = item.distance.toFixed(1) + 'mi';
+      } else if (typeof item.price === 'number') {
+        right.textContent = '$' + item.price;
+      }
+
+      row.appendChild(left);
+      row.appendChild(right);
+      itemsContainer.appendChild(row);
+    });
+
+    receiptModal.style.display = 'block';
+    receiptModal.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeReceipt() {
+    receiptModal.style.display = 'none';
+    receiptModal.setAttribute('aria-hidden', 'true');
+  }
+
+  // Close when clicking outside the content
+  receiptModal.addEventListener('click', (e) => {
+    if (e.target === receiptModal) {
+      closeReceipt();
+    }
+  });
+
   window.addEventListener('keydown', (e) => {
+    // If modal is open, only allow Escape
+    if (receiptModal.style.display === 'block') {
+      if (e.key === 'Escape') {
+        closeReceipt();
+      }
+      return;
+    }
+
     // Ignore keydown if a modifier is pressed or if user is typing in an input
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
@@ -664,6 +867,8 @@ footer {
       handleSort('name');
     } else if (k === 'l') {
       handleLocateMe();
+    } else if (k === 's') {
+      showReceipt();
     }
   });
 
