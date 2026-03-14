@@ -290,6 +290,9 @@ footer {
     navEl.innerHTML = '';
     // Limit to displaying the top 5 neighborhoods in the top nav
     const visibleCategories = categories.slice(0, 5);
+
+    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
+    const fragment = document.createDocumentFragment();
     visibleCategories.forEach((cat, index) => {
       const btn = document.createElement('button');
       btn.type = 'button';
@@ -307,8 +310,9 @@ footer {
           loadCategoryData();
         }
       });
-      navEl.appendChild(btn);
+      fragment.appendChild(btn);
     });
+    navEl.appendChild(fragment);
   }
 
   async function loadCategoryData() {
@@ -392,11 +396,15 @@ footer {
     listEl.innerHTML = '';
     countEl.textContent = `${items.length} ${currentCategory.unit}`;
 
+    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
+    const fragment = document.createDocumentFragment();
+
     items.forEach(item => {
       const row = document.createElement('div');
       row.className = 'row';
       row.tabIndex = 0; // Make row focusable via keyboard
-      row.setAttribute('aria-expanded', 'false');
+      row.setAttribute(\'role\', \'button\');
+      row.setAttribute(\'aria-expanded\', \'false\');
 
       const line = document.createElement('div');
       line.className = 'line';
@@ -477,12 +485,14 @@ footer {
       row.addEventListener('click', (e) => {
         // Ignore clicks on links
         if (e.target.closest('a')) return;
-        const isExpanded = row.classList.toggle('expanded');
-        row.setAttribute('aria-expanded', isExpanded);
+        const isExpanded = row.classList.toggle(\'expanded\');
+        row.setAttribute(\'aria-expanded\', isExpanded);
       });
 
-      listEl.appendChild(row);
+      fragment.appendChild(row);
     });
+
+    listEl.appendChild(fragment);
   }
 
   function handleSort(key) {
@@ -640,8 +650,8 @@ footer {
     if (e.key === ' ' || e.key === 'Spacebar') {
       if (document.activeElement && document.activeElement.classList.contains('row')) {
         e.preventDefault(); // Prevent page scroll
-        const isExpanded = document.activeElement.classList.toggle('expanded');
-        document.activeElement.setAttribute('aria-expanded', isExpanded);
+        const isExpanded = document.activeElement.classList.toggle(\'expanded\');
+        document.activeElement.setAttribute(\'aria-expanded\', isExpanded);
         return;
       }
     }
