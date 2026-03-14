@@ -484,6 +484,13 @@ footer {
         row.appendChild(desc);
       }
 
+      if (item.article) {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'row-desc';
+        articleDiv.innerHTML = `Link: <a href="${item.article.url}" target="_blank" rel="noopener noreferrer">${item.article.title}</a>`;
+        row.appendChild(articleDiv);
+      }
+
       row.addEventListener('click', (e) => {
         // Ignore clicks on links
         if (e.target.closest('a')) return;
