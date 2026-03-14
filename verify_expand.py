@@ -6,6 +6,10 @@ async def run():
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
         await page.goto('http://localhost:3000')
+
+        # Click "Prospect Heights" (visible button [3])
+        await page.locator('button:has-text("Prospect Heights")').click()
+
         await page.wait_for_selector('.row')
 
         # click the first row
