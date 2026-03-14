@@ -294,6 +294,9 @@ footer {
     navEl.innerHTML = '';
     // Limit to displaying the top 5 neighborhoods in the top nav
     const visibleCategories = categories.slice(0, 5);
+
+    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
+    const fragment = document.createDocumentFragment();
     visibleCategories.forEach((cat, index) => {
       const btn = document.createElement('button');
       btn.type = 'button';
@@ -311,8 +314,9 @@ footer {
           loadCategoryData();
         }
       });
-      navEl.appendChild(btn);
+      fragment.appendChild(btn);
     });
+    navEl.appendChild(fragment);
   }
 
   async function loadCategoryData() {
@@ -393,6 +397,9 @@ footer {
   function render() {
     listEl.innerHTML = '';
     countEl.textContent = `${items.length} ${currentCategory.unit}`;
+
+    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
+    const fragment = document.createDocumentFragment();
 
     items.forEach(item => {
       const row = document.createElement('div');
@@ -481,8 +488,10 @@ footer {
         row.classList.toggle('expanded');
       });
 
-      listEl.appendChild(row);
+      fragment.appendChild(row);
     });
+
+    listEl.appendChild(fragment);
   }
 
   function handleSort(key) {
