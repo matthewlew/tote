@@ -7,7 +7,8 @@
       "latLng": [
         40.72135707622631,
         -74.02114570219722
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Saragina's",
@@ -16,7 +17,8 @@
       "latLng": [
         40.737995874374036,
         -74.04096571418832
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Beso",
@@ -25,7 +27,8 @@
       "latLng": [
         40.73549357775685,
         -74.04296196554569
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Ma and Pop",
@@ -34,7 +37,8 @@
       "latLng": [
         40.70552575883894,
         -73.96495055709252
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Marlenes",
@@ -43,7 +47,8 @@
       "latLng": [
         40.693124473168126,
         -73.98495280354426
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Bar at Peaches",
@@ -52,7 +57,8 @@
       "latLng": [
         40.715509282055145,
         -74.02159968873276
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Super Foodtown Of Bed-Stuy",
@@ -61,7 +67,8 @@
       "latLng": [
         40.74922712358868,
         -73.98400680952005
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Soul Beauty Plus",
@@ -70,7 +77,8 @@
       "latLng": [
         40.75087859453526,
         -74.02207426094311
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "One Stop Variety",
@@ -79,7 +87,8 @@
       "latLng": [
         40.72226185646571,
         -73.99804656802819
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Deli & Grill",
@@ -88,7 +97,8 @@
       "latLng": [
         40.75190000718439,
         -73.96661170686666
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "The Stuy Wash-n-Dry",
@@ -97,7 +107,8 @@
       "latLng": [
         40.665713906823335,
         -74.0025170551412
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Seven & One Deli",
@@ -106,7 +117,8 @@
       "latLng": [
         40.677118091275425,
         -74.01108074894208
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Dream Nails",
@@ -115,7 +127,8 @@
       "latLng": [
         40.67071091728501,
         -74.03323677968152
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Tompkins Mini-Mart & Discount",
@@ -124,7 +137,8 @@
       "latLng": [
         40.746333593089325,
         -74.0278812018183
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ocean King Fish Market",
@@ -133,7 +147,8 @@
       "latLng": [
         40.705630064941964,
         -73.97433508804681
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Blessed Mini Market",
@@ -142,7 +157,8 @@
       "latLng": [
         40.748403323056124,
         -73.97104864162279
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Brooklyn Tea",
@@ -151,7 +167,8 @@
       "latLng": [
         40.67867193380432,
         -74.01962175251052
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Due Fratelli",
@@ -160,7 +177,8 @@
       "latLng": [
         40.75364921947812,
         -74.03436496029738
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Peaches HotHouse",
@@ -169,7 +187,8 @@
       "latLng": [
         40.74109515753641,
         -74.00589025883026
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Nicholas Brooklyn",
@@ -178,7 +197,8 @@
       "latLng": [
         40.74693427800831,
         -74.01499078561793
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "1490 Convenience",
@@ -187,7 +207,8 @@
       "latLng": [
         40.734678832504414,
         -74.01788140866412
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bargainland",
@@ -196,16 +217,18 @@
       "latLng": [
         40.71978629292054,
         -74.04467289721383
-      ]
+      ],
+      "type": "Bar"
     },
     {
-      "name": "Popular 99\u00a2 & Up",
+      "name": "Popular 99¢ & Up",
       "address": "1508 Fulton Street, 11213",
       "description": "A local shop offering unique goods.",
       "latLng": [
         40.71651345338483,
         -74.04957189685332
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bodega",
@@ -214,7 +237,8 @@
       "latLng": [
         40.7007899180499,
         -73.98121580143989
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Fulton Cobbler",
@@ -223,7 +247,8 @@
       "latLng": [
         40.708042230196085,
         -73.98490864148751
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mundo Fashion",
@@ -232,7 +257,8 @@
       "latLng": [
         40.66547876475734,
         -73.96792666399405
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bichri African Market",
@@ -241,7 +267,8 @@
       "latLng": [
         40.73108770589932,
         -73.99509802634324
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Inner Market Corp",
@@ -250,7 +277,8 @@
       "latLng": [
         40.70708292817436,
         -74.03881965770033
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Peace & Riot",
@@ -259,7 +287,8 @@
       "latLng": [
         40.73224471249867,
         -74.02635558755067
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Liquid Assets",
@@ -268,7 +297,8 @@
       "latLng": [
         40.74915855959216,
         -73.95970458619134
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Platinum Cuts",
@@ -277,7 +307,8 @@
       "latLng": [
         40.74859220401126,
         -73.9689317751268
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Jasmine's House of Scents",
@@ -286,7 +317,8 @@
       "latLng": [
         40.666905196499584,
         -74.04958557450179
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Le Paris Dekar",
@@ -295,7 +327,8 @@
       "latLng": [
         40.691192538436816,
         -73.98345030832121
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Brooklyn Wireless Mall",
@@ -304,7 +337,8 @@
       "latLng": [
         40.74422098309909,
         -73.99994160261747
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Thriftcare Pharmacy",
@@ -313,7 +347,8 @@
       "latLng": [
         40.75014835123927,
         -73.9963081988689
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Rose Discount Beauty Supply",
@@ -322,7 +357,8 @@
       "latLng": [
         40.742896228206845,
         -74.01895823728066
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Metro by T-Mobile",
@@ -331,7 +367,8 @@
       "latLng": [
         40.73020668067736,
         -74.01205367408865
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "One Stop To Shop Gourmet & Deli",
@@ -340,7 +377,8 @@
       "latLng": [
         40.70708148874558,
         -74.02752501228036
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Modern Nails",
@@ -349,7 +387,8 @@
       "latLng": [
         40.67058413180591,
         -74.00823764076824
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Nene African Hair Braiding & Dreadlocks",
@@ -358,7 +397,8 @@
       "latLng": [
         40.68176123918016,
         -73.98172511060169
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Safety Brothers",
@@ -367,7 +407,8 @@
       "latLng": [
         40.71457374458341,
         -74.04262231893962
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Khadija African Hair Braiding",
@@ -376,7 +417,8 @@
       "latLng": [
         40.70842138175094,
         -73.99296414280461
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cali Convenience",
@@ -385,7 +427,8 @@
       "latLng": [
         40.734119247006845,
         -74.00592222540925
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bklyn Caps & Clothing",
@@ -394,7 +437,8 @@
       "latLng": [
         40.733004151722824,
         -73.96519582339361
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Met Fresh",
@@ -403,7 +447,8 @@
       "latLng": [
         40.72684357677976,
         -74.01487447120255
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Alive Herbals II",
@@ -412,7 +457,8 @@
       "latLng": [
         40.72809328076441,
         -73.98698905090107
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

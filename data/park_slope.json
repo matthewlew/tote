@@ -7,7 +7,8 @@
       "latLng": [
         40.66364285956437,
         -73.96189890782483
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Something Else On Fifth",
@@ -16,7 +17,8 @@
       "latLng": [
         40.70501437446635,
         -74.01591887036224
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Acme Pet Food",
@@ -25,7 +27,8 @@
       "latLng": [
         40.740772318675575,
         -74.01792774002948
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Zeno Nail Bar",
@@ -34,7 +37,8 @@
       "latLng": [
         40.69041886556513,
         -73.9846639850304
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Mezcal's",
@@ -43,7 +47,8 @@
       "latLng": [
         40.69953383733969,
         -74.03651823320419
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Shaking Crab",
@@ -52,7 +57,8 @@
       "latLng": [
         40.672033603839424,
         -73.97830143398664
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Clever Blend",
@@ -61,7 +67,8 @@
       "latLng": [
         40.73964295205384,
         -74.01101509370035
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Green Ivy",
@@ -70,7 +77,8 @@
       "latLng": [
         40.75510528468683,
         -74.00877200536026
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Miti Miti",
@@ -79,7 +87,8 @@
       "latLng": [
         40.7236301915175,
         -74.02087941928649
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Flea",
@@ -88,7 +97,8 @@
       "latLng": [
         40.74651218544065,
         -74.02213091908013
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Associated Supermarket",
@@ -97,7 +107,8 @@
       "latLng": [
         40.67797093322979,
         -73.95831025539005
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Stone Park Cafe",
@@ -106,7 +117,8 @@
       "latLng": [
         40.70825083376106,
         -74.01617562295934
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Pep Boys",
@@ -115,7 +127,8 @@
       "latLng": [
         40.70371472540914,
         -73.98616992983145
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "B Central Market Place",
@@ -124,7 +137,8 @@
       "latLng": [
         40.731425540475854,
         -74.03879359376204
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Gate",
@@ -133,7 +147,8 @@
       "latLng": [
         40.71523436943319,
         -74.03098325833234
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "The Armory",
@@ -142,7 +157,8 @@
       "latLng": [
         40.69189124729133,
         -74.03574454009468
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Advanced Eyecare",
@@ -151,7 +167,8 @@
       "latLng": [
         40.68584184942545,
         -74.0481820905069
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Casita of Brooklyn",
@@ -160,7 +177,8 @@
       "latLng": [
         40.68693085632032,
         -74.01006650320407
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Katsuei",
@@ -169,7 +187,8 @@
       "latLng": [
         40.68314241376869,
         -74.03961771325912
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "T&A Park Slope Deli & Grill",
@@ -178,7 +197,8 @@
       "latLng": [
         40.70940313836613,
         -74.02471670215283
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Hungry Ghost",
@@ -187,7 +207,8 @@
       "latLng": [
         40.68884301160714,
         -74.02979822004953
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "5th & 5th Wellness",
@@ -196,7 +217,8 @@
       "latLng": [
         40.75269055845892,
         -74.04788208467845
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Farm Shop Deli",
@@ -205,7 +227,8 @@
       "latLng": [
         40.72742925331278,
         -73.98663330808546
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Brooklyn Burgers & Beer",
@@ -214,7 +237,8 @@
       "latLng": [
         40.7256361475445,
         -74.04493840650764
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "5th Ave. Gourmet Delight",
@@ -223,7 +247,8 @@
       "latLng": [
         40.724349534365054,
         -74.04430649350356
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Velvette Brew Espresso Bar",
@@ -232,7 +257,8 @@
       "latLng": [
         40.748450655720696,
         -74.00744647786868
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Luna's Tire Shop",
@@ -241,7 +267,8 @@
       "latLng": [
         40.73570800844328,
         -74.0086346658912
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sandwich Factory",
@@ -250,7 +277,8 @@
       "latLng": [
         40.73094026090138,
         -74.00620621379866
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Kick Axe",
@@ -259,7 +287,8 @@
       "latLng": [
         40.68415515409691,
         -73.99251780319062
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Room No. 205",
@@ -268,7 +297,8 @@
       "latLng": [
         40.73486764611959,
         -73.9765211339254
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Staples",
@@ -277,7 +307,8 @@
       "latLng": [
         40.69995334052189,
         -73.9602998763936
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Gowanus Convenience",
@@ -286,7 +317,8 @@
       "latLng": [
         40.67914974219325,
         -74.05036265000165
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "True Clean",
@@ -295,7 +327,8 @@
       "latLng": [
         40.667895362210324,
         -74.03426274549916
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mercado Central",
@@ -304,7 +337,8 @@
       "latLng": [
         40.73928902592693,
         -73.98828847555264
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Carlos Repair @ Ridge",
@@ -313,25 +347,28 @@
       "latLng": [
         40.68842918369791,
         -73.97357407215274
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "Bol\u00e9 Road Textiles",
+      "name": "Bolé Road Textiles",
       "address": "271 3rd Avenue, 11215",
       "description": "A local shop offering unique goods.",
       "latLng": [
         40.75617746924185,
         -73.97935218615527
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "Caf\u00e9 Mars",
+      "name": "Café Mars",
       "address": "272 3rd Avenue, 11215",
       "description": "A local italian restaurant.",
       "latLng": [
         40.70557663708067,
         -74.03161697989857
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Sixteen Mill Bakeshop",
@@ -340,7 +377,8 @@
       "latLng": [
         40.74032522502216,
         -74.04382163467295
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sara June",
@@ -349,7 +387,8 @@
       "latLng": [
         40.753448109867584,
         -74.03921706050384
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "al di la Trattoria",
@@ -358,7 +397,8 @@
       "latLng": [
         40.744804535913914,
         -74.03155869723044
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Premium Goods",
@@ -367,7 +407,8 @@
       "latLng": [
         40.69299077826872,
         -74.0437022131053
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Aesop",
@@ -376,7 +417,8 @@
       "latLng": [
         40.72325913886084,
         -73.99017431733203
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Shanghai Spa",
@@ -385,7 +427,8 @@
       "latLng": [
         40.667933490607325,
         -73.993927913594
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Sugaring NYC",
@@ -394,7 +437,8 @@
       "latLng": [
         40.70433068307254,
         -74.05304358128946
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Artesana Home",
@@ -403,7 +447,8 @@
       "latLng": [
         40.71645892594569,
         -74.03759725259926
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "The Boil Prime",
@@ -412,7 +457,8 @@
       "latLng": [
         40.707690018663264,
         -73.97748309917627
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Sky Ice",
@@ -421,7 +467,8 @@
       "latLng": [
         40.68307624376778,
         -74.01887736353981
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Phobar",
@@ -430,7 +477,8 @@
       "latLng": [
         40.757308974810265,
         -73.96972371017813
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Drop & Go Laundromat",
@@ -439,7 +487,8 @@
       "latLng": [
         40.665665182948125,
         -73.97668371998884
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Wild",
@@ -448,7 +497,8 @@
       "latLng": [
         40.70650442250131,
         -73.97916904341496
-      ]
+      ],
+      "type": "Restaurant"
     }
   ]
 }

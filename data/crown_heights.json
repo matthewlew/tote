@@ -7,7 +7,8 @@
       "latLng": [
         40.66410080558836,
         -74.03202097068814
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "N & K Express Laundromat",
@@ -16,7 +17,8 @@
       "latLng": [
         40.66342981908713,
         -74.00316473015096
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mario's Fish Market",
@@ -25,7 +27,8 @@
       "latLng": [
         40.674291633846686,
         -74.01275690839734
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Park-Way Meats",
@@ -34,7 +37,8 @@
       "latLng": [
         40.66631910659362,
         -74.00752938143222
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Tony Deli",
@@ -43,7 +47,8 @@
       "latLng": [
         40.74978032813227,
         -73.9852175845176
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Yissel Beauty Salon",
@@ -52,7 +57,8 @@
       "latLng": [
         40.720651115648565,
         -73.98117908437331
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Breukelen Brasserie",
@@ -61,7 +67,8 @@
       "latLng": [
         40.670697370958,
         -73.98614700222275
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "M&F Pharmacy",
@@ -70,7 +77,8 @@
       "latLng": [
         40.68266015655355,
         -73.99699071801615
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Naye African Hair Braiding",
@@ -79,7 +87,8 @@
       "latLng": [
         40.75173638042753,
         -73.97359269136119
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Smoke Shop",
@@ -88,7 +97,8 @@
       "latLng": [
         40.74793500233956,
         -73.9621212765051
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Abulis Religious & Spiritual Cultural Store",
@@ -97,7 +107,8 @@
       "latLng": [
         40.73355890043765,
         -74.00714794382915
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sunny Nail & Salon",
@@ -106,7 +117,8 @@
       "latLng": [
         40.75966373406057,
         -74.01603631581956
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lucky Stop & Caribbean Goods",
@@ -115,7 +127,8 @@
       "latLng": [
         40.718589138754126,
         -74.04741635488686
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cleaner Wash Laundromat",
@@ -124,7 +137,8 @@
       "latLng": [
         40.738732792385925,
         -74.03804754121207
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ney York Deli",
@@ -133,7 +147,8 @@
       "latLng": [
         40.700396949105944,
         -74.05437325745417
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "P's Barber Shop",
@@ -142,7 +157,8 @@
       "latLng": [
         40.71006707762483,
         -74.01568468085799
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Dead Garden",
@@ -151,7 +167,8 @@
       "latLng": [
         40.705592603637655,
         -73.96031951174884
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Los Brother's Deli Grocery",
@@ -160,7 +177,8 @@
       "latLng": [
         40.74093348715836,
         -73.9827051344763
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Lily Blush",
@@ -169,7 +187,8 @@
       "latLng": [
         40.74673482702095,
         -73.98970513350903
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "1037 Nostrand Deli",
@@ -178,7 +197,8 @@
       "latLng": [
         40.74093792374427,
         -74.02529460041522
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Eight Nine Dominican Barbershop",
@@ -187,7 +207,8 @@
       "latLng": [
         40.7233785177376,
         -74.05432362116076
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "J&J's Gold Jewelry",
@@ -196,7 +217,8 @@
       "latLng": [
         40.66545707679043,
         -74.03832505222913
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Kim's Fish Market",
@@ -205,7 +227,8 @@
       "latLng": [
         40.75854147933114,
         -74.03186916099725
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Glam Beauty Supply",
@@ -214,7 +237,8 @@
       "latLng": [
         40.675317855608824,
         -73.99625019350356
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "One Brother Mini Market",
@@ -223,7 +247,8 @@
       "latLng": [
         40.703867238353666,
         -74.01549368847763
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Gold Room BK",
@@ -232,7 +257,8 @@
       "latLng": [
         40.681754639930276,
         -73.99714847991116
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Novelli",
@@ -241,7 +267,8 @@
       "latLng": [
         40.67755747065599,
         -73.96681240615999
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Melany Food Center",
@@ -250,7 +277,8 @@
       "latLng": [
         40.709957941437025,
         -73.98608377796143
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sweet Paws",
@@ -259,7 +287,8 @@
       "latLng": [
         40.70364643985142,
         -73.9898629883337
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "SOC",
@@ -268,7 +297,8 @@
       "latLng": [
         40.71522996422551,
         -73.96572059113653
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Albany Wash n' Dry",
@@ -277,7 +307,8 @@
       "latLng": [
         40.75567784291492,
         -73.97920001202165
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Tian Bao Liquor",
@@ -286,7 +317,8 @@
       "latLng": [
         40.6769685049682,
         -74.05111999668232
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lefferts Cleaners",
@@ -295,7 +327,8 @@
       "latLng": [
         40.66732540266167,
         -74.03752862123808
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Boogie's Tailoring",
@@ -304,7 +337,8 @@
       "latLng": [
         40.72244809386149,
         -74.02890465064526
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Deli Food",
@@ -313,7 +347,8 @@
       "latLng": [
         40.66281925875624,
         -74.04468822516141
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Diana Food Center",
@@ -322,7 +357,8 @@
       "latLng": [
         40.7606130121055,
         -74.04640741298819
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Marissa's Design",
@@ -331,7 +367,8 @@
       "latLng": [
         40.703256884956744,
         -73.9930500590036
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "A. Soliani",
@@ -340,7 +377,8 @@
       "latLng": [
         40.75770664554276,
         -73.98313972624594
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ellis Cleaners",
@@ -349,7 +387,8 @@
       "latLng": [
         40.75348589747727,
         -73.95630487609002
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Plumbers Haven",
@@ -358,7 +397,8 @@
       "latLng": [
         40.70611610154084,
         -74.02352722326462
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "People Organic Market",
@@ -367,7 +407,8 @@
       "latLng": [
         40.67643190743102,
         -73.99464385558773
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Food Sermon",
@@ -376,7 +417,8 @@
       "latLng": [
         40.66708293674516,
         -73.990752304889
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Laundomat",
@@ -385,7 +427,8 @@
       "latLng": [
         40.66803032893503,
         -74.03831050633075
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Laundry Run",
@@ -394,7 +437,8 @@
       "latLng": [
         40.671898760895395,
         -73.96752484117279
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "I Love My Pet",
@@ -403,7 +447,8 @@
       "latLng": [
         40.759671307748704,
         -74.02004371481928
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Nonbinarian",
@@ -412,7 +457,8 @@
       "latLng": [
         40.67825759669616,
         -74.00844474500491
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Beautianna Studios",
@@ -421,7 +467,8 @@
       "latLng": [
         40.68377561959496,
         -73.96964862802356
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mermaid Fish Market",
@@ -430,7 +477,8 @@
       "latLng": [
         40.730542918904135,
         -74.02688216681094
-      ]
+      ],
+      "type": "Deli"
     }
   ]
 }

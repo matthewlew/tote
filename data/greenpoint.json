@@ -7,7 +7,8 @@
       "latLng": [
         40.69157451587471,
         -74.00033702813722
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Uro Cafe",
@@ -16,7 +17,8 @@
       "latLng": [
         40.73327025527264,
         -73.99049205220756
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "B's Bikes",
@@ -25,7 +27,8 @@
       "latLng": [
         40.73587810433204,
         -74.03006243415301
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ashbox Cafe",
@@ -34,7 +37,8 @@
       "latLng": [
         40.74702889868622,
         -73.98173844664102
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Eastern District Beer Store",
@@ -43,7 +47,8 @@
       "latLng": [
         40.69601145712917,
         -73.99509728839915
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Word Bookstore",
@@ -52,7 +57,8 @@
       "latLng": [
         40.70275354680565,
         -74.05338347597362
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Market on Kent",
@@ -61,7 +67,8 @@
       "latLng": [
         40.730687198010614,
         -74.00110544452954
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Pencil Factory",
@@ -70,7 +77,8 @@
       "latLng": [
         40.68691590499628,
         -74.04579760726551
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Eagle Trading Company",
@@ -79,7 +87,8 @@
       "latLng": [
         40.71325985203135,
         -74.03424672241925
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Sereneco",
@@ -88,7 +97,8 @@
       "latLng": [
         40.679856745112794,
         -74.03224982515692
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Kettl",
@@ -97,7 +107,8 @@
       "latLng": [
         40.71060889942941,
         -74.04734671644711
-      ]
+      ],
+      "type": "Tea"
     },
     {
       "name": "Alter",
@@ -106,7 +117,8 @@
       "latLng": [
         40.69780860255223,
         -73.98502817429399
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Paulie Gee's",
@@ -115,7 +127,8 @@
       "latLng": [
         40.667137316367935,
         -74.01301496039855
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Bar Americano",
@@ -124,7 +137,8 @@
       "latLng": [
         40.68017929375056,
         -73.97711610561372
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Shanghai Lee",
@@ -133,7 +147,8 @@
       "latLng": [
         40.76088729862574,
         -73.98598661405936
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Dandelion Wine",
@@ -142,7 +157,8 @@
       "latLng": [
         40.68949950658462,
         -74.02406531075013
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Black Rabbit",
@@ -151,7 +167,8 @@
       "latLng": [
         40.73197224629486,
         -73.95842771609543
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Calexico",
@@ -160,7 +177,8 @@
       "latLng": [
         40.68996023338515,
         -74.04265755597947
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Key Food",
@@ -169,7 +187,8 @@
       "latLng": [
         40.725288116894426,
         -74.00117609845526
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "C-Town",
@@ -178,7 +197,8 @@
       "latLng": [
         40.665756437765154,
         -74.02397696086568
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "World of Flowers",
@@ -187,7 +207,8 @@
       "latLng": [
         40.69143599953209,
         -74.0212694714972
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Fresh Market Gourmet Deli",
@@ -196,7 +217,8 @@
       "latLng": [
         40.738422684749075,
         -74.02199950182874
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "The Lobster Joint",
@@ -205,7 +227,8 @@
       "latLng": [
         40.75948142000639,
         -74.02541906541208
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "House of Sudz III",
@@ -214,7 +237,8 @@
       "latLng": [
         40.70410821181885,
         -73.97367492655825
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Little Armenia",
@@ -223,7 +247,8 @@
       "latLng": [
         40.72172328100418,
         -74.03400629586444
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Elder Greene",
@@ -232,7 +257,8 @@
       "latLng": [
         40.69789788728994,
         -74.04520552385165
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Vamos al Tequila",
@@ -241,7 +267,8 @@
       "latLng": [
         40.69610158103434,
         -73.97629698629127
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Cozinha Latina",
@@ -250,7 +277,8 @@
       "latLng": [
         40.729259866991114,
         -73.97088638006491
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Brooklyn Bowl",
@@ -259,7 +287,8 @@
       "latLng": [
         40.68282975507034,
         -74.04596765854704
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "The Brew Inn",
@@ -268,7 +297,8 @@
       "latLng": [
         40.690884029504474,
         -73.99244016176722
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Old Poland Bakery",
@@ -277,7 +307,8 @@
       "latLng": [
         40.69485794822822,
         -74.02833924216178
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Upstate Stock",
@@ -286,7 +317,8 @@
       "latLng": [
         40.761464821249895,
         -74.00201854660911
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Jose Deli Grocery",
@@ -295,7 +327,8 @@
       "latLng": [
         40.70615716310271,
         -74.00372828188509
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Bombay Grill & Curry",
@@ -304,7 +337,8 @@
       "latLng": [
         40.692211358715845,
         -73.98104260090675
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Radio Bakery",
@@ -313,7 +347,8 @@
       "latLng": [
         40.68012438234026,
         -74.02637011978776
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Franklin Convenience",
@@ -322,7 +357,8 @@
       "latLng": [
         40.68719423862154,
         -73.96565897561057
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "M&W Laundromat",
@@ -331,7 +367,8 @@
       "latLng": [
         40.72625891814547,
         -73.99079435056679
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Nassau Finest Deli",
@@ -340,7 +377,8 @@
       "latLng": [
         40.664979093537916,
         -73.96624708921365
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Driggs Ave Laundromat & Dry Cleaners",
@@ -349,7 +387,8 @@
       "latLng": [
         40.717871515122155,
         -74.04446477143343
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Wholesome Gourmet Deli",
@@ -358,7 +397,8 @@
       "latLng": [
         40.76145924871346,
         -74.01083125776474
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Ramen, Fried Rice and Noodles",
@@ -367,7 +407,8 @@
       "latLng": [
         40.720438184334135,
         -73.98731983516947
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Pueblo Querido Coffee Roasters Cafe de Colombia",
@@ -376,7 +417,8 @@
       "latLng": [
         40.71119956492238,
         -74.03897855503845
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Hide & Seek",
@@ -385,7 +427,8 @@
       "latLng": [
         40.72431644511765,
         -74.01690070337021
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Metro by T-Mobile",
@@ -394,7 +437,8 @@
       "latLng": [
         40.71122446824433,
         -73.96402714901063
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Manhattan Triple Decker Restaurant",
@@ -403,7 +447,8 @@
       "latLng": [
         40.6704613648534,
         -74.02244148074523
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Nights and Weekends",
@@ -412,7 +457,8 @@
       "latLng": [
         40.68710685299477,
         -74.01611594173997
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Bernie's",
@@ -421,7 +467,8 @@
       "latLng": [
         40.73939933891066,
         -73.97925485403839
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "We See Stars",
@@ -430,7 +477,8 @@
       "latLng": [
         40.753705640747796,
         -73.98947984474994
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Hidden Pearl",
@@ -439,7 +487,8 @@
       "latLng": [
         40.72847476357646,
         -74.05038729353011
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Idle Mind Tavern",
@@ -448,7 +497,8 @@
       "latLng": [
         40.744838220209914,
         -74.04767934577785
-      ]
+      ],
+      "type": "Bar"
     }
   ]
 }

@@ -7,7 +7,8 @@
       "latLng": [
         40.71361987255239,
         -73.97565477697876
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sycamore",
@@ -16,7 +17,8 @@
       "latLng": [
         40.68484096878656,
         -74.02292479314745
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Five Star Laundromat",
@@ -25,7 +27,8 @@
       "latLng": [
         40.70674538612076,
         -73.99703766333809
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cortelyou Green Market",
@@ -34,7 +37,8 @@
       "latLng": [
         40.74234750018381,
         -74.01432686806176
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Castello Plan",
@@ -43,7 +47,8 @@
       "latLng": [
         40.71240485843194,
         -74.04781349940401
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Drugs Care Pharmacy",
@@ -52,7 +57,8 @@
       "latLng": [
         40.691596141731054,
         -74.00632381985129
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Am Thai Bistro",
@@ -61,7 +67,8 @@
       "latLng": [
         40.69225166092478,
         -74.02370849166097
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "LARK cafe",
@@ -70,7 +77,8 @@
       "latLng": [
         40.69420035315489,
         -73.97783625320841
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Anakali",
@@ -79,7 +87,8 @@
       "latLng": [
         40.665933303553366,
         -73.96700698299861
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Prospect Park South Deli Grocery",
@@ -88,7 +97,8 @@
       "latLng": [
         40.748956800390296,
         -73.96311022119056
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Pimentel Grocery",
@@ -97,7 +107,8 @@
       "latLng": [
         40.714379627800376,
         -74.01128668181394
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "La Chic",
@@ -106,7 +117,8 @@
       "latLng": [
         40.700041072401866,
         -74.02028336006671
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Franks Barbershop",
@@ -115,7 +127,8 @@
       "latLng": [
         40.66430988473865,
         -74.01572032366887
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "El Angel",
@@ -124,7 +137,8 @@
       "latLng": [
         40.686645717472224,
         -74.02579285983448
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Andrew's Coffee Shop",
@@ -133,7 +147,8 @@
       "latLng": [
         40.676548740969274,
         -73.98091899593646
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Hitec of NY 1 Hour Photo",
@@ -142,7 +157,8 @@
       "latLng": [
         40.67334336530865,
         -73.96882305035543
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Palm Jewelry",
@@ -151,7 +167,8 @@
       "latLng": [
         40.739984186995436,
         -74.01996141641064
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Reymond Barbershop",
@@ -160,7 +177,8 @@
       "latLng": [
         40.746577260197874,
         -74.01686926967156
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Valeria",
@@ -169,7 +187,8 @@
       "latLng": [
         40.69212348809025,
         -73.97252813692742
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lofty Pigeon Books",
@@ -178,7 +197,8 @@
       "latLng": [
         40.74149082877601,
         -73.98659298955904
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "My Tool Rental",
@@ -187,7 +207,8 @@
       "latLng": [
         40.74038060255165,
         -73.98423271132901
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Design Z&L Nails",
@@ -196,7 +217,8 @@
       "latLng": [
         40.69715072031594,
         -74.02033176462369
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lea",
@@ -205,7 +227,8 @@
       "latLng": [
         40.74996568793761,
         -73.98515376199902
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Sammy's Stop & Shop",
@@ -214,7 +237,8 @@
       "latLng": [
         40.67018332147171,
         -73.95608914423805
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "King Mother",
@@ -223,7 +247,8 @@
       "latLng": [
         40.73776351115597,
         -73.95963042379982
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Mimi's Hummus",
@@ -232,7 +257,8 @@
       "latLng": [
         40.66836168549149,
         -73.95742097952635
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Father & Sons Delicatessen",
@@ -241,7 +267,8 @@
       "latLng": [
         40.6868004773435,
         -73.96566165687338
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Berand's Accounting & Travel",
@@ -250,7 +277,8 @@
       "latLng": [
         40.74609212986245,
         -74.02563214897037
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Juniors Barber Shop",
@@ -259,7 +287,8 @@
       "latLng": [
         40.67276920687442,
         -73.98270313497954
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "L & C Natural Nail",
@@ -268,7 +297,8 @@
       "latLng": [
         40.67919605429136,
         -73.97612687489735
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mex Deli & Grill",
@@ -277,7 +307,8 @@
       "latLng": [
         40.72849350304625,
         -73.96448726656472
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Cortelyou's Best Gourmet Deli",
@@ -286,7 +317,8 @@
       "latLng": [
         40.68772905363365,
         -73.9645909079242
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Kings County Wines",
@@ -295,7 +327,8 @@
       "latLng": [
         40.694335744079034,
         -74.04961141562663
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Natural Frontier Market",
@@ -304,7 +337,8 @@
       "latLng": [
         40.75506890884952,
         -73.97823814337647
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mian Convenience & Deli",
@@ -313,7 +347,8 @@
       "latLng": [
         40.746593751390556,
         -74.04728617958973
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Blush",
@@ -322,7 +357,8 @@
       "latLng": [
         40.70806174127908,
         -74.0131431557671
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sawera Garments & Tailoring",
@@ -331,7 +367,8 @@
       "latLng": [
         40.6926320772941,
         -73.96173896115202
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Urgut Osh Markazi",
@@ -340,7 +377,8 @@
       "latLng": [
         40.73580988482768,
         -74.01910734215515
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Coffee Mob",
@@ -349,7 +387,8 @@
       "latLng": [
         40.67920470913121,
         -73.9676084656493
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Milk and Honey",
@@ -358,7 +397,8 @@
       "latLng": [
         40.76235671710674,
         -73.9832791732284
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "K N Convenience",
@@ -367,7 +407,8 @@
       "latLng": [
         40.6878064729566,
         -74.02593288534052
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Newkirk Station Liquors & Wines",
@@ -376,7 +417,8 @@
       "latLng": [
         40.75065758526377,
         -73.97207503946517
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Plaza Convenience Store",
@@ -385,7 +427,8 @@
       "latLng": [
         40.754377750564096,
         -73.99723202334606
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Newkirk Wireless",
@@ -394,7 +437,8 @@
       "latLng": [
         40.7003746886646,
         -74.05549100954826
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cornerboy's Haircrafters",
@@ -403,7 +447,8 @@
       "latLng": [
         40.68982731473085,
         -74.05338533863754
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "T-Mobile",
@@ -412,7 +457,8 @@
       "latLng": [
         40.669988555151065,
         -73.95939006573549
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "New Star Fruit",
@@ -421,7 +467,8 @@
       "latLng": [
         40.72693369942686,
         -74.03439306338782
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Newkirk Foodmart",
@@ -430,7 +477,8 @@
       "latLng": [
         40.71010687123322,
         -74.04777827505968
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Yang's Brothers",
@@ -439,7 +487,8 @@
       "latLng": [
         40.71385645755747,
         -74.04750676367814
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Plaza Flower & Grocery",
@@ -448,7 +497,8 @@
       "latLng": [
         40.6827460164917,
         -73.96960414979999
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

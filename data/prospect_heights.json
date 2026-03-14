@@ -7,7 +7,8 @@
       "latLng": [
         40.73279426069051,
         -74.0199093710442
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Brooklyn Deli",
@@ -16,7 +17,8 @@
       "latLng": [
         40.68984066183683,
         -74.04038321783396
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Fulton Grand",
@@ -25,7 +27,8 @@
       "latLng": [
         40.71459045729816,
         -74.05308827073205
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Acme Pet Food",
@@ -34,7 +37,8 @@
       "latLng": [
         40.72973854726226,
         -74.00148566199891
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Leland",
@@ -43,7 +47,8 @@
       "latLng": [
         40.7028526986926,
         -74.02100497938879
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Farm Fresh Deli",
@@ -52,7 +57,8 @@
       "latLng": [
         40.75401302074648,
         -74.05562366153352
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Danny Grocery",
@@ -61,7 +67,8 @@
       "latLng": [
         40.69880616702719,
         -73.96822193968376
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ideal Food Basket",
@@ -70,7 +77,8 @@
       "latLng": [
         40.71284137130615,
         -74.0112031898095
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Tom's Restaurant",
@@ -79,7 +87,8 @@
       "latLng": [
         40.75860266867601,
         -74.04177535130991
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Benny's Barber Shop",
@@ -88,7 +97,8 @@
       "latLng": [
         40.72650911739704,
         -73.97856229491586
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Harlyn Barber Shop",
@@ -97,7 +107,8 @@
       "latLng": [
         40.71879163115531,
         -74.05050267022291
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Grand Plaza Liquours and Wines",
@@ -106,7 +117,8 @@
       "latLng": [
         40.721911418226135,
         -74.01472452478667
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Aura",
@@ -115,7 +127,8 @@
       "latLng": [
         40.726252599884795,
         -73.98556441449945
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "The Bearded Lady",
@@ -124,7 +137,8 @@
       "latLng": [
         40.693638600720725,
         -73.9941891112371
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Cynergy Spa",
@@ -133,7 +147,8 @@
       "latLng": [
         40.6940045981366,
         -74.03207688533897
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "B Central Market Place",
@@ -142,7 +157,8 @@
       "latLng": [
         40.69454574488659,
         -73.98649383733091
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Olde Brooklyn Bagel Shoppe",
@@ -151,7 +167,8 @@
       "latLng": [
         40.726048216241246,
         -73.97730381348896
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Baldy's Restaurant Equipment",
@@ -160,7 +177,8 @@
       "latLng": [
         40.696909731601224,
         -74.05188156814422
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Neptune Diner II",
@@ -169,7 +187,8 @@
       "latLng": [
         40.731821406345986,
         -74.01231363188718
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "The Bakery on Bergen",
@@ -178,7 +197,8 @@
       "latLng": [
         40.7299214781341,
         -74.02166866674551
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Thriftway Pharmacy",
@@ -187,7 +207,8 @@
       "latLng": [
         40.7501137995607,
         -74.01905251146358
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Barboncino",
@@ -196,7 +217,8 @@
       "latLng": [
         40.68808527575316,
         -74.00255724917348
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Gen",
@@ -205,7 +227,8 @@
       "latLng": [
         40.73031312959993,
         -74.04145005538804
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Advanced Eyecare",
@@ -214,7 +237,8 @@
       "latLng": [
         40.75238059689924,
         -74.02276679604607
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Longevity Natural Gourmet Market",
@@ -223,7 +247,8 @@
       "latLng": [
         40.720790099567125,
         -74.0215933440365
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "840 United Deli",
@@ -232,7 +257,8 @@
       "latLng": [
         40.70063779568543,
         -74.04744586763289
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "A&H Flowers",
@@ -241,7 +267,8 @@
       "latLng": [
         40.667367746252424,
         -74.0136703130193
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "RT Building Supplies & Hardware",
@@ -250,7 +277,8 @@
       "latLng": [
         40.7305487164356,
         -74.04564312758205
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Franklin's Makers",
@@ -259,7 +287,8 @@
       "latLng": [
         40.71135811657614,
         -74.03198003949718
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cordelia",
@@ -268,7 +297,8 @@
       "latLng": [
         40.74025301807481,
         -74.02734100893367
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Nimbooda",
@@ -277,16 +307,18 @@
       "latLng": [
         40.74532923782905,
         -74.0172089353097
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
-      "name": "Mooliauno\u2019s Trapp Kitchen",
+      "name": "Mooliauno’s Trapp Kitchen",
       "address": "621 Washington Avenue, 11238",
       "description": "A local cafe offering coffee and pastries.",
       "latLng": [
         40.737827784797,
         -74.03531528909447
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Brooklyn Sub",
@@ -295,7 +327,8 @@
       "latLng": [
         40.67333888082953,
         -73.96257247872984
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Arena Wine and Liquor Depot",
@@ -304,7 +337,8 @@
       "latLng": [
         40.726871540493725,
         -74.02455484150192
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Yanatiba",
@@ -313,7 +347,8 @@
       "latLng": [
         40.70565145293022,
         -74.04708797325337
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cepeda",
@@ -322,7 +357,8 @@
       "latLng": [
         40.739467534542776,
         -73.99295515192169
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Brooklyn High Low",
@@ -331,7 +367,8 @@
       "latLng": [
         40.708618726277386,
         -74.01380594356769
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Minus Moonshine",
@@ -340,7 +377,8 @@
       "latLng": [
         40.66555161691707,
         -74.02781285480553
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Le Pistol",
@@ -349,7 +387,8 @@
       "latLng": [
         40.6816919171527,
         -74.01725513507449
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Sugaring NYC",
@@ -358,7 +397,8 @@
       "latLng": [
         40.75514423927631,
         -73.98526211310917
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Be.",
@@ -367,7 +407,8 @@
       "latLng": [
         40.72045230448051,
         -73.99352342718778
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Boil Prime",
@@ -376,7 +417,8 @@
       "latLng": [
         40.74081505902819,
         -74.00708768258814
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Inkaico",
@@ -385,7 +427,8 @@
       "latLng": [
         40.74906217636219,
         -74.00601096436603
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Phobar",
@@ -394,7 +437,8 @@
       "latLng": [
         40.71539316276371,
         -74.00274446830672
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Four Seasons Liquor & Wines",
@@ -403,7 +447,8 @@
       "latLng": [
         40.742293285126784,
         -74.04063626046914
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Metro by T-Mobile",
@@ -412,7 +457,8 @@
       "latLng": [
         40.714530460001356,
         -74.00526046537315
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Latin Brothers Food",
@@ -421,7 +467,8 @@
       "latLng": [
         40.755090826448175,
         -73.95840420173747
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "European Wax Center",
@@ -430,7 +477,8 @@
       "latLng": [
         40.74530713706903,
         -73.96684142615162
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

@@ -7,7 +7,8 @@
       "latLng": [
         40.6741916016613,
         -74.05457051129144
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Five Star Laundromat",
@@ -16,7 +17,8 @@
       "latLng": [
         40.678927300485796,
         -73.98180001351982
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Drugs Care Pharmacy",
@@ -25,7 +27,8 @@
       "latLng": [
         40.72932555517983,
         -74.04123221245307
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Am Thai Bistro",
@@ -34,7 +37,8 @@
       "latLng": [
         40.742592124919206,
         -74.00798034395827
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "LARK cafe",
@@ -43,7 +47,8 @@
       "latLng": [
         40.73189913188503,
         -74.00229004380002
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Anakali",
@@ -52,7 +57,8 @@
       "latLng": [
         40.70973495588506,
         -74.01477890848426
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Prospect Park South Deli Grocery",
@@ -61,7 +67,8 @@
       "latLng": [
         40.73271447277692,
         -74.00965862679806
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Pimentel Grocery",
@@ -70,7 +77,8 @@
       "latLng": [
         40.75601260138145,
         -74.04459240767663
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Franks Barbershop",
@@ -79,7 +87,8 @@
       "latLng": [
         40.758252707211454,
         -74.0026206196635
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "El Angel",
@@ -88,7 +97,8 @@
       "latLng": [
         40.68691716957225,
         -74.02517883338383
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Andrew's Coffee Shop",
@@ -97,16 +107,18 @@
       "latLng": [
         40.71132347539308,
         -74.04909851560886
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Parade Caf\u00e9",
+      "name": "Parade Café",
       "address": "622 Caton Avenue, 11218",
       "description": "A local cafe offering coffee and pastries.",
       "latLng": [
         40.67811565954173,
         -74.03095352892812
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "E7 Deli",
@@ -115,7 +127,8 @@
       "latLng": [
         40.67520076935371,
         -73.96187077617
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "One Stop Market",
@@ -124,7 +137,8 @@
       "latLng": [
         40.71367468726606,
         -73.95960556701952
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mister Suds Laundromat",
@@ -133,7 +147,8 @@
       "latLng": [
         40.67664312119818,
         -74.03951806488013
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Moon Deli & Grocery",
@@ -142,7 +157,8 @@
       "latLng": [
         40.73717057439333,
         -74.00277378208918
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Lofty Pigeon Books",
@@ -151,7 +167,8 @@
       "latLng": [
         40.711378473839325,
         -73.98365069251973
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Brooklyn Herborium",
@@ -160,7 +177,8 @@
       "latLng": [
         40.70016110975042,
         -74.03566111785379
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Green Earth Organic Ms Bubble",
@@ -169,7 +187,8 @@
       "latLng": [
         40.70070618563646,
         -74.0128016031052
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "A&M Prospect Deli",
@@ -178,7 +197,8 @@
       "latLng": [
         40.759498382623704,
         -74.01255591866061
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "The UPS Store",
@@ -187,7 +207,8 @@
       "latLng": [
         40.66612319287637,
         -73.9639166948357
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lucky Pet NY",
@@ -196,7 +217,8 @@
       "latLng": [
         40.66926001877196,
         -74.01660661188184
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Prospect Market",
@@ -205,7 +227,8 @@
       "latLng": [
         40.74177392381919,
         -74.01576953636781
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Fell",
@@ -214,7 +237,8 @@
       "latLng": [
         40.67302654411956,
         -74.05130078044255
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Soon's Nail & Spa",
@@ -223,7 +247,8 @@
       "latLng": [
         40.68247102820855,
         -73.97373768065505
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Artisan Barber Shop",
@@ -232,7 +257,8 @@
       "latLng": [
         40.733550398843704,
         -74.05085505615965
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Regina Bakery",
@@ -241,7 +267,8 @@
       "latLng": [
         40.71808104518749,
         -74.04509465901299
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Hilltop Tavern",
@@ -250,7 +277,8 @@
       "latLng": [
         40.67909940659443,
         -73.98603715405415
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "The Hamilton Dog House",
@@ -259,7 +287,8 @@
       "latLng": [
         40.70226733988117,
         -74.00968273692547
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Hamilton's",
@@ -268,7 +297,8 @@
       "latLng": [
         40.67808849962687,
         -74.01226344106097
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Quality Wash Center",
@@ -277,7 +307,8 @@
       "latLng": [
         40.666058962232064,
         -73.99562241623062
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Windsor Coffee",
@@ -286,7 +317,8 @@
       "latLng": [
         40.674073560212335,
         -74.01711261778468
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Tangled NYC",
@@ -295,7 +327,8 @@
       "latLng": [
         40.69938502680067,
         -74.02239429434543
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Kathy's Gourmet Italian Ices",
@@ -304,7 +337,8 @@
       "latLng": [
         40.70728071919167,
         -73.97778212201334
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Neighborhood Deli & Grocery",
@@ -313,7 +347,8 @@
       "latLng": [
         40.69753419373712,
         -74.05587217089987
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Le Paddock",
@@ -322,7 +357,8 @@
       "latLng": [
         40.75818416364201,
         -74.01518222065081
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "All-Security Lock & Alarm",
@@ -331,7 +367,8 @@
       "latLng": [
         40.7620172950704,
         -74.01993709019742
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Cat",
@@ -340,7 +377,8 @@
       "latLng": [
         40.74849704926064,
         -74.01696025256734
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Cena",
@@ -349,7 +387,8 @@
       "latLng": [
         40.7116282619188,
         -74.01404883077264
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Posters & Prints",
@@ -358,7 +397,8 @@
       "latLng": [
         40.72197687591912,
         -74.00595627657249
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Terrace Coffee Shop",
@@ -367,16 +407,18 @@
       "latLng": [
         40.722709045086084,
         -74.02643493037927
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Giovanni\u2019s Brooklyn Eats",
+      "name": "Giovanni’s Brooklyn Eats",
       "address": "1666 8th Avenue, 11215",
       "description": "A local italian restaurant.",
       "latLng": [
         40.69298780849661,
         -73.98017729020376
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Doleh Supermarket",
@@ -385,7 +427,8 @@
       "latLng": [
         40.710368642110986,
         -74.02694792144258
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Henry's Deli",
@@ -394,7 +437,8 @@
       "latLng": [
         40.74439981079096,
         -73.99699862526248
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Elora's",
@@ -403,7 +447,8 @@
       "latLng": [
         40.716076116491166,
         -74.00253367377988
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Classic Rug Collection",
@@ -412,7 +457,8 @@
       "latLng": [
         40.73578513290743,
         -74.02525800471938
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Knead",
@@ -421,7 +467,8 @@
       "latLng": [
         40.70671712417913,
         -74.02219513052765
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sam Deli & Grocery",
@@ -430,7 +477,8 @@
       "latLng": [
         40.73450714906978,
         -73.97397206061733
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Eden Dry Cleaners & Tailoring",
@@ -439,7 +487,8 @@
       "latLng": [
         40.718228247564305,
         -74.03973424185929
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Brooklyn Hardware Supply Benjamin Moore",
@@ -448,7 +497,8 @@
       "latLng": [
         40.747771688648534,
         -74.00650796861721
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

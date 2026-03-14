@@ -7,7 +7,8 @@
       "latLng": [
         40.68544760466978,
         -74.01842641695566
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Porta Bella",
@@ -16,7 +17,8 @@
       "latLng": [
         40.760944746428976,
         -74.00621188106992
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Los Castillos",
@@ -25,7 +27,8 @@
       "latLng": [
         40.68463348850484,
         -74.02952452454593
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Market Carniceria",
@@ -34,7 +37,8 @@
       "latLng": [
         40.66625980254943,
         -73.98632792535108
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Galaxy Wireless & Gift Shop",
@@ -43,7 +47,8 @@
       "latLng": [
         40.75061314006856,
         -74.01171177724888
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ferreteria Hardware",
@@ -52,7 +57,8 @@
       "latLng": [
         40.72924795376855,
         -74.03659090018944
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Almonte Casual",
@@ -61,7 +67,8 @@
       "latLng": [
         40.685280262003836,
         -74.01619330604163
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Hoops Deli Grocery",
@@ -70,7 +77,8 @@
       "latLng": [
         40.74476620557275,
         -73.99367075462088
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Elegant Decorations",
@@ -79,7 +87,8 @@
       "latLng": [
         40.66874266825647,
         -73.9806315456692
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Brooklyn Tops Liquors and Wines",
@@ -88,7 +97,8 @@
       "latLng": [
         40.746439222962216,
         -74.03654777027054
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bravo",
@@ -97,7 +107,8 @@
       "latLng": [
         40.75793902823402,
         -74.05274684974086
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Hometown Fresh Market",
@@ -106,7 +117,8 @@
       "latLng": [
         40.681143517343706,
         -74.0074695121933
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Gissel's Beauty Salon",
@@ -115,7 +127,8 @@
       "latLng": [
         40.719665673663144,
         -73.96534305119849
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Pancho's Bagels and Deli",
@@ -124,7 +137,8 @@
       "latLng": [
         40.71448910142522,
         -73.9913938938399
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Optima Beauty Supply",
@@ -133,7 +147,8 @@
       "latLng": [
         40.72895194382587,
         -74.05348736943559
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Master's Pizzeria",
@@ -142,16 +157,18 @@
       "latLng": [
         40.73956715447506,
         -73.9784848376364
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "Spring Corner's Grocery 99\u00a2 & Up",
+      "name": "Spring Corner's Grocery 99¢ & Up",
       "address": "5223 4th Avenue, 11220",
       "description": "A local shop offering unique goods.",
       "latLng": [
         40.75840565327938,
         -74.02087053829156
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Rainbow",
@@ -160,7 +177,8 @@
       "latLng": [
         40.70603117762164,
         -74.01509696047599
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mr Q BBQ",
@@ -169,7 +187,8 @@
       "latLng": [
         40.74433444266563,
         -74.02135093877806
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "45th Street Supermarket Inc.",
@@ -178,7 +197,8 @@
       "latLng": [
         40.694169712336674,
         -73.970563575214
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "La Carreta",
@@ -187,7 +207,8 @@
       "latLng": [
         40.692462658172154,
         -73.98166926010094
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Macareno Mini Market",
@@ -196,7 +217,8 @@
       "latLng": [
         40.67885111413561,
         -73.96394442248365
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Wireless & Repair",
@@ -205,7 +227,8 @@
       "latLng": [
         40.75476071212288,
         -74.00022211041193
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Martha Jewelry",
@@ -214,7 +237,8 @@
       "latLng": [
         40.71412488666556,
         -74.00775658040442
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "El Neuvo Pueblo",
@@ -223,7 +247,8 @@
       "latLng": [
         40.7346548027163,
         -73.95984843173972
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "El Castillo del Sabor Bakery",
@@ -232,7 +257,8 @@
       "latLng": [
         40.717112516554025,
         -74.00700583925902
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Angel Nail",
@@ -241,7 +267,8 @@
       "latLng": [
         40.7359209469878,
         -73.96042786654029
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Italian Gold Jewelry",
@@ -250,7 +277,8 @@
       "latLng": [
         40.724403048895596,
         -74.05545167181582
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Pamela Unisex",
@@ -259,16 +287,18 @@
       "latLng": [
         40.71154638646765,
         -73.97083464854185
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "Juan\u2019s Barber Shop",
+      "name": "Juan’s Barber Shop",
       "address": "511 51st Street, 11220",
       "description": "A local shop offering unique goods.",
       "latLng": [
         40.66467472067872,
         -74.05577903096916
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Chuan Tian Xia",
@@ -277,7 +307,8 @@
       "latLng": [
         40.697984639248084,
         -74.0362081090945
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "AZY Deli & Grill",
@@ -286,7 +317,8 @@
       "latLng": [
         40.6696885861763,
         -74.0112422797246
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "GNC",
@@ -295,7 +327,8 @@
       "latLng": [
         40.70795467715844,
         -74.04003682358439
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "S&A Superstore",
@@ -304,7 +337,8 @@
       "latLng": [
         40.69319269294244,
         -74.0411290909843
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Kids Foot Locker",
@@ -313,7 +347,8 @@
       "latLng": [
         40.68262665100794,
         -74.04047083570042
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cafe Con Pan",
@@ -322,7 +357,8 @@
       "latLng": [
         40.75200368841357,
         -74.03944558358712
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "La Vida",
@@ -331,7 +367,8 @@
       "latLng": [
         40.67888190608793,
         -74.03810429049915
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "El Buen Gusto Grocery",
@@ -340,7 +377,8 @@
       "latLng": [
         40.66431363500476,
         -74.02248655973727
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Barrera's",
@@ -349,7 +387,8 @@
       "latLng": [
         40.753279972613946,
         -74.00920945765874
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Metro by T-Mobile",
@@ -358,7 +397,8 @@
       "latLng": [
         40.7252465061027,
         -73.96827710423305
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Canal Jewelry of Brooklyn",
@@ -367,7 +407,8 @@
       "latLng": [
         40.71341930321145,
         -74.01929843995102
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Angel's World",
@@ -376,7 +417,8 @@
       "latLng": [
         40.72345344313472,
         -74.02094290553046
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bonito Sports",
@@ -385,7 +427,8 @@
       "latLng": [
         40.68285719475586,
         -74.03890027511609
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "PC Max Solutions",
@@ -394,7 +437,8 @@
       "latLng": [
         40.67620287969531,
         -73.96776512088316
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Fifth Avenue Liquors",
@@ -403,7 +447,8 @@
       "latLng": [
         40.68896620062956,
         -73.97803659960195
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sunny Star Grocery",
@@ -412,7 +457,8 @@
       "latLng": [
         40.750281732109734,
         -74.02064081718477
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Plaza Xochimilco",
@@ -421,7 +467,8 @@
       "latLng": [
         40.74212785277269,
         -73.9878817517473
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "United Barbershop",
@@ -430,7 +477,8 @@
       "latLng": [
         40.665100522188816,
         -73.99045705376496
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "NYC Optical",
@@ -439,7 +487,8 @@
       "latLng": [
         40.663043647862594,
         -73.96379095609754
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "New Golden Palace Jewelry",
@@ -448,7 +497,8 @@
       "latLng": [
         40.694954723817844,
         -74.04283637024294
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

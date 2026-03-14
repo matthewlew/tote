@@ -7,7 +7,8 @@
       "latLng": [
         40.750594216080124,
         -73.96903536663648
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Brooklyn Ice House",
@@ -16,7 +17,8 @@
       "latLng": [
         40.759312376422066,
         -74.05501828912442
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Chelsea Garden Center Red Hook",
@@ -25,7 +27,8 @@
       "latLng": [
         40.670689669363675,
         -74.03783308310729
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bush Deli",
@@ -34,7 +37,8 @@
       "latLng": [
         40.70948904778509,
         -74.02893302480373
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "ACQ Bread",
@@ -43,7 +47,8 @@
       "latLng": [
         40.69270021778953,
         -74.01890321756845
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Line Bagels",
@@ -52,7 +57,8 @@
       "latLng": [
         40.696165807868155,
         -73.98123705420903
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "6 Restaurant",
@@ -61,7 +67,8 @@
       "latLng": [
         40.74508098022934,
         -73.96300049887672
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Wi Nail & Spa",
@@ -70,7 +77,8 @@
       "latLng": [
         40.70802329092859,
         -74.02338645109461
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Willy Deli & Grill",
@@ -79,7 +87,8 @@
       "latLng": [
         40.74008156533399,
         -74.0250176518893
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "El Mate",
@@ -88,7 +97,8 @@
       "latLng": [
         40.7080568171558,
         -74.01048232307137
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Atelier Ariana",
@@ -97,7 +107,8 @@
       "latLng": [
         40.73012165091339,
         -74.01831069150495
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Viva Mexico Tire Shop",
@@ -106,7 +117,8 @@
       "latLng": [
         40.675617184711484,
         -73.98477167988
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Aboodies",
@@ -115,7 +127,8 @@
       "latLng": [
         40.68203110561077,
         -74.04424956651224
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Loafers Cocktail Bar",
@@ -124,16 +137,18 @@
       "latLng": [
         40.75666092983592,
         -73.99170446821084
-      ]
+      ],
+      "type": "Bar"
     },
     {
-      "name": "Santo Br\u00faklin",
+      "name": "Santo Brúklin",
       "address": "548 Court Street, Brooklyn, 11231",
       "description": "A local brazilian restaurant.",
       "latLng": [
         40.677270378356525,
         -74.0053895779337
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "New Image Beauty Salon",
@@ -142,7 +157,8 @@
       "latLng": [
         40.740170038266434,
         -74.01800073714816
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cacao Prieto",
@@ -151,7 +167,8 @@
       "latLng": [
         40.69144678635086,
         -73.96631647399538
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Tamani Food",
@@ -160,7 +177,8 @@
       "latLng": [
         40.74844633620511,
         -74.04690163104914
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "La Luz",
@@ -169,7 +187,8 @@
       "latLng": [
         40.695694573272434,
         -74.05436561951933
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lundy Bros.",
@@ -178,16 +197,18 @@
       "latLng": [
         40.67752347454097,
         -73.99070601431816
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
-      "name": "Tony\u2019s Deli & Grocery",
+      "name": "Tony’s Deli & Grocery",
       "address": "Near 40.6734, -74.0093, Brooklyn, NY",
       "description": "A local sandwich shop.",
       "latLng": [
         40.71819845740158,
         -73.98378744206549
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Van Brunt Market",
@@ -196,7 +217,8 @@
       "latLng": [
         40.67014965913688,
         -74.04577573923626
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "O & B Hair Salon",
@@ -205,7 +227,8 @@
       "latLng": [
         40.73778199517828,
         -74.03507923375169
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Civic Studio",
@@ -214,7 +237,8 @@
       "latLng": [
         40.691199718024635,
         -74.01249387696228
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Erie Basin",
@@ -223,16 +247,18 @@
       "latLng": [
         40.70213882698903,
         -74.05535028008643
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "Polt At\u00f6lye",
+      "name": "Polt Atölye",
       "address": "390 Van Brunt Street, 11231",
       "description": "A local shop offering unique goods.",
       "latLng": [
         40.667862492264945,
         -74.05306443728516
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Thank You Have A Good Day",
@@ -241,7 +267,8 @@
       "latLng": [
         40.76234340214469,
         -74.02294151529549
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Piscana",
@@ -250,7 +277,8 @@
       "latLng": [
         40.75818171902886,
         -74.02469320641991
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Swoopys Groove Palace",
@@ -259,7 +287,8 @@
       "latLng": [
         40.73439868039222,
         -74.04698218192239
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Botanica",
@@ -268,7 +297,8 @@
       "latLng": [
         40.66552578348432,
         -74.02172604073866
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Brooklyn Crab",
@@ -277,7 +307,8 @@
       "latLng": [
         40.74756814540232,
         -74.04991949828774
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Food Bazaar",
@@ -286,7 +317,8 @@
       "latLng": [
         40.72127352183725,
         -74.00866183219554
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Island Vibes",
@@ -295,7 +327,8 @@
       "latLng": [
         40.66481025965904,
         -74.01487339479822
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Hooked On Plants",
@@ -304,7 +337,8 @@
       "latLng": [
         40.67477407022095,
         -73.99711767933793
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Seaborne",
@@ -313,7 +347,8 @@
       "latLng": [
         40.7450491033241,
         -73.994415707479
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "The Black Flamingo",
@@ -322,7 +357,8 @@
       "latLng": [
         40.75966163812363,
         -74.05210946246848
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Third Time's the Charm",
@@ -331,7 +367,8 @@
       "latLng": [
         40.72378267297599,
         -73.99521613330275
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "La Newyorkina",
@@ -340,7 +377,8 @@
       "latLng": [
         40.715868416813855,
         -73.96480445639106
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "I.N.C. 21",
@@ -349,7 +387,8 @@
       "latLng": [
         40.68510754517041,
         -73.95666003498107
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Fulla Shirts",
@@ -358,7 +397,8 @@
       "latLng": [
         40.6847831869973,
         -74.03110831396896
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Open Invite",
@@ -367,7 +407,8 @@
       "latLng": [
         40.74827894715219,
         -74.01972540319564
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Farm Fresh Organic",
@@ -376,7 +417,8 @@
       "latLng": [
         40.6828691126128,
         -74.03824781997064
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "La Nueva Candy Store",
@@ -385,7 +427,8 @@
       "latLng": [
         40.67489597618956,
         -73.96274030275994
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Associated Supermarket",
@@ -394,7 +437,8 @@
       "latLng": [
         40.751557687280915,
         -73.95953906745375
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lil Larry's Liquor & Wine",
@@ -403,7 +447,8 @@
       "latLng": [
         40.747190743354246,
         -74.01352282864102
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mix House",
@@ -412,7 +457,8 @@
       "latLng": [
         40.7529653601545,
         -73.96549529171173
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "T&H Deli & Bagel",
@@ -421,7 +467,8 @@
       "latLng": [
         40.74772813831305,
         -73.97780934763273
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Columbia Deli",
@@ -430,7 +477,8 @@
       "latLng": [
         40.751405455867975,
         -73.99155160095744
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Awais Auto Repair and Tire Center",
@@ -439,7 +487,8 @@
       "latLng": [
         40.74263999275312,
         -73.97660775092136
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "360 Home Concept",
@@ -448,7 +497,8 @@
       "latLng": [
         40.75762150298417,
         -74.0084940168669
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

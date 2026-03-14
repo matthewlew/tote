@@ -7,7 +7,8 @@
       "latLng": [
         40.72558199211443,
         -73.97980476679398
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "The Duo Coffee & Cocktail Bar",
@@ -16,7 +17,8 @@
       "latLng": [
         40.70393717742144,
         -73.99087977327665
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Tsutaya Books Daikanyama",
@@ -25,16 +27,18 @@
       "latLng": [
         40.72578745964573,
         -74.0265252017722
-      ]
+      ],
+      "type": "Cafe"
     },
     {
-      "name": "Partners Coffee \u2014 Cafe & Roastery",
+      "name": "Partners Coffee — Cafe & Roastery",
       "address": "SoHo",
-      "description": "Stop by Partners Coffee \u2014 Cafe & Roastery for a great cup of coffee. A popular spot for espresso and pastries.",
+      "description": "Stop by Partners Coffee — Cafe & Roastery for a great cup of coffee. A popular spot for espresso and pastries.",
       "latLng": [
         40.673557871607336,
         -74.0035213933456
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Brooklyn Public Library - Greenpoint Branch",
@@ -43,7 +47,8 @@
       "latLng": [
         40.75534903872216,
         -73.95953868054188
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Moka & Co",
@@ -52,7 +57,8 @@
       "latLng": [
         40.76090684803214,
         -73.99999638591375
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Bibliotheque",
@@ -61,16 +67,18 @@
       "latLng": [
         40.69441133720756,
         -74.03498840657214
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Caf\u00e9-Flor",
+      "name": "Café-Flor",
       "address": "Park Slope",
-      "description": "Stop by Caf\u00e9-Flor for a great cup of coffee. A great place to grab a latte.",
+      "description": "Stop by Café-Flor for a great cup of coffee. A great place to grab a latte.",
       "latLng": [
         40.6943047112299,
         -73.96040180827231
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Hungry Cafe",
@@ -79,7 +87,8 @@
       "latLng": [
         40.75991907638989,
         -74.03856794114178
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Cafe Regular",
@@ -88,7 +97,8 @@
       "latLng": [
         40.74858239454625,
         -74.04775511484137
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Ole & Steen",
@@ -97,7 +107,8 @@
       "latLng": [
         40.72253592557178,
         -74.04828643195474
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Vineapple",
@@ -106,25 +117,28 @@
       "latLng": [
         40.73006005015029,
         -73.97382569680418
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Ana\u00efs",
+      "name": "Anaïs",
       "address": "Bushwick",
-      "description": "Stop by Ana\u00efs for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "description": "Stop by Anaïs for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.76237185048054,
         -74.04224095694221
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "D\u00e9butea Brooklyn",
+      "name": "Débutea Brooklyn",
       "address": "Upper West Side",
-      "description": "Stop by D\u00e9butea Brooklyn for a great cup of coffee. Famous for its specialty coffee drinks.",
+      "description": "Stop by Débutea Brooklyn for a great cup of coffee. Famous for its specialty coffee drinks.",
       "latLng": [
         40.75144398502957,
         -73.98316626418344
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "St Kilda Coffee",
@@ -133,7 +147,8 @@
       "latLng": [
         40.75542407426884,
         -73.97421974595144
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "VERVE COFFEE ROASTERS EBISU",
@@ -142,7 +157,8 @@
       "latLng": [
         40.67965870497524,
         -74.04356926003138
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Interlude Coffee & Tea",
@@ -151,7 +167,8 @@
       "latLng": [
         40.71287480974485,
         -73.97837280794211
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "OASES",
@@ -160,7 +177,8 @@
       "latLng": [
         40.75399172571007,
         -74.02687256454803
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Charlotte Cafe",
@@ -169,7 +187,8 @@
       "latLng": [
         40.737540212363356,
         -73.96804474078272
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Beanchain Coffee",
@@ -178,7 +197,8 @@
       "latLng": [
         40.68566588775083,
         -73.99919205475722
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Beanmonger Coffee",
@@ -187,7 +207,8 @@
       "latLng": [
         40.737307443546534,
         -74.00594389852944
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Coffee Project New York | Hell's Kitchen",
@@ -196,7 +217,8 @@
       "latLng": [
         40.72895480082653,
         -74.03479109702931
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Milk & Pull Bed Stuy",
@@ -205,7 +227,8 @@
       "latLng": [
         40.703887172265404,
         -74.02686737536368
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Arlo NoMad",
@@ -214,7 +237,8 @@
       "latLng": [
         40.70840592974351,
         -73.994152282999
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Now or Never Coffee",
@@ -223,7 +247,8 @@
       "latLng": [
         40.730689397445985,
         -73.98162846523711
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Remi43 Flower & Coffee",
@@ -232,7 +257,8 @@
       "latLng": [
         40.696446045114705,
         -73.99571535901057
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Gotham Cafe",
@@ -241,7 +267,8 @@
       "latLng": [
         40.68249750130139,
         -73.98031066472755
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "787 Coffee",
@@ -250,7 +277,8 @@
       "latLng": [
         40.755083724764354,
         -73.97279796890514
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Stumptown Coffee Roasters",
@@ -259,7 +287,8 @@
       "latLng": [
         40.755291999935245,
         -74.02895112495565
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Corto",
@@ -268,7 +297,8 @@
       "latLng": [
         40.74787314639874,
         -73.9808829914977
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Blue Bottle Coffee - Shibuya Cafe",
@@ -277,16 +307,18 @@
       "latLng": [
         40.68484944354172,
         -74.04746808967137
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "MJ (Manny Janeth) Caf\u00e9",
+      "name": "MJ (Manny Janeth) Café",
       "address": "Long Island City",
       "description": "An inviting cafe for working and sipping coffee.",
       "latLng": [
         40.7133968639689,
         -73.95893482335325
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Salt Lake Roasting Co.",
@@ -295,7 +327,8 @@
       "latLng": [
         40.748787035802884,
         -74.05175963891891
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Streamer Coffee Company Nakameguro",
@@ -304,7 +337,8 @@
       "latLng": [
         40.75320612331469,
         -74.02181847762476
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Verve Coffee Roasters",
@@ -313,7 +347,8 @@
       "latLng": [
         40.69193484385654,
         -74.01316984262408
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Cafe Cotton Bean",
@@ -322,7 +357,8 @@
       "latLng": [
         40.75479488755121,
         -73.97414152677648
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Paper Sons Cafe",
@@ -331,7 +367,8 @@
       "latLng": [
         40.74268583956667,
         -73.95624765791183
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Cinico Coffee Company",
@@ -340,7 +377,8 @@
       "latLng": [
         40.68603531773334,
         -73.96541779792089
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Blue Bottle Coffee - Daikan-yama Cafe",
@@ -349,7 +387,8 @@
       "latLng": [
         40.68704107242153,
         -73.98306633332199
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "renewfinds",
@@ -358,7 +397,8 @@
       "latLng": [
         40.66503274916872,
         -73.99794170143439
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Qahwah Valley 1st Ave",
@@ -367,7 +407,8 @@
       "latLng": [
         40.69310367911994,
         -74.02599046639136
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Irving Farm Coffee",
@@ -376,7 +417,8 @@
       "latLng": [
         40.71522737549426,
         -74.00939578886303
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Moshava Coffee",
@@ -385,7 +427,8 @@
       "latLng": [
         40.68907014726689,
         -73.9639799857946
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Haraz Coffee House",
@@ -394,7 +437,8 @@
       "latLng": [
         40.704384917962415,
         -73.96986731120762
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Rawbean Coffee",
@@ -403,7 +447,8 @@
       "latLng": [
         40.71001767442659,
         -73.961015669483
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Mya Coffee, Bakery and Wine Bar",
@@ -412,7 +457,8 @@
       "latLng": [
         40.74614201369859,
         -74.01874444830383
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Butler Bakeshop & Espresso Bar",
@@ -421,16 +467,18 @@
       "latLng": [
         40.75730940265133,
         -74.02331554649084
-      ]
+      ],
+      "type": "Bakery"
     },
     {
-      "name": "Capital One Caf\u00e9",
+      "name": "Capital One Café",
       "address": "Upper West Side",
-      "description": "Stop by Capital One Caf\u00e9 for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
+      "description": "Stop by Capital One Café for a great cup of coffee. A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.66600088690167,
         -73.96825009512399
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Publik Coffee Roasters",
@@ -439,7 +487,8 @@
       "latLng": [
         40.75374871559379,
         -74.0251598376704
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Sammy L Coffee",
@@ -448,16 +497,18 @@
       "latLng": [
         40.71251485695945,
         -74.01365112474518
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Madame Bont\u00e9 Caf\u00e9",
+      "name": "Madame Bonté Café",
       "address": "Carroll Gardens",
-      "description": "Stop by Madame Bont\u00e9 Caf\u00e9 for a great cup of coffee. A great cafe to meet friends or read a book.",
+      "description": "Stop by Madame Bonté Café for a great cup of coffee. A great cafe to meet friends or read a book.",
       "latLng": [
         40.741734691438964,
         -74.04727255419215
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Ace Hotel New York",
@@ -466,7 +517,8 @@
       "latLng": [
         40.667847903602656,
         -73.96307166478185
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "fontainhas + (/du.kaan/)",
@@ -475,7 +527,8 @@
       "latLng": [
         40.71857707492824,
         -74.0339716696677
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Easy Victor Cafe",
@@ -484,16 +537,18 @@
       "latLng": [
         40.761198075349036,
         -74.03241169338116
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Stone Street Caf\u00e9 - Broome St.",
+      "name": "Stone Street Café - Broome St.",
       "address": "East Village",
       "description": "A modern coffee bar with a great selection of roasts.",
       "latLng": [
         40.69100637688422,
         -73.9966562412072
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Asano",
@@ -502,7 +557,8 @@
       "latLng": [
         40.73788946046535,
         -74.03495739092143
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Amano Cafe",
@@ -511,7 +567,8 @@
       "latLng": [
         40.75997400442592,
         -73.97454400271526
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Partners Coffee - West Village",
@@ -520,7 +577,8 @@
       "latLng": [
         40.70929990547779,
         -74.03290127901376
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Trunk",
@@ -529,7 +587,8 @@
       "latLng": [
         40.73515538699204,
         -73.99891696952646
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "PublicUs",
@@ -538,7 +597,8 @@
       "latLng": [
         40.69205006832762,
         -73.99967971399116
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Saturn Road",
@@ -547,7 +607,8 @@
       "latLng": [
         40.70375193199607,
         -73.96979769188965
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Streamer Coffee Company Shibuya",
@@ -556,7 +617,8 @@
       "latLng": [
         40.67758159826018,
         -73.9741587911414
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Poetica Coffee",
@@ -565,7 +627,8 @@
       "latLng": [
         40.754475950952504,
         -74.0039664396135
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Common",
@@ -574,7 +637,8 @@
       "latLng": [
         40.6705339221348,
         -74.00814508059197
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Gotan",
@@ -583,7 +647,8 @@
       "latLng": [
         40.70958604199711,
         -74.03190918084707
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Caffe Duetto",
@@ -592,7 +657,8 @@
       "latLng": [
         40.68587119314207,
         -74.01028956264643
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Roots Coffee Salt Lake City",
@@ -601,7 +667,8 @@
       "latLng": [
         40.67940943769888,
         -73.96075736103833
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "PlantShed Cafe",
@@ -610,7 +677,8 @@
       "latLng": [
         40.70427982919407,
         -73.97383816617545
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Whistle & Fizz",
@@ -619,7 +687,8 @@
       "latLng": [
         40.67572931905855,
         -73.9711537767683
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Ludlow Coffee Supply",
@@ -628,7 +697,8 @@
       "latLng": [
         40.695715119832826,
         -73.99850124921308
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "The Oasis Cafe",
@@ -637,7 +707,8 @@
       "latLng": [
         40.71771992654648,
         -73.95848335251614
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Roasted COFFEE LABORATORY Shibuya Jinnnan store",
@@ -646,7 +717,8 @@
       "latLng": [
         40.73641634269968,
         -74.05502073978829
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Coffee Garden",
@@ -655,7 +727,8 @@
       "latLng": [
         40.677644020636926,
         -74.03329279679043
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Romeo and Juliet Colombian Coffee",
@@ -664,7 +737,8 @@
       "latLng": [
         40.684380918312236,
         -73.96286750324559
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Essex Market",
@@ -673,7 +747,8 @@
       "latLng": [
         40.76245670425267,
         -74.02430442159951
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "DNA Coffee Lounge | Laptop Friendly Cafe & Event Space",
@@ -682,7 +757,8 @@
       "latLng": [
         40.72953837267502,
         -73.99484046537974
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Frisson Espresso 44",
@@ -691,7 +767,8 @@
       "latLng": [
         40.670069013264616,
         -73.9674291313618
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Bean & Bean Chelsea",
@@ -700,7 +777,8 @@
       "latLng": [
         40.70791455853358,
         -74.05533001934626
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Think Coffee",
@@ -709,7 +787,8 @@
       "latLng": [
         40.71927236742671,
         -74.01612270086892
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Blue Bottle Coffee - Roppongi Cafe",
@@ -718,7 +797,8 @@
       "latLng": [
         40.67430263940718,
         -73.99055596969534
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Coffee Project New York | Fort Greene",
@@ -727,16 +807,18 @@
       "latLng": [
         40.683225277280975,
         -74.0497301840952
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Dawn\u2019s Til Dusk",
+      "name": "Dawn’s Til Dusk",
       "address": "Greenpoint",
       "description": "A great cafe to meet friends or read a book.",
       "latLng": [
         40.674542573315655,
         -74.03693230803707
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Slate Cafe NoMad",
@@ -745,7 +827,8 @@
       "latLng": [
         40.66498025936061,
         -74.01217972403168
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Le Cafe Coffee",
@@ -754,7 +837,8 @@
       "latLng": [
         40.71640192953466,
         -74.0518421128493
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Oslo Coffee Roasters (West Village)",
@@ -763,7 +847,8 @@
       "latLng": [
         40.761848357660774,
         -74.03665009658441
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Dialogue Coffee & Flowers",
@@ -772,7 +857,8 @@
       "latLng": [
         40.75196689203959,
         -74.04959466375126
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "TALEA Beer Co.",
@@ -781,7 +867,8 @@
       "latLng": [
         40.71903305823973,
         -73.95987249036679
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Seven Grams Caffe",
@@ -790,7 +877,8 @@
       "latLng": [
         40.72319733777484,
         -74.04629972470377
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Dark Matter Coffee - Adios Amigos",
@@ -799,7 +887,8 @@
       "latLng": [
         40.670038356563644,
         -73.97874263369438
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Connel Coffee",
@@ -808,7 +897,8 @@
       "latLng": [
         40.68800441157634,
         -73.9843405980198
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "VALLEY PARK STAND",
@@ -817,16 +907,18 @@
       "latLng": [
         40.70024749556989,
         -74.03393657864581
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Georgie\u2019s Cafe & Bar",
+      "name": "Georgie’s Cafe & Bar",
       "address": "Astoria",
       "description": "A local favorite for coffee.",
       "latLng": [
         40.732582665229145,
         -73.97356262760782
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Felix Roasting Co.",
@@ -835,7 +927,8 @@
       "latLng": [
         40.71207636129421,
         -74.01441107569944
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "La Colombe Coffee Workshop",
@@ -844,7 +937,8 @@
       "latLng": [
         40.68618259259724,
         -73.97351634043689
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Ace Hotel Brooklyn",
@@ -853,7 +947,8 @@
       "latLng": [
         40.70021299785974,
         -74.0422665289111
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Seedhouse",
@@ -862,7 +957,8 @@
       "latLng": [
         40.696467844019544,
         -73.9807434549631
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Monkey Tiger",
@@ -871,7 +967,8 @@
       "latLng": [
         40.71482333652286,
         -73.97619408063902
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Mori Coffee",
@@ -880,7 +977,8 @@
       "latLng": [
         40.710232711133884,
         -74.02755652469749
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Thayer",
@@ -889,7 +987,8 @@
       "latLng": [
         40.66612007364337,
         -73.97908310922821
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Boris & Horton",
@@ -898,7 +997,8 @@
       "latLng": [
         40.746576847116884,
         -74.02487010882928
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Stripes Wine Bar & Cafe",
@@ -907,7 +1007,8 @@
       "latLng": [
         40.709414271873726,
         -74.02673596300183
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Dayglow",
@@ -916,7 +1017,8 @@
       "latLng": [
         40.691060787273265,
         -73.995814269321
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Gregorys Coffee",
@@ -925,7 +1027,8 @@
       "latLng": [
         40.74229761792028,
         -73.97024755680661
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Perch by WOODBERRY COFFEE Daikanyama",
@@ -934,7 +1037,8 @@
       "latLng": [
         40.680621676269006,
         -73.98588055143588
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Roast8ry Coffee Flagship Store",
@@ -943,7 +1047,8 @@
       "latLng": [
         40.67727286918349,
         -74.02531657627571
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Conwell Coffee & Cocktail Hall",
@@ -952,7 +1057,8 @@
       "latLng": [
         40.69627937291697,
         -74.02280263695279
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Velvette Black",
@@ -961,7 +1067,8 @@
       "latLng": [
         40.678976412679084,
         -73.97441124826346
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "CoffeeShop | Bakery + Micro-Roastery",
@@ -970,7 +1077,8 @@
       "latLng": [
         40.68085816559005,
         -74.04037928364032
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Sweetleaf Coffee Roasters",
@@ -979,7 +1087,8 @@
       "latLng": [
         40.73850093048122,
         -74.05155394685579
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Sahola Cafe",
@@ -988,7 +1097,8 @@
       "latLng": [
         40.73833967674169,
         -74.0170817234414
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "outro nyc",
@@ -997,7 +1107,8 @@
       "latLng": [
         40.672361131935475,
         -73.98224222579084
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Telegraphe Cafe.",
@@ -1006,7 +1117,8 @@
       "latLng": [
         40.70068457813979,
         -73.98076122321949
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Da Legna at Nolo",
@@ -1015,7 +1127,8 @@
       "latLng": [
         40.742664432252255,
         -74.04509455296191
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "designers collab.",
@@ -1024,7 +1137,8 @@
       "latLng": [
         40.688536368763735,
         -74.04518538510308
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Urbana Cafe and Gallery",
@@ -1033,16 +1147,18 @@
       "latLng": [
         40.689737423825854,
         -73.9740922110867
-      ]
+      ],
+      "type": "Coffee"
     },
     {
-      "name": "Devoci\u00f3n",
+      "name": "Devoción",
       "address": "Harlem",
       "description": "A great place to grab a latte.",
       "latLng": [
         40.73490073243491,
         -73.96594159724418
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Sightglass Coffee",
@@ -1051,7 +1167,8 @@
       "latLng": [
         40.73793318556739,
         -74.0392169302705
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "GATHER espresso & wine bar",
@@ -1060,7 +1177,8 @@
       "latLng": [
         40.695589064116845,
         -74.051101288861
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Pairing",
@@ -1069,7 +1187,8 @@
       "latLng": [
         40.748095862442455,
         -73.95945675962129
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Paper Coffee",
@@ -1078,7 +1197,8 @@
       "latLng": [
         40.74211268956637,
         -74.04950640447115
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "King's Street Coffee",
@@ -1087,7 +1207,8 @@
       "latLng": [
         40.66338767316479,
         -74.016949297408
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Still Life",
@@ -1096,7 +1217,8 @@
       "latLng": [
         40.72942857966115,
         -73.9566691622748
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "GOOD SOUND COFFEE",
@@ -1105,7 +1227,8 @@
       "latLng": [
         40.662841537734074,
         -73.96043612750772
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Brooklyn Tea",
@@ -1114,16 +1237,18 @@
       "latLng": [
         40.686270202660765,
         -74.03331817904368
-      ]
+      ],
+      "type": "Tea"
     },
     {
-      "name": "Caf\u00e9-Flor / Bar 21",
+      "name": "Café-Flor / Bar 21",
       "address": "Long Island City",
       "description": "A perfect spot for a morning coffee run.",
       "latLng": [
         40.67790936466003,
         -74.02870825461218
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Barnes & Noble",
@@ -1132,7 +1257,8 @@
       "latLng": [
         40.728707529441934,
         -73.9890850801886
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Coffee Project New York | Chelsea",
@@ -1141,7 +1267,8 @@
       "latLng": [
         40.72100878838266,
         -73.9686676149734
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "JOE & THE JUICE",
@@ -1150,7 +1277,8 @@
       "latLng": [
         40.74921351816457,
         -74.02881722071932
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Semicolon Cafe",
@@ -1159,7 +1287,8 @@
       "latLng": [
         40.73443745629543,
         -73.95858144773607
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Blue Bottle Coffee",
@@ -1168,7 +1297,8 @@
       "latLng": [
         40.742322418216645,
         -73.98709860094688
-      ]
+      ],
+      "type": "Coffee"
     }
   ]
 }

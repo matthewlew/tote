@@ -7,7 +7,8 @@
       "latLng": [
         40.716188025123394,
         -73.97418451200697
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "M & A Design",
@@ -16,7 +17,8 @@
       "latLng": [
         40.701252379281016,
         -74.05490522183007
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Vinegar Hill House",
@@ -25,16 +27,18 @@
       "latLng": [
         40.723620062480535,
         -74.00721472104456
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
-      "name": "The River Caf\u00e9",
+      "name": "The River Café",
       "address": "1 Water Street, Brooklyn, 11201",
       "description": "A local new_american restaurant.",
       "latLng": [
         40.739383814268045,
         -73.95993038307887
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Peas & Pickles",
@@ -43,7 +47,8 @@
       "latLng": [
         40.756798285052014,
         -73.95876326068284
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Jacques Torres Chocolates",
@@ -52,7 +57,8 @@
       "latLng": [
         40.728932544546524,
         -74.02958478316651
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Grimaldi's Pizzeria",
@@ -61,16 +67,18 @@
       "latLng": [
         40.74521790446208,
         -73.96430503298237
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
-      "name": "Tutt Caf\u00e9",
+      "name": "Tutt Café",
       "address": "Near 40.7033, -73.9881, Brooklyn, NY",
       "description": "A local mediterranean cafe.",
       "latLng": [
         40.706919630109255,
         -73.99096202509968
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Inga's Bar",
@@ -79,7 +87,8 @@
       "latLng": [
         40.75933873244817,
         -74.02034982814574
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Poppy's Cafe",
@@ -88,7 +97,8 @@
       "latLng": [
         40.6840730639819,
         -74.03249914261357
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Jules",
@@ -97,7 +107,8 @@
       "latLng": [
         40.67559197323587,
         -74.04900146664512
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Gristedes",
@@ -106,7 +117,8 @@
       "latLng": [
         40.692204380295145,
         -73.99476988061309
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ozu",
@@ -115,7 +127,8 @@
       "latLng": [
         40.750455917013554,
         -74.04322889127944
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Clark's Restaurant",
@@ -124,7 +137,8 @@
       "latLng": [
         40.6822669216053,
         -74.04204533959431
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Ferrane",
@@ -133,7 +147,8 @@
       "latLng": [
         40.75459417419437,
         -73.95675571271452
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Han's Market",
@@ -142,7 +157,8 @@
       "latLng": [
         40.73984414078726,
         -74.00745264393163
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "CVS Pharmacy",
@@ -151,7 +167,8 @@
       "latLng": [
         40.745225634762775,
         -74.02278400819475
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Careland Pharmacy",
@@ -160,7 +177,8 @@
       "latLng": [
         40.727705648285486,
         -74.0102854887703
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "All in One Deli Mart",
@@ -169,7 +187,8 @@
       "latLng": [
         40.66887160215463,
         -73.98068745481888
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Penny Bridge Store",
@@ -178,7 +197,8 @@
       "latLng": [
         40.75088226261554,
         -74.01548754624288
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "NYU Langone Eye Center",
@@ -187,7 +207,8 @@
       "latLng": [
         40.73490924603748,
         -74.03320998725829
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Marigold Beauty Space",
@@ -196,7 +217,8 @@
       "latLng": [
         40.6666491568003,
         -74.05227375963999
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Binc",
@@ -205,7 +227,8 @@
       "latLng": [
         40.70312035555168,
         -73.99459633172916
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Henry's End",
@@ -214,7 +237,8 @@
       "latLng": [
         40.68237381814585,
         -74.03150127492663
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Paws on Pineapple",
@@ -223,16 +247,18 @@
       "latLng": [
         40.71964097117992,
         -73.95835575919448
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "Plymouth Caf\u00e9",
+      "name": "Plymouth Café",
       "address": "90 Henry Street, 11201",
       "description": "A local breakfast, sandwich cafe.",
       "latLng": [
         40.67465016177682,
         -74.04464528139331
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Studio Diva Salon",
@@ -241,7 +267,8 @@
       "latLng": [
         40.7499234889915,
         -73.99700779883507
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Coleman Cleaners",
@@ -250,7 +277,8 @@
       "latLng": [
         40.714805586116405,
         -73.99598318155077
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "New Xcell Auto Repair",
@@ -259,7 +287,8 @@
       "latLng": [
         40.679656441441985,
         -74.02328085601842
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "L&B Spumoni Gardens",
@@ -268,7 +297,8 @@
       "latLng": [
         40.73455247536864,
         -73.96582126529286
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Joe Coffee Company",
@@ -277,7 +307,8 @@
       "latLng": [
         40.71134134603778,
         -74.03222143538231
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Noodle Pudding",
@@ -286,7 +317,8 @@
       "latLng": [
         40.672697313063956,
         -74.03802376088757
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Le French Tart Deli",
@@ -295,7 +327,8 @@
       "latLng": [
         40.71046440190592,
         -74.02748351105298
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Mint Heights",
@@ -304,7 +337,8 @@
       "latLng": [
         40.75519110637913,
         -73.97816369694314
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "City Closet Storage/Moving",
@@ -313,7 +347,8 @@
       "latLng": [
         40.669897675185645,
         -73.98264153085817
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Gold Street Market",
@@ -322,7 +357,8 @@
       "latLng": [
         40.725152183486706,
         -73.97484322063798
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Concord Market",
@@ -331,7 +367,8 @@
       "latLng": [
         40.710513897677956,
         -74.01029030807457
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Brooklyn Bridge Cafe",
@@ -340,7 +377,8 @@
       "latLng": [
         40.71067606390452,
         -74.0521765584588
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "DUMBO Gourmet Deli",
@@ -349,7 +387,8 @@
       "latLng": [
         40.69072457589844,
         -73.99444568756668
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Fine Food",
@@ -358,7 +397,8 @@
       "latLng": [
         40.67566392491772,
         -74.04320416048259
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Superfine",
@@ -367,7 +407,8 @@
       "latLng": [
         40.68597442835756,
         -74.02786449571087
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Glam Expressway",
@@ -376,7 +417,8 @@
       "latLng": [
         40.73733443949042,
         -74.04918680936376
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Hudson Wilder",
@@ -385,7 +427,8 @@
       "latLng": [
         40.69690076603508,
         -74.02908345333624
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Mumu Bath",
@@ -394,7 +437,8 @@
       "latLng": [
         40.66870681712555,
         -73.95814852967715
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Cafe Gitane",
@@ -403,7 +447,8 @@
       "latLng": [
         40.71031515313447,
         -73.96604807527974
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Front Street Pizza",
@@ -412,7 +457,8 @@
       "latLng": [
         40.68818060974857,
         -74.0306135625356
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Al Mar",
@@ -421,7 +467,8 @@
       "latLng": [
         40.75861610415115,
         -73.96251861520678
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Plaza M Spa",
@@ -430,7 +477,8 @@
       "latLng": [
         40.724651653762635,
         -74.03793483230626
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Modern Chemist",
@@ -439,7 +487,8 @@
       "latLng": [
         40.73238094855756,
         -74.03028223848717
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Seamore's",
@@ -448,7 +497,8 @@
       "latLng": [
         40.7009927048143,
         -73.99588147098956
-      ]
+      ],
+      "type": "Restaurant"
     }
   ]
 }

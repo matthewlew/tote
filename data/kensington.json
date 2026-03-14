@@ -7,7 +7,8 @@
       "latLng": [
         40.73603295619774,
         -74.04038473610993
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Cortelyou Green Market",
@@ -16,7 +17,8 @@
       "latLng": [
         40.69794048165276,
         -74.0060786965255
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "The Castello Plan",
@@ -25,7 +27,8 @@
       "latLng": [
         40.69834996361333,
         -74.00576680694513
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Drugs Care Pharmacy",
@@ -34,7 +37,8 @@
       "latLng": [
         40.67052142312672,
         -73.96490795656808
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Andrew's Coffee Shop",
@@ -43,7 +47,8 @@
       "latLng": [
         40.678994044808874,
         -74.04367975698248
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "E7 Deli",
@@ -52,7 +57,8 @@
       "latLng": [
         40.73581733161718,
         -73.97939221982152
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Moon Deli & Grocery",
@@ -61,7 +67,8 @@
       "latLng": [
         40.728902406055624,
         -73.99612634446568
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Lofty Pigeon Books",
@@ -70,7 +77,8 @@
       "latLng": [
         40.740317233338615,
         -73.97521475281386
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "My Tool Rental",
@@ -79,7 +87,8 @@
       "latLng": [
         40.75539984317245,
         -74.05279472770218
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Design Z&L Nails",
@@ -88,7 +97,8 @@
       "latLng": [
         40.699601478179886,
         -74.00504450893057
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Lea",
@@ -97,7 +107,8 @@
       "latLng": [
         40.75701237247942,
         -73.99163415571886
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Sammy's Stop & Shop",
@@ -106,7 +117,8 @@
       "latLng": [
         40.66290466543445,
         -73.96788723519892
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "King Mother",
@@ -115,7 +127,8 @@
       "latLng": [
         40.71728900644553,
         -73.96361573159953
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Mimi's Hummus",
@@ -124,7 +137,8 @@
       "latLng": [
         40.680786070056236,
         -74.01472927706112
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Father & Sons Delicatessen",
@@ -133,7 +147,8 @@
       "latLng": [
         40.713980219163226,
         -73.96390557483014
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Berand's Accounting & Travel",
@@ -142,7 +157,8 @@
       "latLng": [
         40.68862927892762,
         -74.01357315280028
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Kings County Wines",
@@ -151,7 +167,8 @@
       "latLng": [
         40.69620588448085,
         -73.96039527008244
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Natural Frontier Market",
@@ -160,7 +177,8 @@
       "latLng": [
         40.69980778321392,
         -74.00404074161163
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mian Convenience & Deli",
@@ -169,7 +187,8 @@
       "latLng": [
         40.69745548791871,
         -73.98787677206879
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Blush",
@@ -178,7 +197,8 @@
       "latLng": [
         40.71554909841911,
         -74.03351656624284
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Sawera Garments & Tailoring",
@@ -187,7 +207,8 @@
       "latLng": [
         40.689955006148985,
         -73.96651476102095
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Urgut Osh Markazi",
@@ -196,7 +217,8 @@
       "latLng": [
         40.6955921540319,
         -74.02267155220112
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "New Fashion",
@@ -205,7 +227,8 @@
       "latLng": [
         40.68363404673664,
         -74.04571968379649
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Desi Bazzar Supermarket",
@@ -214,7 +237,8 @@
       "latLng": [
         40.710345004852215,
         -74.02485651625724
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Citi Hardware & Lumber",
@@ -223,7 +247,8 @@
       "latLng": [
         40.69254072447215,
         -74.03066971018127
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "El Mexicano",
@@ -232,7 +257,8 @@
       "latLng": [
         40.708462594840434,
         -73.97986137041079
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "18th Ave Deli Grocery",
@@ -241,7 +267,8 @@
       "latLng": [
         40.75981292550619,
         -73.96749166486808
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "A Little Bit of Something",
@@ -250,7 +277,8 @@
       "latLng": [
         40.69221912177233,
         -73.95996010991817
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Discount Wine & Liquors",
@@ -259,7 +287,8 @@
       "latLng": [
         40.675530922525404,
         -74.00141507076488
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Shashlik House",
@@ -268,7 +297,8 @@
       "latLng": [
         40.75255392101352,
         -74.04720516840449
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Yeyo Food Corp",
@@ -277,7 +307,8 @@
       "latLng": [
         40.735858864893736,
         -74.01909818720056
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Dahill Laundry",
@@ -286,7 +317,8 @@
       "latLng": [
         40.702689036603864,
         -74.03396890826944
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bismillah",
@@ -295,7 +327,8 @@
       "latLng": [
         40.71264903724882,
         -73.96298586085166
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Amishapara Bazar",
@@ -304,7 +337,8 @@
       "latLng": [
         40.665318009217515,
         -74.03121843790119
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Extra Space Storage",
@@ -313,7 +347,8 @@
       "latLng": [
         40.72520899131958,
         -74.0146410042468
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Punctual Auto Center",
@@ -322,7 +357,8 @@
       "latLng": [
         40.675399373222824,
         -74.04356705784735
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Rashman Fashion",
@@ -331,7 +367,8 @@
       "latLng": [
         40.750143471556314,
         -74.03381914839994
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Albemarle Food Center",
@@ -340,7 +377,8 @@
       "latLng": [
         40.7521798839279,
         -74.04655167779556
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Magic Deli & Grocery",
@@ -349,7 +387,8 @@
       "latLng": [
         40.71359161109741,
         -74.0345164638506
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "DJ Jewelry",
@@ -358,7 +397,8 @@
       "latLng": [
         40.72157463836876,
         -74.03185577103332
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "MF Discount",
@@ -367,7 +407,8 @@
       "latLng": [
         40.66698260694982,
         -74.03990768985165
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Real Polish Delicatessen",
@@ -376,7 +417,8 @@
       "latLng": [
         40.66926004981111,
         -74.02266457220053
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Nail Plus",
@@ -385,7 +427,8 @@
       "latLng": [
         40.68936856511869,
         -74.04308579428016
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Astro Dry Cleaners",
@@ -394,7 +437,8 @@
       "latLng": [
         40.664548383460065,
         -73.99505347688476
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Isaac Apple Farm",
@@ -403,7 +447,8 @@
       "latLng": [
         40.66675100843179,
         -74.00087143510328
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Jobby Wine & Liquor",
@@ -412,7 +457,8 @@
       "latLng": [
         40.69373342871844,
         -74.02400071966797
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Luncheonette",
@@ -421,7 +467,8 @@
       "latLng": [
         40.73714107668554,
         -74.01214663493785
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Asia Harbor",
@@ -430,7 +477,8 @@
       "latLng": [
         40.69607739235782,
         -73.96879865638853
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Mash Beauty Salon",
@@ -439,7 +487,8 @@
       "latLng": [
         40.70675069578782,
         -74.02179753135415
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Amazing Grace CC Nail Spa",
@@ -448,7 +497,8 @@
       "latLng": [
         40.701972070665924,
         -73.9660329577325
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }

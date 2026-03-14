@@ -7,7 +7,8 @@
       "latLng": [
         40.74926666601501,
         -73.98118560819465
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Boutros",
@@ -16,7 +17,8 @@
       "latLng": [
         40.67926174638842,
         -74.00413335175267
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Mocha Hookah",
@@ -25,7 +27,8 @@
       "latLng": [
         40.67699606115839,
         -73.98847613238841
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Dellapietras",
@@ -34,7 +37,8 @@
       "latLng": [
         40.703030344284144,
         -73.99557755028952
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Mikado",
@@ -43,7 +47,8 @@
       "latLng": [
         40.71044163746825,
         -74.01587515939791
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Duman Home",
@@ -52,7 +57,8 @@
       "latLng": [
         40.735788188622884,
         -73.98051430213351
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "A+ Skincare & Lash",
@@ -61,7 +67,8 @@
       "latLng": [
         40.72567265693936,
         -73.98839582509017
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "My Favorite Cleaners & Laundry",
@@ -70,7 +77,8 @@
       "latLng": [
         40.751966594242475,
         -74.02403268274891
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Damascus Bread & Bakery",
@@ -79,7 +87,8 @@
       "latLng": [
         40.74299569876512,
         -73.99187495562333
-      ]
+      ],
+      "type": "Bakery"
     },
     {
       "name": "Bubbly Laundromat",
@@ -88,16 +97,18 @@
       "latLng": [
         40.67120695304908,
         -73.96068157390847
-      ]
+      ],
+      "type": "Shop"
     },
     {
-      "name": "The River Caf\u00e9",
+      "name": "The River Café",
       "address": "1 Water Street, Brooklyn, 11201",
       "description": "A local new_american restaurant.",
       "latLng": [
         40.70476496384699,
         -73.97395230379408
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Peas & Pickles",
@@ -106,7 +117,8 @@
       "latLng": [
         40.74474973719973,
         -74.03620755540173
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Jacques Torres Chocolates",
@@ -115,7 +127,8 @@
       "latLng": [
         40.727634474252675,
         -74.0409577579865
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Grimaldi's Pizzeria",
@@ -124,16 +137,18 @@
       "latLng": [
         40.70613555442705,
         -73.98023186262951
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
-      "name": "Tutt Caf\u00e9",
+      "name": "Tutt Café",
       "address": "Near 40.6950, -73.9936, Brooklyn, NY",
       "description": "A local mediterranean cafe.",
       "latLng": [
         40.673555235073906,
         -73.97599123622417
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Inga's Bar",
@@ -142,7 +157,8 @@
       "latLng": [
         40.72201191313623,
         -73.99418972180914
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Poppy's Cafe",
@@ -151,7 +167,8 @@
       "latLng": [
         40.724307837820945,
         -73.97580069407088
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Jules",
@@ -160,7 +177,8 @@
       "latLng": [
         40.69223400403518,
         -74.03868940125399
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Gristedes",
@@ -169,7 +187,8 @@
       "latLng": [
         40.752978902168266,
         -74.03171828980533
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Punto Ottico",
@@ -178,7 +197,8 @@
       "latLng": [
         40.76049824670935,
         -73.9687109051476
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "David's Barber Shop",
@@ -187,7 +207,8 @@
       "latLng": [
         40.72085119919937,
         -74.01414861055878
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "Layla Jones",
@@ -196,7 +217,8 @@
       "latLng": [
         40.70455485084091,
         -73.9932214056917
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "The Six Bells",
@@ -205,7 +227,8 @@
       "latLng": [
         40.71199942538058,
         -74.01877260185434
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Ozu",
@@ -214,7 +237,8 @@
       "latLng": [
         40.67354650761561,
         -74.00276609422093
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Clark's Restaurant",
@@ -223,7 +247,8 @@
       "latLng": [
         40.68229822202381,
         -74.0068796377026
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Bagel Cafe",
@@ -232,7 +257,8 @@
       "latLng": [
         40.72154481303156,
         -73.96501598209798
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Tripoli",
@@ -241,7 +267,8 @@
       "latLng": [
         40.679817527078065,
         -74.01266580930039
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Buzzy",
@@ -250,7 +277,8 @@
       "latLng": [
         40.70900910980311,
         -74.02088167253034
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Felice",
@@ -259,7 +287,8 @@
       "latLng": [
         40.73221104482482,
         -74.05003542587984
-      ]
+      ],
+      "type": "Restaurant"
     },
     {
       "name": "Ferrane",
@@ -268,7 +297,8 @@
       "latLng": [
         40.706003269910084,
         -73.99635390017637
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Han's Market",
@@ -277,7 +307,8 @@
       "latLng": [
         40.70909642965304,
         -74.02700742766702
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "CVS Pharmacy",
@@ -286,7 +317,8 @@
       "latLng": [
         40.709916879925274,
         -73.9695391820492
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Newsstand",
@@ -295,7 +327,8 @@
       "latLng": [
         40.68037116500668,
         -73.9697996152427
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Careland Pharmacy",
@@ -304,7 +337,8 @@
       "latLng": [
         40.717248736579236,
         -73.95680775477742
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Bareburger",
@@ -313,7 +347,8 @@
       "latLng": [
         40.696065518200434,
         -74.04195029812045
-      ]
+      ],
+      "type": "Bar"
     },
     {
       "name": "The Shade Store",
@@ -322,7 +357,8 @@
       "latLng": [
         40.711428317767385,
         -74.018403759538
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "All in One Deli Mart",
@@ -331,7 +367,8 @@
       "latLng": [
         40.75545386575981,
         -74.03037831360763
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Smith Convenience",
@@ -340,7 +377,8 @@
       "latLng": [
         40.72483038336595,
         -74.01791063105752
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Tipsy Grape",
@@ -349,7 +387,8 @@
       "latLng": [
         40.727254403109086,
         -74.03963720298442
-      ]
+      ],
+      "type": "Place"
     },
     {
       "name": "Smith Gourmet Deli",
@@ -358,7 +397,8 @@
       "latLng": [
         40.72090062418722,
         -73.97416349044259
-      ]
+      ],
+      "type": "Deli"
     },
     {
       "name": "Fox & Jane Salon",
@@ -367,7 +407,8 @@
       "latLng": [
         40.66431174450169,
         -73.99422556651437
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Salter House",
@@ -376,7 +417,8 @@
       "latLng": [
         40.73674364609294,
         -73.99891006077718
-      ]
+      ],
+      "type": "Coffee"
     },
     {
       "name": "Brooklyn Heights Deli",
@@ -385,16 +427,18 @@
       "latLng": [
         40.75145200087428,
         -74.01853869077846
-      ]
+      ],
+      "type": "Deli"
     },
     {
-      "name": "Dilj\u0101n",
+      "name": "Diljān",
       "address": "330 Hicks Street, 11201",
       "description": "A local afghan, pastry cafe.",
       "latLng": [
         40.69375087194682,
         -73.96243985828896
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Hatchet Outdoor Supply Company",
@@ -403,7 +447,8 @@
       "latLng": [
         40.701221008125955,
         -74.01288157241976
-      ]
+      ],
+      "type": "Shop"
     },
     {
       "name": "Diem Eatery",
@@ -412,7 +457,8 @@
       "latLng": [
         40.67136286219725,
         -74.00535752316732
-      ]
+      ],
+      "type": "Cafe"
     },
     {
       "name": "Antik",
@@ -421,7 +467,8 @@
       "latLng": [
         40.70352761887941,
         -74.00120836867805
-      ]
+      ],
+      "type": "Shop"
     }
   ]
 }
