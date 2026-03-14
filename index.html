@@ -398,6 +398,8 @@ footer {
       const row = document.createElement('div');
       row.className = 'row';
       row.tabIndex = 0; // Make row focusable via keyboard
+      row.setAttribute('role', 'button');
+      row.setAttribute('aria-expanded', 'false');
 
       const line = document.createElement('div');
       line.className = 'line';
@@ -479,6 +481,7 @@ footer {
         // Ignore clicks on links
         if (e.target.closest('a')) return;
         row.classList.toggle('expanded');
+        row.setAttribute('aria-expanded', row.classList.contains('expanded'));
       });
 
       listEl.appendChild(row);
@@ -634,6 +637,15 @@ footer {
           link.click();
           return;
         }
+      }
+    }
+
+    if (e.key === ' ' || e.key === 'Spacebar') {
+      if (document.activeElement && document.activeElement.classList.contains('row')) {
+        e.preventDefault(); // Prevent page scroll
+        document.activeElement.classList.toggle('expanded');
+        document.activeElement.setAttribute('aria-expanded', document.activeElement.classList.contains('expanded'));
+        return;
       }
     }
 
