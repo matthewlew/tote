@@ -5,3 +5,7 @@
 ## 2025-03-13 - Keyboard Navigation in Custom List Items
 **Learning:** When building custom list components (like `.row` elements) without semantic `<ul>` and `<li>` structure, it is crucial to explicitly manage focus. Setting `tabindex="0"` programmatically allows them to receive keyboard focus, but users are left lost if the `focus-visible` states do not match or align closely with the mouse `:hover` states, ensuring parity of experience. Arrow key support dramatically speeds up navigation vs. repeatedly pressing `Tab`.
 **Action:** Always replicate or mirror `hover` styles onto `focus-visible` for list items, explicitly set `tabindex` on interactable custom rows, and bind arrow key navigation alongside visual keyboard shortcut hints in the UI.
+
+## 2026-03-14 - Interactive List Row Accessibility
+**Learning:** For custom list components using `<div>` that expand/collapse, mouse users could click to expand, but keyboard users had no way to reveal the item description text. Furthermore, the expand/collapse state wasn't communicated to assistive tech.
+**Action:** When building custom interactive rows, always bind `keydown` listeners (e.g. `Space` or `Enter`) to trigger the same logic as the click handler, and initialize/toggle `aria-expanded` attributes on the interactable element.
