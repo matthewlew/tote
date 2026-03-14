@@ -7,7 +7,11 @@
       "latLng": [
         40.754465504166646,
         -74.04558101177227
-      ]
+      ],
+      "article": {
+        "url": "https://www.theinfatuation.com/new-york/guides/best-new-new-york-restaurants-hit-list",
+        "title": "Best 100 restaurants in 2026"
+      }
     },
     {
       "name": "Mugs Ale House",
@@ -226,7 +230,7 @@
       ]
     },
     {
-      "name": "Cari\u00f1o",
+      "name": "Cariño",
       "address": "82 South 4th Street, Brooklyn, 11211",
       "description": "A local mexican restaurant.",
       "latLng": [
@@ -262,7 +266,7 @@
       ]
     },
     {
-      "name": "Mol\u00e9",
+      "name": "Molé",
       "address": "178 Kent Avenue, Brooklyn, 11211",
       "description": "A local mexican restaurant.",
       "latLng": [
@@ -280,7 +284,7 @@
       ]
     },
     {
-      "name": "Dok\u00e9bi",
+      "name": "Dokébi",
       "address": "199 Grand Street, Brooklyn, 11211",
       "description": "A neighborhood restaurant serving delicious meals.",
       "latLng": [

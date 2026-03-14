@@ -603,8 +603,15 @@ footer {
       if (item.description) {
         const desc = document.createElement('div');
         desc.className = 'row-desc';
-        desc.textContent = item.description;
+        desc.textContent = item.description.startsWith("Known for:") ? item.description : `Known for: ${item.description}`;
         row.appendChild(desc);
+      }
+
+      if (item.article) {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'row-desc';
+        articleDiv.innerHTML = `Link: <a href="${item.article.url}" target="_blank" rel="noopener noreferrer">${item.article.title}</a>`;
+        row.appendChild(articleDiv);
       }
 
       row.addEventListener('click', (e) => {
