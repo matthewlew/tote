@@ -192,6 +192,9 @@ footer {
       <select id="neighborhood-select" class="category-btn" aria-label="Select Neighborhood">
         <option value="" disabled selected>Neighborhoods...</option>
       </select>
+      <select id="superlative-select" class="category-btn" aria-label="Select Category">
+        <option value="" selected>All Categories</option>
+      </select>
     </div>
   </div>
   <span class="meta"><span id="hd-n"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
@@ -233,6 +236,7 @@ footer {
   const navEl = document.getElementById('category-nav');
   const locateMeBtn = document.getElementById('locate-me-btn');
   const neighborhoodSelect = document.getElementById('neighborhood-select');
+  const superlativeSelect = document.getElementById('superlative-select');
   const indicators = {
     type: document.querySelector('[data-indicator="type"]'),
     name: document.querySelector('[data-indicator="name"]'),
@@ -240,11 +244,13 @@ footer {
   };
 
   let categories = [];
+  let superlatives = [];
 
   // ⚡ Bolt Optimization: Cache category data to prevent redundant network requests
   const categoryCache = {};
 
   let currentCategory = null;
+  let currentSuperlative = null;
   let items = [];
   let currentSort = { key: 'distance', direction: 'asc' };
 
@@ -270,10 +276,32 @@ footer {
     });
   }
 
+  function initSuperlativeDropdown() {
+    superlatives.forEach(sup => {
+      const option = document.createElement('option');
+      option.value = sup.id;
+      option.textContent = sup.name;
+      superlativeSelect.appendChild(option);
+    });
+
+    superlativeSelect.addEventListener('change', (e) => {
+      const targetId = e.target.value;
+      if (targetId === "") {
+        currentSuperlative = null;
+      } else {
+        currentSuperlative = superlatives.find(s => s.id === targetId);
+      }
+      loadCategoryData();
+    });
+  }
+
   function renderNav() {
     navEl.innerHTML = '';
     // Limit to displaying the top 5 neighborhoods in the top nav
     const visibleCategories = categories.slice(0, 5);
+
+    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
+    const fragment = document.createDocumentFragment();
     visibleCategories.forEach((cat, index) => {
       const btn = document.createElement('button');
       btn.type = 'button';
@@ -291,25 +319,35 @@ footer {
           loadCategoryData();
         }
       });
-      navEl.appendChild(btn);
+      fragment.appendChild(btn);
     });
+    navEl.appendChild(fragment);
   }
 
   async function loadCategoryData() {
     renderNav();
     listEl.innerHTML = 'Loading...';
 
+    // Determine the correct file path based on neighborhood and selected superlative
+    let filePath = currentCategory.file;
+    let cacheKey = currentCategory.id;
+
+    if (currentSuperlative) {
+      filePath = `/data/${currentCategory.id}_${currentSuperlative.id}.json`;
+      cacheKey = `${currentCategory.id}_${currentSuperlative.id}`;
+    }
+
     // ⚡ Bolt Optimization: Use cached data if available
-    if (categoryCache[currentCategory.id]) {
-      items = categoryCache[currentCategory.id].slice();
+    if (categoryCache[cacheKey]) {
+      items = categoryCache[cacheKey].slice();
     } else {
       try {
-        const res = await fetch(currentCategory.file);
+        const res = await fetch(filePath);
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const data = await res.json();
 
         const categoryItems = data[currentCategory.dataKey] || [];
-        categoryCache[currentCategory.id] = categoryItems;
+        categoryCache[cacheKey] = categoryItems;
         items = categoryItems.slice();
       } catch (err) {
         console.error('failed to load data', err);
@@ -370,10 +408,15 @@ footer {
     listEl.innerHTML = '';
     countEl.textContent = `${items.length} ${currentCategory.unit}`;
 
+    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
+    const fragment = document.createDocumentFragment();
+
     items.forEach(item => {
       const row = document.createElement('div');
       row.className = 'row';
       row.tabIndex = 0; // Make row focusable via keyboard
+      row.setAttribute('role', 'button');
+      row.setAttribute('aria-expanded', 'false');
 
       const line = document.createElement('div');
       line.className = 'line';
@@ -449,18 +492,28 @@ footer {
       if (item.description) {
         const desc = document.createElement('div');
         desc.className = 'row-desc';
-        desc.textContent = item.description;
+        desc.textContent = item.description.startsWith("Known for:") ? item.description : `Known for: ${item.description}`;
         row.appendChild(desc);
+      }
+
+      if (item.article) {
+        const articleDiv = document.createElement('div');
+        articleDiv.className = 'row-desc';
+        articleDiv.innerHTML = `Link: <a href="${item.article.url}" target="_blank" rel="noopener noreferrer">${item.article.title}</a>`;
+        row.appendChild(articleDiv);
       }
 
       row.addEventListener('click', (e) => {
         // Ignore clicks on links
         if (e.target.closest('a')) return;
         row.classList.toggle('expanded');
+        row.setAttribute('aria-expanded', row.classList.contains('expanded'));
       });
 
-      listEl.appendChild(row);
+      fragment.appendChild(row);
     });
+
+    listEl.appendChild(fragment);
   }
 
   function handleSort(key) {
@@ -615,6 +668,15 @@ footer {
       }
     }
 
+    if (e.key === ' ' || e.key === 'Spacebar') {
+      if (document.activeElement && document.activeElement.classList.contains('row')) {
+        e.preventDefault(); // Prevent page scroll
+        document.activeElement.classList.toggle('expanded');
+        document.activeElement.setAttribute('aria-expanded', document.activeElement.classList.contains('expanded'));
+        return;
+      }
+    }
+
     if (k === 'd') {
       handleSort('distance');
     } else if (k === 't') {
@@ -628,15 +690,25 @@ footer {
 
   async function loadCategories() {
     try {
-      const res = await fetch('/neighborhoods.json');
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-      categories = await res.json();
+      const [resNeighborhoods, resSuperlatives] = await Promise.all([
+        fetch('/neighborhoods.json'),
+        fetch('/categories.json')
+      ]);
+
+      if (!resNeighborhoods.ok) throw new Error(`HTTP error! status: ${resNeighborhoods.status}`);
+      categories = await resNeighborhoods.json();
       currentCategory = categories[0];
+
+      if (resSuperlatives.ok) {
+        superlatives = await resSuperlatives.json();
+      }
+
       initNeighborhoodDropdown();
+      initSuperlativeDropdown();
       loadCategoryData();
     } catch (err) {
-      console.error('failed to load neighborhoods', err);
-      listEl.innerHTML = 'Error loading neighborhoods.';
+      console.error('failed to load data', err);
+      listEl.innerHTML = 'Error loading data.';
     }
   }
 

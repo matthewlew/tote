@@ -8,7 +8,14 @@
         40.754465504166646,
         -74.04558101177227
       ],
+<<<<<<< HEAD
+      "article": {
+        "url": "https://www.theinfatuation.com/new-york/guides/best-new-new-york-restaurants-hit-list",
+        "title": "Best 100 restaurants in 2026"
+      }
+=======
       "type": "Bar"
+>>>>>>> be99178 (feat: refactor lists to use type, name, distance)
     },
     {
       "name": "Mugs Ale House",
