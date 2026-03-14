@@ -192,6 +192,9 @@ footer {
       <select id="neighborhood-select" class="category-btn" aria-label="Select Neighborhood">
         <option value="" disabled selected>Neighborhoods...</option>
       </select>
+      <select id="superlative-select" class="category-btn" aria-label="Select Category">
+        <option value="" selected>All Categories</option>
+      </select>
     </div>
   </div>
   <span class="meta"><span id="hd-n"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
@@ -229,17 +232,20 @@ footer {
   const navEl = document.getElementById('category-nav');
   const locateMeBtn = document.getElementById('locate-me-btn');
   const neighborhoodSelect = document.getElementById('neighborhood-select');
+  const superlativeSelect = document.getElementById('superlative-select');
   const indicators = {
     name: document.querySelector('[data-indicator="name"]'),
     distance: document.querySelector('[data-indicator="distance"]')
   };
 
   let categories = [];
+  let superlatives = [];
 
   // ⚡ Bolt Optimization: Cache category data to prevent redundant network requests
   const categoryCache = {};
 
   let currentCategory = null;
+  let currentSuperlative = null;
   let items = [];
   let currentSort = { key: 'distance', direction: 'asc' };
 
@@ -262,6 +268,25 @@ footer {
         loadCategoryData();
       }
       e.target.value = ""; // Reset dropdown after selection
+    });
+  }
+
+  function initSuperlativeDropdown() {
+    superlatives.forEach(sup => {
+      const option = document.createElement('option');
+      option.value = sup.id;
+      option.textContent = sup.name;
+      superlativeSelect.appendChild(option);
+    });
+
+    superlativeSelect.addEventListener('change', (e) => {
+      const targetId = e.target.value;
+      if (targetId === "") {
+        currentSuperlative = null;
+      } else {
+        currentSuperlative = superlatives.find(s => s.id === targetId);
+      }
+      loadCategoryData();
     });
   }
 
@@ -294,17 +319,26 @@ footer {
     renderNav();
     listEl.innerHTML = 'Loading...';
 
+    // Determine the correct file path based on neighborhood and selected superlative
+    let filePath = currentCategory.file;
+    let cacheKey = currentCategory.id;
+
+    if (currentSuperlative) {
+      filePath = `/data/${currentCategory.id}_${currentSuperlative.id}.json`;
+      cacheKey = `${currentCategory.id}_${currentSuperlative.id}`;
+    }
+
     // ⚡ Bolt Optimization: Use cached data if available
-    if (categoryCache[currentCategory.id]) {
-      items = categoryCache[currentCategory.id].slice();
+    if (categoryCache[cacheKey]) {
+      items = categoryCache[cacheKey].slice();
     } else {
       try {
-        const res = await fetch(currentCategory.file);
+        const res = await fetch(filePath);
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         const data = await res.json();
 
         const categoryItems = data[currentCategory.dataKey] || [];
-        categoryCache[currentCategory.id] = categoryItems;
+        categoryCache[cacheKey] = categoryItems;
         items = categoryItems.slice();
       } catch (err) {
         console.error('failed to load data', err);
@@ -614,15 +648,25 @@ footer {
 
   async function loadCategories() {
     try {
-      const res = await fetch('/neighborhoods.json');
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-      categories = await res.json();
+      const [resNeighborhoods, resSuperlatives] = await Promise.all([
+        fetch('/neighborhoods.json'),
+        fetch('/categories.json')
+      ]);
+
+      if (!resNeighborhoods.ok) throw new Error(`HTTP error! status: ${resNeighborhoods.status}`);
+      categories = await resNeighborhoods.json();
       currentCategory = categories[0];
+
+      if (resSuperlatives.ok) {
+        superlatives = await resSuperlatives.json();
+      }
+
       initNeighborhoodDropdown();
+      initSuperlativeDropdown();
       loadCategoryData();
     } catch (err) {
-      console.error('failed to load neighborhoods', err);
-      listEl.innerHTML = 'Error loading neighborhoods.';
+      console.error('failed to load data', err);
+      listEl.innerHTML = 'Error loading data.';
     }
   }
 
