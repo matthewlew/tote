@@ -437,7 +437,7 @@ footer {
       if (item.description) {
         const desc = document.createElement('div');
         desc.className = 'row-desc';
-        desc.textContent = item.description;
+        desc.textContent = item.description.startsWith("Known for:") ? item.description : `Known for: ${item.description}`;
         row.appendChild(desc);
       }
 
