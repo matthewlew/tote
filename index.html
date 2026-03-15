@@ -197,7 +197,7 @@ footer {
       </select>
     </div>
   </div>
-  <span class="meta"><span id="hd-n"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
+  <span class="meta"><span id="hd-n" aria-live="polite" aria-atomic="true"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
 </header>
 
 <main aria-label="Items list">
@@ -213,7 +213,7 @@ footer {
     <div class="header-spacer"></div>
   </div>
 
-  <div id="list" aria-live="polite"></div>
+  <div id="list"></div>
 </main>
 
 <footer>
@@ -321,7 +321,8 @@ footer {
 
   async function loadCategoryData() {
     renderNav();
-    listEl.innerHTML = 'Loading...';
+    listEl.setAttribute('aria-busy', 'true');
+    listEl.innerHTML = '<div class="row"><div class="line"><span class="name">Loading places...</span></div></div>';
 
     // Determine the correct file path based on neighborhood and selected superlative
     let filePath = currentCategory.file;
@@ -346,7 +347,8 @@ footer {
         items = categoryItems.slice();
       } catch (err) {
         console.error('failed to load data', err);
-        listEl.innerHTML = 'Error loading data.';
+        listEl.innerHTML = '<div class="row"><div class="line"><span class="name">Error loading data.</span></div></div>';
+        listEl.removeAttribute('aria-busy');
         items = [];
         return;
       }
@@ -356,6 +358,7 @@ footer {
     sortItems();
     updateIndicators();
     render();
+    listEl.removeAttribute('aria-busy');
   }
 
   function sortItems() {
@@ -397,6 +400,11 @@ footer {
   function render() {
     listEl.innerHTML = '';
     countEl.textContent = `${items.length} ${currentCategory.unit}`;
+
+    if (items.length === 0) {
+      listEl.innerHTML = '<div class="row"><div class="line"><span class="name">No places found for this category. Try selecting a different neighborhood or category.</span></div></div>';
+      return;
+    }
 
     // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
     const fragment = document.createDocumentFragment();
@@ -700,7 +708,7 @@ footer {
       loadCategoryData();
     } catch (err) {
       console.error('failed to load data', err);
-      listEl.innerHTML = 'Error loading data.';
+      listEl.innerHTML = '<div class="row"><div class="line"><span class="name">Error loading data.</span></div></div>';
     }
   }
 
