@@ -420,6 +420,33 @@
     .fpill.active { background: var(--act-bg); color: var(--act-fg); }
     .fpill-n { font-size: 13px; opacity: 0.45; }
 
+    /* Keyboard shortcuts */
+    .shortcut {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-3);
+      background: var(--surface);
+      border: 1px solid var(--bd-subtle);
+      padding: 0 4px;
+      border-radius: 2px;
+      text-transform: uppercase;
+      margin: 0 4px;
+      vertical-align: middle;
+      line-height: 14px;
+      position: relative;
+      top: -1px;
+    }
+    .active .shortcut {
+      background: var(--text);
+      color: var(--bg);
+      border-color: var(--bg);
+    }
+    @media (max-width: 600px) {
+      .shortcut { display: none !important; }
+    }
+
     /* ══════════════════════════════════════════
        RESULTS BAR
     ══════════════════════════════════════════ */
@@ -462,7 +489,7 @@
     }
     .p-row:hover  { background: var(--surface); }
     .p-row:active { background: var(--raised); }
-    .p-row:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; }
+    .p-row:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; background: var(--surface); }
 
     /* Distance */
     .p-dist { padding-top: 2px; }
@@ -751,7 +778,7 @@
     }
     .coll-card:hover  { background: var(--surface); }
     .coll-card:active { background: var(--raised); }
-    .coll-card:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; }
+    .coll-card:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; background: var(--surface); }
 
     .coll-source {
       font-size: 11px;
@@ -964,7 +991,7 @@
   <div class="loc-body">
     <h1 class="loc-title">Find what's close to you right now</h1>
     <p class="loc-sub">Tote sorts your saved places by walking distance so you can act on your list — not just grow it.</p>
-    <button class="loc-btn" id="btnEnableLoc">Enable location <span class="arr">→</span></button>
+    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut">l</span> <span class="arr">→</span></span></button>
     <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr">→</span></button>
   </div>
 </div>
@@ -1011,12 +1038,12 @@
 
     <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
       <div class="fil-row" id="filters">
-        <button class="fpill active" data-cat="All">All <span class="fpill-n" id="n-All"></span></button>
-        <button class="fpill" data-cat="Coffee">Coffee <span class="fpill-n" id="n-Coffee"></span></button>
-        <button class="fpill" data-cat="Food">Food <span class="fpill-n" id="n-Food"></span></button>
-        <button class="fpill" data-cat="Bars">Bars <span class="fpill-n" id="n-Bars"></span></button>
-        <button class="fpill" data-cat="Shops">Shops <span class="fpill-n" id="n-Shops"></span></button>
-        <button class="fpill" data-cat="Culture">Culture <span class="fpill-n" id="n-Culture"></span></button>
+        <button class="fpill active" data-cat="All">All <span class="shortcut">1</span><span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut">2</span><span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" data-cat="Food">Food <span class="shortcut">3</span><span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" data-cat="Bars">Bars <span class="shortcut">4</span><span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" data-cat="Shops">Shops <span class="shortcut">5</span><span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" data-cat="Culture">Culture <span class="shortcut">6</span><span class="fpill-n" id="n-Culture"></span></button>
       </div>
     </div>
   </header>
@@ -2130,6 +2157,121 @@ function bindEvents() {
       b.setAttribute('aria-pressed', b.dataset.cat === st.cat);
     });
     renderList(false);
+  });
+
+  /* Keyboard Shortcuts */
+  document.addEventListener('keydown', e => {
+    /* Ignore if focused on input/textarea */
+    if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Location shortcut */
+    if (e.key === 'l' || e.key === 'L') {
+      e.preventDefault();
+      if (st.screen === 's-location') {
+        simulateGPS(); /* or requestGeo() in prod */
+      } else {
+        simulateGPS();
+      }
+      return;
+    }
+
+    /* Tab Switch: Left/Right arrows */
+    if (st.screen === 's-app' && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+      e.preventDefault();
+      const tabs = ['list', 'explore', 'import'];
+      let idx = tabs.indexOf(st.tab);
+      if (e.key === 'ArrowLeft') idx = (idx - 1 + tabs.length) % tabs.length;
+      if (e.key === 'ArrowRight') idx = (idx + 1) % tabs.length;
+      setTab(tabs[idx]);
+      return;
+    }
+
+    /* Category switch: 1-6 */
+    if (st.screen === 's-app' && st.tab === 'list' && /^[1-6]$/.test(e.key)) {
+      e.preventDefault();
+      const catIdx = parseInt(e.key) - 1;
+      if (catIdx >= 0 && catIdx < CATS.length) {
+        const cat = CATS[catIdx];
+        st.cat = cat;
+        st.openId = null;
+        document.querySelectorAll('.fpill').forEach(b => {
+          b.classList.toggle('active', b.dataset.cat === st.cat);
+          b.setAttribute('aria-pressed', b.dataset.cat === st.cat);
+        });
+        const activePill = document.querySelector(`.fpill[data-cat="${cat}"]`);
+        if (activePill) {
+           activePill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+        renderList(false);
+      }
+      return;
+    }
+
+    /* List item navigation: Up/Down arrows */
+    if (st.screen === 's-app' && (st.tab === 'list' || (st.tab === 'explore' && !document.getElementById('exploreDetail').hidden)) && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
+      e.preventDefault();
+      const container = st.tab === 'list' ? document.getElementById('list') : document.getElementById('collPlaceList');
+      if (!container) return;
+      const focusable = Array.from(container.querySelectorAll('.p-row, .coll-place'));
+      if (!focusable.length) return;
+
+      const active = document.activeElement;
+      let idx = focusable.indexOf(active);
+
+      if (e.key === 'ArrowUp') {
+        idx = idx > 0 ? idx - 1 : focusable.length - 1;
+      } else if (e.key === 'ArrowDown') {
+        idx = idx >= 0 && idx < focusable.length - 1 ? idx + 1 : 0;
+      }
+
+      const nextEl = focusable[idx];
+      if (nextEl) {
+        nextEl.focus();
+        nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    } else if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreIndex').hidden && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
+       e.preventDefault();
+       const container = document.getElementById('collList');
+       if (!container) return;
+       const focusable = Array.from(container.querySelectorAll('.coll-card'));
+       if (!focusable.length) return;
+
+       const active = document.activeElement;
+       let idx = focusable.indexOf(active);
+
+       if (e.key === 'ArrowUp') {
+         idx = idx > 0 ? idx - 1 : focusable.length - 1;
+       } else if (e.key === 'ArrowDown') {
+         idx = idx >= 0 && idx < focusable.length - 1 ? idx + 1 : 0;
+       }
+
+       const nextEl = focusable[idx];
+       if (nextEl) {
+         nextEl.focus();
+         nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+       }
+    } else if (st.screen === 's-nbhd' && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
+       e.preventDefault();
+       const container = document.getElementById('nbhdList');
+       if (!container) return;
+       const focusable = Array.from(container.querySelectorAll('.nbhd-item'));
+       if (!focusable.length) return;
+
+       const active = document.activeElement;
+       let idx = focusable.indexOf(active);
+
+       if (e.key === 'ArrowUp') {
+         idx = idx > 0 ? idx - 1 : focusable.length - 1;
+       } else if (e.key === 'ArrowDown') {
+         idx = idx >= 0 && idx < focusable.length - 1 ? idx + 1 : 0;
+       }
+
+       const nextEl = focusable[idx];
+       if (nextEl) {
+         nextEl.focus();
+         nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+       }
+    }
   });
 }
 

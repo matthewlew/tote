@@ -5,7 +5,10 @@ def run():
         browser = p.chromium.launch()
         page = browser.new_page()
         page.goto('http://localhost:3000')
-        page.evaluate("() => { const cats = document.querySelectorAll('.category-btn'); if(cats.length > 3) cats[3].click(); }")
+        page.wait_for_timeout(2000)
+        page.click('#btnBrowseNbhd')
+        page.wait_for_timeout(500)
+        page.click('.nbhd-item') # click first neighborhood
         page.wait_for_timeout(1000)
         page.screenshot(path='screenshot.png')
         browser.close()
