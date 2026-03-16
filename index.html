@@ -1,264 +1,1291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tote</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-:root {
-  --ink:   #000;
-  --bg:    #fff;
-  --accent: #ccff00; /* Harsh yellow-green */
-  --rule:  #000;
-}
-html { font-size: 16px; }
-body {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 1.2;
-  background: var(--bg);
-  color: var(--ink);
-  text-transform: uppercase;
-  border: 4px solid var(--ink);
-  min-height: 100vh;
-}
-*, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
-a { color: inherit; text-decoration: none; border-bottom: 2px solid var(--ink); }
-a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
-a:focus-visible { outline: 4px solid var(--accent); background: var(--ink); color: var(--bg); }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-header {
-  border-bottom: 4px solid var(--rule);
-  padding: 20px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  background: var(--ink);
-  color: var(--bg);
-}
-header span:first-child { font-size: 2rem; letter-spacing: -1px; }
-.meta { display: flex; gap: 16px; font-size: 0.8rem; }
-.meta span+span::before { content:' // '; }
+  <style>
+    /* ══════════════════════════════════════════
+       RESET
+    ══════════════════════════════════════════ */
+    *, *::before, *::after {
+      box-sizing: border-box; margin: 0; padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-main { padding: 0; }
+    /* ══════════════════════════════════════════
+       DESIGN TOKENS — LIGHT
+    ══════════════════════════════════════════ */
+    :root {
+      --bg:         #F5F2ED;
+      --surface:    #FFFFFF;
+      --raised:     #EDEAD4;
+      --text:       #0A0908;
+      --text-2:     #595653;
+      --text-3:     #9A9896;
+      --bd:         #0A0908;        /* main border: black */
+      --bd-subtle:  #C4C0BA;        /* dividers */
+      --tag-bg:     #0A0908;        /* category stamp: inverted */
+      --tag-fg:     #F5F2ED;
+      --act-bg:     #0A0908;        /* active filter */
+      --act-fg:     #F5F2ED;
+      --green:      #1A7A32;
+      --sans:       'Space Grotesk', system-ui, sans-serif;
+      --mono:       'Space Mono', monospace;
+    }
 
-/* Header row for sorting */
-.header-row {
-  border-bottom: 4px solid var(--rule);
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: #f0f0f0;
-}
-.header-label {
-  cursor: pointer;
-  user-select: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
-  border: 2px solid transparent;
-}
-.header-label:hover { border-color: var(--ink); background: var(--accent); }
-.header-label span.sort-indicator { font-size: 1rem; }
-.header-spacer { flex:1; }
+    /* ══════════════════════════════════════════
+       DESIGN TOKENS — DARK
+    ══════════════════════════════════════════ */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:         #111009;
+        --surface:    #1A1815;
+        --raised:     #222019;
+        --text:       #F0EDE8;
+        --text-2:     #9E9B97;
+        --text-3:     #5A5654;
+        --bd:         #3D3A36;
+        --bd-subtle:  #262320;
+        --tag-bg:     #F0EDE8;
+        --tag-fg:     #111009;
+        --act-bg:     #F0EDE8;
+        --act-fg:     #111009;
+        --green:      #3DBE6E;
+      }
+      html { background: #000; }
+    }
 
-.row {
-  border-bottom: 2px solid var(--rule);
-  padding: 16px 20px;
-  transition: all 0s; /* No soft transitions in brutalism */
-}
-.row:hover {
-  background: var(--ink);
-  color: var(--bg);
-}
-.row:hover .brand { color: var(--bg); }
-.row:hover a { border-color: var(--bg); }
-.row:hover a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+    /* ══════════════════════════════════════════
+       BASE
+    ══════════════════════════════════════════ */
+    html { height: 100%; background: #000; }
 
-.line { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: baseline; }
-.name { font-size: 1.2rem; }
-.brand { color: #555; }
-.row:hover .brand { color: #aaa; }
+    body {
+      font-family: var(--sans);
+      background: #000;
+      color: var(--text);
+      overscroll-behavior: none;
+      display: flex;
+      justify-content: center;
+      min-height: 100dvh;
+    }
 
-.prices { display: flex; flex-wrap: wrap; gap: 8px 16px; }
-.prices a {
-  display: inline-flex;
-  gap: 8px;
-  align-items: baseline;
-  padding: 4px 8px;
-  border: 2px solid var(--ink);
-  background: var(--bg);
-  color: var(--ink);
-}
-.row:hover .prices a {
-  border-color: var(--bg);
-}
-.site { font-weight: bold; }
-.amount { }
-.ship { display: none; } /* Hide shipping for brutalist look */
+    /* Screens hidden by default */
+    [hidden] { display: none !important; }
 
-footer {
-  border-top: 4px solid var(--rule);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  background: var(--ink);
-  color: var(--bg);
-}
+    /* ══════════════════════════════════════════
+       SHARED SCREEN SHELL
+    ══════════════════════════════════════════ */
+    .screen {
+      position: fixed;
+      inset: 0;
+      max-width: 430px;
+      margin: 0 auto;
+      background: var(--bg);
+      z-index: 80;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
 
-@media (max-width:600px) {
-  header, main .header-row, .row, footer { padding-left: 10px; padding-right: 10px; }
-  .meta { flex-direction: column; gap: 4px; }
-  .meta span+span::before { display: none; }
-}
-</style>
+    /* ══════════════════════════════════════════
+       LOADING
+    ══════════════════════════════════════════ */
+    #s-loading {
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      transition: opacity 300ms ease;
+    }
+    #s-loading.out { opacity: 0; pointer-events: none; }
+
+    .load-name {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -2px;
+    }
+    .load-bar {
+      width: 72px;
+      height: 3px;
+      background: var(--bd-subtle);
+      overflow: hidden;
+    }
+    .load-fill {
+      height: 100%;
+      background: var(--text);
+      animation: fillBar 1.5s cubic-bezier(.4,0,.2,1) forwards;
+      width: 0;
+    }
+    @keyframes fillBar { 0% { width:0 } 60% { width:60% } 100% { width:100% } }
+    .load-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.3px;
+    }
+
+    /* ══════════════════════════════════════════
+       LOCATION REQUEST SCREEN
+    ══════════════════════════════════════════ */
+    #s-location {
+      z-index: 90;
+      border: 2px solid var(--bd);
+    }
+    .loc-hd {
+      padding: 20px;
+      border-bottom: 2px solid var(--bd);
+    }
+    .loc-hd-name {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .loc-body {
+      flex: 1;
+      padding: 36px 20px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    .loc-title {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .loc-sub {
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+    .loc-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 15px 18px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 8px;
+      transition: opacity 150ms;
+      letter-spacing: 0.1px;
+    }
+    .loc-btn:hover { opacity: 0.85; }
+    .loc-btn.ghost {
+      background: transparent;
+      color: var(--text);
+    }
+    .loc-btn .arr { font-size: 18px; }
+
+    /* ══════════════════════════════════════════
+       NEIGHBORHOOD PICKER
+    ══════════════════════════════════════════ */
+    #s-nbhd { z-index: 90; border: 2px solid var(--bd); }
+
+    .nbhd-hd {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 2px solid var(--bd);
+      padding: 18px 20px 16px;
+      z-index: 10;
+    }
+    .nbhd-hd-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .nbhd-hd-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .back-btn {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text);
+      background: none;
+      border: 2px solid var(--bd);
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background 100ms, color 100ms;
+    }
+    .back-btn:hover { background: var(--text); color: var(--bg); }
+    .nbhd-hd-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .nbhd-borough-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding: 12px 20px 8px;
+      border-bottom: 1px solid var(--bd-subtle);
+      background: var(--surface);
+    }
+    .nbhd-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+      cursor: pointer;
+      min-height: 54px;
+      background: none;
+      width: 100%;
+      font-family: var(--sans);
+      text-align: left;
+      transition: background 70ms;
+    }
+    .nbhd-item:hover  { background: var(--surface); }
+    .nbhd-item:active { background: var(--raised); }
+    .nbhd-item-name {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      color: var(--text);
+    }
+    .nbhd-item-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nbhd-item-count {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+    }
+    .nbhd-arr {
+      font-size: 18px;
+      color: var(--text-2);
+    }
+
+    /* ══════════════════════════════════════════
+       MAIN APP SHELL
+    ══════════════════════════════════════════ */
+    #s-app {
+      position: relative;
+      width: 100%;
+      max-width: 430px;
+      min-height: 100dvh;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      /* Not fixed — sits in normal flow so scroll works */
+    }
+
+    /* ══════════════════════════════════════════
+       HEADER
+    ══════════════════════════════════════════ */
+    .hd {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg);
+      border-bottom: 2px solid var(--bd);
+      padding: 18px 20px 0;
+    }
+    .hd-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .app-name {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -1.2px;
+      line-height: 1;
+    }
+    .sync-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 8px;
+      border: 1.5px solid var(--bd-subtle);
+    }
+    .sync-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .sync-text {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--text-3);
+    }
+
+    /* Location row */
+    .hd-loc {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+    .hd-loc-pin {
+      width: 12px;
+      height: 12px;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    .hd-loc-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.1px;
+    }
+    .hd-loc-sep { font-size: 13px; color: var(--text-3); }
+    .hd-loc-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+    }
+    .hd-loc-change {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--text-3);
+      background: none;
+      border: 1.5px solid var(--bd-subtle);
+      padding: 2px 7px;
+      cursor: pointer;
+      transition: border-color 100ms, color 100ms;
+    }
+    .hd-loc-change:hover { border-color: var(--bd); color: var(--text); }
+
+    /* Tabs — brutalist: no radius, thick border, full invert on active */
+    .hd-tabs {
+      display: flex;
+      margin-bottom: 12px;
+      border: 2px solid var(--bd);
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 8px 10px;
+      background: transparent;
+      color: var(--text-2);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      border-right: 2px solid var(--bd);
+      transition: background 100ms, color 100ms;
+    }
+    .tab-btn:last-child { border-right: none; }
+    .tab-btn:hover:not(.active) { background: var(--surface); color: var(--text); }
+    .tab-btn.active { background: var(--act-bg); color: var(--act-fg); }
+
+    /* Category filters */
+    .hd-filters {
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin: 0 -20px;
+      padding: 0 20px;
+    }
+    .hd-filters::-webkit-scrollbar { display: none; }
+    .fil-row {
+      display: flex;
+      gap: 4px;
+      width: max-content;
+      padding-bottom: 12px;
+    }
+    .fpill {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 10px;
+      border: 2px solid var(--bd);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 90ms, color 90ms;
+    }
+    .fpill:hover:not(.active) { background: var(--surface); }
+    .fpill.active { background: var(--act-bg); color: var(--act-fg); }
+    .fpill-n { font-family: var(--mono); font-size: 9px; opacity: 0.45; }
+
+    /* ══════════════════════════════════════════
+       RESULTS BAR
+    ══════════════════════════════════════════ */
+    .results-bar {
+      padding: 7px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .res-n, .res-sort {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    /* ══════════════════════════════════════════
+       LIST
+    ══════════════════════════════════════════ */
+    .list {
+      list-style: none;
+      padding-bottom: 82px;
+    }
+    .place { border-bottom: 1px solid var(--bd-subtle); }
+
+    /* Entrance — only fires on initial render via .animate-in */
+    .place.animate-in { animation: itemIn 150ms ease both; }
+    @keyframes itemIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .p-row {
+      display: grid;
+      grid-template-columns: 58px 1fr 26px;
+      align-items: start;
+      padding: 14px 20px;
+      cursor: pointer;
+      user-select: none;
+      min-height: 54px;
+      transition: background 70ms;
+    }
+    .p-row:hover  { background: var(--surface); }
+    .p-row:active { background: var(--raised); }
+    .p-row:focus-visible { outline: 2px solid var(--bd); outline-offset: -2px; }
+
+    /* Distance — Space Mono, large, structural */
+    .p-dist { padding-top: 2px; }
+    .d-n {
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--text);
+    }
+    .d-u {
+      font-family: var(--mono);
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-3);
+      margin-top: 3px;
+    }
+
+    /* Place info */
+    .p-mid { padding-right: 6px; }
+    .p-top {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+    .p-name {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    /* Brutalist category stamp — solid fill, all-caps mono */
+    .p-cat {
+      font-family: var(--mono);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      background: var(--tag-bg);
+      color: var(--tag-fg);
+      padding: 2px 5px;
+      flex-shrink: 0;
+    }
+    .p-tag {
+      font-size: 12px;
+      color: var(--text-2);
+      line-height: 1.4;
+    }
+
+    /* Chevron */
+    .p-chev {
+      display: flex;
+      justify-content: center;
+      padding-top: 3px;
+    }
+    .chev {
+      width: 14px;
+      height: 14px;
+      color: var(--text-3);
+      transition: transform 200ms ease, color 200ms;
+    }
+    .place.open .chev { transform: rotate(180deg); color: var(--text); }
+
+    /* ── Expand panel (CSS grid row trick — no max-height jank) ── */
+    .p-expand {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 210ms ease;
+    }
+    .place.open .p-expand { grid-template-rows: 1fr; }
+    .p-expand-inner { overflow: hidden; }
+
+    .p-body {
+      border-top: 1px solid var(--bd-subtle);
+      padding: 14px 20px 18px 78px;
+    }
+    .p-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-2);
+      margin-bottom: 16px;
+    }
+    .maps-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 14px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+      transition: opacity 140ms;
+    }
+    .maps-btn:hover { opacity: 0.82; }
+    .maps-btn svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+    /* ══════════════════════════════════════════
+       EMPTY STATE
+    ══════════════════════════════════════════ */
+    .empty { display: none; padding: 48px 20px; }
+    .empty.show { display: block; }
+    .empty-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .empty-sub   { font-size: 13px; color: var(--text-2); }
+
+    /* ══════════════════════════════════════════
+       IMPORT VIEW
+    ══════════════════════════════════════════ */
+    .import-view { padding: 24px 20px 100px; }
+
+    .import-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .import-subtitle {
+      font-size: 13px;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .import-field {
+      border: 2px solid var(--bd);
+      margin-bottom: 10px;
+      background: var(--surface);
+    }
+    .import-input {
+      width: 100%;
+      padding: 12px 14px;
+      font-family: var(--mono);
+      font-size: 12px;
+      background: transparent;
+      color: var(--text);
+      border: none;
+      outline: none;
+      display: block;
+    }
+    .import-input::placeholder { color: var(--text-3); }
+
+    .import-btn {
+      width: 100%;
+      padding: 13px 18px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: opacity 140ms;
+      margin-bottom: 28px;
+    }
+    .import-btn:hover:not(:disabled) { opacity: 0.85; }
+    .import-btn:disabled { opacity: 0.35; cursor: default; }
+
+    .import-status {
+      display: none;
+      padding: 11px 14px;
+      border: 2px solid var(--bd);
+      font-family: var(--mono);
+      font-size: 11px;
+      margin-bottom: 28px;
+    }
+    .import-status.show { display: block; }
+    .import-status.ok { background: var(--text); color: var(--bg); }
+
+    .import-howto-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--bd);
+      margin-bottom: 20px;
+    }
+    .import-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .import-step-n {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-3);
+      width: 20px;
+      flex-shrink: 0;
+      padding-top: 1px;
+    }
+    .import-step-text {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-2);
+    }
+    .import-step-text strong { color: var(--text); font-weight: 700; }
+
+    /* ══════════════════════════════════════════
+       BOTTOM BAR
+    ══════════════════════════════════════════ */
+    .bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      max-width: 430px;
+      background: var(--bg);
+      border-top: 2px solid var(--bd);
+      padding: 11px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 50;
+    }
+    .bt-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-2);
+      background: none;
+      border: none;
+      font-family: var(--sans);
+      cursor: pointer;
+      padding: 5px 0;
+      transition: color 110ms;
+    }
+    .bt-link:hover { color: var(--text); }
+    .bt-link svg { width: 14px; height: 14px; }
+    .bt-add {
+      padding: 8px 14px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 140ms;
+    }
+    .bt-add:hover { opacity: 0.82; }
+
+    /* ══════════════════════════════════════════
+       REDUCED MOTION
+    ══════════════════════════════════════════ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <span>TOTE</span>
-  <span class="meta"><span id="hd-n">100 bags</span><span>40+ sources</span><span>Mar 2025</span></span>
-</header>
+<!-- ─── LOADING ─── -->
+<div id="s-loading" class="screen">
+  <div class="load-name">tote</div>
+  <div class="load-bar"><div class="load-fill"></div></div>
+  <div class="load-sub">loading your list…</div>
+</div>
 
-<main aria-label="Tote bags list">
-  <div class="header-row" aria-hidden="true">
-    <button type="button" class="header-label" data-sort="brand">
-      <span>Brand</span>
-      <span class="sort-indicator" data-indicator="brand">·</span>
-    </button>
-    <button type="button" class="header-label" data-sort="name">
-      <span>Title</span>
-      <span class="sort-indicator" data-indicator="name">·</span>
-    </button>
-    <div class="header-spacer"></div>
+<!-- ─── LOCATION REQUEST ─── -->
+<div id="s-location" class="screen" hidden aria-modal="true" role="dialog" aria-label="Location permission">
+  <div class="loc-hd">
+    <div class="loc-hd-name">tote</div>
+  </div>
+  <div class="loc-body">
+    <h1 class="loc-title">Find what's close to you right now</h1>
+    <p class="loc-sub">Tote sorts your saved places by walking distance so you can act on your list — not just grow it.</p>
+    <button class="loc-btn" id="btnEnableLoc">Enable location <span class="arr">→</span></button>
+    <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr">→</span></button>
+  </div>
+</div>
+
+<!-- ─── NEIGHBORHOOD PICKER ─── -->
+<div id="s-nbhd" class="screen" hidden aria-label="Pick a neighborhood">
+  <div class="nbhd-hd">
+    <div class="nbhd-hd-top">
+      <span class="nbhd-hd-title">Neighborhoods</span>
+      <button class="back-btn" id="btnNbhdBack">← Back</button>
+    </div>
+    <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
+  </div>
+  <div id="nbhdList"></div>
+</div>
+
+<!-- ─── MAIN APP ─── -->
+<div id="s-app" hidden>
+  <header class="hd">
+    <div class="hd-top">
+      <span class="app-name">tote</span>
+      <div class="sync-badge">
+        <div class="sync-dot"></div>
+        <span class="sync-text">synced · 2m ago</span>
+      </div>
+    </div>
+
+    <div class="hd-loc">
+      <svg class="hd-loc-pin" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <path d="M7 1C4.79 1 3 2.79 3 5c0 3.25 4 8 4 8s4-4.75 4-8c0-2.21-1.79-4-4-4z"/>
+        <circle cx="7" cy="5" r="1.3" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="hd-loc-name" id="locName">Lower East Side</span>
+      <span class="hd-loc-sep">·</span>
+      <span class="hd-loc-sub" id="locSub">Manhattan, NY</span>
+      <button class="hd-loc-change" id="btnChangeLoc" aria-label="Change location">change</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="hd-tabs" role="tablist">
+      <button class="tab-btn active" data-tab="list" role="tab" aria-selected="true">My List</button>
+      <button class="tab-btn" data-tab="import" role="tab" aria-selected="false">Import</button>
+    </div>
+
+    <!-- Filters (list tab only) -->
+    <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
+      <div class="fil-row" id="filters">
+        <button class="fpill active" data-cat="All">All <span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" data-cat="Coffee">Coffee <span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" data-cat="Food">Food <span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" data-cat="Bars">Bars <span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" data-cat="Shops">Shops <span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" data-cat="Culture">Culture <span class="fpill-n" id="n-Culture"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- List view -->
+  <div id="vList">
+    <div class="results-bar" aria-live="polite" aria-atomic="true">
+      <span class="res-n" id="resN">— places</span>
+      <span class="res-sort" id="resSort">↑ nearest first</span>
+    </div>
+    <ul class="list" id="list" aria-label="Saved places sorted by distance"></ul>
+    <div class="empty" id="empty" role="status">
+      <div class="empty-title">Nothing in this category</div>
+      <div class="empty-sub">Add places from your Google Maps list to see them here.</div>
+    </div>
   </div>
 
-  <div id="list"></div>
-</main>
+  <!-- Import view -->
+  <div id="vImport" hidden>
+    <div class="import-view">
+      <div class="import-title">Connect Google Maps</div>
+      <div class="import-subtitle">Paste a shared Google Maps list link to sync your saved places into Tote.</div>
 
-<footer>
-  <span>Articles on the coolest totes on the web</span>
-  <span>tote.so</span>
-</footer>
+      <div class="import-field">
+        <input class="import-input" id="importInput" type="url" inputmode="url"
+          autocomplete="off" autocorrect="off" spellcheck="false"
+          placeholder="https://maps.app.goo.gl/…" />
+      </div>
+
+      <button class="import-btn" id="importBtn" disabled>
+        <span id="importBtnLabel">Import List</span>
+        <span>→</span>
+      </button>
+
+      <div class="import-status" id="importStatus" role="status"></div>
+
+      <div class="import-howto-label">How to get your list link</div>
+      <div class="import-step">
+        <span class="import-step-n">01</span>
+        <span class="import-step-text">Open <strong>Google Maps</strong> on your phone</span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">02</span>
+        <span class="import-step-text">Tap <strong>Saved</strong> at the bottom of the screen</span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">03</span>
+        <span class="import-step-text">Open your list (e.g. <strong>Want to go</strong> or a custom list)</span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">04</span>
+        <span class="import-step-text">Tap <strong>⋮</strong> (top right) → <strong>Share list</strong> → <strong>Copy link</strong></span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">05</span>
+        <span class="import-step-text">Paste the link above and tap <strong>Import List</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <nav class="bottom" aria-label="App navigation">
+    <button class="bt-link" id="btnOpenMaps" aria-label="Open Google Maps">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </svg>
+      Google Maps
+    </button>
+    <button class="bt-add" aria-label="Add a new place">+ Add Place</button>
+  </nav>
+</div>
 
 <script>
-(async function() {
-  const listEl = document.getElementById('list');
-  const sortButtons = document.querySelectorAll('.header-label');
-  const indicators = {
-    name: document.querySelector('[data-indicator="name"]'),
-    brand: document.querySelector('[data-indicator="brand"]')
-  };
+/* ══════════════════════════════════════════════
+   DATA
+══════════════════════════════════════════════ */
+const PLACES = [
+  { id:1,  name:"Cafe Integral",       cat:"Coffee",  tag:"Single-origin espresso from Nicaragua", lat:40.7200, lng:-73.9942, desc:"Family-owned roaster. The cortado is their calling card — they rotate seasonally. Small space with focused energy. Cash appreciated.", q:"Cafe+Integral+149+Elizabeth+St+New+York+NY" },
+  { id:2,  name:"Scarr's Pizza",       cat:"Food",    tag:"Organic flour, old-school slice",        lat:40.7173, lng:-73.9895, desc:"Fresh mozzarella, organic flour, a plain slice that tastes exactly like pizza should. Counter seating is the move. Expect a weekend line.", q:"Scarr%27s+Pizza+22+Orchard+St+New+York+NY" },
+  { id:3,  name:"Ten Bells",           cat:"Bars",    tag:"Natural wine by candlelight",            lat:40.7196, lng:-73.9924, desc:"A tiny cave of a wine bar with an ever-changing natural list. No cocktails, no beer. Bartenders know the producers by name. Arrive before 8pm.", q:"Ten+Bells+247+Broome+St+New+York+NY" },
+  { id:4,  name:"Economy Candy",       cat:"Shops",   tag:"Sugar institution since 1937",           lat:40.7168, lng:-73.9891, desc:"Floor-to-ceiling candy in a tiny Orchard Street shop unchanged for decades. Great for gifting or nostalgia. The bulk bins are the whole point.", q:"Economy+Candy+108+Rivington+St+New+York+NY" },
+  { id:5,  name:"Dimes Market",        cat:"Food",    tag:"California light in the LES",            lat:40.7139, lng:-73.9881, desc:"Grain bowls, great coffee, natural wines, and a market with things you actually want to cook. Sunday brunch line moves fast. Unhurried vibe.", q:"Dimes+Market+143+Division+St+New+York+NY" },
+  { id:6,  name:"Attaboy",             cat:"Bars",    tag:"No menu — just tell them your vibe",     lat:40.7160, lng:-73.9875, desc:"Describe what you feel like drinking and they'll make something you didn't know you wanted. No menu, no attitude. The door is easy to miss.", q:"Attaboy+134+Eldridge+St+New+York+NY" },
+  { id:7,  name:"Housing Works Thrift",cat:"Shops",   tag:"Thrift for a cause, great book section", lat:40.7236, lng:-73.9989, desc:"Rotating secondhand books, clothes, and furniture. Proceeds fund housing for people affected by HIV/AIDS. Best book section on Crosby St.", q:"Housing+Works+Thrift+126+Crosby+St+New+York+NY" },
+  { id:8,  name:"The Pickle Guys",     cat:"Food",    tag:"Open barrels on Essex St",               lat:40.7157, lng:-73.9893, desc:"You point, they fish one out. Has been here since the LES was an entirely different world. Get the half-sour. Cash only.", q:"The+Pickle+Guys+49+Essex+St+New+York+NY" },
+  { id:9,  name:"Metrograph",          cat:"Culture", tag:"Indie cinema, exceptional cafe",         lat:40.7134, lng:-73.9876, desc:"Independent cinema showing arthouse films and retrospectives. The downstairs cafe stands alone. Book tickets ahead — weekends sell out.", q:"Metrograph+7+Ludlow+St+New+York+NY" },
+  { id:10, name:"Russ & Daughters",    cat:"Food",    tag:"Lox temple since 1914",                  lat:40.7228, lng:-73.9832, desc:"The original appetizing shop. The Super Heeb is the move. The cafe on Orchard has more seats. Come early on weekends.", q:"Russ+and+Daughters+179+E+Houston+St+New+York+NY" },
+  { id:11, name:"McNally Jackson",     cat:"Culture", tag:"Staff picks worth reading",              lat:40.7238, lng:-73.9964, desc:"Best indie bookshop in the neighborhood. Staff picks are genuinely curated. The magazine section rewards slow browsing. Coffee bar in the back.", q:"McNally+Jackson+Books+52+Prince+St+New+York+NY" },
+  { id:12, name:"Death & Co",          cat:"Bars",    tag:"Cocktail institution, seasonal menu",    lat:40.7267, lng:-73.9779, desc:"One of the bars that started NYC's cocktail revival. Menu rotates seasonally. Bar seats are walk-in only — reservations recommended on weekends.", q:"Death+and+Co+433+E+6th+St+New+York+NY" },
+];
 
-  let data;
-  try {
-    const res = await fetch('/data/bags.json');
-    data = await res.json();
-  } catch (err) {
-    console.error('failed to load data', err);
-    return;
-  }
+const NEIGHBORHOODS = [
+  { id:'les',     name:'Lower East Side', borough:'Manhattan', lat:40.7150, lng:-73.9861 },
+  { id:'ev',      name:'East Village',    borough:'Manhattan', lat:40.7265, lng:-73.9815 },
+  { id:'soho',    name:'SoHo',            borough:'Manhattan', lat:40.7233, lng:-73.9978 },
+  { id:'nolita',  name:'Nolita',          borough:'Manhattan', lat:40.7228, lng:-73.9944 },
+  { id:'tribeca', name:'Tribeca',         borough:'Manhattan', lat:40.7163, lng:-74.0086 },
+  { id:'wv',      name:'West Village',    borough:'Manhattan', lat:40.7340, lng:-74.0050 },
+  { id:'chelsea', name:'Chelsea',         borough:'Manhattan', lat:40.7467, lng:-74.0014 },
+  { id:'wburg',   name:'Williamsburg',    borough:'Brooklyn',  lat:40.7081, lng:-73.9571 },
+  { id:'dumbo',   name:'DUMBO',           borough:'Brooklyn',  lat:40.7034, lng:-73.9888 },
+  { id:'cobble',  name:'Cobble Hill',     borough:'Brooklyn',  lat:40.6863, lng:-73.9952 },
+];
 
-  let bags = data.bags.slice();
-  let currentSort = { key: 'brand', direction: 'asc' };
+const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
 
-  function sortBags() {
-    const { key, direction } = currentSort;
-    const dir = direction === 'asc' ? 1 : -1;
+/* ══════════════════════════════════════════════
+   STATE
+══════════════════════════════════════════════ */
+const st = {
+  screen:   'loading',
+  tab:      'list',
+  cat:      'All',
+  openId:   null,
+  locMode:  null,       // 'gps' | 'neighborhood'
+  locLabel: 'Lower East Side',
+  locSub:   'Manhattan, NY',
+  refLat:   40.7150,
+  refLng:  -73.9861,
+};
 
-    bags.sort((a, b) => {
-      if (key === 'name') {
-        return a.name.localeCompare(b.name) * dir;
-      }
-      if (key === 'brand') {
-        return a.brand.localeCompare(b.brand) * dir;
-      }
-      return 0;
+/* ══════════════════════════════════════════════
+   UTILS
+══════════════════════════════════════════════ */
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 3959;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 +
+    Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function sortedPlaces() {
+  return PLACES
+    .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
+    .sort((a, b) => a.dist - b.dist);
+}
+
+function filteredPlaces() {
+  const all = sortedPlaces();
+  return st.cat === 'All' ? all : all.filter(p => p.cat === st.cat);
+}
+
+function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
+
+/* Show one screen at a time */
+function showScreen(id) {
+  ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.hidden = (s !== id);
+  });
+  st.screen = id;
+}
+
+/* ══════════════════════════════════════════════
+   LOCATION
+══════════════════════════════════════════════ */
+function requestGeo() {
+  if (!navigator.geolocation) { showScreen('s-location'); return; }
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      st.refLat   = pos.coords.latitude;
+      st.refLng   = pos.coords.longitude;
+      st.locMode  = 'gps';
+      st.locLabel = 'Your Location';
+      st.locSub   = 'GPS · live';
+      updateLocUI();
+      showScreen('s-app');
+      renderList(true);
+    },
+    () => showScreen('s-location'),
+    { timeout: 6000 }
+  );
+}
+
+/* Demo: simulate GPS grant using LES coordinates */
+function simulateGPS() {
+  st.locMode  = 'gps';
+  st.locLabel = 'Your Location';
+  st.locSub   = 'GPS · live';
+  updateLocUI();
+  showScreen('s-app');
+  renderList(true);
+}
+
+function updateLocUI() {
+  document.getElementById('locName').textContent = st.locLabel;
+  document.getElementById('locSub').textContent  = st.locSub;
+  document.getElementById('resSort').textContent =
+    st.locMode === 'neighborhood' ? '↑ nearest to ' + st.locLabel : '↑ nearest first';
+}
+
+/* ══════════════════════════════════════════════
+   NEIGHBORHOOD PICKER
+══════════════════════════════════════════════ */
+function renderNeighborhoods() {
+  const container = document.getElementById('nbhdList');
+  container.innerHTML = '';
+  const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
+  boroughs.forEach(b => {
+    const lbl = document.createElement('div');
+    lbl.className = 'nbhd-borough-label';
+    lbl.textContent = b.toUpperCase();
+    container.appendChild(lbl);
+
+    NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
+      const nearby = PLACES.filter(p =>
+        haversine(nbhd.lat, nbhd.lng, p.lat, p.lng) < 2.5
+      ).length;
+
+      const btn = document.createElement('button');
+      btn.className = 'nbhd-item';
+      btn.setAttribute('aria-label', `${nbhd.name}, ${nearby} places within 2.5 miles`);
+      btn.innerHTML = `
+        <span class="nbhd-item-name">${nbhd.name}</span>
+        <span class="nbhd-item-right">
+          <span class="nbhd-item-count">${nearby} within ~2.5 mi</span>
+          <span class="nbhd-arr">→</span>
+        </span>`;
+      btn.addEventListener('click', () => selectNeighborhood(nbhd));
+      container.appendChild(btn);
     });
-  }
+  });
+}
 
-  function updateIndicators() {
-    Object.keys(indicators).forEach(k => {
-      const el = indicators[k];
-      if (!el) return;
-      if (k === currentSort.key) {
-        el.textContent = currentSort.direction === 'asc' ? '↑' : '↓';
-      } else {
-        el.textContent = '·';
-      }
-    });
-  }
+function selectNeighborhood(nbhd) {
+  st.refLat   = nbhd.lat;
+  st.refLng   = nbhd.lng;
+  st.locMode  = 'neighborhood';
+  st.locLabel = nbhd.name;
+  st.locSub   = nbhd.borough + ', NY';
+  st.openId   = null;
+  updateLocUI();
+  showScreen('s-app');
+  renderList(true);
+  renderCounts();
+}
 
-  function render() {
-    listEl.innerHTML = '';
-    bags.forEach(bag => {
-      const row = document.createElement('div');
-      row.className = 'row';
+/* ══════════════════════════════════════════════
+   LIST — only called on initial load + filter change
+   Toggle is handled by toggleItem() — NO re-render
+══════════════════════════════════════════════ */
+function renderList(animate = false) {
+  const listEl  = document.getElementById('list');
+  const emptyEl = document.getElementById('empty');
+  const nEl     = document.getElementById('resN');
+  const items   = filteredPlaces();
+  st.openId = null;
 
-      const line = document.createElement('div');
-      line.className = 'line';
+  listEl.innerHTML = '';
+  nEl.textContent = items.length + ' place' + (items.length !== 1 ? 's' : '');
 
-      const brand = document.createElement('span');
-      brand.className = 'brand';
-      brand.textContent = bag.brand;
+  if (!items.length) { emptyEl.classList.add('show'); return; }
+  emptyEl.classList.remove('show');
 
-      const name = document.createElement('span');
-      name.className = 'name';
-      name.textContent = bag.name;
+  items.forEach((p, i) => {
+    const li = document.createElement('li');
+    li.className = 'place' + (animate ? ' animate-in' : '');
+    li.dataset.pid = p.id;
+    if (animate) li.style.animationDelay = (i * 22) + 'ms';
 
-      const prices = document.createElement('div');
-      prices.className = 'prices';
+    li.innerHTML = `
+      <div class="p-row"
+           tabindex="0" role="button"
+           aria-expanded="false"
+           aria-controls="exp-${p.id}"
+           data-id="${p.id}">
+        <div class="p-dist" aria-label="${p.dist.toFixed(1)} miles away">
+          <div class="d-n">${p.dist.toFixed(1)}</div>
+          <div class="d-u">mi</div>
+        </div>
+        <div class="p-mid">
+          <div class="p-top">
+            <span class="p-name">${p.name}</span>
+            <span class="p-cat">${p.cat}</span>
+          </div>
+          <div class="p-tag">${p.tag}</div>
+        </div>
+        <div class="p-chev" aria-hidden="true">
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+      </div>
+      <div class="p-expand" id="exp-${p.id}" role="region" aria-label="${p.name} details">
+        <div class="p-expand-inner">
+          <div class="p-body">
+            <p class="p-desc">${p.desc}</p>
+            <a class="maps-btn"
+               href="${mapsUrl(p.q)}"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Open ${p.name} in Google Maps">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>`;
 
-      if (bag.links && bag.links.length > 0) {
-        bag.links.forEach(l => {
-          const link = document.createElement('a');
-          link.href = l.u;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
+    listEl.appendChild(li);
+  });
 
-          const site = document.createElement('span');
-          site.className = 'site';
-          site.textContent = 'READ: ' + l.r;
-
-          link.appendChild(site);
-          prices.appendChild(link);
-        });
-      }
-
-      line.appendChild(brand);
-      line.appendChild(name);
-      line.appendChild(prices);
-      row.appendChild(line);
-      listEl.appendChild(row);
-    });
-  }
-
-  sortButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const key = btn.getAttribute('data-sort');
-      if (currentSort.key === key) {
-        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-      } else {
-        currentSort.key = key;
-        currentSort.direction = 'asc';
-      }
-      sortBags();
-      updateIndicators();
-      render();
+  /* Attach events once, referencing toggleItem — no re-render on click */
+  listEl.querySelectorAll('.p-row').forEach(row => {
+    row.addEventListener('click', () => toggleItem(+row.dataset.id));
+    row.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleItem(+row.dataset.id); }
     });
   });
 
-  sortBags();
-  updateIndicators();
-  render();
-})();
+  /* Prevent map link from bubbling into row toggle */
+  listEl.querySelectorAll('.maps-btn').forEach(a => {
+    a.addEventListener('click', e => e.stopPropagation());
+  });
+}
+
+/* ══════════════════════════════════════════════
+   TOGGLE — surgical DOM mutation, zero re-render
+   Fixes the blink/animation-reset bug entirely
+══════════════════════════════════════════════ */
+function toggleItem(id) {
+  const wasOpen = st.openId === id;
+
+  /* Close any currently open item */
+  if (st.openId !== null) {
+    const prev = document.querySelector(`.place[data-pid="${st.openId}"]`);
+    if (prev) {
+      prev.classList.remove('open');
+      const row = prev.querySelector('.p-row');
+      if (row) row.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  if (wasOpen) {
+    st.openId = null;
+  } else {
+    st.openId = id;
+    const li = document.querySelector(`.place[data-pid="${id}"]`);
+    if (li) {
+      li.classList.add('open');
+      const row = li.querySelector('.p-row');
+      if (row) row.setAttribute('aria-expanded', 'true');
+    }
+  }
+}
+
+/* ══════════════════════════════════════════════
+   COUNTS + FILTER
+══════════════════════════════════════════════ */
+function renderCounts() {
+  const all = sortedPlaces();
+  CATS.forEach(c => {
+    const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
+    const el = document.getElementById('n-' + c);
+    if (el) el.textContent = n;
+  });
+}
+
+/* ══════════════════════════════════════════════
+   TAB SWITCH
+══════════════════════════════════════════════ */
+function setTab(tab) {
+  st.tab = tab;
+  const isList = tab === 'list';
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+    b.setAttribute('aria-selected', b.dataset.tab === tab);
+  });
+  document.getElementById('vList').hidden    = !isList;
+  document.getElementById('vImport').hidden  =  isList;
+  document.getElementById('hdFilters').hidden = !isList;
+}
+
+/* ══════════════════════════════════════════════
+   IMPORT
+══════════════════════════════════════════════ */
+function initImport() {
+  const input  = document.getElementById('importInput');
+  const btn    = document.getElementById('importBtn');
+  const label  = document.getElementById('importBtnLabel');
+  const status = document.getElementById('importStatus');
+  const MAPS_RE = /maps\.app\.goo\.gl\/|maps\.google\.com\//;
+
+  input.addEventListener('input', () => {
+    btn.disabled = !MAPS_RE.test(input.value.trim());
+    status.className = 'import-status';
+    status.textContent = '';
+  });
+
+  btn.addEventListener('click', () => {
+    if (!MAPS_RE.test(input.value.trim())) return;
+    btn.disabled = true;
+    label.textContent = 'Fetching list…';
+    setTimeout(() => {
+      label.textContent = 'Import List';
+      status.className = 'import-status show ok';
+      status.textContent = '✓  12 places imported — switching to your list';
+      setTimeout(() => {
+        setTab('list');
+        status.className = 'import-status';
+        input.value = '';
+        btn.disabled = true;
+      }, 2200);
+    }, 1600);
+  });
+}
+
+/* ══════════════════════════════════════════════
+   EVENTS
+══════════════════════════════════════════════ */
+function bindEvents() {
+  /* Location screen */
+  document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
+  document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    renderNeighborhoods();
+    showScreen('s-nbhd');
+  });
+
+  /* Neighborhood back */
+  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+
+  /* Change location within app */
+  document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    renderNeighborhoods();
+    showScreen('s-nbhd');
+  });
+
+  /* Tabs */
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => setTab(btn.dataset.tab));
+  });
+
+  /* Category filters — re-render without animation */
+  document.getElementById('filters').addEventListener('click', e => {
+    const pill = e.target.closest('.fpill');
+    if (!pill) return;
+    st.cat = pill.dataset.cat;
+    st.openId = null;
+    document.querySelectorAll('.fpill').forEach(b => {
+      b.classList.toggle('active', b.dataset.cat === st.cat);
+      b.setAttribute('aria-pressed', b.dataset.cat === st.cat);
+    });
+    renderList(false);
+  });
+}
+
+/* ══════════════════════════════════════════════
+   INIT
+══════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  bindEvents();
+  initImport();
+
+  const loadEl = document.getElementById('s-loading');
+  setTimeout(() => {
+    loadEl.classList.add('out');
+    setTimeout(() => { loadEl.hidden = true; }, 350);
+    /* Show location request screen so all flows are demoed */
+    showScreen('s-location');
+  }, 1500);
+});
 </script>
 </body>
 </html>
