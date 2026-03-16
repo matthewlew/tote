@@ -7,13 +7,19 @@ async def run():
         page = await browser.new_page()
         await page.goto('http://localhost:3000')
 
-        # Click "Williamsburg" (visible button [4])
+        # Wait for location dialog
+        await page.wait_for_selector(".loc-hd-name", state="visible")
+        # Click Browse Neighborhoods
+        await page.click("id=btnBrowseNbhd")
+
+        # Click "Williamsburg"
         await page.locator('button:has-text("Williamsburg")').click()
 
-        await page.wait_for_selector('.row')
+        # wait for place rows to show up
+        await page.wait_for_selector('.p-row')
 
         # click the first row
-        first_row = page.locator('.row').first
+        first_row = page.locator('.p-row').first
         await first_row.click()
         await page.wait_for_timeout(500)
 

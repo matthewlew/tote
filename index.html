@@ -87,6 +87,11 @@
     /* Screens hidden by default */
     [hidden] { display: none !important; }
 
+    *:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+
     /* ══════════════════════════════════════════
        SHARED SCREEN SHELL
     ══════════════════════════════════════════ */
@@ -1031,6 +1036,7 @@
     <div class="empty" id="empty" role="status">
       <div class="empty-title">Nothing in this category</div>
       <div class="empty-sub">Add places from your Google Maps list to see them here.</div>
+      <button class="bt-add" id="btnEmptyImport" style="margin-top: 16px;">Import Places</button>
     </div>
   </div>
 
@@ -1051,6 +1057,7 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
+            aria-label="Google Maps list URL"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
 
@@ -1088,6 +1095,7 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
+            aria-label="Paste list text"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
@@ -2119,6 +2127,8 @@ function bindEvents() {
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => setTab(btn.dataset.tab));
   });
+
+  document.getElementById('btnEmptyImport').addEventListener('click', () => setTab('import'));
 
   document.getElementById('filters').addEventListener('click', e => {
     const pill = e.target.closest('.fpill');
