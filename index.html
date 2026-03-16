@@ -1,384 +1,1130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tote: A neighborhood-focused directory for discovering local businesses in NYC. Skip the map and find cafes, shops, and restaurants in a fast, scannable list.">
-<meta name="keywords" content="NYC, neighborhoods, local businesses, Brooklyn, cafes, restaurants, directory, local guides">
-<title>Tote</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
-<style>
-@font-face {
-  font-family: 'Flor de Ruina Semilla';
-  src: url('./fonts/FlorDeRuina-Semilla.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tote</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-:root {
-  --ink:   #000;
-  --bg:    #fff;
-  --accent: #ccff00; /* Harsh yellow-green */
-  --rule:  #000;
-}
-html { font-size: 16px; }
-body {
-  font-family: "Faculty Glyphic", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  background: var(--bg);
-  color: var(--ink);
-  border: 1px solid var(--ink);
-  min-height: 100vh;
-}
-*, input, button { font-family: inherit; font-size: inherit; font-weight: inherit; text-transform: inherit; color: inherit; background: none; border: none; }
-a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--ink); }
-a:hover { background: var(--accent); color: var(--ink); border-bottom-color: transparent; }
-a:focus-visible { outline: 1px solid var(--accent); background: var(--ink); color: var(--bg); }
-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  <style>
+    /* ══════════════════════════════════════════
+       RESET
+    ══════════════════════════════════════════ */
+    *, *::before, *::after {
+      box-sizing: border-box; margin: 0; padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-header {
-  border-bottom: 1px solid var(--rule);
-  padding: 20px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  background: var(--ink);
-  color: var(--bg);
-}
-header span:first-child {
-  font-family: 'Flor de Ruina Semilla', sans-serif;
-  font-size: 2.5rem;
-  letter-spacing: -1px;
-}
+    /* ══════════════════════════════════════════
+       DESIGN TOKENS — LIGHT
+    ══════════════════════════════════════════ */
+    :root {
+      --bg:         #F5F2ED;
+      --surface:    #FFFFFF;
+      --raised:     #EDEAD4;
+      --text:       #0A0908;
+      --text-2:     #595653;
+      --text-3:     #9A9896;
+      --bd:         #0A0908;        /* main border: black */
+      --bd-subtle:  #C4C0BA;        /* dividers */
+      --tag-bg:     #0A0908;        /* category stamp: inverted */
+      --tag-fg:     #F5F2ED;
+      --act-bg:     #0A0908;        /* active filter */
+      --act-fg:     #F5F2ED;
+      --green:      #1A7A32;
+      --sans:       'Space Grotesk', system-ui, sans-serif;
+      --mono:       'Space Mono', monospace;
+    }
 
-.category-nav {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  margin-top: 10px;
-}
-.category-btn {
-  padding: 4px 12px;
-  border: 1px solid var(--rule);
-  cursor: pointer;
-  background: var(--bg);
-  color: var(--ink);
-  transition: all 0.2s;
-}
-.category-btn:hover {
-  background: var(--accent);
-}
-.category-btn.active {
-  background: var(--ink);
-  color: var(--bg);
-  border-color: var(--bg);
-}
-.category-btn.active::before {
-  content: '● ';
-  font-size: 0.8em;
-  color: var(--accent);
-}
+    /* ══════════════════════════════════════════
+       DESIGN TOKENS — DARK
+    ══════════════════════════════════════════ */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:         #111009;
+        --surface:    #1A1815;
+        --raised:     #222019;
+        --text:       #F0EDE8;
+        --text-2:     #9E9B97;
+        --text-3:     #5A5654;
+        --bd:         #3D3A36;
+        --bd-subtle:  #262320;
+        --tag-bg:     #F0EDE8;
+        --tag-fg:     #111009;
+        --act-bg:     #F0EDE8;
+        --act-fg:     #111009;
+        --green:      #3DBE6E;
+      }
+      html { background: #000; }
+    }
 
-.meta { display: flex; gap: 16px; font-size: 0.8rem; }
-.meta span+span::before { content:' // '; }
+    /* ══════════════════════════════════════════
+       BASE
+    ══════════════════════════════════════════ */
+    html { height: 100%; background: #000; }
 
-main { padding: 0; }
+    body {
+      font-family: var(--sans);
+      background: #000;
+      color: var(--text);
+      overscroll-behavior: none;
+      display: flex;
+      justify-content: center;
+      min-height: 100dvh;
+    }
 
-/* Header row for sorting */
-.header-row {
-  border-bottom: 1px solid var(--rule);
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  background: #f0f0f0;
-}
-.header-label {
-  cursor: pointer;
-  user-select: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 8px;
-  border: 1px solid transparent;
-}
-.header-label:hover { border-color: var(--ink); background: var(--accent); }
-.header-label span.sort-indicator { font-size: 1rem; }
-.header-spacer { flex:1; }
+    /* Screens hidden by default */
+    [hidden] { display: none !important; }
 
-.row {
-  border-bottom: 1px solid var(--rule);
-  padding: 12px 16px;
-  cursor: pointer;
-  transition: all 0s; /* No soft transitions in brutalism */
-}
-.row:hover, .row:focus-visible {
-  background: var(--ink);
-  color: var(--bg);
-}
-.row:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: -2px;
-}
-.row:hover .brand, .row:focus-visible .brand { color: var(--bg); }
-.row:hover a, .row:focus-visible a { border-color: var(--bg); }
-.row:hover a:hover, .row:focus-visible a:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+    /* ══════════════════════════════════════════
+       SHARED SCREEN SHELL
+    ══════════════════════════════════════════ */
+    .screen {
+      position: fixed;
+      inset: 0;
+      max-width: 430px;
+      margin: 0 auto;
+      background: var(--bg);
+      z-index: 80;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
 
-.line { display: flex; flex-wrap: nowrap; gap: 12px 16px; align-items: baseline; }
-.name { font-size: 1rem; font-weight: bold; }
-.brand { color: #555; }
-.row:hover .brand, .row:focus-visible .brand { color: #aaa; }
+    /* ══════════════════════════════════════════
+       LOADING
+    ══════════════════════════════════════════ */
+    #s-loading {
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      transition: opacity 300ms ease;
+    }
+    #s-loading.out { opacity: 0; pointer-events: none; }
 
-.row-desc { display: none; margin-top: 8px; font-size: 0.9rem; color: #444; line-height: 1.4; }
-.row.expanded .row-desc { display: block; }
-.row:hover .row-desc, .row:focus-visible .row-desc { color: #ccc; }
+    .load-name {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -2px;
+    }
+    .load-bar {
+      width: 72px;
+      height: 3px;
+      background: var(--bd-subtle);
+      overflow: hidden;
+    }
+    .load-fill {
+      height: 100%;
+      background: var(--text);
+      animation: fillBar 1.5s cubic-bezier(.4,0,.2,1) forwards;
+      width: 0;
+    }
+    @keyframes fillBar { 0% { width:0 } 60% { width:60% } 100% { width:100% } }
+    .load-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.3px;
+    }
 
-.row-address { font-size: 0.85rem; color: #666; }
-.row:hover .row-address, .row:focus-visible .row-address { color: #ddd; }
+    /* ══════════════════════════════════════════
+       LOCATION REQUEST SCREEN
+    ══════════════════════════════════════════ */
+    #s-location {
+      z-index: 90;
+      border: 2px solid var(--bd);
+    }
+    .loc-hd {
+      padding: 20px;
+      border-bottom: 2px solid var(--bd);
+    }
+    .loc-hd-name {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+    .loc-body {
+      flex: 1;
+      padding: 36px 20px 40px;
+      display: flex;
+      flex-direction: column;
+    }
+    .loc-title {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .loc-sub {
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+    .loc-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 15px 18px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 8px;
+      transition: opacity 150ms;
+      letter-spacing: 0.1px;
+    }
+    .loc-btn:hover { opacity: 0.85; }
+    .loc-btn.ghost {
+      background: transparent;
+      color: var(--text);
+    }
+    .loc-btn .arr { font-size: 18px; }
 
-.prices { display: flex; flex-wrap: nowrap; gap: 8px 16px; margin-left: auto; }
-.prices a {
-  display: inline-flex;
-  gap: 8px;
-  align-items: baseline;
-  padding: 4px 8px;
-  border: 1px solid var(--ink);
-  background: var(--bg);
-  color: var(--ink);
-}
-.row:hover .prices a, .row:focus-visible .prices a {
-  border-color: var(--bg);
-}
-.site { font-weight: bold; }
-.amount { }
-.ship { display: none; } /* Hide shipping for brutalist look */
+    /* ══════════════════════════════════════════
+       NEIGHBORHOOD PICKER
+    ══════════════════════════════════════════ */
+    #s-nbhd { z-index: 90; border: 2px solid var(--bd); }
 
-footer {
-  border-top: 1px solid var(--rule);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  background: var(--ink);
-  color: var(--bg);
-}
+    .nbhd-hd {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 2px solid var(--bd);
+      padding: 18px 20px 16px;
+      z-index: 10;
+    }
+    .nbhd-hd-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .nbhd-hd-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .back-btn {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text);
+      background: none;
+      border: 2px solid var(--bd);
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: background 100ms, color 100ms;
+    }
+    .back-btn:hover { background: var(--text); color: var(--bg); }
+    .nbhd-hd-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .nbhd-borough-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding: 12px 20px 8px;
+      border-bottom: 1px solid var(--bd-subtle);
+      background: var(--surface);
+    }
+    .nbhd-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+      cursor: pointer;
+      min-height: 54px;
+      background: none;
+      width: 100%;
+      font-family: var(--sans);
+      text-align: left;
+      transition: background 70ms;
+    }
+    .nbhd-item:hover  { background: var(--surface); }
+    .nbhd-item:active { background: var(--raised); }
+    .nbhd-item-name {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      color: var(--text);
+    }
+    .nbhd-item-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nbhd-item-count {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+    }
+    .nbhd-arr {
+      font-size: 18px;
+      color: var(--text-2);
+    }
 
-@media (max-width:600px) {
-  header, main .header-row, footer { padding-left: 10px; padding-right: 10px; }
-  .meta { flex-direction: column; gap: 4px; }
-  .meta span+span::before { display: none; }
-  .shortcut { display: none; }
-}
+    /* ══════════════════════════════════════════
+       MAIN APP SHELL
+    ══════════════════════════════════════════ */
+    #s-app {
+      position: relative;
+      width: 100%;
+      max-width: 430px;
+      min-height: 100dvh;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+    }
 
-<header>
-  <div class="header-top">
-    <span>TOTE</span>
-    <nav class="category-nav" id="category-nav" aria-label="Categories">
-      <!-- Nav buttons will be injected here -->
-    </nav>
-    <div class="location-controls" style="display: flex; gap: 12px; align-items: center; margin-top: 10px;">
-      <button type="button" class="category-btn" id="locate-me-btn" aria-label="Locate Me"><span class="shortcut">[l] </span>Locate Me</button>
-      <select id="neighborhood-select" class="category-btn" aria-label="Select Neighborhood">
-        <option value="" disabled selected>Neighborhoods...</option>
-      </select>
-      <select id="superlative-select" class="category-btn" aria-label="Select Category">
-        <option value="" selected>All Categories</option>
-      </select>
+    /* ══════════════════════════════════════════
+       HEADER
+    ══════════════════════════════════════════ */
+    .hd {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg);
+      border-bottom: 2px solid var(--bd);
+      padding: 18px 20px 0;
+    }
+    .hd-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .app-name {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -1.2px;
+      line-height: 1;
+    }
+    .sync-badge {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 8px;
+      border: 1.5px solid var(--bd-subtle);
+    }
+    .sync-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--green);
+    }
+    .sync-text {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--text-3);
+    }
+
+    /* Location row */
+    .hd-loc {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+    .hd-loc-pin {
+      width: 12px;
+      height: 12px;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    .hd-loc-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: -0.1px;
+    }
+    .hd-loc-sep { font-size: 13px; color: var(--text-3); }
+    .hd-loc-sub {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+    }
+    .hd-loc-change {
+      font-family: var(--mono);
+      font-size: 9px;
+      color: var(--text-3);
+      background: none;
+      border: 1.5px solid var(--bd-subtle);
+      padding: 2px 7px;
+      cursor: pointer;
+      transition: border-color 100ms, color 100ms;
+    }
+    .hd-loc-change:hover { border-color: var(--bd); color: var(--text); }
+
+    /* Tabs */
+    .hd-tabs {
+      display: flex;
+      margin-bottom: 12px;
+      border: 2px solid var(--bd);
+    }
+    .tab-btn {
+      flex: 1;
+      padding: 8px 10px;
+      background: transparent;
+      color: var(--text-2);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      border-right: 2px solid var(--bd);
+      transition: background 100ms, color 100ms;
+    }
+    .tab-btn:last-child { border-right: none; }
+    .tab-btn:hover:not(.active) { background: var(--surface); color: var(--text); }
+    .tab-btn.active { background: var(--act-bg); color: var(--act-fg); }
+
+    /* Category filters */
+    .hd-filters {
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin: 0 -20px;
+      padding: 0 20px;
+    }
+    .hd-filters::-webkit-scrollbar { display: none; }
+    .fil-row {
+      display: flex;
+      gap: 4px;
+      width: max-content;
+      padding-bottom: 12px;
+    }
+    .fpill {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 5px 10px;
+      border: 2px solid var(--bd);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 90ms, color 90ms;
+    }
+    .fpill:hover:not(.active) { background: var(--surface); }
+    .fpill.active { background: var(--act-bg); color: var(--act-fg); }
+    .fpill-n { font-family: var(--mono); font-size: 9px; opacity: 0.45; }
+
+    /* ══════════════════════════════════════════
+       RESULTS BAR
+    ══════════════════════════════════════════ */
+    .results-bar {
+      padding: 7px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .res-n, .res-sort {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    /* ══════════════════════════════════════════
+       LIST
+    ══════════════════════════════════════════ */
+    .list {
+      list-style: none;
+      padding-bottom: 82px;
+    }
+    .place { border-bottom: 1px solid var(--bd-subtle); }
+
+    /* Entrance — only fires on initial render via .animate-in */
+    .place.animate-in { animation: itemIn 150ms ease both; }
+    @keyframes itemIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .p-row {
+      display: grid;
+      grid-template-columns: 58px 1fr 26px;
+      align-items: start;
+      padding: 14px 20px;
+      cursor: pointer;
+      user-select: none;
+      min-height: 54px;
+      transition: background 70ms;
+    }
+    .p-row:hover  { background: var(--surface); }
+    .p-row:active { background: var(--raised); }
+    .p-row:focus-visible { outline: 2px solid var(--bd); outline-offset: -2px; }
+
+    /* Distance */
+    .p-dist { padding-top: 2px; }
+    .d-n {
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--text);
+    }
+    .d-u {
+      font-family: var(--mono);
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-3);
+      margin-top: 3px;
+    }
+
+    /* Place info */
+    .p-mid { padding-right: 6px; }
+    .p-top {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 3px;
+    }
+    .p-name {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+      color: var(--text);
+    }
+    .p-cat {
+      font-family: var(--mono);
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      background: var(--tag-bg);
+      color: var(--tag-fg);
+      padding: 2px 5px;
+      flex-shrink: 0;
+    }
+    .p-tag {
+      font-size: 12px;
+      color: var(--text-2);
+      line-height: 1.4;
+    }
+
+    /* Chevron */
+    .p-chev {
+      display: flex;
+      justify-content: center;
+      padding-top: 3px;
+    }
+    .chev {
+      width: 14px;
+      height: 14px;
+      color: var(--text-3);
+      transition: transform 200ms ease, color 200ms;
+    }
+    .place.open .chev { transform: rotate(180deg); color: var(--text); }
+
+    /* Expand panel (CSS grid row trick) */
+    .p-expand {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 210ms ease;
+    }
+    .place.open .p-expand { grid-template-rows: 1fr; }
+    .p-expand-inner { overflow: hidden; }
+
+    .p-body {
+      border-top: 1px solid var(--bd-subtle);
+      padding: 14px 20px 18px 78px;
+    }
+    .p-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-2);
+      margin-bottom: 16px;
+    }
+    .maps-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 9px 14px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+      transition: opacity 140ms;
+    }
+    .maps-btn:hover { opacity: 0.82; }
+    .maps-btn svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+    /* ══════════════════════════════════════════
+       EMPTY STATE
+    ══════════════════════════════════════════ */
+    .empty { display: none; padding: 48px 20px; }
+    .empty.show { display: block; }
+    .empty-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .empty-sub   { font-size: 13px; color: var(--text-2); }
+
+    /* ══════════════════════════════════════════
+       IMPORT VIEW
+    ══════════════════════════════════════════ */
+    .import-view { padding: 24px 20px 100px; }
+
+    .import-title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .import-subtitle {
+      font-size: 13px;
+      color: var(--text-2);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .import-field {
+      border: 2px solid var(--bd);
+      margin-bottom: 10px;
+      background: var(--surface);
+    }
+    .import-input {
+      width: 100%;
+      padding: 12px 14px;
+      font-family: var(--mono);
+      font-size: 12px;
+      background: transparent;
+      color: var(--text);
+      border: none;
+      outline: none;
+      display: block;
+    }
+    .import-input::placeholder { color: var(--text-3); }
+
+    .import-btn {
+      width: 100%;
+      padding: 13px 18px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: opacity 140ms;
+      margin-bottom: 28px;
+    }
+    .import-btn:hover:not(:disabled) { opacity: 0.85; }
+    .import-btn:disabled { opacity: 0.35; cursor: default; }
+
+    .import-status {
+      display: none;
+      padding: 11px 14px;
+      border: 2px solid var(--bd);
+      font-family: var(--mono);
+      font-size: 11px;
+      margin-bottom: 28px;
+    }
+    .import-status.show { display: block; }
+    .import-status.ok { background: var(--text); color: var(--bg); }
+
+    .import-howto-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--bd);
+      margin-bottom: 20px;
+    }
+    .import-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .import-step-n {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-3);
+      width: 20px;
+      flex-shrink: 0;
+      padding-top: 1px;
+    }
+    .import-step-text {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-2);
+    }
+    .import-step-text strong { color: var(--text); font-weight: 700; }
+
+    /* ══════════════════════════════════════════
+       BOTTOM BAR
+    ══════════════════════════════════════════ */
+    .bottom {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      max-width: 430px;
+      background: var(--bg);
+      border-top: 2px solid var(--bd);
+      padding: 11px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 50;
+    }
+    .bt-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-2);
+      background: none;
+      border: none;
+      font-family: var(--sans);
+      cursor: pointer;
+      padding: 5px 0;
+      transition: color 110ms;
+    }
+    .bt-link:hover { color: var(--text); }
+    .bt-link svg { width: 14px; height: 14px; }
+    .bt-add {
+      padding: 8px 14px;
+      border: 2px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity 140ms;
+    }
+    .bt-add:hover { opacity: 0.82; }
+
+    /* ══════════════════════════════════════════
+       REDUCED MOTION
+    ══════════════════════════════════════════ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── LOADING ─── -->
+<div id="s-loading" class="screen">
+  <div class="load-name">tote</div>
+  <div class="load-bar"><div class="load-fill"></div></div>
+  <div class="load-sub">loading your list…</div>
+</div>
+
+<!-- ─── LOCATION REQUEST ─── -->
+<div id="s-location" class="screen" hidden aria-modal="true" role="dialog" aria-label="Location permission">
+  <div class="loc-hd">
+    <div class="loc-hd-name">tote</div>
+  </div>
+  <div class="loc-body">
+    <h1 class="loc-title">Find what's close to you right now</h1>
+    <p class="loc-sub">Tote sorts your saved places by walking distance so you can act on your list — not just grow it.</p>
+    <button class="loc-btn" id="btnEnableLoc">Enable location <span class="arr">→</span></button>
+    <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr">→</span></button>
+  </div>
+</div>
+
+<!-- ─── NEIGHBORHOOD PICKER ─── -->
+<div id="s-nbhd" class="screen" hidden aria-label="Pick a neighborhood">
+  <div class="nbhd-hd">
+    <div class="nbhd-hd-top">
+      <span class="nbhd-hd-title">Neighborhoods</span>
+      <button class="back-btn" id="btnNbhdBack">← Back</button>
+    </div>
+    <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
+  </div>
+  <div id="nbhdList"></div>
+</div>
+
+<!-- ─── MAIN APP ─── -->
+<div id="s-app" hidden>
+  <header class="hd">
+    <div class="hd-top">
+      <span class="app-name">tote</span>
+      <div class="sync-badge">
+        <div class="sync-dot"></div>
+        <span class="sync-text">synced · 2m ago</span>
+      </div>
+    </div>
+
+    <div class="hd-loc">
+      <svg class="hd-loc-pin" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+        <path d="M7 1C4.79 1 3 2.79 3 5c0 3.25 4 8 4 8s4-4.75 4-8c0-2.21-1.79-4-4-4z"/>
+        <circle cx="7" cy="5" r="1.3" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="hd-loc-name" id="locName">Lower East Side</span>
+      <span class="hd-loc-sep">·</span>
+      <span class="hd-loc-sub" id="locSub">Manhattan, NY</span>
+      <button class="hd-loc-change" id="btnChangeLoc" aria-label="Change location">change</button>
+    </div>
+
+    <div class="hd-tabs" role="tablist">
+      <button class="tab-btn active" data-tab="list" role="tab" aria-selected="true">My List</button>
+      <button class="tab-btn" data-tab="import" role="tab" aria-selected="false">Import</button>
+    </div>
+
+    <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
+      <div class="fil-row" id="filters">
+        <button class="fpill active" data-cat="All">All <span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" data-cat="Coffee">Coffee <span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" data-cat="Food">Food <span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" data-cat="Bars">Bars <span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" data-cat="Shops">Shops <span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" data-cat="Culture">Culture <span class="fpill-n" id="n-Culture"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- List view -->
+  <div id="vList">
+    <div class="results-bar" aria-live="polite" aria-atomic="true">
+      <span class="res-n" id="resN">— places</span>
+      <span class="res-sort" id="resSort">↑ nearest first</span>
+    </div>
+    <ul class="list" id="list" aria-label="Saved places sorted by distance"></ul>
+    <div class="empty" id="empty" role="status">
+      <div class="empty-title">Nothing in this category</div>
+      <div class="empty-sub">Add places from your Google Maps list to see them here.</div>
     </div>
   </div>
-  <span class="meta"><span id="hd-n" aria-live="polite" aria-atomic="true"></span><span><span class="shortcut">[←/→] </span>Cats</span><span><span class="shortcut">[↑/↓] </span>Navigate</span><span><span class="shortcut">[Enter] </span>Open</span><span id="local-time"></span></span>
-</header>
 
-<main aria-label="Items list">
-  <div class="header-row">
-    <button type="button" class="header-label" data-sort="brand">
-      <span><span class="shortcut">[b] </span>Brand</span>
-      <span class="sort-indicator" data-indicator="brand">·</span>
-    </button>
-    <button type="button" class="header-label" data-sort="name">
-      <span><span class="shortcut">[t] </span>Title</span>
-      <span class="sort-indicator" data-indicator="name">·</span>
-    </button>
-    <div class="header-spacer"></div>
+  <!-- Import view -->
+  <div id="vImport" hidden>
+    <div class="import-view">
+      <div class="import-title">Connect Google Maps</div>
+      <div class="import-subtitle">Paste a shared Google Maps list link to sync your saved places into Tote.</div>
+
+      <div class="import-field">
+        <input class="import-input" id="importInput" type="url" inputmode="url"
+          autocomplete="off" autocorrect="off" spellcheck="false"
+          placeholder="https://maps.app.goo.gl/…" />
+      </div>
+
+      <button class="import-btn" id="importBtn" disabled>
+        <span id="importBtnLabel">Import List</span>
+        <span>→</span>
+      </button>
+
+      <div class="import-status" id="importStatus" role="status"></div>
+
+      <div class="import-howto-label">How to get your list link</div>
+      <div class="import-step">
+        <span class="import-step-n">01</span>
+        <span class="import-step-text">Open <strong>Google Maps</strong> on your phone</span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">02</span>
+        <span class="import-step-text">Tap <strong>Saved</strong> at the bottom of the screen</span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">03</span>
+        <span class="import-step-text">Open your list (e.g. <strong>Want to go</strong> or a custom list)</span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">04</span>
+        <span class="import-step-text">Tap <strong>⋮</strong> (top right) → <strong>Share list</strong> → <strong>Copy link</strong></span>
+      </div>
+      <div class="import-step">
+        <span class="import-step-n">05</span>
+        <span class="import-step-text">Paste the link above and tap <strong>Import List</strong></span>
+      </div>
+    </div>
   </div>
+
+  <!-- Bottom bar -->
+  <nav class="bottom" aria-label="App navigation">
+    <button class="bt-link" id="btnOpenMaps" aria-label="Open Google Maps">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </svg>
+      Google Maps
+    </button>
+    <button class="bt-add" aria-label="Add a new place">+ Add Place</button>
+  </nav>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════
+   DATA
+══════════════════════════════════════════════ */
+const PLACES = [
+  { id:1,  name:"Cafe Integral",       cat:"Coffee",  tag:"Single-origin espresso from Nicaragua", lat:40.7200, lng:-73.9942, desc:"Family-owned roaster. The cortado is their calling card — they rotate seasonally. Small space with focused energy. Cash appreciated.", q:"Cafe+Integral+149+Elizabeth+St+New+York+NY" },
+  { id:2,  name:"Scarr's Pizza",       cat:"Food",    tag:"Organic flour, old-school slice",        lat:40.7173, lng:-73.9895, desc:"Fresh mozzarella, organic flour, a plain slice that tastes exactly like pizza should. Counter seating is the move. Expect a weekend line.", q:"Scarr%27s+Pizza+22+Orchard+St+New+York+NY" },
+  { id:3,  name:"Ten Bells",           cat:"Bars",    tag:"Natural wine by candlelight",            lat:40.7196, lng:-73.9924, desc:"A tiny cave of a wine bar with an ever-changing natural list. No cocktails, no beer. Bartenders know the producers by name. Arrive before 8pm.", q:"Ten+Bells+247+Broome+St+New+York+NY" },
+  { id:4,  name:"Economy Candy",       cat:"Shops",   tag:"Sugar institution since 1937",           lat:40.7168, lng:-73.9891, desc:"Floor-to-ceiling candy in a tiny Orchard Street shop unchanged for decades. Great for gifting or nostalgia. The bulk bins are the whole point.", q:"Economy+Candy+108+Rivington+St+New+York+NY" },
+  { id:5,  name:"Dimes Market",        cat:"Food",    tag:"California light in the LES",            lat:40.7139, lng:-73.9881, desc:"Grain bowls, great coffee, natural wines, and a market with things you actually want to cook. Sunday brunch line moves fast. Unhurried vibe.", q:"Dimes+Market+143+Division+St+New+York+NY" },
+  { id:6,  name:"Attaboy",             cat:"Bars",    tag:"No menu — just tell them your vibe",     lat:40.7160, lng:-73.9875, desc:"Describe what you feel like drinking and they'll make something you didn't know you wanted. No menu, no attitude. The door is easy to miss.", q:"Attaboy+134+Eldridge+St+New+York+NY" },
+  { id:7,  name:"Housing Works Thrift",cat:"Shops",   tag:"Thrift for a cause, great book section", lat:40.7236, lng:-73.9989, desc:"Rotating secondhand books, clothes, and furniture. Proceeds fund housing for people affected by HIV/AIDS. Best book section on Crosby St.", q:"Housing+Works+Thrift+126+Crosby+St+New+York+NY" },
+  { id:8,  name:"The Pickle Guys",     cat:"Food",    tag:"Open barrels on Essex St",               lat:40.7157, lng:-73.9893, desc:"You point, they fish one out. Has been here since the LES was an entirely different world. Get the half-sour. Cash only.", q:"The+Pickle+Guys+49+Essex+St+New+York+NY" },
+  { id:9,  name:"Metrograph",          cat:"Culture", tag:"Indie cinema, exceptional cafe",         lat:40.7134, lng:-73.9876, desc:"Independent cinema showing arthouse films and retrospectives. The downstairs cafe stands alone. Book tickets ahead — weekends sell out.", q:"Metrograph+7+Ludlow+St+New+York+NY" },
+  { id:10, name:"Russ & Daughters",    cat:"Food",    tag:"Lox temple since 1914",                  lat:40.7228, lng:-73.9832, desc:"The original appetizing shop. The Super Heeb is the move. The cafe on Orchard has more seats. Come early on weekends.", q:"Russ+and+Daughters+179+E+Houston+St+New+York+NY" },
+  { id:11, name:"McNally Jackson",     cat:"Culture", tag:"Staff picks worth reading",              lat:40.7238, lng:-73.9964, desc:"Best indie bookshop in the neighborhood. Staff picks are genuinely curated. The magazine section rewards slow browsing. Coffee bar in the back.", q:"McNally+Jackson+Books+52+Prince+St+New+York+NY" },
+  { id:12, name:"Death & Co",          cat:"Bars",    tag:"Cocktail institution, seasonal menu",    lat:40.7267, lng:-73.9779, desc:"One of the bars that started NYC's cocktail revival. Menu rotates seasonally. Bar seats are walk-in only — reservations recommended on weekends.", q:"Death+and+Co+433+E+6th+St+New+York+NY" },
+];
+
+const NEIGHBORHOODS = [
+  { id:'les',     name:'Lower East Side', borough:'Manhattan', lat:40.7150, lng:-73.9861 },
+  { id:'ev',      name:'East Village',    borough:'Manhattan', lat:40.7265, lng:-73.9815 },
+  { id:'soho',    name:'SoHo',            borough:'Manhattan', lat:40.7233, lng:-73.9978 },
+  { id:'nolita',  name:'Nolita',          borough:'Manhattan', lat:40.7228, lng:-73.9944 },
+  { id:'tribeca', name:'Tribeca',         borough:'Manhattan', lat:40.7163, lng:-74.0086 },
+  { id:'wv',      name:'West Village',    borough:'Manhattan', lat:40.7340, lng:-74.0050 },
+  { id:'chelsea', name:'Chelsea',         borough:'Manhattan', lat:40.7467, lng:-74.0014 },
+  { id:'wburg',   name:'Williamsburg',    borough:'Brooklyn',  lat:40.7081, lng:-73.9571 },
+  { id:'dumbo',   name:'DUMBO',           borough:'Brooklyn',  lat:40.7034, lng:-73.9888 },
+  { id:'cobble',  name:'Cobble Hill',     borough:'Brooklyn',  lat:40.6863, lng:-73.9952 },
+];
+
+const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
+
+/* ══════════════════════════════════════════════
+   STATE
+══════════════════════════════════════════════ */
+const st = {
+  screen:   'loading',
+  tab:      'list',
+  cat:      'All',
+  openId:   null,
+  locMode:  null,
+  locLabel: 'Lower East Side',
+  locSub:   'Manhattan, NY',
+  refLat:   40.7150,
+  refLng:  -73.9861,
+};
+
+/* ══════════════════════════════════════════════
+   UTILS
+══════════════════════════════════════════════ */
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 3959;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 +
+    Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function sortedPlaces() {
+  return PLACES
+    .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
+    .sort((a, b) => a.dist - b.dist);
+}
+
+function filteredPlaces() {
+  const all = sortedPlaces();
+  return st.cat === 'All' ? all : all.filter(p => p.cat === st.cat);
+}
+
+function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
+
+function showScreen(id) {
+  ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.hidden = (s !== id);
+  });
+  st.screen = id;
+}
+
+/* ══════════════════════════════════════════════
+   LOCATION
+══════════════════════════════════════════════ */
+function requestGeo() {
+  if (!navigator.geolocation) { showScreen('s-location'); return; }
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      st.refLat   = pos.coords.latitude;
+      st.refLng   = pos.coords.longitude;
+      st.locMode  = 'gps';
+      st.locLabel = 'Your Location';
+      st.locSub   = 'GPS · live';
+      updateLocUI();
+      showScreen('s-app');
+      renderList(true);
+    },
+    () => showScreen('s-location'),
+    { timeout: 6000 }
+  );
+}
+
+function simulateGPS() {
+  st.locMode  = 'gps';
+  st.locLabel = 'Your Location';
+  st.locSub   = 'GPS · live';
+  updateLocUI();
+  showScreen('s-app');
+  renderList(true);
+}
+
+function updateLocUI() {
+  document.getElementById('locName').textContent = st.locLabel;
+  document.getElementById('locSub').textContent  = st.locSub;
+  document.getElementById('resSort').textContent =
+    st.locMode === 'neighborhood' ? '↑ nearest to ' + st.locLabel : '↑ nearest first';
+}
+
+/* ══════════════════════════════════════════════
+   NEIGHBORHOOD PICKER
+══════════════════════════════════════════════ */
+function renderNeighborhoods() {
+  const container = document.getElementById('nbhdList');
+  container.innerHTML = '';
+  const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
+  boroughs.forEach(b => {
+    const lbl = document.createElement('div');
+    lbl.className = 'nbhd-borough-label';
+    lbl.textContent = b.toUpperCase();
+    container.appendChild(lbl);
+
+    NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
+      const nearby = PLACES.filter(p =>
+        haversine(nbhd.lat, nbhd.lng, p.lat, p.lng) < 2.5
+      ).length;
+
+      const btn = document.createElement('button');
+      btn.className = 'nbhd-item';
+      btn.setAttribute('aria-label', `${nbhd.name}, ${nearby} places within 2.5 miles`);
+      btn.innerHTML = `
+        <span class="nbhd-item-name">${nbhd.name}</span>
+        <span class="nbhd-item-right">
+          <span class="nbhd-item-count">${nearby} within ~2.5 mi</span>
+          <span class="nbhd-arr">→</span>
+        </span>`;
+      btn.addEventListener('click', () => selectNeighborhood(nbhd));
+      container.appendChild(btn);
+    });
+  });
+}
+
+function selectNeighborhood(nbhd) {
+  st.refLat   = nbhd.lat;
+  st.refLng   = nbhd.lng;
+  st.locMode  = 'neighborhood';
+  st.locLabel = nbhd.name;
+  st.locSub   = nbhd.borough + ', NY';
+  st.openId   = null;
+  updateLocUI();
+  showScreen('s-app');
+  renderList(true);
+  renderCounts();
+}
+
+/* ══════════════════════════════════════════════
+   LIST — only called on initial load + filter change
+   Toggle is handled by toggleItem() — NO re-render
+══════════════════════════════════════════════ */
+function renderList(animate = false) {
+  const listEl  = document.getElementById('list');
+  const emptyEl = document.getElementById('empty');
+  const nEl     = document.getElementById('resN');
+  const items   = filteredPlaces();
+  st.openId = null;
 
   listEl.innerHTML = '';
   nEl.textContent = items.length + ' place' + (items.length !== 1 ? 's' : '');
 
-<footer>
-  <div style="display: flex; gap: 16px;">
-    <span>Articles on the coolest totes on the web</span>
-    <a href="/about.html">About Us</a>
-  </div>
-  <span>tote.so</span>
-</footer>
+  if (!items.length) { emptyEl.classList.add('show'); return; }
+  emptyEl.classList.remove('show');
 
-<script>
-(async function() {
-  const listEl = document.getElementById('list');
-  const sortButtons = document.querySelectorAll('.header-label');
-  const countEl = document.getElementById('hd-n');
-  const navEl = document.getElementById('category-nav');
-  const locateMeBtn = document.getElementById('locate-me-btn');
-  const neighborhoodSelect = document.getElementById('neighborhood-select');
-  const superlativeSelect = document.getElementById('superlative-select');
-  const indicators = {
-    name: document.querySelector('[data-indicator="name"]'),
-    distance: document.querySelector('[data-indicator="distance"]')
-  };
+  items.forEach((p, i) => {
+    const li = document.createElement('li');
+    li.className = 'place' + (animate ? ' animate-in' : '');
+    li.dataset.pid = p.id;
+    if (animate) li.style.animationDelay = (i * 22) + 'ms';
 
-  let categories = [];
-  let superlatives = [];
+    li.innerHTML = `
+      <div class="p-row"
+           tabindex="0" role="button"
+           aria-expanded="false"
+           aria-controls="exp-${p.id}"
+           data-id="${p.id}">
+        <div class="p-dist" aria-label="${p.dist.toFixed(1)} miles away">
+          <div class="d-n">${p.dist.toFixed(1)}</div>
+          <div class="d-u">mi</div>
+        </div>
+        <div class="p-mid">
+          <div class="p-top">
+            <span class="p-name">${p.name}</span>
+            <span class="p-cat">${p.cat}</span>
+          </div>
+          <div class="p-tag">${p.tag}</div>
+        </div>
+        <div class="p-chev" aria-hidden="true">
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9"/>
+          </svg>
+        </div>
+      </div>
+      <div class="p-expand" id="exp-${p.id}" role="region" aria-label="${p.name} details">
+        <div class="p-expand-inner">
+          <div class="p-body">
+            <p class="p-desc">${p.desc}</p>
+            <a class="maps-btn"
+               href="${mapsUrl(p.q)}"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Open ${p.name} in Google Maps">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>`;
 
-  // ⚡ Bolt Optimization: Cache category data to prevent redundant network requests
-  const categoryCache = {};
+    listEl.appendChild(li);
+  });
 
-  let currentCategory = null;
-  let currentSuperlative = null;
-  let items = [];
-  let currentSort = { key: 'distance', direction: 'asc' };
-
-  function initNeighborhoodDropdown() {
-    neighborhoodSelect.innerHTML = '<option value="" disabled selected>Neighborhoods...</option>';
-    categories.forEach(cat => {
-      if (cat.latLng) {
-        const option = document.createElement('option');
-        option.value = cat.id;
-        option.textContent = cat.name;
-        neighborhoodSelect.appendChild(option);
-      }
-    });
-
-    neighborhoodSelect.addEventListener('change', (e) => {
-      const targetId = e.target.value;
-      const targetCategory = categories.find(c => c.id === targetId);
-      if (targetCategory && targetCategory.id !== currentCategory.id) {
-        currentCategory = targetCategory;
-        loadCategoryData();
-      }
-      e.target.value = ""; // Reset dropdown after selection
-    });
-  }
-
-  function initSuperlativeDropdown() {
-    superlatives.forEach(sup => {
-      const option = document.createElement('option');
-      option.value = sup.id;
-      option.textContent = sup.name;
-      superlativeSelect.appendChild(option);
-    });
-
-    superlativeSelect.addEventListener('change', (e) => {
-      const targetId = e.target.value;
-      if (targetId === "") {
-        currentSuperlative = null;
-      } else {
-        currentSuperlative = superlatives.find(s => s.id === targetId);
-      }
-      loadCategoryData();
-    });
-  }
-
-  function renderNav() {
-    navEl.innerHTML = '';
-    // Limit to displaying the top 5 neighborhoods in the top nav
-    const visibleCategories = categories.slice(0, 5);
-
-    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
-    const fragment = document.createDocumentFragment();
-    visibleCategories.forEach((cat, index) => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'category-btn';
-      if (cat.id === currentCategory.id) {
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed', 'true');
-      } else {
-        btn.setAttribute('aria-pressed', 'false');
-      }
-      btn.innerHTML = `<span class="shortcut">[${index + 1}] </span>${cat.name}`;
-      btn.addEventListener('click', () => {
-        if (cat.id !== currentCategory.id) {
-          currentCategory = cat;
-          loadCategoryData();
-        }
-      });
-      fragment.appendChild(btn);
-    });
-    navEl.appendChild(fragment);
-  }
-
-  async function loadCategoryData() {
-    renderNav();
-    listEl.setAttribute('aria-busy', 'true');
-    listEl.innerHTML = '<div class="row"><div class="line"><span class="name">Loading places...</span></div></div>';
-
-    // Determine the correct file path based on neighborhood and selected superlative
-    let filePath = currentCategory.file;
-    let cacheKey = currentCategory.id;
-
-    if (currentSuperlative) {
-      filePath = `/data/${currentCategory.id}_${currentSuperlative.id}.json`;
-      cacheKey = `${currentCategory.id}_${currentSuperlative.id}`;
-    }
-
-    // ⚡ Bolt Optimization: Use cached data if available
-    if (categoryCache[cacheKey]) {
-      items = categoryCache[cacheKey].slice();
-    } else {
-      try {
-        const res = await fetch(filePath);
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        const data = await res.json();
-
-        const categoryItems = data[currentCategory.dataKey] || [];
-        categoryCache[cacheKey] = categoryItems;
-        items = categoryItems.slice();
-      } catch (err) {
-        console.error('failed to load data', err);
-        listEl.innerHTML = '<div class="row"><div class="line"><span class="name">Error loading data.</span></div></div>';
-        listEl.removeAttribute('aria-busy');
-        items = [];
-        return;
-      }
-    }
-
-    currentSort = { key: 'distance', direction: 'asc' };
-    sortItems();
-    updateIndicators();
-    render();
-    listEl.removeAttribute('aria-busy');
-  }
-
-  function sortItems() {
-    const { key, direction } = currentSort;
-    const dir = direction === 'asc' ? 1 : -1;
-
-    items.sort((a, b) => {
-      if (key === 'name') {
-        return a.name.localeCompare(b.name) * dir;
-      }
-      if (key === 'distance') {
-        const d1 = typeof a.distance === 'number' ? a.distance : Infinity;
-        const d2 = typeof b.distance === 'number' ? b.distance : Infinity;
-        if (d1 === d2) return 0;
-        return (d1 < d2 ? -1 : 1) * dir;
-      }
-      if (key === 'price') {
-        const p1 = typeof a.price === 'number' ? a.price : Infinity;
-        const p2 = typeof b.price === 'number' ? b.price : Infinity;
-        if (p1 === p2) return 0;
-        return (p1 < p2 ? -1 : 1) * dir;
-      }
-      return 0;
+  listEl.querySelectorAll('.p-row').forEach(row => {
+    row.addEventListener('click', () => toggleItem(+row.dataset.id));
+    row.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleItem(+row.dataset.id); }
     });
   });
 
@@ -415,27 +1161,17 @@ function toggleItem(id) {
   }
 }
 
-  function render() {
-    listEl.innerHTML = '';
-    countEl.textContent = `${items.length} ${currentCategory.unit}`;
-
-    if (items.length === 0) {
-      listEl.innerHTML = '<div class="row"><div class="line"><span class="name">No places found for this category. Try selecting a different neighborhood or category.</span></div></div>';
-      return;
-    }
-
-    // ⚡ Bolt Optimization: Batch DOM updates using DocumentFragment to prevent layout thrashing
-    const fragment = document.createDocumentFragment();
-
-  // ⚡ Bolt Optimization: Precompile regex outside loop to avoid redundant compilations
-  const addressRegex = /(?:Near\s+)?-?\d+\.\d+,\s*-?\d+\.\d+(?:,\s*)?/gi;
-
-    items.forEach(item => {
-      const row = document.createElement('div');
-      row.className = 'row';
-      row.tabIndex = 0; // Make row focusable via keyboard
-      row.setAttribute('role', 'button');
-      row.setAttribute('aria-expanded', 'false');
+/* ══════════════════════════════════════════════
+   COUNTS + FILTER
+══════════════════════════════════════════════ */
+function renderCounts() {
+  const all = sortedPlaces();
+  CATS.forEach(c => {
+    const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
+    const el = document.getElementById('n-' + c);
+    if (el) el.textContent = n;
+  });
+}
 
 /* ══════════════════════════════════════════════
    TAB SWITCH
@@ -452,21 +1188,21 @@ function setTab(tab) {
   document.getElementById('hdFilters').hidden = !isList;
 }
 
-      const name = document.createElement('span');
-      name.className = 'name';
-      name.textContent = item.name;
+/* ══════════════════════════════════════════════
+   IMPORT
+══════════════════════════════════════════════ */
+function initImport() {
+  const input  = document.getElementById('importInput');
+  const btn    = document.getElementById('importBtn');
+  const label  = document.getElementById('importBtnLabel');
+  const status = document.getElementById('importStatus');
+  const MAPS_RE = /maps\.app\.goo\.gl\/|maps\.google\.com\//;
 
-      const addressSpan = document.createElement('span');
-      addressSpan.className = 'row-address';
-      addressSpan.textContent = item.address ? item.address : '';
-
-      const brand = document.createElement('span');
-      brand.className = 'brand';
-      if (typeof item.distance === 'number' && item.distance !== Infinity) {
-        brand.textContent = item.distance.toFixed(1) + ' mi';
-      } else {
-        brand.textContent = '';
-      }
+  input.addEventListener('input', () => {
+    btn.disabled = !MAPS_RE.test(input.value.trim());
+    status.className = 'import-status';
+    status.textContent = '';
+  });
 
   btn.addEventListener('click', () => {
     if (!MAPS_RE.test(input.value.trim())) return;
@@ -486,99 +1222,35 @@ function setTab(tab) {
   });
 }
 
-      if (item.address) {
-          const link = document.createElement('a');
-          const cleanedAddress = item.address.replace(addressRegex, '');
-          const encodedAddress = encodeURIComponent(item.name + ' ' + cleanedAddress);
-          link.href = `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-
-          const site = document.createElement('span');
-          site.className = 'site';
-          site.textContent = 'Map';
-
-          link.appendChild(site);
-          prices.appendChild(link);
-      } else if (item.links && item.links.length > 0) {
-        item.links.forEach(l => {
-          const link = document.createElement('a');
-          link.href = l.u;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-
-          const site = document.createElement('span');
-          site.className = 'site';
-          site.textContent = (currentCategory.actionText || 'BUY') + ': ' + l.r;
-
-          link.appendChild(site);
-
-          if (typeof item.price === 'number') {
-            const amount = document.createElement('span');
-            amount.className = 'amount';
-            amount.textContent = '$' + item.price.toLocaleString();
-            link.appendChild(amount);
-          }
-
-          prices.appendChild(link);
-        });
-      }
-
-      line.appendChild(name);
-      line.appendChild(addressSpan);
-      if (brand.textContent !== '') {
-          line.appendChild(brand);
-      }
-      line.appendChild(prices);
-
-      row.appendChild(line);
-
-      if (item.description) {
-        const desc = document.createElement('div');
-        desc.className = 'row-desc';
-        desc.textContent = item.description.startsWith("Known for:") ? item.description : `Known for: ${item.description}`;
-        row.appendChild(desc);
-      }
-
-      if (item.article) {
-        const articleDiv = document.createElement('div');
-        articleDiv.className = 'row-desc';
-        articleDiv.innerHTML = `Link: <a href="${item.article.url}" target="_blank" rel="noopener noreferrer">${item.article.title}</a>`;
-        row.appendChild(articleDiv);
-      }
-
-      fragment.appendChild(row);
-    });
-
-    listEl.appendChild(fragment);
-  }
-
-  // ⚡ Bolt Optimization: Event Delegation for row clicks to reduce memory and O(N) listener attachments
-  listEl.addEventListener('click', (e) => {
-    const row = e.target.closest('.row');
-    if (!row) return;
-    // Ignore clicks on links
-    if (e.target.closest('a')) return;
-    row.classList.toggle('expanded');
-    row.setAttribute('aria-expanded', row.classList.contains('expanded'));
+/* ══════════════════════════════════════════════
+   EVENTS
+══════════════════════════════════════════════ */
+function bindEvents() {
+  document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
+  document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    renderNeighborhoods();
+    showScreen('s-nbhd');
   });
 
-  function handleSort(key) {
-    if (currentSort.key === key) {
-      currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
-    } else {
-      currentSort.key = key;
-      currentSort.direction = 'asc';
-    }
-    sortItems();
-    updateIndicators();
-    render();
-  }
+  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
 
-  sortButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const key = btn.getAttribute('data-sort');
-      handleSort(key);
+  document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    renderNeighborhoods();
+    showScreen('s-nbhd');
+  });
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => setTab(btn.dataset.tab));
+  });
+
+  document.getElementById('filters').addEventListener('click', e => {
+    const pill = e.target.closest('.fpill');
+    if (!pill) return;
+    st.cat = pill.dataset.cat;
+    st.openId = null;
+    document.querySelectorAll('.fpill').forEach(b => {
+      b.classList.toggle('active', b.dataset.cat === st.cat);
+      b.setAttribute('aria-pressed', b.dataset.cat === st.cat);
     });
     renderList(false);
   });
@@ -591,190 +1263,13 @@ document.addEventListener('DOMContentLoaded', () => {
   bindEvents();
   initImport();
 
-  // Haversine formula to calculate distance in miles
-  function getDistance(lat1, lon1, lat2, lon2) {
-    const R = 3958.8; // Radius of the earth in miles
-    const dLat = (lat2 - lat1) * (Math.PI / 180);
-    const dLon = (lon2 - lon1) * (Math.PI / 180);
-    const a =
-      Math.sin(dLat/2) * Math.sin(dLat/2) +
-      Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
-      Math.sin(dLon/2) * Math.sin(dLon/2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-    return R * c;
-  }
-
-  function handleLocateMe() {
-    locateMeBtn.textContent = 'Locating...';
-    locateMeBtn.disabled = true;
-
-    if (!navigator.geolocation) {
-      alert("Geolocation is not supported by your browser");
-      resetLocateBtn();
-      return;
-    }
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const userLat = position.coords.latitude;
-        const userLng = position.coords.longitude;
-
-        // Calculate distance for all categories
-        categories.forEach(cat => {
-          if (cat.latLng) {
-            cat.distance = getDistance(userLat, userLng, cat.latLng[0], cat.latLng[1]);
-          } else {
-            cat.distance = Infinity;
-          }
-        });
-
-        // Sort categories by distance
-        categories.sort((a, b) => a.distance - b.distance);
-
-        const closestCategory = categories[0];
-
-        // Calculate distance for items in current category if data is loaded
-        items.forEach(item => {
-          if (item.latLng) {
-            item.distance = getDistance(userLat, userLng, item.latLng[0], item.latLng[1]);
-          } else {
-            item.distance = Infinity;
-          }
-        });
-
-        // Assuming NYC is roughly within a 50 mile radius of user if they are in NYC
-        if (closestCategory.distance > 50) {
-          alert("Only for NYC neighborhoods");
-        } else {
-          // Re-init dropdown and re-render nav with sorted categories, keeping user on current category
-          initNeighborhoodDropdown();
-          renderNav();
-          // Resort and render current items to reflect distances
-          sortItems();
-          render();
-        }
-        resetLocateBtn();
-      },
-      (error) => {
-        console.error("Geolocation error:", error);
-        alert("Unable to retrieve your location");
-        resetLocateBtn();
-      },
-      { timeout: 10000 }
-    );
-  }
-
-  function resetLocateBtn() {
-    locateMeBtn.innerHTML = '<span class="shortcut">[l] </span>Locate Me';
-    locateMeBtn.disabled = false;
-  }
-
-  locateMeBtn.addEventListener('click', handleLocateMe);
-
-  window.addEventListener('keydown', (e) => {
-    // Ignore keydown if a modifier is pressed or if user is typing in an input
-    if (e.ctrlKey || e.metaKey || e.altKey) return;
-    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-
-    const num = parseInt(e.key, 10);
-    // Bind numeric keys 1-5 to the visible categories
-    if (!isNaN(num) && num >= 1 && num <= Math.min(categories.length, 5)) {
-      const catIndex = num - 1;
-      const targetCategory = categories[catIndex];
-      if (targetCategory && targetCategory.id !== currentCategory.id) {
-        currentCategory = targetCategory;
-        loadCategoryData();
-      }
-      return;
-    }
-
-    const k = e.key.toLowerCase();
-
-    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-      e.preventDefault();
-      const currentIdx = categories.findIndex(c => c.id === currentCategory.id);
-      let nextIdx = e.key === 'ArrowLeft' ? currentIdx - 1 : currentIdx + 1;
-      if (nextIdx < 0) nextIdx = categories.length - 1;
-      if (nextIdx >= categories.length) nextIdx = 0;
-      currentCategory = categories[nextIdx];
-      loadCategoryData();
-      return;
-    }
-
-    if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
-      e.preventDefault();
-      const rows = Array.from(listEl.querySelectorAll('.row'));
-      if (rows.length === 0) return;
-      const focusedIdx = rows.indexOf(document.activeElement);
-      let nextIdx = e.key === 'ArrowUp' ? focusedIdx - 1 : focusedIdx + 1;
-      if (focusedIdx === -1) nextIdx = 0;
-      if (nextIdx < 0) nextIdx = rows.length - 1;
-      if (nextIdx >= rows.length) nextIdx = 0;
-      rows[nextIdx].focus();
-      return;
-    }
-
-    if (e.key === 'Enter') {
-      if (document.activeElement && document.activeElement.classList.contains('row')) {
-        const link = document.activeElement.querySelector('a');
-        if (link) {
-          link.click();
-          return;
-        }
-      }
-    }
-
-    if (e.key === ' ' || e.key === 'Spacebar') {
-      if (document.activeElement && document.activeElement.classList.contains('row')) {
-        e.preventDefault(); // Prevent page scroll
-        document.activeElement.classList.toggle('expanded');
-        document.activeElement.setAttribute('aria-expanded', document.activeElement.classList.contains('expanded'));
-        return;
-      }
-    }
-
-    if (k === 'd') {
-      handleSort('distance');
-    } else if (k === 't') {
-      handleSort('name');
-    } else if (k === 'l') {
-      handleLocateMe();
-    }
-  });
-
-  async function loadCategories() {
-    try {
-      const [resNeighborhoods, resSuperlatives] = await Promise.all([
-        fetch('/neighborhoods.json'),
-        fetch('/categories.json')
-      ]);
-
-      if (!resNeighborhoods.ok) throw new Error(`HTTP error! status: ${resNeighborhoods.status}`);
-      categories = await resNeighborhoods.json();
-      currentCategory = categories[0];
-
-      if (resSuperlatives.ok) {
-        superlatives = await resSuperlatives.json();
-      }
-
-      initNeighborhoodDropdown();
-      initSuperlativeDropdown();
-      loadCategoryData();
-    } catch (err) {
-      console.error('failed to load data', err);
-      listEl.innerHTML = '<div class="row"><div class="line"><span class="name">Error loading data.</span></div></div>';
-    }
-  }
-
-  // Init
-  loadCategories();
-
-  // Set local time
-  document.getElementById('local-time').textContent = new Date().toLocaleString([], {
-    year: 'numeric', month: 'short', day: 'numeric',
-    hour: '2-digit', minute: '2-digit'
-  });
-})();
+  const loadEl = document.getElementById('s-loading');
+  setTimeout(() => {
+    loadEl.classList.add('out');
+    setTimeout(() => { loadEl.hidden = true; }, 350);
+    showScreen('s-location');
+  }, 1500);
+});
 </script>
 </body>
 </html>
