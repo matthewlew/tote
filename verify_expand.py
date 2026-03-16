@@ -7,13 +7,22 @@ async def run():
         page = await browser.new_page()
         await page.goto('http://localhost:3000')
 
-        # Click "Williamsburg" (visible button [4])
-        await page.locator('button:has-text("Williamsburg")').click()
+        # wait for initial screen to load
+        await page.wait_for_selector('#btnBrowseNbhd', state='visible')
 
-        await page.wait_for_selector('.row')
+        # Click browse by neighborhood
+        await page.locator('#btnBrowseNbhd').click()
+
+        # wait for neighborhood list to load
+        await page.wait_for_selector('.nbhd-item:has-text("Williamsburg")')
+
+        # Click "Williamsburg"
+        await page.locator('.nbhd-item:has-text("Williamsburg")').click()
+
+        await page.wait_for_selector('.place')
 
         # click the first row
-        first_row = page.locator('.row').first
+        first_row = page.locator('.place').first
         await first_row.click()
         await page.wait_for_timeout(500)
 
