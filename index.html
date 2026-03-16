@@ -1295,11 +1295,13 @@ function renderNeighborhoods() {
   const container = document.getElementById('nbhdList');
   container.innerHTML = '';
   const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
+  const fragment = document.createDocumentFragment();
+
   boroughs.forEach(b => {
     const lbl = document.createElement('div');
     lbl.className = 'nbhd-borough-label';
     lbl.textContent = b;
-    container.appendChild(lbl);
+    fragment.appendChild(lbl);
 
     NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
       const nearby = PLACES.filter(p =>
@@ -1316,9 +1318,12 @@ function renderNeighborhoods() {
           <span class="nbhd-arr">→</span>
         </span>`;
       btn.addEventListener('click', () => selectNeighborhood(nbhd));
-      container.appendChild(btn);
+      fragment.appendChild(btn);
     });
   });
+
+  // ⚡ Bolt: Batch DOM updates using DocumentFragment to prevent O(N) reflows
+  container.appendChild(fragment);
 }
 
 function selectNeighborhood(nbhd) {
@@ -1350,6 +1355,8 @@ function renderList(animate = false) {
 
   if (!items.length) { emptyEl.classList.add('show'); return; }
   emptyEl.classList.remove('show');
+
+  const fragment = document.createDocumentFragment();
 
   items.forEach((p, i) => {
     const li = document.createElement('li');
@@ -1399,19 +1406,22 @@ function renderList(animate = false) {
         </div>
       </div>`;
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
 
-  listEl.querySelectorAll('.p-row').forEach(row => {
+  fragment.querySelectorAll('.p-row').forEach(row => {
     row.addEventListener('click', () => toggleItem(+row.dataset.id));
     row.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleItem(+row.dataset.id); }
     });
   });
 
-  listEl.querySelectorAll('.maps-btn').forEach(a => {
+  fragment.querySelectorAll('.maps-btn').forEach(a => {
     a.addEventListener('click', e => e.stopPropagation());
   });
+
+  // ⚡ Bolt: Batch DOM updates using DocumentFragment to prevent O(N) reflows
+  listEl.appendChild(fragment);
 }
 
 /* ══════════════════════════════════════════════
@@ -2037,6 +2047,8 @@ function renderCollectionDetail(coll) {
   });
 
   const listEl = document.getElementById('collPlaceList');
+  const fragment = document.createDocumentFragment();
+
   sorted.forEach((p, i) => {
     const saved = isSavedPlace(p.name);
     const li = document.createElement('li');
@@ -2095,8 +2107,11 @@ function renderCollectionDetail(coll) {
       });
     }
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
+
+  // ⚡ Bolt: Batch DOM updates using DocumentFragment to prevent O(N) reflows
+  listEl.appendChild(fragment);
 }
 
 /* ══════════════════════════════════════════════
