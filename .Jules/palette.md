@@ -13,3 +13,7 @@
 ## 2026-03-15 - Screen Reader Verbosity on Dynamic Lists
 **Learning:** Applying `aria-live="polite"` directly to a large list container (`#list`) causes screen readers to read out the entire contents of the new list every time it changes (e.g. during sorting, changing categories). This results in overwhelming verbosity and makes navigation difficult.
 **Action:** Remove `aria-live` from the list container itself and instead apply `aria-live="polite" aria-atomic="true"` to a concise summary element (like the total item count `span#hd-n`). This provides the user with an immediate, succinct status update while letting them explore the list content at their own pace.
+
+## 2026-03-16 - Focus State Fallbacks and Dead-End Empty States
+**Learning:** Brutalist designs often reset default browser focus states via `outline: none` on interactive elements, which completely breaks keyboard navigation visibility. Also, placeholder-only inputs inherently fail screen reader accessibility, and displaying an empty list state without an actionable button creates a confusing dead-end user flow.
+**Action:** Always enforce a global `*:focus-visible` fallback rule (e.g., `outline: 2px solid var(--text); outline-offset: 2px;`) to ensure interactive elements are visibly focused regardless of their custom CSS. Add `aria-label`s to placeholder-only inputs, and ensure empty states always provide a direct CTA button (like 'Import Places') to guide the user to the next logical step.
