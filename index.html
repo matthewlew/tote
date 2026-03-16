@@ -64,19 +64,19 @@
         --act-fg:     #111009;
         --green:      #3DBE6E;
       }
-      html { background: #000; }
+      html { background: var(--bg); }
     }
 
     /* ══════════════════════════════════════════
        BASE
     ══════════════════════════════════════════ */
-    html { height: 100%; background: #000; }
+    html { height: 100%; background: var(--bg); }
 
     body {
       font-family: var(--sans);
       font-size: 13px;
       letter-spacing: 0.04em;
-      background: #000;
+      background: var(--bg);
       color: var(--text);
       overscroll-behavior: none;
       display: flex;
