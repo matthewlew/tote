@@ -1,0 +1,454 @@
+{
+  "places": [
+    {
+      "name": "Pedro's",
+      "address": "73 Jay Street, Brooklyn, 11201",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.716188025123394,
+        -73.97418451200697
+      ]
+    },
+    {
+      "name": "M & A Design",
+      "address": "57 Pearl Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.701252379281016,
+        -74.05490522183007
+      ]
+    },
+    {
+      "name": "Vinegar Hill House",
+      "address": "72 Hudson Avenue, Brooklyn, 11201",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.723620062480535,
+        -74.00721472104456
+      ]
+    },
+    {
+      "name": "The River Caf\u00e9",
+      "address": "1 Water Street, Brooklyn, 11201",
+      "description": "A local new_american restaurant.",
+      "latLng": [
+        40.739383814268045,
+        -73.95993038307887
+      ]
+    },
+    {
+      "name": "Peas & Pickles",
+      "address": "55 Washington Street, 11201",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.756798285052014,
+        -73.95876326068284
+      ]
+    },
+    {
+      "name": "Jacques Torres Chocolates",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.728932544546524,
+        -74.02958478316651
+      ]
+    },
+    {
+      "name": "Grimaldi's Pizzeria",
+      "address": "1 Front Street, Brooklyn, 11201",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.74521790446208,
+        -73.96430503298237
+      ]
+    },
+    {
+      "name": "Tutt Caf\u00e9",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local mediterranean cafe.",
+      "latLng": [
+        40.706919630109255,
+        -73.99096202509968
+      ]
+    },
+    {
+      "name": "Inga's Bar",
+      "address": "66 Hicks Street, Brooklyn",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.75933873244817,
+        -74.02034982814574
+      ]
+    },
+    {
+      "name": "Poppy's Cafe",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local breakfast, sandwich, pastry cafe.",
+      "latLng": [
+        40.6840730639819,
+        -74.03249914261357
+      ]
+    },
+    {
+      "name": "Jules",
+      "address": "50 Henry Street, Brooklyn, 11201",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.67559197323587,
+        -74.04900146664512
+      ]
+    },
+    {
+      "name": "Gristedes",
+      "address": "101 Clark Street, Brooklyn, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.692204380295145,
+        -73.99476988061309
+      ]
+    },
+    {
+      "name": "Ozu",
+      "address": "78 Clark Street, 11201",
+      "description": "A local japanese restaurant.",
+      "latLng": [
+        40.750455917013554,
+        -74.04322889127944
+      ]
+    },
+    {
+      "name": "Clark's Restaurant",
+      "address": "80 Clark Street, 11201",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.6822669216053,
+        -74.04204533959431
+      ]
+    },
+    {
+      "name": "Ferrane",
+      "address": "57 Clark Street, 11201",
+      "description": "A local swedish shop.",
+      "latLng": [
+        40.75459417419437,
+        -73.95675571271452
+      ]
+    },
+    {
+      "name": "Han's Market",
+      "address": "51 Clark Street",
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.73984414078726,
+        -74.00745264393163
+      ]
+    },
+    {
+      "name": "CVS Pharmacy",
+      "address": "156 Henry Street, Brooklyn, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.745225634762775,
+        -74.02278400819475
+      ]
+    },
+    {
+      "name": "Careland Pharmacy",
+      "address": "84 Clark Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.727705648285486,
+        -74.0102854887703
+      ]
+    },
+    {
+      "name": "All in One Deli Mart",
+      "address": "79 Pineapple Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66887160215463,
+        -73.98068745481888
+      ]
+    },
+    {
+      "name": "Penny Bridge Store",
+      "address": "82 Clark Street, 11201",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.75088226261554,
+        -74.01548754624288
+      ]
+    },
+    {
+      "name": "NYU Langone Eye Center",
+      "address": "149 Pierrepont Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73490924603748,
+        -74.03320998725829
+      ]
+    },
+    {
+      "name": "Marigold Beauty Space",
+      "address": "96 Henry Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.6666491568003,
+        -74.05227375963999
+      ]
+    },
+    {
+      "name": "The Binc",
+      "address": "60 Henry Street, 11201",
+      "description": "A local eclectic bar.",
+      "latLng": [
+        40.70312035555168,
+        -73.99459633172916
+      ]
+    },
+    {
+      "name": "Henry's End",
+      "address": "72 Henry Street, Brooklyn, 11201",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.68237381814585,
+        -74.03150127492663
+      ]
+    },
+    {
+      "name": "Paws on Pineapple",
+      "address": "89 Pineapple Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71964097117992,
+        -73.95835575919448
+      ]
+    },
+    {
+      "name": "Plymouth Caf\u00e9",
+      "address": "90 Henry Street, 11201",
+      "description": "A local breakfast, sandwich cafe.",
+      "latLng": [
+        40.67465016177682,
+        -74.04464528139331
+      ]
+    },
+    {
+      "name": "Studio Diva Salon",
+      "address": "91 Pineapple Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.7499234889915,
+        -73.99700779883507
+      ]
+    },
+    {
+      "name": "Coleman Cleaners",
+      "address": "97 Hicks Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.714805586116405,
+        -73.99598318155077
+      ]
+    },
+    {
+      "name": "New Xcell Auto Repair",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.679656441441985,
+        -74.02328085601842
+      ]
+    },
+    {
+      "name": "L&B Spumoni Gardens",
+      "address": "46 Old Fulton Street, 11201",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.73455247536864,
+        -73.96582126529286
+      ]
+    },
+    {
+      "name": "Joe Coffee Company",
+      "address": "102 Hicks Street, Brooklyn, 11201",
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.71134134603778,
+        -74.03222143538231
+      ]
+    },
+    {
+      "name": "Noodle Pudding",
+      "address": "38 Henry Street, 11201",
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.672697313063956,
+        -74.03802376088757
+      ]
+    },
+    {
+      "name": "Le French Tart Deli",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local sandwich, pastry, french shop.",
+      "latLng": [
+        40.71046440190592,
+        -74.02748351105298
+      ]
+    },
+    {
+      "name": "Mint Heights",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local indian restaurant.",
+      "latLng": [
+        40.75519110637913,
+        -73.97816369694314
+      ]
+    },
+    {
+      "name": "City Closet Storage/Moving",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.669897675185645,
+        -73.98264153085817
+      ]
+    },
+    {
+      "name": "Gold Street Market",
+      "address": "257 Gold Street, 11201",
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.725152183486706,
+        -73.97484322063798
+      ]
+    },
+    {
+      "name": "Concord Market",
+      "address": "91 Tillary Street, 11201",
+      "description": "A local sandwich, breakfast shop.",
+      "latLng": [
+        40.710513897677956,
+        -74.01029030807457
+      ]
+    },
+    {
+      "name": "Brooklyn Bridge Cafe",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.71067606390452,
+        -74.0521765584588
+      ]
+    },
+    {
+      "name": "DUMBO Gourmet Deli",
+      "address": "157 York Street, 11201",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.69072457589844,
+        -73.99444568756668
+      ]
+    },
+    {
+      "name": "Fine Food",
+      "address": "165 York Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67566392491772,
+        -74.04320416048259
+      ]
+    },
+    {
+      "name": "Superfine",
+      "address": "126 Front Street, 11201",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.68597442835756,
+        -74.02786449571087
+      ]
+    },
+    {
+      "name": "Glam Expressway",
+      "address": "145 Front Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73733443949042,
+        -74.04918680936376
+      ]
+    },
+    {
+      "name": "Hudson Wilder",
+      "address": "142 Plymouth Street, Brooklyn, 11201",
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.69690076603508,
+        -74.02908345333624
+      ]
+    },
+    {
+      "name": "Mumu Bath",
+      "address": "72 Jay Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66870681712555,
+        -73.95814852967715
+      ]
+    },
+    {
+      "name": "Cafe Gitane",
+      "address": "70 Hudson Avenue, 11201",
+      "description": "A local french, eclectic cafe.",
+      "latLng": [
+        40.71031515313447,
+        -73.96604807527974
+      ]
+    },
+    {
+      "name": "Front Street Pizza",
+      "address": "80 Front Street, Brooklyn, 11201",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.68818060974857,
+        -74.0306135625356
+      ]
+    },
+    {
+      "name": "Al Mar",
+      "address": "111 Front Street, 11201",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.75861610415115,
+        -73.96251861520678
+      ]
+    },
+    {
+      "name": "Plaza M Spa",
+      "address": "46 Water Street, 11201",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.724651653762635,
+        -74.03793483230626
+      ]
+    },
+    {
+      "name": "The Modern Chemist",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73238094855756,
+        -74.03028223848717
+      ]
+    },
+    {
+      "name": "Seamore's",
+      "address": "Near 40.7033, -73.9881, Brooklyn, NY",
+      "description": "A local seafood restaurant.",
+      "latLng": [
+        40.7009927048143,
+        -73.99588147098956
+      ]
+    }
+  ]
+}

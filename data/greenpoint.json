@@ -1,0 +1,454 @@
+{
+  "places": [
+    {
+      "name": "Rachel's Garden",
+      "address": "116 Nassau Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69157451587471,
+        -74.00033702813722
+      ]
+    },
+    {
+      "name": "Uro Cafe",
+      "address": "277 Driggs Avenue",
+      "description": "A local coffee_shop cafe.",
+      "latLng": [
+        40.73327025527264,
+        -73.99049205220756
+      ]
+    },
+    {
+      "name": "B's Bikes",
+      "address": "262 Driggs Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.73587810433204,
+        -74.03006243415301
+      ]
+    },
+    {
+      "name": "Ashbox Cafe",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local japanese restaurant.",
+      "latLng": [
+        40.74702889868622,
+        -73.98173844664102
+      ]
+    },
+    {
+      "name": "Eastern District Beer Store",
+      "address": "11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69601145712917,
+        -73.99509728839915
+      ]
+    },
+    {
+      "name": "Word Bookstore",
+      "address": "126 Franklin Street, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70275354680565,
+        -74.05338347597362
+      ]
+    },
+    {
+      "name": "Market on Kent",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.730687198010614,
+        -74.00110544452954
+      ]
+    },
+    {
+      "name": "The Pencil Factory",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.68691590499628,
+        -74.04579760726551
+      ]
+    },
+    {
+      "name": "Eagle Trading Company",
+      "address": "258 Franklin Street, Brooklyn, 11222",
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.71325985203135,
+        -74.03424672241925
+      ]
+    },
+    {
+      "name": "Sereneco",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.679856745112794,
+        -74.03224982515692
+      ]
+    },
+    {
+      "name": "Kettl",
+      "address": "70 Greenpoint Avenue, Brooklyn, 11222",
+      "description": "A local tea cafe.",
+      "latLng": [
+        40.71060889942941,
+        -74.04734671644711
+      ]
+    },
+    {
+      "name": "Alter",
+      "address": "140 Franklin Street, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69780860255223,
+        -73.98502817429399
+      ]
+    },
+    {
+      "name": "Paulie Gee's",
+      "address": "Brooklyn",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.667137316367935,
+        -74.01301496039855
+      ]
+    },
+    {
+      "name": "Bar Americano",
+      "address": "180 Franklin Street, Brooklyn, 11222",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.68017929375056,
+        -73.97711610561372
+      ]
+    },
+    {
+      "name": "Shanghai Lee",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local chinese restaurant.",
+      "latLng": [
+        40.76088729862574,
+        -73.98598661405936
+      ]
+    },
+    {
+      "name": "Dandelion Wine",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68949950658462,
+        -74.02406531075013
+      ]
+    },
+    {
+      "name": "Black Rabbit",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.73197224629486,
+        -73.95842771609543
+      ]
+    },
+    {
+      "name": "Calexico",
+      "address": "645 Manhattan Avenue",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.68996023338515,
+        -74.04265755597947
+      ]
+    },
+    {
+      "name": "Key Food",
+      "address": "224 McGuinness Boulevard, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.725288116894426,
+        -74.00117609845526
+      ]
+    },
+    {
+      "name": "C-Town",
+      "address": "953 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.665756437765154,
+        -74.02397696086568
+      ]
+    },
+    {
+      "name": "World of Flowers",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69143599953209,
+        -74.0212694714972
+      ]
+    },
+    {
+      "name": "Fresh Market Gourmet Deli",
+      "address": "974 Manhattan Avenue, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.738422684749075,
+        -74.02199950182874
+      ]
+    },
+    {
+      "name": "The Lobster Joint",
+      "address": "11222",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.75948142000639,
+        -74.02541906541208
+      ]
+    },
+    {
+      "name": "House of Sudz III",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70410821181885,
+        -73.97367492655825
+      ]
+    },
+    {
+      "name": "Little Armenia",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.72172328100418,
+        -74.03400629586444
+      ]
+    },
+    {
+      "name": "Elder Greene",
+      "address": "160 Franklin Street, Brooklyn, 11222",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.69789788728994,
+        -74.04520552385165
+      ]
+    },
+    {
+      "name": "Vamos al Tequila",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.69610158103434,
+        -73.97629698629127
+      ]
+    },
+    {
+      "name": "Cozinha Latina",
+      "address": "37 Greenpoint Avenue, Brooklyn, 11222",
+      "description": "A local brazilian restaurant.",
+      "latLng": [
+        40.729259866991114,
+        -73.97088638006491
+      ]
+    },
+    {
+      "name": "Brooklyn Bowl",
+      "address": "61 Wythe Avenue, Brooklyn, 11249",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.68282975507034,
+        -74.04596765854704
+      ]
+    },
+    {
+      "name": "The Brew Inn",
+      "address": "924 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.690884029504474,
+        -73.99244016176722
+      ]
+    },
+    {
+      "name": "Old Poland Bakery",
+      "address": "926 Manhattan Avenue",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69485794822822,
+        -74.02833924216178
+      ]
+    },
+    {
+      "name": "Upstate Stock",
+      "address": "2 Berry Street, 11249",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.761464821249895,
+        -74.00201854660911
+      ]
+    },
+    {
+      "name": "Jose Deli Grocery",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70615716310271,
+        -74.00372828188509
+      ]
+    },
+    {
+      "name": "Bombay Grill & Curry",
+      "address": "1015 Manhattan Avenue, 11222",
+      "description": "A local indian restaurant.",
+      "latLng": [
+        40.692211358715845,
+        -73.98104260090675
+      ]
+    },
+    {
+      "name": "Radio Bakery",
+      "address": "135 India Street, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68012438234026,
+        -74.02637011978776
+      ]
+    },
+    {
+      "name": "Franklin Convenience",
+      "address": "200 Franklin Street, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68719423862154,
+        -73.96565897561057
+      ]
+    },
+    {
+      "name": "M&W Laundromat",
+      "address": "995 Manhattan Avenue, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72625891814547,
+        -73.99079435056679
+      ]
+    },
+    {
+      "name": "Nassau Finest Deli",
+      "address": "183 Nassau Avenue, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.664979093537916,
+        -73.96624708921365
+      ]
+    },
+    {
+      "name": "Driggs Ave Laundromat & Dry Cleaners",
+      "address": "258 Driggs Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.717871515122155,
+        -74.04446477143343
+      ]
+    },
+    {
+      "name": "Wholesome Gourmet Deli",
+      "address": "101 Nassau Avenue, 11222",
+      "description": "A local breakast, sandwich shop.",
+      "latLng": [
+        40.76145924871346,
+        -74.01083125776474
+      ]
+    },
+    {
+      "name": "Ramen, Fried Rice and Noodles",
+      "address": "694 Manhattan Avenue, 11222",
+      "description": "A local asian restaurant.",
+      "latLng": [
+        40.720438184334135,
+        -73.98731983516947
+      ]
+    },
+    {
+      "name": "Pueblo Querido Coffee Roasters Cafe de Colombia",
+      "address": "698 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A local coffee_shop, columbian cafe.",
+      "latLng": [
+        40.71119956492238,
+        -74.03897855503845
+      ]
+    },
+    {
+      "name": "Hide & Seek",
+      "address": "Near 40.7302, -73.9540, Brooklyn, NY",
+      "description": "A local sandwich, pastry cafe.",
+      "latLng": [
+        40.72431644511765,
+        -74.01690070337021
+      ]
+    },
+    {
+      "name": "Metro by T-Mobile",
+      "address": "97 Nassau Avenue, Brooklyn, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71122446824433,
+        -73.96402714901063
+      ]
+    },
+    {
+      "name": "Manhattan Triple Decker Restaurant",
+      "address": "695 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.6704613648534,
+        -74.02244148074523
+      ]
+    },
+    {
+      "name": "Nights and Weekends",
+      "address": "1 Bedford Avenue, Brooklyn, 11222",
+      "description": "A local regional restaurant.",
+      "latLng": [
+        40.68710685299477,
+        -74.01611594173997
+      ]
+    },
+    {
+      "name": "Bernie's",
+      "address": "332 Driggs Avenue, Brooklyn, 11222",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.73939933891066,
+        -73.97925485403839
+      ]
+    },
+    {
+      "name": "We See Stars",
+      "address": "80 Nassau Avenue, 11222",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.753705640747796,
+        -73.98947984474994
+      ]
+    },
+    {
+      "name": "The Hidden Pearl",
+      "address": "621 Manhattan Avenue, Brooklyn, 11222",
+      "description": "A local japanese bar.",
+      "latLng": [
+        40.72847476357646,
+        -74.05038729353011
+      ]
+    },
+    {
+      "name": "Idle Mind Tavern",
+      "address": "623 Manhattan Avenue, 11222",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.744838220209914,
+        -74.04767934577785
+      ]
+    }
+  ]
+}

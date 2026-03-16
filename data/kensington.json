@@ -1,0 +1,454 @@
+{
+  "places": [
+    {
+      "name": "Sycamore",
+      "address": "1118 Cortelyou Road, Brooklyn, 11218",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.73603295619774,
+        -74.04038473610993
+      ]
+    },
+    {
+      "name": "Cortelyou Green Market",
+      "address": "Brooklyn, 11226",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69794048165276,
+        -74.0060786965255
+      ]
+    },
+    {
+      "name": "The Castello Plan",
+      "address": "1213 Cortelyou Road, Brooklyn, 11218",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.69834996361333,
+        -74.00576680694513
+      ]
+    },
+    {
+      "name": "Drugs Care Pharmacy",
+      "address": "1001 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.67052142312672,
+        -73.96490795656808
+      ]
+    },
+    {
+      "name": "Andrew's Coffee Shop",
+      "address": "901 Church Avenue, 11218",
+      "description": "A local coffee_shop, breakfast, sandwich, west_indian shop.",
+      "latLng": [
+        40.678994044808874,
+        -74.04367975698248
+      ]
+    },
+    {
+      "name": "E7 Deli",
+      "address": "629 Church Avenue, 11218",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.73581733161718,
+        -73.97939221982152
+      ]
+    },
+    {
+      "name": "Moon Deli & Grocery",
+      "address": "701 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.728902406055624,
+        -73.99612634446568
+      ]
+    },
+    {
+      "name": "Lofty Pigeon Books",
+      "address": "743 Church Avenue, Brooklyn, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.740317233338615,
+        -73.97521475281386
+      ]
+    },
+    {
+      "name": "My Tool Rental",
+      "address": "610 Coney Island Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75539984317245,
+        -74.05279472770218
+      ]
+    },
+    {
+      "name": "Design Z&L Nails",
+      "address": "1015 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.699601478179886,
+        -74.00504450893057
+      ]
+    },
+    {
+      "name": "Lea",
+      "address": "1022 Cortelyou Road, Brooklyn, 11218",
+      "description": "A local italian, pizza, bagel restaurant.",
+      "latLng": [
+        40.75701237247942,
+        -73.99163415571886
+      ]
+    },
+    {
+      "name": "Sammy's Stop & Shop",
+      "address": "741 Coney Island Avenue, 11218",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.66290466543445,
+        -73.96788723519892
+      ]
+    },
+    {
+      "name": "King Mother",
+      "address": "1205 Cortelyou Road, Brooklyn, 11218",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.71728900644553,
+        -73.96361573159953
+      ]
+    },
+    {
+      "name": "Mimi's Hummus",
+      "address": "1209 Cortelyou Road, Brooklyn, 11218",
+      "description": "A local middle_eastern restaurant.",
+      "latLng": [
+        40.680786070056236,
+        -74.01472927706112
+      ]
+    },
+    {
+      "name": "Father & Sons Delicatessen",
+      "address": "1501 Cortelyou Road, 11226",
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.713980219163226,
+        -73.96390557483014
+      ]
+    },
+    {
+      "name": "Berand's Accounting & Travel",
+      "address": "1507 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68862927892762,
+        -74.01357315280028
+      ]
+    },
+    {
+      "name": "Kings County Wines",
+      "address": "1420 Cortelyou Road, 11226",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69620588448085,
+        -73.96039527008244
+      ]
+    },
+    {
+      "name": "Natural Frontier Market",
+      "address": "1102 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69980778321392,
+        -74.00404074161163
+      ]
+    },
+    {
+      "name": "Mian Convenience & Deli",
+      "address": "754 Coney Island Avenue, 11218",
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.69745548791871,
+        -73.98787677206879
+      ]
+    },
+    {
+      "name": "Blush",
+      "address": "921 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71554909841911,
+        -74.03351656624284
+      ]
+    },
+    {
+      "name": "Sawera Garments & Tailoring",
+      "address": "923 Cortelyou Road, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.689955006148985,
+        -73.96651476102095
+      ]
+    },
+    {
+      "name": "Urgut Osh Markazi",
+      "address": "816 Coney Island Avenue, 11218",
+      "description": "A local uzbek cafe.",
+      "latLng": [
+        40.6955921540319,
+        -74.02267155220112
+      ]
+    },
+    {
+      "name": "New Fashion",
+      "address": "356 East 2nd Street, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68363404673664,
+        -74.04571968379649
+      ]
+    },
+    {
+      "name": "Desi Bazzar Supermarket",
+      "address": "557A McDonald Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.710345004852215,
+        -74.02485651625724
+      ]
+    },
+    {
+      "name": "Citi Hardware & Lumber",
+      "address": "557B McDonald Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69254072447215,
+        -74.03066971018127
+      ]
+    },
+    {
+      "name": "El Mexicano",
+      "address": "310 Ditmas Avenue, Brooklyn, 11218",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.708462594840434,
+        -73.97986137041079
+      ]
+    },
+    {
+      "name": "18th Ave Deli Grocery",
+      "address": "4301 18th Avenue, 11230",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75981292550619,
+        -73.96749166486808
+      ]
+    },
+    {
+      "name": "A Little Bit of Something",
+      "address": "4417 18th Avenue, 11230",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69221912177233,
+        -73.95996010991817
+      ]
+    },
+    {
+      "name": "Discount Wine & Liquors",
+      "address": "4330 18th Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.675530922525404,
+        -74.00141507076488
+      ]
+    },
+    {
+      "name": "Shashlik House",
+      "address": "102 Cortelyou Road, Brooklyn, 11218",
+      "description": "A local kebab restaurant.",
+      "latLng": [
+        40.75255392101352,
+        -74.04720516840449
+      ]
+    },
+    {
+      "name": "Yeyo Food Corp",
+      "address": "107 Ditmas Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.735858864893736,
+        -74.01909818720056
+      ]
+    },
+    {
+      "name": "Dahill Laundry",
+      "address": "76 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.702689036603864,
+        -74.03396890826944
+      ]
+    },
+    {
+      "name": "Bismillah",
+      "address": "80 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71264903724882,
+        -73.96298586085166
+      ]
+    },
+    {
+      "name": "Amishapara Bazar",
+      "address": "Near 40.6385, -73.9748, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.665318009217515,
+        -74.03121843790119
+      ]
+    },
+    {
+      "name": "Extra Space Storage",
+      "address": "1320 37th Street, Brooklyn, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72520899131958,
+        -74.0146410042468
+      ]
+    },
+    {
+      "name": "Punctual Auto Center",
+      "address": "18 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.675399373222824,
+        -74.04356705784735
+      ]
+    },
+    {
+      "name": "Rashman Fashion",
+      "address": "188 Dahill Road, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.750143471556314,
+        -74.03381914839994
+      ]
+    },
+    {
+      "name": "Albemarle Food Center",
+      "address": "101 Albemarle Road, 11218",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.7521798839279,
+        -74.04655167779556
+      ]
+    },
+    {
+      "name": "Magic Deli & Grocery",
+      "address": "301 Church Avenue, 11218",
+      "description": "A local sandwich shop.",
+      "latLng": [
+        40.71359161109741,
+        -74.0345164638506
+      ]
+    },
+    {
+      "name": "DJ Jewelry",
+      "address": "305 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72157463836876,
+        -74.03185577103332
+      ]
+    },
+    {
+      "name": "MF Discount",
+      "address": "309 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66698260694982,
+        -74.03990768985165
+      ]
+    },
+    {
+      "name": "Real Polish Delicatessen",
+      "address": "321 Church Avenue, 11218",
+      "description": "A local polish, breakfast shop.",
+      "latLng": [
+        40.66926004981111,
+        -74.02266457220053
+      ]
+    },
+    {
+      "name": "Nail Plus",
+      "address": "325 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68936856511869,
+        -74.04308579428016
+      ]
+    },
+    {
+      "name": "Astro Dry Cleaners",
+      "address": "327 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.664548383460065,
+        -73.99505347688476
+      ]
+    },
+    {
+      "name": "Isaac Apple Farm",
+      "address": "329 Church Avenue, Brooklyn, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.66675100843179,
+        -74.00087143510328
+      ]
+    },
+    {
+      "name": "Jobby Wine & Liquor",
+      "address": "334E East 3rd Street, Brooklyn, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69373342871844,
+        -74.02400071966797
+      ]
+    },
+    {
+      "name": "Luncheonette",
+      "address": "369 McDonald Avenue, 11218",
+      "description": "A local sandwich, middle_eastern shop.",
+      "latLng": [
+        40.73714107668554,
+        -74.01214663493785
+      ]
+    },
+    {
+      "name": "Asia Harbor",
+      "address": "404 Church Avenue, 11218",
+      "description": "A local asian, japanese, thai, chinese restaurant.",
+      "latLng": [
+        40.69607739235782,
+        -73.96879865638853
+      ]
+    },
+    {
+      "name": "Mash Beauty Salon",
+      "address": "406 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.70675069578782,
+        -74.02179753135415
+      ]
+    },
+    {
+      "name": "Amazing Grace CC Nail Spa",
+      "address": "408 Church Avenue, 11218",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.701972070665924,
+        -73.9660329577325
+      ]
+    }
+  ]
+}

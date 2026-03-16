@@ -1,0 +1,42 @@
+[
+    {
+        "id": "dive_bars",
+        "name": "Best 100 Dive Bars"
+    },
+    {
+        "id": "cocktail_lounges",
+        "name": "Best 100 Cocktail Lounges"
+    },
+    {
+        "id": "late_night_eats",
+        "name": "Best 100 Late Night Eats"
+    },
+    {
+        "id": "date_night_restaurants",
+        "name": "Best 100 Date Night Restaurants"
+    },
+    {
+        "id": "dance_clubs",
+        "name": "Best 100 Dance Clubs"
+    },
+    {
+        "id": "rooftop_bars",
+        "name": "Best 100 Rooftop Bars"
+    },
+    {
+        "id": "speakeasies",
+        "name": "Best 100 Speakeasies"
+    },
+    {
+        "id": "happy_hour_deals",
+        "name": "Best 100 Happy Hour Deals"
+    },
+    {
+        "id": "live_music_venues",
+        "name": "Best 100 Live Music Venues"
+    },
+    {
+        "id": "brunch_spots",
+        "name": "Best 100 Brunch Spots"
+    }
+]

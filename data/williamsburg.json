@@ -1,0 +1,440 @@
+{
+  "places": [
+    {
+      "name": "Barcade",
+      "address": "388 Union Avenue, Brooklyn, 11211",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.754465504166646,
+        -74.04558101177227
+      ],
+      "article": {
+        "url": "https://www.theinfatuation.com/new-york/guides/best-new-new-york-restaurants-hit-list",
+        "title": "Best 100 restaurants in 2026"
+      }
+    },
+    {
+      "name": "Mugs Ale House",
+      "address": "125 Bedford Avenue, Brooklyn",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.68505851998794,
+        -73.96129767162732
+      ]
+    },
+    {
+      "name": "The Meat Hook",
+      "address": "100 Frost Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.697101488529725,
+        -74.02287618798853
+      ]
+    },
+    {
+      "name": "One Love Deli",
+      "address": "339 Graham Avenue, 11211",
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.66307326399996,
+        -74.02268426529793
+      ]
+    },
+    {
+      "name": "El Loco Burrito",
+      "address": "345 Graham Avenue, 11211",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.692961002524996,
+        -73.95728861024435
+      ]
+    },
+    {
+      "name": "Tony's Pizza",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.72914666825209,
+        -74.00192690519017
+      ]
+    },
+    {
+      "name": "Aurora",
+      "address": "70 Grand Street, Brooklyn, 11249",
+      "description": "A local italian restaurant.",
+      "latLng": [
+        40.74720105653313,
+        -74.00318161294061
+      ]
+    },
+    {
+      "name": "Brooklyn Kitchen",
+      "address": "100 Frost Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.75710939585735,
+        -73.98583908649472
+      ]
+    },
+    {
+      "name": "Nicky's Unisex",
+      "address": "90 South 4th st, Brooklyn, 11211",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.66854803355144,
+        -73.98821484001462
+      ]
+    },
+    {
+      "name": "Diner",
+      "address": "85 Broadway, Brooklyn, 11249",
+      "description": "A local american restaurant.",
+      "latLng": [
+        40.674147534129986,
+        -73.97709351835047
+      ]
+    },
+    {
+      "name": "Juliette Restaurant",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.72266824683089,
+        -74.00183364186539
+      ]
+    },
+    {
+      "name": "miDmuS",
+      "address": "135 North 5th Street",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.76127180005949,
+        -74.00465047336135
+      ]
+    },
+    {
+      "name": "Senko Funeral Home",
+      "address": "215 Bedford Avenue",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68536452779365,
+        -73.97122943997061
+      ]
+    },
+    {
+      "name": "Bedford Vintage",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.72289333944515,
+        -74.03437180885919
+      ]
+    },
+    {
+      "name": "Ako",
+      "address": "205 Bedford Avenue, Brooklyn, 11211",
+      "description": "A local japanese restaurant.",
+      "latLng": [
+        40.71956487854534,
+        -73.95855106763972
+      ]
+    },
+    {
+      "name": "UVA Wines and Spirits",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.69262919607514,
+        -74.03353554107986
+      ]
+    },
+    {
+      "name": "Doughnut Plant",
+      "address": "198 Bedford Avenue, Brooklyn, 11249",
+      "description": "A local donut cafe.",
+      "latLng": [
+        40.692113480935966,
+        -73.96227238691459
+      ]
+    },
+    {
+      "name": "Chocolate World",
+      "address": "159 North 7th Street, Brooklyn, 11249",
+      "description": "A local falafel, middle_eastern shop.",
+      "latLng": [
+        40.669646708690806,
+        -73.97194711244278
+      ]
+    },
+    {
+      "name": "Counting Room",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A cozy bar for evening drinks.",
+      "latLng": [
+        40.74251172825322,
+        -74.00883572957231
+      ]
+    },
+    {
+      "name": "Times Up!",
+      "address": "99 South 6th Street",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.664260692274986,
+        -74.00064316584633
+      ]
+    },
+    {
+      "name": "Urban Rustic",
+      "address": "236 North 12th Street, Brooklyn, 11211",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.7212540144107,
+        -74.0002067917527
+      ]
+    },
+    {
+      "name": "Peachfrog",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68540795406385,
+        -74.05129704631406
+      ]
+    },
+    {
+      "name": "Southside Food Plaza",
+      "address": "430 Bedford Avenue",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.748820134148225,
+        -74.03323349573006
+      ]
+    },
+    {
+      "name": "Bakeri",
+      "address": "150 Wythe Avenue, Brooklyn, 11249",
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.747315688580024,
+        -73.97404813103515
+      ]
+    },
+    {
+      "name": "Jumelle",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.724544118529586,
+        -73.97766058270798
+      ]
+    },
+    {
+      "name": "Cariño",
+      "address": "82 South 4th Street, Brooklyn, 11211",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.68930717857023,
+        -73.98960893392065
+      ]
+    },
+    {
+      "name": "Miss Favela",
+      "address": "57 South 5th Street, Brooklyn, 11249",
+      "description": "A local brazilian restaurant.",
+      "latLng": [
+        40.75049376076202,
+        -73.97846818155304
+      ]
+    },
+    {
+      "name": "South Port",
+      "address": "91 South 4th Street, 11249",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.75082405701163,
+        -74.00094126222899
+      ]
+    },
+    {
+      "name": "P&P Laundromat",
+      "address": "82 South 4th Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68168736952705,
+        -74.01243724942084
+      ]
+    },
+    {
+      "name": "Molé",
+      "address": "178 Kent Avenue, Brooklyn, 11211",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.76061769746517,
+        -73.99379794367874
+      ]
+    },
+    {
+      "name": "Black Brick",
+      "address": "300 Bedford Avenue, Brooklyn, 11211",
+      "description": "A local cafe offering coffee and pastries.",
+      "latLng": [
+        40.756189477588684,
+        -74.04190106394067
+      ]
+    },
+    {
+      "name": "Dokébi",
+      "address": "199 Grand Street, Brooklyn, 11211",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.663703745690036,
+        -74.04886711390401
+      ]
+    },
+    {
+      "name": "Kabob Shack",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.70764872986964,
+        -74.03926327499242
+      ]
+    },
+    {
+      "name": "The West",
+      "address": "379 Union Avenue, 11211",
+      "description": "A local sandwich cafe.",
+      "latLng": [
+        40.700151560305024,
+        -74.00916779851822
+      ]
+    },
+    {
+      "name": "Limosneros",
+      "address": "366 Union Avenue, 11211",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.66896112725289,
+        -73.95972367357612
+      ]
+    },
+    {
+      "name": "Lighthouse",
+      "address": "145 Borinquen Place, 11211",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.72447238574477,
+        -73.99336836180014
+      ]
+    },
+    {
+      "name": "Foodtown",
+      "address": "159 North 3rd Street",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.746208684020274,
+        -73.9595583312354
+      ]
+    },
+    {
+      "name": "Vinnies Pizzeria",
+      "address": "148 Bedford Avenue, Brooklyn, 11211",
+      "description": "A local pizza restaurant.",
+      "latLng": [
+        40.71043859579903,
+        -74.04492018721581
+      ]
+    },
+    {
+      "name": "Broadway Mini Market Deli",
+      "address": "403 Broadway, 11211",
+      "description": "A local breakfast, sandwich shop.",
+      "latLng": [
+        40.71184648555883,
+        -73.98686668256877
+      ]
+    },
+    {
+      "name": "Cruz Deli",
+      "address": "386 South 5th Street, 11211",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.728934596017986,
+        -73.97359593105948
+      ]
+    },
+    {
+      "name": "Shop Fair",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.690707765216,
+        -74.03643754679871
+      ]
+    },
+    {
+      "name": "Mr. Pina",
+      "address": "Near 40.7128, -73.9560, Brooklyn, NY",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.71540781685467,
+        -74.0296929242605
+      ]
+    },
+    {
+      "name": "Garden Carver",
+      "address": "187 Grand Street, Brooklyn, 11211",
+      "description": "A neighborhood restaurant serving delicious meals.",
+      "latLng": [
+        40.70363936943589,
+        -73.98568464005301
+      ]
+    },
+    {
+      "name": "Le Grand Strip",
+      "address": "197 Grand Street, 11211",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.735007110068665,
+        -73.98623863899643
+      ]
+    },
+    {
+      "name": "Species By The Thousands",
+      "address": "171 South 4th Street, Brooklyn",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.68720220195251,
+        -74.02905385606093
+      ]
+    },
+    {
+      "name": "LA Burrito",
+      "address": "Brooklyn",
+      "description": "A local mexican restaurant.",
+      "latLng": [
+        40.75857812533178,
+        -73.97798578301473
+      ]
+    },
+    {
+      "name": "Shag",
+      "address": "108 Roebling Street, Brooklyn, 11211",
+      "description": "A local shop offering unique goods.",
+      "latLng": [
+        40.74220083776508,
+        -74.00027282426689
+      ]
+    },
+    {
+      "name": "Noods n' Chill",
+      "address": "774 Driggs Avenue, 11211",
+      "description": "A local thai restaurant.",
+      "latLng": [
+        40.709233219639046,
+        -74.03923313472026
+      ]
+    }
+  ]
+}
