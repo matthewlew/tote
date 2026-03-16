@@ -685,8 +685,71 @@ footer {
       handleSort('name');
     } else if (k === 'l') {
       handleLocateMe();
+    } else if (k === 'r') {
+      handleRandomPick();
+    } else if (k === 'c') {
+      handleCopyItem();
     }
   });
+
+  function handleCopyItem() {
+    let targetRow = document.activeElement;
+    if (!targetRow || !targetRow.classList.contains('row')) {
+      const rows = Array.from(listEl.querySelectorAll('.row'));
+      if (rows.length === 0) return;
+      // If nothing is focused, just pick the first visible one or currently first in list
+      targetRow = rows[0];
+    }
+
+    const nameEl = targetRow.querySelector('.name');
+    const addressEl = targetRow.querySelector('.row-address');
+    const linkEl = targetRow.querySelector('.prices a');
+
+    if (!nameEl) return;
+
+    const name = nameEl.textContent.trim();
+    const address = addressEl ? addressEl.textContent.trim() : '';
+    const href = linkEl ? linkEl.href : '';
+
+    let textToCopy = name;
+    if (address) textToCopy += ` - ${address}`;
+    if (href) textToCopy += ` (${href})`;
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        // Visual feedback
+        if (linkEl) {
+          const originalText = linkEl.textContent;
+          linkEl.textContent = 'Copied!';
+          setTimeout(() => {
+            linkEl.textContent = originalText;
+          }, 1500);
+        }
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    }
+  }
+
+  function handleRandomPick() {
+    const rows = Array.from(listEl.querySelectorAll('.row'));
+    if (rows.length === 0) return;
+
+    const randomIdx = Math.floor(Math.random() * rows.length);
+    const targetRow = rows[randomIdx];
+
+    // Scroll into view
+    targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // Focus the row
+    targetRow.focus();
+
+    // Expand the row if it's not already expanded
+    if (!targetRow.classList.contains('expanded')) {
+      targetRow.classList.add('expanded');
+      targetRow.setAttribute('aria-expanded', 'true');
+    }
+  }
 
   async function loadCategories() {
     try {
