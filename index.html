@@ -74,6 +74,8 @@
 
     body {
       font-family: var(--sans);
+      font-size: 13px;
+      letter-spacing: 0.04em;
       background: #000;
       color: var(--text);
       overscroll-behavior: none;
@@ -131,10 +133,8 @@
     }
     @keyframes fillBar { 0% { width:0 } 60% { width:60% } 100% { width:100% } }
     .load-sub {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       color: var(--text-3);
-      letter-spacing: 0.3px;
     }
 
     /* ══════════════════════════════════════════
@@ -142,16 +142,15 @@
     ══════════════════════════════════════════ */
     #s-location {
       z-index: 90;
-      border: 2px solid var(--bd);
     }
     .loc-hd {
       padding: 20px;
-      border-bottom: 2px solid var(--bd);
+      border-bottom: 1px solid var(--bd-subtle);
     }
     .loc-hd-name {
-      font-size: 26px;
-      font-weight: 700;
-      letter-spacing: -1px;
+      font-size: 28px;
+      font-family: 'Flor de Ruina Semilla', sans-serif;
+      font-weight: normal;
     }
     .loc-body {
       flex: 1;
@@ -160,14 +159,13 @@
       flex-direction: column;
     }
     .loc-title {
-      font-size: 24px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: -0.6px;
-      line-height: 1.2;
+      line-height: 1.4;
       margin-bottom: 12px;
     }
     .loc-sub {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--text-2);
       line-height: 1.65;
       margin-bottom: 32px;
@@ -177,17 +175,16 @@
       align-items: center;
       justify-content: space-between;
       width: 100%;
-      padding: 15px 18px;
-      border: 2px solid var(--bd);
+      padding: 12px 18px;
+      border: 1px solid var(--bd);
       background: var(--text);
       color: var(--bg);
       font-family: var(--sans);
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       cursor: pointer;
       margin-bottom: 8px;
       transition: opacity 150ms;
-      letter-spacing: 0.1px;
     }
     .loc-btn:hover { opacity: 0.85; }
     .loc-btn.ghost {
@@ -199,13 +196,13 @@
     /* ══════════════════════════════════════════
        NEIGHBORHOOD PICKER
     ══════════════════════════════════════════ */
-    #s-nbhd { z-index: 90; border: 2px solid var(--bd); }
+    #s-nbhd { z-index: 90; }
 
     .nbhd-hd {
       position: sticky;
       top: 0;
       background: var(--bg);
-      border-bottom: 2px solid var(--bd);
+      border-bottom: 1px solid var(--bd-subtle);
       padding: 18px 20px 16px;
       z-index: 10;
     }
@@ -216,36 +213,28 @@
       margin-bottom: 6px;
     }
     .nbhd-hd-title {
-      font-size: 22px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: -0.5px;
     }
     .back-btn {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       color: var(--text);
       background: none;
-      border: 2px solid var(--bd);
-      padding: 5px 10px;
+      border: 1px solid var(--bd);
+      padding: 4px 10px;
       cursor: pointer;
       transition: background 100ms, color 100ms;
     }
     .back-btn:hover { background: var(--text); color: var(--bg); }
     .nbhd-hd-sub {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       color: var(--text-3);
-      letter-spacing: 0.4px;
-      text-transform: uppercase;
     }
     .nbhd-borough-label {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       color: var(--text-3);
-      padding: 12px 20px 8px;
+      padding: 8px 20px 6px;
       border-bottom: 1px solid var(--bd-subtle);
       background: var(--surface);
     }
@@ -253,10 +242,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 15px 20px;
+      padding: 9px 20px;
+      border: none;
       border-bottom: 1px solid var(--bd-subtle);
       cursor: pointer;
-      min-height: 54px;
       background: none;
       width: 100%;
       font-family: var(--sans);
@@ -266,9 +255,8 @@
     .nbhd-item:hover  { background: var(--surface); }
     .nbhd-item:active { background: var(--raised); }
     .nbhd-item-name {
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 600;
-      letter-spacing: -0.2px;
       color: var(--text);
     }
     .nbhd-item-right {
@@ -277,8 +265,7 @@
       gap: 10px;
     }
     .nbhd-item-count {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       color: var(--text-3);
     }
     .nbhd-arr {
@@ -307,7 +294,7 @@
       top: 0;
       z-index: 50;
       background: var(--bg);
-      border-bottom: 2px solid var(--bd);
+      border-bottom: 1px solid var(--bd);
       padding: 18px 20px 0;
     }
     .hd-top {
@@ -328,7 +315,7 @@
       align-items: center;
       gap: 5px;
       padding: 4px 8px;
-      border: 1.5px solid var(--bd-subtle);
+      border: 1px solid var(--bd-subtle);
     }
     .sync-dot {
       width: 5px;
@@ -337,8 +324,7 @@
       background: var(--green);
     }
     .sync-text {
-      font-family: var(--mono);
-      font-size: 9px;
+      font-size: 13px;
       color: var(--text-3);
     }
 
@@ -363,16 +349,14 @@
     }
     .hd-loc-sep { font-size: 13px; color: var(--text-3); }
     .hd-loc-sub {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       color: var(--text-3);
     }
     .hd-loc-change {
-      font-family: var(--mono);
-      font-size: 9px;
+      font-size: 13px;
       color: var(--text-3);
       background: none;
-      border: 1.5px solid var(--bd-subtle);
+      border: 1px solid var(--bd-subtle);
       padding: 2px 7px;
       cursor: pointer;
       transition: border-color 100ms, color 100ms;
@@ -383,7 +367,7 @@
     .hd-tabs {
       display: flex;
       margin-bottom: 12px;
-      border: 2px solid var(--bd);
+      border: 1px solid var(--bd);
     }
     .tab-btn {
       flex: 1;
@@ -391,13 +375,12 @@
       background: transparent;
       color: var(--text-2);
       font-family: var(--sans);
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
+      letter-spacing: 0.3px;
       cursor: pointer;
       border: none;
-      border-right: 2px solid var(--bd);
+      border-right: 1px solid var(--bd);
       transition: background 100ms, color 100ms;
     }
     .tab-btn:last-child { border-right: none; }
@@ -422,21 +405,20 @@
       display: flex;
       align-items: center;
       gap: 4px;
-      padding: 5px 10px;
-      border: 2px solid var(--bd);
+      padding: 4px 9px;
+      border: 1px solid var(--bd);
       background: transparent;
       color: var(--text);
       font-family: var(--sans);
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.3px;
       cursor: pointer;
       white-space: nowrap;
       transition: background 90ms, color 90ms;
     }
     .fpill:hover:not(.active) { background: var(--surface); }
     .fpill.active { background: var(--act-bg); color: var(--act-fg); }
-    .fpill-n { font-family: var(--mono); font-size: 9px; opacity: 0.45; }
+    .fpill-n { font-size: 13px; opacity: 0.45; }
 
     /* ══════════════════════════════════════════
        RESULTS BAR
@@ -449,11 +431,8 @@
       justify-content: space-between;
     }
     .res-n, .res-sort {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       color: var(--text-3);
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
     }
 
     /* ══════════════════════════════════════════
@@ -476,32 +455,27 @@
       display: grid;
       grid-template-columns: 58px 1fr 26px;
       align-items: start;
-      padding: 14px 20px;
+      padding: 9px 20px;
       cursor: pointer;
       user-select: none;
-      min-height: 54px;
       transition: background 70ms;
     }
     .p-row:hover  { background: var(--surface); }
     .p-row:active { background: var(--raised); }
-    .p-row:focus-visible { outline: 2px solid var(--bd); outline-offset: -2px; }
+    .p-row:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; }
 
     /* Distance */
     .p-dist { padding-top: 2px; }
     .d-n {
-      font-family: var(--mono);
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 700;
       line-height: 1;
       color: var(--text);
     }
     .d-u {
-      font-family: var(--mono);
-      font-size: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
+      font-size: 13px;
       color: var(--text-3);
-      margin-top: 3px;
+      margin-top: 2px;
     }
 
     /* Place info */
@@ -514,25 +488,21 @@
       margin-bottom: 3px;
     }
     .p-name {
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: -0.3px;
       line-height: 1.2;
       color: var(--text);
     }
     .p-cat {
-      font-family: var(--mono);
-      font-size: 8px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
       background: var(--tag-bg);
       color: var(--tag-fg);
-      padding: 2px 5px;
+      padding: 1px 4px;
       flex-shrink: 0;
     }
     .p-tag {
-      font-size: 12px;
+      font-size: 13px;
       color: var(--text-2);
       line-height: 1.4;
     }
@@ -574,15 +544,14 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      padding: 9px 14px;
-      border: 2px solid var(--bd);
+      padding: 8px 14px;
+      border: 1px solid var(--bd);
       background: var(--text);
       color: var(--bg);
       font-family: var(--sans);
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       text-decoration: none;
-      letter-spacing: 0.2px;
       transition: opacity 140ms;
     }
     .maps-btn:hover { opacity: 0.82; }
@@ -593,7 +562,7 @@
     ══════════════════════════════════════════ */
     .empty { display: none; padding: 48px 20px; }
     .empty.show { display: block; }
-    .empty-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+    .empty-title { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
     .empty-sub   { font-size: 13px; color: var(--text-2); }
 
     /* ══════════════════════════════════════════
@@ -602,9 +571,8 @@
     .import-view { padding: 24px 20px 100px; }
 
     .import-title {
-      font-size: 22px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: -0.5px;
       margin-bottom: 8px;
     }
     .import-subtitle {
@@ -615,15 +583,15 @@
     }
 
     .import-field {
-      border: 2px solid var(--bd);
+      border: 1px solid var(--bd);
       margin-bottom: 10px;
       background: var(--surface);
     }
     .import-input {
       width: 100%;
-      padding: 12px 14px;
-      font-family: var(--mono);
-      font-size: 12px;
+      padding: 10px 14px;
+      font-family: var(--sans);
+      font-size: 13px;
       background: transparent;
       color: var(--text);
       border: none;
@@ -634,15 +602,13 @@
 
     .import-btn {
       width: 100%;
-      padding: 13px 18px;
-      border: 2px solid var(--bd);
+      padding: 11px 18px;
+      border: 1px solid var(--bd);
       background: var(--text);
       color: var(--bg);
       font-family: var(--sans);
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -655,10 +621,9 @@
 
     .import-status {
       display: none;
-      padding: 11px 14px;
-      border: 2px solid var(--bd);
-      font-family: var(--mono);
-      font-size: 11px;
+      padding: 10px 14px;
+      border: 1px solid var(--bd);
+      font-size: 13px;
       margin-bottom: 28px;
     }
     .import-status.show { display: block; }
@@ -666,14 +631,11 @@
     .import-status.err { border-color: var(--bd); background: transparent; color: var(--text); }
 
     .import-howto-label {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       color: var(--text-3);
       padding-bottom: 16px;
-      border-bottom: 2px solid var(--bd);
+      border-bottom: 1px solid var(--bd);
       margin-bottom: 20px;
     }
     .import-step {
@@ -683,8 +645,7 @@
       margin-bottom: 14px;
     }
     .import-step-n {
-      font-family: var(--mono);
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       color: var(--text-3);
       width: 20px;
@@ -701,24 +662,22 @@
     /* import mode tabs */
     .import-mode-tabs {
       display: flex;
-      border: 2px solid var(--bd);
+      border: 1px solid var(--bd);
       margin-bottom: 20px;
     }
     .import-mode-btn {
       flex: 1;
       padding: 10px 0;
-      font-family: var(--mono);
-      font-size: 11px;
+      font-family: var(--sans);
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       background: transparent;
       color: var(--text-3);
       border: none;
       cursor: pointer;
       transition: background 120ms, color 120ms;
     }
-    .import-mode-btn + .import-mode-btn { border-left: 2px solid var(--bd); }
+    .import-mode-btn + .import-mode-btn { border-left: 1px solid var(--bd); }
     .import-mode-btn.active {
       background: var(--text);
       color: var(--bg);
@@ -729,9 +688,9 @@
     .import-textarea {
       width: 100%;
       min-height: 130px;
-      padding: 12px 14px;
-      font-family: var(--mono);
-      font-size: 12px;
+      padding: 10px 14px;
+      font-family: var(--sans);
+      font-size: 13px;
       background: transparent;
       color: var(--text);
       border: none;
@@ -744,23 +703,20 @@
 
     /* disambiguation panel */
     .disambig-title {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       margin-bottom: 6px;
     }
     .disambig-sub {
-      font-size: 12px;
+      font-size: 13px;
       color: var(--text-2);
       margin-bottom: 16px;
       line-height: 1.55;
     }
     .disambig-group { margin-bottom: 18px; }
     .disambig-group-name {
-      font-family: var(--mono);
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       color: var(--text-3);
       margin-bottom: 8px;
     }
@@ -768,8 +724,8 @@
       display: flex;
       align-items: flex-start;
       gap: 10px;
-      padding: 10px 12px;
-      border: 2px solid var(--bd-subtle);
+      padding: 9px 12px;
+      border: 1px solid var(--bd-subtle);
       margin-bottom: 6px;
       cursor: pointer;
       transition: border-color 120ms, background 120ms;
@@ -780,7 +736,7 @@
     }
     .disambig-option input[type=checkbox] { margin-top: 3px; flex-shrink: 0; }
     .disambig-option-name { font-size: 13px; font-weight: 700; }
-    .disambig-option-addr { font-size: 11px; color: var(--text-2); margin-top: 2px; }
+    .disambig-option-addr { font-size: 13px; color: var(--text-2); margin-top: 2px; }
 
     /* ══════════════════════════════════════════
        BOTTOM BAR
@@ -791,7 +747,7 @@
       width: 100%;
       max-width: 430px;
       background: var(--bg);
-      border-top: 2px solid var(--bd);
+      border-top: 1px solid var(--bd);
       padding: 11px 20px;
       display: flex;
       align-items: center;
@@ -802,7 +758,7 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
       color: var(--text-2);
       background: none;
@@ -815,15 +771,13 @@
     .bt-link:hover { color: var(--text); }
     .bt-link svg { width: 14px; height: 14px; }
     .bt-add {
-      padding: 8px 14px;
-      border: 2px solid var(--bd);
+      padding: 7px 14px;
+      border: 1px solid var(--bd);
       background: var(--text);
       color: var(--bg);
       font-family: var(--sans);
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 700;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
       cursor: pointer;
       transition: opacity 140ms;
     }
@@ -1176,7 +1130,7 @@ function renderNeighborhoods() {
   boroughs.forEach(b => {
     const lbl = document.createElement('div');
     lbl.className = 'nbhd-borough-label';
-    lbl.textContent = b.toUpperCase();
+    lbl.textContent = b;
     container.appendChild(lbl);
 
     NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
@@ -1368,7 +1322,7 @@ function makePlace(name, opts = {}) {
     tag:  opts.tag  || '',
     lat:  opts.lat  != null ? opts.lat : st.refLat,
     lng:  opts.lng  != null ? opts.lng : st.refLng,
-    desc: opts.desc || '',
+    desc: opts.desc || opts.address || '',
     q:    opts.q    || encodeURIComponent(name + (opts.address ? ' ' + opts.address : '')).replace(/%20/g, '+'),
   };
 }
@@ -1449,26 +1403,48 @@ function parseGoogleMapsHTML(html) {
    PASTE PARSING
 ══════════════════════════════════════════════ */
 function isMetaLine(line) {
-  return /^[\d.]+$/.test(line) ||             /* bare number (rating) */
-    /^\([\d,]+\)$/.test(line) ||               /* (review count) */
-    /^(Open|Closed|Opens|Closes)\b/i.test(line) ||
-    /^\d+\.\d+\s*(mi|km)/i.test(line) ||       /* distance */
-    /^[·•\-–—]+$/.test(line) ||                /* separator */
-    line.length < 2;
+  if (line.length < 2) return true;
+  if (/^[\d.]+$/.test(line)) return true;                       /* bare number */
+  if (/^\([\d,]+\)$/.test(line)) return true;                   /* (review count) */
+  if (/^(Open|Closed|Opens|Closes)\b/i.test(line)) return true; /* hours */
+  if (/^\d+\.\d+\s*(mi|km)/i.test(line)) return true;           /* distance */
+  if (/^[·•\-–—]+$/.test(line)) return true;                    /* separator line */
+  if (/^Web[\W\uFFFD\uFFFC]*/i.test(line)) return true;         /* "Web" / "Web￼" link label */
+  if (/^Phone:/i.test(line)) return true;                       /* phone number */
+  if (/^Address:/i.test(line)) return true;                     /* handled separately */
+  if (/^\*\s/.test(line)) return true;                          /* bullet "* text" */
+  /* Descriptive / section prose */
+  if (/^(These|Famous|Known|Loved|Often|One of\b|Great|Solid|Good|Excellent|A (great|top|tiny|cozy|small|popular)|Beautiful|Friendly|Cozy|Focus|Recently|Well-known|Legendary|Elite|Tiny|Maximalist|Iconic|Perfect)/i.test(line)) return true;
+  return false;
 }
 
 function isAddress(line) {
-  return /\d{1,5}\s+\w+.*(St|Ave|Rd|Blvd|Dr|Ln|Ct|Pl|Way|Pkwy|Hwy)\b/i.test(line) ||
+  return /^Address:\s*\d/i.test(line) ||  /* "Address: 18 Grattan St" */
+    /\d{1,5}\s+\w+.*(St|Ave|Rd|Blvd|Dr|Ln|Ct|Pl|Way|Pkwy|Hwy)\b/i.test(line) ||
     /,\s*(NY|NYC|New York|Brooklyn|Manhattan|Queens|Bronx|Chicago|LA|SF|Austin)\b/i.test(line);
+}
+
+function cleanAddress(addr) {
+  return addr.replace(/^Address:\s*/i, '').trim();
 }
 
 function cleanPlaceName(raw) {
   return raw
-    .replace(/^\d+[.)]\s*/, '')  /* numbered list: "1. Place" */
-    .replace(/^[-•*]\s*/, '')    /* bulleted */
-    .replace(/\s*·.*$/, '')      /* inline meta after · */
+    .replace(/[\uFFFD\uFFFC\uFFFE\uFEFF]/g, '') /* strip Unicode replacement/BOM chars */
+    .replace(/^\d+[.)]\s*/, '')                  /* numbered list: "1. Place" */
+    .replace(/^[-•*]\s*/, '')                    /* bulleted */
+    .replace(/\s*·.*$/, '')                      /* inline meta after · */
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/* Returns false for lines that look like section headers, not place names */
+function looksLikePlaceName(name) {
+  if (name.split(/\s+/).length > 7) return false;   /* too long */
+  if (/\([a-z]/.test(name)) return false;            /* (lowercase descriptor) */
+  if (/\b(institutions?|favorites?|pioneers?|staples?|spots?)\b/i.test(name)) return false;
+  if (/\bor\b.*(café|coffee|spots?|places?|shops?)\b/i.test(name)) return false;
+  return true;
 }
 
 function parsePastedList(text) {
@@ -1479,15 +1455,27 @@ function parsePastedList(text) {
     const line = lines[i];
     if (isMetaLine(line)) { i++; continue; }
     const name = cleanPlaceName(line);
-    if (!name || name.length < 2) { i++; continue; }
-    /* Look ahead for an address line */
+    if (!name || name.length < 2 || !looksLikePlaceName(name)) { i++; continue; }
+    /* Look ahead up to 6 lines for an address, skipping meta lines and
+       the duplicate-name line that ChatGPT format produces */
     let address = '';
-    if (i + 1 < lines.length && isAddress(lines[i + 1])) {
-      address = lines[i + 1];
-      i += 2;
-    } else {
-      i++;
+    let j = i + 1;
+    const normName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    while (j < lines.length && j <= i + 6) {
+      const next = lines[j];
+      if (isAddress(next)) { address = cleanAddress(next); j++; break; }
+      const nextClean = cleanPlaceName(next);
+      const normNext = nextClean.toLowerCase().replace(/[^a-z0-9]/g, '');
+      /* Treat as same place if one normalized name is a prefix of the other
+         (handles "Felix Roasting Co." vs "Felix Roasting Co, Hotel Hugo Soho") */
+      const isVariant = nextClean === name ||
+        normNext.startsWith(normName) || normName.startsWith(normNext);
+      if (isVariant) { j++; continue; }
+      /* Stop if we hit a genuinely different potential place name */
+      if (!isMetaLine(next) && nextClean.length > 1 && looksLikePlaceName(nextClean)) break;
+      j++;
     }
+    i = j > i + 1 ? j : i + 1;
     raw.push({ name, address });
   }
   return raw;
@@ -1504,21 +1492,30 @@ function groupForDisambig(rawEntries) {
     byName.get(key).push(e);
   });
   const unambiguous = [], ambiguous = [];
-  byName.forEach((group, key) => {
+  byName.forEach(group => {
     if (group.length === 1) {
       unambiguous.push(makePlace(group[0].name, { address: group[0].address }));
+      return;
+    }
+    /* When the same name appears as both a header (no address) and a detail entry
+       (with address), prefer the one with the address — this is the ChatGPT pattern */
+    const withAddr    = group.filter(e => e.address.trim());
+    const withoutAddr = group.filter(e => !e.address.trim());
+    if (withAddr.length && withoutAddr.length) {
+      const variants = [...new Set(withAddr.map(e => e.address.toLowerCase().trim()))];
+      if (variants.length === 1) {
+        /* All address copies agree → take one */
+        unambiguous.push(makePlace(withAddr[0].name, { address: withAddr[0].address }));
+      } else {
+        /* Genuinely different branches with addresses → let user pick */
+        ambiguous.push({ name: group[0].name, candidates: withAddr.map(e => makePlace(e.name, { address: e.address })) });
+      }
     } else {
-      /* Same name appears multiple times — could be different branches.
-         If all have the same address (or no address) → deduplicate to one.
-         Otherwise → disambiguation UI */
       const uniqueAddrs = [...new Set(group.map(e => e.address.toLowerCase().trim()))];
       if (uniqueAddrs.length === 1) {
         unambiguous.push(makePlace(group[0].name, { address: group[0].address }));
       } else {
-        ambiguous.push({
-          name: group[0].name,
-          candidates: group.map(e => makePlace(e.name, { address: e.address })),
-        });
+        ambiguous.push({ name: group[0].name, candidates: group.map(e => makePlace(e.name, { address: e.address })) });
       }
     }
   });
@@ -1660,7 +1657,7 @@ function initImport() {
             <input type="checkbox" data-group="${group.name}" data-ci="${ci}" />
             <div>
               <div class="disambig-option-name">${cand.name}</div>
-              <div class="disambig-option-addr">${cand.desc || cand.q.replace(/\+/g, ' ') || 'No address'}</div>
+              <div class="disambig-option-addr">${cand.desc || decodeURIComponent(cand.q.replace(/\+/g, ' ')) || 'No address'}</div>
             </div>`;
           opt.querySelector('input').addEventListener('change', () => {
             opt.classList.toggle('selected', opt.querySelector('input').checked);
