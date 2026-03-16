@@ -6,9 +6,16 @@
   <title>Tote</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
 
   <style>
+    @font-face {
+      font-family: 'Flor de Ruina Semilla';
+      src: url('./fonts/FlorDeRuina-Semilla.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     /* ══════════════════════════════════════════
        RESET
     ══════════════════════════════════════════ */
@@ -34,8 +41,8 @@
       --act-bg:     #0A0908;        /* active filter */
       --act-fg:     #F5F2ED;
       --green:      #1A7A32;
-      --sans:       'Space Grotesk', system-ui, sans-serif;
-      --mono:       'Space Mono', monospace;
+      --sans:       'Faculty Glyphic', system-ui, sans-serif;
+      --mono:       ui-monospace, 'Courier New', monospace;
     }
 
     /* ══════════════════════════════════════════
@@ -310,9 +317,10 @@
       margin-bottom: 10px;
     }
     .app-name {
+      font-family: 'Flor de Ruina Semilla', sans-serif;
       font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -1.2px;
+      font-weight: normal;
+      letter-spacing: 0;
       line-height: 1;
     }
     .sync-badge {
@@ -654,7 +662,8 @@
       margin-bottom: 28px;
     }
     .import-status.show { display: block; }
-    .import-status.ok { background: var(--text); color: var(--bg); }
+    .import-status.ok  { background: var(--text); color: var(--bg); }
+    .import-status.err { border-color: var(--bd); background: transparent; color: var(--text); }
 
     .import-howto-label {
       font-family: var(--mono);
@@ -688,6 +697,90 @@
       color: var(--text-2);
     }
     .import-step-text strong { color: var(--text); font-weight: 700; }
+
+    /* import mode tabs */
+    .import-mode-tabs {
+      display: flex;
+      border: 2px solid var(--bd);
+      margin-bottom: 20px;
+    }
+    .import-mode-btn {
+      flex: 1;
+      padding: 10px 0;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: transparent;
+      color: var(--text-3);
+      border: none;
+      cursor: pointer;
+      transition: background 120ms, color 120ms;
+    }
+    .import-mode-btn + .import-mode-btn { border-left: 2px solid var(--bd); }
+    .import-mode-btn.active {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    /* textarea for paste mode */
+    .import-field-area { min-height: 140px; }
+    .import-textarea {
+      width: 100%;
+      min-height: 130px;
+      padding: 12px 14px;
+      font-family: var(--mono);
+      font-size: 12px;
+      background: transparent;
+      color: var(--text);
+      border: none;
+      outline: none;
+      display: block;
+      resize: vertical;
+      line-height: 1.6;
+    }
+    .import-textarea::placeholder { color: var(--text-3); }
+
+    /* disambiguation panel */
+    .disambig-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .disambig-sub {
+      font-size: 12px;
+      color: var(--text-2);
+      margin-bottom: 16px;
+      line-height: 1.55;
+    }
+    .disambig-group { margin-bottom: 18px; }
+    .disambig-group-name {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 8px;
+    }
+    .disambig-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 2px solid var(--bd-subtle);
+      margin-bottom: 6px;
+      cursor: pointer;
+      transition: border-color 120ms, background 120ms;
+    }
+    .disambig-option.selected {
+      border-color: var(--bd);
+      background: var(--raised);
+    }
+    .disambig-option input[type=checkbox] { margin-top: 3px; flex-shrink: 0; }
+    .disambig-option-name { font-size: 13px; font-weight: 700; }
+    .disambig-option-addr { font-size: 11px; color: var(--text-2); margin-top: 2px; }
 
     /* ══════════════════════════════════════════
        BOTTOM BAR
@@ -836,43 +929,79 @@
   <!-- Import view -->
   <div id="vImport" hidden>
     <div class="import-view">
-      <div class="import-title">Connect Google Maps</div>
-      <div class="import-subtitle">Paste a shared Google Maps list link to sync your saved places into Tote.</div>
+      <div class="import-title">Import Places</div>
+      <div class="import-subtitle">Add places from a Google Maps list link, or paste a text list.</div>
 
-      <div class="import-field">
-        <input class="import-input" id="importInput" type="url" inputmode="url"
-          autocomplete="off" autocorrect="off" spellcheck="false"
-          placeholder="https://maps.app.goo.gl/…" />
+      <!-- Mode tabs -->
+      <div class="import-mode-tabs">
+        <button class="import-mode-btn active" data-mode="link">Link</button>
+        <button class="import-mode-btn" data-mode="paste">Paste</button>
       </div>
 
-      <button class="import-btn" id="importBtn" disabled>
-        <span id="importBtnLabel">Import List</span>
-        <span>→</span>
-      </button>
+      <!-- ── Link mode ── -->
+      <div id="importModeLink" class="import-mode-section">
+        <div class="import-field">
+          <input class="import-input" id="importInput" type="url" inputmode="url"
+            autocomplete="off" autocorrect="off" spellcheck="false"
+            placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
+        </div>
 
-      <div class="import-status" id="importStatus" role="status"></div>
+        <button class="import-btn" id="importBtn" disabled>
+          <span id="importBtnLabel">Fetch List</span>
+          <span>→</span>
+        </button>
 
-      <div class="import-howto-label">How to get your list link</div>
-      <div class="import-step">
-        <span class="import-step-n">01</span>
-        <span class="import-step-text">Open <strong>Google Maps</strong> on your phone</span>
+        <div class="import-status" id="importStatus" role="status"></div>
+
+        <div class="import-howto-label">How to get your list link</div>
+        <div class="import-step">
+          <span class="import-step-n">01</span>
+          <span class="import-step-text">Open <strong>Google Maps</strong> on your phone</span>
+        </div>
+        <div class="import-step">
+          <span class="import-step-n">02</span>
+          <span class="import-step-text">Tap <strong>Saved</strong> at the bottom of the screen</span>
+        </div>
+        <div class="import-step">
+          <span class="import-step-n">03</span>
+          <span class="import-step-text">Open your list (e.g. <strong>Want to go</strong> or a custom list)</span>
+        </div>
+        <div class="import-step">
+          <span class="import-step-n">04</span>
+          <span class="import-step-text">Tap <strong>⋮</strong> (top right) → <strong>Share list</strong> → <strong>Copy link</strong></span>
+        </div>
+        <div class="import-step">
+          <span class="import-step-n">05</span>
+          <span class="import-step-text">Paste the link above and tap <strong>Fetch List</strong></span>
+        </div>
       </div>
-      <div class="import-step">
-        <span class="import-step-n">02</span>
-        <span class="import-step-text">Tap <strong>Saved</strong> at the bottom of the screen</span>
+
+      <!-- ── Paste mode ── -->
+      <div id="importModePaste" class="import-mode-section" hidden>
+        <div class="import-field import-field-area">
+          <textarea class="import-textarea" id="importPasteArea"
+            placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
+        </div>
+
+        <button class="import-btn" id="importPasteBtn" disabled>
+          <span id="importPasteBtnLabel">Parse &amp; Import</span>
+          <span>→</span>
+        </button>
+
+        <div class="import-status" id="importPasteStatus" role="status"></div>
+
+        <!-- Disambiguation panel (shown when same name has multiple candidates) -->
+        <div id="importDisambig" hidden>
+          <div class="disambig-title">Multiple locations found</div>
+          <div class="disambig-sub">Select which version of each place to add:</div>
+          <div id="disambigList"></div>
+          <button class="import-btn" id="disambigConfirm">
+            <span id="disambigConfirmLabel">Add Selected</span>
+            <span>→</span>
+          </button>
+        </div>
       </div>
-      <div class="import-step">
-        <span class="import-step-n">03</span>
-        <span class="import-step-text">Open your list (e.g. <strong>Want to go</strong> or a custom list)</span>
-      </div>
-      <div class="import-step">
-        <span class="import-step-n">04</span>
-        <span class="import-step-text">Tap <strong>⋮</strong> (top right) → <strong>Share list</strong> → <strong>Copy link</strong></span>
-      </div>
-      <div class="import-step">
-        <span class="import-step-n">05</span>
-        <span class="import-step-text">Paste the link above and tap <strong>Import List</strong></span>
-      </div>
+
     </div>
   </div>
 
@@ -893,7 +1022,7 @@
 /* ══════════════════════════════════════════════
    DATA
 ══════════════════════════════════════════════ */
-const PLACES = [
+const DEFAULT_PLACES = [
   { id:1,  name:"Cafe Integral",       cat:"Coffee",  tag:"Single-origin espresso from Nicaragua", lat:40.7200, lng:-73.9942, desc:"Family-owned roaster. The cortado is their calling card — they rotate seasonally. Small space with focused energy. Cash appreciated.", q:"Cafe+Integral+149+Elizabeth+St+New+York+NY" },
   { id:2,  name:"Scarr's Pizza",       cat:"Food",    tag:"Organic flour, old-school slice",        lat:40.7173, lng:-73.9895, desc:"Fresh mozzarella, organic flour, a plain slice that tastes exactly like pizza should. Counter seating is the move. Expect a weekend line.", q:"Scarr%27s+Pizza+22+Orchard+St+New+York+NY" },
   { id:3,  name:"Ten Bells",           cat:"Bars",    tag:"Natural wine by candlelight",            lat:40.7196, lng:-73.9924, desc:"A tiny cave of a wine bar with an ever-changing natural list. No cocktails, no beer. Bartenders know the producers by name. Arrive before 8pm.", q:"Ten+Bells+247+Broome+St+New+York+NY" },
@@ -907,6 +1036,35 @@ const PLACES = [
   { id:11, name:"McNally Jackson",     cat:"Culture", tag:"Staff picks worth reading",              lat:40.7238, lng:-73.9964, desc:"Best indie bookshop in the neighborhood. Staff picks are genuinely curated. The magazine section rewards slow browsing. Coffee bar in the back.", q:"McNally+Jackson+Books+52+Prince+St+New+York+NY" },
   { id:12, name:"Death & Co",          cat:"Bars",    tag:"Cocktail institution, seasonal menu",    lat:40.7267, lng:-73.9779, desc:"One of the bars that started NYC's cocktail revival. Menu rotates seasonally. Bar seats are walk-in only — reservations recommended on weekends.", q:"Death+and+Co+433+E+6th+St+New+York+NY" },
 ];
+
+/* Mutable list — loaded from localStorage, falls back to defaults */
+function loadPlaces() {
+  try {
+    const s = localStorage.getItem('tote_places');
+    return s ? JSON.parse(s) : DEFAULT_PLACES.map(p => ({ ...p }));
+  } catch { return DEFAULT_PLACES.map(p => ({ ...p })); }
+}
+function savePlaces() {
+  try { localStorage.setItem('tote_places', JSON.stringify(PLACES)); } catch {}
+}
+let PLACES = loadPlaces();
+let _nextId = Math.max(...PLACES.map(p => p.id ?? 0), 0) + 1;
+function nextId() { return _nextId++; }
+
+/* Add incoming places, deduplicate against existing ones.
+   Returns { added[], skipped[] } */
+function addPlaces(incoming) {
+  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const existing = new Set(PLACES.map(p => norm(p.name)));
+  const added = [], skipped = [];
+  incoming.forEach(p => {
+    const key = norm(p.name);
+    if (existing.has(key)) { skipped.push(p); }
+    else { existing.add(key); p.id = nextId(); PLACES.push(p); added.push(p); }
+  });
+  savePlaces();
+  return { added, skipped };
+}
 
 const NEIGHBORHOODS = [
   { id:'les',     name:'Lower East Side', borough:'Manhattan', lat:40.7150, lng:-73.9861 },
@@ -1189,36 +1347,358 @@ function setTab(tab) {
 }
 
 /* ══════════════════════════════════════════════
-   IMPORT
+   GOOGLE MAPS FETCH + PARSE
+══════════════════════════════════════════════ */
+const MAPS_RE = /maps\.app\.goo\.gl\/|maps\.google\.com\//;
+
+function inferCategory(typeStr) {
+  const t = (typeStr || '').toLowerCase();
+  if (/coffee|cafe|espresso/.test(t))            return 'Coffee';
+  if (/bar|pub|cocktail|brewery|wine/.test(t))    return 'Bars';
+  if (/shop|store|retail|market|boutique/.test(t)) return 'Shops';
+  if (/museum|theater|theatre|cinema|gallery|art|culture/.test(t)) return 'Culture';
+  return 'Food';
+}
+
+function makePlace(name, opts = {}) {
+  return {
+    id: nextId(),
+    name,
+    cat:  opts.cat  || inferCategory(opts.typeStr || ''),
+    tag:  opts.tag  || '',
+    lat:  opts.lat  != null ? opts.lat : st.refLat,
+    lng:  opts.lng  != null ? opts.lng : st.refLng,
+    desc: opts.desc || '',
+    q:    opts.q    || encodeURIComponent(name + (opts.address ? ' ' + opts.address : '')).replace(/%20/g, '+'),
+  };
+}
+
+async function fetchGoogleMapsList(url) {
+  /* Use allorigins.win as a CORS proxy — it follows redirects (handles short links) */
+  const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+  const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(14000) });
+  if (!res.ok) throw new Error('Proxy error ' + res.status);
+  const json = await res.json();
+  const html = json.contents || '';
+  return parseGoogleMapsHTML(html);
+}
+
+function parseGoogleMapsHTML(html) {
+  const places = [];
+
+  /* ── Strategy 1: JSON-LD structured data ── */
+  const jsonLdRe = /<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi;
+  let m;
+  while ((m = jsonLdRe.exec(html)) !== null) {
+    try {
+      const d = JSON.parse(m[1]);
+      const items = [];
+      if (d['@type'] === 'ItemList' && Array.isArray(d.itemListElement))
+        d.itemListElement.forEach(el => items.push(el.item || el));
+      else if (d.name)
+        items.push(d);
+      items.forEach(thing => {
+        if (!thing.name) return;
+        places.push(makePlace(thing.name, {
+          typeStr: [].concat(thing['@type'] || []).join(' '),
+          tag:     thing.description || '',
+          desc:    thing.description || '',
+          lat:     thing.geo?.latitude,
+          lng:     thing.geo?.longitude,
+          address: thing.address?.streetAddress || '',
+        }));
+      });
+    } catch {}
+  }
+  if (places.length) return places;
+
+  /* ── Strategy 2: Scan for place-name / coordinate pairs in embedded JSON ──
+     Google embeds arrays like ["Place Name", null, [lat, lng], ...]
+     We look for string + nearby [lat, lng] within a short window */
+  const coordRe = /\[(-?\d{1,3}\.\d{5,}),(-?\d{1,3}\.\d{5,})\]/g;
+  const coordHits = [];
+  while ((m = coordRe.exec(html)) !== null) {
+    coordHits.push({ lat: parseFloat(m[1]), lng: parseFloat(m[2]), idx: m.index });
+  }
+  /* Grab quoted strings that look like place names near each coord hit */
+  const nameRe = /"([A-Z][^"]{2,60})"/g;
+  const nameHits = [];
+  while ((m = nameRe.exec(html)) !== null) nameHits.push({ name: m[1], idx: m.index });
+
+  const usedCoords = new Set();
+  nameHits.forEach(nh => {
+    const nearby = coordHits.find(ch =>
+      !usedCoords.has(ch.idx) && Math.abs(ch.idx - nh.idx) < 800
+    );
+    if (!nearby) return;
+    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) return;
+    usedCoords.add(nearby.idx);
+    places.push(makePlace(nh.name, { lat: nearby.lat, lng: nearby.lng }));
+  });
+  if (places.length) return places;
+
+  /* ── Strategy 3: Open Graph / title fallback (at least get the list name) ──
+     Can't pull individual places but signal that fetch succeeded */
+  const titleM = html.match(/<title[^>]*>([^<]+)<\/title>/i);
+  if (titleM) throw new Error('NOLIST:' + titleM[1].trim());
+
+  return places;
+}
+
+/* ══════════════════════════════════════════════
+   PASTE PARSING
+══════════════════════════════════════════════ */
+function isMetaLine(line) {
+  return /^[\d.]+$/.test(line) ||             /* bare number (rating) */
+    /^\([\d,]+\)$/.test(line) ||               /* (review count) */
+    /^(Open|Closed|Opens|Closes)\b/i.test(line) ||
+    /^\d+\.\d+\s*(mi|km)/i.test(line) ||       /* distance */
+    /^[·•\-–—]+$/.test(line) ||                /* separator */
+    line.length < 2;
+}
+
+function isAddress(line) {
+  return /\d{1,5}\s+\w+.*(St|Ave|Rd|Blvd|Dr|Ln|Ct|Pl|Way|Pkwy|Hwy)\b/i.test(line) ||
+    /,\s*(NY|NYC|New York|Brooklyn|Manhattan|Queens|Bronx|Chicago|LA|SF|Austin)\b/i.test(line);
+}
+
+function cleanPlaceName(raw) {
+  return raw
+    .replace(/^\d+[.)]\s*/, '')  /* numbered list: "1. Place" */
+    .replace(/^[-•*]\s*/, '')    /* bulleted */
+    .replace(/\s*·.*$/, '')      /* inline meta after · */
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function parsePastedList(text) {
+  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+  const raw = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    if (isMetaLine(line)) { i++; continue; }
+    const name = cleanPlaceName(line);
+    if (!name || name.length < 2) { i++; continue; }
+    /* Look ahead for an address line */
+    let address = '';
+    if (i + 1 < lines.length && isAddress(lines[i + 1])) {
+      address = lines[i + 1];
+      i += 2;
+    } else {
+      i++;
+    }
+    raw.push({ name, address });
+  }
+  return raw;
+}
+
+/* Groups same-name entries for disambiguation.
+   Returns { unambiguous: Place[], ambiguous: { name, candidates[] }[] } */
+function groupForDisambig(rawEntries) {
+  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const byName = new Map();
+  rawEntries.forEach(e => {
+    const key = norm(e.name);
+    if (!byName.has(key)) byName.set(key, []);
+    byName.get(key).push(e);
+  });
+  const unambiguous = [], ambiguous = [];
+  byName.forEach((group, key) => {
+    if (group.length === 1) {
+      unambiguous.push(makePlace(group[0].name, { address: group[0].address }));
+    } else {
+      /* Same name appears multiple times — could be different branches.
+         If all have the same address (or no address) → deduplicate to one.
+         Otherwise → disambiguation UI */
+      const uniqueAddrs = [...new Set(group.map(e => e.address.toLowerCase().trim()))];
+      if (uniqueAddrs.length === 1) {
+        unambiguous.push(makePlace(group[0].name, { address: group[0].address }));
+      } else {
+        ambiguous.push({
+          name: group[0].name,
+          candidates: group.map(e => makePlace(e.name, { address: e.address })),
+        });
+      }
+    }
+  });
+  return { unambiguous, ambiguous };
+}
+
+/* ══════════════════════════════════════════════
+   IMPORT — UI wiring
 ══════════════════════════════════════════════ */
 function initImport() {
+  /* ── Mode tabs ── */
+  document.querySelectorAll('.import-mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.import-mode-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const mode = btn.dataset.mode;
+      document.getElementById('importModeLink').hidden  = mode !== 'link';
+      document.getElementById('importModePaste').hidden = mode !== 'paste';
+    });
+  });
+
+  /* ── Link mode ── */
   const input  = document.getElementById('importInput');
   const btn    = document.getElementById('importBtn');
   const label  = document.getElementById('importBtnLabel');
   const status = document.getElementById('importStatus');
-  const MAPS_RE = /maps\.app\.goo\.gl\/|maps\.google\.com\//;
+
+  function setLinkStatus(cls, msg) {
+    status.className = 'import-status' + (cls ? ' show ' + cls : '');
+    status.textContent = msg;
+  }
 
   input.addEventListener('input', () => {
     btn.disabled = !MAPS_RE.test(input.value.trim());
-    status.className = 'import-status';
-    status.textContent = '';
+    setLinkStatus('', '');
   });
 
-  btn.addEventListener('click', () => {
-    if (!MAPS_RE.test(input.value.trim())) return;
+  btn.addEventListener('click', async () => {
+    const url = input.value.trim();
+    if (!MAPS_RE.test(url)) return;
     btn.disabled = true;
-    label.textContent = 'Fetching list…';
-    setTimeout(() => {
-      label.textContent = 'Import List';
-      status.className = 'import-status show ok';
-      status.textContent = '✓  12 places imported — switching to your list';
-      setTimeout(() => {
-        setTab('list');
-        status.className = 'import-status';
-        input.value = '';
-        btn.disabled = true;
-      }, 2200);
-    }, 1600);
+    label.textContent = 'Fetching…';
+    setLinkStatus('', '');
+    try {
+      const fetched = await fetchGoogleMapsList(url);
+      label.textContent = 'Fetch List';
+      if (!fetched.length) {
+        setLinkStatus('err', '✗  No places found in that link. Try the Paste tab instead.');
+        btn.disabled = false;
+        return;
+      }
+      const { added, skipped } = addPlaces(fetched);
+      renderList(true);
+      renderCounts();
+      let msg = `✓  ${added.length} place${added.length !== 1 ? 's' : ''} added`;
+      if (skipped.length) msg += ` · ${skipped.length} duplicate${skipped.length !== 1 ? 's' : ''} skipped`;
+      setLinkStatus('ok', msg);
+      input.value = '';
+      setTimeout(() => { setTab('list'); setLinkStatus('', ''); }, 2400);
+    } catch (err) {
+      label.textContent = 'Fetch List';
+      btn.disabled = false;
+      if (err.message?.startsWith('NOLIST:')) {
+        setLinkStatus('err', '✗  Couldn\'t read individual places from that link. Try the Paste tab.');
+      } else {
+        setLinkStatus('err', '✗  Network error — check your connection and try again.');
+      }
+    }
+  });
+
+  /* ── Paste mode ── */
+  const pasteArea   = document.getElementById('importPasteArea');
+  const pasteBtn    = document.getElementById('importPasteBtn');
+  const pasteBtnLbl = document.getElementById('importPasteBtnLabel');
+  const pasteStatus = document.getElementById('importPasteStatus');
+  const disambigEl  = document.getElementById('importDisambig');
+  const disambigList= document.getElementById('disambigList');
+  const disambigBtn = document.getElementById('disambigConfirm');
+  const disambigLbl = document.getElementById('disambigConfirmLabel');
+
+  function setPasteStatus(cls, msg) {
+    pasteStatus.className = 'import-status' + (cls ? ' show ' + cls : '');
+    pasteStatus.textContent = msg;
+  }
+
+  pasteArea.addEventListener('input', () => {
+    pasteBtn.disabled = !pasteArea.value.trim();
+    setPasteStatus('', '');
+    disambigEl.hidden = true;
+  });
+
+  pasteBtn.addEventListener('click', () => {
+    const text = pasteArea.value.trim();
+    if (!text) return;
+    pasteBtn.disabled = true;
+    pasteBtnLbl.textContent = 'Parsing…';
+
+    const raw = parsePastedList(text);
+    if (!raw.length) {
+      pasteBtnLbl.textContent = 'Parse & Import';
+      pasteBtn.disabled = false;
+      setPasteStatus('err', '✗  No recognizable place names found.');
+      return;
+    }
+
+    /* Filter out names already in PLACES */
+    const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const existingNames = new Set(PLACES.map(p => norm(p.name)));
+    const newRaw = raw.filter(e => !existingNames.has(norm(e.name)));
+    const dupCount = raw.length - newRaw.length;
+
+    const { unambiguous, ambiguous } = groupForDisambig(newRaw);
+
+    pasteBtnLbl.textContent = 'Parse & Import';
+
+    if (!ambiguous.length) {
+      /* All clear — add directly */
+      const { added, skipped } = addPlaces(unambiguous);
+      renderList(true);
+      renderCounts();
+      let msg = `✓  ${added.length} place${added.length !== 1 ? 's' : ''} added`;
+      if (dupCount + skipped.length) msg += ` · ${dupCount + skipped.length} duplicate${dupCount + skipped.length !== 1 ? 's' : ''} skipped`;
+      setPasteStatus('ok', msg);
+      pasteArea.value = '';
+      pasteBtn.disabled = true;
+      setTimeout(() => { setTab('list'); setPasteStatus('', ''); }, 2400);
+    } else {
+      /* Show disambiguation UI */
+      disambigEl.hidden = false;
+      disambigList.innerHTML = '';
+      ambiguous.forEach(group => {
+        const groupEl = document.createElement('div');
+        groupEl.className = 'disambig-group';
+        groupEl.innerHTML = `<div class="disambig-group-name">${group.name}</div>`;
+        group.candidates.forEach((cand, ci) => {
+          const opt = document.createElement('label');
+          opt.className = 'disambig-option';
+          opt.innerHTML = `
+            <input type="checkbox" data-group="${group.name}" data-ci="${ci}" />
+            <div>
+              <div class="disambig-option-name">${cand.name}</div>
+              <div class="disambig-option-addr">${cand.desc || cand.q.replace(/\+/g, ' ') || 'No address'}</div>
+            </div>`;
+          opt.querySelector('input').addEventListener('change', () => {
+            opt.classList.toggle('selected', opt.querySelector('input').checked);
+          });
+          groupEl.appendChild(opt);
+        });
+        disambigList.appendChild(groupEl);
+      });
+
+      /* Store pending unambiguous so we can add them together on confirm */
+      disambigBtn._pending = { unambiguous, ambiguous, dupCount };
+    }
+  });
+
+  disambigBtn.addEventListener('click', () => {
+    const { unambiguous, ambiguous, dupCount } = disambigBtn._pending || {};
+    if (!unambiguous) return;
+
+    const selected = [];
+    ambiguous.forEach(group => {
+      const checked = disambigList.querySelectorAll(`input[data-group="${group.name}"]:checked`);
+      checked.forEach(cb => {
+        const ci = parseInt(cb.dataset.ci, 10);
+        selected.push(group.candidates[ci]);
+      });
+    });
+
+    const toAdd = [...unambiguous, ...selected];
+    const { added, skipped } = addPlaces(toAdd);
+    renderList(true);
+    renderCounts();
+    let msg = `✓  ${added.length} place${added.length !== 1 ? 's' : ''} added`;
+    if (dupCount + skipped.length) msg += ` · ${dupCount + skipped.length} duplicate${dupCount + skipped.length !== 1 ? 's' : ''} skipped`;
+    setPasteStatus('ok', msg);
+    pasteArea.value = '';
+    pasteBtn.disabled = true;
+    disambigEl.hidden = true;
+    setTimeout(() => { setTab('list'); setPasteStatus('', ''); }, 2400);
   });
 }
 
