@@ -1,0 +1,35 @@
+[
+  {
+    "id": "eater-ny-coffee",
+    "source": "Eater NY",
+    "source_url": "https://ny.eater.com",
+    "title": "Essential Coffee in Lower Manhattan",
+    "blurb": "The roasters, the third-wave standbys, and the places that have earned their regulars.",
+    "city": "New York",
+    "updated": "2026-01",
+    "place_count": 5,
+    "file": "eater-ny-coffee.json"
+  },
+  {
+    "id": "infatuation-wine-bars",
+    "source": "The Infatuation",
+    "source_url": "https://www.theinfatuation.com",
+    "title": "Best Wine Bars in the LES",
+    "blurb": "Natural, low-intervention, and the kind of places where the person behind the bar actually wants to talk.",
+    "city": "New York",
+    "updated": "2025-11",
+    "place_count": 5,
+    "file": "infatuation-wine-bars.json"
+  },
+  {
+    "id": "nyt-36-hours-les",
+    "source": "New York Times",
+    "source_url": "https://www.nytimes.com",
+    "title": "36 Hours in the Lower East Side",
+    "blurb": "The neighborhood that keeps reinventing itself without forgetting where it came from.",
+    "city": "New York",
+    "updated": "2025-09",
+    "place_count": 8,
+    "file": "nyt-36-hours-les.json"
+  }
+]

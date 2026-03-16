@@ -1,0 +1,61 @@
+{
+  "id": "eater-ny-coffee",
+  "source": "Eater NY",
+  "source_url": "https://ny.eater.com",
+  "title": "Essential Coffee in Lower Manhattan",
+  "blurb": "The roasters, the third-wave standbys, and the places that have earned their regulars.",
+  "city": "New York",
+  "updated": "2026-01",
+  "places": [
+    {
+      "name": "Cafe Integral",
+      "address": "149 Elizabeth St, New York, NY 10012",
+      "cat": "Coffee",
+      "tag": "Single-origin espresso from Nicaragua",
+      "desc": "Family-owned roaster. The cortado is their calling card — they rotate seasonally. Small space with focused energy. Cash appreciated.",
+      "lat": 40.7200,
+      "lng": -73.9942,
+      "q": "Cafe+Integral+149+Elizabeth+St+New+York+NY"
+    },
+    {
+      "name": "Abraço",
+      "address": "86 E 7th St, New York, NY 10003",
+      "cat": "Coffee",
+      "tag": "Tiny counter, serious espresso",
+      "desc": "A five-stool espresso bar in the East Village that's been doing things right since 2007. The olive oil cake is the move. Arrive early — they run out.",
+      "lat": 40.7264,
+      "lng": -73.9825,
+      "q": "Abraco+86+E+7th+St+New+York+NY"
+    },
+    {
+      "name": "Russ & Daughters Cafe",
+      "address": "127 Orchard St, New York, NY 10002",
+      "cat": "Food",
+      "tag": "Bagels, lox, and strong coffee",
+      "desc": "The cafe offshoot of the legendary appetizing shop. Smoked fish, bagels, and coffee in a beautiful room. More seats than the original. Weekend waits are real.",
+      "lat": 40.7201,
+      "lng": -73.9884,
+      "q": "Russ+and+Daughters+Cafe+127+Orchard+St+New+York+NY"
+    },
+    {
+      "name": "Dimes Market",
+      "address": "143 Division St, New York, NY 10002",
+      "cat": "Coffee",
+      "tag": "California light in the LES",
+      "desc": "Grain bowls, great coffee, natural wines, and a market with things you actually want to cook. Sunday brunch line moves fast. Unhurried vibe.",
+      "lat": 40.7139,
+      "lng": -73.9881,
+      "q": "Dimes+Market+143+Division+St+New+York+NY"
+    },
+    {
+      "name": "Kopitiam",
+      "address": "151 E Broadway, New York, NY 10002",
+      "cat": "Coffee",
+      "tag": "Malaysian kopi and kaya toast",
+      "desc": "Malaysian coffee shop doing kopi the traditional way — dark roast with condensed milk, kaya toast on the side. A completely different register than third-wave espresso. Worth the detour.",
+      "lat": 40.7143,
+      "lng": -73.9935,
+      "q": "Kopitiam+151+E+Broadway+New+York+NY"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "nyt-36-hours-les",
+  "source": "New York Times",
+  "source_url": "https://www.nytimes.com",
+  "title": "36 Hours in the Lower East Side",
+  "blurb": "The neighborhood that keeps reinventing itself without forgetting where it came from.",
+  "city": "New York",
+  "updated": "2025-09",
+  "places": [
+    {
+      "name": "Katz's Delicatessen",
+      "address": "205 E Houston St, New York, NY 10002",
+      "cat": "Food",
+      "tag": "Pastrami on rye, no argument",
+      "desc": "The definitive New York deli. Get the pastrami on rye. Take a ticket, tip your carver. The Saturday lunch line is part of the experience.",
+      "lat": 40.7223,
+      "lng": -73.9874,
+      "q": "Katz%27s+Delicatessen+205+E+Houston+St+New+York+NY"
+    },
+    {
+      "name": "Russ & Daughters",
+      "address": "179 E Houston St, New York, NY 10002",
+      "cat": "Food",
+      "tag": "Lox temple since 1914",
+      "desc": "The original appetizing shop. The Super Heeb is the move. The cafe on Orchard has more seats. Come early on weekends.",
+      "lat": 40.7228,
+      "lng": -73.9832,
+      "q": "Russ+and+Daughters+179+E+Houston+St+New+York+NY"
+    },
+    {
+      "name": "Metrograph",
+      "address": "7 Ludlow St, New York, NY 10002",
+      "cat": "Culture",
+      "tag": "Indie cinema, exceptional cafe",
+      "desc": "Independent cinema showing arthouse films and retrospectives. The downstairs cafe stands alone. Book tickets ahead — weekends sell out.",
+      "lat": 40.7134,
+      "lng": -73.9876,
+      "q": "Metrograph+7+Ludlow+St+New+York+NY"
+    },
+    {
+      "name": "Economy Candy",
+      "address": "108 Rivington St, New York, NY 10002",
+      "cat": "Shops",
+      "tag": "Sugar institution since 1937",
+      "desc": "Floor-to-ceiling candy in a tiny Orchard Street shop unchanged for decades. Great for gifting or nostalgia. The bulk bins are the whole point.",
+      "lat": 40.7168,
+      "lng": -73.9891,
+      "q": "Economy+Candy+108+Rivington+St+New+York+NY"
+    },
+    {
+      "name": "Ivan Ramen",
+      "address": "25 Clinton St, New York, NY 10002",
+      "cat": "Food",
+      "tag": "American ramen, genuinely great broth",
+      "desc": "The LES outpost of Ivan Orkin's ramen shop. The shio ramen is delicate and complex. The rye noodles are worth ordering around. Go early or expect a wait.",
+      "lat": 40.7163,
+      "lng": -73.9836,
+      "q": "Ivan+Ramen+25+Clinton+St+New+York+NY"
+    },
+    {
+      "name": "Scarr's Pizza",
+      "address": "22 Orchard St, New York, NY 10002",
+      "cat": "Food",
+      "tag": "Organic flour, old-school slice",
+      "desc": "Fresh mozzarella, organic flour, a plain slice that tastes exactly like pizza should. Counter seating is the move. Expect a weekend line.",
+      "lat": 40.7173,
+      "lng": -73.9895,
+      "q": "Scarr%27s+Pizza+22+Orchard+St+New+York+NY"
+    },
+    {
+      "name": "Tenement Museum",
+      "address": "103 Orchard St, New York, NY 10002",
+      "cat": "Culture",
+      "tag": "Immigration history, lived-in rooms",
+      "desc": "Tours of restored tenement apartments documenting immigrant life from the 1860s onward. Book ahead — tours fill up. The neighborhood context makes every room hit harder.",
+      "lat": 40.7185,
+      "lng": -73.9900,
+      "q": "Tenement+Museum+103+Orchard+St+New+York+NY"
+    },
+    {
+      "name": "McNally Jackson",
+      "address": "52 Prince St, New York, NY 10012",
+      "cat": "Culture",
+      "tag": "Staff picks worth reading",
+      "desc": "Best indie bookshop in the neighborhood. Staff picks are genuinely curated. The magazine section rewards slow browsing. Coffee bar in the back.",
+      "lat": 40.7238,
+      "lng": -73.9964,
+      "q": "McNally+Jackson+Books+52+Prince+St+New+York+NY"
+    }
+  ]
+}

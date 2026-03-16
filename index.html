@@ -739,6 +739,159 @@
     .disambig-option-addr { font-size: 13px; color: var(--text-2); margin-top: 2px; }
 
     /* ══════════════════════════════════════════
+       EXPLORE VIEW
+    ══════════════════════════════════════════ */
+
+    /* Collection index cards */
+    .coll-card {
+      border-bottom: 1px solid var(--bd-subtle);
+      padding: 14px 20px;
+      cursor: pointer;
+      transition: background 70ms;
+    }
+    .coll-card:hover  { background: var(--surface); }
+    .coll-card:active { background: var(--raised); }
+    .coll-card:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; }
+
+    .coll-source {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 4px;
+    }
+    .coll-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+    .coll-blurb {
+      font-size: 13px;
+      color: var(--text-2);
+      line-height: 1.55;
+      margin-bottom: 10px;
+    }
+    .coll-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .coll-nearby { font-size: 13px; font-weight: 700; color: var(--text); }
+    .coll-count  { font-size: 13px; color: var(--text-3); }
+
+    /* Collection detail header */
+    .coll-detail-hd {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+    }
+    .coll-detail-back {
+      font-size: 13px;
+      font-weight: 700;
+      font-family: var(--sans);
+      color: var(--text);
+      background: none;
+      border: 1px solid var(--bd);
+      padding: 4px 10px;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 100ms, color 100ms;
+    }
+    .coll-detail-back:hover { background: var(--text); color: var(--bg); }
+    .coll-detail-info { flex: 1; min-width: 0; }
+    .coll-detail-source {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-bottom: 1px;
+    }
+    .coll-detail-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Bookmark bar */
+    .coll-bookmark-bar {
+      padding: 9px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .coll-saved-count {
+      font-size: 13px;
+      color: var(--text-3);
+      text-transform: uppercase;
+    }
+    .coll-bookmark-btn {
+      padding: 6px 12px;
+      border: 1px solid var(--bd);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 100ms, color 100ms;
+      white-space: nowrap;
+    }
+    .coll-bookmark-btn:hover:not(:disabled) { background: var(--surface); }
+    .coll-bookmark-btn.all-saved { opacity: 0.35; cursor: default; }
+
+    /* Collection place rows */
+    .coll-place {
+      display: grid;
+      grid-template-columns: 58px 1fr auto;
+      align-items: start;
+      padding: 9px 20px;
+      border-bottom: 1px solid var(--bd-subtle);
+    }
+    .coll-place.animate-in { animation: itemIn 150ms ease both; }
+    .coll-p-mid { padding-right: 8px; }
+    .coll-save-btn {
+      padding: 5px 9px;
+      border: 1px solid var(--bd);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 2px;
+      transition: background 100ms, color 100ms, border-color 100ms;
+      white-space: nowrap;
+    }
+    .coll-save-btn:hover:not(.saved) { background: var(--surface); }
+    .coll-save-btn.saved {
+      border-color: var(--bd-subtle);
+      color: var(--text-3);
+      cursor: default;
+    }
+
+    /* Source attribution on My List expanded cards */
+    .p-source {
+      font-size: 11px;
+      color: var(--text-3);
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid var(--bd-subtle);
+    }
+
+    /* ══════════════════════════════════════════
        BOTTOM BAR
     ══════════════════════════════════════════ */
     .bottom {
@@ -852,6 +1005,7 @@
 
     <div class="hd-tabs" role="tablist">
       <button class="tab-btn active" data-tab="list" role="tab" aria-selected="true">My List</button>
+      <button class="tab-btn" data-tab="explore" role="tab" aria-selected="false">Explore</button>
       <button class="tab-btn" data-tab="import" role="tab" aria-selected="false">Import</button>
     </div>
 
@@ -957,6 +1111,20 @@
       </div>
 
     </div>
+  </div>
+
+  <!-- Explore view -->
+  <div id="vExplore" hidden>
+    <!-- Index: list of collections -->
+    <div id="exploreIndex">
+      <div class="results-bar" aria-live="polite" aria-atomic="true">
+        <span class="res-n" id="exploreResN">— lists</span>
+        <span class="res-sort">↑ nearest first</span>
+      </div>
+      <div id="collList"></div>
+    </div>
+    <!-- Detail: open collection -->
+    <div id="exploreDetail" hidden></div>
   </div>
 
   <!-- Bottom bar -->
@@ -1226,6 +1394,7 @@ function renderList(animate = false) {
               </svg>
               Open in Google Maps
             </a>
+            ${p.source ? `<div class="p-source">via ${p.source}</div>` : ''}
           </div>
         </div>
       </div>`;
@@ -1323,7 +1492,8 @@ function makePlace(name, opts = {}) {
     lat:  opts.lat  != null ? opts.lat : st.refLat,
     lng:  opts.lng  != null ? opts.lng : st.refLng,
     desc: opts.desc || opts.address || '',
-    q:    opts.q    || encodeURIComponent(name + (opts.address ? ' ' + opts.address : '')).replace(/%20/g, '+'),
+    q:      opts.q      || encodeURIComponent(name + (opts.address ? ' ' + opts.address : '')).replace(/%20/g, '+'),
+    source: opts.source || '',
   };
 }
 
@@ -1696,6 +1866,236 @@ function initImport() {
     pasteBtn.disabled = true;
     disambigEl.hidden = true;
     setTimeout(() => { setTab('list'); setPasteStatus('', ''); }, 2400);
+  });
+}
+
+/* ══════════════════════════════════════════════
+   COLLECTIONS — data + explore functions
+══════════════════════════════════════════════ */
+const COLLECTIONS = [
+  {
+    id: 'eater-ny-coffee',
+    source: 'Eater NY',
+    source_url: 'https://ny.eater.com',
+    title: 'Essential Coffee in Lower Manhattan',
+    blurb: 'The roasters, the third-wave standbys, and the places that have earned their regulars.',
+    places: [
+      { name:'Cafe Integral',       address:'149 Elizabeth St', cat:'Coffee', tag:'Single-origin espresso from Nicaragua', desc:'Family-owned roaster. The cortado is their calling card — they rotate seasonally. Small space with focused energy. Cash appreciated.', lat:40.7200, lng:-73.9942, q:'Cafe+Integral+149+Elizabeth+St+New+York+NY' },
+      { name:'Abraço',              address:'86 E 7th St',       cat:'Coffee', tag:'Tiny counter, serious espresso',         desc:'A five-stool espresso bar in the East Village that\'s been doing things right since 2007. The olive oil cake is the move. Arrive early — they run out.', lat:40.7264, lng:-73.9825, q:'Abraco+86+E+7th+St+New+York+NY' },
+      { name:'Russ & Daughters Cafe',address:'127 Orchard St',  cat:'Food',   tag:'Bagels, lox, and strong coffee',         desc:'The cafe offshoot of the legendary appetizing shop. Smoked fish, bagels, and coffee in a beautiful room. More seats than the original. Weekend waits are real.', lat:40.7201, lng:-73.9884, q:'Russ+and+Daughters+Cafe+127+Orchard+St+New+York+NY' },
+      { name:'Dimes Market',        address:'143 Division St',   cat:'Coffee', tag:'California light in the LES',            desc:'Grain bowls, great coffee, natural wines, and a market with things you actually want to cook. Sunday brunch line moves fast. Unhurried vibe.', lat:40.7139, lng:-73.9881, q:'Dimes+Market+143+Division+St+New+York+NY' },
+      { name:'Kopitiam',            address:'151 E Broadway',    cat:'Coffee', tag:'Malaysian kopi and kaya toast',          desc:'Malaysian coffee shop doing kopi the traditional way — dark roast with condensed milk, kaya toast on the side. A completely different register than third-wave espresso. Worth the detour.', lat:40.7143, lng:-73.9935, q:'Kopitiam+151+E+Broadway+New+York+NY' },
+    ],
+  },
+  {
+    id: 'infatuation-wine-bars',
+    source: 'The Infatuation',
+    source_url: 'https://www.theinfatuation.com',
+    title: 'Best Wine Bars in the LES',
+    blurb: 'Natural, low-intervention, and the kind of places where the person behind the bar actually wants to talk.',
+    places: [
+      { name:'Ten Bells',      address:'247 Broome St',            cat:'Bars', tag:'Natural wine by candlelight',         desc:'A tiny cave of a wine bar with an ever-changing natural list. No cocktails, no beer. Bartenders know the producers by name. Arrive before 8pm.', lat:40.7196, lng:-73.9924, q:'Ten+Bells+247+Broome+St+New+York+NY' },
+      { name:'Wildair',        address:'142 Orchard St',           cat:'Bars', tag:'Natural wine, small plates, loud room', desc:'The louder, more casual sibling of Contra. The wine list is serious, the food is unfussy, the room gets packed on weekends. Snag a seat at the bar if you\'re solo.', lat:40.7199, lng:-73.9890, q:'Wildair+142+Orchard+St+New+York+NY' },
+      { name:'Attaboy',        address:'134 Eldridge St',          cat:'Bars', tag:'No menu — just tell them your vibe',  desc:'Describe what you feel like drinking and they\'ll make something you didn\'t know you wanted. No menu, no attitude. The door is easy to miss.', lat:40.7160, lng:-73.9875, q:'Attaboy+134+Eldridge+St+New+York+NY' },
+      { name:'Parcelle Wine Bar',address:'4 Prince St',            cat:'Bars', tag:'Retail shop meets wine bar',           desc:'Half wine shop, half bar. Buy a bottle retail and drink it there with a small corkage, or order from the list. The selection rewards curiosity. Small bites pair well.', lat:40.7233, lng:-73.9962, q:'Parcelle+Wine+Bar+4+Prince+St+New+York+NY' },
+      { name:'June Wine Bar',  address:'231 Court St, Brooklyn',   cat:'Bars', tag:'Cobble Hill\'s neighborhood wine spot', desc:'A low-key Cobble Hill wine bar that punches well above its neighborhood-spot status. The list changes constantly and the staff actually drinks this stuff.', lat:40.6874, lng:-73.9935, q:'June+Wine+Bar+231+Court+St+Brooklyn+NY' },
+    ],
+  },
+  {
+    id: 'nyt-36-hours-les',
+    source: 'New York Times',
+    source_url: 'https://www.nytimes.com',
+    title: '36 Hours in the Lower East Side',
+    blurb: 'The neighborhood that keeps reinventing itself without forgetting where it came from.',
+    places: [
+      { name:'Katz\'s Delicatessen', address:'205 E Houston St', cat:'Food',    tag:'Pastrami on rye, no argument',          desc:'The definitive New York deli. Get the pastrami on rye. Take a ticket, tip your carver. The Saturday lunch line is part of the experience.', lat:40.7223, lng:-73.9874, q:'Katz%27s+Delicatessen+205+E+Houston+St+New+York+NY' },
+      { name:'Russ & Daughters',     address:'179 E Houston St', cat:'Food',    tag:'Lox temple since 1914',                 desc:'The original appetizing shop. The Super Heeb is the move. The cafe on Orchard has more seats. Come early on weekends.', lat:40.7228, lng:-73.9832, q:'Russ+and+Daughters+179+E+Houston+St+New+York+NY' },
+      { name:'Metrograph',           address:'7 Ludlow St',      cat:'Culture', tag:'Indie cinema, exceptional cafe',        desc:'Independent cinema showing arthouse films and retrospectives. The downstairs cafe stands alone. Book tickets ahead — weekends sell out.', lat:40.7134, lng:-73.9876, q:'Metrograph+7+Ludlow+St+New+York+NY' },
+      { name:'Economy Candy',        address:'108 Rivington St', cat:'Shops',   tag:'Sugar institution since 1937',          desc:'Floor-to-ceiling candy in a tiny Orchard Street shop unchanged for decades. Great for gifting or nostalgia. The bulk bins are the whole point.', lat:40.7168, lng:-73.9891, q:'Economy+Candy+108+Rivington+St+New+York+NY' },
+      { name:'Ivan Ramen',           address:'25 Clinton St',    cat:'Food',    tag:'American ramen, genuinely great broth', desc:'The LES outpost of Ivan Orkin\'s ramen shop. The shio ramen is delicate and complex. The rye noodles are worth ordering around. Go early or expect a wait.', lat:40.7163, lng:-73.9836, q:'Ivan+Ramen+25+Clinton+St+New+York+NY' },
+      { name:'Scarr\'s Pizza',       address:'22 Orchard St',    cat:'Food',    tag:'Organic flour, old-school slice',       desc:'Fresh mozzarella, organic flour, a plain slice that tastes exactly like pizza should. Counter seating is the move. Expect a weekend line.', lat:40.7173, lng:-73.9895, q:'Scarr%27s+Pizza+22+Orchard+St+New+York+NY' },
+      { name:'Tenement Museum',      address:'103 Orchard St',   cat:'Culture', tag:'Immigration history, lived-in rooms',   desc:'Tours of restored tenement apartments documenting immigrant life from the 1860s onward. Book ahead — tours fill up. The neighborhood context makes every room hit harder.', lat:40.7185, lng:-73.9900, q:'Tenement+Museum+103+Orchard+St+New+York+NY' },
+      { name:'McNally Jackson',      address:'52 Prince St',     cat:'Culture', tag:'Staff picks worth reading',             desc:'Best indie bookshop in the neighborhood. Staff picks are genuinely curated. The magazine section rewards slow browsing. Coffee bar in the back.', lat:40.7238, lng:-73.9964, q:'McNally+Jackson+Books+52+Prince+St+New+York+NY' },
+    ],
+  },
+];
+
+function nearbyCount(coll, radius) {
+  return coll.places.filter(p =>
+    haversine(st.refLat, st.refLng, p.lat, p.lng) < radius
+  ).length;
+}
+
+function isSavedPlace(name) {
+  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return PLACES.some(p => norm(p.name) === norm(name));
+}
+
+function renderExploreIndex() {
+  const listEl  = document.getElementById('collList');
+  const nEl     = document.getElementById('exploreResN');
+  listEl.innerHTML = '';
+  nEl.textContent  = COLLECTIONS.length + ' list' + (COLLECTIONS.length !== 1 ? 's' : '');
+
+  /* Sort by number of places within 1 mi, then 2.5 mi */
+  const sorted = COLLECTIONS.map(c => ({
+    ...c,
+    near1: nearbyCount(c, 1),
+    near2: nearbyCount(c, 2.5),
+  })).sort((a, b) => b.near1 - a.near1 || b.near2 - a.near2);
+
+  sorted.forEach(coll => {
+    const card = document.createElement('div');
+    card.className = 'coll-card';
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', `${coll.source}: ${coll.title}, ${coll.places.length} places`);
+
+    const nearStr = coll.near1 > 0
+      ? `${coll.near1} within 1 mi`
+      : coll.near2 > 0
+        ? `${coll.near2} within 2.5 mi`
+        : `${coll.places.length} places`;
+
+    card.innerHTML = `
+      <div class="coll-source">${coll.source}</div>
+      <div class="coll-title">${coll.title}</div>
+      <div class="coll-blurb">${coll.blurb}</div>
+      <div class="coll-footer">
+        <span class="coll-nearby">${nearStr}</span>
+        <span class="coll-count">${coll.places.length} places →</span>
+      </div>`;
+
+    card.addEventListener('click', () => openCollection(coll));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCollection(coll); }
+    });
+    listEl.appendChild(card);
+  });
+}
+
+function openCollection(coll) {
+  document.getElementById('exploreIndex').hidden  = true;
+  document.getElementById('exploreDetail').hidden = false;
+  renderCollectionDetail(coll);
+}
+
+function closeCollection() {
+  document.getElementById('exploreDetail').hidden = true;
+  document.getElementById('exploreIndex').hidden  = false;
+}
+
+function renderCollectionDetail(coll) {
+  const detailEl = document.getElementById('exploreDetail');
+
+  /* Sort places by distance from current location */
+  const sorted = coll.places
+    .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
+    .sort((a, b) => a.dist - b.dist);
+
+  const savedCount = sorted.filter(p => isSavedPlace(p.name)).length;
+  const allSaved   = savedCount === sorted.length;
+
+  detailEl.innerHTML = `
+    <div class="coll-detail-hd">
+      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <div class="coll-detail-info">
+        <div class="coll-detail-source">${coll.source}</div>
+        <div class="coll-detail-title">${coll.title}</div>
+      </div>
+    </div>
+    <div class="coll-bookmark-bar">
+      <span class="coll-saved-count" id="collSavedCount">${savedCount} of ${sorted.length} saved</span>
+      <button class="coll-bookmark-btn${allSaved ? ' all-saved' : ''}" id="btnBookmarkAll"
+              ${allSaved ? 'disabled' : ''}
+              aria-label="Bookmark all places in this list">
+        ${allSaved ? '✓ All Saved' : 'Bookmark List'}
+      </button>
+    </div>
+    <ul class="list" id="collPlaceList" aria-label="${coll.title} places sorted by distance"></ul>`;
+
+  document.getElementById('btnCollBack').addEventListener('click', closeCollection);
+
+  document.getElementById('btnBookmarkAll').addEventListener('click', () => {
+    const toSave = sorted
+      .filter(p => !isSavedPlace(p.name))
+      .map(p => ({
+        name:   p.name,
+        cat:    p.cat,
+        tag:    p.tag,
+        lat:    p.lat,
+        lng:    p.lng,
+        desc:   p.desc || '',
+        q:      p.q || encodeURIComponent(p.name + ' ' + (p.address || '')).replace(/%20/g, '+'),
+        source: coll.source,
+      }));
+    if (!toSave.length) return;
+    addPlaces(toSave);
+    renderList(false);
+    renderCounts();
+    renderCollectionDetail(coll); /* re-render with updated saved state */
+  });
+
+  const listEl = document.getElementById('collPlaceList');
+  sorted.forEach((p, i) => {
+    const saved = isSavedPlace(p.name);
+    const li = document.createElement('li');
+    li.className = 'coll-place animate-in';
+    li.style.animationDelay = (i * 18) + 'ms';
+
+    li.innerHTML = `
+      <div class="p-dist" aria-label="${p.dist.toFixed(1)} miles away">
+        <div class="d-n">${p.dist.toFixed(1)}</div>
+        <div class="d-u">mi</div>
+      </div>
+      <div class="coll-p-mid p-mid">
+        <div class="p-top">
+          <span class="p-name">${p.name}</span>
+          <span class="p-cat">${p.cat}</span>
+        </div>
+        <div class="p-tag">${p.tag}</div>
+      </div>
+      <button class="coll-save-btn${saved ? ' saved' : ''}"
+              aria-label="${saved ? p.name + ' already saved' : 'Save ' + p.name}"
+              ${saved ? 'disabled' : ''}>
+        ${saved ? '✓' : '+ Save'}
+      </button>`;
+
+    if (!saved) {
+      li.querySelector('.coll-save-btn').addEventListener('click', () => {
+        addPlaces([{
+          name:   p.name,
+          cat:    p.cat,
+          tag:    p.tag,
+          lat:    p.lat,
+          lng:    p.lng,
+          desc:   p.desc || '',
+          q:      p.q || encodeURIComponent(p.name + ' ' + (p.address || '')).replace(/%20/g, '+'),
+          source: coll.source,
+        }]);
+        renderList(false);
+        renderCounts();
+
+        /* Update this row immediately — no full re-render */
+        const btn = li.querySelector('.coll-save-btn');
+        btn.textContent = '✓';
+        btn.classList.add('saved');
+        btn.disabled = true;
+        btn.setAttribute('aria-label', p.name + ' already saved');
+
+        /* Update saved count + bookmark button state */
+        const nowSaved = listEl.querySelectorAll('.coll-save-btn.saved').length;
+        document.getElementById('collSavedCount').textContent = nowSaved + ' of ' + sorted.length + ' saved';
+        if (nowSaved === sorted.length) {
+          const bkBtn = document.getElementById('btnBookmarkAll');
+          bkBtn.textContent = '✓ All Saved';
+          bkBtn.classList.add('all-saved');
+          bkBtn.disabled = true;
+        }
+      });
+    }
+
+    listEl.appendChild(li);
   });
 }
 

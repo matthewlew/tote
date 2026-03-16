@@ -1,0 +1,61 @@
+{
+  "id": "infatuation-wine-bars",
+  "source": "The Infatuation",
+  "source_url": "https://www.theinfatuation.com",
+  "title": "Best Wine Bars in the LES",
+  "blurb": "Natural, low-intervention, and the kind of places where the person behind the bar actually wants to talk.",
+  "city": "New York",
+  "updated": "2025-11",
+  "places": [
+    {
+      "name": "Ten Bells",
+      "address": "247 Broome St, New York, NY 10002",
+      "cat": "Bars",
+      "tag": "Natural wine by candlelight",
+      "desc": "A tiny cave of a wine bar with an ever-changing natural list. No cocktails, no beer. Bartenders know the producers by name. Arrive before 8pm.",
+      "lat": 40.7196,
+      "lng": -73.9924,
+      "q": "Ten+Bells+247+Broome+St+New+York+NY"
+    },
+    {
+      "name": "Wildair",
+      "address": "142 Orchard St, New York, NY 10002",
+      "cat": "Bars",
+      "tag": "Natural wine, small plates, loud room",
+      "desc": "The louder, more casual sibling of Contra. The wine list is serious, the food is unfussy, the room gets packed on weekends. Snag a seat at the bar if you're solo.",
+      "lat": 40.7199,
+      "lng": -73.9890,
+      "q": "Wildair+142+Orchard+St+New+York+NY"
+    },
+    {
+      "name": "Attaboy",
+      "address": "134 Eldridge St, New York, NY 10002",
+      "cat": "Bars",
+      "tag": "No menu — just tell them your vibe",
+      "desc": "Describe what you feel like drinking and they'll make something you didn't know you wanted. No menu, no attitude. The door is easy to miss.",
+      "lat": 40.7160,
+      "lng": -73.9875,
+      "q": "Attaboy+134+Eldridge+St+New+York+NY"
+    },
+    {
+      "name": "Parcelle Wine Bar",
+      "address": "4 Prince St, New York, NY 10012",
+      "cat": "Bars",
+      "tag": "Retail shop meets wine bar",
+      "desc": "Half wine shop, half bar. Buy a bottle retail and drink it there with a small corkage, or order from the list. The selection rewards curiosity. Small bites pair well.",
+      "lat": 40.7233,
+      "lng": -73.9962,
+      "q": "Parcelle+Wine+Bar+4+Prince+St+New+York+NY"
+    },
+    {
+      "name": "June Wine Bar",
+      "address": "231 Court St, Brooklyn, NY 11201",
+      "cat": "Bars",
+      "tag": "Cobble Hill's neighborhood wine spot",
+      "desc": "A low-key Cobble Hill wine bar that punches well above its neighborhood-spot status. The list changes constantly and the staff actually drinks this stuff.",
+      "lat": 40.6874,
+      "lng": -73.9935,
+      "q": "June+Wine+Bar+231+Court+St+Brooklyn+NY"
+    }
+  ]
+}
