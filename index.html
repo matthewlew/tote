@@ -177,9 +177,6 @@ footer {
   .meta span+span::before { display: none; }
   .shortcut { display: none; }
 }
-</style>
-</head>
-<body>
 
 <header>
   <div class="header-top">
@@ -213,8 +210,8 @@ footer {
     <div class="header-spacer"></div>
   </div>
 
-  <div id="list"></div>
-</main>
+  listEl.innerHTML = '';
+  nEl.textContent = items.length + ' place' + (items.length !== 1 ? 's' : '');
 
 <footer>
   <div style="display: flex; gap: 16px;">
@@ -383,19 +380,40 @@ footer {
       }
       return 0;
     });
+  });
+
+  listEl.querySelectorAll('.maps-btn').forEach(a => {
+    a.addEventListener('click', e => e.stopPropagation());
+  });
+}
+
+/* ══════════════════════════════════════════════
+   TOGGLE — surgical DOM mutation, zero re-render
+══════════════════════════════════════════════ */
+function toggleItem(id) {
+  const wasOpen = st.openId === id;
+
+  if (st.openId !== null) {
+    const prev = document.querySelector(`.place[data-pid="${st.openId}"]`);
+    if (prev) {
+      prev.classList.remove('open');
+      const row = prev.querySelector('.p-row');
+      if (row) row.setAttribute('aria-expanded', 'false');
+    }
   }
 
-  function updateIndicators() {
-    Object.keys(indicators).forEach(k => {
-      const el = indicators[k];
-      if (!el) return;
-      if (k === currentSort.key) {
-        el.textContent = currentSort.direction === 'asc' ? '↑' : '↓';
-      } else {
-        el.textContent = '·';
-      }
-    });
+  if (wasOpen) {
+    st.openId = null;
+  } else {
+    st.openId = id;
+    const li = document.querySelector(`.place[data-pid="${id}"]`);
+    if (li) {
+      li.classList.add('open');
+      const row = li.querySelector('.p-row');
+      if (row) row.setAttribute('aria-expanded', 'true');
+    }
   }
+}
 
   function render() {
     listEl.innerHTML = '';
@@ -419,8 +437,20 @@ footer {
       row.setAttribute('role', 'button');
       row.setAttribute('aria-expanded', 'false');
 
-      const line = document.createElement('div');
-      line.className = 'line';
+/* ══════════════════════════════════════════════
+   TAB SWITCH
+══════════════════════════════════════════════ */
+function setTab(tab) {
+  st.tab = tab;
+  const isList = tab === 'list';
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+    b.setAttribute('aria-selected', b.dataset.tab === tab);
+  });
+  document.getElementById('vList').hidden    = !isList;
+  document.getElementById('vImport').hidden  =  isList;
+  document.getElementById('hdFilters').hidden = !isList;
+}
 
       const name = document.createElement('span');
       name.className = 'name';
@@ -438,8 +468,23 @@ footer {
         brand.textContent = '';
       }
 
-      const prices = document.createElement('div');
-      prices.className = 'prices';
+  btn.addEventListener('click', () => {
+    if (!MAPS_RE.test(input.value.trim())) return;
+    btn.disabled = true;
+    label.textContent = 'Fetching list…';
+    setTimeout(() => {
+      label.textContent = 'Import List';
+      status.className = 'import-status show ok';
+      status.textContent = '✓  12 places imported — switching to your list';
+      setTimeout(() => {
+        setTab('list');
+        status.className = 'import-status';
+        input.value = '';
+        btn.disabled = true;
+      }, 2200);
+    }, 1600);
+  });
+}
 
       if (item.address) {
           const link = document.createElement('a');
@@ -535,7 +580,16 @@ footer {
       const key = btn.getAttribute('data-sort');
       handleSort(key);
     });
+    renderList(false);
   });
+}
+
+/* ══════════════════════════════════════════════
+   INIT
+══════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', () => {
+  bindEvents();
+  initImport();
 
   // Haversine formula to calculate distance in miles
   function getDistance(lat1, lon1, lat2, lon2) {
