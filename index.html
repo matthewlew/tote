@@ -1459,14 +1459,21 @@ function renderCounts() {
 ══════════════════════════════════════════════ */
 function setTab(tab) {
   st.tab = tab;
-  const isList = tab === 'list';
+  const isList    = tab === 'list';
+  const isExplore = tab === 'explore';
   document.querySelectorAll('.tab-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.tab === tab);
     b.setAttribute('aria-selected', b.dataset.tab === tab);
   });
   document.getElementById('vList').hidden    = !isList;
-  document.getElementById('vImport').hidden  =  isList;
+  document.getElementById('vImport').hidden  = tab !== 'import';
+  document.getElementById('vExplore').hidden = !isExplore;
   document.getElementById('hdFilters').hidden = !isList;
+  if (isExplore) {
+    document.getElementById('exploreIndex').hidden  = false;
+    document.getElementById('exploreDetail').hidden = true;
+    renderExploreIndex();
+  }
 }
 
 /* ══════════════════════════════════════════════
