@@ -457,10 +457,30 @@
       align-items: center;
       justify-content: space-between;
     }
-    .res-n, .res-sort {
+    .res-n {
       font-size: 13px;
       color: var(--text-3);
     }
+    .res-sort-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .sort-btn {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-3);
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 100ms;
+    }
+    .sort-btn:hover { color: var(--text-2); }
+    .sort-btn.active { color: var(--text); }
 
     /* ══════════════════════════════════════════
        LIST
@@ -567,6 +587,25 @@
       color: var(--text-2);
       margin-bottom: 16px;
     }
+    .p-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 14px;
+      border: 1px solid var(--bd);
+      background: transparent;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 140ms;
+    }
+    .copy-btn:hover { background: var(--surface); }
     .maps-btn {
       display: inline-flex;
       align-items: center;
@@ -1052,7 +1091,11 @@
   <div id="vList">
     <div class="results-bar" aria-live="polite" aria-atomic="true">
       <span class="res-n" id="resN">— places</span>
-      <span class="res-sort" id="resSort">↑ nearest first</span>
+      <div class="res-sort-controls" id="resSortControls" aria-label="Sort by distance, type, or name">
+        <button class="sort-btn active" data-sort="d" aria-label="Sort by distance, currently ascending">Distance <span class="shortcut">d</span></button>
+        <button class="sort-btn" data-sort="t" aria-label="Sort by type">Type <span class="shortcut">t</span></button>
+        <button class="sort-btn" data-sort="n" aria-label="Sort by name">Name <span class="shortcut">n</span></button>
+      </div>
     </div>
     <ul class="list" id="list" aria-label="Saved places sorted by distance"></ul>
     <div class="empty" id="empty" role="status">
@@ -1146,7 +1189,6 @@
     <div id="exploreIndex">
       <div class="results-bar" aria-live="polite" aria-atomic="true">
         <span class="res-n" id="exploreResN">— lists</span>
-        <span class="res-sort">↑ nearest first</span>
       </div>
       <div id="collList"></div>
     </div>
@@ -1156,12 +1198,11 @@
 
   <!-- Bottom bar -->
   <nav class="bottom" aria-label="App navigation">
-    <button class="bt-link" id="btnOpenMaps" aria-label="Open Google Maps">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-        <circle cx="12" cy="9" r="2.5"/>
-      </svg>
-      Google Maps
+    <button class="bt-link" id="btnRandomPick" aria-label="Pick a random place">
+      Random Pick <span class="shortcut">r</span>
+    </button>
+    <button class="bt-link" id="btnShareReceipt" aria-label="Share as receipt">
+      Share <span class="shortcut">s</span>
     </button>
     <button class="bt-add" aria-label="Add a new place">+ Add Place</button>
   </nav>
@@ -1186,6 +1227,20 @@ const DEFAULT_PLACES = [
   { id:12, name:"Death & Co",          cat:"Bars",    tag:"Cocktail institution, seasonal menu",    lat:40.7267, lng:-73.9779, desc:"One of the bars that started NYC's cocktail revival. Menu rotates seasonally. Bar seats are walk-in only — reservations recommended on weekends.", q:"Death+and+Co+433+E+6th+St+New+York+NY" },
 ];
 
+/* ══════════════════════════════════════════════
+   UTILS / PRECOMPILED REGEX
+══════════════════════════════════════════════ */
+const RE_NON_ALNUM = /[^a-z0-9]/g;
+const RE_SPACE = /%20/g;
+const RE_PLUS = /\+/g;
+const RE_ADDR_PREFIX = /^Address:\s*/i;
+const RE_UNICODE_BOM = /[\uFFFD\uFFFC\uFFFE\uFEFF]/g;
+const RE_NUM_LIST = /^\d+[.)]\s*/;
+const RE_BULLET = /^[-•*]\s*/;
+const RE_INLINE_META = /\s*·.*$/;
+const RE_MULTI_SPACE = /\s+/g;
+const RE_SORT_LBL = / .*/;
+
 /* Mutable list — loaded from localStorage, falls back to defaults */
 function loadPlaces() {
   try {
@@ -1203,7 +1258,7 @@ function nextId() { return _nextId++; }
 /* Add incoming places, deduplicate against existing ones.
    Returns { added[], skipped[] } */
 function addPlaces(incoming) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const norm = n => n.toLowerCase().replace(RE_NON_ALNUM, '');
   const existing = new Set(PLACES.map(p => norm(p.name)));
   const added = [], skipped = [];
   incoming.forEach(p => {
@@ -1243,6 +1298,7 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  sort:     'd',
 };
 
 /* ══════════════════════════════════════════════
@@ -1260,7 +1316,17 @@ function haversine(lat1, lng1, lat2, lng2) {
 function sortedPlaces() {
   return PLACES
     .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
-    .sort((a, b) => a.dist - b.dist);
+    .sort((a, b) => {
+      if (st.sort === 't') {
+        const catCmp = a.cat.localeCompare(b.cat);
+        if (catCmp !== 0) return catCmp;
+        return a.dist - b.dist;
+      }
+      if (st.sort === 'n') {
+        return a.name.localeCompare(b.name);
+      }
+      return a.dist - b.dist; // default: 'd'
+    });
 }
 
 function filteredPlaces() {
@@ -1311,8 +1377,6 @@ function simulateGPS() {
 function updateLocUI() {
   document.getElementById('locName').textContent = st.locLabel;
   document.getElementById('locSub').textContent  = st.locSub;
-  document.getElementById('resSort').textContent =
-    st.locMode === 'neighborhood' ? '↑ nearest to ' + st.locLabel : '↑ nearest first';
 }
 
 /* ══════════════════════════════════════════════
@@ -1321,12 +1385,13 @@ function updateLocUI() {
 function renderNeighborhoods() {
   const container = document.getElementById('nbhdList');
   container.innerHTML = '';
+  const frag = document.createDocumentFragment();
   const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
   boroughs.forEach(b => {
     const lbl = document.createElement('div');
     lbl.className = 'nbhd-borough-label';
     lbl.textContent = b;
-    container.appendChild(lbl);
+    frag.appendChild(lbl);
 
     NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
       const nearby = PLACES.filter(p =>
@@ -1336,16 +1401,17 @@ function renderNeighborhoods() {
       const btn = document.createElement('button');
       btn.className = 'nbhd-item';
       btn.setAttribute('aria-label', `${nbhd.name}, ${nearby} places within 2.5 miles`);
+      btn.dataset.id = nbhd.id;
       btn.innerHTML = `
         <span class="nbhd-item-name">${nbhd.name}</span>
         <span class="nbhd-item-right">
           <span class="nbhd-item-count">${nearby} within ~2.5 mi</span>
           <span class="nbhd-arr">→</span>
         </span>`;
-      btn.addEventListener('click', () => selectNeighborhood(nbhd));
-      container.appendChild(btn);
+      frag.appendChild(btn);
     });
   });
+  container.appendChild(frag);
 }
 
 function selectNeighborhood(nbhd) {
@@ -1377,6 +1443,8 @@ function renderList(animate = false) {
 
   if (!items.length) { emptyEl.classList.add('show'); return; }
   emptyEl.classList.remove('show');
+
+  const frag = document.createDocumentFragment();
 
   items.forEach((p, i) => {
     const li = document.createElement('li');
@@ -1411,34 +1479,31 @@ function renderList(animate = false) {
         <div class="p-expand-inner">
           <div class="p-body">
             <p class="p-desc">${p.desc}</p>
-            <a class="maps-btn"
-               href="${mapsUrl(p.q)}"
-               target="_blank" rel="noopener noreferrer"
-               aria-label="Open ${p.name} in Google Maps">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                <circle cx="12" cy="9" r="2.5"/>
-              </svg>
-              Open in Google Maps
-            </a>
+            <div class="p-actions">
+              <a class="maps-btn"
+                 href="${mapsUrl(p.q)}"
+                 target="_blank" rel="noopener noreferrer"
+                 aria-label="Open ${p.name} in Google Maps">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
+                </svg>
+                Map
+              </a>
+              <button class="copy-btn" data-id="${p.id}" aria-label="Copy ${p.name} details">
+                <span class="copy-lbl">Copy</span>
+                <span class="shortcut">c</span>
+              </button>
+            </div>
             ${p.source ? `<div class="p-source">via ${p.source}</div>` : ''}
           </div>
         </div>
       </div>`;
 
-    listEl.appendChild(li);
+    frag.appendChild(li);
   });
 
-  listEl.querySelectorAll('.p-row').forEach(row => {
-    row.addEventListener('click', () => toggleItem(+row.dataset.id));
-    row.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleItem(+row.dataset.id); }
-    });
-  });
-
-  listEl.querySelectorAll('.maps-btn').forEach(a => {
-    a.addEventListener('click', e => e.stopPropagation());
-  });
+  listEl.appendChild(frag);
 }
 
 /* ══════════════════════════════════════════════
@@ -1478,6 +1543,61 @@ function renderCounts() {
     const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
     const el = document.getElementById('n-' + c);
     if (el) el.textContent = n;
+  });
+}
+
+/* ══════════════════════════════════════════════
+   GLOBAL ACTIONS
+══════════════════════════════════════════════ */
+function randomPick() {
+  if (st.tab !== 'list') return;
+  const items = filteredPlaces();
+  if (!items.length) return;
+  const p = items[Math.floor(Math.random() * items.length)];
+  const el = document.querySelector(`.place[data-pid="${p.id}"]`);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    toggleItem(p.id);
+  }
+}
+
+function shareReceipt() {
+  if (st.tab !== 'list') return;
+  const items = filteredPlaces();
+  if (!items.length) return;
+
+  const text = items.slice(0, 10).map(p => {
+    return `${p.name.padEnd(24)} ${p.cat}\n${p.desc.substring(0, 30)}...`;
+  }).join('\n\n');
+
+  const receipt = `
+=== TOTE RECEIPT ===
+${st.locLabel} (${items.length} places)
+
+${text}
+====================
+  `;
+
+  navigator.clipboard.writeText(receipt.trim()).then(() => {
+    const btn = document.getElementById('btnShareReceipt');
+    const og = btn.innerHTML;
+    btn.innerHTML = `Copied! <span class="shortcut">s</span>`;
+    setTimeout(() => { btn.innerHTML = og; }, 2000);
+  });
+}
+
+function copyItem(id, btnEl) {
+  const p = PLACES.find(x => x.id === id);
+  if (!p) return;
+  const text = `${p.name} - ${p.cat}\n${p.tag}\n\nMap: ${mapsUrl(p.q)}`;
+  navigator.clipboard.writeText(text).then(() => {
+    if (!btnEl) return;
+    const lbl = btnEl.querySelector('.copy-lbl');
+    if (lbl) {
+      const og = lbl.textContent;
+      lbl.textContent = 'Copied!';
+      setTimeout(() => { lbl.textContent = og; }, 2000);
+    }
   });
 }
 
@@ -1526,7 +1646,7 @@ function makePlace(name, opts = {}) {
     lat:  opts.lat  != null ? opts.lat : st.refLat,
     lng:  opts.lng  != null ? opts.lng : st.refLng,
     desc: opts.desc || opts.address || '',
-    q:      opts.q      || encodeURIComponent(name + (opts.address ? ' ' + opts.address : '')).replace(/%20/g, '+'),
+    q:      opts.q      || encodeURIComponent(name + (opts.address ? ' ' + opts.address : '')).replace(RE_SPACE, '+'),
     source: opts.source || '',
   };
 }
@@ -1629,16 +1749,16 @@ function isAddress(line) {
 }
 
 function cleanAddress(addr) {
-  return addr.replace(/^Address:\s*/i, '').trim();
+  return addr.replace(RE_ADDR_PREFIX, '').trim();
 }
 
 function cleanPlaceName(raw) {
   return raw
-    .replace(/[\uFFFD\uFFFC\uFFFE\uFEFF]/g, '') /* strip Unicode replacement/BOM chars */
-    .replace(/^\d+[.)]\s*/, '')                  /* numbered list: "1. Place" */
-    .replace(/^[-•*]\s*/, '')                    /* bulleted */
-    .replace(/\s*·.*$/, '')                      /* inline meta after · */
-    .replace(/\s+/g, ' ')
+    .replace(RE_UNICODE_BOM, '') /* strip Unicode replacement/BOM chars */
+    .replace(RE_NUM_LIST, '')                  /* numbered list: "1. Place" */
+    .replace(RE_BULLET, '')                    /* bulleted */
+    .replace(RE_INLINE_META, '')                      /* inline meta after · */
+    .replace(RE_MULTI_SPACE, ' ')
     .trim();
 }
 
@@ -1664,12 +1784,12 @@ function parsePastedList(text) {
        the duplicate-name line that ChatGPT format produces */
     let address = '';
     let j = i + 1;
-    const normName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const normName = name.toLowerCase().replace(RE_NON_ALNUM, '');
     while (j < lines.length && j <= i + 6) {
       const next = lines[j];
       if (isAddress(next)) { address = cleanAddress(next); j++; break; }
       const nextClean = cleanPlaceName(next);
-      const normNext = nextClean.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const normNext = nextClean.toLowerCase().replace(RE_NON_ALNUM, '');
       /* Treat as same place if one normalized name is a prefix of the other
          (handles "Felix Roasting Co." vs "Felix Roasting Co, Hotel Hugo Soho") */
       const isVariant = nextClean === name ||
@@ -1688,7 +1808,7 @@ function parsePastedList(text) {
 /* Groups same-name entries for disambiguation.
    Returns { unambiguous: Place[], ambiguous: { name, candidates[] }[] } */
 function groupForDisambig(rawEntries) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const norm = n => n.toLowerCase().replace(RE_NON_ALNUM, '');
   const byName = new Map();
   rawEntries.forEach(e => {
     const key = norm(e.name);
@@ -1826,7 +1946,7 @@ function initImport() {
     }
 
     /* Filter out names already in PLACES */
-    const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const norm = n => n.toLowerCase().replace(RE_NON_ALNUM, '');
     const existingNames = new Set(PLACES.map(p => norm(p.name)));
     const newRaw = raw.filter(e => !existingNames.has(norm(e.name)));
     const dupCount = raw.length - newRaw.length;
@@ -1861,7 +1981,7 @@ function initImport() {
             <input type="checkbox" data-group="${group.name}" data-ci="${ci}" />
             <div>
               <div class="disambig-option-name">${cand.name}</div>
-              <div class="disambig-option-addr">${cand.desc || decodeURIComponent(cand.q.replace(/\+/g, ' ')) || 'No address'}</div>
+              <div class="disambig-option-addr">${cand.desc || decodeURIComponent(cand.q.replace(RE_PLUS, ' ')) || 'No address'}</div>
             </div>`;
           opt.querySelector('input').addEventListener('change', () => {
             opt.classList.toggle('selected', opt.querySelector('input').checked);
@@ -1961,7 +2081,7 @@ function nearbyCount(coll, radius) {
 }
 
 function isSavedPlace(name) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const norm = n => n.toLowerCase().replace(RE_NON_ALNUM, '');
   return PLACES.some(p => norm(p.name) === norm(name));
 }
 
@@ -1970,6 +2090,8 @@ function renderExploreIndex() {
   const nEl     = document.getElementById('exploreResN');
   listEl.innerHTML = '';
   nEl.textContent  = COLLECTIONS.length + ' list' + (COLLECTIONS.length !== 1 ? 's' : '');
+
+  const frag = document.createDocumentFragment();
 
   /* Sort by number of places within 1 mi, then 2.5 mi */
   const sorted = COLLECTIONS.map(c => ({
@@ -1983,6 +2105,7 @@ function renderExploreIndex() {
     card.className = 'coll-card';
     card.setAttribute('role', 'button');
     card.setAttribute('tabindex', '0');
+    card.dataset.id = coll.id;
     card.setAttribute('aria-label', `${coll.source}: ${coll.title}, ${coll.places.length} places`);
 
     const nearStr = coll.near1 > 0
@@ -2000,12 +2123,10 @@ function renderExploreIndex() {
         <span class="coll-count">${coll.places.length} places →</span>
       </div>`;
 
-    card.addEventListener('click', () => openCollection(coll));
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCollection(coll); }
-    });
-    listEl.appendChild(card);
+    frag.appendChild(card);
   });
+
+  listEl.appendChild(frag);
 }
 
 function openCollection(coll) {
@@ -2071,6 +2192,8 @@ function renderCollectionDetail(coll) {
   });
 
   const listEl = document.getElementById('collPlaceList');
+  const frag = document.createDocumentFragment();
+
   sorted.forEach((p, i) => {
     const saved = isSavedPlace(p.name);
     const li = document.createElement('li');
@@ -2090,46 +2213,53 @@ function renderCollectionDetail(coll) {
         <div class="p-tag">${p.tag}</div>
       </div>
       <button class="coll-save-btn${saved ? ' saved' : ''}"
+              data-idx="${i}"
               aria-label="${saved ? p.name + ' already saved' : 'Save ' + p.name}"
               ${saved ? 'disabled' : ''}>
         ${saved ? '✓' : '+ Save'}
       </button>`;
 
-    if (!saved) {
-      li.querySelector('.coll-save-btn').addEventListener('click', () => {
-        addPlaces([{
-          name:   p.name,
-          cat:    p.cat,
-          tag:    p.tag,
-          lat:    p.lat,
-          lng:    p.lng,
-          desc:   p.desc || '',
-          q:      p.q || encodeURIComponent(p.name + ' ' + (p.address || '')).replace(/%20/g, '+'),
-          source: coll.source,
-        }]);
-        renderList(false);
-        renderCounts();
+    frag.appendChild(li);
+  });
 
-        /* Update this row immediately — no full re-render */
-        const btn = li.querySelector('.coll-save-btn');
-        btn.textContent = '✓';
-        btn.classList.add('saved');
-        btn.disabled = true;
-        btn.setAttribute('aria-label', p.name + ' already saved');
+  listEl.appendChild(frag);
 
-        /* Update saved count + bookmark button state */
-        const nowSaved = listEl.querySelectorAll('.coll-save-btn.saved').length;
-        document.getElementById('collSavedCount').textContent = nowSaved + ' of ' + sorted.length + ' saved';
-        if (nowSaved === sorted.length) {
-          const bkBtn = document.getElementById('btnBookmarkAll');
-          bkBtn.textContent = '✓ All Saved';
-          bkBtn.classList.add('all-saved');
-          bkBtn.disabled = true;
-        }
-      });
+  /* Event delegation for save buttons */
+  listEl.addEventListener('click', e => {
+    const btn = e.target.closest('.coll-save-btn:not(.saved)');
+    if (!btn) return;
+    const idx = parseInt(btn.dataset.idx, 10);
+    const p = sorted[idx];
+    if (!p) return;
+
+    addPlaces([{
+      name:   p.name,
+      cat:    p.cat,
+      tag:    p.tag,
+      lat:    p.lat,
+      lng:    p.lng,
+      desc:   p.desc || '',
+      q:      p.q || encodeURIComponent(p.name + ' ' + (p.address || '')).replace(RE_SPACE, '+'),
+      source: coll.source,
+    }]);
+    renderList(false);
+    renderCounts();
+
+    /* Update this row immediately — no full re-render */
+    btn.textContent = '✓';
+    btn.classList.add('saved');
+    btn.disabled = true;
+    btn.setAttribute('aria-label', p.name + ' already saved');
+
+    /* Update saved count + bookmark button state */
+    const nowSaved = listEl.querySelectorAll('.coll-save-btn.saved').length;
+    document.getElementById('collSavedCount').textContent = nowSaved + ' of ' + sorted.length + ' saved';
+    if (nowSaved === sorted.length) {
+      const bkBtn = document.getElementById('btnBookmarkAll');
+      bkBtn.textContent = '✓ All Saved';
+      bkBtn.classList.add('all-saved');
+      bkBtn.disabled = true;
     }
-
-    listEl.appendChild(li);
   });
 }
 
@@ -2150,8 +2280,63 @@ function bindEvents() {
     showScreen('s-nbhd');
   });
 
+  document.getElementById('nbhdList').addEventListener('click', e => {
+    const btn = e.target.closest('.nbhd-item');
+    if (!btn) return;
+    const nbhdId = btn.dataset.id;
+    const nbhd = NEIGHBORHOODS.find(n => n.id === nbhdId);
+    if (nbhd) selectNeighborhood(nbhd);
+  });
+
+  document.getElementById('collList').addEventListener('click', e => {
+    const card = e.target.closest('.coll-card');
+    if (!card) return;
+    const collId = card.dataset.id;
+    const coll = COLLECTIONS.find(c => c.id === collId);
+    if (coll) openCollection(coll);
+  });
+
+  document.getElementById('collList').addEventListener('keydown', e => {
+    const card = e.target.closest('.coll-card');
+    if (!card) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const collId = card.dataset.id;
+      const coll = COLLECTIONS.find(c => c.id === collId);
+      if (coll) openCollection(coll);
+    }
+  });
+
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => setTab(btn.dataset.tab));
+  });
+
+  document.getElementById('btnRandomPick').addEventListener('click', randomPick);
+  document.getElementById('btnShareReceipt').addEventListener('click', shareReceipt);
+
+  document.getElementById('list').addEventListener('click', e => {
+    const copyBtn = e.target.closest('.copy-btn');
+    if (copyBtn) {
+      copyItem(Number(copyBtn.dataset.id), copyBtn);
+      return;
+    }
+    const mapsBtn = e.target.closest('.maps-btn');
+    if (mapsBtn) {
+      e.stopPropagation();
+      return;
+    }
+    const row = e.target.closest('.p-row');
+    if (row) {
+      toggleItem(+row.dataset.id);
+    }
+  });
+
+  document.getElementById('list').addEventListener('keydown', e => {
+    const row = e.target.closest('.p-row');
+    if (row && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      toggleItem(+row.dataset.id);
+    }
   });
 
   document.getElementById('filters').addEventListener('click', e => {
@@ -2166,18 +2351,67 @@ function bindEvents() {
     renderList(false);
   });
 
+  document.getElementById('resSortControls').addEventListener('click', e => {
+    const btn = e.target.closest('.sort-btn');
+    if (!btn) return;
+    const sort = btn.dataset.sort;
+    st.sort = sort;
+    st.openId = null;
+    document.querySelectorAll('.sort-btn').forEach(b => {
+      const active = b.dataset.sort === sort;
+      b.classList.toggle('active', active);
+      const name = b.textContent.trim().replace(RE_SORT_LBL, '');
+      b.setAttribute('aria-label', active ? `Sort by ${name.toLowerCase()}, currently ascending` : `Sort by ${name.toLowerCase()}`);
+    });
+    renderList(false);
+  });
+
   /* Keyboard Shortcuts */
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
+    const key = e.key.toLowerCase();
+
     /* Location shortcut */
-    if (e.key === 'l' || e.key === 'L') {
+    if (key === 'l') {
       e.preventDefault();
       if (st.screen === 's-location') {
         simulateGPS(); /* or requestGeo() in prod */
       } else {
         simulateGPS();
+      }
+      return;
+    }
+
+    /* Sorting Shortcuts */
+    if (st.screen === 's-app' && st.tab === 'list' && ['d', 't', 'n'].includes(key)) {
+      e.preventDefault();
+      const btn = document.querySelector(`.sort-btn[data-sort="${key}"]`);
+      if (btn) btn.click();
+      return;
+    }
+
+    /* Random Pick Shortcut */
+    if (st.screen === 's-app' && st.tab === 'list' && key === 'r') {
+      e.preventDefault();
+      randomPick();
+      return;
+    }
+
+    /* Share Receipt Shortcut */
+    if (st.screen === 's-app' && st.tab === 'list' && key === 's') {
+      e.preventDefault();
+      shareReceipt();
+      return;
+    }
+
+    /* Copy Item Shortcut */
+    if (st.screen === 's-app' && st.tab === 'list' && key === 'c' && st.openId !== null) {
+      e.preventDefault();
+      const btn = document.querySelector(`.place[data-pid="${st.openId}"] .copy-btn`);
+      if (btn) {
+        copyItem(st.openId, btn);
       }
       return;
     }
