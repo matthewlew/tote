@@ -13,3 +13,7 @@
 ## 2026-03-15 - Screen Reader Verbosity on Dynamic Lists
 **Learning:** Applying `aria-live="polite"` directly to a large list container (`#list`) causes screen readers to read out the entire contents of the new list every time it changes (e.g. during sorting, changing categories). This results in overwhelming verbosity and makes navigation difficult.
 **Action:** Remove `aria-live` from the list container itself and instead apply `aria-live="polite" aria-atomic="true"` to a concise summary element (like the total item count `span#hd-n`). This provides the user with an immediate, succinct status update while letting them explore the list content at their own pace.
+
+## 2026-03-16 - Empty States and Focus Visibility
+**Learning:** Empty states without a clear Call-To-Action (CTA) lead to dead-ends. When a user sees "Nothing in this category," they need an actionable next step to populate the list. Furthermore, elements styled with `outline: none` (like brutalist text inputs) become completely invisible to keyboard navigators unless a `:focus-visible` fallback is explicitly provided.
+**Action:** Always provide an actionable CTA button (e.g., "Go to Import") within empty states. Whenever an input is stripped of its default outline, restore focus visibility using `outline: 1px solid var(--bd)` accompanied by an `outline-offset` to ensure keyboard accessibility.

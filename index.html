@@ -590,7 +590,22 @@
     .empty { display: none; padding: 48px 20px; }
     .empty.show { display: block; }
     .empty-title { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
-    .empty-sub   { font-size: 13px; color: var(--text-2); }
+    .empty-sub   { font-size: 13px; color: var(--text-2); margin-bottom: 16px; }
+    .empty-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border: 1px solid var(--bd);
+      background: var(--text);
+      color: var(--bg);
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 140ms;
+    }
+    .empty-btn:hover { opacity: 0.85; }
 
     /* ══════════════════════════════════════════
        IMPORT VIEW
@@ -625,6 +640,7 @@
       outline: none;
       display: block;
     }
+    .import-input:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; }
     .import-input::placeholder { color: var(--text-3); }
 
     .import-btn {
@@ -726,6 +742,7 @@
       resize: vertical;
       line-height: 1.6;
     }
+    .import-textarea:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; }
     .import-textarea::placeholder { color: var(--text-3); }
 
     /* disambiguation panel */
@@ -1058,6 +1075,7 @@
     <div class="empty" id="empty" role="status">
       <div class="empty-title">Nothing in this category</div>
       <div class="empty-sub">Add places from your Google Maps list to see them here.</div>
+      <button class="empty-btn" id="btnEmptyImport">Go to Import <span>→</span></button>
     </div>
   </div>
 
@@ -1078,6 +1096,7 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
+            aria-label="Google Maps list link"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
 
@@ -1115,6 +1134,7 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
+            aria-label="Paste list text"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
@@ -2137,6 +2157,8 @@ function renderCollectionDetail(coll) {
    EVENTS
 ══════════════════════════════════════════════ */
 function bindEvents() {
+  document.getElementById('btnEmptyImport').addEventListener('click', () => setTab('import'));
+
   document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
   document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
     renderNeighborhoods();
