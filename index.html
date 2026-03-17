@@ -590,7 +590,7 @@
     .empty { display: none; padding: 48px 20px; }
     .empty.show { display: block; }
     .empty-title { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
-    .empty-sub   { font-size: 13px; color: var(--text-2); }
+    .empty-sub   { font-size: 13px; color: var(--text-2); margin-bottom: 16px; }
 
     /* ══════════════════════════════════════════
        IMPORT VIEW
@@ -1058,6 +1058,7 @@
     <div class="empty" id="empty" role="status">
       <div class="empty-title">Nothing in this category</div>
       <div class="empty-sub">Add places from your Google Maps list to see them here.</div>
+      <button class="bt-add" id="btnEmptyImport" aria-label="Go to Import">Import Places</button>
     </div>
   </div>
 
@@ -2164,6 +2165,10 @@ function bindEvents() {
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
     renderNeighborhoods();
     showScreen('s-nbhd');
+  });
+
+  document.getElementById('btnEmptyImport').addEventListener('click', () => {
+    setTab('import');
   });
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
