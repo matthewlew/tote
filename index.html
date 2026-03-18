@@ -84,6 +84,9 @@
       min-height: 100dvh;
     }
 
+    /* Global focus-visible fallback */
+    *:focus-visible { outline: 2px solid var(--bd); outline-offset: 2px; }
+
     /* Screens hidden by default */
     [hidden] { display: none !important; }
 
@@ -1052,7 +1055,12 @@
   <div id="vList">
     <div class="results-bar" aria-live="polite" aria-atomic="true">
       <span class="res-n" id="resN">— places</span>
-      <span class="res-sort" id="resSort">↑ nearest first</span>
+      <span class="res-n shortcut" style="margin-left:8px" aria-hidden="true">r</span>
+      <span class="res-n shortcut" aria-hidden="true">c</span>
+      <span class="res-sort" id="resSort" aria-live="polite">↑ nearest first</span>
+      <span class="res-sort shortcut" style="margin-left:8px" aria-hidden="true">d</span>
+      <span class="res-sort shortcut" aria-hidden="true">t</span>
+      <span class="res-sort shortcut" aria-hidden="true">n</span>
     </div>
     <ul class="list" id="list" aria-label="Saved places sorted by distance"></ul>
     <div class="empty" id="empty" role="status">
@@ -1236,6 +1244,7 @@ const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
 ══════════════════════════════════════════════ */
 const st = {
   screen:   'loading',
+  sortBy:   'd',
   tab:      'list',
   cat:      'All',
   openId:   null,
@@ -1259,9 +1268,13 @@ function haversine(lat1, lng1, lat2, lng2) {
 }
 
 function sortedPlaces() {
-  return PLACES
-    .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
-    .sort((a, b) => a.dist - b.dist);
+  const mapped = PLACES.map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }));
+  if (st.sortBy === 'n') {
+    return mapped.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (st.sortBy === 't') {
+    return mapped.sort((a, b) => a.cat.localeCompare(b.cat) || a.dist - b.dist);
+  }
+  return mapped.sort((a, b) => a.dist - b.dist);
 }
 
 function filteredPlaces() {
@@ -1312,8 +1325,19 @@ function simulateGPS() {
 function updateLocUI() {
   document.getElementById('locName').textContent = st.locLabel;
   document.getElementById('locSub').textContent  = st.locSub;
-  document.getElementById('resSort').textContent =
-    st.locMode === 'neighborhood' ? '↑ nearest to ' + st.locLabel : '↑ nearest first';
+  const resSortEl = document.getElementById('resSort');
+  if (resSortEl) {
+    if (st.locMode === 'neighborhood') {
+      resSortEl.textContent = '↑ nearest to ' + st.locLabel;
+    } else {
+      if (st.sortBy === 'n') resSortEl.textContent = 'a-z name';
+      else if (st.sortBy === 't') resSortEl.textContent = 'a-z type';
+      else resSortEl.textContent = '↑ nearest first';
+    }
+
+    // update sort button accessibility
+    resSortEl.setAttribute('aria-label', `Sort by ${st.sortBy === 'n' ? 'name' : (st.sortBy === 't' ? 'type' : 'distance')}, currently ascending`);
+  }
 }
 
 /* ══════════════════════════════════════════════
@@ -2191,6 +2215,56 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Shortcuts */
+    if (st.screen === 's-app') {
+      if (e.key === 'd' || e.key === 'D') {
+        e.preventDefault();
+        st.sortBy = 'd';
+        renderList(true);
+        updateLocUI();
+        return;
+      }
+      if (e.key === 't' || e.key === 'T') {
+        e.preventDefault();
+        st.sortBy = 't';
+        renderList(true);
+        updateLocUI();
+        return;
+      }
+      if (e.key === 'n' || e.key === 'N') {
+        e.preventDefault();
+        st.sortBy = 'n';
+        renderList(true);
+        updateLocUI();
+        return;
+      }
+      if (e.key === 'r' || e.key === 'R') {
+        e.preventDefault();
+        const items = filteredPlaces();
+        if (items.length) {
+          const rand = items[Math.floor(Math.random() * items.length)];
+          toggleItem(rand.id);
+          const el = document.querySelector(`.place[data-pid="${rand.id}"] .p-row`);
+          if (el) {
+            el.focus();
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+        return;
+      }
+      if (e.key === 'c' || e.key === 'C') {
+        e.preventDefault();
+        if (st.openId !== null) {
+          const p = PLACES.find(x => x.id === st.openId);
+          if (p) {
+            const text = `${p.name}\n${p.cat} · ${p.tag}\n${mapsUrl(p.q)}`;
+            navigator.clipboard.writeText(text);
+          }
+        }
+        return;
+      }
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
