@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Global Focus Indicator for Keyboard Navigation
+**Learning:** In heavily stylized, brutalist designs that often reset or mask default browser outlines, individual components (like custom buttons, tabs, or custom input containers) can easily lose their keyboard focus indicators. Relying on piecemeal `:focus-visible` rules for specific custom elements leaves gaps where standard elements (or newly added elements) become invisible to keyboard users.
+**Action:** Implement a reliable, universal global fallback rule (e.g., `*:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }`) early in the CSS to ensure every interactable element on the page maintains a visible, high-contrast focus ring, guaranteeing baseline keyboard accessibility across the entire application without needing to specifically style every single component.
