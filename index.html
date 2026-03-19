@@ -24,6 +24,11 @@
       -webkit-tap-highlight-color: transparent;
     }
 
+    *:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+
     /* ══════════════════════════════════════════
        DESIGN TOKENS — LIGHT
     ══════════════════════════════════════════ */
@@ -1079,6 +1084,7 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
+            aria-label="Google Maps list link"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
 
@@ -1116,6 +1122,7 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
+            aria-label="Paste places here"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
