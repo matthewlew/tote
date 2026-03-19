@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2023-11-20 - [Optimize Keyboard Navigation]
+**Learning:** Attaching repeated `querySelectorAll` DOM lookups within frequent, high-velocity events like `keydown` (ArrowUp/ArrowDown) causes unnecessary O(N) operations every keystroke, leading to degraded performance in larger lists.
+**Action:** Always cache the queried elements array (e.g. in a state object like `st.focusable`) upon the first interaction and refer to the cache on subsequent interactions. Only invalidate this cache when the underlying DOM structure changes (e.g. rendering lists, opening/closing tabs or screens).

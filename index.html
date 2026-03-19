@@ -1244,7 +1244,12 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  focusable: null,
 };
+
+function invalidateFocusable() {
+  st.focusable = null;
+}
 
 /* ══════════════════════════════════════════════
    UTILS
@@ -1272,6 +1277,7 @@ function filteredPlaces() {
 function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
 
 function showScreen(id) {
+  invalidateFocusable();
   ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
     const el = document.getElementById(s);
     if (el) el.hidden = (s !== id);
@@ -1320,6 +1326,7 @@ function updateLocUI() {
    NEIGHBORHOOD PICKER
 ══════════════════════════════════════════════ */
 function renderNeighborhoods() {
+  invalidateFocusable();
   const container = document.getElementById('nbhdList');
   container.innerHTML = '';
   const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
@@ -1367,6 +1374,7 @@ function selectNeighborhood(nbhd) {
    Toggle is handled by toggleItem() — NO re-render
 ══════════════════════════════════════════════ */
 function renderList(animate = false) {
+  invalidateFocusable();
   const listEl  = document.getElementById('list');
   const emptyEl = document.getElementById('empty');
   const nEl     = document.getElementById('resN');
@@ -1476,6 +1484,7 @@ function renderCounts() {
    TAB SWITCH
 ══════════════════════════════════════════════ */
 function setTab(tab) {
+  invalidateFocusable();
   st.tab = tab;
   const isList    = tab === 'list';
   const isExplore = tab === 'explore';
@@ -1957,6 +1966,7 @@ function isSavedPlace(name) {
 }
 
 function renderExploreIndex() {
+  invalidateFocusable();
   const listEl  = document.getElementById('collList');
   const nEl     = document.getElementById('exploreResN');
   listEl.innerHTML = '';
@@ -2000,17 +2010,20 @@ function renderExploreIndex() {
 }
 
 function openCollection(coll) {
+  invalidateFocusable();
   document.getElementById('exploreIndex').hidden  = true;
   document.getElementById('exploreDetail').hidden = false;
   renderCollectionDetail(coll);
 }
 
 function closeCollection() {
+  invalidateFocusable();
   document.getElementById('exploreDetail').hidden = true;
   document.getElementById('exploreIndex').hidden  = false;
 }
 
 function renderCollectionDetail(coll) {
+  invalidateFocusable();
   const detailEl = document.getElementById('exploreDetail');
 
   /* Sort places by distance from current location */
@@ -2238,63 +2251,69 @@ function bindEvents() {
     /* List item navigation: Up/Down arrows */
     if (st.screen === 's-app' && (st.tab === 'list' || (st.tab === 'explore' && !document.getElementById('exploreDetail').hidden)) && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
       e.preventDefault();
-      const container = st.tab === 'list' ? document.getElementById('list') : document.getElementById('collPlaceList');
-      if (!container) return;
-      const focusable = Array.from(container.querySelectorAll('.p-row, .coll-place'));
-      if (!focusable.length) return;
+      if (!st.focusable) {
+        const container = st.tab === 'list' ? document.getElementById('list') : document.getElementById('collPlaceList');
+        if (!container) return;
+        st.focusable = Array.from(container.querySelectorAll('.p-row, .coll-place'));
+      }
+      if (!st.focusable.length) return;
 
       const active = document.activeElement;
-      let idx = focusable.indexOf(active);
+      let idx = st.focusable.indexOf(active);
 
       if (e.key === 'ArrowUp') {
-        idx = idx > 0 ? idx - 1 : focusable.length - 1;
+        idx = idx > 0 ? idx - 1 : st.focusable.length - 1;
       } else if (e.key === 'ArrowDown') {
-        idx = idx >= 0 && idx < focusable.length - 1 ? idx + 1 : 0;
+        idx = idx >= 0 && idx < st.focusable.length - 1 ? idx + 1 : 0;
       }
 
-      const nextEl = focusable[idx];
+      const nextEl = st.focusable[idx];
       if (nextEl) {
         nextEl.focus();
         nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     } else if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreIndex').hidden && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
        e.preventDefault();
-       const container = document.getElementById('collList');
-       if (!container) return;
-       const focusable = Array.from(container.querySelectorAll('.coll-card'));
-       if (!focusable.length) return;
+       if (!st.focusable) {
+         const container = document.getElementById('collList');
+         if (!container) return;
+         st.focusable = Array.from(container.querySelectorAll('.coll-card'));
+       }
+       if (!st.focusable.length) return;
 
        const active = document.activeElement;
-       let idx = focusable.indexOf(active);
+       let idx = st.focusable.indexOf(active);
 
        if (e.key === 'ArrowUp') {
-         idx = idx > 0 ? idx - 1 : focusable.length - 1;
+         idx = idx > 0 ? idx - 1 : st.focusable.length - 1;
        } else if (e.key === 'ArrowDown') {
-         idx = idx >= 0 && idx < focusable.length - 1 ? idx + 1 : 0;
+         idx = idx >= 0 && idx < st.focusable.length - 1 ? idx + 1 : 0;
        }
 
-       const nextEl = focusable[idx];
+       const nextEl = st.focusable[idx];
        if (nextEl) {
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
        }
     } else if (st.screen === 's-nbhd' && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
        e.preventDefault();
-       const container = document.getElementById('nbhdList');
-       if (!container) return;
-       const focusable = Array.from(container.querySelectorAll('.nbhd-item'));
-       if (!focusable.length) return;
+       if (!st.focusable) {
+         const container = document.getElementById('nbhdList');
+         if (!container) return;
+         st.focusable = Array.from(container.querySelectorAll('.nbhd-item'));
+       }
+       if (!st.focusable.length) return;
 
        const active = document.activeElement;
-       let idx = focusable.indexOf(active);
+       let idx = st.focusable.indexOf(active);
 
        if (e.key === 'ArrowUp') {
-         idx = idx > 0 ? idx - 1 : focusable.length - 1;
+         idx = idx > 0 ? idx - 1 : st.focusable.length - 1;
        } else if (e.key === 'ArrowDown') {
-         idx = idx >= 0 && idx < focusable.length - 1 ? idx + 1 : 0;
+         idx = idx >= 0 && idx < st.focusable.length - 1 ? idx + 1 : 0;
        }
 
-       const nextEl = focusable[idx];
+       const nextEl = st.focusable[idx];
        if (nextEl) {
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
