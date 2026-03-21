@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Keyboard Accessibility and Modals
+**Learning:** Adding global `*:focus-visible` styles ensures that even custom interactive components maintain a robust visual focus ring without needing individual overrides. Furthermore, standard keyboard shortcuts (like using `Escape` to close modals) are essential to prevent trapping keyboard users in overlay states.
+**Action:** Always provide a reliable global `*:focus-visible` ring using high-contrast variables (like `--text`), and always map the `Escape` key to closing modals or returning to previous screen states when implementing custom dialogs or detail views.

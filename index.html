@@ -70,6 +70,8 @@
     /* ══════════════════════════════════════════
        BASE
     ══════════════════════════════════════════ */
+    *:focus-visible { outline: 2px solid var(--text); outline-offset: -2px; }
+
     html { height: 100%; background: var(--bg); }
 
     body {
@@ -2191,6 +2193,16 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Escape to close modals */
+    if (e.key === 'Escape') {
+      if (st.screen === 's-nbhd') {
+        showScreen(st.refLat && st.refLng && st.locMode ? 's-app' : 's-location');
+      } else if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+      }
+      return;
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
