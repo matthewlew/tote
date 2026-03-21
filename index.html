@@ -70,6 +70,7 @@
     /* ══════════════════════════════════════════
        BASE
     ══════════════════════════════════════════ */
+    *:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
     html { height: 100%; background: var(--bg); }
 
     body {
@@ -1079,7 +1080,8 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
-            placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
+            placeholder="https://maps.app.goo.gl/… or maps.google.com/…"
+            aria-label="Google Maps list URL" />
         </div>
 
         <button class="import-btn" id="importBtn" disabled>
@@ -1116,7 +1118,8 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
-            placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
+            placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"
+            aria-label="Paste your list here"></textarea>
         </div>
 
         <button class="import-btn" id="importPasteBtn" disabled>

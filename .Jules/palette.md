@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-21 - Placeholder-Only Inputs & Global Focus States
+**Learning:** Placeholder-only input fields (common in brutalist or minimal designs where explicit `<label>` tags are omitted) fail WCAG requirements because screen readers only announce "Edit text" without context. Additionally, while custom focus styles exist for some components, relying on them individually is prone to omissions. Relying on default browser outlines can fail if reset or overridden.
+**Action:** Always apply explicit `aria-label` attributes to any input or textarea that lacks a visible `<label>`. To guarantee reliable keyboard navigation visibility across all interactive elements, implement a global `*:focus-visible` fallback (using a defined variable like `--text` or `--bd`) at the top of the CSS stack to catch unstyled components without overriding explicitly defined custom focus states.
