@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-22 - Global Keyboard Focus Fallback and Placeholder-Only Inputs
+**Learning:** In brutalist UI designs that often reset browser defaults (like using `outline: none;` on inputs or lack of styling on lists), keyboard users are frequently left with no visual indication of their current focus. Additionally, inputs that rely solely on `placeholder` attributes without an explicit visible `<label>` lack context when accessed via screen readers.
+**Action:** Always implement a global `*:focus-visible` fallback in base CSS (using a designated brand or border color variable, e.g., `var(--bd)`) to ensure reliable keyboard navigation visibility across all interactable elements. Remove explicit `outline: none;` rules from text fields unless custom focus states are explicitly provided. Furthermore, any input or textarea relying only on placeholders must include a descriptive `aria-label` to provide necessary context to assistive technologies.
