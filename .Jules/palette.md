@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-22 - Global Focus Visibility and Input Outlines
+**Learning:** Removing default input outlines (`outline: none;`) for aesthetic reasons without explicitly defining a `focus-visible` state completely breaks keyboard navigation, as users have no indication when input fields are focused. This is especially problematic in raw or custom design systems where developers might assume custom styles are enough.
+**Action:** Always provide a robust, global `*:focus-visible` fallback (e.g., using `--bd` or an existing theme color) at the top level of the stylesheet to act as a safety net. Only remove `outline` on specific elements if a distinct, accessible visual focus state (like a custom border change) is explicitly provided for those elements.

@@ -72,6 +72,8 @@
     ══════════════════════════════════════════ */
     html { height: 100%; background: var(--bg); }
 
+    *:focus-visible { outline: 2px solid var(--bd); outline-offset: 2px; }
+
     body {
       font-family: var(--sans);
       font-size: 13px;
@@ -622,7 +624,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
     }
     .import-input::placeholder { color: var(--text-3); }
@@ -721,7 +722,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
       resize: vertical;
       line-height: 1.6;
