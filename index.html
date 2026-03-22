@@ -70,6 +70,11 @@
     /* ══════════════════════════════════════════
        BASE
     ══════════════════════════════════════════ */
+    *:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
+    }
+
     html { height: 100%; background: var(--bg); }
 
     body {
@@ -1052,7 +1057,11 @@
   <div id="vList">
     <div class="results-bar" aria-live="polite" aria-atomic="true">
       <span class="res-n" id="resN">— places</span>
-      <span class="res-sort" id="resSort">↑ nearest first</span>
+      <div>
+        <span class="res-sort" id="resSort">↑ nearest first</span>
+        <span class="shortcut">s</span> share receipt
+        <span class="shortcut">r</span> random
+      </div>
     </div>
     <ul class="list" id="list" aria-label="Saved places sorted by distance"></ul>
     <div class="empty" id="empty" role="status">
@@ -1164,6 +1173,9 @@
       </svg>
       Google Maps
     </button>
+    <div style="font-size:11px; color:var(--text-3); display:flex; gap:8px;">
+      <span><span class="shortcut">c</span> copy item</span>
+    </div>
     <button class="bt-add" aria-label="Add a new place">+ Add Place</button>
   </nav>
 </div>
@@ -1244,6 +1256,7 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  sort:     'd',
 };
 
 /* ══════════════════════════════════════════════
@@ -1259,9 +1272,15 @@ function haversine(lat1, lng1, lat2, lng2) {
 }
 
 function sortedPlaces() {
-  return PLACES
-    .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
-    .sort((a, b) => a.dist - b.dist);
+  const list = PLACES.map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }));
+  if (st.sort === 'd') {
+    list.sort((a, b) => a.dist - b.dist);
+  } else if (st.sort === 't') {
+    list.sort((a, b) => a.cat.localeCompare(b.cat) || a.dist - b.dist);
+  } else if (st.sort === 'n') {
+    list.sort((a, b) => a.name.localeCompare(b.name));
+  }
+  return list;
 }
 
 function filteredPlaces() {
@@ -1309,11 +1328,26 @@ function simulateGPS() {
   renderList(true);
 }
 
+function updateSortUI() {
+  const el = document.getElementById('resSort');
+  if (!el) return;
+  if (st.sort === 'd') {
+    const txt = st.locMode === 'neighborhood' ? 'nearest to ' + st.locLabel : 'nearest first';
+    el.innerHTML = `↑ ${txt} <span class="shortcut">d</span> <span class="shortcut">t</span> <span class="shortcut">n</span>`;
+    el.setAttribute('aria-label', `Sort by distance, currently ascending`);
+  } else if (st.sort === 't') {
+    el.innerHTML = `↑ by type <span class="shortcut">d</span> <span class="shortcut">t</span> <span class="shortcut">n</span>`;
+    el.setAttribute('aria-label', `Sort by type, currently ascending`);
+  } else if (st.sort === 'n') {
+    el.innerHTML = `↑ by name <span class="shortcut">d</span> <span class="shortcut">t</span> <span class="shortcut">n</span>`;
+    el.setAttribute('aria-label', `Sort by name, currently ascending`);
+  }
+}
+
 function updateLocUI() {
   document.getElementById('locName').textContent = st.locLabel;
   document.getElementById('locSub').textContent  = st.locSub;
-  document.getElementById('resSort').textContent =
-    st.locMode === 'neighborhood' ? '↑ nearest to ' + st.locLabel : '↑ nearest first';
+  updateSortUI();
 }
 
 /* ══════════════════════════════════════════════
@@ -2192,6 +2226,18 @@ function bindEvents() {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
+    /* Escape to close modals/screens */
+    if (e.key === 'Escape') {
+      if (st.screen === 's-location') {
+        /* Do nothing, cannot exit initial modal without selection */
+      } else if (st.screen === 's-nbhd') {
+        showScreen('s-location');
+      } else if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+      }
+      return;
+    }
+
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
       e.preventDefault();
@@ -2231,6 +2277,64 @@ function bindEvents() {
            activePill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         }
         renderList(false);
+      }
+      return;
+    }
+
+    /* Sorting: d, t, n */
+    if (st.screen === 's-app' && st.tab === 'list' && ['d', 't', 'n'].includes(e.key.toLowerCase())) {
+      st.sort = e.key.toLowerCase();
+      updateSortUI();
+      renderList(false);
+      return;
+    }
+
+    /* Random Pick: r */
+    if (st.screen === 's-app' && st.tab === 'list' && e.key.toLowerCase() === 'r') {
+      const items = filteredPlaces();
+      if (items.length) {
+        const rand = items[Math.floor(Math.random() * items.length)];
+        const li = document.querySelector(`.place[data-pid="${rand.id}"]`);
+        if (li) {
+          const row = li.querySelector('.p-row');
+          if (row) {
+            row.focus();
+            row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (st.openId !== rand.id) toggleItem(rand.id);
+          }
+        }
+      }
+      return;
+    }
+
+    /* Copy Item: c */
+    if (st.screen === 's-app' && e.key.toLowerCase() === 'c') {
+      const active = document.activeElement;
+      const row = active ? active.closest('.p-row, .coll-place') : null;
+      if (row) {
+        const nameEl = row.querySelector('.p-name');
+        if (nameEl) {
+          /* Just copy the name for simplicity, can also copy distance/category */
+          const catEl = row.querySelector('.p-cat');
+          const distEl = row.querySelector('.d-n');
+          const name = nameEl.textContent;
+          const cat = catEl ? catEl.textContent : '';
+          const dist = distEl ? distEl.textContent + ' mi' : '';
+          const textToCopy = `${name} [${cat}] ${dist}`.trim();
+          navigator.clipboard.writeText(textToCopy);
+        }
+      }
+      return;
+    }
+
+    /* Share as Receipt: s */
+    if (st.screen === 's-app' && st.tab === 'list' && e.key.toLowerCase() === 's') {
+      const items = filteredPlaces();
+      if (items.length) {
+        const lines = items.map(p => `${p.name} - ${p.cat} - ${p.dist.toFixed(1)} mi`);
+        const header = `=== TOTE RECEIPT ===\nLocation: ${st.locLabel}\nCategory: ${st.cat}\n====================\n`;
+        const footer = `\n====================\nTotal Places: ${items.length}\n`;
+        navigator.clipboard.writeText(header + lines.join('\n') + footer);
       }
       return;
     }
