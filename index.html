@@ -84,6 +84,9 @@
       min-height: 100dvh;
     }
 
+    /* Global Keyboard Focus Fallback */
+    *:focus-visible { outline: 2px solid var(--bd); outline-offset: 2px; }
+
     /* Screens hidden by default */
     [hidden] { display: none !important; }
 
@@ -622,7 +625,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
     }
     .import-input::placeholder { color: var(--text-3); }
@@ -721,7 +723,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
       resize: vertical;
       line-height: 1.6;
@@ -1079,6 +1080,7 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
+            aria-label="Google Maps List URL"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
 
@@ -1116,6 +1118,7 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
+            aria-label="Paste list text here"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
