@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-23 - Escape Key for Predictable Modal/Item Dismissal
+**Learning:** When using overlays, full-screen modals, or custom interactive expanded rows, keyboard users expect the `Escape` key to revert their view without needing to manually tab to a "Back" or "Close" button. Lacking this convention forces slow keyboard-based hunting or forces mouse interactions.
+**Action:** Always bind the `Escape` key (`e.key === 'Escape'`) globally to dismiss modals, back out of overlays (like Neighborhood Picker or Collection Detail), and collapse expanded interactive rows. Additionally, provide visual keyboard shortcut hints (like `<span class="shortcut">esc</span>`) next to relevant CTA buttons (e.g., "Back") to make this behavior obvious.
