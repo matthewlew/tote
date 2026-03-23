@@ -2171,6 +2171,15 @@ function bindEvents() {
     setTab('import');
   });
 
+  const btnSort = document.getElementById('btnSort');
+  if (btnSort) btnSort.addEventListener('click', cycleSort);
+
+  const btnRandom = document.getElementById('btnRandom');
+  if (btnRandom) btnRandom.addEventListener('click', randomPick);
+
+  const btnShare = document.getElementById('btnShare');
+  if (btnShare) btnShare.addEventListener('click', shareReceipt);
+
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => setTab(btn.dataset.tab));
   });
@@ -2299,6 +2308,122 @@ function bindEvents() {
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
        }
+    } else if (e.key === 'Escape') {
+      if (st.screen === 's-nbhd') {
+        showScreen('s-location');
+      } else if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+      } else if (st.screen === 's-app' && st.tab === 'list' && st.openId !== null) {
+        toggleItem(st.openId);
+      }
+    /* Random Pick: 'r' */
+    } else if (e.key === 'r' || e.key === 'R') {
+      if (st.screen === 's-app' && st.tab === 'list') {
+        randomPick();
+      }
+    /* Share as Receipt: 's' */
+    } else if (e.key === 's' || e.key === 'S') {
+      if (st.screen === 's-app' && st.tab === 'list') {
+        shareReceipt();
+      }
+    /* Copy Item: 'c' */
+    } else if (e.key === 'c' || e.key === 'C') {
+      if (st.screen === 's-app' && st.tab === 'list' && st.openId !== null) {
+        copyItem(st.openId);
+      }
+    /* Sort shortcuts: 'd', 't', 'n' */
+    } else if (e.key === 'd' || e.key === 'D') {
+      if (st.screen === 's-app' && st.tab === 'list' && st.sortBy !== 'd') {
+        st.sortBy = 'd';
+        updateSortUI();
+        renderList(false);
+      }
+    } else if (e.key === 't' || e.key === 'T') {
+      if (st.screen === 's-app' && st.tab === 'list' && st.sortBy !== 't') {
+        st.sortBy = 't';
+        updateSortUI();
+        renderList(false);
+      }
+    } else if (e.key === 'n' || e.key === 'N') {
+      if (st.screen === 's-app' && st.tab === 'list' && st.sortBy !== 'n') {
+        st.sortBy = 'n';
+        updateSortUI();
+        renderList(false);
+      }
+    }
+  });
+}
+
+function randomPick() {
+  const items = filteredPlaces();
+  if (!items.length) return;
+  const rnd = items[Math.floor(Math.random() * items.length)];
+  const el = document.querySelector(`.place[data-pid="${rnd.id}"]`);
+  if (!el) return;
+
+  st.openId = null; // force toggle open
+  toggleItem(rnd.id);
+
+  const row = el.querySelector('.p-row');
+  if (row) {
+    row.focus();
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+function shareReceipt() {
+  const items = filteredPlaces();
+  if (!items.length) {
+    alert("No places in this category to share.");
+    return;
+  }
+
+  const ts = new Date().toLocaleString('en-US', {
+    hour: 'numeric', minute: 'numeric', hour12: true,
+    month: 'short', day: 'numeric', year: 'numeric'
+  });
+
+  let txt = `================================\n`;
+  txt += `             TOTE               \n`;
+  txt += `================================\n`;
+  txt += `Location: ${st.locLabel}\n`;
+  txt += `Category: ${st.cat}\n`;
+  txt += `Date:     ${ts}\n`;
+  txt += `Items:    ${items.length}\n`;
+  txt += `--------------------------------\n\n`;
+
+  items.forEach((p, i) => {
+    txt += `${i+1}. ${p.name.toUpperCase()}\n`;
+    txt += `   ${p.cat} - ${p.dist.toFixed(1)} mi\n`;
+  });
+
+  txt += `\n================================\n`;
+  txt += `      tote.directory            \n`;
+  txt += `================================`;
+
+  navigator.clipboard.writeText(txt).then(() => {
+    alert("Receipt copied to clipboard!");
+  }).catch(() => {
+    alert("Failed to copy receipt.");
+  });
+}
+
+function copyItem(id) {
+  const p = PLACES.find(x => x.id == id);
+  if (!p) return;
+
+  const lines = [
+    `${p.name} (${p.cat})`,
+    `${p.desc || p.tag}`,
+    `Maps: ${mapsUrl(p.q)}`
+  ];
+
+  navigator.clipboard.writeText(lines.join('\n')).then(() => {
+    const btn = document.querySelector(`.btn-copy[data-pid="${id}"]`);
+    if (btn) {
+      const orig = btn.innerHTML;
+      btn.innerHTML = `Copied! <span class="shortcut">c</span>`;
+      setTimeout(() => btn.innerHTML = orig, 1500);
     }
   });
 }
