@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Explicit Dismissal Keyboard Handling
+**Learning:** Overlays, modals, and dynamic expanded states (like the Neighborhood Picker or `.p-expand` details) without explicit `Escape` key handling trap keyboard users. Additionally, "Back" navigation in Single Page Applications needs reliable state tracking (`prevScreen`) to avoid throwing users back to hardcoded views, disrupting their context.
+**Action:** Always provide robust `Escape` key bindings on global `keydown` events to predictably dismiss all floating or temporary states (clearing variables like `openId` and navigating to a tracked `prevScreen`). Accompany these interactions with visual hints (`<span class="shortcut">esc</span>`) on dismissal buttons to teach users the shortcut.
