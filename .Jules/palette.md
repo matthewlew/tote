@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Consistent Dismissal with Escape Key
+**Learning:** Full-screen overlays, modals, and expanded custom interactive rows often trap users who instinctively reach for the `Escape` key to go "back" or close the current view. Without explicit `Escape` handling and visual hints (like `esc` next to the Back button), the interface feels rigid. Furthermore, hardcoding "Back" navigation to a specific root screen (like the location prompt) frustrates users who navigated from somewhere else (like the main app view).
+**Action:** Always implement a global `keydown` listener to handle `Escape` key presses, prioritizing closing the most specific open state first (e.g., expanded rows > open collection details > full-screen modals). Ensure navigation buttons dynamically track the previous view state (`prevScreen`) to return users accurately to where they came from. Provide visual keyboard shortcut hints on dismissal buttons.
