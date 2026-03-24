@@ -1323,11 +1323,13 @@ function renderNeighborhoods() {
   const container = document.getElementById('nbhdList');
   container.innerHTML = '';
   const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
+  const fragment = document.createDocumentFragment();
+
   boroughs.forEach(b => {
     const lbl = document.createElement('div');
     lbl.className = 'nbhd-borough-label';
     lbl.textContent = b;
-    container.appendChild(lbl);
+    fragment.appendChild(lbl);
 
     NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
       const nearby = PLACES.filter(p =>
@@ -1344,9 +1346,11 @@ function renderNeighborhoods() {
           <span class="nbhd-arr">→</span>
         </span>`;
       btn.addEventListener('click', () => selectNeighborhood(nbhd));
-      container.appendChild(btn);
+      fragment.appendChild(btn);
     });
   });
+
+  container.appendChild(fragment);
 }
 
 function selectNeighborhood(nbhd) {
@@ -1378,6 +1382,12 @@ function renderList(animate = false) {
 
   if (!items.length) { emptyEl.classList.add('show'); return; }
   emptyEl.classList.remove('show');
+
+  /* ⚡ Bolt Optimization: Batch DOM appends
+     What: Using a DocumentFragment to collect list items before appending to the active DOM.
+     Why: Appending multiple elements sequentially inside a loop causes expensive O(N) layout thrashing and reflows.
+     Impact: Batches layout calculation to a single reflow, improving render time, especially for large lists. */
+  const fragment = document.createDocumentFragment();
 
   items.forEach((p, i) => {
     const li = document.createElement('li');
@@ -1427,9 +1437,10 @@ function renderList(animate = false) {
         </div>
       </div>`;
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
 
+  listEl.appendChild(fragment);
 }
 
 /* ══════════════════════════════════════════════
@@ -1969,6 +1980,8 @@ function renderExploreIndex() {
     near2: nearbyCount(c, 2.5),
   })).sort((a, b) => b.near1 - a.near1 || b.near2 - a.near2);
 
+  const fragment = document.createDocumentFragment();
+
   sorted.forEach(coll => {
     const card = document.createElement('div');
     card.className = 'coll-card';
@@ -1995,8 +2008,10 @@ function renderExploreIndex() {
     card.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCollection(coll); }
     });
-    listEl.appendChild(card);
+    fragment.appendChild(card);
   });
+
+  listEl.appendChild(fragment);
 }
 
 function openCollection(coll) {
@@ -2062,6 +2077,8 @@ function renderCollectionDetail(coll) {
   });
 
   const listEl = document.getElementById('collPlaceList');
+  const fragment = document.createDocumentFragment();
+
   sorted.forEach((p, i) => {
     const saved = isSavedPlace(p.name);
     const li = document.createElement('li');
@@ -2120,8 +2137,10 @@ function renderCollectionDetail(coll) {
       });
     }
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
+
+  listEl.appendChild(fragment);
 }
 
 /* ══════════════════════════════════════════════
