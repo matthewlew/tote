@@ -72,6 +72,11 @@
     ══════════════════════════════════════════ */
     html { height: 100%; background: var(--bg); }
 
+    *:focus-visible {
+      outline: 2px solid var(--bd);
+      outline-offset: 2px;
+    }
+
     body {
       font-family: var(--sans);
       font-size: 13px;
@@ -622,7 +627,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
     }
     .import-input::placeholder { color: var(--text-3); }
@@ -721,7 +725,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
       resize: vertical;
       line-height: 1.6;
@@ -1001,7 +1004,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack">← Back <span class="shortcut">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1079,6 +1082,7 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
+            aria-label="Google Maps List Link"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
 
@@ -1116,6 +1120,7 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
+            aria-label="Paste places list text"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
@@ -1236,6 +1241,7 @@ const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
 ══════════════════════════════════════════════ */
 const st = {
   screen:   'loading',
+  prevScreen: null,
   tab:      'list',
   cat:      'All',
   openId:   null,
@@ -1276,6 +1282,7 @@ function showScreen(id) {
     const el = document.getElementById(s);
     if (el) el.hidden = (s !== id);
   });
+  st.prevScreen = st.screen;
   st.screen = id;
 }
 
@@ -2023,7 +2030,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack">← Back <span class="shortcut">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2160,7 +2167,7 @@ function bindEvents() {
     showScreen('s-nbhd');
   });
 
-  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen(st.prevScreen || 's-location'));
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
     renderNeighborhoods();
@@ -2191,6 +2198,22 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Escape to close overlays/modals */
+    if (e.key === 'Escape') {
+      if (st.openId !== null) {
+        toggleItem(st.openId);
+        return;
+      }
+      if (!document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+        return;
+      }
+      if (st.screen === 's-nbhd') {
+        showScreen(st.prevScreen || 's-location');
+        return;
+      }
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
