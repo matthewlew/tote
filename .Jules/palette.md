@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Graceful "Escape" Key Dismissal and Dynamic State Tracking
+**Learning:** Hardcoding "Back" or "Close" navigation to a specific screen (e.g., always returning to `s-location` when closing the neighborhood picker) breaks user mental models if they arrived from elsewhere (like clicking "change location" inside the main app). Furthermore, without a global "Escape" key listener, keyboard users are trapped in overlays or forced to reverse-tab to close buttons.
+**Action:** Implement dynamic previous screen tracking using a stack (`st.screenHistory`) to ensure accurate back-navigation even when the user goes multiple levels deep. Bind a global `Escape` key listener that sequentially dismisses open states based on their specificity/Z-index (e.g., expanded list items > collection detail views > full-screen modals). Finally, always pair these shortcuts with visible hints (`<span class="shortcut">esc</span>`) for discoverability.
