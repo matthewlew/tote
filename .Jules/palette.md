@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-26 - Input Accessibility and Global Focus Visibility
+**Learning:** Resetting input fields with `outline: none;` without providing custom focus states removes essential visual cues for keyboard users, making forms difficult to navigate. In addition, placeholder text alone is insufficient for screen readers; fields lacking an explicit visible `<label>` must still have an `aria-label`. Finally, while custom components need specific focus management, setting a robust global `*:focus-visible` fallback (using a high-contrast variable like `var(--bd)`) ensures no interactable element is accidentally left "invisible" to keyboard users across the app.
+**Action:** Never use `outline: none;` unless you are explicitly replacing it with another visible focus indicator. Always ensure placeholder-only inputs have an `aria-label`. Utilize a global `*:focus-visible` rule in the base styles to catch edge cases where custom focus rings might be missed.
