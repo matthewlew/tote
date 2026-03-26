@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-24 - Back Navigation and Escape Key Semantics
+**Learning:** Hardcoding back navigation to a single root view (e.g., `s-location`) causes UX loops when deeper screens (like neighborhood picker) are accessed from various contexts (like the main app header). Furthermore, while desktop users rely on "Escape" to close overlays, lacking a visual hint (like `esc`) leaves this functionality hidden, and stripping default browser `outline: none` on inputs breaks basic tab navigation if no fallback is provided.
+**Action:** Always track screen history in a lightweight array (`screenHistory.push/pop`) for dynamic back routing instead of hardcoding paths. Ensure a global fallback `*:focus-visible` is present when stripping default browser outlines, and explicitly show keyboard shortcut hints on back/close buttons.
