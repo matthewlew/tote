@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2024-05-15 - Batch DOM appends with DocumentFragment
+**Learning:** Appending items directly to the DOM in a `forEach` loop causes expensive O(N) layout thrashing, which is especially detrimental for performance in vanilla JS applications rendering long lists.
+**Action:** Always use `document.createDocumentFragment()` to batch DOM appends within loops. Append elements to the fragment during iteration, and append the complete fragment to the actual DOM container in a single operation after the loop.
