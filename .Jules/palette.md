@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-20 - Global Escape Key Support
+**Learning:** For keyboard-only and power users, the 'Escape' key is the universal affordance for dismissing overlays, modals, and expanded states. Without explicit Escape key handling that correctly targets the most specific open state (e.g., expanded row vs. full-screen modal), users are forced to manually track down and activate close/back buttons. Additionally, navigating backwards from deeply nested views without a tracked `screenHistory` stack can trap users in infinite loops or bounce them to an unexpected root screen.
+**Action:** Always implement a global `Escape` key handler to dismiss overlays, prioritize closing the most specific open component first, provide visual `<span class="shortcut">esc</span>` hints on the corresponding UI elements, and maintain a stack of previously visited views (`screenHistory`) to ensure accurate back-tracking.
