@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-24 - Dynamic Contextual Escape Key Dismissal
+**Learning:** Hardcoding 'Escape' handlers or back buttons to a single root screen breaks user expectations when navigating deep views (like going from My List -> Location -> Neighborhood). Implementing a stack-based screen history array (`screenHistory`) allows precise back-tracking. Furthermore, a single global `keydown` listener for `Escape` must evaluate the UI state hierarchically (e.g., closing expanded item > closing modal > going back a screen) to prevent dismissing everything at once.
+**Action:** Use an array stack to manage dynamic UI navigation history, and explicitly handle `Escape` in a specific, hierarchical priority order so that the most specific/forefront interactive element is dismissed first. Always add visual shortcut hints to associated 'Back' buttons.
