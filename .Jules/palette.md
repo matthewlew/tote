@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-20 - Global Escape Key Navigation & Modal Management
+**Learning:** Managing nested modals and overlays via `Escape` key requires a deliberate, hierarchical approach. Without a robust history stack or explicit priority checks, pressing `Escape` can dismiss the wrong layer or trap users in an infinite loop. Additionally, purely hardcoded back navigation fails when views can be accessed from multiple pathways.
+**Action:** Always maintain an array-based history stack for view navigation, and implement a single, global `Escape` keydown handler that cascades its checks from the most specific temporary state (e.g., expanded rows) to the highest level overlay (e.g., full-screen picker). Always include a visual keyboard hint (`<span class="shortcut">esc</span>`) on dismissal triggers.
