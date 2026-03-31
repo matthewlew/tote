@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-20 - Global Escape Key Management
+**Learning:** For users relying on keyboard navigation, failing to provide an Escape key mechanism to close open states (expanded lists, full-screen modals, or detail views) forces them to manually tab to a 'Back' or 'Close' button, adding severe cognitive and physical friction.
+**Action:** Always implement a global `keydown` listener for the `Escape` key that closes the most specific open state first (e.g., expanded rows > collection details > full-screen modals) and explicitly indicate this functionality via visual `<span class="shortcut">esc</span>` hints on the corresponding UI buttons.
