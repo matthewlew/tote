@@ -1078,7 +1078,7 @@
       <div id="importModeLink" class="import-mode-section">
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
-            autocomplete="off" autocorrect="off" spellcheck="false"
+            autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Google Maps list URL"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
 
@@ -1115,7 +1115,7 @@
       <!-- ── Paste mode ── -->
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
-          <textarea class="import-textarea" id="importPasteArea"
+          <textarea class="import-textarea" id="importPasteArea" aria-label="Paste a list of places"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
@@ -1849,7 +1849,7 @@ function initImport() {
           const opt = document.createElement('label');
           opt.className = 'disambig-option';
           opt.innerHTML = `
-            <input type="checkbox" data-group="${group.name}" data-ci="${ci}" />
+            <input type="checkbox" data-group="${group.name}" data-ci="${ci}" aria-label="${cand.name} at ${cand.desc || 'No address'}" />
             <div>
               <div class="disambig-option-name">${cand.name}</div>
               <div class="disambig-option-addr">${cand.desc || decodeURIComponent(cand.q.replace(/\+/g, ' ')) || 'No address'}</div>
