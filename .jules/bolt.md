@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2026-03-31 - O(N^2) Bottlenecks in Render Loops from String Normalization Closures
+**Learning:** Calling functions that implicitly do array scans and regex string normalization (like `isSavedPlace`) inside `.filter()` or `.forEach()` render loops creates a severe `O(N*M)` performance bottleneck and significant memory overhead from redundant RegExp instantiations.
+**Action:** Always precompute a normalized `Set` of the relevant states (e.g. `savedSet`) before iterating and use `savedSet.has(norm(p.name))` inside the loop to achieve `O(1)` lookups and `O(N+M)` overall time complexity.
