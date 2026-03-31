@@ -2018,7 +2018,15 @@ function renderCollectionDetail(coll) {
     .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
     .sort((a, b) => a.dist - b.dist);
 
-  const savedCount = sorted.filter(p => isSavedPlace(p.name)).length;
+  /* ⚡ Bolt Optimization: O(1) Lookup
+     What: Precompute a normalized Set of saved place names before iterating.
+     Why: Calling isSavedPlace inside loops causes O(N*M) string allocations and array scans.
+     Impact: Reduces time complexity from O(N*M) to O(N+M) and eliminates redundant RegExp instantiations. */
+  const nonAlphaNumRe = /[^a-z0-9]/g;
+  const norm = n => n.toLowerCase().replace(nonAlphaNumRe, '');
+  const savedSet = new Set(PLACES.map(p => norm(p.name)));
+
+  const savedCount = sorted.filter(p => savedSet.has(norm(p.name))).length;
   const allSaved   = savedCount === sorted.length;
 
   detailEl.innerHTML = `
@@ -2043,7 +2051,7 @@ function renderCollectionDetail(coll) {
 
   document.getElementById('btnBookmarkAll').addEventListener('click', () => {
     const toSave = sorted
-      .filter(p => !isSavedPlace(p.name))
+      .filter(p => !isSavedPlace(p.name)) /* Use live state for async handler */
       .map(p => ({
         name:   p.name,
         cat:    p.cat,
@@ -2063,7 +2071,7 @@ function renderCollectionDetail(coll) {
 
   const listEl = document.getElementById('collPlaceList');
   sorted.forEach((p, i) => {
-    const saved = isSavedPlace(p.name);
+    const saved = savedSet.has(norm(p.name));
     const li = document.createElement('li');
     li.className = 'coll-place animate-in';
     li.style.animationDelay = (i * 18) + 'ms';
