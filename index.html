@@ -2013,12 +2013,16 @@ function closeCollection() {
 function renderCollectionDetail(coll) {
   const detailEl = document.getElementById('exploreDetail');
 
+  /* Precompute normalized names of saved places for O(1) lookup in render loop */
+  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const savedSet = new Set(PLACES.map(p => norm(p.name)));
+
   /* Sort places by distance from current location */
   const sorted = coll.places
     .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
     .sort((a, b) => a.dist - b.dist);
 
-  const savedCount = sorted.filter(p => isSavedPlace(p.name)).length;
+  const savedCount = sorted.filter(p => savedSet.has(norm(p.name))).length;
   const allSaved   = savedCount === sorted.length;
 
   detailEl.innerHTML = `
@@ -2063,7 +2067,8 @@ function renderCollectionDetail(coll) {
 
   const listEl = document.getElementById('collPlaceList');
   sorted.forEach((p, i) => {
-    const saved = isSavedPlace(p.name);
+    /* ⚡ Bolt Optimization: Use precomputed O(1) Set lookup inside the render loop */
+    const saved = savedSet.has(norm(p.name));
     const li = document.createElement('li');
     li.className = 'coll-place animate-in';
     li.style.animationDelay = (i * 18) + 'ms';

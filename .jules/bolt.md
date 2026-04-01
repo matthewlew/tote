@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2026-03-16 - Precomputed Sets for O(N^2) render loop bottlenecks
+**Learning:** Using synchronous lookup functions like `Array.some` inside a render loop (e.g. `Array.filter` or `Array.forEach`) creates an O(N^2) bottleneck, especially when the lookup involves expensive string manipulations (`toLowerCase`, `replace`).
+**Action:** Precompute a `Set` of the normalized lookup values *outside* the render loop, then use the O(1) `Set.has()` lookup inside the loop. Note: Always use the live array state for asynchronous event handlers (like click listeners) rather than the precomputed `Set` to prevent stale closures when the global state updates.
