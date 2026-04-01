@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Focus States for Collection Detail Rows
+**Learning:** Even if a custom list container supports keyboard navigation via arrow keys (like `#collPlaceList`), it is confusing and inaccessible if the individual list items (`.coll-place`) do not have `tabindex="0"` set and lack visual focus indicators (`focus-visible`). The user can technically navigate the items programmatically, but they cannot see where they are, and screen readers may not focus the items properly.
+**Action:** Always verify that every custom interactive list item that can be arrowed to also has `tabindex="0"` and an explicit `focus-visible` CSS rule that matches or mirrors the hover state to provide visual parity for keyboard users.

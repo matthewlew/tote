@@ -885,7 +885,10 @@
       align-items: start;
       padding: 9px 20px;
       border-bottom: 1px solid var(--bd-subtle);
+      transition: background 70ms;
     }
+    .coll-place:hover { background: var(--surface); }
+    .coll-place:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; background: var(--surface); }
     .coll-place.animate-in { animation: itemIn 150ms ease both; }
     .coll-p-mid { padding-right: 8px; }
     .coll-save-btn {
@@ -1426,6 +1429,13 @@ function renderList(animate = false) {
           </div>
         </div>
       </div>`;
+    li.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const saveBtn = li.querySelector('.coll-save-btn');
+        if (saveBtn && !saveBtn.disabled) saveBtn.click();
+      }
+    });
 
     listEl.appendChild(li);
   });
@@ -2067,6 +2077,7 @@ function renderCollectionDetail(coll) {
     const li = document.createElement('li');
     li.className = 'coll-place animate-in';
     li.style.animationDelay = (i * 18) + 'ms';
+    li.setAttribute('tabindex', i === 0 ? '0' : '-1');
 
     li.innerHTML = `
       <div class="p-dist" aria-label="${p.dist.toFixed(1)} miles away">
@@ -2119,6 +2130,14 @@ function renderCollectionDetail(coll) {
         }
       });
     }
+
+    li.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const saveBtn = li.querySelector('.coll-save-btn');
+        if (saveBtn && !saveBtn.disabled) saveBtn.click();
+      }
+    });
 
     listEl.appendChild(li);
   });
