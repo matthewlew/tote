@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2025-03-24 - Global Escape Key Navigation
+**Learning:** When adding keyboard navigation, providing an "Escape" hatch to dismiss the current view or return to the previous screen is a crucial accessibility expectation. However, hardcoding the "Back" button's destination (e.g., returning from a global modal like the Neighborhood Picker always to the Location screen) creates frustrating dead-ends.
+**Action:** Implement an explicit history stack (e.g., `st.screenHistory`) to track the user's previous view state and pop the stack to dynamically navigate back. Bind the 'Escape' key globally to dismiss the most specific open state first (expanded row > sub-view > main view), matching natural user expectations.
