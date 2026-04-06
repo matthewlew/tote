@@ -622,9 +622,9 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
     }
+    .import-input:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; background: var(--surface); }
     .import-input::placeholder { color: var(--text-3); }
 
     .import-btn {
@@ -721,11 +721,11 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
       resize: vertical;
       line-height: 1.6;
     }
+    .import-textarea:focus-visible { outline: 1px solid var(--bd); outline-offset: -1px; background: var(--surface); }
     .import-textarea::placeholder { color: var(--text-3); }
 
     /* disambiguation panel */
@@ -1077,7 +1077,7 @@
       <!-- ── Link mode ── -->
       <div id="importModeLink" class="import-mode-section">
         <div class="import-field">
-          <input class="import-input" id="importInput" type="url" inputmode="url"
+          <input class="import-input" id="importInput" type="url" inputmode="url" aria-label="Google Maps list URL"
             autocomplete="off" autocorrect="off" spellcheck="false"
             placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
         </div>
@@ -1115,7 +1115,7 @@
       <!-- ── Paste mode ── -->
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
-          <textarea class="import-textarea" id="importPasteArea"
+          <textarea class="import-textarea" id="importPasteArea" aria-label="Paste your list here"
             placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
         </div>
 
