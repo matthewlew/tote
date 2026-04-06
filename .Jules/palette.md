@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2024-04-06 - Modal Dismissal and Navigation Stack
+**Learning:** Hardcoding a "Back" button's destination (`showScreen('s-location')`) works for linear paths but breaks when users can access a screen (like the Neighborhood Picker) from multiple places (initial load vs. header button). Furthermore, closing modals or navigating back via the `Escape` key is a baseline accessibility expectation, yet it requires carefully prioritizing which view state to dismiss first (e.g., expanded rows > full-screen modals).
+**Action:** When implementing modal or screen navigation, maintain an array-based stack (`screenHistory`) to track the previous state, ensuring `skipHistory` flags prevent infinite back-navigation loops. Always handle `Escape` globally by targeting the most specific open state first, and add visual shortcut hints (`<span class="shortcut">esc</span>`) to the corresponding buttons.
