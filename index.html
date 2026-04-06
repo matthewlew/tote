@@ -70,6 +70,8 @@
     /* ══════════════════════════════════════════
        BASE
     ══════════════════════════════════════════ */
+    *:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+
     html { height: 100%; background: var(--bg); }
 
     body {
@@ -622,7 +624,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
     }
     .import-input::placeholder { color: var(--text-3); }
@@ -721,7 +722,6 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
       display: block;
       resize: vertical;
       line-height: 1.6;
@@ -1001,7 +1001,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1038,12 +1038,12 @@
 
     <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
       <div class="fil-row" id="filters">
-        <button class="fpill active" data-cat="All">All <span class="shortcut">1</span><span class="fpill-n" id="n-All"></span></button>
-        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut">2</span><span class="fpill-n" id="n-Coffee"></span></button>
-        <button class="fpill" data-cat="Food">Food <span class="shortcut">3</span><span class="fpill-n" id="n-Food"></span></button>
-        <button class="fpill" data-cat="Bars">Bars <span class="shortcut">4</span><span class="fpill-n" id="n-Bars"></span></button>
-        <button class="fpill" data-cat="Shops">Shops <span class="shortcut">5</span><span class="fpill-n" id="n-Shops"></span></button>
-        <button class="fpill" data-cat="Culture">Culture <span class="shortcut">6</span><span class="fpill-n" id="n-Culture"></span></button>
+        <button class="fpill active" data-cat="All">All <span class="shortcut" aria-hidden="true">1</span><span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut" aria-hidden="true">2</span><span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" data-cat="Food">Food <span class="shortcut" aria-hidden="true">3</span><span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" data-cat="Bars">Bars <span class="shortcut" aria-hidden="true">4</span><span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" data-cat="Shops">Shops <span class="shortcut" aria-hidden="true">5</span><span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" data-cat="Culture">Culture <span class="shortcut" aria-hidden="true">6</span><span class="fpill-n" id="n-Culture"></span></button>
       </div>
     </div>
   </header>
@@ -1079,7 +1079,7 @@
         <div class="import-field">
           <input class="import-input" id="importInput" type="url" inputmode="url"
             autocomplete="off" autocorrect="off" spellcheck="false"
-            placeholder="https://maps.app.goo.gl/… or maps.google.com/…" />
+            placeholder="https://maps.app.goo.gl/… or maps.google.com/…" aria-label="Google Maps URL" />
         </div>
 
         <button class="import-btn" id="importBtn" disabled>
@@ -1116,7 +1116,7 @@
       <div id="importModePaste" class="import-mode-section" hidden>
         <div class="import-field import-field-area">
           <textarea class="import-textarea" id="importPasteArea"
-            placeholder="Paste your list here — one place per line, or copied directly from Google Maps…"></textarea>
+            placeholder="Paste your list here — one place per line, or copied directly from Google Maps…" aria-label="Paste list"></textarea>
         </div>
 
         <button class="import-btn" id="importPasteBtn" disabled>
@@ -1236,6 +1236,7 @@ const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
 ══════════════════════════════════════════════ */
 const st = {
   screen:   'loading',
+  screenHistory: [],
   tab:      'list',
   cat:      'All',
   openId:   null,
@@ -1271,7 +1272,10 @@ function filteredPlaces() {
 
 function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
 
-function showScreen(id) {
+function showScreen(id, skipHistory = false) {
+  if (!skipHistory && st.screen && st.screen !== id) {
+    st.screenHistory.push(st.screen);
+  }
   ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
     const el = document.getElementById(s);
     if (el) el.hidden = (s !== id);
@@ -1334,8 +1338,11 @@ function renderNeighborhoods() {
         haversine(nbhd.lat, nbhd.lng, p.lat, p.lng) < 2.5
       ).length;
 
+      const isFirst = container.querySelectorAll('.nbhd-item').length === 0;
       const btn = document.createElement('button');
       btn.className = 'nbhd-item';
+      btn.setAttribute('role', 'button');
+      btn.setAttribute('tabindex', isFirst ? '0' : '-1');
       btn.setAttribute('aria-label', `${nbhd.name}, ${nearby} places within 2.5 miles`);
       btn.innerHTML = `
         <span class="nbhd-item-name">${nbhd.name}</span>
@@ -1385,9 +1392,10 @@ function renderList(animate = false) {
     li.dataset.pid = p.id;
     if (animate) li.style.animationDelay = (i * 22) + 'ms';
 
+    const tabindex = i === 0 ? "0" : "-1";
     li.innerHTML = `
       <div class="p-row"
-           tabindex="0" role="button"
+           tabindex="${tabindex}" role="button"
            aria-expanded="false"
            aria-controls="exp-${p.id}"
            data-id="${p.id}">
@@ -1969,11 +1977,11 @@ function renderExploreIndex() {
     near2: nearbyCount(c, 2.5),
   })).sort((a, b) => b.near1 - a.near1 || b.near2 - a.near2);
 
-  sorted.forEach(coll => {
+  sorted.forEach((coll, i) => {
     const card = document.createElement('div');
     card.className = 'coll-card';
     card.setAttribute('role', 'button');
-    card.setAttribute('tabindex', '0');
+    card.setAttribute('tabindex', i === 0 ? '0' : '-1');
     card.setAttribute('aria-label', `${coll.source}: ${coll.title}, ${coll.places.length} places`);
 
     const nearStr = coll.near1 > 0
@@ -2023,7 +2031,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2066,6 +2074,8 @@ function renderCollectionDetail(coll) {
     const saved = isSavedPlace(p.name);
     const li = document.createElement('li');
     li.className = 'coll-place animate-in';
+    li.setAttribute('role', 'button');
+    li.setAttribute('tabindex', i === 0 ? '0' : '-1');
     li.style.animationDelay = (i * 18) + 'ms';
 
     li.innerHTML = `
@@ -2189,6 +2199,21 @@ function bindEvents() {
 
   /* Keyboard Shortcuts */
   document.addEventListener('keydown', e => {
+    /* Escape: Close modals/screens in order of specificity */
+    if (e.key === 'Escape') {
+      if (st.openId !== null) {
+        toggleItem(st.openId);
+      } else if (!document.getElementById('importDisambig').hidden) {
+        document.getElementById('importDisambig').hidden = true;
+      } else if (!document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+      } else if (st.screenHistory.length > 0) {
+        const prev = st.screenHistory.pop();
+        showScreen(prev, true);
+      }
+      return;
+    }
+
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
@@ -2254,6 +2279,8 @@ function bindEvents() {
 
       const nextEl = focusable[idx];
       if (nextEl) {
+        if (active) active.setAttribute('tabindex', '-1');
+        nextEl.setAttribute('tabindex', '0');
         nextEl.focus();
         nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
@@ -2275,6 +2302,8 @@ function bindEvents() {
 
        const nextEl = focusable[idx];
        if (nextEl) {
+         if (active) active.setAttribute('tabindex', '-1');
+         nextEl.setAttribute('tabindex', '0');
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
        }
@@ -2296,9 +2325,17 @@ function bindEvents() {
 
        const nextEl = focusable[idx];
        if (nextEl) {
+        if (active) active.setAttribute('tabindex', '-1');
+        nextEl.setAttribute('tabindex', '0');
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
        }
+    } else if (e.key === 'Enter' || e.key === ' ') {
+      /* Explicit trigger for nbhd-item or coll-card that might have focus */
+      if (e.target.matches('.nbhd-item') || e.target.matches('.coll-card')) {
+        e.preventDefault();
+        e.target.click();
+      }
     }
   });
 }
