@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2026-03-15 - Stale closures in localized caching for async event handlers
+**Learning:** When using localized caching (like a precomputed `Set`) to optimize an O(N*M) render loop (e.g. precomputing `isSavedPlace` lookups), avoid capturing this cached state inside asynchronous event listeners (like click handlers) defined within that same loop. Doing so captures the state at render-time, creating a stale closure that prevents the handler from reading the latest, live application state when later triggered.
+**Action:** Use the local cache solely for synchronous loop rendering, but continue to use live global functions (like `isSavedPlace()`) or live global state inside async event listeners attached within that loop to prevent desync bugs.
