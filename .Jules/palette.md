@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+## 2026-04-07 - Roving Tabindex & History Navigation
+**What:** Implemented a screen history stack, `Escape` key modal dismissal, and roving `tabindex` for interactive lists.
+**Why:** Improves keyboard accessibility by enabling graceful backward navigation without mouse clicks and prevents 'tab fatigue' by keeping list elements out of the natural tab sequence until actively focused with arrow keys.
+**Accessibility:** Ensures proper focus management and semantic interactive states for keyboard users.
