@@ -24,6 +24,8 @@
       -webkit-tap-highlight-color: transparent;
     }
 
+    *:focus-visible { outline: 2px solid var(--bd); outline-offset: 2px; }
+
     /* ══════════════════════════════════════════
        DESIGN TOKENS — LIGHT
     ══════════════════════════════════════════ */
@@ -622,7 +624,7 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
+
       display: block;
     }
     .import-input::placeholder { color: var(--text-3); }
@@ -721,7 +723,7 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
+
       display: block;
       resize: vertical;
       line-height: 1.6;
@@ -991,7 +993,7 @@
   <div class="loc-body">
     <h1 class="loc-title">Find what's close to you right now</h1>
     <p class="loc-sub">Tote sorts your saved places by walking distance so you can act on your list — not just grow it.</p>
-    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut">l</span> <span class="arr">→</span></span></button>
+    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut" aria-hidden="true">l</span> <span class="arr">→</span></span></button>
     <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr">→</span></button>
   </div>
 </div>
@@ -1001,7 +1003,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1038,12 +1040,12 @@
 
     <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
       <div class="fil-row" id="filters">
-        <button class="fpill active" data-cat="All">All <span class="shortcut">1</span><span class="fpill-n" id="n-All"></span></button>
-        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut">2</span><span class="fpill-n" id="n-Coffee"></span></button>
-        <button class="fpill" data-cat="Food">Food <span class="shortcut">3</span><span class="fpill-n" id="n-Food"></span></button>
-        <button class="fpill" data-cat="Bars">Bars <span class="shortcut">4</span><span class="fpill-n" id="n-Bars"></span></button>
-        <button class="fpill" data-cat="Shops">Shops <span class="shortcut">5</span><span class="fpill-n" id="n-Shops"></span></button>
-        <button class="fpill" data-cat="Culture">Culture <span class="shortcut">6</span><span class="fpill-n" id="n-Culture"></span></button>
+        <button class="fpill active" data-cat="All">All <span class="shortcut" aria-hidden="true">1</span><span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut" aria-hidden="true">2</span><span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" data-cat="Food">Food <span class="shortcut" aria-hidden="true">3</span><span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" data-cat="Bars">Bars <span class="shortcut" aria-hidden="true">4</span><span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" data-cat="Shops">Shops <span class="shortcut" aria-hidden="true">5</span><span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" data-cat="Culture">Culture <span class="shortcut" aria-hidden="true">6</span><span class="fpill-n" id="n-Culture"></span></button>
       </div>
     </div>
   </header>
@@ -1236,6 +1238,7 @@ const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
 ══════════════════════════════════════════════ */
 const st = {
   screen:   'loading',
+  screenHistory: [],
   tab:      'list',
   cat:      'All',
   openId:   null,
@@ -1271,7 +1274,10 @@ function filteredPlaces() {
 
 function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
 
-function showScreen(id) {
+function showScreen(id, skipHistory = false) {
+  if (!skipHistory && st.screen && st.screen !== id && st.screen !== 's-loading' && st.screen !== 'loading') {
+    st.screenHistory.push(st.screen);
+  }
   ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
     const el = document.getElementById(s);
     if (el) el.hidden = (s !== id);
@@ -1329,13 +1335,14 @@ function renderNeighborhoods() {
     lbl.textContent = b;
     container.appendChild(lbl);
 
-    NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
+    NEIGHBORHOODS.filter(n => n.borough === b).forEach((nbhd, i) => {
       const nearby = PLACES.filter(p =>
         haversine(nbhd.lat, nbhd.lng, p.lat, p.lng) < 2.5
       ).length;
 
       const btn = document.createElement('button');
       btn.className = 'nbhd-item';
+      btn.tabIndex = (i === 0 && b === boroughs[0]) ? 0 : -1;
       btn.setAttribute('aria-label', `${nbhd.name}, ${nearby} places within 2.5 miles`);
       btn.innerHTML = `
         <span class="nbhd-item-name">${nbhd.name}</span>
@@ -1387,7 +1394,7 @@ function renderList(animate = false) {
 
     li.innerHTML = `
       <div class="p-row"
-           tabindex="0" role="button"
+           tabindex="${i === 0 ? '0' : '-1'}" role="button"
            aria-expanded="false"
            aria-controls="exp-${p.id}"
            data-id="${p.id}">
@@ -1969,11 +1976,11 @@ function renderExploreIndex() {
     near2: nearbyCount(c, 2.5),
   })).sort((a, b) => b.near1 - a.near1 || b.near2 - a.near2);
 
-  sorted.forEach(coll => {
+  sorted.forEach((coll, i) => {
     const card = document.createElement('div');
     card.className = 'coll-card';
     card.setAttribute('role', 'button');
-    card.setAttribute('tabindex', '0');
+    card.setAttribute('tabindex', i === 0 ? '0' : '-1');
     card.setAttribute('aria-label', `${coll.source}: ${coll.title}, ${coll.places.length} places`);
 
     const nearStr = coll.near1 > 0
@@ -2023,7 +2030,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2081,6 +2088,7 @@ function renderCollectionDetail(coll) {
         <div class="p-tag">${p.tag}</div>
       </div>
       <button class="coll-save-btn${saved ? ' saved' : ''}"
+              tabindex="${i === 0 ? '0' : '-1'}"
               aria-label="${saved ? p.name + ' already saved' : 'Save ' + p.name}"
               ${saved ? 'disabled' : ''}>
         ${saved ? '✓' : '+ Save'}
@@ -2235,12 +2243,25 @@ function bindEvents() {
       return;
     }
 
+    /* Escape handling */
+    if (e.key === 'Escape') {
+      if (st.openId !== null) {
+        toggleItem(st.openId);
+      } else if (!document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+      } else if (st.screenHistory.length > 0) {
+        const prevScreen = st.screenHistory.pop();
+        showScreen(prevScreen, true);
+      }
+      return;
+    }
+
     /* List item navigation: Up/Down arrows */
     if (st.screen === 's-app' && (st.tab === 'list' || (st.tab === 'explore' && !document.getElementById('exploreDetail').hidden)) && (e.key === 'ArrowUp' || e.key === 'ArrowDown')) {
       e.preventDefault();
       const container = st.tab === 'list' ? document.getElementById('list') : document.getElementById('collPlaceList');
       if (!container) return;
-      const focusable = Array.from(container.querySelectorAll('.p-row, .coll-place'));
+      const focusable = Array.from(container.querySelectorAll('.p-row, .coll-save-btn:not([disabled])'));
       if (!focusable.length) return;
 
       const active = document.activeElement;
@@ -2254,6 +2275,8 @@ function bindEvents() {
 
       const nextEl = focusable[idx];
       if (nextEl) {
+        if (active && focusable.includes(active)) active.tabIndex = -1;
+        nextEl.tabIndex = 0;
         nextEl.focus();
         nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
@@ -2275,6 +2298,8 @@ function bindEvents() {
 
        const nextEl = focusable[idx];
        if (nextEl) {
+         if (active && focusable.includes(active)) active.tabIndex = -1;
+         nextEl.tabIndex = 0;
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
        }
@@ -2296,6 +2321,8 @@ function bindEvents() {
 
        const nextEl = focusable[idx];
        if (nextEl) {
+         if (active && focusable.includes(active)) active.tabIndex = -1;
+         nextEl.tabIndex = 0;
          nextEl.focus();
          nextEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
        }
