@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - History Stack vs Explicit Navigation
+**Learning:** When users interact with a single-page app that uses overlapping modals or panels (like a neighborhood picker), hardcoding back navigation (e.g., `showScreen('s-location')`) breaks context. If they enter the picker from the main app and hit back, they shouldn't be dumped back at the onboarding screen.
+**Action:** Use a simple view history stack (`screenHistory`) in state to track navigation flow. When providing 'Back' actions or 'Escape' key handlers, explicitly prioritize popping this stack over hardcoded routes to preserve spatial context.
