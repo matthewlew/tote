@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2024-04-08 - O(N^2) String Manipulation Bottleneck in Vanilla JS Renders
+**Learning:** Found a major bottleneck in `index.html` where rendering a long collection list (e.g., `renderCollectionDetail`) was repeatedly calling a helper function (`isSavedPlace`) inside both `filter()` and `forEach()` loops. The helper performed regex string normalization and full array searches for every single item, resulting in an O(N*M) bottleneck.
+**Action:** When rendering long lists in vanilla JS where items need to be cross-referenced against a global state array, always precompute a normalized hash map (e.g., a `Set` of IDs or normalized strings) outside the loop for O(1) lookups instead of invoking complex helper functions repeatedly.
