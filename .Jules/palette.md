@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-04-09 - Escape Key Navigation for Overlays
+**Learning:** Complex web applications that rely heavily on single-page overlays, modals, and expanded states often require users to manually click "Back" or "Close" buttons. For keyboard users, this is a tedious and inaccessible experience. Implementing a global `Escape` key handler that intelligently dismisses overlays based on their active state (from most specific to least specific) significantly improves navigation flow. Adding an `esc` visual hint, wrapped in `aria-hidden="true"`, ensures screen readers do not announce confusing text.
+**Action:** Always implement explicit `Escape` key handling in global keydown listeners to consistently dismiss overlays, prioritizing the most specific open state first (e.g., expanded rows > collection details > full-screen modals). Provide visual shortcut hints (`<span class="shortcut">esc</span>`) with `aria-hidden="true"` on the corresponding "Back" or "Close" buttons.
