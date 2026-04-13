@@ -1951,11 +1951,6 @@ function nearbyCount(coll, radius) {
   ).length;
 }
 
-function isSavedPlace(name) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
-  return PLACES.some(p => norm(p.name) === norm(name));
-}
-
 function renderExploreIndex() {
   const listEl  = document.getElementById('collList');
   const nEl     = document.getElementById('exploreResN');
@@ -2018,7 +2013,10 @@ function renderCollectionDetail(coll) {
     .map(p => ({ ...p, dist: haversine(st.refLat, st.refLng, p.lat, p.lng) }))
     .sort((a, b) => a.dist - b.dist);
 
-  const savedCount = sorted.filter(p => isSavedPlace(p.name)).length;
+  const normName = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const savedNorms = new Set(PLACES.map(p => normName(p.name)));
+
+  const savedCount = sorted.filter(p => savedNorms.has(normName(p.name))).length;
   const allSaved   = savedCount === sorted.length;
 
   detailEl.innerHTML = `
@@ -2042,8 +2040,10 @@ function renderCollectionDetail(coll) {
   document.getElementById('btnCollBack').addEventListener('click', closeCollection);
 
   document.getElementById('btnBookmarkAll').addEventListener('click', () => {
+    /* Recompute savedNorms dynamically in the listener to prevent stale closure bugs */
+    const currentSavedNorms = new Set(PLACES.map(p => normName(p.name)));
     const toSave = sorted
-      .filter(p => !isSavedPlace(p.name))
+      .filter(p => !currentSavedNorms.has(normName(p.name)))
       .map(p => ({
         name:   p.name,
         cat:    p.cat,
@@ -2063,7 +2063,7 @@ function renderCollectionDetail(coll) {
 
   const listEl = document.getElementById('collPlaceList');
   sorted.forEach((p, i) => {
-    const saved = isSavedPlace(p.name);
+    const saved = savedNorms.has(normName(p.name));
     const li = document.createElement('li');
     li.className = 'coll-place animate-in';
     li.style.animationDelay = (i * 18) + 'ms';
