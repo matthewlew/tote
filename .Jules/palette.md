@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-04-15 - Micro-UX Improvements: ARIA and Focus States
+**Learning:** Hardcoded text icons (like `→`) and keyboard shortcut hints in UI elements cause confusing readouts for screen-reader users. Also, custom toggle buttons (`.fpill`) must communicate their active state semantically via `aria-pressed`, and removing default `outline: none;` from inputs is essential to maintain keyboard navigation visibility.
+**Action:** Always apply `aria-hidden="true"` to purely visual text elements (like arrows or shortcut keys). Ensure custom toggle buttons properly initialize and dynamically toggle `aria-pressed` alongside their active CSS classes. Never suppress focus outlines on inputs unless providing a custom `focus-visible` ring.

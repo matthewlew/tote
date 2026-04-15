@@ -622,7 +622,7 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
+
       display: block;
     }
     .import-input::placeholder { color: var(--text-3); }
@@ -721,7 +721,7 @@
       background: transparent;
       color: var(--text);
       border: none;
-      outline: none;
+
       display: block;
       resize: vertical;
       line-height: 1.6;
@@ -991,8 +991,8 @@
   <div class="loc-body">
     <h1 class="loc-title">Find what's close to you right now</h1>
     <p class="loc-sub">Tote sorts your saved places by walking distance so you can act on your list — not just grow it.</p>
-    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut">l</span> <span class="arr">→</span></span></button>
-    <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr">→</span></button>
+    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut" aria-hidden="true">l</span> <span class="arr" aria-hidden="true">→</span></span></button>
+    <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr" aria-hidden="true">→</span></button>
   </div>
 </div>
 
@@ -1038,12 +1038,12 @@
 
     <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
       <div class="fil-row" id="filters">
-        <button class="fpill active" data-cat="All">All <span class="shortcut">1</span><span class="fpill-n" id="n-All"></span></button>
-        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut">2</span><span class="fpill-n" id="n-Coffee"></span></button>
-        <button class="fpill" data-cat="Food">Food <span class="shortcut">3</span><span class="fpill-n" id="n-Food"></span></button>
-        <button class="fpill" data-cat="Bars">Bars <span class="shortcut">4</span><span class="fpill-n" id="n-Bars"></span></button>
-        <button class="fpill" data-cat="Shops">Shops <span class="shortcut">5</span><span class="fpill-n" id="n-Shops"></span></button>
-        <button class="fpill" data-cat="Culture">Culture <span class="shortcut">6</span><span class="fpill-n" id="n-Culture"></span></button>
+        <button class="fpill active" aria-pressed="true" data-cat="All">All <span class="shortcut" aria-hidden="true">1</span><span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" aria-pressed="false" data-cat="Coffee">Coffee <span class="shortcut" aria-hidden="true">2</span><span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" aria-pressed="false" data-cat="Food">Food <span class="shortcut" aria-hidden="true">3</span><span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" aria-pressed="false" data-cat="Bars">Bars <span class="shortcut" aria-hidden="true">4</span><span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" aria-pressed="false" data-cat="Shops">Shops <span class="shortcut" aria-hidden="true">5</span><span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" aria-pressed="false" data-cat="Culture">Culture <span class="shortcut" aria-hidden="true">6</span><span class="fpill-n" id="n-Culture"></span></button>
       </div>
     </div>
   </header>
@@ -1084,7 +1084,7 @@
 
         <button class="import-btn" id="importBtn" disabled>
           <span id="importBtnLabel">Fetch List</span>
-          <span>→</span>
+          <span aria-hidden="true">→</span>
         </button>
 
         <div class="import-status" id="importStatus" role="status"></div>
@@ -1121,7 +1121,7 @@
 
         <button class="import-btn" id="importPasteBtn" disabled>
           <span id="importPasteBtnLabel">Parse &amp; Import</span>
-          <span>→</span>
+          <span aria-hidden="true">→</span>
         </button>
 
         <div class="import-status" id="importPasteStatus" role="status"></div>
@@ -1133,7 +1133,7 @@
           <div id="disambigList"></div>
           <button class="import-btn" id="disambigConfirm">
             <span id="disambigConfirmLabel">Add Selected</span>
-            <span>→</span>
+            <span aria-hidden="true">→</span>
           </button>
         </div>
       </div>
@@ -1341,7 +1341,7 @@ function renderNeighborhoods() {
         <span class="nbhd-item-name">${nbhd.name}</span>
         <span class="nbhd-item-right">
           <span class="nbhd-item-count">${nearby} within ~2.5 mi</span>
-          <span class="nbhd-arr">→</span>
+          <span class="nbhd-arr" aria-hidden="true">→</span>
         </span>`;
       btn.addEventListener('click', () => selectNeighborhood(nbhd));
       container.appendChild(btn);
@@ -1988,7 +1988,7 @@ function renderExploreIndex() {
       <div class="coll-blurb">${coll.blurb}</div>
       <div class="coll-footer">
         <span class="coll-nearby">${nearStr}</span>
-        <span class="coll-count">${coll.places.length} places →</span>
+        <span class="coll-count">${coll.places.length} places <span aria-hidden="true">→</span></span>
       </div>`;
 
     card.addEventListener('click', () => openCollection(coll));
@@ -2182,7 +2182,7 @@ function bindEvents() {
     st.openId = null;
     document.querySelectorAll('.fpill').forEach(b => {
       b.classList.toggle('active', b.dataset.cat === st.cat);
-      b.setAttribute('aria-pressed', b.dataset.cat === st.cat);
+      b.setAttribute('aria-pressed', b.dataset.cat === st.cat ? 'true' : 'false');
     });
     renderList(false);
   });
@@ -2224,7 +2224,7 @@ function bindEvents() {
         st.openId = null;
         document.querySelectorAll('.fpill').forEach(b => {
           b.classList.toggle('active', b.dataset.cat === st.cat);
-          b.setAttribute('aria-pressed', b.dataset.cat === st.cat);
+          b.setAttribute('aria-pressed', b.dataset.cat === st.cat ? 'true' : 'false');
         });
         const activePill = document.querySelector(`.fpill[data-cat="${cat}"]`);
         if (activePill) {
