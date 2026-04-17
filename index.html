@@ -1464,11 +1464,13 @@ function toggleItem(id) {
    COUNTS + FILTER
 ══════════════════════════════════════════════ */
 function renderCounts() {
-  const all = sortedPlaces();
+  const counts = { All: PLACES.length };
+  PLACES.forEach(p => {
+    counts[p.cat] = (counts[p.cat] || 0) + 1;
+  });
   CATS.forEach(c => {
-    const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
     const el = document.getElementById('n-' + c);
-    if (el) el.textContent = n;
+    if (el) el.textContent = counts[c] || 0;
   });
 }
 
