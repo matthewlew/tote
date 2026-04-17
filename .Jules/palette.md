@@ -17,3 +17,6 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+## 2026-03-18 - Escape Key Accessibility & History Tracking
+**Learning:** Full-screen overlays and modals without robust `Escape` key handling trap keyboard users. Furthermore, simple "close" functions often break back-navigation patterns if they hardcode the return screen, creating infinite loops or trapping the user in the wrong state if they navigated from deeply nested views.
+**Action:** Always implement a global `Escape` listener that dismisses the most specific open state first (e.g. expanded list rows > details panel > full overlays). Ensure state navigation tracks a history stack (`st.screenHistory`) to support accurate back-navigation. Provide visual indicators (`<span class="shortcut">esc</span>`) on relevant back/close buttons.
