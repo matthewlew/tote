@@ -1322,12 +1322,13 @@ function updateLocUI() {
 function renderNeighborhoods() {
   const container = document.getElementById('nbhdList');
   container.innerHTML = '';
+  const fragment = document.createDocumentFragment();
   const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
   boroughs.forEach(b => {
     const lbl = document.createElement('div');
     lbl.className = 'nbhd-borough-label';
     lbl.textContent = b;
-    container.appendChild(lbl);
+    fragment.appendChild(lbl);
 
     NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
       const nearby = PLACES.filter(p =>
@@ -1344,9 +1345,10 @@ function renderNeighborhoods() {
           <span class="nbhd-arr">→</span>
         </span>`;
       btn.addEventListener('click', () => selectNeighborhood(nbhd));
-      container.appendChild(btn);
+      fragment.appendChild(btn);
     });
   });
+  container.appendChild(fragment);
 }
 
 function selectNeighborhood(nbhd) {
@@ -1379,6 +1381,7 @@ function renderList(animate = false) {
   if (!items.length) { emptyEl.classList.add('show'); return; }
   emptyEl.classList.remove('show');
 
+  const fragment = document.createDocumentFragment();
   items.forEach((p, i) => {
     const li = document.createElement('li');
     li.className = 'place' + (animate ? ' animate-in' : '');
@@ -1427,8 +1430,9 @@ function renderList(animate = false) {
         </div>
       </div>`;
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
+  listEl.appendChild(fragment);
 
 }
 
@@ -1841,6 +1845,7 @@ function initImport() {
       /* Show disambiguation UI */
       disambigEl.hidden = false;
       disambigList.innerHTML = '';
+      const fragment = document.createDocumentFragment();
       ambiguous.forEach(group => {
         const groupEl = document.createElement('div');
         groupEl.className = 'disambig-group';
@@ -1859,8 +1864,9 @@ function initImport() {
           });
           groupEl.appendChild(opt);
         });
-        disambigList.appendChild(groupEl);
+        fragment.appendChild(groupEl);
       });
+      disambigList.appendChild(fragment);
 
       /* Store pending unambiguous so we can add them together on confirm */
       disambigBtn._pending = { unambiguous, ambiguous, dupCount };
@@ -1969,6 +1975,7 @@ function renderExploreIndex() {
     near2: nearbyCount(c, 2.5),
   })).sort((a, b) => b.near1 - a.near1 || b.near2 - a.near2);
 
+  const fragment = document.createDocumentFragment();
   sorted.forEach(coll => {
     const card = document.createElement('div');
     card.className = 'coll-card';
@@ -1995,8 +2002,9 @@ function renderExploreIndex() {
     card.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCollection(coll); }
     });
-    listEl.appendChild(card);
+    fragment.appendChild(card);
   });
+  listEl.appendChild(fragment);
 }
 
 function openCollection(coll) {
@@ -2062,6 +2070,7 @@ function renderCollectionDetail(coll) {
   });
 
   const listEl = document.getElementById('collPlaceList');
+  const fragment = document.createDocumentFragment();
   sorted.forEach((p, i) => {
     const saved = isSavedPlace(p.name);
     const li = document.createElement('li');
@@ -2120,8 +2129,9 @@ function renderCollectionDetail(coll) {
       });
     }
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
+  listEl.appendChild(fragment);
 }
 
 /* ══════════════════════════════════════════════
