@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2026-03-16 - O(N log N) Sorting in Basic Aggregation
+**Learning:** Using a global helper function like `sortedPlaces()` (which inherently calculates O(N) Haversine distances and performs O(N log N) array sorting) to perform basic aggregation tasks like counting category totals introduces severe and unnecessary performance drops.
+**Action:** When basic aggregation or counting is required, avoid reusing sorting functions. Perform a single O(N) iteration over the base data array using a hash map or counter object to optimize execution time without triggering expensive computations.
