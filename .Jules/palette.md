@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Sequential Overlay Dismissal & Screen History
+**Learning:** Hardcoded "Back" buttons in overlays like the neighborhood picker cause users to lose their state context if they entered from somewhere unexpected (e.g. from the app header instead of initial onboarding). Furthermore, missing `Escape` key support for overlays traps keyboard-only users.
+**Action:** Implement an array-based history stack (`st.screenHistory`) to track previous screens dynamically. Add sequential `Escape` key handling that dismisses foreground elements first (expanded list items) before background overlays (modals), and provide visual shortcut hints (`<span class="shortcut" aria-hidden="true">esc</span>`) on dismissal buttons.
