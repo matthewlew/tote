@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2025-04-21 - Visual Indicators and Accessibility Tree
+**Learning:** Decorative and structural UI elements like keyboard shortcut hints (`<span class="shortcut">1</span>`) and directional arrows (`<span class="arr">→</span>`, `<span class="nbhd-arr">→</span>`) are often embedded inside focusable elements (like buttons) to aid visual users. However, without `aria-hidden="true"`, screen readers announce these literal characters alongside the button's text, causing a confusing and jumbled auditory experience (e.g. "All 1", "Browse by neighborhood right arrow").
+**Action:** Always apply `aria-hidden="true"` to any span or inline visual element that provides visual structure, hints, or icons which do not contribute meaningful text to the core action, ensuring a clean and precise screen reader experience.
