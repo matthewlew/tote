@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Keyboard Accessibility for Overlay Dismissal
+**Learning:** Full-screen overlays and modal-like views (like the Neighborhood Picker and Collection Detail view) trap keyboard users if they do not explicitly support the `Escape` key for dismissal. Additionally, when dismissing multiple nested or layered overlays, an explicit dismissal hierarchy is required to avoid unintentionally navigating back or closing background layers before foreground layers. A robust `screenHistory` stack is also essential for reliable back navigation.
+**Action:** Always implement a global `Escape` key handler in custom vanilla JS applications to manage overlay dismissal in a strict visual hierarchy. Furthermore, implement an array-based history stack (e.g., `st.screenHistory`) to track view states, and provide visible shortcut hints (`<span class="shortcut">esc</span>`) on primary "Back" or "Close" buttons.
