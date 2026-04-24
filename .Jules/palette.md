@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Escape Key Overlay Priority and Screen Reader Noise
+**Learning:** When building an app with multiple overlapping layers (like full-screen pickers, detail views, and expandable list items), failing to manage explicit `Escape` key priorities leads to frustrating user experiences where background items are closed before foreground items. Furthermore, adding visual keyboard shortcut hints (like `<span class="shortcut">esc</span>`) without `aria-hidden="true"` pollutes the screen reader experience by interjecting confusing meta-text into the middle of actionable labels.
+**Action:** Always implement explicit 'Escape' key handling in global keydown listeners to dismiss overlays in a strict visual priority order (from top-most UI element downwards). Ensure any non-essential visual hints or structural decorators (like arrows or shortcut symbols) are explicitly removed from the accessibility tree using `aria-hidden="true"`.
