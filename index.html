@@ -1001,7 +1001,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack">← Back <span><span class="shortcut" aria-hidden="true">esc</span></span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1244,6 +1244,7 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  screenHistory: [],
 };
 
 /* ══════════════════════════════════════════════
@@ -1272,11 +1273,23 @@ function filteredPlaces() {
 function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
 
 function showScreen(id) {
+  if (st.screen && !st.screen.includes('loading') && st.screen !== id) {
+    st.screenHistory.push(st.screen);
+  }
   ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
     const el = document.getElementById(s);
     if (el) el.hidden = (s !== id);
   });
   st.screen = id;
+}
+
+function goBack() {
+  const prev = st.screenHistory.length ? st.screenHistory.pop() : 's-location';
+  ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
+    const el = document.getElementById(s);
+    if (el) el.hidden = (s !== prev);
+  });
+  st.screen = prev;
 }
 
 /* ══════════════════════════════════════════════
@@ -2023,7 +2036,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack">← Back <span><span class="shortcut" aria-hidden="true">esc</span></span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2160,7 +2173,7 @@ function bindEvents() {
     showScreen('s-nbhd');
   });
 
-  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+  document.getElementById('btnNbhdBack').addEventListener('click', goBack);
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
     renderNeighborhoods();
@@ -2191,6 +2204,19 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Escape to close overlays in priority order */
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      if (st.screen === 's-nbhd') {
+        goBack();
+      } else if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+      } else if (st.openId !== null) {
+        toggleItem(st.openId);
+      }
+      return;
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
