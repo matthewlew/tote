@@ -1464,11 +1464,22 @@ function toggleItem(id) {
    COUNTS + FILTER
 ══════════════════════════════════════════════ */
 function renderCounts() {
-  const all = sortedPlaces();
+  // ⚡ Bolt: Replaced expensive sortedPlaces() call and O(N*M) nested .filter()
+  // with a single O(N) iteration using a hash map for improved performance.
+  const counts = { 'All': PLACES.length };
   CATS.forEach(c => {
-    const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
+    if (c !== 'All') counts[c] = 0;
+  });
+
+  PLACES.forEach(p => {
+    if (counts[p.cat] !== undefined) {
+      counts[p.cat]++;
+    }
+  });
+
+  CATS.forEach(c => {
     const el = document.getElementById('n-' + c);
-    if (el) el.textContent = n;
+    if (el) el.textContent = counts[c];
   });
 }
 
