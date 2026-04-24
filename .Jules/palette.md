@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-20 - Global Escape Key Handling & History Navigation
+**Learning:** Hardcoding 'Back' buttons to a specific screen (e.g., `showScreen('s-location')`) breaks the mental model when users arrive from different entry points. Furthermore, overlays (like Neighborhood picker, Collection detail, or expanded list items) that lack Escape key support trap keyboard users, violating accessibility expectations for modal-like elements.
+**Action:** Always implement a history stack (`screenHistory.push(screen)`) to allow dynamic, context-aware back navigation. Establish a hierarchical global `keydown` listener for the 'Escape' key that dismisses overlays in sequence (from full-screen pickers to individual item expansions) using `e.preventDefault()`, and pair this with visual keyboard shortcuts (`<span class="shortcut">esc</span>`) on the corresponding 'Back' or 'Close' buttons.
