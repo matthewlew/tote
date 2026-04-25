@@ -1,17 +1,10 @@
-1. Add Brooklyn neighborhoods to the app
-   - I need to find all Brooklyn neighborhoods and create JSON files for each of them with some placeholder data or real data. Let's create a script to generate JSON files for Brooklyn neighborhoods.
-   - Update `categories` array in `index.html` to include all these new Brooklyn neighborhood categories.
-
-2. Add geolocation feature
-   - Add a "Locate Me" button to the UI, maybe near the category navigation or in a separate location control area.
-   - Implement the geolocation logic using the browser's Geolocation API (`navigator.geolocation.getCurrentPosition`).
-   - Define a list of coordinates (latitude, longitude) for each Brooklyn neighborhood.
-   - When the user clicks "Locate Me", get their coordinates and find the closest Brooklyn neighborhood using the Haversine formula or a simple distance calculation.
-   - If the user is outside NYC (we can define a bounding box or maximum distance from NYC center), show a message saying "Only for NYC neighborhoods".
-   - If the user is within NYC, switch to the closest neighborhood category.
-   - Also allow users to "put in a neighborhood" (perhaps a simple search or dropdown if the list gets too long).
-
-3. Pre commit steps
-   - Run `pre_commit_instructions` and follow the required checks.
-
-4. Submit the changes.
+1. Add an "Escape" key handler in the global `keydown` event listener in `index.html` to allow keyboard users to dismiss overlays and active items, prioritizing full-screen overlays first:
+   - Dismiss the `#s-nbhd` screen by showing `#s-location` and focusing on `#btnBrowseNbhd`.
+   - If not in `#s-nbhd`, check if an `exploreDetail` collection is open (not hidden), and if so, close it via `closeCollection()`. Re-focus the `.coll-card` by finding the element whose `.coll-title` matches the title inside `.coll-detail-title`.
+   - If no full-screen overlays are active, check `st.openId` to see if a list item is expanded. If so, close it via `toggleItem(st.openId)`, returning focus to its `.p-row` header.
+2. Add a visual `<span class="shortcut" aria-hidden="true">esc</span>` to the "#btnNbhdBack" button.
+3. Add a visual `<span class="shortcut" aria-hidden="true">esc</span>` to the "#btnCollBack" button inside `renderCollectionDetail`.
+4. Verify file changes in `index.html` using `git diff index.html`.
+5. Write a temporary Playwright script to verify the Escape key behavior visually and save screenshots and a video to `/home/jules/verification/`.
+6. Execute all existing automated test scripts: `python3 verify.py`, `python3 verify_keypress.py`, `python3 verify_mobile.py`, `python3 verify_expand.py`, `python3 test_empty_state.py`, and `python3 test_bg.py`.
+7. Complete pre-commit steps to ensure proper testing, verification, review, and reflection are done.
