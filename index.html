@@ -991,8 +991,8 @@
   <div class="loc-body">
     <h1 class="loc-title">Find what's close to you right now</h1>
     <p class="loc-sub">Tote sorts your saved places by walking distance so you can act on your list — not just grow it.</p>
-    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut">l</span> <span class="arr">→</span></span></button>
-    <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr">→</span></button>
+    <button class="loc-btn" id="btnEnableLoc">Enable location <span><span class="shortcut" aria-hidden="true">l</span> <span class="arr" aria-hidden="true">→</span></span></button>
+    <button class="loc-btn ghost" id="btnBrowseNbhd">Browse by neighborhood <span class="arr" aria-hidden="true">→</span></button>
   </div>
 </div>
 
@@ -1001,7 +1001,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1038,12 +1038,12 @@
 
     <div class="hd-filters" id="hdFilters" role="group" aria-label="Filter by category">
       <div class="fil-row" id="filters">
-        <button class="fpill active" data-cat="All">All <span class="shortcut">1</span><span class="fpill-n" id="n-All"></span></button>
-        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut">2</span><span class="fpill-n" id="n-Coffee"></span></button>
-        <button class="fpill" data-cat="Food">Food <span class="shortcut">3</span><span class="fpill-n" id="n-Food"></span></button>
-        <button class="fpill" data-cat="Bars">Bars <span class="shortcut">4</span><span class="fpill-n" id="n-Bars"></span></button>
-        <button class="fpill" data-cat="Shops">Shops <span class="shortcut">5</span><span class="fpill-n" id="n-Shops"></span></button>
-        <button class="fpill" data-cat="Culture">Culture <span class="shortcut">6</span><span class="fpill-n" id="n-Culture"></span></button>
+        <button class="fpill active" data-cat="All">All <span class="shortcut" aria-hidden="true">1</span><span class="fpill-n" id="n-All"></span></button>
+        <button class="fpill" data-cat="Coffee">Coffee <span class="shortcut" aria-hidden="true">2</span><span class="fpill-n" id="n-Coffee"></span></button>
+        <button class="fpill" data-cat="Food">Food <span class="shortcut" aria-hidden="true">3</span><span class="fpill-n" id="n-Food"></span></button>
+        <button class="fpill" data-cat="Bars">Bars <span class="shortcut" aria-hidden="true">4</span><span class="fpill-n" id="n-Bars"></span></button>
+        <button class="fpill" data-cat="Shops">Shops <span class="shortcut" aria-hidden="true">5</span><span class="fpill-n" id="n-Shops"></span></button>
+        <button class="fpill" data-cat="Culture">Culture <span class="shortcut" aria-hidden="true">6</span><span class="fpill-n" id="n-Culture"></span></button>
       </div>
     </div>
   </header>
@@ -1244,6 +1244,9 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  screenHistory: [],
+  focusReturnNbhd: null,
+  focusReturnExplore: null,
 };
 
 /* ══════════════════════════════════════════════
@@ -1272,11 +1275,21 @@ function filteredPlaces() {
 function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
 
 function showScreen(id) {
+  if (st.screen !== 's-loading' && st.screen !== 'loading' && st.screen !== id) {
+    st.screenHistory.push(st.screen);
+  }
   ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
     const el = document.getElementById(s);
     if (el) el.hidden = (s !== id);
   });
   st.screen = id;
+}
+
+function goBackScreen() {
+  const prev = st.screenHistory.pop() || 's-location';
+  showScreen(prev);
+  // Don't re-push the screen we just popped
+  st.screenHistory.pop();
 }
 
 /* ══════════════════════════════════════════════
@@ -1341,7 +1354,7 @@ function renderNeighborhoods() {
         <span class="nbhd-item-name">${nbhd.name}</span>
         <span class="nbhd-item-right">
           <span class="nbhd-item-count">${nearby} within ~2.5 mi</span>
-          <span class="nbhd-arr">→</span>
+          <span class="nbhd-arr" aria-hidden="true">→</span>
         </span>`;
       btn.addEventListener('click', () => selectNeighborhood(nbhd));
       container.appendChild(btn);
@@ -1991,9 +2004,16 @@ function renderExploreIndex() {
         <span class="coll-count">${coll.places.length} places →</span>
       </div>`;
 
-    card.addEventListener('click', () => openCollection(coll));
+    card.addEventListener('click', () => {
+      st.focusReturnExplore = card;
+      openCollection(coll);
+    });
     card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCollection(coll); }
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        st.focusReturnExplore = card;
+        openCollection(coll);
+      }
     });
     listEl.appendChild(card);
   });
@@ -2008,6 +2028,7 @@ function openCollection(coll) {
 function closeCollection() {
   document.getElementById('exploreDetail').hidden = true;
   document.getElementById('exploreIndex').hidden  = false;
+  if (st.focusReturnExplore) st.focusReturnExplore.focus();
 }
 
 function renderCollectionDetail(coll) {
@@ -2023,7 +2044,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2156,13 +2177,18 @@ function bindEvents() {
 
   document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
   document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    st.focusReturnNbhd = document.activeElement;
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
 
-  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+  document.getElementById('btnNbhdBack').addEventListener('click', () => {
+    goBackScreen();
+    if (st.focusReturnNbhd) st.focusReturnNbhd.focus();
+  });
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    st.focusReturnNbhd = document.activeElement;
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
@@ -2189,6 +2215,25 @@ function bindEvents() {
 
   /* Keyboard Shortcuts */
   document.addEventListener('keydown', e => {
+    /* Escape key handler */
+    if (e.key === 'Escape') {
+      if (st.screen === 's-nbhd') {
+        goBackScreen();
+        if (st.focusReturnNbhd) st.focusReturnNbhd.focus();
+        return;
+      }
+      if (st.screen === 's-app' && st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+        return;
+      }
+      if (st.screen === 's-app' && st.tab === 'list' && st.openId !== null) {
+        const trigger = document.querySelector(`.place[data-pid="${st.openId}"] .p-row`);
+        toggleItem(st.openId);
+        if (trigger) trigger.focus();
+        return;
+      }
+    }
+
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
