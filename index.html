@@ -1463,12 +1463,16 @@ function toggleItem(id) {
 /* ══════════════════════════════════════════════
    COUNTS + FILTER
 ══════════════════════════════════════════════ */
+/* ⚡ Bolt Optimization: Use O(N) single-pass counting without expensive distance calculations or sorting */
 function renderCounts() {
-  const all = sortedPlaces();
+  const counts = { All: PLACES.length };
+  for (let i = 0; i < PLACES.length; i++) {
+    const c = PLACES[i].cat;
+    counts[c] = (counts[c] || 0) + 1;
+  }
   CATS.forEach(c => {
-    const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
     const el = document.getElementById('n-' + c);
-    if (el) el.textContent = n;
+    if (el) el.textContent = counts[c] || 0;
   });
 }
 
