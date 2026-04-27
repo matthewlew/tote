@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-22 - Escape Key Dismissal and Focus Management
+**Learning:** Overlays and dynamically injected views (like neighborhood pickers, collection details, and expanded rows) that trap focus or monopolize the screen space *must* be dismissible via the Escape key to adhere to standard keyboard accessibility patterns. Furthermore, when dismissing these views, restoring focus back to the original trigger element is critical to prevent keyboard users from losing their place in the DOM order.
+**Action:** Always implement a global (or scoped) `Escape` key handler that targets open overlays in a logical hierarchy (from most prominent to least). Always capture `document.activeElement` into a state variable (e.g., `st.lastFocus`) before rendering/showing the overlay, and explicitly call `.focus()` on it immediately after closing.
