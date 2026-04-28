@@ -1379,6 +1379,8 @@ function renderList(animate = false) {
   if (!items.length) { emptyEl.classList.add('show'); return; }
   emptyEl.classList.remove('show');
 
+  // ⚡ Bolt: Use DocumentFragment to batch DOM appends, avoiding O(N) layout thrashing and reflows
+  const fragment = document.createDocumentFragment();
   items.forEach((p, i) => {
     const li = document.createElement('li');
     li.className = 'place' + (animate ? ' animate-in' : '');
@@ -1427,8 +1429,9 @@ function renderList(animate = false) {
         </div>
       </div>`;
 
-    listEl.appendChild(li);
+    fragment.appendChild(li);
   });
+  listEl.appendChild(fragment);
 
 }
 
@@ -1465,10 +1468,15 @@ function toggleItem(id) {
 ══════════════════════════════════════════════ */
 function renderCounts() {
   const all = sortedPlaces();
+  // ⚡ Bolt: Optimize category counts by doing a single pass over 'all' (O(N)) instead of calling filter for each category (O(N*C))
+  const counts = { All: all.length };
+  for (let i = 0; i < all.length; i++) {
+    const cat = all[i].cat;
+    counts[cat] = (counts[cat] || 0) + 1;
+  }
   CATS.forEach(c => {
-    const n = c === 'All' ? all.length : all.filter(p => p.cat === c).length;
     const el = document.getElementById('n-' + c);
-    if (el) el.textContent = n;
+    if (el) el.textContent = counts[c] || 0;
   });
 }
 
