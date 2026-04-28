@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Escape Key and Focus Restoration
+**Learning:** Adding Escape key support to dismiss overlays and modals (like the neighborhood picker or collection details) is crucial for keyboard users, but it introduces a new problem: when an overlay is dismissed, the keyboard focus is lost, resetting to the top of the document. This forces users to manually tab all the way back down to where they were.
+**Action:** Always implement focus restoration when adding Escape key support. Save `document.activeElement` to a variable (e.g. `st.lastFocus`) right before opening the modal/overlay, and call `.focus()` on it immediately after closing. Provide visual `<span class="shortcut">esc</span>` hints on the corresponding Close/Back buttons.
