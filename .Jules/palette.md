@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-24 - Screen Reader Verbosity with Inline UI Shortcuts
+**Learning:** Adding visual keyboard shortcut indicators directly into interactive button labels (e.g., `<button>All <span class="shortcut">1</span></button>`) creates a confusing experience for screen reader users, who hear them read sequentially (e.g., "All 1 button"). This mixes semantic meaning with structural visual cues.
+**Action:** When adding visual keyboard shortcut hints, always add `aria-hidden="true"` to the visual hint element, and explicitly attach an `aria-keyshortcuts` attribute to the parent interactive element (e.g., the button) to guarantee equivalent experience for visually impaired users without verbal clutter.
