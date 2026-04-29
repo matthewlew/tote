@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-04-29 - Managing Application Focus state during Navigation
+**Learning:** During accessibility audits, it became clear that single-page applications without explicit focus management strand keyboard users when closing overlays, returning from detail views, or dismissing navigation elements. Native browser history handles this somewhat across page reloads, but vanilla JS view switching requires manual tracking.
+**Action:** When implementing overlays, collection details, or navigating to distinct screens (like neighborhood selectors), always store the previously focused element (`st.lastFocus = document.activeElement`) before the transition. Upon closing the overlay or navigating back (`Escape` or Back button), explicitly restore focus to that element (`st.lastFocus.focus()`) and clear the reference to avoid memory leaks.

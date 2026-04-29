@@ -1,17 +1,22 @@
-1. Add Brooklyn neighborhoods to the app
-   - I need to find all Brooklyn neighborhoods and create JSON files for each of them with some placeholder data or real data. Let's create a script to generate JSON files for Brooklyn neighborhoods.
-   - Update `categories` array in `index.html` to include all these new Brooklyn neighborhood categories.
+1. **Add `aria-keyshortcuts` to all buttons with shortcuts**
+   - Location button: `<button class="loc-btn" id="btnEnableLoc" aria-keyshortcuts="l">`
+   - Filter pills: `<button class="fpill" data-cat="All" aria-keyshortcuts="1">` (and so on for 2,3,4,5,6)
 
-2. Add geolocation feature
-   - Add a "Locate Me" button to the UI, maybe near the category navigation or in a separate location control area.
-   - Implement the geolocation logic using the browser's Geolocation API (`navigator.geolocation.getCurrentPosition`).
-   - Define a list of coordinates (latitude, longitude) for each Brooklyn neighborhood.
-   - When the user clicks "Locate Me", get their coordinates and find the closest Brooklyn neighborhood using the Haversine formula or a simple distance calculation.
-   - If the user is outside NYC (we can define a bounding box or maximum distance from NYC center), show a message saying "Only for NYC neighborhoods".
-   - If the user is within NYC, switch to the closest neighborhood category.
-   - Also allow users to "put in a neighborhood" (perhaps a simple search or dropdown if the list gets too long).
+2. **Hide visual shortcut hints and structural symbols from screen readers using `aria-hidden="true"`**
+   - Location button shortcut `span` and `span.arr`: `<span aria-hidden="true"><span class="shortcut">l</span> <span class="arr">→</span></span>`
+   - Filter pill shortcuts: `<span class="shortcut" aria-hidden="true">1</span>`
+   - Browse neighborhood button: `<span class="arr" aria-hidden="true">→</span>`
 
-3. Pre commit steps
-   - Run `pre_commit_instructions` and follow the required checks.
+3. **Add "Esc" visual hints and `aria-keyshortcuts` to Back/Close buttons**
+   - Nbhd Back button (`#btnNbhdBack`): `<button class="back-btn" id="btnNbhdBack" aria-keyshortcuts="Escape">← Back <span class="shortcut" aria-hidden="true">esc</span></button>`
+   - Collection Back button (`#btnCollBack`): In JS `renderCollectionDetail`, `<button class="coll-detail-back" id="btnCollBack" aria-keyshortcuts="Escape">← Back <span class="shortcut" aria-hidden="true">esc</span></button>`
 
-4. Submit the changes.
+4. **Implement Global Escape Key Handling**
+   - Add a global `keydown` listener for `Escape`.
+   - Priority 1: If `st.screen === 's-nbhd'`, show location screen (`showScreen('s-location')` if no history, but actually the memory says "pop the previous view from this stack... falling back to 's-location'"). I'll look into `st.screenHistory`. Wait, `st.screenHistory` doesn't exist, I need to check memory again. "The application uses an array-based stack (`st.screenHistory` on the global `st` object) to track navigation state... Ensure initial loading states ('loading', 's-loading') are explicitly excluded". I need to implement `st.screenHistory`.
+   - Priority 2: If in Explore tab and Collection Detail is open (`!document.getElementById('exploreDetail').hidden`), close it (`closeCollection()`), restore focus to triggered card.
+   - Priority 3: If `st.openId` is set, close it (`toggleItem(st.openId)`), restore focus to triggered row.
+
+5. **Implement Screen History for Navigation**
+   - Modify `showScreen(id)` to push previous screen to `st.screenHistory`.
+   - Update `btnNbhdBack` click and Escape logic to use `screenHistory` to pop back to the previous screen.
