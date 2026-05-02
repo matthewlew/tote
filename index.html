@@ -1001,7 +1001,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack" aria-keyshortcuts="Escape">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1235,6 +1235,9 @@ const CATS = ['All','Coffee','Food','Bars','Shops','Culture'];
    STATE
 ══════════════════════════════════════════════ */
 const st = {
+  screenHistory: [],
+  lastFocus: null,
+  exploreFocus: null,
   screen:   'loading',
   tab:      'list',
   cat:      'All',
@@ -1272,11 +1275,25 @@ function filteredPlaces() {
 function mapsUrl(q) { return 'https://www.google.com/maps/search/?api=1&query=' + q; }
 
 function showScreen(id) {
+  let targetId = id;
+  const isBack = id === 'back';
+
+  if (isBack) {
+    targetId = st.screenHistory.pop() || 's-location';
+  } else if (st.screen !== 's-loading' && st.screen !== id) {
+    st.screenHistory.push(st.screen);
+  }
+
   ['s-loading','s-location','s-nbhd','s-app'].forEach(s => {
     const el = document.getElementById(s);
-    if (el) el.hidden = (s !== id);
+    if (el) el.hidden = (s !== targetId);
   });
-  st.screen = id;
+  st.screen = targetId;
+
+  if (isBack && st.lastFocus) {
+    st.lastFocus.focus();
+    st.lastFocus = null;
+  }
 }
 
 /* ══════════════════════════════════════════════
@@ -2000,6 +2017,7 @@ function renderExploreIndex() {
 }
 
 function openCollection(coll) {
+  st.exploreFocus = document.activeElement;
   document.getElementById('exploreIndex').hidden  = true;
   document.getElementById('exploreDetail').hidden = false;
   renderCollectionDetail(coll);
@@ -2008,6 +2026,7 @@ function openCollection(coll) {
 function closeCollection() {
   document.getElementById('exploreDetail').hidden = true;
   document.getElementById('exploreIndex').hidden  = false;
+  if (st.exploreFocus) { st.exploreFocus.focus(); st.exploreFocus = null; }
 }
 
 function renderCollectionDetail(coll) {
@@ -2023,7 +2042,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack" aria-keyshortcuts="Escape">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2156,13 +2175,15 @@ function bindEvents() {
 
   document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
   document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    st.lastFocus = document.activeElement;
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
 
-  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('back'));
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    st.lastFocus = document.activeElement;
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
@@ -2191,6 +2212,27 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Escape key handler for overlays */
+    if (e.key === 'Escape') {
+      if (st.screen === 's-nbhd') {
+        e.preventDefault();
+        showScreen('back');
+        return;
+      }
+      if (st.openId !== null) {
+        e.preventDefault();
+        const triggerRow = document.querySelector(`.place[data-pid="${st.openId}"] .p-row`);
+        toggleItem(st.openId);
+        if (triggerRow) triggerRow.focus();
+        return;
+      }
+      if (st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        e.preventDefault();
+        closeCollection();
+        return;
+      }
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {

@@ -1,0 +1,4 @@
+
+## 2026-03-18 - Escape Key Overlay Management & Focus Restoration
+**Learning:** When building custom overlay flows (like screens that stack or panels that expand) without native `<dialog>` elements, relying solely on explicit "Close" or "Back" mouse clicks alienates keyboard users who instinctively use the `Escape` key to dismiss popups. Furthermore, dismissing an overlay without deliberately returning `document.activeElement` focus to the originating button causes the user's tab sequence to reset to the top of the document.
+**Action:** Always implement a centralized `Escape` key listener on the `document` that sequentially checks for open overlays/panels from top-most to bottom-most and dismisses only the active layer. Store `document.activeElement` in state immediately before opening an overlay, and call `.focus()` on it during the dismissal/back transition to maintain context.
