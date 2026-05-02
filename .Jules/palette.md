@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Missing ARIA Labels on Import Fields
+**Learning:** Text input fields (`<input>` and `<textarea>`) that lack a visibly associated `<label>` element are invisible to screen readers, leaving users unable to determine what input is expected, even if visual placeholders are present.
+**Action:** Always add an explicit `aria-label` attribute to form inputs when a visual `<label>` is not part of the design or is implemented using non-standard text structures above the field.
