@@ -1320,14 +1320,19 @@ function updateLocUI() {
    NEIGHBORHOOD PICKER
 ══════════════════════════════════════════════ */
 function renderNeighborhoods() {
+  /* ⚡ Bolt Optimization: Batch DOM Appends
+     What: Using a DocumentFragment instead of direct container.appendChild().
+     Why: Appending elements in a loop to the active DOM causes expensive O(N) layout thrashing and reflows.
+     Impact: Batching updates into a fragment ensures a single reflow instead of N reflows. */
   const container = document.getElementById('nbhdList');
   container.innerHTML = '';
+  const fragment = document.createDocumentFragment();
   const boroughs = [...new Set(NEIGHBORHOODS.map(n => n.borough))];
   boroughs.forEach(b => {
     const lbl = document.createElement('div');
     lbl.className = 'nbhd-borough-label';
     lbl.textContent = b;
-    container.appendChild(lbl);
+    fragment.appendChild(lbl);
 
     NEIGHBORHOODS.filter(n => n.borough === b).forEach(nbhd => {
       const nearby = PLACES.filter(p =>
@@ -1344,9 +1349,10 @@ function renderNeighborhoods() {
           <span class="nbhd-arr">→</span>
         </span>`;
       btn.addEventListener('click', () => selectNeighborhood(nbhd));
-      container.appendChild(btn);
+      fragment.appendChild(btn);
     });
   });
+  container.appendChild(fragment);
 }
 
 function selectNeighborhood(nbhd) {
