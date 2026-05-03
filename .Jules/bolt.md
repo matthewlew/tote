@@ -1,0 +1,3 @@
+## 2026-03-16 - Batching DOM Updates with DocumentFragment
+**Learning:** In a vanilla JS architecture, appending hundreds of elements directly to the active DOM inside a loop (like lists of places or collections) causes expensive O(N) layout thrashing and multiple browser reflows. Since this project explicitly avoids frameworks like React/Vue, this performance bottleneck is particularly critical.
+**Action:** Always use `DocumentFragment` to batch DOM appends when rendering lists or generating multiple elements dynamically. Append the fragment once to the active DOM at the end of the loop to ensure a single reflow instead of N reflows.
