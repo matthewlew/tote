@@ -1,0 +1,3 @@
+## 2026-05-04 - Global string normalization and loop optimization
+**Learning:** Initializing regular expressions and mapping functions dynamically inside render or iteration loops (like `addPlaces`, `groupForDisambig`, or array `.forEach`/`.some` callbacks) incurs significant, repeated compilation and memory overhead in vanilla JS.
+**Action:** Always extract static regular expressions (`NORM_RE = /[^a-z0-9]/g`) and common helper functions (`const norm = ...`) to the global scope or module level to prevent recompilation, and refactor array methods (`forEach`, `map`, `some`) to standard `for` loops in performance-sensitive logic to yield measurable speed improvements.
