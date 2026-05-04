@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Keyboard Escaping from Overlays
+**Learning:** When modals, overlay screens, or item details are opened, users expect the Escape key to dismiss the current view and return focus to what they were doing before. Lack of an explicit Escape handler breaks flow and limits keyboard navigation. We also found that toggle buttons for filters needed explicit `aria-pressed` states so screen readers know their current state.
+**Action:** Always implement a global 'Escape' key handler to manage dismissals for overlays and active items, ensure focus is returned to the triggering element (via `st.lastFocus`), and dynamically manage `aria-pressed` for custom toggle pills alongside visual indicators. Provide visual `esc` shortcut hints.
