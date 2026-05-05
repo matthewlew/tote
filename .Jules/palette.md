@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Global Escape Key Management
+**Learning:** In complex single-page apps with layered views (like item details, expanded rows, full screen overlays), users expect the `Escape` key to predictably back out of their current context. A common trap is failing to handle these layers sequentially or forgetting to restore keyboard focus to the triggering element after dismissal.
+**Action:** Always implement a centralized `Escape` key handler in the global `keydown` event. Evaluate closures from foreground-most (open items) to background-most (full-screen overlays). Make sure to capture `document.activeElement` before an overlay opens, and `focus()` it again upon closure to preserve logical flow for screen readers and keyboard navigation. Show `<span class="shortcut">esc</span>` next to the back/close buttons.
