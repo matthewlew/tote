@@ -1,0 +1,3 @@
+## 2026-05-08 - O(N+M) Two-Pointer Optimization for Regex Matching
+**Learning:** When matching pairs of elements from two separate arrays generated via `regex.exec()` on the same string (e.g., matching nearby names and coordinates in HTML), the arrays are inherently sorted by their match index (`idx`). Using `.find()` inside a `.forEach()` or `.map()` loop results in an expensive O(N*M) time complexity, which scales poorly for large HTML documents.
+**Action:** Always replace O(N*M) nested searches on naturally sorted array structures with an O(N+M) two-pointer approach, maintaining a sliding starting index and breaking early once the bounding window is exceeded.
