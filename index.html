@@ -1575,15 +1575,32 @@ function parseGoogleMapsHTML(html) {
   while ((m = nameRe.exec(html)) !== null) nameHits.push({ name: m[1], idx: m.index });
 
   const usedCoords = new Set();
-  nameHits.forEach(nh => {
-    const nearby = coordHits.find(ch =>
-      !usedCoords.has(ch.idx) && Math.abs(ch.idx - nh.idx) < 800
-    );
-    if (!nearby) return;
-    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) return;
+  let coordStartIdx = 0;
+  const window = 800;
+
+  for (let i = 0; i < nameHits.length; i++) {
+    const nh = nameHits[i];
+
+    while (coordStartIdx < coordHits.length && coordHits[coordStartIdx].idx <= nh.idx - window) {
+      coordStartIdx++;
+    }
+
+    let nearby = null;
+    for (let j = coordStartIdx; j < coordHits.length; j++) {
+      const ch = coordHits[j];
+      if (ch.idx >= nh.idx + window) break;
+
+      if (!usedCoords.has(ch.idx)) {
+        nearby = ch;
+        break;
+      }
+    }
+
+    if (!nearby) continue;
+    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) continue;
     usedCoords.add(nearby.idx);
     places.push(makePlace(nh.name, { lat: nearby.lat, lng: nearby.lng }));
-  });
+  }
   if (places.length) return places;
 
   /* ── Strategy 3: Open Graph / title fallback (at least get the list name) ──
