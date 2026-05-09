@@ -17,3 +17,6 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+## 2026-03-24 - Escape key support and focus accessibility tracking
+**Learning:** For multi-layer vanilla JS applications where modals or item expansions can be nested, storing focus in a single `lastFocus` variable fails when users try to 'Escape' backward through multiple layers.
+**Action:** When implementing Escape key support across stacked foreground/middle/background UI elements, always manage focus references via an array stack (e.g. `focusHistory: []`) to ensure users consistently return to the correct originating element as they dismiss each layer sequentially.
