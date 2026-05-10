@@ -1575,15 +1575,25 @@ function parseGoogleMapsHTML(html) {
   while ((m = nameRe.exec(html)) !== null) nameHits.push({ name: m[1], idx: m.index });
 
   const usedCoords = new Set();
-  nameHits.forEach(nh => {
-    const nearby = coordHits.find(ch =>
-      !usedCoords.has(ch.idx) && Math.abs(ch.idx - nh.idx) < 800
-    );
-    if (!nearby) return;
-    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) return;
+  let coordIdx = 0;
+  for (const nh of nameHits) {
+    while (coordIdx < coordHits.length && coordHits[coordIdx].idx <= nh.idx - 800) {
+      coordIdx++;
+    }
+    let nearby = null;
+    for (let i = coordIdx; i < coordHits.length; i++) {
+      const ch = coordHits[i];
+      if (ch.idx >= nh.idx + 800) break;
+      if (!usedCoords.has(ch.idx)) {
+        nearby = ch;
+        break;
+      }
+    }
+    if (!nearby) continue;
+    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) continue;
     usedCoords.add(nearby.idx);
     places.push(makePlace(nh.name, { lat: nearby.lat, lng: nearby.lng }));
-  });
+  }
   if (places.length) return places;
 
   /* ── Strategy 3: Open Graph / title fallback (at least get the list name) ──
