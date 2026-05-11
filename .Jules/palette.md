@@ -17,3 +17,6 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+## 2025-03-24 - Escape Key Management & Focus Stacking
+**Learning:** For UX/accessibility, dismissing nested modal/overlay components requires hierarchical Escape key handling and focus restoration. Utilizing a single `lastFocus` variable fails when users dive multiple levels deep. Additionally, screen readers awkwardly read out visual key shortcuts (like "1" or "esc") combined with the button label unless mitigated.
+**Action:** Always implement an array-based stack (e.g. `st.focusHistory`) to sequentially push and pop `document.activeElement` when traversing UI layers. For visual shortcuts, add `aria-keyshortcuts="key"` to the parent button and apply `aria-hidden="true"` exclusively to the visual hint spans to ensure parity without verbosity.
