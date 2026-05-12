@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-05-12 - Missing ARIA Labels on Text Inputs and Visual Shortcuts
+**Learning:** Text inputs (like `<input type="url">` and `<textarea>`) used as standalone fields without visibly associated `<label>` elements are inaccessible to screen readers, as placeholder text alone is insufficient. Additionally, inline visual keyboard shortcuts or decorative structural arrows (e.g., `→`) are read aloud by screen readers, creating confusing, combined text.
+**Action:** Always provide explicit `aria-label` attributes for text inputs lacking a `<label>`. Ensure that visual keyboard shortcuts or structural arrows are hidden using `aria-hidden="true"`, and pair this by adding `aria-keyshortcuts="<key>"` to the parent interactive element to maintain feature parity for visually impaired users.
