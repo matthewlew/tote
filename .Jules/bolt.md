@@ -1,0 +1,3 @@
+## 2024-05-12 - O(N+M) Regex Exec Array Matching
+**Learning:** Arrays generated via `regex.exec()` on the same string are inherently sorted by their `index` property. When matching nearby elements between two such arrays (like finding a coordinate near a name string), using nested `.find()` or `.forEach()` loops causes `O(N*M)` complexity.
+**Action:** Always use a sliding window two-pointer approach when correlating sorted regex matches. By advancing a base index pointer and using an early `break` when the window is exceeded, the complexity drops to `O(N+M)`, resulting in massive performance gains for large strings.

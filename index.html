@@ -1169,6 +1169,8 @@
 </div>
 
 <script>
+const NORM_RE = /[^a-z0-9]/g;
+const norm = n => n.toLowerCase().replace(NORM_RE, '');
 /* ══════════════════════════════════════════════
    DATA
 ══════════════════════════════════════════════ */
@@ -1204,7 +1206,6 @@ function nextId() { return _nextId++; }
 /* Add incoming places, deduplicate against existing ones.
    Returns { added[], skipped[] } */
 function addPlaces(incoming) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   const existing = new Set(PLACES.map(p => norm(p.name)));
   const added = [], skipped = [];
   incoming.forEach(p => {
@@ -1575,15 +1576,31 @@ function parseGoogleMapsHTML(html) {
   while ((m = nameRe.exec(html)) !== null) nameHits.push({ name: m[1], idx: m.index });
 
   const usedCoords = new Set();
-  nameHits.forEach(nh => {
-    const nearby = coordHits.find(ch =>
-      !usedCoords.has(ch.idx) && Math.abs(ch.idx - nh.idx) < 800
-    );
-    if (!nearby) return;
-    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) return;
+  let coordIdx = 0;
+  const window = 800;
+  for (let i = 0; i < nameHits.length; i++) {
+    const nh = nameHits[i];
+
+    // Move the starting coordinate pointer forward
+    while (coordIdx < coordHits.length && coordHits[coordIdx].idx <= nh.idx - window) {
+      coordIdx++;
+    }
+
+    let nearby = null;
+    for (let j = coordIdx; j < coordHits.length; j++) {
+      const ch = coordHits[j];
+      if (ch.idx >= nh.idx + window) break; // Exceeds upper bound
+      if (!usedCoords.has(ch.idx)) {
+        nearby = ch;
+        break;
+      }
+    }
+
+    if (!nearby) continue;
+    if (/^(https?|www\.|Google|Maps|null|true|false)/i.test(nh.name)) continue;
     usedCoords.add(nearby.idx);
     places.push(makePlace(nh.name, { lat: nearby.lat, lng: nearby.lng }));
-  });
+  }
   if (places.length) return places;
 
   /* ── Strategy 3: Open Graph / title fallback (at least get the list name) ──
@@ -1679,7 +1696,6 @@ function parsePastedList(text) {
 /* Groups same-name entries for disambiguation.
    Returns { unambiguous: Place[], ambiguous: { name, candidates[] }[] } */
 function groupForDisambig(rawEntries) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   const byName = new Map();
   rawEntries.forEach(e => {
     const key = norm(e.name);
@@ -1817,7 +1833,6 @@ function initImport() {
     }
 
     /* Filter out names already in PLACES */
-    const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
     const existingNames = new Set(PLACES.map(p => norm(p.name)));
     const newRaw = raw.filter(e => !existingNames.has(norm(e.name)));
     const dupCount = raw.length - newRaw.length;
@@ -1952,7 +1967,6 @@ function nearbyCount(coll, radius) {
 }
 
 function isSavedPlace(name) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   return PLACES.some(p => norm(p.name) === norm(name));
 }
 
