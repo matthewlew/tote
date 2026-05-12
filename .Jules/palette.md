@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-05-12 - Explicit Escape Key Handling for Overlays
+**Learning:** In a heavily customized vanilla JS app, relying on browser defaults for closing overlays (like modals, expanded list items, or full-screen panels) is insufficient. Users expect the `Escape` key to universally dismiss the most recently opened overlay and restore focus to the trigger element. Missing this breaks the keyboard navigation loop.
+**Action:** Always implement a global `Escape` key handler that evaluates open state from top-most (e.g., expanded item) to bottom-most (e.g., background overlay). Push state (like previous screen and `document.activeElement`) to a history stack before opening an overlay, and pop from this stack on dismissal to accurately restore focus and navigation state. Always provide a visual `<span class="shortcut">esc</span>` hint on close/back buttons.
