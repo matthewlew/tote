@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-05-13 - Correct aria-keyshortcuts Configuration
+**Learning:** Visual keyboard shortcuts (like those on `.fpill` buttons) must be hidden from screen readers using `aria-hidden="true"` to prevent confusing combination text, and the parent interactive element must declare `aria-keyshortcuts="<key>"` so the screen reader announces it effectively. Furthermore, for togglable buttons like tabs and category pills, `aria-pressed` or `aria-selected` must be properly initialized to true/false in the markup and toggled alongside visual state classes to maintain a11y parity.
+**Action:** When creating visual shortcuts, always pair `<span class="shortcut" aria-hidden="true">` with `aria-keyshortcuts="..."` on the parent. Ensure toggle state uses `aria-pressed` consistently.
