@@ -972,7 +972,14 @@
         transition-duration: 0.01ms !important;
       }
     }
-  </style>
+
+.p-row:focus-visible, .coll-card:focus-visible, .nbhd-item:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  background: var(--bg-hover);
+}
+
+</style>
 </head>
 <body>
 
@@ -1001,7 +1008,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack" aria-keyshortcuts="Escape">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1244,6 +1251,8 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  focusHistory: [],
+  screenHistory: [],
 };
 
 /* ══════════════════════════════════════════════
@@ -2000,6 +2009,7 @@ function renderExploreIndex() {
 }
 
 function openCollection(coll) {
+  st.focusHistory.push(document.activeElement);
   document.getElementById('exploreIndex').hidden  = true;
   document.getElementById('exploreDetail').hidden = false;
   renderCollectionDetail(coll);
@@ -2023,7 +2033,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack" aria-keyshortcuts="Escape">← Back <span class="shortcut" aria-hidden="true">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2156,6 +2166,8 @@ function bindEvents() {
 
   document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
   document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    st.screenHistory.push(st.screen);
+    st.focusHistory.push(document.activeElement);
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
@@ -2163,6 +2175,8 @@ function bindEvents() {
   document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    st.screenHistory.push(st.screen);
+    st.focusHistory.push(document.activeElement);
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
@@ -2191,6 +2205,58 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+
+    /* Handle Escape globally to close overlays */
+    if (e.key === 'Escape') {
+      if (st.openId !== null) {
+        // 1. Topmost: Expanded List Item
+        const btn = document.querySelector(`.place[data-pid="${st.openId}"] .p-row`);
+        toggleItem(st.openId);
+        if (btn) btn.focus();
+        return;
+      }
+      if (!document.getElementById('exploreDetail').hidden) {
+        // 2. Middle: Collection Detail
+        closeCollection();
+        const lastFocus = st.focusHistory.pop();
+        if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+        return;
+      }
+      if (st.screen === 's-nbhd') {
+        // 3. Background: Neighborhood Picker
+        showScreen(st.screenHistory.pop() || 's-location');
+        const lastFocus = st.focusHistory.pop();
+        if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+        return;
+      }
+      return;
+    }
+
+    /* Arrow key navigation for lists */
+    if (st.screen === 's-app' && (st.tab === 'list' || st.tab === 'explore')) {
+      if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
+        const rows = Array.from(document.querySelectorAll(st.tab === 'list' ? '.p-row' : '.coll-card'));
+        if (!rows.length) return;
+
+        // Let user scroll within exploreDetail if focused inside it
+        if (!document.getElementById('exploreDetail').hidden) return;
+
+        e.preventDefault();
+        const active = document.activeElement;
+        let idx = rows.indexOf(active);
+
+        if (idx === -1) {
+          rows[0].focus();
+        } else {
+          idx += (e.key === 'ArrowDown' ? 1 : -1);
+          if (idx < 0) idx = rows.length - 1;
+          if (idx >= rows.length) idx = 0;
+          rows[idx].focus();
+        }
+        return;
+      }
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
