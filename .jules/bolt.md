@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2026-05-15 - Global Constant Extraction for RegExp
+**Learning:** Re-instantiating the same regular expression object, or even declaring an arrow function containing a literal regex inside frequent rendering loops or multiple separate helper functions, forces the JS engine to repeatedly recompile the pattern and allocate new closures, causing measurable overhead.
+**Action:** Always extract static regular expressions to global constants and ensure any related string normalization functions that use them are also hoisted to the top-level scope to be efficiently shared across the application.
