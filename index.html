@@ -1169,6 +1169,9 @@
 </div>
 
 <script>
+
+const NORM_RE = /[^a-z0-9]/g;
+const norm = n => n.toLowerCase().replace(NORM_RE, '');
 /* ══════════════════════════════════════════════
    DATA
 ══════════════════════════════════════════════ */
@@ -1204,14 +1207,17 @@ function nextId() { return _nextId++; }
 /* Add incoming places, deduplicate against existing ones.
    Returns { added[], skipped[] } */
 function addPlaces(incoming) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
-  const existing = new Set(PLACES.map(p => norm(p.name)));
+  const existing = new Set();
+  for (let i = 0; i < PLACES.length; i++) {
+    existing.add(norm(PLACES[i].name));
+  }
   const added = [], skipped = [];
-  incoming.forEach(p => {
+  for (let i = 0; i < incoming.length; i++) {
+    const p = incoming[i];
     const key = norm(p.name);
     if (existing.has(key)) { skipped.push(p); }
     else { existing.add(key); p.id = nextId(); PLACES.push(p); added.push(p); }
-  });
+  }
   savePlaces();
   return { added, skipped };
 }
@@ -1655,12 +1661,12 @@ function parsePastedList(text) {
        the duplicate-name line that ChatGPT format produces */
     let address = '';
     let j = i + 1;
-    const normName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const normName = norm(name);
     while (j < lines.length && j <= i + 6) {
       const next = lines[j];
       if (isAddress(next)) { address = cleanAddress(next); j++; break; }
       const nextClean = cleanPlaceName(next);
-      const normNext = nextClean.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const normNext = norm(nextClean);
       /* Treat as same place if one normalized name is a prefix of the other
          (handles "Felix Roasting Co." vs "Felix Roasting Co, Hotel Hugo Soho") */
       const isVariant = nextClean === name ||
@@ -1679,13 +1685,13 @@ function parsePastedList(text) {
 /* Groups same-name entries for disambiguation.
    Returns { unambiguous: Place[], ambiguous: { name, candidates[] }[] } */
 function groupForDisambig(rawEntries) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   const byName = new Map();
-  rawEntries.forEach(e => {
+  for (let i = 0; i < rawEntries.length; i++) {
+    const e = rawEntries[i];
     const key = norm(e.name);
     if (!byName.has(key)) byName.set(key, []);
     byName.get(key).push(e);
-  });
+  }
   const unambiguous = [], ambiguous = [];
   byName.forEach(group => {
     if (group.length === 1) {
@@ -1817,8 +1823,10 @@ function initImport() {
     }
 
     /* Filter out names already in PLACES */
-    const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
-    const existingNames = new Set(PLACES.map(p => norm(p.name)));
+    const existingNames = new Set();
+    for (let i = 0; i < PLACES.length; i++) {
+      existingNames.add(norm(PLACES[i].name));
+    }
     const newRaw = raw.filter(e => !existingNames.has(norm(e.name)));
     const dupCount = raw.length - newRaw.length;
 
@@ -1952,8 +1960,11 @@ function nearbyCount(coll, radius) {
 }
 
 function isSavedPlace(name) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
-  return PLACES.some(p => norm(p.name) === norm(name));
+  const normTarget = norm(name);
+  for (let i = 0; i < PLACES.length; i++) {
+    if (norm(PLACES[i].name) === normTarget) return true;
+  }
+  return false;
 }
 
 function renderExploreIndex() {
