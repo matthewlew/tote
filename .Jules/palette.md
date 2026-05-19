@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Escape Key Overlays & Focus Management
+**Learning:** Dismissable UI layers (like expanded rows, modals, or neighborhood pickers) are trapping keyboard users when 'Escape' doesn't close them. Furthermore, without a focus history stack (`st.focusHistory`), users are dumped back to the start of the document upon closing, destroying their navigation context.
+**Action:** Always implement explicit 'Escape' key handling that evaluates from top foreground to backmost layers. Explicitly display `<span class="shortcut">esc</span>` next to close/back buttons. Manage focus references via an array stack (`push` active element before open, `pop` on close) to ensure users reliably return to their originating context.
