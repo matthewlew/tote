@@ -11,3 +11,7 @@
 ## 2026-03-15 - RegExp Precompilation
 **Learning:** Re-instantiating the same regular expression literal inside a `.forEach` render loop adds a measurable overhead to execution time because the regex engine compiles it repeatedly.
 **Action:** When working with vanilla JS, extract constant regex patterns and assign them to a variable outside the render loop or function to avoid redundant compilations.
+
+## 2026-05-19 - Extracted RegEx compilation and array method optimization
+**Learning:** Instantiating a regular expression or recalculating `String.prototype.replace()` inside performance-sensitive loops (`addPlaces`, `groupForDisambig`, `isSavedPlace`) incurs measurable repeated compilation overhead. Additionally, using array functional methods (`forEach`, `map`, `some`) creates unnecessary intermediate array allocations.
+**Action:** Extract static RegEx patterns and utility functions (`norm`) to the global scope. Replace functional array methods with standard `for` loops in performance-critical code blocks for vanilla JS optimization.
