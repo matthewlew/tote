@@ -1001,7 +1001,7 @@
   <div class="nbhd-hd">
     <div class="nbhd-hd-top">
       <span class="nbhd-hd-title">Neighborhoods</span>
-      <button class="back-btn" id="btnNbhdBack">← Back</button>
+      <button class="back-btn" id="btnNbhdBack">← Back <span class="shortcut">esc</span></button>
     </div>
     <div class="nbhd-hd-sub">Select your area — places sorted by walking distance</div>
   </div>
@@ -1244,6 +1244,7 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  focusHistory: [],
 };
 
 /* ══════════════════════════════════════════════
@@ -2000,6 +2001,7 @@ function renderExploreIndex() {
 }
 
 function openCollection(coll) {
+  st.focusHistory.push(document.activeElement);
   document.getElementById('exploreIndex').hidden  = true;
   document.getElementById('exploreDetail').hidden = false;
   renderCollectionDetail(coll);
@@ -2008,6 +2010,8 @@ function openCollection(coll) {
 function closeCollection() {
   document.getElementById('exploreDetail').hidden = true;
   document.getElementById('exploreIndex').hidden  = false;
+  const lastFocus = st.focusHistory.pop();
+  if (lastFocus) lastFocus.focus();
 }
 
 function renderCollectionDetail(coll) {
@@ -2023,7 +2027,7 @@ function renderCollectionDetail(coll) {
 
   detailEl.innerHTML = `
     <div class="coll-detail-hd">
-      <button class="coll-detail-back" id="btnCollBack">← Back</button>
+      <button class="coll-detail-back" id="btnCollBack">← Back <span class="shortcut">esc</span></button>
       <div class="coll-detail-info">
         <div class="coll-detail-source">${coll.source}</div>
         <div class="coll-detail-title">${coll.title}</div>
@@ -2156,13 +2160,19 @@ function bindEvents() {
 
   document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
   document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    st.focusHistory.push(document.activeElement);
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
 
-  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+  document.getElementById('btnNbhdBack').addEventListener('click', () => {
+    showScreen('s-location');
+    const lastFocus = st.focusHistory.pop();
+    if (lastFocus) lastFocus.focus();
+  });
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    st.focusHistory.push(document.activeElement);
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
@@ -2191,6 +2201,28 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Escape Key: Close overlays */
+    if (e.key === 'Escape') {
+      if (st.openId !== null) {
+        const idToFocus = st.openId;
+        st.openId = null;
+        renderList(false);
+        const triggerBtn = document.querySelector(`.p-row[data-id="${idToFocus}"]`);
+        if (triggerBtn) {
+          triggerBtn.focus();
+        }
+        return;
+      }
+      if (!document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+        return;
+      }
+      if (st.screen === 's-nbhd') {
+        document.getElementById('btnNbhdBack').click();
+        return;
+      }
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
