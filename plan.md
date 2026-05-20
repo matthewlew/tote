@@ -1,17 +1,25 @@
-1. Add Brooklyn neighborhoods to the app
-   - I need to find all Brooklyn neighborhoods and create JSON files for each of them with some placeholder data or real data. Let's create a script to generate JSON files for Brooklyn neighborhoods.
-   - Update `categories` array in `index.html` to include all these new Brooklyn neighborhood categories.
+1. **Initialize focusHistory state variable**
+   - In `index.html`, add `focusHistory: []` to the `const st = { ... }` object to track the active element before opening full-screen overlays like `s-nbhd` and `exploreDetail`.
 
-2. Add geolocation feature
-   - Add a "Locate Me" button to the UI, maybe near the category navigation or in a separate location control area.
-   - Implement the geolocation logic using the browser's Geolocation API (`navigator.geolocation.getCurrentPosition`).
-   - Define a list of coordinates (latitude, longitude) for each Brooklyn neighborhood.
-   - When the user clicks "Locate Me", get their coordinates and find the closest Brooklyn neighborhood using the Haversine formula or a simple distance calculation.
-   - If the user is outside NYC (we can define a bounding box or maximum distance from NYC center), show a message saying "Only for NYC neighborhoods".
-   - If the user is within NYC, switch to the closest neighborhood category.
-   - Also allow users to "put in a neighborhood" (perhaps a simple search or dropdown if the list gets too long).
+2. **Implement Escape key handling**
+   - In `index.html`, add an `Escape` key condition within the main `keydown` event listener.
+   - The handler should check states in reverse visual order:
+     - If `st.screen === 's-nbhd'`, set `st.screen = 's-location'`, pop the focus stack, and refocus the originating element.
+     - If `st.tab === 'explore'` and `exploreDetail` is open (`!document.getElementById('exploreDetail').hidden`), call `closeCollection()`, pop the focus stack, and refocus.
+     - If an item is expanded (`st.openId !== null`), close it by calling `toggleItem(st.openId)`.
 
-3. Pre commit steps
-   - Run `pre_commit_instructions` and follow the required checks.
+3. **Update trigger buttons to push to focusHistory**
+   - Update `document.getElementById('btnChangeLoc').addEventListener` and `document.getElementById('btnBrowseNbhd').addEventListener` to push `document.activeElement` to `st.focusHistory` before showing `s-nbhd`.
+   - Update `card.addEventListener('click', ...)` and `card.addEventListener('keydown', ...)` in `renderExploreIndex` to push `document.activeElement` to `st.focusHistory` before showing `exploreDetail`.
+   - Ensure `closeCollection()` logic is robust and correctly handles focus restoration for standard mouse clicks too.
 
-4. Submit the changes.
+4. **Verify changes by running the test suite**
+   - `node test.js`
+   - `python3 test_bg.py`
+   - `python3 test_empty_state.py`
+   - `python3 verify.py`
+   - `python3 verify_expand.py`
+   - `python3 verify_keypress.py`
+   - `python3 verify_mobile.py`
+
+5. **Complete pre-commit steps to ensure proper testing, verification, review, and reflection are done.**
