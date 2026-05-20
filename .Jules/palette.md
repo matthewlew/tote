@@ -17,3 +17,7 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+
+## 2026-03-18 - Keyboard Navigation and Focus Tracking
+**Learning:** Toggling an active state purely through CSS classes (`.active`) works visually but breaks keyboard navigation, because screen readers only announce the newly active element if it actually receives programmatic focus. Users using shortcuts to switch tabs or categories were completely unnotified of what changed, despite the visual scroll.
+**Action:** When implementing keyboard shortcuts that trigger UI updates, such as category filtering via `.fpill` buttons, ensure you explicitly call `.focus()` on the newly activated element in addition to `.scrollIntoView()`. This ensures screen readers correctly announce the updated state, which toggling active classes alone fails to do.

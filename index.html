@@ -2229,6 +2229,7 @@ function bindEvents() {
         const activePill = document.querySelector(`.fpill[data-cat="${cat}"]`);
         if (activePill) {
            activePill.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+           activePill.focus({ preventScroll: true });
         }
         renderList(false);
       }
