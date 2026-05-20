@@ -1244,6 +1244,7 @@ const st = {
   locSub:   'Manhattan, NY',
   refLat:   40.7150,
   refLng:  -73.9861,
+  focusHistory: [],
 };
 
 /* ══════════════════════════════════════════════
@@ -1991,9 +1992,16 @@ function renderExploreIndex() {
         <span class="coll-count">${coll.places.length} places →</span>
       </div>`;
 
-    card.addEventListener('click', () => openCollection(coll));
+    card.addEventListener('click', () => {
+      st.focusHistory.push(card);
+      openCollection(coll);
+    });
     card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openCollection(coll); }
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        st.focusHistory.push(card);
+        openCollection(coll);
+      }
     });
     listEl.appendChild(card);
   });
@@ -2008,6 +2016,8 @@ function openCollection(coll) {
 function closeCollection() {
   document.getElementById('exploreDetail').hidden = true;
   document.getElementById('exploreIndex').hidden  = false;
+  const lastFocus = st.focusHistory.pop();
+  if (lastFocus) lastFocus.focus();
 }
 
 function renderCollectionDetail(coll) {
@@ -2156,13 +2166,19 @@ function bindEvents() {
 
   document.getElementById('btnEnableLoc').addEventListener('click', simulateGPS);
   document.getElementById('btnBrowseNbhd').addEventListener('click', () => {
+    st.focusHistory.push(document.activeElement);
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
 
-  document.getElementById('btnNbhdBack').addEventListener('click', () => showScreen('s-location'));
+  document.getElementById('btnNbhdBack').addEventListener('click', () => {
+    showScreen('s-location');
+    const lastFocus = st.focusHistory.pop();
+    if (lastFocus) lastFocus.focus();
+  });
 
   document.getElementById('btnChangeLoc').addEventListener('click', () => {
+    st.focusHistory.push(document.activeElement);
     renderNeighborhoods();
     showScreen('s-nbhd');
   });
@@ -2191,6 +2207,24 @@ function bindEvents() {
   document.addEventListener('keydown', e => {
     /* Ignore if focused on input/textarea */
     if (['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
+
+    /* Escape to close overlays/items */
+    if (e.key === 'Escape') {
+      if (st.screen === 's-nbhd') {
+        showScreen('s-location');
+        const lastFocus = st.focusHistory.pop();
+        if (lastFocus) lastFocus.focus();
+        return;
+      }
+      if (st.tab === 'explore' && !document.getElementById('exploreDetail').hidden) {
+        closeCollection();
+        return;
+      }
+      if (st.openId !== null) {
+        toggleItem(st.openId);
+        return;
+      }
+    }
 
     /* Location shortcut */
     if (e.key === 'l' || e.key === 'L') {
