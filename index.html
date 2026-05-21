@@ -1169,6 +1169,8 @@
 </div>
 
 <script>
+const NORM_RE = /[^a-z0-9]/g;
+const norm = n => n.toLowerCase().replace(NORM_RE, '');
 /* ══════════════════════════════════════════════
    DATA
 ══════════════════════════════════════════════ */
@@ -1204,7 +1206,6 @@ function nextId() { return _nextId++; }
 /* Add incoming places, deduplicate against existing ones.
    Returns { added[], skipped[] } */
 function addPlaces(incoming) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   const existing = new Set(PLACES.map(p => norm(p.name)));
   const added = [], skipped = [];
   incoming.forEach(p => {
@@ -1679,7 +1680,6 @@ function parsePastedList(text) {
 /* Groups same-name entries for disambiguation.
    Returns { unambiguous: Place[], ambiguous: { name, candidates[] }[] } */
 function groupForDisambig(rawEntries) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   const byName = new Map();
   rawEntries.forEach(e => {
     const key = norm(e.name);
@@ -1817,8 +1817,7 @@ function initImport() {
     }
 
     /* Filter out names already in PLACES */
-    const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
-    const existingNames = new Set(PLACES.map(p => norm(p.name)));
+      const existingNames = new Set(PLACES.map(p => norm(p.name)));
     const newRaw = raw.filter(e => !existingNames.has(norm(e.name)));
     const dupCount = raw.length - newRaw.length;
 
@@ -1952,7 +1951,6 @@ function nearbyCount(coll, radius) {
 }
 
 function isSavedPlace(name) {
-  const norm = n => n.toLowerCase().replace(/[^a-z0-9]/g, '');
   return PLACES.some(p => norm(p.name) === norm(name));
 }
 
