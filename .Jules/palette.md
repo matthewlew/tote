@@ -17,3 +17,6 @@
 ## 2026-03-17 - Actionable Empty States
 **Learning:** Empty list states (like the "Nothing in this category" view) without direct call-to-actions create dead-ends for the user. When users are told what they *could* do (e.g., "Add places from your Google Maps list"), forcing them to manually discover how to do so (by hunting for the Import tab) adds friction to the onboarding flow.
 **Action:** Always provide an explicit, actionable Call-To-Action (CTA) button directly within empty state containers to route users smoothly to the solution, using existing UI components like `.bt-add`.
+## 2026-03-20 - Global Escape Key Support
+**Learning:** For app-like navigation, modal views and expanded lists must support dismissal via the Escape key, restoring focus back to the originating element.
+**Action:** Always map the Escape key to close currently active subviews (overlays, custom drop-downs, or detail views) while restoring keyboard focus, to allow accessible modal-style interactions and back navigation.
